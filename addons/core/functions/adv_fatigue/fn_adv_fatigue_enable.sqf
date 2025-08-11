@@ -17,8 +17,6 @@
 
 params ["_enable"];
 
-ZRN_LOG_1(_enable);
-
 if (_enable) then {
     [QADDON, FUNC(adv_fatigue_dutyFactor)] call ace_advanced_fatigue_fnc_addDutyFactor;
 } else {

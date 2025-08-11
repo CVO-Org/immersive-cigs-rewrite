@@ -3,17 +3,9 @@
     <Package name="Main">
         <Key ID="STR_mod_URL">
             <English>https://github.com/OverlordZorn/immersion-cigs-rewrite</English>
-            <French>https://github.com/OverlordZorn/immersion-cigs-rewrite</French>
-            <German>https://github.com/OverlordZorn/immersion-cigs-rewrite</German>
-            <Japanese>https://github.com/OverlordZorn/immersion-cigs-rewrite</Japanese>
-            <Chinese>https://github.com/OverlordZorn/immersion-cigs-rewrite</Chinese>
         </Key>
         <Key ID="STR_mod_author">
-            <English>Immersion Cigs Team</English>
-            <French>Immersion Cigs Team</French>
-            <German>Immersion Cigs Team</German>
-            <Japanese>Immersion Cigs Team</Japanese>
-            <Chinese>Immersion Cigs Team</Chinese>
+            <English>Immersion Cigs - Rewrite Team</English>
         </Key>
     </Package>
 </Project>

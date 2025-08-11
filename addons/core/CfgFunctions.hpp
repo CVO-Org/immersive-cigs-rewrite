@@ -8,10 +8,10 @@ class CfgFunctions
             file = PATH_TO_FUNC;
 
             class postInit { postInit = 1; };
-
             class cba_contextMenu { preInit = 1; };
-
             class arsenalTab {};
+
+            class incompatibility { postInit = 1; };
         };
 
         class smoking

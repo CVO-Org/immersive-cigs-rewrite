@@ -236,14 +236,14 @@
             <French>Manger</French>
             <German>Essen</German>
         </Key>
-        <Key ID="STR_cigs_core_pay_respect">
-            <English>Pay Respect to the Fallen...</English>
-            <German>Den Gefallenen Respekt zollen...</German>
-        </Key>
         <Key ID="STR_cigs_core_eat_cig_desc">
             <English>Eat the thing, duh</English>
             <French>Manger la chose, bien sûr</French>
             <German>Du hast schon richtig gelesen</German>
+        </Key>
+        <Key ID="STR_cigs_core_pay_respect">
+            <English>Pay Respect to the Fallen...</English>
+            <German>Den Gefallenen Respekt zollen...</German>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
             <English>Light Up your Cig</English>
@@ -354,9 +354,6 @@
         </Key>
     </Package>
     <Package name="Notification">
-        <Key ID="STR_cigs_core_incompat_title">
-            <English>%1: Incompatible Mods</English>
-        </Key>
         <Key ID="STR_cigs_core_incompat_message1">
             <English>The following mods are incompatible:</English>
         </Key>
@@ -365,6 +362,9 @@
         </Key>
         <Key ID="STR_cigs_core_incompat_message3">
             <English>You may experience unexpected behavior and issues.</English>
+        </Key>
+        <Key ID="STR_cigs_core_incompat_title">
+            <English>%1: Incompatible Mods</English>
         </Key>
     </Package>
 </Project>

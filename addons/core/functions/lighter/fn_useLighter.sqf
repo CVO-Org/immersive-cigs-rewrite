@@ -41,6 +41,8 @@ private _sound = switch (_lighterType) do {
 };
 [_unit, _sound, 50, true, true, true] call CBA_fnc_globalSay3D;
 
+// Light Source Effect
+[QGVAR(EH_light_lighter), [_unit, _sound]] call CBA_fnc_globalEvent;
 
 // Combustion Event
 [ CBA_fnc_serverEvent , [QGVAR(EH_useLighter_combustion), [_unit] ], 1.5 ] call CBA_fnc_waitAndExecute;

@@ -7,13 +7,68 @@ class PVAR(name) {\
 class CfgSounds {
     sounds[] = {};
 
+    class PVAR(matches_01) {
+        sound[] = {QPATHTOF(data\sounds\matches_01.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 1.9;
+        t_peak = 2.7;
+        t_duration = 4.5;
+
+
+    };
+    class PVAR(matches_02) {
+        sound[] = {QPATHTOF(data\sounds\matches_02.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 0.4;
+        t_peak = 1.7;
+        t_duration = 3.5;
+
+
+    };
+
+    class PVAR(lighter_01) {
+        sound[] = {QPATHTOF(data\sounds\lighter_01.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 1.4;
+        t_peak = 1.6;
+        t_duration = 3.5;
+    };
+
+    class PVAR(lighter_02) {
+        sound[] = {QPATHTOF(data\sounds\lighter_02.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 1;
+        t_peak = 1.5;
+        t_duration = 3.5;
+    };
+
+
+    class PVAR(smoke_3) {
+        sound[] = {QPATHTOF(data\sounds\smoke_3.ogg), 3, 1, 10};
+        titles[] = {};
+
+        t_start = 0.0;
+        t_peak = 1.2;
+        t_duration = 3.0;
+    };
+
+    class PVAR(smoke_4) {
+        sound[] = {QPATHTOF(data\sounds\smoke_4.ogg), 3, 1, 10};
+        titles[] = {};
+
+        t_start = 0.0;
+        t_peak = 1.2;
+        t_duration = 3.0;
+    };
+
+
+
+
     SOUND(unwrap_01,4,1,30);
-
-    SOUND(matches_01,4,1,30);
-    SOUND(matches_02,4,1,30);
-
-    SOUND(lighter_01,4,1,30);
-    SOUND(lighter_02,4,1,30);
 
     SOUND(eat_01,4,1,30);
     SOUND(eat_02,4,1,30);
@@ -28,9 +83,6 @@ class CfgSounds {
     SOUND(eat_bread_3,4,1,30);
     SOUND(eat_bread_4,4,1,30);
     SOUND(eat_bread_5,4,1,30);
-
-    SOUND(smoke_3,3,1,10);
-    SOUND(smoke_4,3,1,10);
 
     SOUND(verpuffung_00,4,1,100);
     SOUND(verpuffung_01,4,1,100);

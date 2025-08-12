@@ -51,8 +51,11 @@ class CfgFunctions
         class effects
         {
             file = PATH_TO_FUNC_SUB(effects);
-            class smoke_effect {};
             class anim {};
+            class smoke_effect {};
+
+            class light_lighter {};
+            class light_cig_glow {};
         };
 
         class pack

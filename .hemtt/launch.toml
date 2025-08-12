@@ -39,3 +39,10 @@ workshop = [
     "1645973522", # Intercept Minimal Dev
     "1652506957", # Arma Script Profiler
 ]
+
+[light]
+extends = "default"
+mission = "test.altis"
+workshop = [
+    "1613905318", # Emitter 3Ditor
+]

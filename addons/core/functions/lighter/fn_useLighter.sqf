@@ -39,8 +39,13 @@ private _sound = switch (_lighterType) do {
     case "typeItem":     { [ configFile >> "CfgWeapons"   >> _lighterClass >> QPVAR(LighterSound) ] call CBA_fnc_getCfgDataRandom };
     default { QGVAR(matches_01) };
 };
-[_unit, _sound, 50, true, true, true] call CBA_fnc_globalSay3D;
 
+// Play Animation
+[_unit, QEGVAR(anim,cig_in), 3] call FUNC(anim);
+
+// Sound and Light Effects
+[ CBA_fnc_globalSay3D , [_unit, _sound, 50, true, true, true],      1 ] call CBA_fnc_waitAndExecute;
+[ CBA_fnc_globalEvent , [QGVAR(EH_light_lighter), [_unit, _sound]], 1 ] call CBA_fnc_waitAndExecute;
 
 // Combustion Event
 [ CBA_fnc_serverEvent , [QGVAR(EH_useLighter_combustion), [_unit] ], 1.5 ] call CBA_fnc_waitAndExecute;

@@ -58,6 +58,11 @@ private _sound = (_currentConfig >> QPVAR(sound)) call CBA_fnc_getCfgDataRandom;
 if (isNil "_sound") then { _sound = selectRandom [QPVAR(smoke_3),QPVAR(smoke_4)] };
 [_unit, _sound, 20 * _puffIntensity, true, false, true] call CBA_fnc_globalSay3d;
 
+////////////////////////////////////////
+// Light Effect
+////////////////////////////////////////
+[QGVAR(EH_light_cig_glow), [_unit, _sound]] call CBA_fnc_globalEvent;
+
 
 ////////////////////////////////////////
 // Smoke Particles

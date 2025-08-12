@@ -15,13 +15,14 @@
 * Public: No
 */
 
-#define MAX_BRIGHTNESS 5000
-#define MAX_FLARESIZE 300
-#define MAX_FLAREDIST 1600
+#define MAX_BRIGHTNESS 150
+#define MAX_FLARESIZE 2
+#define MAX_FLAREDIST 1200
 
 private _color =  [  1.0,  0.6, 0.40 ];
 private _offset = [ -0.07, -0.2, 0.05 ];
 private _lightCone = [ 210, 90, 3 ];
+private _attenuation = [0, 0, 0, 1, 10, 0, 0]; // [start, constant, linear, quadratic, hardLimitStart, hardLimitEnd]
 
 params [ "_unit", "_sound" ];
 
@@ -45,7 +46,7 @@ _ir_flare attachTo [_unit, _offset vectorAdd [ 0, 0.28, 0 ], "head"];
 _ir_flare setLightIR true;
 
 _ir_flare setLightColor _color; // RGB
-_ir_flare setLightAttenuation [0, 0, 0, 1, 1000, 0, 0]; // [start, constant, linear, quadratic, hardLimitStart, hardLimitEnd]
+_ir_flare setLightAttenuation _attenuation; 
 if (_flareType isEqualTo "#lightreflector") then { _ir_flare setLightConePars _lightCone; };
 
 // Flare
@@ -83,7 +84,7 @@ _ir setLightAmbient _color; // sets the colour applied to the surroundings
 
 //  Brightness
 _ir setLightIntensity 1;
-_ir setLightAttenuation [0, 0, 0, 1, 40, 0, 0]; // [start, constant, linear, quadratic, hardLimitStart, hardLimitEnd]
+_ir setLightAttenuation _attenuation; // [start, constant, linear, quadratic, hardLimitStart, hardLimitEnd]
 _ir setLightDayLight false;
 _ir setLightConePars _lightCone;
 
@@ -109,20 +110,21 @@ _vis setLightConePars _lightCone;
 ///////////////////////
 
 private _startTime = _t_start + time;
+private _peakTime = _t_peak + time;
 private _endTime = _startTime + _t_duration;
-private _parameters = [_startTime, _endTime, _t_peak, _unit, [_vis, _ir, _vis_flare, _ir_flare] ];
+private _parameters = [_startTime, _endTime, _peakTime, _unit, [_vis, _ir, _vis_flare, _ir_flare] ];
 
 private _condition = { _this#1 > time && { lifeState (_this#3) in ["HEALTHY", "INJURED"] } };
 
 private _exitCode = { { deleteVehicle _x } forEach (_this#4) };
 private _codeToRun = {
-    params [ "_startTime", "_endTime", "_t_peak", "_unit", "_" ];
-    _ params ["_vis", "_ir", "_vis_flare", "_ir_flare"];
+    params [ "_startTime", "_endTime", "_peakTime", "_unit", "_sources" ];
+    _sources params ["_vis", "_ir", "_vis_flare", "_ir_flare"];
 
 	private _intensity = switch (true) do {
 		case (time < _startTime): { 0 };
-		case (time < _t_peak): { linearConversion [_startTime, _t_peak, time, 0, 1] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
-		default				   { linearConversion [  _t_peak, _endTime, time, 1, 0] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
+		case (time < _peakTime): { linearConversion [ _startTime, _peakTime, time, 0, 1 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
+		default				     { linearConversion [ _peakTime,  _endTime,  time, 1, 0 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
 	};
 
     private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];

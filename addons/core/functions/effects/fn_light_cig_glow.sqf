@@ -15,9 +15,9 @@
 * Public: No
 */
 
-#define MAX_BRIGHTNESS 1000
-#define MAX_FLARESIZE 100
-#define MAX_FLAREDIST 500
+#define MAX_BRIGHTNESS 5
+#define MAX_FLARESIZE 1
+#define MAX_FLAREDIST 600
 
 private _color =  [  1.0,  0.6, 0.40 ];
 private _offset = [ -0.07, -0.2, 0.05 ];
@@ -74,40 +74,41 @@ _vis setLightConePars _lightCone;
 ///////////////////////
 
 private _startTime = _t_start + time;
+private _peakTime = _t_peak + time;
 private _endTime = _startTime + _t_duration;
-private _parameters = [_startTime, _endTime, _t_peak, _unit, [_vis, _ir_flare] ];
+private _parameters = [_startTime, _endTime, _peakTime, _unit, [_vis, _ir_flare] ];
 
 private _condition = { _this#1 > time && { lifeState (_this#3) in ["HEALTHY", "INJURED"] } };
 
 private _exitCode = { { deleteVehicle _x } forEach (_this#4) };
 private _codeToRun = {
-    params [ "_startTime", "_endTime", "_t_peak", "_unit", "_" ];
-    _ params ["_vis", "_ir_flare"];
+	params [ "_startTime", "_endTime", "_peakTime", "_unit", "_sources" ];
+	_sources params ["_vis", "_ir_flare"];
 
 	private _intensity = switch (true) do {
 		case (time < _startTime): { 0 };
-		case (time < _t_peak): { linearConversion [_startTime, _t_peak, time, 0, 1] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
-		default				   { linearConversion [  _t_peak, _endTime, time, 1, 0] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
+		case (time < _peakTime):  { linearConversion [ _startTime, _peakTime, time, 0, 1 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
+		default					  { linearConversion [ _peakTime,  _endTime,  time, 1, 0 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
 	};
 
 
-    private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];
-    private _intensity_flare = linearConversion [ 0, 1, _intensity max 0, 0, MAX_FLARESIZE ];
+	private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];
+	private _intensity_flare = linearConversion [ 0, 1, _intensity max 0, 0, MAX_FLARESIZE ];
 
-    _vis setLightIntensity 1.00 * _intensity_light max 4;
+	_vis setLightIntensity 1.00 * _intensity_light;
 
-    _ir_flare setLightIntensity _intensity_light;
-    _ir_flare setLightFlareSize _intensity_flare;
+	_ir_flare setLightIntensity _intensity_light;
+	_ir_flare setLightFlareSize _intensity_flare;
 };
 
 [{
-    params ["_args", "_handle"];
-    _args params ["_codeToRun", "_parameters", "_exitCode", "_condition"];
+	params ["_args", "_handle"];
+	_args params ["_codeToRun", "_parameters", "_exitCode", "_condition"];
 
-    if (_parameters call _condition) then {
-        _parameters call _codeToRun;
-    } else {
-        _handle call CBA_fnc_removePerFrameHandler;
-        _parameters call _exitCode;
-    };
+	if (_parameters call _condition) then {
+		_parameters call _codeToRun;
+	} else {
+		_handle call CBA_fnc_removePerFrameHandler;
+		_parameters call _exitCode;
+	};
 }, 0, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;

@@ -23,7 +23,7 @@ if (!local _unit) exitWith { [QGVAR(EH_smoking_start), _unit, _unit] call CBA_fn
 ////////////////////////////////////////
 // Get current Variables
 ////////////////////////////////////////
-private _currentClass  = _smokeData get "currentClass";
+private _itemClass  = _smokeData get "itemClass";
 private _currentConfig = _smokeData get "currentConfig";
 private _itemType = _smokeData get "itemType";
 
@@ -31,8 +31,8 @@ private _itemType = _smokeData get "itemType";
 // Check if unit is still smoking the same cigarette
 ////////////////////////////////////////
 private _same = switch (_itemType) do {
-    case "HMD":     { _currentClass isEqualTo hmd _unit };
-    case "GOGGLES": { _currentClass isEqualTo goggles _unit };
+    case "HMD":     { _itemClass isEqualTo hmd _unit };
+    case "GOGGLES": { _itemClass isEqualTo goggles _unit };
     default { false };
 };
 
@@ -98,14 +98,14 @@ if ( _curStage < _endStage ) then {
     if ( _curPuffs >= _nextStagePuffs ) then {
 
         // Get new Stage Classname
-        private _array = _currentClass splitString "_";
+        private _array = _itemClass splitString "_";
         private _n = count _array;
         private _i = if (_array select -1 isEqualTo "nv") then { _n - 2 } else { _n - 1 };
         _array set [_i, (_array select _i trim [str _curStage, 2]) + str _nextStage ];
         private _newClass = _array joinString "_";
 
         // update Data
-        _smokeData set ["currentClass", _newClass];
+        _smokeData set ["itemClass", _newClass];
         _smokeData set [ "curStage", _nextStage];
 
         // Replace Item and Update CFG
@@ -118,7 +118,7 @@ if ( _curStage < _endStage ) then {
             };
             case "HMD": {
                 _smokeData set [ "currentConfig", (configFile >> "CfgWeapons" >> _newClass) ];
-                _unit removeWeapon _currentClass;
+                _unit removeWeapon _itemClass;
                 _unit addWeapon  _newClass;
             };
         };

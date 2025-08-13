@@ -65,7 +65,7 @@ private _itemConfig = switch (_itemType) do {
 };
 
 _smokeData set ["currentConfig", _itemConfig ];
-_smokeData set ["currentClass",  configName _itemConfig ];
+_smokeData set ["itemClass",  configName _itemConfig ];
 
 
 ////////////////////////////////////////
@@ -96,6 +96,12 @@ _smokeData set ["endStage",   _endStage   ];
 _smokeData set ["stages",     _stages     ];
 _smokeData set ["curPuffs",   _curPuffs   ];
 _smokeData set ["totalPuffs", _totalPuffs ];
+
+
+////////////////////////////////////////
+// Initial add_slotItemChanged_EH
+////////////////////////////////////////
+_unit call FUNC(add_slotItemChanged_EH);
 
 
 ////////////////////////////////////////

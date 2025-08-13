@@ -14,7 +14,7 @@ class CfgPatches {
 
         // Addon Specific Information
         // Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
-        requiredVersion = 2.10;
+        requiredVersion = REQUIRED_VERSION;
 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.

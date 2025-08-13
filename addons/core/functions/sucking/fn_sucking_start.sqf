@@ -58,7 +58,7 @@ private _itemConfig = switch (_itemType) do {
 };
 
 _suckData set ["currentConfig", _itemConfig ];
-_suckData set ["currentClass",  configName _itemConfig ];
+_suckData set ["itemClass",  configName _itemConfig ];
 
 
 ////////////////////////////////////////
@@ -109,6 +109,12 @@ private _sound = [(_itemConfig >> QPVAR(sounds))] call CBA_fnc_getCfgDataRandom;
 ////////////////////////////////////////
 private _flavor = [(_itemConfig >> QPVAR(flavor))] call CBA_fnc_getCfgDataRandom;
 if (!isNil "_flavor") then { [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavor), _this]] call CBA_fnc_localEvent; } , _flavor, 15 + random 30] call CBA_fnc_waitAndExecute; };
+
+
+////////////////////////////////////////
+// Initial add_slotItemChanged_EH
+////////////////////////////////////////
+_unit call FUNC(add_slotItemChanged_EH);
 
 
 ////////////////////////////////////////

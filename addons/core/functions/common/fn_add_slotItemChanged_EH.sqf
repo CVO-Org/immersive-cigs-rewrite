@@ -46,12 +46,16 @@ _unit addEventHandler [
         private _itemClass = _data get "itemClass";
 
         // Check if the player removed the smoking item
-        private _stopSmoking = if (_assigned) then {
+        private _stopConsuming = if (_assigned) then {
             _slot isEqualTo _itemType && { _name isNotEqualTo _itemClass }
         } else {
             _slot isEqualTo _itemType && { _name isEqualTo _itemClass }
         };
 
-        if (_stopSmoking) then { _unit setVariable [_isConsumingVarName, false, true]; call _rm_eh };
+        if (_stopConsuming) then {
+            _unit setVariable [_isConsumingVarName, false, true];
+            if (_isConsumingVarName isEqualTo QPVAR(smokeData) ) then { _unit setVariable [QPVAR(forceVanish), true]; };
+            call _rm_eh;
+        };
     }
 ];

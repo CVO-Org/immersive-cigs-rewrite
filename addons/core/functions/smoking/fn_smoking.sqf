@@ -17,8 +17,11 @@
 
 params ["_unit","_smokeData"];
 
-if (!local _unit) exitWith { [QGVAR(EH_smoking_start), _unit, _unit] call CBA_fnc_targetEvent; };
-
+if (!local _unit) exitWith {
+    _unit setVariable [QPVAR(smokeData), _smokeData, true];
+    [QGVAR(EH_smoking), _this, _unit] call CBA_fnc_targetEvent;
+    _unit setVariable [QPVAR(smokeData), nil];
+};
 
 ////////////////////////////////////////
 // Get current Variables

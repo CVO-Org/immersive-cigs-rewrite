@@ -54,4 +54,5 @@ We do not encourage anyone to smoke in real life, we don't smoke irl, it's just 
   - Brominum - Model Cigarbox and new sounds
   - ArtemisGodfrey - Helping with models
   - yepperz - Artworks
+  - Dart - Scripting
   - OverlordZorn - Rewrite of configs and scripts, fixing some models here, adding some new textures there and glueing everything together

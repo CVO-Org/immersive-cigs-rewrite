@@ -41,7 +41,7 @@ _unit addEventHandler [
         if (isNil "_slot") exitWith {};
 
         // Get Data
-        private _data = _player getVariable _dataVarName;
+        private _data = _unit getVariable _dataVarName;
         private _itemType  = _data get "itemType";
         private _itemClass = _data get "itemClass";
 

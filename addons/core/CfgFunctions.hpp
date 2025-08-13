@@ -14,6 +14,13 @@ class CfgFunctions
             class incompatibility { postInit = 1; };
         };
 
+        class common {
+            file = PATH_TO_FUNC_SUB(common);
+            
+            class add_slotItemChanged_EH {};
+        };
+        
+
         class smoking
         {
             file = PATH_TO_FUNC_SUB(smoking);
@@ -29,8 +36,6 @@ class CfgFunctions
             class smoking_start {};
             class smoking {};
             class smoking_stop {};
-
-
         };
 
         class sucking

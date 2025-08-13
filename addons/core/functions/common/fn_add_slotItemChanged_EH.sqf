@@ -20,14 +20,11 @@ params ["_unit"];
 _unit addEventHandler [
     "SlotItemChanged",
     {
-        
         params ["_unit", "_name", "_slot", "_assigned", "_weapon"];
 
 	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; };
 
-
         private _isSmoking = _unit getVariable [QPVAR(isSmoking), false];
-
         if !( _isSmoking || { _unit getVariable [QPVAR(isSucking), false] } ) exitWith _rm_eh;
 
         [

@@ -24,7 +24,7 @@ if (!local _unit) exitWith { [QGVAR(EH_sucking_start), _unit, _unit] call CBA_fn
 ////////////////////////////////////////
 // Get current Variables
 ////////////////////////////////////////
-private _currentClass  = _suckData get "currentClass";
+private _itemClass  = _suckData get "itemClass";
 private _currentConfig = _suckData get "currentConfig";
 private _itemType = _suckData get "itemType";
 
@@ -33,8 +33,8 @@ private _itemType = _suckData get "itemType";
 // Check if unit is still sucking the same sucker
 ////////////////////////////////////////
 private _same = switch (_itemType) do {
-    case "HMD":     { _currentClass isEqualTo hmd _unit };
-    case "GOGGLES": { _currentClass isEqualTo goggles _unit };
+    case "HMD":     { _itemClass isEqualTo hmd _unit };
+    case "GOGGLES": { _itemClass isEqualTo goggles _unit };
     default { false };
 };
 
@@ -81,12 +81,12 @@ if ( _curStage < _endStage ) then {
     if ( _curSucks >= _nextStageSucks ) then {
 
         // Get new Stage Classname
-        private _array = _currentClass splitString "_";
+        private _array = _itemClass splitString "_";
         _array set [2, (_array select 2 trim [str _curStage, 2]) + str _nextStage ];
         private _newClass = _array joinString "_";
 
         // update Data
-        _suckData set ["currentClass", _newClass];
+        _suckData set ["itemClass", _newClass];
         _suckData set [ "curStage", _nextStage];
 
         // Replace Item and Update CFG
@@ -99,7 +99,7 @@ if ( _curStage < _endStage ) then {
             };
             case "HMD": {
                 _suckData set [ "currentConfig", (configFile >> "CfgWeapons" >> _newClass) ];
-                _unit removeWeapon _currentClass;
+                _unit removeWeapon _itemClass;
                 _unit addWeapon  _newClass;
             };
         };

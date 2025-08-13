@@ -19,7 +19,7 @@ params [ "_unit", "_smokeData", ["_vanish", true, [false]] ];
 
 if (isNil "_smokeData") then { _unit getVariable [QPVAR(smokeData)] };
 
-private _className = _smokeData get "currentClass";
+private _className = _smokeData get "itemClass";
 
 switch (_smokeData get "itemType") do {
     case ("GOGGLES"): { removeGoggles _unit; };

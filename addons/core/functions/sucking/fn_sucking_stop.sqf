@@ -21,6 +21,6 @@ _unit setVariable [QPVAR(isSucking), false, true];
 if (_suckData get "curSucks" > _suckData get "totalSucks") then {
     switch (_suckData get "itemType") do {
         case ("GOGGLES"): { removeGoggles _unit };
-        case ("HMD"):     { _unit removeWeapon (_suckData get "currentClass") };
+        case ("HMD"):     { _unit removeWeapon (_suckData get "itemClass") };
     };
 };

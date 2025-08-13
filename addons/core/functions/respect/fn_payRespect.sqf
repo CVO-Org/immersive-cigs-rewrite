@@ -21,7 +21,7 @@ private _smokeData = _player getVariable QPVAR(smokeData);
 
 private _itemType = _smokeData get "itemType";
 
-private _class = _smokeData get "currentClass";
+private _class = _smokeData get "itemClass";
 
 switch (_itemType) do {
     case "GOGGLES": { removeGoggles _player; };

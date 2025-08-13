@@ -20,14 +20,11 @@ params ["_unit"];
 _unit addEventHandler [
     "SlotItemChanged",
     {
-        
         params ["_unit", "_name", "_slot", "_assigned", "_weapon"];
 
 	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; };
 
-
         private _isSmoking = _unit getVariable [QPVAR(isSmoking), false];
-
         if !( _isSmoking || { _unit getVariable [QPVAR(isSucking), false] } ) exitWith _rm_eh;
 
         [
@@ -44,17 +41,21 @@ _unit addEventHandler [
         if (isNil "_slot") exitWith {};
 
         // Get Data
-        private _data = _player getVariable _dataVarName;
+        private _data = _unit getVariable _dataVarName;
         private _itemType  = _data get "itemType";
         private _itemClass = _data get "itemClass";
 
         // Check if the player removed the smoking item
-        private _stopSmoking = if (_assigned) then {
+        private _stopConsuming = if (_assigned) then {
             _slot isEqualTo _itemType && { _name isNotEqualTo _itemClass }
         } else {
             _slot isEqualTo _itemType && { _name isEqualTo _itemClass }
         };
 
-        if (_stopSmoking) then { _unit setVariable [_isConsumingVarName, false, true]; call _rm_eh };
+        if (_stopConsuming) then {
+            _unit setVariable [_isConsumingVarName, false, true];
+            if (_isConsumingVarName isEqualTo QPVAR(smokeData) ) then { _unit setVariable [QPVAR(forceVanish), true]; };
+            call _rm_eh;
+        };
     }
 ];

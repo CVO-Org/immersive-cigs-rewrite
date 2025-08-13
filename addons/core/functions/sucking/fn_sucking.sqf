@@ -15,10 +15,13 @@
 * Public: No
 */
 
-params ["_unit","_suckData"];
+params ["_unit", "_suckData"];
 
-
-if (!local _unit) exitWith { [QGVAR(EH_sucking_start), _unit, _unit] call CBA_fnc_targetEvent; };
+if (!local _unit) exitWith {
+    _unit setVariable [QPVAR(suckData), _suckData, true];
+    [QGVAR(EH_sucking), _this, _unit] call CBA_fnc_targetEvent;
+    _unit setVariable [QPVAR(suckData), nil];
+};
 
 
 ////////////////////////////////////////

@@ -21,10 +21,16 @@ if (isNil "_smokeData") then { _unit getVariable [QPVAR(smokeData)] };
 
 private _className = _smokeData get "itemClass";
 
+
+// Check if the unit has had their cigarette removed from the slot 
+if ( _unit getVariable [QGVAR(forceVanish), false] ) then { _vanish = true; _unit setVariable [QGVAR(forceVanish), nil]; };
+
+
 switch (_smokeData get "itemType") do {
     case ("GOGGLES"): { removeGoggles _unit; };
     case ("HMD"):     { _unit removeWeapon _className; };
 };
+
 
 if (_vanish) exitWith {};
 

@@ -26,8 +26,6 @@ private _attenuation = [0, 0, 0, 1, 10, 0, 0]; // [start, constant, linear, quad
 
 params [ "_unit", "_sound" ];
 
-diag_log format ['[CVO](debug)(fn_light_lighter) _this: %1', _this];
-
 private _cfg = (configFile >> "CfgSounds" >> _sound);
 // Durations
 private _t_start = getNumber (_cfg >> "t_start");

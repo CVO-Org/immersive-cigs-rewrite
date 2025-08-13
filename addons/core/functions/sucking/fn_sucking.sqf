@@ -15,7 +15,7 @@
 * Public: No
 */
 
-params ["_unit","_suckData"];
+params ["_unit", "_suckData"];
 
 
 if (!local _unit) exitWith { [QGVAR(EH_sucking_start), _unit, _unit] call CBA_fnc_targetEvent; };

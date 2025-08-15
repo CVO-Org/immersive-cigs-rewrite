@@ -21,7 +21,7 @@ if (!_force && { !([_unit] call FUNC(hasLighter)) } ) exitWith {};
 
 
 // Holsters the weapon before using the lighter
-if ( SET(require_holstered_weapon) && {currentWeapon _unit != ""} ) then {
+if ( isPlayer _unit && { SET(require_holstered_weapon) && {currentWeapon _unit != ""} } ) then {
 
     [_unit] call FUNC(putWeaponAway);
     // Nested Wait Until

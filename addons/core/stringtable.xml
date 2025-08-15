@@ -73,6 +73,12 @@
             <English>Defines the amount of smoke particles dropped when a person is smoking. Clientside setting.</English>
             <French>Définit la quantité de particules de fumée rejetées lorsqu'une personne fume. Réglage côté client.</French>
         </Key>
+        <Key ID="STR_cigs_core_set_require_holstered_weapon">
+            <English>Holster Weapon when using Ligher</English>
+        </Key>
+        <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
+            <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
+        </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency">
             <English>Smoking Frequency</English>
         </Key>

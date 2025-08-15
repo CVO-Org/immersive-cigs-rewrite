@@ -18,8 +18,8 @@ class CfgFunctions
             file = PATH_TO_FUNC_SUB(common);
             
             class add_slotItemChanged_EH {};
+            class putWeaponAway {};
         };
-        
 
         class smoking
         {

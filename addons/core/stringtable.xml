@@ -21,6 +21,12 @@
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay_desc">
             <English>Defines the delay before the smoking penalty will start to wear off.\nin Minutes.</English>
         </Key>
+        <Key ID="STR_cigs_core_set_require_holstered_weapon">
+            <English>Holster Weapon when using Ligher</English>
+        </Key>
+        <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
+            <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
+        </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled">
             <English>Enable Adv. Fatigue Integration</English>
         </Key>

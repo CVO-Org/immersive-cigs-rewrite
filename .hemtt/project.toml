@@ -34,3 +34,4 @@ exclude = [
 # minor = 1
 # patch = 1
 git_hash = 0 # Default: 8
+

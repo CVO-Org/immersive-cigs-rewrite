@@ -32,6 +32,9 @@ jobs:
         - name: Set VERSION env
           run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
 
+        - name: Checkout the source code
+          uses: actions/checkout@v2
+
         - name: meta.cpp - name
           shell: pwsh
           run: |
@@ -50,9 +53,6 @@ jobs:
             $ticks = [DateTime]::UtcNow.Ticks
             $filePath = "${{ github.workspace }}/meta.cpp"
             (Get-Content $filePath) -replace 'timestamp\s*=\s*;', "timestamp = $ticks;" | Set-Content $filePath
-
-        - name: Checkout the source code
-          uses: actions/checkout@v2
 
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1

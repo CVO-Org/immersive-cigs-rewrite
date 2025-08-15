@@ -12,11 +12,12 @@
 # 3. Add STEAM_USERNAME as github repo secret
 # 4. Add STEAM_PASSWORD as github repo secret
 
-name: Release
+name: Release Dev
 
 env:
   FOLDER: '@cigs-dev'
   WORKSHOPID: '3518473416'
+  WORKSHOPNAME: 'Immersive Cigs - Rewrite [DEV]'
 
 on:
   release:
@@ -35,24 +36,13 @@ jobs:
         - name: Checkout the source code
           uses: actions/checkout@v2
 
-        - name: meta.cpp - name
+        - name: Update meta.cpp for dev release
           shell: pwsh
           run: |
-            $filePath = "${{ github.workspace }}/meta.cpp"
-            (Get-Content $filePath) -replace 'name\s*=\s*;', "name = Immersive Cigs - Rewrite [DEV];" | Set-Content $filePath
-
-        - name: meta.cpp - steamid
-          shell: pwsh
-          run: |
-            $filePath = "${{ github.workspace }}/meta.cpp"
-            (Get-Content $filePath) -replace 'publishedid\s*=\s*;', "publishedid = 3518473416;" | Set-Content $filePath
-
-        - name: meta.cpp - timestamp
-          shell: pwsh
-          run: |
-            $ticks = [DateTime]::UtcNow.Ticks
-            $filePath = "${{ github.workspace }}/meta.cpp"
-            (Get-Content $filePath) -replace 'timestamp\s*=\s*;', "timestamp = $ticks;" | Set-Content $filePath
+            ./.github/tools/update-meta.ps1 `
+              -FilePath "${{ github.workspace }}/meta.cpp" `
+              -PublishedId "${{ env.WORKSHOPID }}" `
+              -ModName "${{ env.WORKSHOPNAME }}"
 
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1

@@ -39,7 +39,7 @@ jobs:
         - name: Update meta.cpp for stable release
           shell: pwsh
           run: |
-            & "${{ github.workspace }}/.github/tools/update-meta.ps1" `
+            & "${{ github.workspace }}/tools/update-meta.ps1" `
               -FilePath "${{ github.workspace }}/meta.cpp" `
               -PublishedId "${{ env.WORKSHOPID }}" `
               -ModName "${{ env.WORKSHOPNAME }}"

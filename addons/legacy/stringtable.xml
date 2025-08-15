@@ -19,7 +19,7 @@
         </Key>
     </Package>
     <Package name="Settings-Categories">
-        <Key ID="STR_cigs_legacy_set_cat_loadout">
+        <Key ID="STR_cigs_legacy_set_subCat_loadout">
             <English>Legacy Classnames and Loadouts</English>
             <French>Anciens noms de classe et chargements</French>
         </Key>

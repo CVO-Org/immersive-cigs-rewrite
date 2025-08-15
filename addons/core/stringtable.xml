@@ -144,31 +144,31 @@
             <French>Définit le type de briquet qui sera ajouté au début d'une mission (SP seulement).</French>
         </Key>
     </Package>
-    <Package name="CBASettingsCategories">
-        <Key ID="STR_cigs_core_set_cat_ace_arsenal">
+    <Package name="CBASettings_Categories">
+        <Key ID="STR_cigs_core_set_mainCat_cigsonai">
+            <English>Immersive Cigs - Cigs On AI</English>
+            <French>Immersive Cigs - Cigs On AI</French>
+        </Key>
+        <Key ID="STR_cigs_core_set_mainCat_common">
+            <English>Immersive Cigs - Common</English>
+            <French>Immersive Cigs - Common</French>
+        </Key>
+        <Key ID="STR_cigs_core_set_mainCat_player">
+            <English>Immersive Cigs - Player Preferences</English>
+        </Key>
+        <Key ID="STR_cigs_core_set_subCat_ace_arsenal">
             <English>ACE Arsenal</English>
             <French>Arsenal ACE</French>
         </Key>
-        <Key ID="STR_cigs_core_set_cat_effects">
+        <Key ID="STR_cigs_core_set_subCat_effects">
             <English>Effects</English>
             <French>Effets</French>
             <German>Effekte</German>
         </Key>
-        <Key ID="STR_cigs_core_set_cat_habits_smoking">
+        <Key ID="STR_cigs_core_set_subCat_habits_smoking">
             <English>Habits: Smoking</English>
         </Key>
-        <Key ID="STR_cigs_core_set_cat_main">
-            <English>Immersive Cigs</English>
-            <French>Immersive Cigs</French>
-        </Key>
-        <Key ID="STR_cigs_core_set_cat_main_cigsonai">
-            <English>Immersive Cigs - Cigs On AI</English>
-            <French>Immersive Cigs - Cigs On AI</French>
-        </Key>
-        <Key ID="STR_cigs_core_set_cat_player">
-            <English>Immersive Cigs - Player Preferences</English>
-        </Key>
-        <Key ID="STR_cigs_core_set_cat_sp">
+        <Key ID="STR_cigs_core_set_subCat_sp">
             <English>Singleplayer</English>
             <French>Joueur unique</French>
             <German>Einzelspieler</German>

@@ -36,7 +36,7 @@ jobs:
         - name: Checkout the source code
           uses: actions/checkout@v2
 
-        - name: Update meta.cpp for stable release
+        - name: Create meta.cpp for stable release
           shell: pwsh
           run: |
             & "${{ github.workspace }}/tools/create-meta-cpp.ps1" `

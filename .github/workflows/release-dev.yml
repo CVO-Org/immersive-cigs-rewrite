@@ -15,12 +15,12 @@
 name: Release
 
 env:
-  FOLDER: '@cigs'
-  WORKSHOPID: '3375788189'
+  FOLDER: '@cigs-dev'
+  WORKSHOPID: '3518473416'
 
 on:
   release:
-    types: [released]
+    types: [prereleased,released]
 
 permissions:
   contents: write
@@ -32,14 +32,33 @@ jobs:
         - name: Set VERSION env
           run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
 
+        - name: meta.cpp - name
+          shell: pwsh
+          run: |
+            $filePath = "${{ github.workspace }}/meta.cpp"
+            (Get-Content $filePath) -replace 'name\s*=\s*;', "name = Immersive Cigs - Rewrite [DEV];" | Set-Content $filePath
+
+        - name: meta.cpp - steamid
+          shell: pwsh
+          run: |
+            $filePath = "${{ github.workspace }}/meta.cpp"
+            (Get-Content $filePath) -replace 'publishedid\s*=\s*;', "publishedid = 3518473416;" | Set-Content $filePath
+
+        - name: meta.cpp - timestamp
+          shell: pwsh
+          run: |
+            $ticks = [DateTime]::UtcNow.Ticks
+            $filePath = "${{ github.workspace }}/meta.cpp"
+            (Get-Content $filePath) -replace 'timestamp\s*=\s*;', "timestamp = $ticks;" | Set-Content $filePath
+
         - name: Checkout the source code
           uses: actions/checkout@v2
 
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1
 
-        - name: Run HEMTT script set_scope_1
-          run: hemtt script set_scope_1
+        - name: Run HEMTT script set_scope_2
+          run: hemtt script set_scope_2
 
         - name: Run HEMTT build
           run: hemtt release --no-archive

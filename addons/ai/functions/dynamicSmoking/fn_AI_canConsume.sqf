@@ -23,31 +23,35 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
     ! isPlayer _unit
     &&
     {
-        lifeState _unit in ["HEALTHY", "INJURED"]
+        simulationEnabled _unit
         &&
         {
-            combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
+            lifeState _unit in ["HEALTHY", "INJURED"]
             &&
             {
-                _unit isNil QGVAR(dynamicSmoking_blocked)
+                combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
                 &&
                 {
-                    !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
+                    _unit isNil QGVAR(dynamicSmoking_blocked)
                     &&
                     {
-                        if (_ignoreTime) then {
-                            true
-                        } else {
-                            private _prevTime = _unit getVariable [QPVAR(lastConsumed), -1];
-                            if (_prevTime == -1) then {
-                                true 
-                            } else {
-                                ( _prevTime + 60 * SET(dynamicSmoking_min_time) ) < CBA_missionTime
-                            }
-                        }
+                        !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
                         &&
                         {
-                            _unit call EFUNC(core,canTakeFromPack)
+                            if (_ignoreTime) then {
+                                true
+                            } else {
+                                private _prevTime = _unit getVariable [QPVAR(lastConsumed), -1];
+                                if (_prevTime == -1) then {
+                                    true 
+                                } else {
+                                    ( _prevTime + 60 * SET(dynamicSmoking_min_time) ) < CBA_missionTime
+                                }
+                            }
+                            &&
+                            {
+                                _unit call EFUNC(core,canTakeFromPack)
+                            }
                         }
                     }
                 }

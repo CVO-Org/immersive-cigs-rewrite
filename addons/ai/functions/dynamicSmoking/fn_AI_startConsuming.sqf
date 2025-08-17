@@ -56,18 +56,16 @@ private _storedItem = if (_targetSlot#1) then {
     _unit setVariable [QGVAR(dynSmoke_storedItem), _storedItem, true];
 };
 
+
 // Take item from package
 private _cigPack = selectRandom (magazines _unit select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1});
 [_unit, _ciPack] call EFUNC(core,take_from_pack);
 
-// Start the smoking loop 
 
+// Start the smoking loop 
 switch (true) do {
-    case (_unit call EFUNC(core,canStartSmoking)): { _unit call EFUNC(core,start_cig)  };
-    case (_unit call EFUNC(core,canStartSucking)): { _unit call EFUNC(core,start_suck) };
+    case (_unit call EFUNC(core,canStartSmoking)): { [QGVAR(EH_ai_startCig),  _unit, _unit] call CBA_fnc_targetEvent; };
+    case (_unit call EFUNC(core,canStartSucking)): { [QGVAR(EH_ai_startSuck), _unit, _unit] call CBA_fnc_targetEvent; };
 };
 
-
-// TODO: Make check if its a suckable or smokable. Adjust accordingly
-
-[ EFUNC(core,start_cig), [_unit, true], random 5 ] call CBA_fnc_waitAndExecute;
+// TODO

@@ -16,6 +16,7 @@
 */
 
 [QGVAR(EH_ai_startCig), EFUNC(core,start_cig)] call CBA_fnc_addEventHandler;
+[QGVAR(EH_ai_startSuck), EFUNC(core,start_Suck)] call CBA_fnc_addEventHandler;
 
 
 if (!isServer) exitWith {};

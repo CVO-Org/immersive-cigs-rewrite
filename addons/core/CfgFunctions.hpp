@@ -101,20 +101,6 @@ class CfgFunctions
             class addEatAction { preInit = 1; };
             class canEat {};
         };
-        class cigs_on_ai
-        {
-            file = PATH_TO_FUNC_SUB(cigs_on_ai);
-            class preInit { preInit = 1; };
-
-            class cbaSetting_addSetting {};
-            class cbaSetting_perSide {};
-
-            class hashmap {};
-
-            class apply {};
-
-            class queue {};
-        };
         class combustion {
             file = PATH_TO_FUNC_SUB(combustion);
 

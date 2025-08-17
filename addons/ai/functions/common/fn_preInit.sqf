@@ -15,7 +15,14 @@
 * Public: No
 */
 
+[QGVAR(EH_ai_startCig), EFUNC(core,start_cig)] call CBA_fnc_addEventHandler;
+
+
 if (!isServer) exitWith {};
+
+//////////////////////////////////////////////////
+///////////// Cigs on AI
+//////////////////////////////////////////////////
 
 ["CBA_SettingChanged", {
     params ["_setting", "_value"];
@@ -33,9 +40,13 @@ if (!isServer) exitWith {};
 addMissionEventHandler ["EntityCreated", {
 	params ["_unit"];
 
-    if !(_unit isKindOf "CAManBase") exitWith {};
-    if  (_unit isKindOf "CBA_NamespaceDummy") exitWith {};
-    if  (isPlayer _unit) exitWith {};
+    if (!(_unit isKindOf "CAManBase") || { _unit isKindOf "CBA_NamespaceDummy" || { isPlayer _unit } } ) exitWith {};
 
-    [_unit] call FUNC(queue);
+    [_unit] call FUNC(addToQueue);
 }];
+
+//////////////////////////////////////////////////
+///////////// Dynamic AI Smoking
+//////////////////////////////////////////////////
+
+GVAR(dynamicSmoking_units) = [];

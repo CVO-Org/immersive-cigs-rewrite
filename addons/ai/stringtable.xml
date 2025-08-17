@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_ai">
+    <Package name="CBASettings">
+        <Key ID="STR_cigs_ai_set_cigsonai_chance">
+            <English>Probability</English>
+            <French>Probabilité</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_chance_desc">
+            <English>Defines how likely it is that a unit has cigarettes on them.</English>
+            <French>Définit la probabilité qu'une unité ait des cigarettes sur elle.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_delay">
+            <English>Delay</English>
+            <French>Délai</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_delay_desc">
+            <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
+            <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_enable">
+            <English>Cigs on Ai - Enable</English>
+            <French>Cigs on Ai - Activer</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
+            <English>Enables the system to distribute cigarettes across AI units.</English>
+            <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
+            <English>Dynamic Ai Smoking - Enable</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
+            <English>Enables the system to dynamically make AI smoke cigarettes.</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time">
+            <English>Min. Time between Cigs</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time_desc">
+            <English>This values define the minimum time in minutes that must have passed before a unit can smoke another cigarette.</English>
+        </Key>
+    </Package>
+    <Package name="CBASettings_Categories">
+        <Key ID="STR_cigs_ai_set_mainCat_AI">
+            <English>Immersive Cigs - AI</English>
+            <French>Immersive Cigs - AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_cigsonai">
+            <English>Cigs On AI</English>
+            <French>Cigs On AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
+            <English>Dynamic AI Smoking</English>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_ai_author">
+            <English>OverlordZorn</English>
+        </Key>
+    </Package>
+</Project>

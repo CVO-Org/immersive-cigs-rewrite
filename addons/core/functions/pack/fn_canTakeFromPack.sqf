@@ -9,14 +9,11 @@
 * None
 *
 * Example:
-* ['something', player] call prefix_component_fnc_functionname
+* ['something', player] call cigs_core_fnc_canTakeFromPack;
 *
 * Public: No
 */
 
 
-//  moveToCompleted
-
 params ["_unit"];
 magazines _unit findIf { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack) ) == 1} > -1
-

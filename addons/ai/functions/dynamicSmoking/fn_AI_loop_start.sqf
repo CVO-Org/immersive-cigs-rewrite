@@ -16,13 +16,14 @@
 */
 
 
+GVAR(dynamicSmoking_cleanup_inProgress) = true;
+call FUNC(AI_cleanupArray);
 
-
-
-
-
-
-
-
-
-[ FUNC(AI_loop), [_array, 0, count _array - 1 ], 10 ] call CBA_fnc_waitAndExecute;
+[
+    {
+        isNil QGVAR(dynamicSmoking_cleanup_inProgress)
+    },
+    {
+        [ + GVAR(dynamicSmoking_units) ] call FUNC(AI_loop);
+    }
+] call CBA_fnc_waitUntilAndExecute;

@@ -53,7 +53,7 @@ if ( isPlayer _unit && { SET(require_holstered_weapon) && {currentWeapon _unit !
     [_unit, _force] call FUNC(useLighter);
     [_unit] call FUNC(smoking_start);
 
-    if (!isPlayer _unit) then { _unit setVariable [QGVAR(lastCigarette), CBA_missionTime, true]; };
+    if (!isPlayer _unit) then { _unit setVariable [QGVAR(lastCig), CBA_missionTime, true]; };
 
 };
 

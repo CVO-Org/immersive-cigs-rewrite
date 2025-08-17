@@ -34,8 +34,8 @@ class CfgFunctions
             class AI_loop_start {};
             class AI_loop {};
             
-            class AI_canSmoke {};
-            class AI_startSmoking {};
+            class AI_canConsume {};
+            class AI_startConsuming {};
         };
     };
 };

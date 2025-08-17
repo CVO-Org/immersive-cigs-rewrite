@@ -15,12 +15,27 @@
 * Public: No
 */
 
-params ["_array", "_index", "_indexEnd"];
+params [ "_array" ];
 
-private _next = { [ FUNC(AI_loop), [_array, _index + 1, _indexEnd], 10 ] call CBA_fnc_waitAndExecute; };
+private _unit = _array deleteAt (floor random count _array);
 
-private _unit = _array select _index;
+private _canConsume = _unit call FUNC(AI_canConsume);
 
-private _canSmoke = _unit call FUNC(AI_canSmoke);
+if ( _canConsume ) then {  };
 
-// TODO Continue
+
+if (_array isEqualTo []) then {
+
+    // restart the loop
+    [ FUNC(AI_loop_start), nil, 60 ] call CBA_fnc_waitAndExecute;
+
+} else {
+    
+    // Continue Iterating over the loop
+    [
+        FUNC(AI_loop),
+        [_array],
+        [10, 60] select _canConsume
+    ] call CBA_fnc_waitAndExecute;
+
+};

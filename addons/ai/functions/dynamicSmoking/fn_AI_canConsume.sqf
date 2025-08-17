@@ -26,19 +26,19 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
         lifeState _unit in ["HEALTHY", "INJURED"]
         &&
         {
-            _unit isNil QGVAR(dynamicSmoking_blocked)
+            combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
             &&
             {
-                combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
+                _unit isNil QGVAR(dynamicSmoking_blocked)
                 &&
                 {
-                    ! ( _unit getVariable [QPVAR(isSmoking), false] )
+                    !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
                     &&
                     {
                         if (_ignoreTime) then {
                             true
                         } else {
-                            private _prevTime = _unit getVariable [QGVAR(lastCigarette), -1];
+                            private _prevTime = _unit getVariable [QPVAR(lastConsumed), -1];
                             if (_prevTime == -1) then {
                                 true 
                             } else {

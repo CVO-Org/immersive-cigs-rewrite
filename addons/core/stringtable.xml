@@ -127,10 +127,6 @@
         </Key>
     </Package>
     <Package name="CBASettings_Categories">
-        <Key ID="STR_cigs_core_set_mainCat_cigsonai">
-            <English>Immersive Cigs - Cigs On AI</English>
-            <French>Immersive Cigs - Cigs On AI</French>
-        </Key>
         <Key ID="STR_cigs_core_set_mainCat_common">
             <English>Immersive Cigs - Common</English>
             <French>Immersive Cigs - Common</French>
@@ -325,11 +321,7 @@
     </Package>
     <Package name="Main">
         <Key ID="STR_cigs_core_author">
-            <English>Rebel / Facel / OverlordZorn</English>
-            <French>Rebel / Facel / OverlordZorn</French>
-            <German>Rebel / Facel / OverlordZorn</German>
-            <Japanese>Rebel / Facel / OverlordZorn</Japanese>
-            <Chinese>Rebel / Facel / OverlordZorn</Chinese>
+            <English>OverlordZorn</English>
         </Key>
     </Package>
     <Package name="Notification">

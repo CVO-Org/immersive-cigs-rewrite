@@ -18,6 +18,9 @@
 params ["_unit", "_suckData"];
 _unit setVariable [QPVAR(isSucking), false, true];
 
+_unit setVariable [QPVAR(lastConsumed), CBA_missionTime, true];
+
+
 if (_suckData get "curSucks" > _suckData get "totalSucks") then {
     switch (_suckData get "itemType") do {
         case ("GOGGLES"): { removeGoggles _unit };

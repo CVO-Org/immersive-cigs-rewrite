@@ -24,6 +24,7 @@ private _isAwake = lifeState _unit in ["HEALTHY", "INJURED"];
 private _isBurning = _unit getVariable ["ace_fire_intensity", 0] > 0;
 if ( !_skipAnimation && { _isAwake && (!_isBurning) } ) then { [_unit, QEGVAR(anim,cig_out), 1] call FUNC(anim); };
 
+if (! isPlayer _unit) then { _unit setVariable [QPVAR(lastConsumed), round CBA_missionTime, true] };
 
 // 5% Chance for the unit to keep their cig when getting uncon/dead
 if ( !_isAwake && { random 1 > 0.05 } ) exitWith {};

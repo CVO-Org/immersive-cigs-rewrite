@@ -26,7 +26,9 @@ private _oldMag = _matchesMags select 0;
 if ((_oldMag select 1) > 1) then {
     _unit addMagazine [_mag, (_oldMag select 1) - 1];
 } else {
-    if (getNumber (configFile >> "CfgMagazines" >> _mag >> "count") > 1) then {
-        [QGVAR(EH_notify), [format [LLSTRING(is_Empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 1], _unit] call CBA_fnc_targetEvent;
+    if ( isPlayer _unit && { getNumber (configFile >> "CfgMagazines" >> _mag >> "count") > 1} ) then {
+        // I dont know why this used a target event :thonk:
+        // [QGVAR(EH_notify), [format [LLSTRING(is_Empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 1], _unit] call CBA_fnc_targetEvent;
+        [format [LLSTRING(is_Empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 1] call CBA_fnc_notify;
     };
 };

@@ -22,8 +22,7 @@ private _code = {
 
     params ["_unit"];
 
-    if (isNull _unit) exitWith {};
-    if (isPlayer _unit) exitWith {};
+    if (isNull _unit || {isPlayer _unit}) exitWith {};
 
     private _queue = missionNamespace getVariable [QPVAR(queue), nil];
     private _startPFEH = false;
@@ -50,8 +49,8 @@ private _code = {
                             {
                                 params ["_args", "_handle"];
 
-                                private _queue = missionNamespace getVariable [QPVAR(queue), "404"];
-                                if (_queue isEqualTo "404") exitWith { _handle call CBA_fnc_removePerFrameHandler; };
+                                private _queue = missionNamespace getVariable [QPVAR(queue), nil];
+                                if (isNil "_queue") exitWith { _handle call CBA_fnc_removePerFrameHandler; };
 
                                 [_queue deleteAt 0] call FUNC(apply);
 

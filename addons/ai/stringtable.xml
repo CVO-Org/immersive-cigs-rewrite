@@ -6,11 +6,11 @@
             <French>Immersive Cigs - AI</French>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_cigsonai">
-            <English>Cigs On AI</English>
-            <French>Cigs On AI</French>
+            <English>02. Cigs on AI</English>
+            <French>Cigs on AI</French>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
-            <English>Dynamic AI Smoking</English>
+            <English>01. Dynamic AI Smoking</English>
         </Key>
     </Package>
     <Package name="CBASettings_cigsonai">
@@ -31,8 +31,8 @@
             <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_enable">
-            <English>Cigs on Ai - Enable</English>
-            <French>Cigs on Ai - Activer</French>
+            <English>Enable</English>
+            <French>Activer</French>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
             <English>Enables the system to distribute cigarettes across AI units.</English>
@@ -42,15 +42,16 @@
     <Package name="CBASettings_dynamicSmoking">
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
             <English>Enable</English>
+            <French>Activer</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
-            <English>Enables the system to dynamically make AI smoke cigarettes.</English>
+            <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time">
             <English>Min. Time between Cigs</English>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time_desc">
-            <English>This values define the minimum time in minutes that must have passed before a unit can smoke another cigarette.</English>
+            <English>This values define the minimum time in Minutes that must have passed before a unit can smoke another cigarette.</English>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>

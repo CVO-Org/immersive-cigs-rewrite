@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+diag_log format ['[CVO](debug)(fn_AI_startConsuming) _unit: %1', _unit];
+
 if !(local _unit) exitWith {};
 if (isPlayer _unit) exitWith {};
 
@@ -59,7 +61,7 @@ private _storedItem = if (_targetSlot#1) then {
 
 // Take item from package
 private _cigPack = selectRandom (magazines _unit select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1});
-[_unit, _ciPack] call EFUNC(core,take_from_pack);
+[_unit, _ciPack] call EFUNC(core,takeFromPack);
 
 
 // Start the smoking loop 

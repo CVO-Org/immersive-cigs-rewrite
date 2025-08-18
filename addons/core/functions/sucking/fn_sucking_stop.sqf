@@ -18,8 +18,7 @@
 params ["_unit", "_suckData"];
 _unit setVariable [QPVAR(isSucking), false, true];
 
-_unit setVariable [QPVAR(lastConsumed), CBA_missionTime, true];
-
+if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
 
 if (_suckData get "curSucks" > _suckData get "totalSucks") then {
     switch (_suckData get "itemType") do {

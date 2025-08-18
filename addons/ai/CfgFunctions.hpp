@@ -36,6 +36,10 @@ class CfgFunctions
             
             class AI_canConsume {};
             class AI_startConsuming {};
+
+            class AI_updateCanConsumeAgain {};
+            class AI_addUnitToFramework {};
+
         };
     };
 };

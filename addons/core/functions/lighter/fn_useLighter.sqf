@@ -16,13 +16,7 @@
 */
 
 
-// Why check if it can be checked before ?
-/*
-if (!(QPVAR(matches) in (magazines _unit)) && !(QPVAR(lighter) in (magazines _unit))) exitWith {
-    [QGVAR(EH_notify), [LLSTRING(no_matches_or_lighter), 2.5], _unit] call CBA_fnc_targetEvent;
-    false
-};
-*/
+
 
 params [ "_unit", ["_forced", false, [true]] ];
 

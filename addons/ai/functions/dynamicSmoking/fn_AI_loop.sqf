@@ -17,25 +17,24 @@
 
 params [ "_array" ];
 
+diag_log format ['[CVO](debug)(fn_AI_loop) count _array: %1', count _array];
+
+private _random = random 1;
+diag_log format ['[CVO](debug)(fn_AI_loop) _random: %1', _random];
+
 private _unit = _array deleteAt (floor random count _array);
 
 private _canConsume = _unit call FUNC(AI_canConsume);
 
-if ( _canConsume ) then {  };
+if ( _canConsume ) then { _unit call FUNC(AI_startConsuming) };
 
 
-if (_array isEqualTo []) then {
-
-    // restart the loop
-    [ FUNC(AI_loop_start), nil, 60 ] call CBA_fnc_waitAndExecute;
-
-} else {
+if (_array isNotEqualTo []) then {
     
     // Continue Iterating over the loop
     [
         FUNC(AI_loop),
         [_array],
-        [10, 60] select _canConsume
+        1
     ] call CBA_fnc_waitAndExecute;
-
 };

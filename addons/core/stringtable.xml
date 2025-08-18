@@ -265,7 +265,7 @@
         </Key>
     </Package>
     <Package name="Interactions_pack">
-        <Key ID="STR_cigs_core_take_from_pack">
+        <Key ID="STR_cigs_core_takeFromPack">
             <English>Take from Pack</English>
             <French>Prendre du paquet</French>
             <German>Aus der Sachtel nehmen</German>

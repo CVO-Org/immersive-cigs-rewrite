@@ -22,14 +22,19 @@ private _code = {
 
     params ["_unit"];
 
+    private _counter = missionNamespace getVariable [QGVAR(counter_cigsonai), 0];
+    _counter = _counter + 1;
+    missionNamespace setVariable [QGVAR(counter_cigsonai), _counter];
+    diag_log format ['[CVO](debug)(fn_addToQueue) GVAR(counter_cigsonai): %1', GVAR(counter_cigsonai)];
+
     if (isNull _unit || {isPlayer _unit}) exitWith {};
 
-    private _queue = missionNamespace getVariable [QPVAR(queue), nil];
+    private _queue = missionNamespace getVariable [QGVAR(cigsonai_queue), nil];
     private _startPFEH = false;
 
     if (isNil "_queue") then {
         _queue = [];
-        missionNamespace setVariable [QPVAR(queue), _queue];
+        missionNamespace setVariable [QGVAR(cigsonai_queue), _queue];
         _startPFEH = true;
     };
 
@@ -49,14 +54,14 @@ private _code = {
                             {
                                 params ["_args", "_handle"];
 
-                                private _queue = missionNamespace getVariable [QPVAR(queue), nil];
+                                private _queue = missionNamespace getVariable [QGVAR(cigsonai_queue), nil];
                                 if (isNil "_queue") exitWith { _handle call CBA_fnc_removePerFrameHandler; };
 
                                 [_queue deleteAt 0] call FUNC(apply);
 
-                                if (count _queue == 0) then { missionNamespace setVariable [QPVAR(queue), nil]; };
+                                if (count _queue == 0) then { missionNamespace setVariable [QGVAR(cigsonai_queue), nil]; };
                             },
-                            1,
+                            0.1,
                             []
                         ] call CBA_fnc_addPerFrameHandler;
                     }

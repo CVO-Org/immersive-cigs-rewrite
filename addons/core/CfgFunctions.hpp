@@ -19,6 +19,8 @@ class CfgFunctions
             
             class add_slotItemChanged_EH {};
             class putWeaponAway {};
+
+            class removeItemFromMag {};
         };
 
         class smoking
@@ -68,9 +70,8 @@ class CfgFunctions
             file = PATH_TO_FUNC_SUB(pack);
 
             class canTakeFromPack {};
-            class take_from_pack {};
+            class takeFromPack {};
 
-            class removeItemFromMag {};
 
             class action_pack_children {};
         };

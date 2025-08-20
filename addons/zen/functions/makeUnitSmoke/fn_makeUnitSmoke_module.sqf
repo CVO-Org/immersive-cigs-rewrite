@@ -17,9 +17,11 @@
 
 params ["_posASL", "_unit"];
 
-if (isNull _unit) exitWith { [LLSTRING(module_makeUnitSmoke_noUnit), 1] call CBA_fnc_notify; };
-if (_unit call EFUNC(core,isPlayer)) exitWith { [LLSTRING(module_makeUnitSmoke_player), 1] call CBA_fnc_notify; };
-if !(_unit isKindOf "CAManBase") exitWith { [LLSTRING(module_makeUnitSmoke_notUnit), 1] call CBA_fnc_notify; };
+if  ( isNull _unit                                ) exitWith { [objNull, LLSTRING(module_makeUnitSmoke_noUnit)]         call BIS_fnc_showCuratorFeedbackMessage; };
+if  ( _unit call EFUNC(core,isPlayer)             ) exitWith { [objNull, LLSTRING(module_makeUnitSmoke_player)]         call BIS_fnc_showCuratorFeedbackMessage; };
+if !( _unit isKindOf "CAManBase"                  ) exitWith { [objNull, LLSTRING(module_makeUnitSmoke_notUnit)]        call BIS_fnc_showCuratorFeedbackMessage; };
+if !( _unit getVariable [QPVAR(isSmoking), false] ) exitWith { [objNull, LLSTRING(module_makeUnitSmoke_alreadySmoking)] call BIS_fnc_showCuratorFeedbackMessage; };
+if !( _unit getVariable [QPVAR(isSucking), false] ) exitWith { [objNull, LLSTRING(module_makeUnitSmoke_alreadySucking)] call BIS_fnc_showCuratorFeedbackMessage; };
 
 
 /////////////////////////////

@@ -38,6 +38,12 @@
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_notUnit">
             <English>Failed - Target not a Unit.</English>
         </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySmoking">
+            <English>Failed - Unit already Smoking.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySucking">
+            <English>Failed - Unit already Sucking.</English>
+        </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_player">
             <English>Failed - Selected Unit is Player controlled.</English>
         </Key>

@@ -33,21 +33,27 @@ if (isNil "_slot") then { _slot = SET(dynamicSmoking_slot) };
 
 // TODO: Investigate unit not getting their facewear removed!!
 
-private _targetSlot = switch (true) do {
+// [slot, needsRemoval]
+switch (true) do {
     case (_curGlasses isEqualTo ""): { ["GOGGLES", false] };
     case (_curHMD     isEqualTo ""): { ["HMD", false] };
     default { [_slot, true] };
-};
+} params ["_targetSlot", "_needsRemoval"];
+
+
+
 
 // If setting is to not remove any item but it the targetslot is blocked, exit
-if !(SET(dynamicSmoking_slot_remove) || { _targetSlot#1 } ) exitWith {};
+if ( _needsRemoval && { !SET(dynamicSmoking_slot_remove) } ) exitWith {};
 
-if (_targetSlot select 0 isEqualTo "RANDOM") then { _targetSlot set [ 0, selectRandom ["GOGGLES", "HMD"] ] };
+// Handle Rnadom
+if (_targetSlot isEqualTo "RANDOM") then { _targetSlot = selectRandom ["GOGGLES", "HMD"]; };
 
+diag_log format ['[CVO](debug)(fn_startConsuming) _targetSlot: %1', _targetSlot];
 
 // remove and store current goggles/hmd item
-private _storedItem = if (_targetSlot#1) then {
-    switch (_targetSlot#1) do {
+private _storedItem = if (_needsRemoval) then {
+    switch (_targetSlot) do {
         case "GOGGLES": {
             removeGoggles _unit;
             [_curGlasses, "GOGGLES"]
@@ -58,7 +64,9 @@ private _storedItem = if (_targetSlot#1) then {
             [_curHMD, "HMD"]
         };
     };
+
     [_unit, _storedItem#0] call CBA_fnc_addItem;
+    
     _unit setVariable [QGVAR(dynSmoke_storedItem), _storedItem, true];
 };
 

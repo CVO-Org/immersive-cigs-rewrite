@@ -19,7 +19,7 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
 
 ! isNull _unit
 && {
-    ! isPlayer _unit
+    ! (_unit call EFUNC(core,isPlayer))
     && {
         simulationEnabled _unit
         && {

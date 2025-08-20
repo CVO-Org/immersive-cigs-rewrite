@@ -26,7 +26,7 @@ private _oldMag = _matchesMags select 0;
 if ((_oldMag select 1) > 1) then {
     _unit addMagazine [_mag, (_oldMag select 1) - 1];
 } else {
-    if ((getNumber (configFile >> "CfgMagazines" >> _mag >> "count") > 1) && { isPlayer _unit}) then {
+    if ((getNumber (configFile >> "CfgMagazines" >> _mag >> "count") > 1) && { _unit call EFUNC(core,isPlayer)}) then {
         [QGVAR(EH_notify), [format [LLSTRING(is_Empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 1]] call CBA_fnc_localEvent;
     };
 };

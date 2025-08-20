@@ -35,7 +35,7 @@ _distance = linearConversion [
 
 [ _unit, _sound, _distance, true, true, true ] call CBA_fnc_globalSay3d;
 
-if (isPlayer _unit) then {
+if (_unit call EFUNC(core,isPlayer)) then {
     enableCamShake true;
 	addCamShake [
 		1 + (4 * _coughIntensity),

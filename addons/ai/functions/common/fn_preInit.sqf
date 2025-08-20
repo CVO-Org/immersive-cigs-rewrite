@@ -15,9 +15,11 @@
 * Public: No
 */
 
-[QGVAR(EH_ai_startCig), EFUNC(core,start_cig)] call CBA_fnc_addEventHandler;
-[QGVAR(EH_ai_startSuck), EFUNC(core,start_Suck)] call CBA_fnc_addEventHandler;
+[QGVAR(eh_startCig), EFUNC(core,start_cig)] call CBA_fnc_addEventHandler;
+[QGVAR(eh_startSuck), EFUNC(core,start_Suck)] call CBA_fnc_addEventHandler;
 
+[QGVAR(EH_startConsuming), FUNC(startConsuming)] call CBA_fnc_addEventHandler;
+[QGVAR(EH_addUnitToFramework), FUNC(addUnitToFramework)] call CBA_fnc_addEventHandler;
 
 if (!isServer) exitWith {};
 
@@ -51,3 +53,4 @@ addMissionEventHandler ["EntityCreated", {
 //////////////////////////////////////////////////
 
 GVAR(dynamicSmoking_units) = [];
+

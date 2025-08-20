@@ -15,12 +15,11 @@
 * Public: No
 */
 
-params ["_unit"];
+params [ "_unit", "_package", "_slot" ];
 
 diag_log format ['[CVO](debug)(fn_AI_startConsuming) _unit: %1', _unit];
 
-if !(local _unit) exitWith {};
-if (isPlayer _unit) exitWith {};
+if ( (_unit call EFUNC(core,isPlayer)) || { ! local _unit } ) exitWith {};
 
 // Check if unit has Cigarette Pack
 if !( _unit call EFUNC(core,canTakeFromPack) ) exitWith {};
@@ -30,16 +29,21 @@ if !( _unit call EFUNC(core,canTakeFromPack) ) exitWith {};
 private _curGlasses = goggles _unit;
 private _curHMD = hmd _unit;
 
+if (isNil "_slot") then { _slot = SET(dynamicSmoking_slot) };
+
+// TODO: Investigate unit not getting their facewear removed!!
+
 private _targetSlot = switch (true) do {
     case (_curGlasses isEqualTo ""): { ["GOGGLES", false] };
     case (_curHMD     isEqualTo ""): { ["HMD", false] };
-    default { [QSET(dynamicSmoking_slot), true] };
+    default { [_slot, true] };
 };
 
 // If setting is to not remove any item but it the targetslot is blocked, exit
 if !(SET(dynamicSmoking_slot_remove) || { _targetSlot#1 } ) exitWith {};
 
 if (_targetSlot select 0 isEqualTo "RANDOM") then { _targetSlot set [ 0, selectRandom ["GOGGLES", "HMD"] ] };
+
 
 // remove and store current goggles/hmd item
 private _storedItem = if (_targetSlot#1) then {
@@ -58,16 +62,17 @@ private _storedItem = if (_targetSlot#1) then {
     _unit setVariable [QGVAR(dynSmoke_storedItem), _storedItem, true];
 };
 
+if (isNil "_package") then { _package = selectRandom (magazines _unit select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1}) };
 
 // Take item from package
-private _cigPack = selectRandom (magazines _unit select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1});
-[_unit, _ciPack] call EFUNC(core,takeFromPack);
+[
+    _unit,
+    _package
+] call EFUNC(core,takeFromPack);
 
 
-// Start the smoking loop 
+// Start consumption
 switch (true) do {
-    case (_unit call EFUNC(core,canStartSmoking)): { [QGVAR(EH_ai_startCig),  _unit, _unit] call CBA_fnc_targetEvent; };
-    case (_unit call EFUNC(core,canStartSucking)): { [QGVAR(EH_ai_startSuck), _unit, _unit] call CBA_fnc_targetEvent; };
+    case (_unit call EFUNC(core,canStartSmoking)): { [QGVAR(eh_startCig),  _unit ] call CBA_fnc_localEvent; };
+    case (_unit call EFUNC(core,canStartSucking)): { [QGVAR(eh_startSuck), _unit ] call CBA_fnc_localEvent; };
 };
-
-// TODO

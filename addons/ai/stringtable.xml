@@ -47,17 +47,17 @@
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
             <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
         </Key>
-        <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time">
-            <English>Min. Time between Cigs</English>
-        </Key>
-        <Key ID="STR_cigs_ai_set_dynamicSmoking_min_time_desc">
-            <English>This values define the minimum time in Minutes that must have passed before a unit can smoke another cigarette.</English>
-        </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
             <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg">
+            <English>Average Time between Cigs</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
+            <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
             <English>Preffered Slot</English>

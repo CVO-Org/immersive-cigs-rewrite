@@ -20,40 +20,45 @@ params ["_unit", ["_force", false, [true]]];
 if (!_force && { !([_unit] call FUNC(hasLighter)) } ) exitWith {};
 
 // Holsters the weapon before using the lighter, but only if its a player and the setting is enabled and its not already holstered
-if ( isPlayer _unit && { SET(require_holstered_weapon) && {currentWeapon _unit != ""} } ) then {
+if ( SET(require_holstered_weapon) && {currentWeapon _unit != ""} ) then {
 
+    private _weaponState = weaponState _unit;
+    _weaponState resize 3;
+    _unit setVariable [QGVAR(lighter_weaponState), _weaponState];
+
+    // 1. Put weapon on back
     [_unit] call FUNC(putWeaponAway);
-    // Nested WUAEs
-    // 1. WUAE animation phase is not 0 and the "put weapon on back" animation has started"
-    // 2. WUAE animation phase is 0 again and the "put weapon on back" animation is done
-    [
-        {
-            getUnitMovesInfo _this#2#0 select 5 isNotEqualTo 0
-        },
-        CBA_fnc_waitUntilAndExecute,
-        [
-            {
-                getUnitMovesInfo _this#0 select 5 isEqualTo 0
-            },
-            {
-                params ["_unit", ["_force", false, [true]]];
-                if !(lifeState _unit in ["HEALTHY", "INJURED"]) exitWith {};
-                [_unit, _force] call FUNC(useLighter);
-                [_unit] call FUNC(smoking_start);
-            },
-            _this,
-            3
-        ],
-        3,
-        CBA_fnc_waitUntilAndExecute
-    ] call CBA_fnc_waitUntilAndExecute;
+
+    // 2. Wait until weapon is on the back
+    private _condition = { gestureState _unit select [1, 3] isNotEqualTo "mov" };
+    private _statement = {
+        params ["_unit", "_force"];
+
+        if !(lifeState _unit in ["HEALTHY", "INJURED"]) exitWith {};
+        // 3. Use Lighter
+        [_unit, _force] call FUNC(useLighter);
+        [_unit] call FUNC(smoking_start);
+
+        // 4. Add Event Handler: Gesture Done: cig_in.
+        _unit addEventHandler ["GestureDone", {
+            params ["_unit", "_gesture"];
+
+            if (_gesture isNotEqualTo QEGVAR(anim,cig_in)) exitWith {};
+
+            // Remove current EH
+            _unit removeEventHandler [_thisEvent, _thisEventHandler];
+
+            // 5. Reqeuip weapon.
+            if (_unit isNil QGVAR(lighter_weaponState)) exitWith {};
+            _unit selectWeapon (_unit getVariable QGVAR(lighter_weaponState));
+            _unit setVariable [QGVAR(lighter_weaponState), nil];
+        }];
+    };
+    [ _condition, _statement, [_unit, _force], 2,_statement] call CBA_fnc_waitUntilAndExecute;
 
 } else {
 
     [_unit, _force] call FUNC(useLighter);
     [_unit] call FUNC(smoking_start);
 
-    if (!isPlayer _unit) then { _unit setVariable [QGVAR(lastCig), CBA_missionTime, true]; };
-
 };
-

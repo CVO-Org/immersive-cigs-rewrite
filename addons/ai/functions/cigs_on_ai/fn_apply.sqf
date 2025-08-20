@@ -17,8 +17,9 @@
 
 params ["_unit"];
 
-if (!SET(cigsonai_enable) || { isNull _unit || { isPlayer _unit } } ) exitWith {};
+if (!SET(cigsonai_enable) || { isNull _unit || { _unit call EFUNC(core,isPlayer) } } ) exitWith {};
 
 // if ( random 1 > SET(cigsonai_chance) ) exitWith {}; // TODO REMOVE COMMENT
 
 [FUNC(addCigItemsToUnit), [_unit], SET(cigsonai_delay) max 5] call CBA_fnc_waitAndExecute;
+

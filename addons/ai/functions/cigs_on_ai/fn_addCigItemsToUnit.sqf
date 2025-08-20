@@ -19,12 +19,19 @@ params ["_unit"];
 
 private _map = missionNamespace getVariable [QGVAR(cigsOnAI_hashmap), nil];
 
+if (isNil "_map") exitWith {};
+
 private _consumables = [];
 
 for "_i" from 1 to (ceil random 3) do {
     // Add cig package to unit
-    private _package = selectRandom (_map get str side _unit);
-    if (isNil "_package") exitWith { ERROR_2("package nil - Unit %1 Side %2 undefined",_unit,str side _unit) };
+    private _array = (_map get str side _unit);
+    if (_array isEqualTo []) exitWith { ERROR_1("array empty - No Cigs enabled for %1",str side _unit) };
+    private _package = selectRandom _array;
+    if (isNil "_package") then {
+        ERROR_2("package nil - Unit %1 Side %2 undefined - Default: NIL Cigs",_unit,str side _unit);
+        _package = QEGVAR(nil,cigpack);
+    };
 
     private _packageSize = getNumber ( configFile >> "CfgMagazines" >> _package >> "count");
 
@@ -48,4 +55,4 @@ if ( _consumables findIf { getNumber ( configFile >> "CfgGlasses" >> _x >> QPVAR
 };
 
 // DynamicSmoking
-_unit call FUNC(AI_addUnitToFramework);
+_unit call FUNC(addUnitToFramework);

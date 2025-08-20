@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_zen">
+    <Package name="CBASettings_Categories"></Package>
+    <Package name="CBASettings_zen"></Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_zen_author">
+            <English>Cigs Rewrite Team</English>
+        </Key>
+        <Key ID="STR_cigs_zen_authors">
+            <English>OverlordZorn</English>
+        </Key>
+    </Package>
+    <Package name="ZEN_ModuleName">
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke">
+            <English>Make Unit Smoke</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand">
+            <English>Type Cigarette Brand</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand_desc">
+            <English>Select the desired cigarette brand.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_add">
+            <English>Automate Smoking</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_add_desc">
+            <English>Will add the Unit to the AI Dynamic Smoking System.\nThe Unit will automatically smoke again after the first cigarette.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
+            <English>Type Lighter</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_desc">
+            <English>Select the desired Lighter Type.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
+            <English>Failed - No Unit has been selected.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_notUnit">
+            <English>Failed - Target not a Unit.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_player">
+            <English>Failed - Selected Unit is Player controlled.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot">
+            <English>Preffered Slot</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
+            <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
+        </Key>
+    </Package>
+</Project>

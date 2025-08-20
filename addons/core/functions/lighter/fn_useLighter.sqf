@@ -34,6 +34,9 @@ private _sound = switch (_lighterType) do {
     default { QGVAR(matches_01) };
 };
 
+
+
+
 // Play Animation
 [_unit, QEGVAR(anim,cig_in), 3] call FUNC(anim);
 

@@ -29,17 +29,17 @@ class CfgFunctions
         class dynamicSmoking {
             file = PATH_TO_FUNC_SUB(dynamicSmoking);
             
-            class AI_cleanupArray {};
+            class cleanupArray {};
+            class cleanupArray_condition {};
 
-            class AI_loop_start {};
-            class AI_loop {};
+            class loop_start {};
+            class loop {};
             
-            class AI_canConsume {};
-            class AI_startConsuming {};
+            class canConsume {};
+            class startConsuming {};
 
-            class AI_updateCanConsumeAgain {};
-            class AI_addUnitToFramework {};
-
+            class updateCanConsumeAgain {};
+            class addUnitToFramework {};
         };
     };
 };

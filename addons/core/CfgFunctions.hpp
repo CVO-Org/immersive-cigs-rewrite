@@ -17,6 +17,8 @@ class CfgFunctions
         class common {
             file = PATH_TO_FUNC_SUB(common);
             
+            class isPlayer {};
+
             class add_slotItemChanged_EH {};
             class putWeaponAway {};
 

@@ -1,0 +1,2 @@
+#define LOOP_DELAY 3
+#define LOOP_DELAY_RESTART 60

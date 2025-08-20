@@ -25,6 +25,18 @@ if (!local _unit) exitWith {
 
 
 ////////////////////////////////////////
+// Stop due to Combat Behavior
+////////////////////////////////////////
+private _exit = if (_unit call EFUNC(core,isPlayer)) then { false } else {
+    switch (combatBehaviour _unit) do {
+        case "COMBAT": { random 1 > 0.33 };
+        case "STEALTH": { true };
+        default { false };
+    };
+};
+if (_exit) exitWith FUNC(sucking_stop);
+
+////////////////////////////////////////
 // Get current Variables
 ////////////////////////////////////////
 private _itemClass  = _suckData get "itemClass";

@@ -30,9 +30,9 @@ class CAManBase: Man
     {
         class ACE_Equipment {
             // Take from Pack
-            class PVAR(take_from_pack)
+            class PVAR(takeFromPack)
             {
-                displayName = CSTRING(take_from_pack);
+                displayName = CSTRING(takeFromPack);
                 condition = Q([_player] call FUNC(canTakeFromPack));
                 statement = "";
                 insertChildren = Q([_player] call FUNC(action_pack_children));

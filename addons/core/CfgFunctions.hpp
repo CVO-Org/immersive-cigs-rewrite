@@ -17,8 +17,12 @@ class CfgFunctions
         class common {
             file = PATH_TO_FUNC_SUB(common);
             
+            class isPlayer {};
+
             class add_slotItemChanged_EH {};
             class putWeaponAway {};
+
+            class removeItemFromMag {};
         };
 
         class smoking
@@ -68,9 +72,8 @@ class CfgFunctions
             file = PATH_TO_FUNC_SUB(pack);
 
             class canTakeFromPack {};
-            class take_from_pack {};
+            class takeFromPack {};
 
-            class removeItemFromMag {};
 
             class action_pack_children {};
         };
@@ -100,20 +103,6 @@ class CfgFunctions
             file = PATH_TO_FUNC_SUB(eat_cig);
             class addEatAction { preInit = 1; };
             class canEat {};
-        };
-        class cigs_on_ai
-        {
-            file = PATH_TO_FUNC_SUB(cigs_on_ai);
-            class preInit { preInit = 1; };
-
-            class cbaSetting_addSetting {};
-            class cbaSetting_perSide {};
-
-            class hashmap {};
-
-            class apply {};
-
-            class queue {};
         };
         class combustion {
             file = PATH_TO_FUNC_SUB(combustion);

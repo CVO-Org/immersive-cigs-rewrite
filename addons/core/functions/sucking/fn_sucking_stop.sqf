@@ -18,6 +18,8 @@
 params ["_unit", "_suckData"];
 _unit setVariable [QPVAR(isSucking), false, true];
 
+if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
+
 if (_suckData get "curSucks" > _suckData get "totalSucks") then {
     switch (_suckData get "itemType") do {
         case ("GOGGLES"): { removeGoggles _unit };

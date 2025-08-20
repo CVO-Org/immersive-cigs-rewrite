@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_ai">
+    <Package name="CBASettings_Categories">
+        <Key ID="STR_cigs_ai_set_mainCat_AI">
+            <English>Immersive Cigs - AI</English>
+            <French>Immersive Cigs - AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_cigsonai">
+            <English>02. Cigs on AI</English>
+            <French>Cigs on AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
+            <English>01. Dynamic AI Smoking</English>
+        </Key>
+    </Package>
+    <Package name="CBASettings_cigsonai">
+        <Key ID="STR_cigs_ai_set_cigsonai_chance">
+            <English>Probability</English>
+            <French>Probabilité</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_chance_desc">
+            <English>Defines how likely it is that a unit has cigarettes on them.</English>
+            <French>Définit la probabilité qu'une unité ait des cigarettes sur elle.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_delay">
+            <English>Delay</English>
+            <French>Délai</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_delay_desc">
+            <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
+            <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_enable">
+            <English>Enable</English>
+            <French>Activer</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
+            <English>Enables the system to distribute cigarettes across AI units.</English>
+            <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
+        </Key>
+    </Package>
+    <Package name="CBASettings_dynamicSmoking">
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
+            <English>Enable</English>
+            <French>Activer</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
+            <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
+            <English>Remove Slot Item</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
+            <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg">
+            <English>Average Time between Cigs</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
+            <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
+            <English>Preffered Slot</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicsmoking_slot_desc">
+            <English>Defines the prefered slot to put the item if both are already occupied.</English>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_ai_author">
+            <English>Cigs Rewrite Team</English>
+        </Key>
+        <Key ID="STR_cigs_ai_authors">
+            <English>OverlordZorn</English>
+        </Key>
+    </Package>
+</Project>

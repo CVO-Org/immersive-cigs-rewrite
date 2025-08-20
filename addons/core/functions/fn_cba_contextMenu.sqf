@@ -20,7 +20,7 @@
 [
     "#All"                                      // item - Classname or itemType or wildcard
     ,["CONTAINER"]                              // Slots - STRING or ARRAY of Strings
-    ,LLSTRING(take_from_pack)                   // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
+    ,LLSTRING(takeFromPack)                   // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                                         // Text Color
     ,QPATHTOF(data\ui\take_cig.paa)             // Icon path
     ,[                                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
@@ -35,7 +35,7 @@
     ],
     {                          // statement - CODE - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         params ["_unit", "_container", "_item", "_slot", "_params"];
-        [_unit, _item] call FUNC(take_from_pack);
+        [_unit, _item] call FUNC(takeFromPack);
         false
     }
 ] call CBA_fnc_addItemContextMenuOption;

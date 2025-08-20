@@ -9,3 +9,5 @@
 #define QPATH_BASE_MODEL_CIG2 QPATHTOEF(base,data\cig2.p3d)
 #define QPATH_BASE_MODEL_CIG3 QPATHTOEF(base,data\cig3.p3d)
 #define QPATH_BASE_MODEL_CIG4 QPATHTOEF(base,data\cig4.p3d)
+
+#define MODLSTRING(key) [LSTRING(DOUBLES(module,key)),LSTRING(TRIPLES(module,key,desc))]

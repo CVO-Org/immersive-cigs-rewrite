@@ -37,7 +37,7 @@ class CAManBase: Man
                 statement = "";
                 insertChildren = Q([_player] call FUNC(action_pack_children));
                 showDisabled = 0;
-                exceptions[] = {}; // "isNotDead", "isNotUnconscious"
+                exceptions[] = {"isNotInside", "isNotSitting"};
                 icon = QPATHTOF(data\ui\take_cig.paa);
             };
 

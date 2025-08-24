@@ -52,6 +52,6 @@ switch (true) do {
         // add cig to tgt
         _target addWeapon _classHMD;
         // place it in unit inventory or ground
-        [player, _hmd, true, true] call CBA_fnc_addItem;
+        [_player, _hmd, true, true] call CBA_fnc_addItem;
     };
 };

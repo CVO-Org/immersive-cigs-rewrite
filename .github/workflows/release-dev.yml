@@ -36,6 +36,12 @@ jobs:
         - name: Checkout the source code
           uses: actions/checkout@v2
 
+        - name: Update script_version.hpp from release tag
+          shell: pwsh
+          run: |
+            & "${{ github.workspace }}/tools/update-version.ps1" `
+              -Version "${{ github.event.release.tag_name }}"
+              
         - name: Create meta.cpp for dev release
           shell: pwsh
           run: |

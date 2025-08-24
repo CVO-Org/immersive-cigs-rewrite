@@ -21,6 +21,6 @@ params [
 
 if (_side isEqualTo "") exitWith {false};
 
-{ [_x, _side] call FUNC(cbaSetting_addSetting) } forEach ( ["PACKAGES", true] call FUNC(getAllItems) );
+{ [_x, _side] call FUNC(cbaSetting_addSetting) } forEach ( ["PACKAGES", true] call EFUNC(core,getAllItems) );
 
 true

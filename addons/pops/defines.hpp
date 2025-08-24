@@ -1,1 +1,1 @@
-#define SUCKS_TOTAL 1000
+#define SUCKS_TOTAL 120

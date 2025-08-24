@@ -25,20 +25,23 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
         && {
             lifeState _unit in ["HEALTHY", "INJURED"]
             && {
-                combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
+                vehicle _unit isEqualTo _unit
                 && {
-                    _unit isNil QGVAR(API_dynamicSmoking_blocked)
+                    combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
                     && {
-                        !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
+                        _unit isNil QGVAR(API_dynamicSmoking_blocked)
                         && {
-                            if (_ignoreTime) then {
-                                true
-                            } else {
-                                private _prevTime = _unit getVariable [QGVAR(canConsumeAgainAt), -1];
-                                if (_prevTime == -1) then { true } else { _prevTime < CBA_missionTime }
-                            }
+                            !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
                             && {
-                                _unit call EFUNC(core,canTakeFromPack)
+                                if (_ignoreTime) then {
+                                    true
+                                } else {
+                                    private _prevTime = _unit getVariable [QGVAR(canConsumeAgainAt), -1];
+                                    if (_prevTime == -1) then { true } else { _prevTime < CBA_missionTime }
+                                }
+                                && {
+                                    _unit call EFUNC(core,canTakeFromPack)
+                                }
                             }
                         }
                     }

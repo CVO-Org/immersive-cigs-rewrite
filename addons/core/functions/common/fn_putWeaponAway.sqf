@@ -4,6 +4,8 @@
  * Author: commy2, acemod
  * The unit will put its current weapon away.
  *
+ * License: https://github.com/acemod/ACE3?tab=License-1-ov-file
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  *

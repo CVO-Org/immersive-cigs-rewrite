@@ -37,6 +37,13 @@ if (_exit) exitWith FUNC(smoking_stop);
 
 
 ////////////////////////////////////////
+// Check if player eyes/head is underwater while puffing
+////////////////////////////////////////
+_exit = _unit call FUNC(isSwimming) && { _unit call FUNC(eyeDepth) < 0 };
+if (_exit) exitWith { [_unit, _smokeData, true, true] call FUNC(smoking_stop)};
+
+
+////////////////////////////////////////
 // Get current Variables
 ////////////////////////////////////////
 private _itemClass  = _smokeData get "itemClass";

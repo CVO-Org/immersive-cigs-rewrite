@@ -38,8 +38,23 @@
 ] call CBA_fnc_addSetting;
 
 
+// Enable individual Sides
+{
+	private _sideStr = str _x;
+
+	[
+		[Q(ADDON), "set", "cigsonai", "side", "enabled", _sideStr] joinString "_",
+		"CHECKBOX",
+		[format [LLSTRING(set_cigsonai_side_enabled), _sideStr], format [LLSTRING(set_cigsonai_side_enabled_desc), _sideStr]],
+		[LSTRING(set_mainCat_ai), LSTRING(set_subCat_cigsonai_sides_enabled)],
+		true,
+		1,
+		{},
+		true
+	] call CBA_fnc_addSetting;
+
+} forEach [west,east,independent,civilian];
+
+
 // Select Cigs based on Side
-[west] call FUNC(cbaSetting_perSide);
-[east] call FUNC(cbaSetting_perSide);
-[independent] call FUNC(cbaSetting_perSide);
-[civilian] call FUNC(cbaSetting_perSide);
+{ [_x] call FUNC(cbaSetting_perSide); } forEach [west,east,independent,civilian];

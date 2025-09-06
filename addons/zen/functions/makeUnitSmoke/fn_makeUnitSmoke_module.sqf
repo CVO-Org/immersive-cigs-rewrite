@@ -36,9 +36,15 @@ private _displayName_cigpacks = [
     ["Random", "Will select a random Brand from all loaded brands"]
 ];
 
+private _blacklist = ["murshun_cigs_cigpack"];
+
 {
     private _cfg = _x;
-    _return_cigpacks pushBack (configName _cfg);
+    private _class = configName _cfg;
+
+    if (_class in _blacklist) then { continue };
+
+    _return_cigpacks pushBack _class;
     _displayName_cigpacks pushBack [ getText (_cfg >> "displayName"), nil, getText (_cfg >> "picture") ];
 } forEach (["PACKAGES", true] call EFUNC(core,getAllItems));
 

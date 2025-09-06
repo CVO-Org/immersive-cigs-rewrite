@@ -7,7 +7,15 @@
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_cigsonai">
             <English>02. Cigs on AI</English>
-            <French>Cigs on AI</French>
+            <French>02. Cigs on AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides">
+            <English>04. Cigs on AI</English>
+            <French>04. Cigs on AI</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides_enabled">
+            <English>03. Cigs on AI - Enable individual Side</English>
+            <French>03. Cigs on AI - Enable individual Side</French>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
             <English>01. Dynamic AI Smoking</English>
@@ -37,6 +45,12 @@
         <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
             <English>Enables the system to distribute cigarettes across AI units.</English>
             <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_side_enabled">
+            <English>Enable for %1</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_cigsonai_side_enabled_desc">
+            <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
         </Key>
     </Package>
     <Package name="CBASettings_dynamicSmoking">

@@ -15,7 +15,12 @@
 * Public: No
 */
 
-params ["_unit", "_smokeData", [ "_skipAnimation", false, [true] ], [ "_forceVanish", false, [true] ] ];
+params [
+    "_unit",
+    "_smokeData",
+    [ "_skipAnimation", false, [true] ],
+    [ "_forceVanish",   false, [true] ]
+];
 
 if (_unit getVariable [QPVAR(isSmoking), false] ) then { _unit setVariable [QPVAR(isSmoking), false, true] };
 _unit setVariable [QPVAR(smokeData), nil];

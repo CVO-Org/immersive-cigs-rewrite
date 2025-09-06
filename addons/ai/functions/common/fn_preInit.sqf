@@ -27,15 +27,8 @@ if (!isServer) exitWith {};
 ///////////// Cigs on AI
 //////////////////////////////////////////////////
 
-
-addMissionEventHandler ["EntityCreated", {
-	params ["_unit"];
-
-    if (!(_unit isKindOf "CAManBase") || { _unit isKindOf "CBA_NamespaceDummy" || { isPlayer _unit } } ) exitWith {};
-
-    [_unit] call FUNC(addToQueue);
-}];
 ["CBA_SettingChanged", FUNC(handleSettingChange)] call CBA_fnc_addEventHandler;
+addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 
 //////////////////////////////////////////////////
 ///////////// Dynamic AI Smoking

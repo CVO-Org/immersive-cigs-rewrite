@@ -19,6 +19,7 @@ class CfgFunctions
             class cbaSetting_addSetting {};
             class cbaSetting_perSide {};
 
+            class onEntityCreated {};
             class handleSettingChange {};
 
             class addToQueue {};

@@ -27,18 +27,6 @@ if (!isServer) exitWith {};
 ///////////// Cigs on AI
 //////////////////////////////////////////////////
 
-["CBA_SettingChanged", {
-    params ["_setting", "_value"];
-
-    if !("set_cigsonai_custom_#" in _setting) exitWith {};
-
-    private _arr = _setting splitString "#" select 1 splitString "_";
-    private _sideStr = _arr deleteAt 0;
-    private _className = _arr joinString "_";
-
-    [_sideStr, _className, _value] call FUNC(hashmap);
-
-}] call CBA_fnc_addEventHandler;
 
 addMissionEventHandler ["EntityCreated", {
 	params ["_unit"];
@@ -47,6 +35,7 @@ addMissionEventHandler ["EntityCreated", {
 
     [_unit] call FUNC(addToQueue);
 }];
+["CBA_SettingChanged", FUNC(handleSettingChange)] call CBA_fnc_addEventHandler;
 
 //////////////////////////////////////////////////
 ///////////// Dynamic AI Smoking

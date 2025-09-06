@@ -19,9 +19,9 @@ params ["_player"];
 
 linearConversion [
     0,
-    150,
+    250,
     ( _player getVariable [QPVAR(recent_puffs), 0] ) * ( missionNamespace getVariable [QSET(adv_fatigue_modifier), 1] ),
     1,
-    2.5,
+    2.0,
     true
 ] // return

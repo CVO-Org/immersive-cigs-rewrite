@@ -5,7 +5,7 @@ class CfgVehicles
     {
         scope = _DEBUG_SCOPE_;
         scopeCurator = 1;
-        dislpayName = "DEPRECATED";
+        displayName = "DEPRECATED";
     };
 
     class EGVAR(morley,cigpackItem);
@@ -13,7 +13,7 @@ class CfgVehicles
     {
         scope = _DEBUG_SCOPE_;
         scopeCurator = 1;
-        dislpayName = "DEPRECATED";
+        displayName = "DEPRECATED";
     };
 
     class PVAR(lighterItem);
@@ -21,7 +21,7 @@ class CfgVehicles
     {
         scope = _DEBUG_SCOPE_;
         scopeCurator = 1;
-        dislpayName = "DEPRECATED";
+        displayName = "DEPRECATED";
     };
 
     class PVAR(matchesItem);
@@ -29,6 +29,6 @@ class CfgVehicles
     {
         scope = _DEBUG_SCOPE_;
         scopeCurator = 1;
-        dislpayName = "DEPRECATED";
+        displayName = "DEPRECATED";
     };
 };

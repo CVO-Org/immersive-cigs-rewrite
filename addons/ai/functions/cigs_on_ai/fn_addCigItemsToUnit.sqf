@@ -43,7 +43,7 @@ for "_i" from 1 to (ceil random 3) do {
 
 
 
-// Add lighter is a Package is a smokeable
+// Add lighter if package is a smokeable
 if ( _consumables findIf { getNumber ( configFile >> "CfgGlasses" >> _x >> QPVAR(isSmokable) ) == 1 } isNotEqualTo -1 ) then {
 
     for "_i" from 1 to (ceil random 3) do {

@@ -19,10 +19,12 @@ class CfgFunctions
             class cbaSetting_addSetting {};
             class cbaSetting_perSide {};
 
-            class hashmap {};
+            class onEntityCreated {};
+            class handleSettingChange {};
 
             class addToQueue {};
-            class apply {};
+            class processQueue {};
+
             class addCigItemsToUnit {};
         };
 

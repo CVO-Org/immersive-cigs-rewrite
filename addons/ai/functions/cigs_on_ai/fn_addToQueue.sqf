@@ -59,12 +59,12 @@ private _code = {
                         
                         [
                             {
-                                params ["_args", "_handle"];
+                                params ["", "_handle"];
 
                                 private _queue = missionNamespace getVariable [QGVAR(cigsonai_queue), nil];
                                 if (isNil "_queue") exitWith { _handle call CBA_fnc_removePerFrameHandler; };
 
-                                [_queue deleteAt 0] call FUNC(apply);
+                                [_queue deleteAt 0] call FUNC(processQueue);
 
                                 if (count _queue == 0) then { missionNamespace setVariable [QGVAR(cigsonai_queue), nil]; };
                             },

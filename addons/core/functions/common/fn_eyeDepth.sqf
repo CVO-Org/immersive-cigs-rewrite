@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "../../script_component.hpp"
 
 /*
   Name: TFAR_fnc_eyeDepth
@@ -19,4 +19,4 @@
   Public: Yes
 */
 
-((eyepos _this) select 2) + ((getPosASLW _this) select 2) - ((getPosASL _this) select 2)
+((eyePos _this) select 2) + ((getPosASLW _this) select 2) - ((getPosASL _this) select 2)

@@ -27,13 +27,10 @@
 [ QGVAR(EH_light_lighter),  FUNC(light_lighter)  ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_light_cig_glow), FUNC(light_cig_glow) ] call CBA_fnc_addEventHandler;
 
-
-
 // Advanced Fatigue
-if ( isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
-    [QGVAR(EH_cough), FUNC(cough_server)] call CBA_fnc_addEventHandler;
-    [QGVAR(EH_aleart), FUNC(cough_aleart)] call CBA_fnc_addEventHandler;
-};
+[QGVAR(EH_cough), FUNC(cough_server)] call CBA_fnc_addEventHandler;
+[QGVAR(EH_aleart), FUNC(cough_aleart)] call CBA_fnc_addEventHandler;
+
 
 
 // Stops unit smoking when unconscious

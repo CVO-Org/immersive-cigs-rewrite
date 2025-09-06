@@ -5,6 +5,8 @@
  * Checks if a unit is a player / curator controlled unit.
  * This now includes both local and non-local remote controlled zeus units. (Remotes from another zeus machine)
  *
+ * License: https://github.com/acemod/ACE3?tab=License-1-ov-file
+ *
  * Arguments:
  * 0: unit to be checked <OBJECT>
  * 1: exclude remote controlled units <BOOL>

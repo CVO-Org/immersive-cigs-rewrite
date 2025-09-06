@@ -18,6 +18,8 @@ class CfgFunctions
             file = PATH_TO_FUNC_SUB(common);
             
             class isPlayer {};
+            class eyeDepth {};
+            class isSwimming {};
 
             class add_slotItemChanged_EH {};
             class putWeaponAway {};

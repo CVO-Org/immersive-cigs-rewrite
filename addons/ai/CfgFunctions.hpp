@@ -19,7 +19,7 @@ class CfgFunctions
             class cbaSetting_addSetting {};
             class cbaSetting_perSide {};
 
-            class hashmap {};
+            class handleSettingChange {};
 
             class addToQueue {};
             class apply {};

@@ -13,9 +13,9 @@ changelog:
     - title: Fixes 🛠
       labels:
         - changelog/fix 
-    - title: maintainance 🛠
+    - title: Maintenance 🛠
       labels:
-        - changelog/maintainance 
+        - changelog/maintenance 
     - title: Translations 📜
       labels:
         - changelog/translation

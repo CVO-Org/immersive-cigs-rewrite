@@ -22,7 +22,8 @@ class CfgFunctions
             class handleSettingChange {};
 
             class addToQueue {};
-            class apply {};
+            class processQueue {};
+
             class addCigItemsToUnit {};
         };
 

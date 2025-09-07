@@ -18,7 +18,6 @@
 params ["_unit"];
 
 
-
 !(_unit getVariable [QPVAR(isSmoking), false])
 && 
 {
@@ -30,5 +29,7 @@ params ["_unit"];
         {
             getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSmokable)) == 1
         }
+        &&
+        [_unit] call EFUNC(core,checkCompatibleSkeleton)
     }
 }

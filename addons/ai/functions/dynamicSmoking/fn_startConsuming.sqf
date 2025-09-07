@@ -31,16 +31,11 @@ private _curHMD = hmd _unit;
 
 if (isNil "_slot") then { _slot = SET(dynamicSmoking_slot) };
 
-// TODO: Investigate unit not getting their facewear removed!!
-
-// [slot, needsRemoval]
 switch (true) do {
     case (_curGlasses isEqualTo ""): { ["GOGGLES", false] };
     case (_curHMD     isEqualTo ""): { ["HMD", false] };
     default { [_slot, true] };
 } params ["_targetSlot", "_needsRemoval"];
-
-
 
 
 // If setting is to not remove any item but it the targetslot is blocked, exit

@@ -31,7 +31,7 @@
 	SETLSTRING(cigsonai_delay),
 											//    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
 	[LSTRING(set_mainCat_ai), LSTRING(set_subCat_cigsonai)],				//    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
-	[1,120,5,0, false],					//    _valueInfo   - Extra properties of the setting depending of _settingType. See examples below <ANY>
+	[5,120,5,0, false],					//    _valueInfo   - Extra properties of the setting depending of _settingType. See examples below <ANY>
 	1,										//    _isGlobal    - 1: all clients share the same setting, 2: setting can't be overwritten (optional, default: 0) <NUMBER>
 	{},										//    _script      - Script to execute when setting is changed. (optional) <CODE>
 	false									//    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>

@@ -61,6 +61,12 @@
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
             <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
         </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory">
+            <English>Check Unit for compatible Items</English>
+        </Key>
+        <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
+            <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>
+        </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>
         </Key>

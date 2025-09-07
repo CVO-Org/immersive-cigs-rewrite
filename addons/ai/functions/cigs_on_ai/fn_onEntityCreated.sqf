@@ -28,7 +28,7 @@ if (
             isPlayer _unit
             ||
             {
-                !( _unit call FUNC(checkCompatibleSkeleton) )
+                !( _unit call EFUNC(core,checkCompatibleSkeleton) )
             }
         }
     }

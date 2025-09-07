@@ -25,6 +25,8 @@ class CfgFunctions
             class putWeaponAway {};
 
             class removeItemFromMag {};
+
+            class checkCompatibleSkeleton {};
         };
 
         class smoking

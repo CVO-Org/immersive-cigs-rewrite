@@ -18,6 +18,20 @@
 
 params ["_unit"];
 
-if (!(_unit isKindOf "CAManBase") || { _unit isKindOf "CBA_NamespaceDummy" || { isPlayer _unit } } ) exitWith {};
+if (
+    !(_unit isKindOf "CAManBase")
+    ||
+    {
+        _unit isKindOf "CBA_NamespaceDummy"
+        ||
+        {
+            isPlayer _unit
+            ||
+            {
+                !( _unit call FUNC(checkCompatibleSkeleton) )
+            }
+        }
+    }
+) exitWith {};
 
 [_unit] call FUNC(addToQueue);

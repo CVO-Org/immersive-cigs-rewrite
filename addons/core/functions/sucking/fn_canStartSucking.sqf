@@ -29,5 +29,7 @@ params ["_unit"];
         {
             getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSuckable)) == 1
         }
+        &&
+        [_unit] call EFUNC(core,checkCompatibleSkeleton)
     }
 }

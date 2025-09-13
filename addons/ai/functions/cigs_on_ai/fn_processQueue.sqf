@@ -24,7 +24,7 @@ private _addCigsOnAi = { [FUNC(addCigItemsToUnit), [_unit], SET(cigsonai_delay)]
 private _addToDynamicAI = { _unit call FUNC(addUnitToFramework); };
 
 // Conditions
-private _checkUnitInventory =  { SET(dynamicSmoking_checkUnitInventory) && { [_unit] call FUNC(canTakeFromPack) } };
+private _checkUnitInventory =  { SET(dynamicSmoking_checkUnitInventory) && { [_unit] call EFUNC(core,canTakeFromPack) } };
 private _checkCigsOnAiChance = { SET(cigsonai_enable)                   && { random 1 < SET(cigsonai_chance)    } };
 
 

@@ -32,7 +32,7 @@ private _t_start = getNumber (_cfg >> "t_start");
 private _t_peak = getNumber (_cfg >> "t_peak");
 private _t_duration = getNumber (_cfg >> "t_duration");
 
-private _flareType = ["#lightpoint", "#lightreflector"] select (_unit isEqualTo ACE_Player);
+private _flareType = ["#lightpoint", "#lightreflector"] select ([] call CBA_fnc_currentUnit isEqualTo _unit);
 
 
 

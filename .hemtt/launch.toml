@@ -1,12 +1,9 @@
-[default]
+[base]
 mission = "test.VR"
 workshop = [
     "450814997",  # CBA_A3's Workshop ID
-    "463939057",  # ACE3
     "3499977893", # Advanced Developer Tools
-    "1779063631", # ZEN
 ]
-
 dlc = [
 ]
 
@@ -19,11 +16,17 @@ parameters = [
     "-noPauseAudio",
 ]
 
+[default]
+extends = "base"
+workshop = [
+    "463939057",  # ACE3
+    "1779063631", # ZEN
+]
+
 # executable = "arma3_x64"        # Default: "arma3_x64"
 # file_patching = true # Default: true
 # binarize = false # Default: false
 # rapify = true # Default: true
-
 
 [vn]
 extends = "default"

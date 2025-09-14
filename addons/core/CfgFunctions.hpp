@@ -44,6 +44,8 @@ class CfgFunctions
             class smoking_start {};
             class smoking {};
             class smoking_stop {};
+
+            class getSmokableDisplayName {};
         };
 
         class sucking
@@ -89,6 +91,8 @@ class CfgFunctions
             class hasLighter {};
             class getLighter {};
             class useLighter {};
+
+            class modifyLighterAction {};
         };
 
         class singleplayer

@@ -244,6 +244,9 @@
             <Japanese>タバコに火を点ける</Japanese>
             <Chinese>點菸</Chinese>
         </Key>
+        <Key ID="STR_cigs_core_start_cig_own_custom">
+            <English>Light Up your %1</English>
+        </Key>
         <Key ID="STR_cigs_core_start_cig_own_desc">
             <English>Requires a Lighter or Matches in your inventory</English>
             <French>Nécessite un briquet ou des allumettes dans votre inventaire</French>

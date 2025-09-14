@@ -45,8 +45,9 @@ class CAManBase: Man
             class PVAR(start_cig_own)
             {
                 displayName = CSTRING(start_cig_own);
-                condition = Q([_player] call FUNC(canStartSmoking));
+                condition = Q([_player] call FUNC(hasLighter) && { [_player] call FUNC(canStartSmoking) });
                 statement = Q([_player] call FUNC(start_cig));
+                modifierFunction = Q(call FUNC(modifyLighterAction));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
                 icon = QPATHTOF(data\ui\light_cig.paa);

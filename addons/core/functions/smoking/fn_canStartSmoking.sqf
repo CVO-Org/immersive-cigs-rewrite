@@ -24,12 +24,14 @@ params ["_unit"];
     !(_unit getVariable [QPVAR(isSucking), false])
     &&
     {
-        getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
-        ||
-        {
-            getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSmokable)) == 1
-        }
+        ([_unit] call EFUNC(core,checkCompatibleSkeleton))
         &&
-        [_unit] call EFUNC(core,checkCompatibleSkeleton)
+        {
+            getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
+            ||
+            {
+                getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSmokable)) == 1
+            }
+        }
     }
 }

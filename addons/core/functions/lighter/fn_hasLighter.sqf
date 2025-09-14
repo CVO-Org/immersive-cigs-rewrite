@@ -10,7 +10,7 @@
 * None
 *
 * Example:
-* ['something', _unit] call cigs_core_fnc_hasLighter;
+* [_unit] call cigs_core_fnc_hasLighter;
 *
 * Public: No
 */

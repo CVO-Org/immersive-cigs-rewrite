@@ -27,8 +27,6 @@ private _unit = _array select _index;
 
 private _canConsume = _unit call FUNC(canConsume);
 
-diag_log format ['[CVO](debug)(fn_loop) %1/%2 - _canConsume: %3', _index , _index_end ,_canConsume];
-
 if ( _canConsume ) then { [QGVAR(EH_startConsuming), _unit, _unit] call CBA_fnc_targetEvent; };
 
 if (_index isNotEqualTo _index_end) then {

@@ -19,6 +19,8 @@ params ["_unit"];
 
 private _map = missionNamespace getVariable [QGVAR(cigsOnAI_hashmap), nil];
 
+if (isNull _unit) exitWith {};
+
 if (isNil "_map") exitWith {};
 
 private _consumables = [];

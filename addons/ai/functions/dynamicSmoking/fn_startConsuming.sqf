@@ -68,14 +68,11 @@ private _storedItem = if (_needsRemoval) then {
 if (isNil "_package") then { _package = selectRandom (magazines _unit select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1}) };
 
 // Take item from package
-[
-    _unit,
-    _package
-] call EFUNC(core,takeFromPack);
+[ _unit, _package ] call EFUNC(core,takeFromPack);
 
 
 // Start consumption
 switch (true) do {
-    case (_unit call EFUNC(core,canStartSmoking)): { [QGVAR(eh_startCig),  _unit ] call CBA_fnc_localEvent; };
-    case (_unit call EFUNC(core,canStartSucking)): { [QGVAR(eh_startSuck), _unit ] call CBA_fnc_localEvent; };
+    case (_unit call EFUNC(core,canStartSmoking)): { [QGVAR(eh_startCig),  [_unit, true] ] call CBA_fnc_localEvent; }; // TEMP FIX: AI smoking has lighterCheckOverwrite on - find why AI does not get Lighters
+    case (_unit call EFUNC(core,canStartSucking)): { [QGVAR(eh_startSuck), [_unit, true] ] call CBA_fnc_localEvent; }; // TEMP FIX: AI smoking has lighterCheckOverwrite on - find why AI does not get Lighters
 };

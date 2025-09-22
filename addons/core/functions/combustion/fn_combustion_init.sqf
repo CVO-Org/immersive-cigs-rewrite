@@ -30,7 +30,7 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_fire")) exitWith {};
             //exclude Filter:
             !( typeOf _x in ["ace_refuel_fuelHoseSegment", "#soundonvehicle"] )
             &&
-            { isClass (configFile >> "CfgVehicles" >> typeOf _x) };
+            { isClass (configOf _x) };
         };
 
         _nearbyObjs = _nearbyObjs select {

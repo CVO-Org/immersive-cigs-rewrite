@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-private _skeleton = getText (configFile >> getText (configFile >> "CfgVehicles" >> typeOf _unit >> "moves") >> "skeletonName");
+private _skeleton = getText (configFile >> getText (configOf _unit >> "moves") >> "skeletonName");
 
 // return
 _skeleton in [ "OFP2_ManSkeleton" ]

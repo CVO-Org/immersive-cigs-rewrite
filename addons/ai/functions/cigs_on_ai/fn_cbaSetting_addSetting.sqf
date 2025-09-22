@@ -21,10 +21,10 @@ private _className = configName _cfg;
 private _displayName = getText (_cfg >> "displayName");
 
 private _defaultValue = switch (_side) do {
-    case west:       { _className in [ QEGVAR(morley,cigpack), "cigs_crayons_crayonpack" ] };
+    case west:       { _className in [ QEGVAR(morley,cigpack), QEGVAR(crayons,crayonpack) ] };
     case east:       { _className in [ QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack) ] };
     case resistance: { _className in [ QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) ] };
-    case civilian:   { _className in [ QEGVAR(morley,cigpack), "cigs_pops_poppack", QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), "cigs_crayons_crayonpack" ]  };
+    case civilian:   { _className in [ QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) ]  };
     default { false };
 };
 

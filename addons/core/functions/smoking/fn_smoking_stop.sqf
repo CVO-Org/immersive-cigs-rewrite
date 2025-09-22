@@ -44,3 +44,7 @@ private _vanish = switch (true) do {
 
 [_unit, _smokeData, _vanish] call FUNC(drop_cig);
 
+////////////////////////////////////////
+// API
+////////////////////////////////////////
+[QGVAR(API_stopsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;

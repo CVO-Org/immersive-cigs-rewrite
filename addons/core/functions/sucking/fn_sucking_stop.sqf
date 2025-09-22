@@ -26,3 +26,8 @@ if (_suckData get "curSucks" > _suckData get "totalSucks") then {
         case ("HMD"):     { _unit removeWeapon (_suckData get "itemClass") };
     };
 };
+
+////////////////////////////////////////
+// API
+////////////////////////////////////////
+[QGVAR(API_stopsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;

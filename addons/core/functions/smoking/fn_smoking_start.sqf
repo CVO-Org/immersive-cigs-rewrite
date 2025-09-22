@@ -116,3 +116,7 @@ if (!isNil "_flavor") then { [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavo
 ////////////////////////////////////////
 [ FUNC(smoking), [_unit, _smokeData], _delay + 1] call CBA_fnc_waitAndExecute;
 
+////////////////////////////////////////
+// API
+////////////////////////////////////////
+[QGVAR(API_startsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;

@@ -15,7 +15,7 @@
 * Public: No
 */
 
-params [ "_unit", "_class_cigpack" ];
+params [ "_unit", "_class_cigpack", "_slot" ];
 
 if (isNil "_class_cigpack") then {
     private _magazines = magazines _unit;
@@ -23,7 +23,7 @@ if (isNil "_class_cigpack") then {
 };
 
 
-[_unit, _class_cigpack] call FUNC(removeItemFromMag);
+[_unit, _class_cigpack, _slot] call FUNC(removeItemFromMag);
 
 
 private _sound = [ configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(unpackSound) ] call CBA_fnc_getCfgDataRandom;

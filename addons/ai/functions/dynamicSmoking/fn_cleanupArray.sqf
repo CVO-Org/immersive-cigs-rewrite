@@ -17,7 +17,7 @@
 
 private _array = GVAR(dynamicSmoking_units);
 
-if ( _array isEqualTo [] ) exitWith { GVAR(dynamicSmoking_cleanup_inProgress) = nil; diag_log format ['[CVO](debug)(fn_AI_cleanupArray) _array was empty: %1', _array]; };
+if ( _array isEqualTo [] ) exitWith { GVAR(dynamicSmoking_cleanup_inProgress) = nil; };
 
 private _code = {
     params ["_array", "_index", "_code"];
@@ -27,7 +27,6 @@ private _code = {
 
     if (!_keep) then {
         _array set [ _index, nil ];
-        diag_log format ['[CVO](debug)(fn_AI_cleanupArray) _unit removed: %1', _unit];
     };
 
     // Continue with the Cleanup
@@ -35,7 +34,6 @@ private _code = {
         // Stop the Cleanup
         _array = _array select { ! isNil "_x" };
         GVAR(dynamicSmoking_cleanup_inProgress) = nil;
-        diag_log format ['[CVO](debug)(fn_AI_cleanupArray) cleanup done: %1', count _array ];
     };
 }; 
 

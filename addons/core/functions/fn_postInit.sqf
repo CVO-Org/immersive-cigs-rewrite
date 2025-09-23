@@ -76,3 +76,6 @@ private _code = {
 };
 
 if (missionNamespace getVariable ["cba_settings_ready",false]) then _code else { ["CBA_settingsInitialized",_code,[]] call CBA_fnc_addEventHandler; };
+
+// IS LOADED
+PVAR(isLoaded_SOG) = isClass (configFile >> "CfgPatches" >> "weapons_f_vietnam_c");

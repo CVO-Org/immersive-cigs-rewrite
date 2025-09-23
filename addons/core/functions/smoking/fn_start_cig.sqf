@@ -17,7 +17,9 @@
 
 params ["_unit", ["_force", false, [true]]];
 
-if (!_force && { !([_unit] call FUNC(hasLighter)) } ) exitWith { [ format [ "You dont have anything to light your %1", _unit call FUNC(getSmokableDisplayName) ] ] call cba_fnc_notify; };
+
+if ( !([_unit] call FUNC(hasLighter)) && { !_force } ) exitWith { if (isPlayer _unit) then { [ format [ "You dont have anything to light your %1", _unit call FUNC(getSmokableDisplayName) ] ] call cba_fnc_notify; }; };
+
 
 // Holsters the weapon before using the lighter, but only if its a player and the setting is enabled and its not already holstered
 if ( SET(require_holstered_weapon) && {currentWeapon _unit != ""} ) then {

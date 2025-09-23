@@ -52,9 +52,9 @@ _targetMagazines = _targetMagazines select { _x select 0 isNotEqualTo 0 };
 
 // Return Magazines
 switch (_targetContainerType) do {
-    case "UNIFORM":  { { uniformContainer  _unit addMagazineCargoGlobal [_magazineClass, _x] } forEach _targetMagazines };
-    case "VEST":     { { vestContainer     _unit addMagazineCargoGlobal [_magazineClass, _x] } forEach _targetMagazines };
-    case "BACKPACK": { { backpackContainer _unit addMagazineCargoGlobal [_magazineClass, _x] } forEach _targetMagazines };
+    case "UNIFORM":  { { uniformContainer  _unit addMagazineAmmoCargo [_magazineClass, 1, _x] } forEach _targetMagazines };
+    case "VEST":     { { vestContainer     _unit addMagazineAmmoCargo [_magazineClass, 1, _x] } forEach _targetMagazines };
+    case "BACKPACK": { { backpackContainer _unit addMagazineAmmoCargo [_magazineClass, 1, _x] } forEach _targetMagazines };
 };
 
 

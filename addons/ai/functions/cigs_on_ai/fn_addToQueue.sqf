@@ -32,7 +32,7 @@ private _code = {
     private _counter = missionNamespace getVariable [QGVAR(counter_cigsonai), 0];
     _counter = _counter + 1;
     missionNamespace setVariable [QGVAR(counter_cigsonai), _counter];
-    diag_log format ['[CVO](debug)(fn_addToQueue) GVAR(counter_cigsonai): %1', GVAR(counter_cigsonai)];
+
 
     if (isNull _unit || {isPlayer _unit}) exitWith {};
 

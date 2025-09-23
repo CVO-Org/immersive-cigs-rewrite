@@ -17,8 +17,6 @@
 
 params [ "_unit", "_package", "_slot" ];
 
-diag_log format ['[CVO](debug)(fn_AI_startConsuming) _unit: %1', _unit];
-
 if ( (_unit call EFUNC(core,isPlayer)) || { ! local _unit } ) exitWith {};
 
 // Check if unit has Cigarette Pack
@@ -43,8 +41,6 @@ if ( _needsRemoval && { !SET(dynamicSmoking_slot_remove) } ) exitWith {};
 
 // Handle Rnadom
 if (_targetSlot isEqualTo "RANDOM") then { _targetSlot = selectRandom ["GOGGLES", "HMD"]; };
-
-diag_log format ['[CVO](debug)(fn_startConsuming) _targetSlot: %1', _targetSlot];
 
 // remove and store current goggles/hmd item
 private _storedItem = if (_needsRemoval) then {

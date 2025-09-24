@@ -82,10 +82,7 @@ if (_consumables isEqualTo []) exitWith {};
 
 
 // Add items to Uniform Container (Can Overfill)
-{
-    _uniformContainer addMagazineAmmoCargo [_x#0, 1, _x#1];
-    diag_log format ['[CVO](debug)(fn_addCigItemsToUnit) _x: %1', _x];
-} forEach _consumables;
+{ _uniformContainer addMagazineAmmoCargo [_x#0, 1, _x#1]; } forEach _consumables;
 
 // DynamicSmoking
 _unit call FUNC(addUnitToFramework);

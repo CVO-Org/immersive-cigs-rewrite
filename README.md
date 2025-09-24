@@ -1,7 +1,5 @@
 # Immersion Cigs - Rewrite
-[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3375788189?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3375788189)](https://steamcommunity.com/sharedfiles/filedetails/?id=3375788189)
-
-[![Steam Subscriptions Dev Version](https://img.shields.io/steam/subscriptions/3518473416?style=for-the-badge&logo=steam&label=Steam%20Workshop%20-%20DEV&color=%23690000&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3518473416)](https://steamcommunity.com/sharedfiles/filedetails/?id=3518473416)
+[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3375788189?style=for-the-badge&logo=steam&label=Steam%20Workshop%20-%20Stable%20&color=%23690000&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3375788189)](https://steamcommunity.com/sharedfiles/filedetails/?id=3375788189) [![Steam Subscriptions Dev Version](https://img.shields.io/steam/subscriptions/3518473416?style=for-the-badge&logo=steam&label=Steam%20Workshop%20-%20DEV&color=%23690000&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3518473416)](https://steamcommunity.com/sharedfiles/filedetails/?id=3518473416)
 
 
 

@@ -1,1 +1,0 @@
-HEMTT.script("update_3_build");

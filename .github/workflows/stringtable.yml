@@ -1,29 +1,36 @@
-name: Stringtables.xml
+name: Update Translation Issue
 
 on:
+  workflow_dispatch:
   push:
     branches:
-       - main
-    pull_request:
-
+      - main
+      - master
 
 jobs:
-  run_python:
+  update-translations:
     runs-on: ubuntu-latest
-    permissions:
-        contents: read
-        issues: write
+
+    env:
+      # GitHub automatically provides this token with repo write permissions
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Optional issue number secret or variable (safe if missing)
+      TRANSLATION_ISSUE: ${{ secrets.TRANSLATION_ISSUE || vars.TRANSLATION_ISSUE || '' }}
+
     steps:
-      - name: Install Python packages
+      - name: 🧰 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 📦 Install dependencies
         run: |
-          pip3 install wheel
-          pip3 install setuptools
-          pip3 install pygithub
-          pip3 install pygithub3
-      - name: Checkout the source code
-        uses: actions/checkout@master
-      - name: Update Translation issue
-        if: github.repository == 'OverlordZorn/immersion-cigs-rewrite' && github.ref	== 'refs/heads/main' && ! contains(github.event.head_commit.message, '[ci skip]')
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 tools/stringtableDeploy.py
+          python -m pip install --upgrade pip
+          pip install PyGithub
+
+      - name: 🧪 Run translation diagnostics and update issue
+        run: |
+          python tools/stringtableDeploy.py

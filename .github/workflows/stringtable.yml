@@ -11,6 +11,11 @@ jobs:
   update-translations:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read        # allow reading repo files
+      issues: write         # allow editing issues (required!)
+      pull-requests: read   # optional safety
+
     env:
       # GitHub automatically provides this token with repo write permissions
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

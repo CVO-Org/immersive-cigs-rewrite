@@ -44,7 +44,7 @@ if (_targetSlot isEqualTo "RANDOM") then { _targetSlot = selectRandom ["GOGGLES"
 
 // remove and store current goggles/hmd item
 if (_needsRemoval) then {
-    private _storedItem =  switch (_targetSlot) do {
+    private _storedItem = switch (_targetSlot) do {
         case "GOGGLES": {
             removeGoggles _unit;
             [_curGlasses, "GOGGLES"]

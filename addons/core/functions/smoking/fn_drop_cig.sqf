@@ -17,7 +17,7 @@
 
 params [ "_unit", "_smokeData", ["_vanish", true, [false]] ];
 
-if (isNil "_smokeData") then { _unit getVariable [QPVAR(smokeData)] };
+if (isNil "_smokeData") then { _smokeData = _unit getVariable QPVAR(smokeData); };
 
 private _className = _smokeData get "itemClass";
 

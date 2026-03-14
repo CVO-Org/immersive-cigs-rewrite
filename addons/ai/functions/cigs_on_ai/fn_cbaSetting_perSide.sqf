@@ -16,10 +16,10 @@
 */
 
 params [
-    ["_side", "", [west] ]
+    ["_side", nil, [west] ]
 ];
 
-if (_side isEqualTo "") exitWith {false};
+if (isNil "_side") exitWith {false};
 
 { [_x, _side] call FUNC(cbaSetting_addSetting) } forEach ( ["PACKAGES", true] call EFUNC(core,getAllItems) );
 

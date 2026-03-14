@@ -43,8 +43,8 @@ if ( _needsRemoval && { !SET(dynamicSmoking_slot_remove) } ) exitWith {};
 if (_targetSlot isEqualTo "RANDOM") then { _targetSlot = selectRandom ["GOGGLES", "HMD"]; };
 
 // remove and store current goggles/hmd item
-private _storedItem = if (_needsRemoval) then {
-    switch (_targetSlot) do {
+if (_needsRemoval) then {
+    private _storedItem = switch (_targetSlot) do {
         case "GOGGLES": {
             removeGoggles _unit;
             [_curGlasses, "GOGGLES"]
@@ -56,7 +56,7 @@ private _storedItem = if (_needsRemoval) then {
         };
     };
 
-    [_unit, _storedItem#0] call CBA_fnc_addItem;
+    [ _unit, _storedItem # 0 ] call CBA_fnc_addItem;
     
     _unit setVariable [QGVAR(dynSmoke_storedItem), _storedItem, true];
 };

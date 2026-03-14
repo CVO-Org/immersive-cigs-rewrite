@@ -26,5 +26,3 @@ if ( _unit isNil QGVAR(canConsumeAgainAt) ) then {
     [_unit, true] call FUNC(updateCanConsumeAgain);
 
 };
-
-

@@ -109,7 +109,7 @@ if ( _curStage < _endStage ) then {
             case "GOGGLES": {
                 _suckData set [ "currentConfig", (configFile >> "CfgGlasses" >> _newClass) ];
                 removeGoggles _unit;
-                _unit addGoggles _gogglesNew;
+                _unit addGoggles _newClass;
 
             };
             case "HMD": {

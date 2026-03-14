@@ -24,10 +24,10 @@ class CfgPatches {
 		skipWhenMissingDependencies = 1;
         
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups)
-        units[] = { QGVAR(crayonpack), QGVAR(crayonpackItem) };
+        units[] = { QGVAR(crayonpackItem) };
 
         // List of weapons (CfgWeapons classes) contained in the addon.
-        weapons[] = {};
+        weapons[] = { QGVAR(crayon_black_nv), QGVAR(crayon_blue_nv), QGVAR(crayon_brown_nv), QGVAR(crayon_gray_nv), QGVAR(crayon_green_nv), QGVAR(crayon_orange_nv), QGVAR(crayon_pink_nv), QGVAR(crayon_purple_nv), QGVAR(crayon_red_nv), QGVAR(crayon_white_nv), QGVAR(crayon_yellow_nv) };
 
 	};
 };

@@ -24,7 +24,7 @@ class CfgPatches {
 		skipWhenMissingDependencies = 1;
         
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups)
-        units[] = {QPVAR(matches), QPVAR(lighter), QPVAR(matchesItem), QPVAR(lighterItem)};
+        units[] = { QPVAR(matchesItem), QPVAR(lighterItem) };
 
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};

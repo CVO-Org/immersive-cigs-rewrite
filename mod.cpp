@@ -1,4 +1,4 @@
-name = "Immersion Cigs - Rewrite {version}";
+name = "Immersion Cigs - Rewrite";
 
 author = "Rebel / Facel / OverlordZorn / prisonerMO / Kneely / Vedaupe";
 

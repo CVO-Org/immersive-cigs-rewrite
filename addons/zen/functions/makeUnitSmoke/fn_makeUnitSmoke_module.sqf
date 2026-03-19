@@ -17,12 +17,12 @@
 
 params ["_posASL", "_unit"];
 
-if  ( isNull _unit                                ) exitWith { LLSTRING(module_makeUnitSmoke_noUnit)         call zen_common_fnc_showMessage; };
-if !( _unit isKindOf "CAManBase"                  ) exitWith { LLSTRING(module_makeUnitSmoke_notUnit)        call zen_common_fnc_showMessage; };
-if  ( _unit call EFUNC(core,isPlayer)             ) exitWith { LLSTRING(module_makeUnitSmoke_player)         call zen_common_fnc_showMessage; };
-if !( alive _unit                                 ) exitWith { LLSTRING(module_makeUnitSmoke_notAlive)       call zen_common_fnc_showMessage; };
-if  ( _unit getVariable [QPVAR(isSmoking), false] ) exitWith { LLSTRING(module_makeUnitSmoke_alreadySmoking) call zen_common_fnc_showMessage; };
-if  ( _unit getVariable [QPVAR(isSucking), false] ) exitWith { LLSTRING(module_makeUnitSmoke_alreadySucking) call zen_common_fnc_showMessage; };
+if  ( isNull _unit                                ) exitWith { [LLSTRING(module_makeUnitSmoke_noUnit)         ] call zen_common_fnc_showMessage; };
+if !( _unit isKindOf "CAManBase"                  ) exitWith { [LLSTRING(module_makeUnitSmoke_notUnit)        ] call zen_common_fnc_showMessage; };
+if  ( _unit call EFUNC(core,isPlayer)             ) exitWith { [LLSTRING(module_makeUnitSmoke_player)         ] call zen_common_fnc_showMessage; };
+if !( alive _unit                                 ) exitWith { [LLSTRING(module_makeUnitSmoke_notAlive)       ] call zen_common_fnc_showMessage; };
+if  ( _unit getVariable [QPVAR(isSmoking), false] ) exitWith { [LLSTRING(module_makeUnitSmoke_alreadySmoking) ] call zen_common_fnc_showMessage; };
+if  ( _unit getVariable [QPVAR(isSucking), false] ) exitWith { [LLSTRING(module_makeUnitSmoke_alreadySucking) ] call zen_common_fnc_showMessage; };
 
 
 /////////////////////////////

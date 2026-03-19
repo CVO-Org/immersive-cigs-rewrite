@@ -1,4 +1,4 @@
-#define COMPONENT Voron
+#define COMPONENT voron
 
 // This is being used for the Addon's Name and can be "My Addon Template Framework"
 #define COMPONENT_BEAUTIFIED Voron Cigarettes

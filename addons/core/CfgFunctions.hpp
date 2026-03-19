@@ -56,6 +56,7 @@ class CfgFunctions
             class canStopSucking {};
 
             class start_suck {};
+            class stop_suck {};
 
             class sucking_start {};
             class sucking {};

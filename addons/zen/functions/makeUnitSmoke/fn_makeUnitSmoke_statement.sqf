@@ -49,3 +49,6 @@ private _slot = switch (_return_slot) do {
 
 // Add unit to Framework
 if (_addToDynamicSmoking) then { [QEGVAR(ai,EH_addUnitToFramework), _unit] call CBA_fnc_serverEvent; };
+
+// Info
+[ LLSTRING(module_makeUnitSmoke_success) ] call zen_common_fnc_showMessage;

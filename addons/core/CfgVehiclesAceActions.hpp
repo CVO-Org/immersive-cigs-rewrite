@@ -76,7 +76,7 @@ class CAManBase: Man
             {
                 displayName = CSTRING(sucking_stop);
                 condition = Q([_player] call FUNC(canStopSucking));
-                statement = Q([_player] call FUNC(sucking_stop));
+                statement = Q([_player] call FUNC(stop_suck));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
                 icon = QPATHTOF(data\ui\pop_consume.paa);

@@ -12,7 +12,7 @@
     </Package>
     <Package name="ZEN_ModuleName">
         <Key ID="STR_cigs_zen_module_makeUnitSmoke">
-            <English>Make Unit Smoke</English>
+            <English>Unit Start Smoking</English>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand">
             <English>Type Cigarette Brand</English>
@@ -27,10 +27,10 @@
             <English>Will add the Unit to the AI Dynamic Smoking System.\nThe Unit will automatically smoke again after the first cigarette.</English>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySmoking">
-            <English>Failed - Unit already Smoking.</English>
+            <English>Failed - Unit already smoking.</English>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySucking">
-            <English>Failed - Unit already Sucking.</English>
+            <English>Failed - Unit already sucking.</English>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
             <English>Type Lighter</English>
@@ -55,6 +55,21 @@
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
             <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_stopUnitSmoke">
+            <English>Unit Stop Smoking</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_stopUnitSmoke_notConsuming">
+            <English>Failed - Unit isn't smoking/sucking.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSmoking">
+            <English>Done - Unit stopped smoking.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSucking">
+            <English>Done - Unit stopped sucking.</English>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
+            <English>Done - Unit is now smoking/sucking.</English>
         </Key>
     </Package>
 </Project>

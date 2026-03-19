@@ -40,6 +40,8 @@ class CfgFunctions
 
             class updateCanConsumeAgain {};
             class addUnitToFramework {};
+
+            class returnItemToSlot {};
         };
     };
 };

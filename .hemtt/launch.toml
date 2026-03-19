@@ -28,13 +28,6 @@ workshop = [
 # binarize = false # Default: false
 # rapify = true # Default: true
 
-[vn]
-extends = "default"
-dlc = ["vn"]
-
-[spe]
-extends = "default"
-dlc = ["vn", "spe"]
 
 [asp]
 extends = "default"

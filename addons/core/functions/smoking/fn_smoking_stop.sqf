@@ -44,6 +44,11 @@ private _vanish = switch (true) do {
 
 [_unit, _smokeData, _vanish] call FUNC(drop_cig);
 
+
+// AI - Return Item back to Goggles/HMD Slot
+[_unit] call EFUNC(ai,returnItemToSlot);
+
+
 ////////////////////////////////////////
 // API
 ////////////////////////////////////////

@@ -27,7 +27,7 @@ class CfgPatches {
         units[] = { QGVAR(cigpackItem) };
 
         // List of weapons (CfgWeapons classes) contained in the addon.
-        weapons[] = { QGVAR(cig0_nv) };
+        weapons[] = { WEAPONS_ARRAY_CIGS }; 
 
 	};
 };

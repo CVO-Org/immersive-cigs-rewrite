@@ -3,4 +3,4 @@
 #include "script_macros_cigs.hpp"
 
 #include "debug_mode.hpp"
-#include "debug_scope.hpp"
+#include "debug_macros.hpp"

@@ -92,10 +92,7 @@ jobs:
           with:
             itemId: ${{ env.WORKSHOPID }}
             contentPath: './${{ env.FOLDER }}-${{ env.VERSION }}'
-            changelog: |
-              https://github.com/${{ github.repository }}/releases/tag/v${{ env.VERSION }}
-              
-              ${{ needs.generate-steam-md.outputs.steammd }}
+            changelog: ${{ needs.generate-steam-md.outputs.steammd }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}

@@ -28,17 +28,6 @@ permissions:
 
 jobs:
 
-  generate-steam-md:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Convert Release to Steam
-          uses: legion-studios/markdown-to-steam@v1
-          id: generate-steam-md
-          with:
-            markdown: ${{ github.event.release.body }}
-    outputs:
-        steammd: ${{ steps.generate-steam-md.outputs.steammd }}
-
   release-addon:
     runs-on: ubuntu-latest
     steps:

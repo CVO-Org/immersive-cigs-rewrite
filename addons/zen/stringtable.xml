@@ -56,6 +56,9 @@
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
             <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
         </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
+            <English>Done - Unit is now smoking/sucking.</English>
+        </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke">
             <English>Unit Stop Smoking</English>
         </Key>
@@ -67,9 +70,6 @@
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSucking">
             <English>Done - Unit stopped sucking.</English>
-        </Key>
-        <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
-            <English>Done - Unit is now smoking/sucking.</English>
         </Key>
     </Package>
 </Project>

@@ -27,6 +27,18 @@ permissions:
   contents: write
 
 jobs:
+
+  generate-steam-md:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Convert Release to Steam
+          uses: legion-studios/markdown-to-steam@v1
+          id: generate-steam-md
+          with:
+            markdown: ${{ github.event.release.body }}
+    outputs:
+        steammd: ${{ steps.generate-steam-md.outputs.steammd }}
+
   release-addon:
     runs-on: ubuntu-latest
     steps:
@@ -82,8 +94,8 @@ jobs:
             contentPath: './${{ env.FOLDER }}-${{ env.VERSION }}'
             changelog: |
               https://github.com/${{ github.repository }}/releases/tag/v${{ env.VERSION }}
-
-              ${{ github.event.release.body }}
+              
+              ${{ needs.generate-steam-md.outputs.steammd }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}

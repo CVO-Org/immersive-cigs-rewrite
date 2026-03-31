@@ -8,14 +8,14 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=387;
+		nextID=389;
 	};
 	class Camera
 	{
-		pos[]={1748.8184,49.952408,5213.4053};
-		dir[]={-0.50193709,-0.55582821,-0.66266668};
-		up[]={-0.33560854,0.83129585,-0.44307536};
-		aside[]={-0.79714537,-1.2805685e-07,0.60379791};
+		pos[]={1703.5868,7.9677935,5186.437};
+		dir[]={-0.052175045,-0.51770103,-0.85396934};
+		up[]={-0.031571157,0.85556155,-0.51673746};
+		aside[]={-0.99813879,0,0.060983382};
 	};
 };
 binarizationWanted=0;
@@ -28,14 +28,14 @@ addons[]=
 	"A3_Characters_F_Orange_Vests",
 	"cigs_lucky_strike",
 	"cigs_apollo",
+	"cigs_black_devil",
+	"cigs_cigars",
 	"cigs_core",
 	"cigs_kosmos",
-	"cigs_crayons",
 	"cigs_pops",
+	"cigs_crayons",
 	"cigs_voron",
 	"A3_Soft_F_Gamma_Van_01",
-	"cigs_cigars",
-	"cigs_black_devil",
 	"cigs_morley",
 	"A3_Modules_F_Curator_Curator",
 	"cigs_craven",
@@ -90,59 +90,59 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="cigs_core";
-			name="Immersion Cigs - Rewrite - Core";
+			className="cigs_black_devil";
+			name="Immersion Cigs - Rewrite - Black Devil Pink Cigarettes";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
 		};
 		class Item6
-		{
-			className="cigs_kosmos";
-			name="Immersion Cigs - Rewrite - Kosmos Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
-		};
-		class Item7
-		{
-			className="cigs_crayons";
-			name="Immersion Cigs - Rewrite - Crayons";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
-		};
-		class Item8
-		{
-			className="cigs_pops";
-			name="Immersion Cigs - Rewrite - Lollipops";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
-		};
-		class Item9
-		{
-			className="cigs_voron";
-			name="Immersion Cigs - Rewrite - Voron Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
-		};
-		class Item10
-		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item11
 		{
 			className="cigs_cigars";
 			name="Immersion Cigs - Rewrite - Cigars";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
 		};
-		class Item12
+		class Item7
 		{
-			className="cigs_black_devil";
-			name="Immersion Cigs - Rewrite - Black Devil Pink Cigarettes";
+			className="cigs_core";
+			name="Immersion Cigs - Rewrite - Core";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+		};
+		class Item8
+		{
+			className="cigs_kosmos";
+			name="Immersion Cigs - Rewrite - Kosmos Cigarettes";
+			author="Immersion Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+		};
+		class Item9
+		{
+			className="cigs_pops";
+			name="Immersion Cigs - Rewrite - Lollipops";
+			author="Immersion Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+		};
+		class Item10
+		{
+			className="cigs_crayons";
+			name="Immersion Cigs - Rewrite - Crayons";
+			author="Immersion Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+		};
+		class Item11
+		{
+			className="cigs_voron";
+			name="Immersion Cigs - Rewrite - Voron Cigarettes";
+			author="Immersion Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+		};
+		class Item12
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
@@ -229,7 +229,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -522,7 +522,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=132;
+		items=133;
 		class Item0
 		{
 			dataType="Group";
@@ -562,6 +562,51 @@ class Mission
 										name="cigs_lucky_strike_cigpack";
 										count=2;
 										ammoLeft=20;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_Messenger_Black_F";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=6;
+									class Item0
+									{
+										name="cigs_apollo_cigpack";
+										count=1;
+										ammoLeft=20;
+									};
+									class Item1
+									{
+										name="cigs_black_devil_cigpack";
+										count=1;
+										ammoLeft=20;
+									};
+									class Item2
+									{
+										name="cigs_cigars_cigarbox_5";
+										count=1;
+										ammoLeft=5;
+									};
+									class Item3
+									{
+										name="cigs_lighter";
+										count=1;
+										ammoLeft=100;
+									};
+									class Item4
+									{
+										name="cigs_kosmos_cigpack";
+										count=1;
+										ammoLeft=20;
+									};
+									class Item5
+									{
+										name="cigs_pops_poppack";
+										count=1;
+										ammoLeft=1;
 									};
 								};
 							};
@@ -4056,6 +4101,68 @@ class Mission
 			{
 			};
 			id=378;
+		};
+		class Item132
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1700,5.0014391,5176.0498};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Poloshirt_stripped";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="cigs_apollo_cigpack";
+										count=1;
+										ammoLeft=20;
+									};
+									class Item1
+									{
+										name="cigs_cigars_cigarbox_5";
+										count=1;
+										ammoLeft=5;
+									};
+									class Item2
+									{
+										name="cigs_lighter";
+										count=1;
+										ammoLeft=100;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							hmd="cigs_black_devil_cig0_nv";
+						};
+					};
+					id=388;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=387;
 		};
 	};
 };

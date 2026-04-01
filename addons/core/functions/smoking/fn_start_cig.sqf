@@ -15,10 +15,24 @@
 * Public: No
 */
 
-params ["_unit", ["_force", false, [true]]];
+params [
+    "_unit",
+    ["_force", false, [true]],
+    ["_mode", "NORMAL", [""]]
+];
 
 
-if ( !([_unit] call FUNC(hasLighter)) && { !_force } ) exitWith { if (isPlayer _unit) then { [ format [ "You dont have anything to light your %1", _unit call FUNC(getSmokableDisplayName) ] ] call cba_fnc_notify; }; };
+if (
+    ( _mode isNotEqualTo "RECIEVING" )
+    &&
+    {
+        !_force
+        &&
+        {
+            !( [_unit] call FUNC(hasLighter) )
+        }
+    }
+) exitWith { if (isPlayer _unit) then { [ format [ "You dont have anything to light your %1", _unit call FUNC(getSmokableDisplayName) ] ] call cba_fnc_notify; }; };
 
 
 // Holsters the weapon before using the lighter, but only if its a player and the setting is enabled and its not already holstered
@@ -37,9 +51,6 @@ if ( SET(require_holstered_weapon) && {currentWeapon _unit != ""} ) then {
         params ["_unit", "_force"];
 
         if !(lifeState _unit in ["HEALTHY", "INJURED"]) exitWith {};
-        // 3. Use Lighter
-        [_unit, _force] call FUNC(useLighter);
-        [_unit] call FUNC(smoking_start);
 
         // 4. Add Event Handler: Gesture Done: cig_in.
         _unit addEventHandler ["GestureDone", {
@@ -56,11 +67,11 @@ if ( SET(require_holstered_weapon) && {currentWeapon _unit != ""} ) then {
             _unit setVariable [QGVAR(lighter_weaponState), nil];
         }];
     };
-    [ _condition, _statement, [_unit, _force], 2,_statement] call CBA_fnc_waitUntilAndExecute;
-
-} else {
-
-    [_unit, _force] call FUNC(useLighter);
-    [_unit] call FUNC(smoking_start);
+    [ _condition, _statement, [_unit, _force], 2, _statement ] call CBA_fnc_waitUntilAndExecute;
 
 };
+
+// 3. Use Lighter
+[_unit, _force, _mode] call FUNC(useLighter);
+[_unit] call FUNC(smoking_start);
+

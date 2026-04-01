@@ -20,9 +20,14 @@
 // Common
 [ QGVAR(EH_notify), CBA_fnc_notify ] call CBA_fnc_addEventHandler;
 
+// Loop, locality change
 [ QGVAR(EH_sucking), FUNC(sucking) ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_smoking), FUNC(smoking) ] call CBA_fnc_addEventHandler;
 
+// Light others cigs
+[ QGVAR(EH_smoking_start), FUNC(start_cig) ] call CBA_fnc_addEventHandler;
+
+// Effects
 [ QGVAR(EH_smoke_effect),   FUNC(smoke_effect)   ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_light_lighter),  FUNC(light_lighter)  ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_light_cig_glow), FUNC(light_cig_glow) ] call CBA_fnc_addEventHandler;

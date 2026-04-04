@@ -3,9 +3,11 @@
     <Package name="Author">
         <Key ID="STR_cigs_nil_author">
             <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
         </Key>
         <Key ID="STR_cigs_nil_url">
             <English>https://github.com/</English>
+            <French>https://github.com/</French>
         </Key>
     </Package>
     <Package name="Items">

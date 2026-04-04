@@ -11,27 +11,35 @@
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier">
             <English>Coughing Modifier</English>
+            <French>Modificateur de toux</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier_desc">
             <English>Defines how likely it is for a smoker to cough.\n0% disables the feature.</English>
+            <French>Définit la probabilité qu'un fumeur tousse.\n0 % désactive cette fonctionnalité.</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay">
             <English>Fatigue Decrease Delay</English>
+            <French>Réduction du retard lié à la fatigue</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay_desc">
             <English>Defines the delay before the smoking penalty will start to wear off.\nin Minutes.</English>
+            <French>Définit le délai avant que la pénalité pour avoir fumé commence à s'estomper.\En minutes.</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled">
             <English>Enable Adv. Fatigue Integration</English>
+            <French>Activer l'intégration avancée de la fatigue</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled_desc">
             <English>When Enabled, smoking will affect ACE Advanced Fatigue System.</English>
+            <French>Lorsque cette option est activée, le tabagisme aura une incidence sur le système avancé de fatigue ACE.</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier">
             <English>Fatigue Modifier</English>
+            <French>Modificateur de fatigue</French>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier_desc">
             <English>Defines how strong smoking will be taken into account for the fatigue impact.</English>
+            <French>Définit dans quelle mesure le tabagisme sera pris en compte dans l'impact de la fatigue.</French>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance">
             <English>Chance of Spontaneus Combustion</English>
@@ -51,39 +59,51 @@
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon">
             <English>Holster Weapon when using Ligher</English>
+            <French>Ranger l'arme dans son étui lorsque vous utilisez le briquet</French>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
             <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
+            <French>Lorsqu'il utilise un briquet ou des allumettes, le joueur range automatiquement son arme dans son étui.\nCela est nécessaire pour éviter les animations douteuses.</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency">
             <English>Smoking Frequency</English>
+            <French>Fréquence du tabagisme</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_desc">
             <English>Defines how often you puff/draw on a smokable.</English>
+            <French>Définit la fréquence à laquelle vous tirez sur un produit à fumer.</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_less">
             <English>Less Often</English>
+            <French>Moins souvent</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_normal">
             <English>Normal</English>
+            <French>Normal</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_often">
             <English>More Often</English>
+            <French>Plus souvent</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity">
             <English>Smoking Intensity</English>
+            <French>Intensité du tabagisme</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_desc">
             <English>Defines which how strong/long you puff/draw a smokable.</English>
+            <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_long">
             <English>More Intensive</English>
+            <French>Plus intensif</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_normal">
             <English>Normal</English>
+            <French>Normal</French>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_short">
             <English>Less Intensive</English>
+            <French>Moins intensif</French>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack">
             <English>Start with a CigPack</English>
@@ -133,6 +153,7 @@
         </Key>
         <Key ID="STR_cigs_core_set_mainCat_player">
             <English>Immersive Cigs - Player Preferences</English>
+            <French>Immersive Cigs - Préférences du joueur</French>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_ace_arsenal">
             <English>ACE Arsenal</English>
@@ -145,6 +166,7 @@
         </Key>
         <Key ID="STR_cigs_core_set_subCat_habits_smoking">
             <English>Smoking Habits</English>
+            <French>L'habitude de fumer</French>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_sp">
             <English>Singleplayer</English>
@@ -156,14 +178,17 @@
         <Key ID="STR_cigs_core_editor_category_main">
             <English>Immersion Cigs</English>
             <German>Immersive Zigaretten</German>
+            <French>Cigarettes immersives</French>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
             <English>Cig Packs</English>
             <German>Schachteln</German>
+            <French>Paquets de cigarettes</French>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_lighters">
             <English>Lighters</English>
             <German>Feuerzeuge</German>
+            <French>Briquets</French>
         </Key>
     </Package>
     <Package name="GlobalDescription">
@@ -211,15 +236,19 @@
     <Package name="Incompatibility">
         <Key ID="STR_cigs_core_incompat_message1">
             <English>The following mods are incompatible:</English>
+            <French>Les mods suivants sont incompatibles :</French>
         </Key>
         <Key ID="STR_cigs_core_incompat_message2">
             <English>These mods should not be loaded together.</English>
+            <French>Ces mods ne doivent pas être chargés ensemble.</French>
         </Key>
         <Key ID="STR_cigs_core_incompat_message3">
             <English>You may experience unexpected behavior and issues.</English>
+            <French>Vous pouvez rencontrer des comportements et des problèmes inattendus.</French>
         </Key>
         <Key ID="STR_cigs_core_incompat_title">
             <English>%1: Incompatible Mods</English>
+            <French>%1 : Mods incompatibles</French>
         </Key>
     </Package>
     <Package name="Interactions_cigs">
@@ -236,6 +265,7 @@
         <Key ID="STR_cigs_core_pay_respect">
             <English>Pay Respect to the Fallen...</English>
             <German>Den Gefallenen Respekt zollen...</German>
+            <French>Rendez hommage aux disparus...</French>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
             <English>Light Up your Cig</English>
@@ -246,6 +276,7 @@
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_custom">
             <English>Light Up your %1</English>
+            <French>Illuminez votre %1</French>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_desc">
             <English>Requires a Lighter or Matches in your inventory</English>
@@ -325,6 +356,7 @@
     <Package name="Main">
         <Key ID="STR_cigs_core_author">
             <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
         </Key>
     </Package>
     <Package name="Notification">

@@ -5,71 +5,93 @@
     <Package name="Main">
         <Key ID="STR_cigs_zen_author">
             <English>Cigs Rewrite Team</English>
+            <French>Cigs Rewrite Team</French>
         </Key>
         <Key ID="STR_cigs_zen_authors">
             <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
         </Key>
     </Package>
     <Package name="ZEN_ModuleName">
         <Key ID="STR_cigs_zen_module_makeUnitSmoke">
             <English>Unit Start Smoking</English>
+            <French>Commencer à fumer</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand">
             <English>Type Cigarette Brand</English>
+            <French>Marque de cigarettes</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand_desc">
             <English>Select the desired cigarette brand.</English>
+            <French>Sélectionnez la marque de cigarettes souhaitée.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_add">
             <English>Automate Smoking</English>
+            <French>Fumer automatiquement</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_add_desc">
             <English>Will add the Unit to the AI Dynamic Smoking System.\nThe Unit will automatically smoke again after the first cigarette.</English>
+            <French>Ajoute l'unité au système dynamique de tabagisme de l'IA.\nL'unité recommencera automatiquement à fumer après la première cigarette.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySmoking">
             <English>Failed - Unit already smoking.</English>
+            <French>Échec - L'unité fume déjà.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySucking">
             <English>Failed - Unit already sucking.</English>
+            <French>Échec - L'unité suce déjà.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
             <English>Type Lighter</English>
+            <French>Allume-cigare</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_desc">
             <English>Select the desired Lighter Type.</English>
+            <French>Sélectionnez le type de briquet souhaité.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
             <English>Failed - No Unit has been selected.</English>
+            <French>Échec - Aucune unité n'a été sélectionnée.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_notAlive">
             <English>Failed - Target not alive.</English>
+            <French>Échec - La cible n'est pas en vie.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_notUnit">
             <English>Failed - Target not a unit.</English>
+            <French>Échec - La cible n'est pas une unité.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_player">
             <English>Failed - Selected Unit is Player controlled.</English>
+            <French>Échec - L'unité sélectionnée est contrôlée par le joueur.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot">
             <English>Preffered Slot</English>
+            <French>Emplacement préféré</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
             <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
+            <French>Aucun emplacement n'est libre pour la cigarette, quel emplacement faut-il libérer ?</French>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
             <English>Done - Unit is now smoking/sucking.</English>
+            <French>C'est fait – L'unité fume/suce désormais.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke">
             <English>Unit Stop Smoking</English>
+            <French>L'unité a arrêter de fumer</French>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_notConsuming">
             <English>Failed - Unit isn't smoking/sucking.</English>
+            <French>Échec - L'appareil ne fume pas/ne suce pas.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSmoking">
             <English>Done - Unit stopped smoking.</English>
+            <French>C'est fait : l'unité ne fume plus.</French>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSucking">
             <English>Done - Unit stopped sucking.</English>
+            <French>C'est fait - L'unité a cessé de sucer.</French>
         </Key>
     </Package>
 </Project>

@@ -3,9 +3,11 @@
     <Package name="Main">
         <Key ID="STR_mod_URL">
             <English>https://github.com/OverlordZorn/immersion-cigs-rewrite</English>
+            <French>https://github.com/OverlordZorn/immersion-cigs-rewrite</French>
         </Key>
         <Key ID="STR_mod_author">
             <English>Immersion Cigs - Rewrite Team</English>
+            <French>Immersion Cigs - Rewrite Team</French>
         </Key>
     </Package>
 </Project>

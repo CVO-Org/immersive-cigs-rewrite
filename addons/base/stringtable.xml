@@ -26,6 +26,7 @@
     <Package name="Main">
         <Key ID="str_cigs_base_author">
             <English>Zorn / Bromine</English>
+            <French>Zorn / Bromine</French>
         </Key>
     </Package>
 </Project>

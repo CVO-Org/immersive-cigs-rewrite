@@ -19,6 +19,7 @@
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
             <English>01. Dynamic AI Smoking</English>
+            <French>01. Fumeur dynamique IA</French>
         </Key>
     </Package>
     <Package name="CBASettings_cigsonai">
@@ -48,17 +49,21 @@
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_side_enabled">
             <English>Enable for %1</English>
+            <French>Activer pour %1</French>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_side_enabled_desc">
             <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
+            <French>Contrôle si les unités IA du côté %1 doivent recevoir des cigarettes.</French>
         </Key>
     </Package>
     <Package name="CBASettings_dynamicSmoking">
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory">
             <English>Check Unit for compatible Items</English>
+            <French>Vérifiez l'unité pour les articles compatibles</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
             <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>
+            <French>Lorsque cette option est activée, elle vérifie si une unité dispose d'un paquet, qu'il soit fumable ou à sucer. Si c'est le cas, ces unités seront ajoutées.</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
             <English>Enable</English>
@@ -66,32 +71,41 @@
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
             <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
+            <French>Permet au système de faire fumer dynamiquement des cigarettes à l'IA.\nNécessite l'activation de Cigs on AI pour distribuer des objets et les ajouter.</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>
+            <French>Supprimer l'élément de l'emplacement</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
             <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
+            <French>Lorsque cette option est activée, s'il n'y a pas d'emplacement disponible pour que l'IA y place la cigarette, elle retirera l'objet actuel de l'emplacement sélectionné.\nElle tentera de placer l'objet dans l'inventaire de l'unité.</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg">
             <English>Average Time between Cigs</English>
+            <French>Temps moyen entre deux cigarettes</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
             <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
+            <French>Ces valeurs définissent le temps moyen en minutes qui doit s'écouler avant qu'une unité puisse fumer une autre cigarette.</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
             <English>Preffered Slot</English>
+            <French>Emplacement préféré</French>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot_desc">
             <English>Defines the prefered slot to put the item if both are already occupied.</English>
+            <French>Définit l'emplacement préféré pour placer l'objet si les deux sont déjà occupés.</French>
         </Key>
     </Package>
     <Package name="Main">
         <Key ID="STR_cigs_ai_author">
             <English>Cigs Rewrite Team</English>
+            <French>Cigs Rewrite Team</French>
         </Key>
         <Key ID="STR_cigs_ai_authors">
             <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
         </Key>
     </Package>
 </Project>

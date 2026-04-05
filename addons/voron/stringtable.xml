@@ -5,21 +5,21 @@
             <English>Voron Cigarette</English>
             <French>Cigarette Voron</French>
             <German>Voron Zigarette</German>
-            <Japanese>Voron 葉巻</Japanese>
+            <Japanese>紙巻たばこ Voron</Japanese>
             <Chinese>Voron 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_voron_cigpack">
             <English>Voron Cigarette Pack</English>
             <French>Paquet de cigarettes Voron</French>
             <German>Voron Zigarettenschachtel</German>
-            <Japanese>Voron タバコ</Japanese>
+            <Japanese>箱入り紙巻たばこ Voron</Japanese>
             <Chinese>Voron 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_voron_cigpack_desc">
             <English>The only cigarettes that are good for your (mental) health - Contains 24 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Les seules cigarettes qui sont bonnes pour votre santé (mentale)  - Contient 24 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
             <German>The only cigarettes that are good for your (mental) health - Enthält 24 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Japanese>The only cigarettes that are good for your (mental) health - 24 本の葉巻がある。&lt;br/&gt;警告:喫煙はあなたの健康を害します。</Japanese>
+            <Japanese>(精神の)健康に良い唯一のタバコ&lt;br/&gt;紙巻たばこ24本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>The only cigarettes that are good for your (mental) health - 內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>

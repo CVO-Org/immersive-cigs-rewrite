@@ -4,10 +4,12 @@
         <Key ID="STR_cigs_nil_author">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <Japanese>OverlordZorn</Japanese>
         </Key>
         <Key ID="STR_cigs_nil_url">
             <English>https://github.com/</English>
             <French>https://github.com/</French>
+            <Japanese>https://github.com/</Japanese>
         </Key>
     </Package>
     <Package name="Items">
@@ -15,21 +17,21 @@
             <English>NIL Cigarette</English>
             <French>NIL Cigarette</French>
             <German>NIL Zigarette</German>
-            <Japanese>NIL 葉巻</Japanese>
+            <Japanese>紙巻たばこ NIL</Japanese>
             <Chinese>NIL 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack">
             <English>NIL Cigarette Pack</English>
             <French>NIL Paquet de cigarettes</French>
             <German>NIL Zigarettenschachtel</German>
-            <Japanese>NIL タバコ</Japanese>
+            <Japanese>箱入り紙巻たばこ NIL</Japanese>
             <Chinese>NIL 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack_desc">
             <English>NIL - Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>NIL - Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
             <German>NIL - Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Japanese>NIL - 20 本の葉巻がある。&lt;br/&gt;警告:喫煙はあなたの健康を害します。</Japanese>
+            <Japanese>NIL&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>NIL - 內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>

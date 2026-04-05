@@ -4,174 +4,216 @@
         <Key ID="STR_cigs_core_set_ace_arsenal_tab">
             <English>Enable Custom Category Tab in ACE Arsenal</English>
             <French>Activer les catégories personnalisées dans ACE Arsenal</French>
+            <Japanese>ACE武器庫でカスタムされたカテゴリ分類を有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_ace_arsenal_tab_desc">
             <English>When Enabled, this will create a Immersion Cig Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
             <French>Lorsque cette option est activée, elle crée un onglet « Immersion Cig » dans l'arsenal ACE (côté droit). Pour le désactiver, la mission doit être redémarrée.</French>
+            <Japanese>有効化するとImmersion CigカテゴリがACE武器庫に追加されます(右側の列)。\nこれはミッション中でも有効化できますが、無効化にはリスタートが必要です。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier">
             <English>Coughing Modifier</English>
             <French>Modificateur de toux</French>
+            <Japanese>咳込みの頻度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier_desc">
             <English>Defines how likely it is for a smoker to cough.\n0% disables the feature.</English>
             <French>Définit la probabilité qu'un fumeur tousse.\n0 % désactive cette fonctionnalité.</French>
+            <Japanese>喫煙者がどのくらいの頻度で咳き込むかを定義します。\n0%で機能を無効化。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay">
             <English>Fatigue Decrease Delay</English>
             <French>Réduction du retard lié à la fatigue</French>
+            <Japanese>ファティーグ低下の遅延</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay_desc">
             <English>Defines the delay before the smoking penalty will start to wear off.\nin Minutes.</English>
             <French>Définit le délai avant que la pénalité pour avoir fumé commence à s'estomper.\En minutes.</French>
+            <Japanese>喫煙者が何分後にファティーグ(スタミナ)低下ペナルティが終了し始めるかを調整します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled">
             <English>Enable Adv. Fatigue Integration</English>
             <French>Activer l'intégration avancée de la fatigue</French>
+            <Japanese>高度な疲労(ファティーグ)の統合</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled_desc">
             <English>When Enabled, smoking will affect ACE Advanced Fatigue System.</English>
             <French>Lorsque cette option est activée, le tabagisme aura une incidence sur le système avancé de fatigue ACE.</French>
+            <Japanese>有効化するとACE高度な疲労(ファティーグ)システムに影響するようになります。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier">
             <English>Fatigue Modifier</English>
             <French>Modificateur de fatigue</French>
+            <Japanese>ファティーグ調整</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier_desc">
             <English>Defines how strong smoking will be taken into account for the fatigue impact.</English>
             <French>Définit dans quelle mesure le tabagisme sera pris en compte dans l'impact de la fatigue.</French>
+            <Japanese>喫煙がどのくらいファティーグ(疲労・スタミナ低下)へ影響を及ぼすかを定義します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance">
-            <English>Chance of Spontaneus Combustion</English>
+            <English>Chance of Spontaneous Combustion</English>
             <French>Risque de combustion spontanée</French>
+            <Japanese>自然発火の可能性</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance_desc">
             <English>Defines the chance at which a player/unit might start burning if they're doing something silly and/or risky while smoking.\n 0% disables the effect.</English>
             <French>Définit le risque qu'un joueur ou une unité commence à brûler s'il fait quelque chose de stupide et/ou de risqué en fumant.</French>
+            <Japanese>プレイヤーが喫煙中に危険や愚かな行動をしたときにタバコの火が原因で体に着火する可能性を定義します。/n0%で機能を無効化。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_smoke_particles">
             <English>Amount of smoke particles</English>
             <French>Risque de combustion spontanée</French>
+            <Japanese>パーティクルの量</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_smoke_particles_desc">
-            <English>Defines the amount of smoke particles dropped when a person is smoking. Clientside setting.</English>
+            <English>Defines the amount of smoke particles dropped when a person is smoking. Client side setting.</English>
             <French>Définit la quantité de particules de fumée rejetées lorsqu'une personne fume. Réglage côté client.</French>
+            <Japanese>喫煙時にユニットから発生するパーティクルの量を定義します。クライアント側設定。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon">
-            <English>Holster Weapon when using Ligher</English>
+            <English>Holster Weapon when using Lighter</English>
             <French>Ranger l'arme dans son étui lorsque vous utilisez le briquet</French>
+            <Japanese>ライター使用時に武器をしまう</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
             <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
             <French>Lorsqu'il utilise un briquet ou des allumettes, le joueur range automatiquement son arme dans son étui.\nCela est nécessaire pour éviter les animations douteuses.</French>
+            <Japanese>ライターやマッチの使用時にプレイヤーが自動的に銃を収めます。\nこれは、不自然なアニメーションを回避するために必要です。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency">
             <English>Smoking Frequency</English>
             <French>Fréquence du tabagisme</French>
+            <Japanese>吸排気の頻度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_desc">
             <English>Defines how often you puff/draw on a smokable.</English>
             <French>Définit la fréquence à laquelle vous tirez sur un produit à fumer.</French>
+            <Japanese>タバコを吸う頻度を定義します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_less">
             <English>Less Often</English>
             <French>Moins souvent</French>
+            <Japanese>低頻度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_normal">
             <English>Normal</English>
             <French>Normal</French>
+            <Japanese>普通</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_often">
             <English>More Often</English>
             <French>Plus souvent</French>
+            <Japanese>高頻度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity">
             <English>Smoking Intensity</English>
             <French>Intensité du tabagisme</French>
+            <Japanese>吸排気の強度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_desc">
             <English>Defines which how strong/long you puff/draw a smokable.</English>
             <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
+            <Japanese>タバコをどれくらいの強さで、どれくらいの時間吸い込むかを定義します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_long">
             <English>More Intensive</English>
             <French>Plus intensif</French>
+            <Japanese>低強度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_normal">
             <English>Normal</English>
             <French>Normal</French>
+            <Japanese>普通</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_short">
             <English>Less Intensive</English>
             <French>Moins intensif</French>
+            <Japanese>高強度</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack">
             <English>Start with a CigPack</English>
             <French>Commencer avec un CigPack</French>
+            <Japanese>タバコを所持した状態で開始</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_desc">
-            <English>Adds a Cigpack the beginning of a singeplayer mission.</English>
-            <French>Ajoute un Cigpack au début d'une mission singeplayer.</French>
+            <English>Adds a CigPack the beginning of a single player mission.</English>
+            <French>Ajoute un CigPack au début d'une mission singleplayer.</French>
+            <Japanese>シングルプレイヤーミッションの開始時にタバコの箱を追加します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type">
             <English>Type of Pack</English>
             <French>Type d'emballage</French>
+            <Japanese>タバコの種類</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type_desc">
-            <English>Defines which type of Cigpack (or other) will be added at the beginning of a singeplayer mission.</English>
-            <French>Définit le type de Cigpack (ou autre) qui sera ajouté au début d'une mission singeplayer.</French>
+            <English>Defines which type of CigPack (or other) will be added at the beginning of a single player mission.</English>
+            <French>Définit le type de CigPack (ou autre) qui sera ajouté au début d'une mission singleplayer.</French>
+            <Japanese>シングルプレイヤーミッションの開始時に追加されるタバコの箱（またはその他のアイテム）の種類を定義します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems">
             <English>Add Items to Player in SP</English>
             <French>Ajouter des éléments au joueur dans le SP</French>
+            <Japanese>シングルプレイヤーでアイテム追加</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems_desc">
-            <English>When this is enabled, the following items will be added in singleplayer to the players inventory.</English>
+            <English>When this is enabled, the following items will be added in single player to the players inventory.</English>
             <French>Lorsque cette option est activée, les objets suivants sont ajoutés à l'inventaire du joueur en mode solo.</French>
+            <Japanese>有効化するとシングルプレイヤーでこれらのアイテムがプレイヤーのインベントリに追加されます。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter">
             <English>Start with a Lighter</English>
             <French>Commencer avec un briquet</French>
+            <Japanese>ライターを所持した状態で開始</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_desc">
-            <English>Adds an Lighter at the beginning of a singeplayer mission.</English>
+            <English>Adds a Lighter at the beginning of a single player mission.</English>
             <French>Ajoute un briquet au début d'une mission (SP seulement).</French>
+            <Japanese>シングルプレイヤーミッションの開始時にライターを追加します。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_type">
             <English>Type of Lighter</English>
             <French>Type de briquet</French>
+            <Japanese>ライターの種類</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_type_desc">
-            <English>Defines which type of lighter will be added at the beginning of a singeplayer mission.</English>
+            <English>Defines which type of lighter will be added at the beginning of a single player mission.</English>
             <French>Définit le type de briquet qui sera ajouté au début d'une mission (SP seulement).</French>
+            <Japanese>シングルプレイヤーミッションの開始時に追加されるライターの種類を定義します。</Japanese>
         </Key>
     </Package>
     <Package name="CBASettings_Categories">
         <Key ID="STR_cigs_core_set_mainCat_common">
             <English>Immersive Cigs - Common</English>
             <French>Immersive Cigs - Common</French>
+            <Japanese>Immersive Cigs - 一般設定</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_mainCat_player">
             <English>Immersive Cigs - Player Preferences</English>
             <French>Immersive Cigs - Préférences du joueur</French>
+            <Japanese>Immersive Cigs - プレイヤー設定</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_ace_arsenal">
             <English>ACE Arsenal</English>
             <French>Arsenal ACE</French>
+            <Japanese>ACE 武器庫</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_effects">
             <English>Effects</English>
             <French>Effets</French>
             <German>Effekte</German>
+            <Japanese>エフェクト</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_habits_smoking">
             <English>Smoking Habits</English>
             <French>L'habitude de fumer</French>
+            <Japanese>喫煙環境</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_sp">
             <English>Singleplayer</English>
             <French>Joueur unique</French>
             <German>Einzelspieler</German>
+            <Japanese>シングルプレイヤー</Japanese>
         </Key>
     </Package>
     <Package name="EditorCategories">
@@ -179,76 +221,93 @@
             <English>Immersion Cigs</English>
             <German>Immersive Zigaretten</German>
             <French>Cigarettes immersives</French>
+            <Japanese>Immersion Cigs</Japanese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
             <English>Cig Packs</English>
             <German>Schachteln</German>
             <French>Paquets de cigarettes</French>
+            <Japanese>タバコ箱</Japanese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_lighters">
             <English>Lighters</English>
             <German>Feuerzeuge</German>
             <French>Briquets</French>
+            <Japanese>ライター</Japanese>
         </Key>
     </Package>
     <Package name="GlobalDescription">
         <Key ID="STR_cigs_core_glasses_stage0">
             <English>Glasses Slot - Stage 0</English>
             <French>Masques - Stage 0</French>
+            <Japanese>ゴーグル枠 - 0段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage1">
             <English>Glasses Slot - Stage 1</English>
             <French>Masques - Stage 1</French>
+            <Japanese>ゴーグル枠 - 1段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage2">
             <English>Glasses Slot - Stage 2</English>
             <French>Masques - Stage 2</French>
+            <Japanese>ゴーグル枠 - 2段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage3">
             <English>Glasses Slot - Stage 3</English>
             <French>Masques - Stage 3</French>
+            <Japanese>ゴーグル枠 - 3段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage4">
             <English>Glasses Slot - Stage 4</English>
             <French>Masques - Stage 4</French>
+            <Japanese>ゴーグル枠 - 4段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage0">
             <English>Nightvision Slot - Stage 0</English>
             <French>Vision nocturne - Stage 0</French>
+            <Japanese>NVG枠 - 0段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage1">
             <English>Nightvision Slot - Stage 1</English>
             <French>Vision nocturne - Stage 1</French>
+            <Japanese>NVG枠 - 1段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage2">
             <English>Nightvision Slot - Stage 2</English>
             <French>Vision nocturne - Stage 2</French>
+            <Japanese>NVG枠 - 2段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage3">
             <English>Nightvision Slot - Stage 3</English>
             <French>Vision nocturne - Stage 3</French>
+            <Japanese>NVG枠 - 3段階目</Japanese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage4">
             <English>Nightvision Slot - Stage 4</English>
             <French>Vision nocturne - Stage 4</French>
+            <Japanese>NVG枠 - 4段階目</Japanese>
         </Key>
     </Package>
     <Package name="Incompatibility">
         <Key ID="STR_cigs_core_incompat_message1">
             <English>The following mods are incompatible:</English>
             <French>Les mods suivants sont incompatibles :</French>
+            <Japanese>このMODは互換性がありません:</Japanese>
         </Key>
         <Key ID="STR_cigs_core_incompat_message2">
             <English>These mods should not be loaded together.</English>
             <French>Ces mods ne doivent pas être chargés ensemble.</French>
+            <Japanese>これらのMODを同時に読み込むことは出来ません。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_incompat_message3">
             <English>You may experience unexpected behavior and issues.</English>
             <French>Vous pouvez rencontrer des comportements et des problèmes inattendus.</French>
+            <Japanese>予期せぬ挙動や問題が発生する可能性があります。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_incompat_title">
             <English>%1: Incompatible Mods</English>
             <French>%1 : Mods incompatibles</French>
+            <Japanese>%1: 非互換MOD</Japanese>
         </Key>
     </Package>
     <Package name="Interactions_cigs">
@@ -256,32 +315,37 @@
             <English>Eat</English>
             <French>Manger</French>
             <German>Essen</German>
+            <Japanese>食べる</Japanese>
         </Key>
         <Key ID="STR_cigs_core_eat_cig_desc">
             <English>Eat the thing, duh</English>
             <French>Manger la chose, bien sûr</French>
             <German>Du hast schon richtig gelesen</German>
+            <Japanese>そりゃあ、食べるってことだろ。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_pay_respect">
             <English>Pay Respect to the Fallen...</English>
             <German>Den Gefallenen Respekt zollen...</German>
             <French>Rendez hommage aux disparus...</French>
+            <Japanese>亡くなった方々に敬意を表しましょう…</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
             <English>Light Up your Cig</English>
             <French>Allumer Cigarette</French>
             <German>Zigarette anzünden</German>
-            <Japanese>タバコに火を点ける</Japanese>
+            <Japanese>煙草に火をつける</Japanese>
             <Chinese>點菸</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_custom">
             <English>Light Up your %1</English>
             <French>Illuminez votre %1</French>
+            <Japanese>%1 に火をつける</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_desc">
             <English>Requires a Lighter or Matches in your inventory</English>
             <French>Nécessite un briquet ou des allumettes dans votre inventaire</French>
             <German>Benötigt Feuerzeug oder Streichhölzer im Inventar</German>
+            <Japanese>ライターまたはマッチを所持している必要があります</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_their">
             <English>Light Up their Cig</English>
@@ -294,7 +358,7 @@
             <English>Put Out a Cig</English>
             <French>Eteindre Cigarette</French>
             <German>Zigarette aus machen</German>
-            <Japanese>タバコを置く</Japanese>
+            <Japanese>煙草の火を消す</Japanese>
             <Chinese>滅菸</Chinese>
         </Key>
     </Package>
@@ -303,7 +367,7 @@
             <English>Take from Pack</English>
             <French>Prendre du paquet</French>
             <German>Aus der Sachtel nehmen</German>
-            <Japanese>箱からタバコを取る</Japanese>
+            <Japanese>箱から煙草を出す</Japanese>
             <Chinese>抽一根菸出來</Chinese>
         </Key>
     </Package>
@@ -335,21 +399,21 @@
             <English>Can light up 100 cigarettes.</English>
             <French>Peut allumer 100 cigarettes</French>
             <German>Kann bis zu 100 Zigaretten anzünden.</German>
-            <Japanese>100 回火を点けられる。</Japanese>
+            <Japanese>煙草100本分に着火可能。</Japanese>
             <Chinese>可以點一百根菸。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_matches">
             <English>Matches</English>
             <French>Allumettes</French>
             <German>Streichhölzer</German>
-            <Japanese>マッチ</Japanese>
+            <Japanese>マッチ箱</Japanese>
             <Chinese>火柴</Chinese>
         </Key>
         <Key ID="STR_cigs_core_matches_desc">
             <English>Contains 10 matches.</English>
             <French>Contient 10 allumettes.</French>
             <German>Enthält 10 Streichhölzer</German>
-            <Japanese>10 のマッチ本入り。</Japanese>
+            <Japanese>マッチ10本入り。</Japanese>
             <Chinese>內含十根火柴。</Chinese>
         </Key>
     </Package>
@@ -357,6 +421,7 @@
         <Key ID="STR_cigs_core_author">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <Japanese>OverlordZorn</Japanese>
         </Key>
     </Package>
     <Package name="Notification">
@@ -364,16 +429,19 @@
             <English>%1 gave you a light.</English>
             <French>%1 vous a donné du feu.</French>
             <German>%1 hat dir Feuer gegeben.</German>
+            <Japanese>%1 が火を貸してくれた。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_is_Empty">
             <English>%1 is now empty.</English>
             <French>%1 est maintenant vide.</French>
             <German>%1 ist nun leer.</German>
+            <Japanese>%1 はもう空だ。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_taste_flavor">
             <English>Hmm, it tastes like %1!</English>
             <French>Hmm, ça a un goût de %1!</French>
             <German>Hmm, es schmeckt nach %1!</German>
+            <Japanese>うーん、これは%1味だ!</Japanese>
         </Key>
     </Package>
 </Project>

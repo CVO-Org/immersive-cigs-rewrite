@@ -5,21 +5,21 @@
             <English>Lucky Strike Cigarette</English>
             <French>Lucky Strike Cigarette</French>
             <German>Lucky Strike Zigarette</German>
-            <Japanese>Lucky Strike 葉巻</Japanese>
+            <Japanese>紙巻たばこ Lucky Strike</Japanese>
             <Chinese>Lucky Strike 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_Lucky_Strike_cigpack">
             <English>Lucky Strike Cigarette Pack</English>
             <French>Lucky Strike Paquet de cigarettes</French>
             <German>Lucky Strike Zigarettenschachtel</German>
-            <Japanese>Lucky Strike タバコ</Japanese>
+            <Japanese>箱入り紙巻たばこ Lucky Strike</Japanese>
             <Chinese>Lucky Strike 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_Lucky_Strike_cigpack_desc">
             <English>Its Toasted!&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Its Toasted!&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
             <German>Its Toasted!&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Japanese>Its Toasted!&lt;br/&gt;20 本の葉巻がある。&lt;br/&gt;警告:喫煙はあなたの健康を害します。</Japanese>
+            <Japanese>Its Toasted!&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>Its Toasted!&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>

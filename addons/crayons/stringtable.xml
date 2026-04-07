@@ -5,21 +5,27 @@
             <English>Crayon</English>
             <French>Crayon</French>
             <German>Wachsmalkreide</German>
+            <Japanese>クレヨン</Japanese>
         </Key>
         <Key ID="STR_cigs_crayons_crayonpack">
             <English>Pack of Crayons</English>
             <French>Boîte de crayons de couleur</French>
             <German>Wachsmalkreiden</German>
+            <Japanese>箱入りのクレヨン</Japanese>
         </Key>
         <Key ID="STR_cigs_crayons_crayonpack_desc">
             <English>A pack of 24 crayons.&lt;br/&gt;A Marine's C-Ration.</English>
             <French>Un paquet de 24 crayons de couleur.&lt;br/&gt;La C-Ration d'un Marine.</French>
+            <Japanese>クレヨン24本入りの箱。&lt;br/&gt;海兵隊のためのC-レーシヨン。</Japanese>
         </Key>
     </Package>
     <Package name="Main">
         <Key ID="STR_cigs_crayons_author">
             <English>Vespade / OverlordZorn</English>
             <French>Vespade / OverlordZorn</French>
+            <Japanese>Vespade / OverlordZorn</Japanese>
+            <Chinese>Vespade / OverlordZorn</Chinese>
+            <German>Vespade / OverlordZorn</German>
         </Key>
     </Package>
 </Project>

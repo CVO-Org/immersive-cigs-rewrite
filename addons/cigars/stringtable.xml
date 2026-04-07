@@ -5,16 +5,19 @@
             <English>Cigar</English>
             <French>Cigar</French>
             <German>Zigarre</German>
+            <Japanese>葉巻たばこ</Japanese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5">
             <English>Box of Cigars</English>
             <French>Boîte de cigares</French>
             <German>Zigarrenschachtel</German>
+            <Japanese>葉巻たばこケース</Japanese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5_desc">
-            <English>Box of Cigars with 5 cigars</English>
-            <French>Coffret de 5 cigares</French>
-            <German>Zigarrenschachtel mit 5 Zigarren</German>
+            <English>Box of Cigars with 5 cigars.</English>
+            <French>Coffret de 5 cigares.</French>
+            <German>Zigarrenschachtel mit 5 Zigarren.</German>
+            <Japanese>葉巻たばこ5本入り。</Japanese>
         </Key>
     </Package>
     <Package name="Main">
@@ -22,11 +25,13 @@
             <English>Rebel / Facel</English>
             <French>Rebel / Facel</French>
             <German>Rebel / Facel</German>
+            <Japanese>Rebel / Facel</Japanese>
         </Key>
         <Key ID="STR_cigs_cigars_author_cigarbox_5">
             <English>Bromine / OverlordZorn</English>
             <French>Bromine / OverlordZorn</French>
             <German>Bromine / OverlordZorn</German>
+            <Japanese>Bromine / OverlordZorn</Japanese>
         </Key>
     </Package>
 </Project>

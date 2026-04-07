@@ -5,22 +5,22 @@
             <English>Apollo Soyuz Cigarette</English>
             <French>Apollo Soyuz Cigarette</French>
             <German>Apollo Soyuz Zigarette</German>
-            <Japanese>Apollo Soyuz 葉巻</Japanese>
+            <Japanese>紙巻たばこ アポロ・ソユーズ シガレット</Japanese>
             <Chinese>Apollo Soyuz 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_apollo_cigpack">
             <English>Apollo Soyuz Cigarette Pack</English>
             <French>Apollo Soyuz Paquet de cigarettes</French>
             <German>Apollo Soyuz Zigarettenschachtel</German>
-            <Japanese>Apollo Soyuz タバコ</Japanese>
+            <Japanese>箱入り紙巻たばこ アポロ・ソユーズ シガレット</Japanese>
             <Chinese>Apollo Soyuz 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_apollo_cigpack_desc">
-            <English>American Blend Cigarettes - Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
-            <French>American Blend Cigarettes - Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
-            <German>American Blend Cigarettes - Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Japanese>American Blend Cigarettes - 20 本の葉巻がある。&lt;br/&gt;警告:喫煙はあなたの健康を害します。</Japanese>
-            <Chinese>American Blend Cigarettes - 內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
+            <English>American Blend Cigarettes.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>American Blend Cigarettes.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <German>American Blend Cigarettes.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Japanese>アメリカン・ブレンド・シガレット。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>American Blend Cigarettes.&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>
     <Package name="Main">

@@ -5,21 +5,21 @@
             <English>Savage Cigarette</English>
             <French>Savage Cigarette</French>
             <German>Savage Zigarette</German>
-            <Japanese>Savage 葉巻</Japanese>
+            <Japanese>紙巻たばこ サベージ</Japanese>
             <Chinese>Savage 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack">
             <English>Savage Cigarette Pack</English>
             <French>Savage Paquet de cigarettes</French>
             <German>Savage Zigarettenschachtel</German>
-            <Japanese>Savage タバコ</Japanese>
+            <Japanese>箱入り紙巻たばこ サベージ</Japanese>
             <Chinese>Savage 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack_desc">
             <English>Wild Tiger Premium&lt;br/&gt;Contains 16 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Wild Tiger Premium&lt;br/&gt;Contient 16 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
             <German>Wild Tiger Premium&lt;br/&gt;Enthält 16 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Japanese>Wild Tiger Premium&lt;br/&gt;16 本の葉巻がある。&lt;br/&gt;警告:喫煙はあなたの健康を害します。</Japanese>
+            <Japanese>ワイルドタイガー・プレミアム&lt;br/&gt;紙巻たばこ16本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>Wild Tiger Premium&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>

@@ -5,14 +5,14 @@
             <English>Morley Cigarette</English>
             <French>Morley Cigarette</French>
             <German>Morley Zigarette</German>
-            <Japanese>紙巻たばこ Morley</Japanese>
+            <Japanese>紙巻たばこ モーリ―・シガレッツ</Japanese>
             <Chinese>Morley 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_morley_cigpack">
             <English>Morley Cigarette Pack</English>
             <French>Morley Paquet de cigarettes</French>
             <German>Morley Zigarettenschachtel</German>
-            <Japanese>箱入り紙巻たばこ Morley</Japanese>
+            <Japanese>箱入り紙巻たばこ モーリ―・シガレッツ</Japanese>
             <Chinese>Morley 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_morley_cigpack_desc">

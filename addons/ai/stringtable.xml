@@ -4,108 +4,133 @@
         <Key ID="STR_cigs_ai_set_mainCat_AI">
             <English>Immersive Cigs - AI</English>
             <French>Immersive Cigs - AI</French>
+            <Japanese>Immersive Cigs - AI</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_cigsonai">
             <English>02. Cigs on AI</English>
             <French>02. Cigs on AI</French>
+            <Japanese>02. AIのタバコ</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides">
             <English>04. Cigs on AI</English>
             <French>04. Cigs on AI</French>
+            <Japanese>04. AIのタバコ</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides_enabled">
             <English>03. Cigs on AI - Enable individual Side</English>
             <French>03. Cigs on AI - Enable individual Side</French>
+            <Japanese>03. AIのタバコ - 陣営別に有効</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
             <English>01. Dynamic AI Smoking</English>
             <French>01. Fumeur dynamique IA</French>
+            <Japanese>01. ダイナミックAI喫煙</Japanese>
         </Key>
     </Package>
     <Package name="CBASettings_cigsonai">
         <Key ID="STR_cigs_ai_set_cigsonai_chance">
             <English>Probability</English>
             <French>Probabilité</French>
+            <Japanese>可能性</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_chance_desc">
             <English>Defines how likely it is that a unit has cigarettes on them.</English>
             <French>Définit la probabilité qu'une unité ait des cigarettes sur elle.</French>
+            <Japanese>ユニット上にタバコが置かれている可能性を定義します。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_delay">
             <English>Delay</English>
             <French>Délai</French>
+            <Japanese>遅延</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_delay_desc">
             <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
             <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
+            <Japanese>一部のMODやミッションがスクリプトによるインベントリ管理を行う場合に備えて、アイテムの追加を遅延させます。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_enable">
             <English>Enable</English>
             <French>Activer</French>
+            <Japanese>有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
             <English>Enables the system to distribute cigarettes across AI units.</English>
             <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
+            <Japanese>システムがAIユニット間でタバコを分配できるようにする。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_side_enabled">
             <English>Enable for %1</English>
             <French>Activer pour %1</French>
+            <Japanese>%1 に対して有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_cigsonai_side_enabled_desc">
             <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
             <French>Contrôle si les unités IA du côté %1 doivent recevoir des cigarettes.</French>
+            <Japanese>%1側のAIユニットがタバコを受け取るかどうかを制御します。</Japanese>
         </Key>
     </Package>
     <Package name="CBASettings_dynamicSmoking">
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory">
             <English>Check Unit for compatible Items</English>
             <French>Vérifiez l'unité pour les articles compatibles</French>
+            <Japanese>互換性のあるアイテムについては、ユニットを確認してください。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
             <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>
             <French>Lorsque cette option est activée, elle vérifie si une unité dispose d'un paquet, qu'il soit fumable ou à sucer. Si c'est le cas, ces unités seront ajoutées.</French>
+            <Japanese>有効にすると、ユニットに喫煙用または吸引用のパッケージがあるかどうかを確認します。パッケージがある場合、これらのユニットはフレームワークに追加されます。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
             <English>Enable</English>
             <French>Activer</French>
+            <Japanese>有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
             <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
             <French>Permet au système de faire fumer dynamiquement des cigarettes à l'IA.\nNécessite l'activation de Cigs on AI pour distribuer des objets et les ajouter.</French>
+            <Japanese>システムがAIにタバコを吸わせるように動的に動作させます。\nアイテムを配布してフレームワークに追加するには、Cigs on AIが有効になっている必要があります。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>
             <French>Supprimer l'élément de l'emplacement</French>
+            <Japanese>スロットアイテムを削除</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
             <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
             <French>Lorsque cette option est activée, s'il n'y a pas d'emplacement disponible pour que l'IA y place la cigarette, elle retirera l'objet actuel de l'emplacement sélectionné.\nElle tentera de placer l'objet dans l'inventaire de l'unité.</French>
+            <Japanese>有効にすると、AIがタバコを置くための空きスロットがない場合、選択されたスロットから現在のアイテムを削除します。\nアイテムをユニットのインベントリに入れようとします。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg">
             <English>Average Time between Cigs</English>
             <French>Temps moyen entre deux cigarettes</French>
+            <Japanese>タバコを吸う間隔の平均</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
             <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
             <French>Ces valeurs définissent le temps moyen en minutes qui doit s'écouler avant qu'une unité puisse fumer une autre cigarette.</French>
+            <Japanese>これらの値は、次のタバコを吸うまでに経過しなければならない平均時間（分）を定義するものです。</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
             <English>Preffered Slot</English>
             <French>Emplacement préféré</French>
+            <Japanese>優先スロット</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot_desc">
             <English>Defines the prefered slot to put the item if both are already occupied.</English>
             <French>Définit l'emplacement préféré pour placer l'objet si les deux sont déjà occupés.</French>
+            <Japanese>両方のスロットが既に占有されている場合、アイテムを置く優先スロットを定義します。</Japanese>
         </Key>
     </Package>
     <Package name="Main">
         <Key ID="STR_cigs_ai_author">
             <English>Cigs Rewrite Team</English>
             <French>Cigs Rewrite Team</French>
+            <Japanese>Cigs Rewrite Team</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_authors">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <Japanese>OverlordZorn</Japanese>
         </Key>
     </Package>
 </Project>

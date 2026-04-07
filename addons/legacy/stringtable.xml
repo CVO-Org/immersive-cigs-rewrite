@@ -4,24 +4,29 @@
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission">
             <English>Update Missions Arsenal Loadouts</English>
             <French>Mise à jour des chargements d'arsenal de missions</French>
+            <Japanese>ミッションの装備の更新</Japanese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission_desc">
-            <English>On mission start or setting change to true, will scan  default ace loadouts and replace deprecated legacy classnames with the new counterparts.</English>
+            <English>On mission start or setting change to true, will scan default ace loadouts and replace deprecated legacy classnames with the new counterparts.</English>
             <French>Au début de la mission ou lorsque le paramètre est réglé sur true, le système analyse les chargements par défaut de ace et remplace les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
+            <Japanese>ミッション開始時、または設定をtrueに変更すると、デフォルトのエース装備をスキャンし、非推奨の旧クラス名を新しいクラス名に置き換えます。</Japanese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_personal">
             <English>Update Personal Arsenal Loadouts</English>
             <French>Mise à jour des chargements d'arsenal personnels</French>
+            <Japanese>武器庫の個人装備の更新</Japanese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_personal_desc">
             <English>Whenever the ace or vanilla arsenal are being opened, it will scan the saved loadouts and will replace deprecated legacy classnames with their new counterparts.</English>
             <French>Chaque fois que l'ACE ou  l'arsenal vanille sont ouverts, il analysera les chargements sauvegardés et remplacera les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
+            <Japanese>エースアーセナルまたはバニラアーセナルを開くたびに、保存されているロードアウトをスキャンし、廃止された旧式のクラス名を新しいクラス名に置き換えます。</Japanese>
         </Key>
     </Package>
     <Package name="Settings-Categories">
         <Key ID="STR_cigs_legacy_set_subCat_loadout">
             <English>Legacy Classnames and Loadouts</English>
             <French>Anciens noms de classe et chargements</French>
+            <Japanese>旧版クラス名と装備構成</Japanese>
         </Key>
     </Package>
 </Project>

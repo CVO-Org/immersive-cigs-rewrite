@@ -5,11 +5,15 @@
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
             <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+            <German>OverlordZorn</German>
         </Key>
         <Key ID="STR_cigs_nil_url">
             <English>https://github.com/</English>
             <French>https://github.com/</French>
             <Japanese>https://github.com/</Japanese>
+            <Chinese>https://github.com/</Chinese>
+            <German>https://github.com/</German>
         </Key>
     </Package>
     <Package name="Items">
@@ -28,11 +32,11 @@
             <Chinese>NIL 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack_desc">
-            <English>NIL - Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
-            <French>NIL - Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
-            <German>NIL - Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <English>NIL&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>NIL&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <German>NIL&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
             <Japanese>NIL&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
-            <Chinese>NIL - 內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
+            <Chinese>NIL&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>
 </Project>

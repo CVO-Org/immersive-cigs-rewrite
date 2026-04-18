@@ -73,7 +73,7 @@
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory">
             <English>Check Unit for compatible Items</English>
             <French>Vérifiez l'unité pour les articles compatibles</French>
-            <Japanese>互換性のあるアイテムについては、ユニットを確認してください。</Japanese>
+            <Japanese>ユニットの互換アイテムを確認する</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
             <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>

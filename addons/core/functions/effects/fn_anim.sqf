@@ -19,6 +19,8 @@ params ["_unit", "_gestureAnimation", "_playTimeSeconds"];
 
 if (!alive _unit) exitWith {};
 
+if ( _unit getVariable [QEGVAR(api,blockAnimations), false] isEqualTo true ) exitWith {};
+
 if (_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
 
 private _time = time;

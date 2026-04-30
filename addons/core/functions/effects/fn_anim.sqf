@@ -15,34 +15,39 @@
 * Public: No
 */
 
-params ["_unit", "_gestureAnimation", "_playTimeSeconds"];
+params ["_unit", "_gestureName", "_duration"];
 
 if (!alive _unit) exitWith {};
 
-if ( _unit getVariable [QEGVAR(api,blockAnimations), false] isEqualTo true ) exitWith {};
+if (
+    !alive _unit || {
+    _unit getVariable ["ACE_isUnconscious", false] || {
+    _unit getVariable [QEGVAR(api,blockAnimations), false] isEqualTo true
+    }}
+) exitWith {};
 
-if (_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
+private _oldGesture = gestureState _unit;
 
 private _time = time;
 _unit forceWalk true;
 
-// Adds pfEH
-private _code = {
-    _this#0 params ["_unit","_gestureAnimation"];
-    _unit playActionNow _gestureAnimation;
-};
-private _handle = [_code, 0, [_unit,_gestureAnimation]] call CBA_fnc_addPerFrameHandler;
+private _handle = [
+    {
+        _this#0 params ["_unit","_gestureName"];
+        _unit playActionNow _gestureName;
+    },
+    0,
+    [_unit,_gestureName]
+] call CBA_fnc_addPerFrameHandler;
 
 // Removed pfEH
-private _condition = {
-    params ["_unit", "_handle","_time","_playTimeSeconds"];
-    time > _time + _playTimeSeconds;
-};
-
-private _code = {
-    params ["_unit", "_handle","_time","_playTimeSeconds"];
-    [_handle] call CBA_fnc_removePerFrameHandler;
-    _unit forceWalk false;
-};
-
-[_condition, _code, [_unit, _handle,_time, _playTimeSeconds]] call CBA_fnc_waitUntilAndExecute;
+[
+    {   // Statement
+        params ["_unit", "_gestureName", "_oldGesture", "_handle"];
+        [_handle] call CBA_fnc_removePerFrameHandler;
+        _unit forceWalk false;
+        if (gestureState _unit isNotEqualTo _oldGesture ) then { _unit playActionNow _oldGesture };
+    },
+    [ _unit, _gestureName, _oldGesture, _handle ],
+    0.1 max _duration
+] call CBA_fnc_waitAndExecute;

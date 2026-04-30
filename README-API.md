@@ -1,20 +1,26 @@
 # Readme for Mission and Mod Makers
 
+## Public API Events
+| Event Key                     | Parameters                                      | Locality | Type   | Description        |
+| ----------------------------- | ----------------------------------------------- | -------- | ------ | ------------------ |
+| `cigs_core_api_takeFromPack`  | _unit, _class_cigpack, _item_glasses, _item_hmd | Local    | Listen | Sucking Loop       |
+| `cigs_core_api_useLighter`    | _unit, _className, _type                        | Local    | Listen | Using a Lighter    |
+| `cigs_core_api_eatCig`        | _unit, _item, _slot                             | Local    | Listen | Eating a Cigarette |
+| `cigs_core_API_startsSmoking` | _unit, _item, _slot                             | Local    | Listen | Starts Smoking     |
+| `cigs_core_api_smoking`       | _unit, _currentTime, _currentItem, _itemType    | Local    | Listen | Smoking Loop       |
+| `cigs_core_API_stopsSmoking`  | _unit, _currentTime, _currentItem, _itemType    | Local    | Listen | Stops Smoking      |
+| `cigs_core_API_startsSucking` | _unit, _item, _slot                             | Local    | Listen | Starts Sucking     |
+| `cigs_core_api_sucking`       | _unit, _currentTime, _currentItem, _itemType    | Local    | Listen | Sucking Loop       |
+| `cigs_core_API_stopsSucking`  | _unit, _currentTime, _currentItem, _itemType    | Local    | Listen | Stops Sucking      |
 
-## Public API Keys
 
-| Event Key | Parameters | Locality | Type | Description |
-|--------|--------|--------|--------|--------|
-| `cigs_core_api_takeFromPack` | _unit, _class_cigpack, _item_glasses, _item_hmd | Local | Listen | Sucking Loop |
-| `cigs_core_api_useLighter` | _unit, _className, _type | Local | Listen | Using a Lighter |
-| `cigs_core_api_eatCig` | _unit, _item, _slot | Local | Listen | Eating a Cigarette |
-| `cigs_core_API_startsSmoking` | _unit, _item, _slot | Local | Listen | Starts Smoking |
-| `cigs_core_api_smoking` | _unit, _currentTime, _currentItem, _itemType | Local | Listen | Smoking Loop |
-| `cigs_core_API_stopsSmoking` | _unit, _currentTime, _currentItem, _itemType | Local | Listen | Stops Smoking |
-| `cigs_core_API_startsSucking` | _unit, _item, _slot | Local | Listen | Starts Sucking |
-| `cigs_core_api_sucking` | _unit, _currentTime, _currentItem, _itemType | Local | Listen | Sucking Loop |
-| `cigs_core_API_stopsSucking` | _unit, _currentTime, _currentItem, _itemType | Local | Listen | Stops Sucking |
+## Unit Variable APIs
+The following APIs can be used by `_unit setVariable [_apiKey, _value, true];`.
+Make sure to broadcast the variable as the checks will be on the individual clients.
 
+| ApiKey                     | Values | Desc                                                 |
+| -------------------------- | ------ | ---------------------------------------------------- |
+| "cigs_api_blockAnimations" | true   | Will block all cigs related animations on said unit. |
 
 
 ## Useful Functions

@@ -41,4 +41,4 @@ switch (true) do {
 };
 
 
-[QGVAR(API_takeFromPack), [_unit,_class_cigpack, _item_glasses, _item_hmd]] call CBA_fnc_localEvent;
+[QEGVAR(api,takeFromPack), [_unit,_class_cigpack, _item_glasses, _item_hmd]] call CBA_fnc_localEvent;

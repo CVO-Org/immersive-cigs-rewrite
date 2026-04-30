@@ -30,4 +30,4 @@ if (_suckData get "curSucks" > _suckData get "totalSucks") then {
 ////////////////////////////////////////
 // API
 ////////////////////////////////////////
-[QGVAR(API_stopsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;
+[QEGVAR(api,stopsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;

@@ -52,4 +52,4 @@ private _vanish = switch (true) do {
 ////////////////////////////////////////
 // API
 ////////////////////////////////////////
-[QGVAR(API_stopsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;
+[QEGVAR(api,stopsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;

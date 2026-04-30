@@ -48,7 +48,7 @@
             [_unit, 0.5 + random 0.5, "head", "burn", _unit] call ace_medical_fnc_addDamageToUnit;
         };
 
-        [QGVAR(api_eatCig),  [_unit, _item, _slot]] call CBA_fnc_localEvent;
+        [QEGVAR(api,eatCig),  [_unit, _item, _slot]] call CBA_fnc_localEvent;
     },
     true    // Consumes Item on Action
 ] call CBA_fnc_addItemContextMenuOption;

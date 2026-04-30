@@ -19,7 +19,7 @@ params ["_unit"];
 
 alive _unit
 && {
-    _unit isNil QGVAR(API_dynamicSmoking_blocked)
+    _unit isNil QEGVAR(api,dynamicSmoking_blocked)
     && {
         _unit call EFUNC(core,canTakeFromPack)
     }

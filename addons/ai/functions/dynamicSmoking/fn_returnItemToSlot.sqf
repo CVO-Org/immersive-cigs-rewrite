@@ -20,8 +20,6 @@ params [ "_unit" ];
 
 private _data = _unit getVariable QEGVAR(ai,dynSmoke_storedItem);
 
-diag_log format ['[CVO](debug)(fn_returnItemToSlot) _unit: %1 - _data: %2', _unit , _data];
-
 if (isNil "_data") exitWith {};
 
 _unit setVariable [QEGVAR(ai,dynSmoke_storedItem), nil, true];
@@ -30,12 +28,7 @@ _data params [ "_className", "_slot"];
 
 if !( [_unit, _className] call CBA_fnc_removeItem ) exitWith {};
 
-diag_log format ['[CVO](debug)(fn_returnItemToSlot) _unit: %1 - _data: %2', _unit , _data];
-
 switch (_slot) do {
     case "GOGGLES": { _unit addGoggles _className; };
     case "HMD": { _unit linkItem _className; };
 };
-
-diag_log format ['[CVO](debug)(fn_returnItemToSlot) hmd _unit: %1', hmd _unit];
-diag_log format ['[CVO](debug)(fn_returnItemToSlot) goggles _unit: %1', goggles _unit];

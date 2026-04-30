@@ -4,7 +4,7 @@
         <Key ID="STR_cigs_core_set_ace_arsenal_tab">
             <English>Enable Custom Category Tab in ACE Arsenal</English>
             <French>Activer les catégories personnalisées dans ACE Arsenal</French>
-            <Japanese>ACE武器庫でカスタムされたカテゴリ分類を有効化</Japanese>
+            <Japanese>ACE武器庫でカスタムされた分類を有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_ace_arsenal_tab_desc">
             <English>When Enabled, this will create a Immersion Cig Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
@@ -321,7 +321,7 @@
             <English>Eat the thing, duh</English>
             <French>Manger la chose, bien sûr</French>
             <German>Du hast schon richtig gelesen</German>
-            <Japanese>そりゃあ、食べるってことだろ。</Japanese>
+            <Japanese>そりゃあ、食べるって意味だろ</Japanese>
         </Key>
         <Key ID="STR_cigs_core_pay_respect">
             <English>Pay Respect to the Fallen...</English>
@@ -378,6 +378,10 @@
             <German>Lutsch den Lutscher</German>
             <Japanese>吸い始める</Japanese>
             <Chinese>放進嘴巴含</Chinese>
+        </Key>
+        <Key ID="STR_cigs_core_sucking_start_desc">
+            <English>Licking whatever’s in your mouth</English>
+            <Japanese>口の中にあるものを何でも舐める</Japanese>
         </Key>
         <Key ID="STR_cigs_core_sucking_stop">
             <English>Stop Sucking</English>
@@ -441,7 +445,7 @@
             <English>Hmm, it tastes like %1!</English>
             <French>Hmm, ça a un goût de %1!</French>
             <German>Hmm, es schmeckt nach %1!</German>
-            <Japanese>うーん、これは%1味だ!</Japanese>
+            <Japanese>うーん、これは %1 みたいな味だ!</Japanese>
         </Key>
     </Package>
 </Project>

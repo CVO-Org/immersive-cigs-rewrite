@@ -109,7 +109,7 @@
 [
     "#All"                      // item - Classname or itemType or wildcard
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
-    ,[LLSTRING(sucking_start), "Requires a Lighter or Matches in your inventory"]    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
+    ,[LLSTRING(sucking_start), LLSTRING(sucking_start_desc)]    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
     ,QPATHTOF(data\ui\pop_consume.paa)                // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];

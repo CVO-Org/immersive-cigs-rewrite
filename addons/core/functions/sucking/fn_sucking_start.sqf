@@ -125,4 +125,4 @@ _unit call FUNC(add_slotItemChanged_EH);
 ////////////////////////////////////////
 // API
 ////////////////////////////////////////
-[QGVAR(API_startsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;
+[QEGVAR(api,startsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;

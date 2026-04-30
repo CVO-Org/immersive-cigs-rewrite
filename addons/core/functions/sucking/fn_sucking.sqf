@@ -149,4 +149,4 @@ private  _delay = 10 + random 20;
 ////////////////////////////////////////
 // API 
 ////////////////////////////////////////
-[QGVAR(API_sucking),  [_unit, _suckData]] call CBA_fnc_localEvent;
+[QEGVAR(api,sucking),  [_unit, _suckData]] call CBA_fnc_localEvent;

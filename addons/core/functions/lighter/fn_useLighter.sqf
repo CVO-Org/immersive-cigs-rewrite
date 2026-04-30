@@ -16,16 +16,13 @@
 * Public: No
 */
 
-
-
-
 params [
     "_unit",
     ["_forced", false, [true]],
     [ "_mode", "NORMAL", [""] ]
 ];
 
-if !(_mode in ["NORMAL", "GIVING", "RECIEVING"]) exitWith { systemChat "Someone Fucked Up!"}; 
+if !(_mode in ["NORMAL", "GIVING", "RECIEVING"]) exitWith { systemChat "Someone Fucked Up!" }; 
 
 [ _unit ] call FUNC(getLighter) params [ "_lighterClass", "_lighterType" ];
 
@@ -40,9 +37,6 @@ switch (true) do {
     case (_mode isEqualTo "GIVING"): { [ _unit, "PutDown",           1.5 ] call FUNC(anim); };
     default                          { [ _unit, QEGVAR(anim,cig_in), 3.0 ] call FUNC(anim); };
 };
-
-
-
 
 if (_mode isNotEqualTo "GIVING") then {
     // Sound Effect
@@ -60,4 +54,4 @@ if (_mode isNotEqualTo "GIVING") then {
 [ CBA_fnc_serverEvent , [ QGVAR(EH_useLighter_combustion), [_unit] ], 1.5 ] call CBA_fnc_waitAndExecute;
 
 // API Event
-[ QGVAR(API_useLighter),  [ _unit, _lighterClass, _lighterType, _mode ] ] call CBA_fnc_localEvent;
+[ QEGVAR(api,useLighter),  [ _unit, _lighterClass, _lighterType, _mode ] ] call CBA_fnc_localEvent;

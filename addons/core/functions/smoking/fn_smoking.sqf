@@ -182,4 +182,4 @@ private  _delay = (20 + ceil random 10) / SET(smoking_frequency);
 ////////////////////////////////////////
 // API 
 ////////////////////////////////////////
-[QGVAR(API_smoking),  [_unit, _smokeData]] call CBA_fnc_localEvent;
+[QEGVAR(api,smoking),  [_unit, _smokeData]] call CBA_fnc_localEvent;

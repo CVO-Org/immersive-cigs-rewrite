@@ -119,4 +119,4 @@ if (!isNil "_flavor") then { [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavo
 ////////////////////////////////////////
 // API
 ////////////////////////////////////////
-[QGVAR(API_startsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;
+[QEGVAR(api,startsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;

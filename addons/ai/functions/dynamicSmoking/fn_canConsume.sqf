@@ -29,7 +29,7 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
                 && {
                     combatBehaviour _unit in ["CARELESS", "SAFE", "AWARE"]
                     && {
-                        _unit isNil QGVAR(API_dynamicSmoking_blocked)
+                        _unit isNil QEGVAR(api,dynamicSmoking_blocked)
                         && {
                             !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
                             && {

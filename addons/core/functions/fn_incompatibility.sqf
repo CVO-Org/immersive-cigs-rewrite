@@ -19,7 +19,7 @@
 * Public: No
 */
 
-#if _DEBUG_SCOPE_ == 1
+#if _DEV_VERSION_ == 1
     #define REWRITE_MOD "3518473416"
 #else
     #define REWRITE_MOD "3375788189"
@@ -28,7 +28,7 @@
 
 private _incompatibleMods = [
     //"450814997",    // CBA - For Testing
-    REWRITE_MOD,    // Immersion Cigs - Rewrite - Stable or DEV Version
+    REWRITE_MOD,    // Immersion Cigs - Rewrite - The alternate Version - Stable or DEV
 
     "2975583316",   // ACE - D.U.M.P - some animations get stuck orsomething
     "2311516767",   // Immersion Crayons

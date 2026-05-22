@@ -20,8 +20,9 @@ if ( ! SET(dynamicSmoking_enable) ) exitWith { GVAR(dynamicSmoking_LoopRunning) 
 
 if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {
 
-    // Wait until There are any smokers defined + the cigsonai queue is empty
     GVAR(dynamicSmoking_LoopRunning) = true;
+    
+    // Wait until There are any smokers defined + the cigsonai queue is empty
     [
         {
             GVAR(dynamicSmoking_units) isNotEqualTo []

@@ -2,7 +2,7 @@
 
 /*
 * Author: Zorn
-* Function to Itterate over each individual Unit of the Array and decide if the unit shall smoke and if so, its gonna do it
+* Function to Itterate over each individual Unit of the SmokerArray and decide if the unit shall smoke and if so, tell it to smoke
 *
 * Arguments:
 *
@@ -20,11 +20,8 @@ if ( ! SET(dynamicSmoking_enable) ) exitWith { GVAR(dynamicSmoking_LoopRunning) 
 params ["_index"];
 
 private _array = GVAR(dynamicSmoking_units);
-
 private _index_end = count _array - 1;
-
 private _unit = _array select _index;
-
 private _canConsume = _unit call FUNC(canConsume);
 
 if ( _canConsume ) then { [QGVAR(EH_startConsuming), _unit, _unit] call CBA_fnc_targetEvent; };

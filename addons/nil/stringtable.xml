@@ -4,16 +4,16 @@
         <Key ID="STR_cigs_nil_author">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <German>OverlordZorn</German>
             <Japanese>OverlordZorn</Japanese>
             <Chinese>OverlordZorn</Chinese>
-            <German>OverlordZorn</German>
         </Key>
         <Key ID="STR_cigs_nil_url">
             <English>https://github.com/</English>
             <French>https://github.com/</French>
+            <German>https://github.com/</German>
             <Japanese>https://github.com/</Japanese>
             <Chinese>https://github.com/</Chinese>
-            <German>https://github.com/</German>
         </Key>
     </Package>
     <Package name="Items">

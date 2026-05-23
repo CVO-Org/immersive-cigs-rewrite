@@ -219,20 +219,20 @@
     <Package name="EditorCategories">
         <Key ID="STR_cigs_core_editor_category_main">
             <English>Immersion Cigs</English>
-            <German>Immersive Zigaretten</German>
             <French>Cigarettes immersives</French>
+            <German>Immersive Zigaretten</German>
             <Japanese>Immersion Cigs</Japanese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
             <English>Cig Packs</English>
-            <German>Schachteln</German>
             <French>Paquets de cigarettes</French>
+            <German>Schachteln</German>
             <Japanese>タバコ箱</Japanese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_lighters">
             <English>Lighters</English>
-            <German>Feuerzeuge</German>
             <French>Briquets</French>
+            <German>Feuerzeuge</German>
             <Japanese>ライター</Japanese>
         </Key>
     </Package>
@@ -325,8 +325,8 @@
         </Key>
         <Key ID="STR_cigs_core_pay_respect">
             <English>Pay Respect to the Fallen...</English>
-            <German>Den Gefallenen Respekt zollen...</German>
             <French>Rendez hommage aux disparus...</French>
+            <German>Den Gefallenen Respekt zollen...</German>
             <Japanese>亡くなった方々に敬意を表しましょう…</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">

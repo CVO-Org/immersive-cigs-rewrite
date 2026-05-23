@@ -27,9 +27,9 @@
         <Key ID="str_cigs_base_author">
             <English>Zorn / Bromine</English>
             <French>Zorn / Bromine</French>
+            <German>Zorn / Bromine</German>
             <Japanese>Zorn / Bromine</Japanese>
             <Chinese>Zorn / Bromine</Chinese>
-            <German>Zorn / Bromine</German>
         </Key>
     </Package>
 </Project>

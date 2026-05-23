@@ -3,17 +3,6 @@ class CfgFunctions
     class ADDON
     {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
-        class COMPONENT
-        {
-            file = PATH_TO_FUNC;
-
-            class postInit { postInit = 1; };
-            class cba_contextMenu { preInit = 1; };
-            class arsenalTab {};
-
-            class incompatibility { postInit = 1; };
-        };
-
         class common {
             file = PATH_TO_FUNC_SUB(common);
             
@@ -138,5 +127,15 @@ class CfgFunctions
             class canPayRespect {};
         };
         
+        class misc {
+            file = PATH_TO_FUNC_SUB(misc);
+
+            class cba_contextMenu { preInit = 1; };
+
+            class postInit { postInit = 1; };
+            class incompatibility { postInit = 1; };
+
+            class arsenalTab {};
+        };
     };
 };

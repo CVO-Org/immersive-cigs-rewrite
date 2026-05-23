@@ -19,6 +19,7 @@ params [ ["_unit", objNull, [objNull] ] ];
 
 if (!isServer || {isNull _unit}) exitWith {};
 
+// Add Unit to SmokerArray
 if ( _unit isNil QGVAR(canConsumeAgainAt) ) then {
 
     GVAR(dynamicSmoking_units) pushBack _unit;

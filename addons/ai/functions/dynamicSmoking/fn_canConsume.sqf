@@ -31,7 +31,7 @@ params [ "_unit", ["_ignoreTime", false, [true]] ];
                     && {
                         _unit isNil QEGVAR(api,dynamicSmoking_blocked)
                         && {
-                            !( _unit getVariable [QPVAR(isSmoking), false] ) && !( _unit getVariable [QPVAR(isSucking), false] )
+                            _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
                             && {
                                 if (_ignoreTime) then {
                                     true

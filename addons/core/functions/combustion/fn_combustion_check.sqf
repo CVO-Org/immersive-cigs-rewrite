@@ -26,7 +26,7 @@ private _chance = _random <= SET(effect_combustion_chance);
 
 ZRN_LOG_2(_random,_chance);
 
-if ( _unit getVariable [QPVAR(isSmoking), false] && { _chance } ) then {
+if ( _unit getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE" && { _chance } ) then {
     
     ZRN_LOG_1(_chance);
 

@@ -17,4 +17,4 @@
 
 params ["_unit"];
 
-_unit setVariable [QPVAR(isSucking), false, true];
+_unit setVariable [QPVAR(isConsuming), false, true];

@@ -3,9 +3,26 @@ class CfgFunctions
     class ADDON
     {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
+        class adv_fatigue {
+            file = PATH_TO_FUNC_SUB(adv_fatigue);
+            class adv_fatigue_addPuffs {};
+            class adv_fatigue_enable {};
+            class adv_fatigue_dutyFactor {};
+
+            class cough {};
+            class cough_server {};
+            class cough_aleart {};
+        };
+
+        class combustion {
+            file = PATH_TO_FUNC_SUB(combustion);
+            class combustion_init { postInit = 1; };
+            class combustion_check {};
+            class combustion_do {};
+        };
+
         class common {
             file = PATH_TO_FUNC_SUB(common);
-            
             class isPlayer {};
             class eyeDepth {};
             class isSwimming {};
@@ -18,8 +35,72 @@ class CfgFunctions
             class checkCompatibleSkeleton {};
         };
 
-        class smoking
-        {
+        class config {
+            file = PATH_TO_FUNC_SUB(config);
+            class getAllItems {};
+            class getCached {};
+        };
+
+        class eat_cig {
+            file = PATH_TO_FUNC_SUB(eat_cig);
+            class addEatAction { preInit = 1; };
+            class canEat {};
+        };
+
+        class effects {
+            file = PATH_TO_FUNC_SUB(effects);
+            class anim {};
+            class smoke_effect {};
+
+            class light_lighter {};
+            class light_cig_glow {};
+        };
+
+        class lighter {
+            file = PATH_TO_FUNC_SUB(lighter);
+            class hasLighter {};
+            class getLighter {};
+            class useLighter {};
+
+            class modifyLighterAction {};
+        };
+
+        class loop {
+            file = PATH_TO_FUNC_SUB(loop);
+            class loop {};
+            class loopStart {};
+            class loopStop {};          
+        };
+
+        class misc {
+            file = PATH_TO_FUNC_SUB(misc);
+            class cba_contextMenu { preInit = 1; };
+
+            class postInit { postInit = 1; };
+            class incompatibility { postInit = 1; };
+
+            class arsenalTab {};
+        };
+
+        class respect {
+            file = PATH_TO_FUNC_SUB(respect);
+            class payRespect {};
+            class canPayRespect {};
+        };
+
+        class pack {
+            file = PATH_TO_FUNC_SUB(pack);
+            class canTakeFromPack {};
+            class takeFromPack {};
+            class action_pack_children {};
+        };
+
+        class singleplayer {
+            file = PATH_TO_FUNC_SUB(singleplayer);
+            class addItemsInSP { postInit = 1; };
+        };
+
+        class smoking {
             file = PATH_TO_FUNC_SUB(smoking);
 
             class canStartSmoking {};
@@ -31,14 +112,12 @@ class CfgFunctions
             class drop_cig {};
             
             class smoking_start {};
-            class smoking {};
             class smoking_stop {};
 
             class getSmokableDisplayName {};
         };
 
-        class sucking
-        {
+        class sucking {
             file = PATH_TO_FUNC_SUB(sucking);
 
             class canStartSucking {};
@@ -48,94 +127,8 @@ class CfgFunctions
             class stop_suck {};
 
             class sucking_start {};
-            class sucking {};
             class sucking_stop {};
-
         };
 
-        class effects
-        {
-            file = PATH_TO_FUNC_SUB(effects);
-            class anim {};
-            class smoke_effect {};
-
-            class light_lighter {};
-            class light_cig_glow {};
-        };
-
-        class pack
-        {
-            file = PATH_TO_FUNC_SUB(pack);
-
-            class canTakeFromPack {};
-            class takeFromPack {};
-
-
-            class action_pack_children {};
-        };
-
-        class lighter
-        {
-            file = PATH_TO_FUNC_SUB(lighter);
-
-            class hasLighter {};
-            class getLighter {};
-            class useLighter {};
-
-            class modifyLighterAction {};
-        };
-
-        class singleplayer
-        {
-            file = PATH_TO_FUNC_SUB(singleplayer);
-            class addItemsInSP { postInit = 1; };
-        };
-        class config
-        {
-            file = PATH_TO_FUNC_SUB(config);
-            class getAllItems {};
-            class getCached {};
-        };
-        class eat_cig
-        {
-            file = PATH_TO_FUNC_SUB(eat_cig);
-            class addEatAction { preInit = 1; };
-            class canEat {};
-        };
-        class combustion {
-            file = PATH_TO_FUNC_SUB(combustion);
-
-            class combustion_init { postInit = 1; };
-            class combustion_check {};
-            class combustion_do {};
-        };
-        class adv_fatigue {
-            file = PATH_TO_FUNC_SUB(adv_fatigue);
-
-            class adv_fatigue_addPuffs {};
-            class adv_fatigue_enable {};
-            class adv_fatigue_dutyFactor {};
-
-            class cough {};
-            class cough_server {};
-            class cough_aleart {};
-        };
-        class respect {
-            file = PATH_TO_FUNC_SUB(respect);
-            
-            class payRespect {};
-            class canPayRespect {};
-        };
-        
-        class misc {
-            file = PATH_TO_FUNC_SUB(misc);
-
-            class cba_contextMenu { preInit = 1; };
-
-            class postInit { postInit = 1; };
-            class incompatibility { postInit = 1; };
-
-            class arsenalTab {};
-        };
     };
 };

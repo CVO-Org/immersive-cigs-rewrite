@@ -39,15 +39,17 @@
     {
         // statement - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         params ["_unit", "_container", "_item", "_slot", "_params"];
+
+        // Play Sound
         private _sound = selectRandom [QPVAR(eat_bread_1), QPVAR(eat_bread_2), QPVAR(eat_bread_3), QPVAR(eat_bread_4), QPVAR(eat_bread_5)];
-        
-        
         [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D;
 
-        if (_unit getVariable [QPVAR(isSmoking), false]) then {
+        // Add Damage when Unit was Smoking
+        if (_unit getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE") then {
             [_unit, 0.5 + random 0.5, "head", "burn", _unit] call ace_medical_fnc_addDamageToUnit;
         };
 
+        // API
         [QEGVAR(api,eatCig),  [_unit, _item, _slot]] call CBA_fnc_localEvent;
     },
     true    // Consumes Item on Action

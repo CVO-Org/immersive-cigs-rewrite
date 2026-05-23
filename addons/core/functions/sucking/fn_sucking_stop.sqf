@@ -15,19 +15,15 @@
 * Public: No
 */
 
-params ["_unit", "_suckData"];
-_unit setVariable [QPVAR(isSucking), false, true];
+params ["_unit", "_loopData"];
 
-if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
-
-if (_suckData get "curSucks" > _suckData get "totalSucks") then {
-    switch (_suckData get "itemType") do {
+////////////////////////////////////////
+// Remove Item
+////////////////////////////////////////
+if (_loopData get "curConsumes" > _loopData get "totalConsumes") then {
+    switch (_loopData get "itemType") do {
         case ("GOGGLES"): { removeGoggles _unit };
-        case ("HMD"):     { _unit removeWeapon (_suckData get "itemClass") };
+        case ("HMD"):     { _unit removeWeapon (_loopData get "itemClass") };
     };
 };
 
-////////////////////////////////////////
-// API
-////////////////////////////////////////
-[QEGVAR(api,stopsSucking), [_unit, _suckData]] call CBA_fnc_localEvent;

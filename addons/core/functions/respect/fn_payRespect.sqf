@@ -17,7 +17,7 @@
 
 params ["_target", "_player"];
 
-private _smokeData = _player getVariable QPVAR(smokeData);
+private _smokeData = _player getVariable QPVAR(loopData);
 
 private _itemType = _smokeData get "itemType";
 

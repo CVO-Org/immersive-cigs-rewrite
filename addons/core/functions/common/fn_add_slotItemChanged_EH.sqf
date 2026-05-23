@@ -17,20 +17,18 @@
 
 params ["_unit"];
 
-_unit addEventHandler [
+private _id = _unit addEventHandler [
     "SlotItemChanged",
     {
         params ["_unit", "_name", "_slot", "_assigned", "_weapon"];
 
-	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; };
+        // Define Remove Eventhandler Codeblock
+	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil]; };
 
-        private _isSmoking = _unit getVariable [QPVAR(isSmoking), false];
-        if !( _isSmoking || { _unit getVariable [QPVAR(isSucking), false] } ) exitWith _rm_eh;
+        // Check if unit is not consuming
+        if ( _unit getVariable [QPVAR(isConsuming), false] isEqualTo false ) exitWith _rm_eh;
 
-        [
-            [QPVAR(isSucking), QPVAR(suckData)],
-            [QPVAR(isSmoking), QPVAR(smokeData)]
-        ]  select _isSmoking params ["_isConsumingVarName", "_dataVarName"];
+        private _loopData = _unit getVariable QPVAR(loopData);
 
         // Translate Slot Number, Exit if not relevant
         _slot = switch (_slot) do {
@@ -41,9 +39,8 @@ _unit addEventHandler [
         if (isNil "_slot") exitWith {};
 
         // Get Data
-        private _data = _unit getVariable _dataVarName;
-        private _itemType  = _data get "itemType";
-        private _itemClass = _data get "itemClass";
+        private _itemType  = _loopData get "itemType";
+        private _itemClass = _loopData get "itemClass";
 
         // Check if the player removed the smoking item
         private _stopConsuming = if (_assigned) then {
@@ -53,9 +50,11 @@ _unit addEventHandler [
         };
 
         if (_stopConsuming) then {
-            _unit setVariable [_isConsumingVarName, false, true];
-            if (_isConsumingVarName isEqualTo QPVAR(smokeData) ) then { _unit setVariable [QPVAR(forceVanish), true]; };
+            _unit setVariable [QPVAR(isConsuming), false, true];
+            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QPVAR(forceVanish), true]; }; // WTF?
             call _rm_eh;
         };
     }
 ];
+
+_unit setVariable [QPVAR(SlotItemChanged_EH_ID), _id];

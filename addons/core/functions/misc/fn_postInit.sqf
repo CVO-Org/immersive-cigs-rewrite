@@ -1,5 +1,4 @@
-#include "../script_component.hpp"
-
+#include "../../script_component.hpp"
 
 /*
 * Author: Zorn
@@ -21,8 +20,18 @@
 [ QGVAR(EH_notify), CBA_fnc_notify ] call CBA_fnc_addEventHandler;
 
 // Loop, locality change
-[ QGVAR(EH_sucking), FUNC(sucking) ] call CBA_fnc_addEventHandler;
-[ QGVAR(EH_smoking), FUNC(smoking) ] call CBA_fnc_addEventHandler;
+[
+    QGVAR(EH_loop),
+    {
+        params ["_unit","_loopData"];
+        _unit call FUNC(add_slotItemChanged_EH);
+        _unit setVariable [QPVAR(loopData), _loopData];
+        _this call FUNC(loop);
+    }
+] call CBA_fnc_addEventHandler;
+
+// [ QGVAR(EH_smoking), FUNC(smoking) ] call CBA_fnc_addEventHandler; // ToDo
+// [ QGVAR(EH_sucking), FUNC(sucking) ] call CBA_fnc_addEventHandler; // ToDo
 
 // Light others cigs
 [ QGVAR(EH_smoking_start), FUNC(start_cig) ] call CBA_fnc_addEventHandler;
@@ -42,8 +51,8 @@
 if ( isServer && { isClass (configFile >> "CfgPatches" >> "ace_medical") } ) then {
     ["ace_unconscious", {
         params ["_unit", "_isUncon"];
-        if (_isUncon && { _unit getVariable [QPVAR(isSmoking), false] } ) then {
-            _unit setVariable [QPVAR(isSmoking), false, true];
+        if ( _isUncon && { _unit getVariable [QPVAR(isConsuming), false] isNotEqualTo false } ) then {
+            _unit setVariable [QPVAR(isConsuming), false, true];
         };
     }] call CBA_fnc_addEventHandler;
 };
@@ -54,8 +63,7 @@ if !(hasInterface) exitWith {};
 private _code = {
     // reset isSmoking/isSucking variable on respawn
     player addEventHandler ["Respawn", {
-        player setVariable [QPVAR(isSmoking), false];
-        player setVariable [QPVAR(isSucking), false];
+        player setVariable [QPVAR(isConsuming), false];
     }];
 
     // if 2 suckable/smokable items are equipped, it will put the nvg one back in the inventory.

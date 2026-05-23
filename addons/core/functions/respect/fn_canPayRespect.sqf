@@ -17,7 +17,7 @@
 
 params ["_target", "_player"];
 
-_player getVariable [QPVAR(isSmoking), false]
+_player getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE"
 &&
 {
     !(lifeState _target in ["HEALTHY", "INJURED"])

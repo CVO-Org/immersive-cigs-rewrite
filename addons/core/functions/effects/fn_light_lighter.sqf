@@ -17,7 +17,7 @@
 
 #define MAX_BRIGHTNESS 150
 #define MAX_FLARESIZE 2
-#define MAX_FLAREDIST 1200
+#define MAX_FLAREDIST 1500
 
 private _color =  [  1.0,  0.6, 0.40 ];
 private _offset = [ -0.07, -0.2, 0.05 ];

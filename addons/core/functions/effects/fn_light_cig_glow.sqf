@@ -17,7 +17,7 @@
 
 #define MAX_BRIGHTNESS 5
 #define MAX_FLARESIZE 1
-#define MAX_FLAREDIST 600
+#define MAX_FLAREDIST 750
 
 private _color =  [  1.0,  0.6, 0.40 ];
 private _offset = [ -0.07, -0.2, 0.05 ];
@@ -85,11 +85,13 @@ private _codeToRun = {
 	params [ "_startTime", "_endTime", "_peakTime", "_unit", "_sources" ];
 	_sources params ["_vis", "_ir_flare"];
 
-	private _intensity = switch (true) do {
-		case (time < _startTime): { 0 };
-		case (time < _peakTime):  { linearConversion [ _startTime, _peakTime, time, 0, 1 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
-		default					  { linearConversion [ _peakTime,  _endTime,  time, 1, 0 ] * (1 + 0.25 *(sin (time * 360) + sin (time * 360 + 45))/2) };
-	};
+    private _freq = 1 + random 1; // Hz – Schwingungen pro Sekunde
+
+    private _intensity = switch (true) do {
+        case (time < _startTime): { 0 };
+        case (time < _peakTime):  { linearConversion [ _startTime, _peakTime, time, 0, 1 ] * (1 + 0.25 * (sin (time * 360 * _freq) + sin (time * 360 * _freq + 45))/2) };
+        default                   { linearConversion [ _peakTime,  _endTime,  time, 1, 0 ] * (1 + 0.25 * (sin (time * 360 * _freq) + sin (time * 360 * _freq + 45))/2) };
+    };
 
 
 	private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];

@@ -15,15 +15,16 @@
 * Public: No
 */
 
-params [ "_unit", ["_cfg", configNull], ["_factor_params", 1, [0]] ];
+params [ "_unit", ["_cfg", configNull], ["_factor_params", 1, [0]], ["_ignoreLifeState", false, [false]]];
 
-if !(lifeState _unit in ["HEALTHY", "INJURED"]) exitWith {};
+if ( ( !_ignoreLifeState ) && { !(lifeState _unit in ["HEALTHY", "INJURED"]) } ) exitWith {};
 
 private _smokeColor = (_cfg >> QPVAR(smokeColor)) call BIS_fnc_getCfgData;
 if (isNil "_smokeColor") then { _smokeColor = [0.2, 0.2, 0.2]; };
 
 
-private _factor_cig = getNumber (_cfg >> QPVAR(smokeMultiplier));
+private _factor_cig = (_cfg >> QPVAR(smokeMultiplier)) call BIS_fnc_getCfgData;
+if (isNil "_factor_cig") then { _factor_cig = 1; };
 private _factor_final = ((_factor_cig + _factor_params) / 2) max 0.25; // controls the size/intensity of the smoke, based on the smoker's setting
 
 private _duration = 0.5 * _factor_params;

@@ -21,4 +21,8 @@ _player getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE"
 &&
 {
     !(lifeState _target in ["HEALTHY", "INJURED"])
+    &&
+    {
+        _target getVariable [QPVAR(respectPayed), false] isEqualTo false
+    }
 }

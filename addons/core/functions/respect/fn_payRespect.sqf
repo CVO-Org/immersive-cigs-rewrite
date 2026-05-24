@@ -17,18 +17,17 @@
 
 params ["_target", "_player"];
 
-private _smokeData = _player getVariable QPVAR(loopData);
+private _lookData = _player getVariable QPVAR(loopData);
 
-private _itemType = _smokeData get "itemType";
-
-private _class = _smokeData get "itemClass";
+private _class = _lookData get "itemClass";
+private _itemType = _lookData get "itemType";
 
 switch (_itemType) do {
     case "GOGGLES": { removeGoggles _player; };
     case "HMD": { _player removeWeapon _class; };
 };
 
-[_player, _smokeData, true, true] call FUNC(smoking_stop);
+[_player, _lookData, true, true] call FUNC(smoking_stop);
 
 switch (_itemType) do {
     case "GOGGLES": { [ _class, _class + "_nv" ] };

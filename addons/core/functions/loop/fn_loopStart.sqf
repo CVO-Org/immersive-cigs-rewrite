@@ -17,6 +17,8 @@
 
 params ["_unit", "_consumeType"];
 
+ZRN_LOG_1(_this);
+
 ////////////////////////////////////////
 // Initial Check
 ////////////////////////////////////////
@@ -95,8 +97,10 @@ private _loopData = createHashMapFromArray [
     [ "currentConfig",  _itemConfig ],
     [ "itemClass",      configName _itemConfig ],
     
+    ["stages",          _stages   ],
     ["curStage",        _curStage ],
     ["endStage",        _endStage ],
+
 
     ["curConsumes",     _currConsumes ],
     ["totalConsumes",   _totalConsumes ]
@@ -109,9 +113,12 @@ _unit setVariable [QPVAR(loopData), _loopData];
 ////////////////////////////////////////
 // Initial Effects - GLOBAL
 ////////////////////////////////////////
-// Flavor Notification
-private _flavor = [(_itemConfig >> QPVAR(flavor))] call CBA_fnc_getCfgDataRandom;
-if (!isNil "_flavor") then { [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavor), _this]] call CBA_fnc_localEvent; } , _flavor, 15 + random 30] call CBA_fnc_waitAndExecute; };
+// Flavor Notification - Only when Player
+if ( (_unit call EFUNC(core,isPlayer)) ) then {
+
+    private _flavor = [(_itemConfig >> QPVAR(flavor))] call CBA_fnc_getCfgDataRandom;
+    if (!isNil "_flavor") then { [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavor), _this]] call CBA_fnc_localEvent; } , _flavor, 15 + random 30] call CBA_fnc_waitAndExecute; };
+};
 
 
 ////////////////////////////////////////
@@ -139,7 +146,7 @@ switch (_consumeType) do {
 ////////////////////////////////////////
 // Start Loop
 ////////////////////////////////////////
-[FUNC(loop), ["_unit","_loopData"], _delay] call CBA_fnc_waitAndExecute;
+[FUNC(loop), [_unit,_loopData], _delay] call CBA_fnc_waitAndExecute;
 
 
 ////////////////////////////////////////

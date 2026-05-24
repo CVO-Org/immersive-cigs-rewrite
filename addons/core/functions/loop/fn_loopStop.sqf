@@ -15,6 +15,8 @@
 * Public: No
 */
 
+ZRN_LOG_1(_this);
+
 params [
     "_unit",
     "_loopData",
@@ -42,8 +44,8 @@ if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
 ////////////////////////////////////////
 
 switch (_consumeType) do {
-    case "SMOKING": { [_unit, _loopData, _skipAnimation, _forceVanish] call FUNC(smoking_stop) };
-    case "SUCKING": { [_unit, _loopData] call FUNC(sucking_stop) };
+    case "SMOKE": { [_unit, _loopData, _skipAnimation, _forceVanish] call FUNC(smoking_stop) };
+    case "SUCK": { [_unit, _loopData] call FUNC(sucking_stop) };
 };
 
 

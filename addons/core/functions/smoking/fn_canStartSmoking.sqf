@@ -17,17 +17,20 @@
 
 params ["_unit"];
 
-
-_unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+alive _unit 
 &&
 {
-    ([_unit] call EFUNC(core,checkCompatibleSkeleton))
+    _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
     &&
     {
-        getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
-        ||
+        ([_unit] call EFUNC(core,checkCompatibleSkeleton))
+        &&
         {
-            getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSmokable)) == 1
+            getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
+            ||
+            {
+                getNumber (configFile >> "CfgWeapons" >> hmd _unit >> QPVAR(isSmokable)) == 1
+            }
         }
     }
 }

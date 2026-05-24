@@ -324,13 +324,13 @@
             <Japanese>そりゃあ、食べるって意味だろ</Japanese>
         </Key>
         <Key ID="STR_cigs_core_pay_respect">
-            <English>Pay Respect to the Fallen...</English>
+            <English>Pay Respect to the fallen...</English>
             <French>Rendez hommage aux disparus...</French>
             <German>Den Gefallenen Respekt zollen...</German>
             <Japanese>亡くなった方々に敬意を表しましょう…</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
-            <English>Light Up your Cig</English>
+            <English>Light Up your cigarette</English>
             <French>Allumer Cigarette</French>
             <German>Zigarette anzünden</German>
             <Japanese>煙草に火をつける</Japanese>
@@ -348,14 +348,14 @@
             <Japanese>ライターまたはマッチを所持している必要があります</Japanese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_their">
-            <English>Light Up their Cig</English>
+            <English>Light Up their cigarette</English>
             <French>Allumer Cigarette</French>
             <German>Feuer geben</German>
             <Japanese>火を貸す</Japanese>
             <Chinese>幫他點菸</Chinese>
         </Key>
         <Key ID="STR_cigs_core_stop_cig">
-            <English>Put Out a Cig</English>
+            <English>Put cigarette out</English>
             <French>Eteindre Cigarette</French>
             <German>Zigarette aus machen</German>
             <Japanese>煙草の火を消す</Japanese>
@@ -364,7 +364,7 @@
     </Package>
     <Package name="Interactions_pack">
         <Key ID="STR_cigs_core_takeFromPack">
-            <English>Take from Pack</English>
+            <English>Take from pack</English>
             <French>Prendre du paquet</French>
             <German>Aus der Sachtel nehmen</German>
             <Japanese>箱から煙草を出す</Japanese>
@@ -373,7 +373,7 @@
     </Package>
     <Package name="Interactions_suck">
         <Key ID="STR_cigs_core_sucking_start">
-            <English>Start Sucking</English>
+            <English>Start sucking</English>
             <French>Lèche la sucette</French>
             <German>Lutsch den Lutscher</German>
             <Japanese>吸い始める</Japanese>
@@ -384,7 +384,7 @@
             <Japanese>口の中にあるものを何でも舐める</Japanese>
         </Key>
         <Key ID="STR_cigs_core_sucking_stop">
-            <English>Stop Sucking</English>
+            <English>Stop shoulducking</English>
             <French>Arrêter de sucer</French>
             <German>Stop das Lutschen</German>
             <Japanese>吸うのを止める</Japanese>

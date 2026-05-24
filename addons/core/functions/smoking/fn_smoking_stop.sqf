@@ -15,6 +15,8 @@
 * Public: No
 */
 
+ZRN_LOG_1(_this);
+
 params [
     "_unit",
     "_loopData",

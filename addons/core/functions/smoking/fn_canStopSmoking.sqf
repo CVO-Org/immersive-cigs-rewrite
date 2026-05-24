@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-(_unit getVariable [QPVAR(isSmoking), false])
+_unit getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE"
 && 
 {
     getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1

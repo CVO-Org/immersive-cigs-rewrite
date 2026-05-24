@@ -15,28 +15,33 @@
 * Public: No
 */
 
-params [ "_unit", "_smokeData", ["_vanish", true, [false]] ];
+ZRN_LOG_1(_this);
 
-if (isNil "_smokeData") then { _smokeData = _unit getVariable QPVAR(smokeData); };
+params [ "_unit", "_loopData", ["_vanish", true, [false]] ];
 
-private _className = _smokeData get "itemClass";
+if (isNil "_loopData") then { _loopData = _unit getVariable QPVAR(loopData); };
 
+private _className = _loopData get "itemClass";
 
-// Check if the unit has had their cigarette removed from the slot 
+// Check if the unit has had their cigarette removed from the slot (SlotChangedEH)
 if ( _unit getVariable [QGVAR(forceVanish), false] ) then { _vanish = true; _unit setVariable [QGVAR(forceVanish), nil]; };
 
-
-switch (_smokeData get "itemType") do {
+////////////////////////////////////////
+// Remove Item
+////////////////////////////////////////
+switch (_loopData get "itemType") do {
     case ("GOGGLES"): { removeGoggles _unit; };
     case ("HMD"):     { _unit removeWeapon _className; };
 };
 
-
 if (_vanish) exitWith {};
 
-// Put Cigarette on the floor
-private _weaponHolder = getPos _unit nearObjects ["WeaponHolder", 2];
+////////////////////////////////////////
+// Drop Item on Floor
+////////////////////////////////////////
 
+// Find Nearby or create WeaponHolder
+private _weaponHolder = getPos _unit nearObjects ["WeaponHolder", 1];
 if (_weaponHolder isEqualTo []) then {
     _weaponHolder = createVehicle ["GroundWeaponHolder", [0,0,0], [], 0, "NONE"];
     _weaponHolder setPosASL getPosASL _unit;
@@ -44,4 +49,6 @@ if (_weaponHolder isEqualTo []) then {
     _weaponHolder = selectRandom _weaponHolder;
 };
 
+// Add Item
 _weaponHolder addItemCargoGlobal [_className, 1];
+

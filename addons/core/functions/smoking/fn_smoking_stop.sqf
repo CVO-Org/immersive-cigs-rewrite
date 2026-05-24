@@ -15,26 +15,31 @@
 * Public: No
 */
 
+ZRN_LOG_1(_this);
+
 params [
     "_unit",
-    "_smokeData",
+    "_loopData",
     [ "_skipAnimation", false, [true] ],
     [ "_forceVanish",   false, [true] ]
 ];
 
-if (_unit getVariable [QPVAR(isSmoking), false] ) then { _unit setVariable [QPVAR(isSmoking), false, true] };
-_unit setVariable [QPVAR(smokeData), nil];
-
+////////////////////////////////////////
+// Animation
+////////////////////////////////////////
 private _isAwake = lifeState _unit in ["HEALTHY", "INJURED"];
 private _isBurning = _unit getVariable ["ace_fire_intensity", 0] > 0;
 if ( !_skipAnimation && { _isAwake && (!_isBurning) } ) then { [_unit, QEGVAR(anim,cig_out), 1] call FUNC(anim); };
 
-if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
-
+////////////////////////////////////////
+// Uncon
+////////////////////////////////////////
 // 5% Chance for the unit to keep their cig when getting uncon/dead
 if ( !_isAwake && { random 1 > 0.05 } ) exitWith {};
 
-
+////////////////////////////////////////
+// Remove Item
+////////////////////////////////////////
 private _vanish = switch (true) do {
     case (_forceVanish): { true };
     case (_isBurning): { true };
@@ -42,14 +47,4 @@ private _vanish = switch (true) do {
     default { false };
 };
 
-[_unit, _smokeData, _vanish] call FUNC(drop_cig);
-
-
-// AI - Return Item back to Goggles/HMD Slot
-[_unit] call EFUNC(ai,returnItemToSlot);
-
-
-////////////////////////////////////////
-// API
-////////////////////////////////////////
-[QEGVAR(api,stopsSmoking), [_unit, _smokeData]] call CBA_fnc_localEvent;
+[_unit, _loopData, _vanish] call FUNC(drop_cig);

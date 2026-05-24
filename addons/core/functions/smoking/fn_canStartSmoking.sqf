@@ -17,11 +17,10 @@
 
 params ["_unit"];
 
-
-!(_unit getVariable [QPVAR(isSmoking), false])
-&& 
+alive _unit 
+&&
 {
-    !(_unit getVariable [QPVAR(isSucking), false])
+    _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
     &&
     {
         ([_unit] call EFUNC(core,checkCompatibleSkeleton))

@@ -1,4 +1,4 @@
-#include "../script_component.hpp"
+#include "../../script_component.hpp"
 
 /*
 * Author: Zorn
@@ -20,12 +20,10 @@ params [
     ["_value",        true,         [true]       ]
 ];
 
-
 if (_value) then {
-    private _isEnabled = missionNamespace getVariable [QPVAR(isEstablished_aceTab), false];
-
-    if (!_isEnabled) then {
-        missionNamespace setVariable [QPVAR(isEstablished_aceTab), true];
+    
+    if ( isNil QPVAR(arsenalTabEstablished) ) then {
+        missionNamespace setVariable [QPVAR(arsenalTabEstablished), true];
 
         [
             [] call FUNC(getAllItems),

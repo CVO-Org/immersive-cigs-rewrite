@@ -25,7 +25,7 @@ private _sound = selectRandom [QPVAR(verpuffung_00), QPVAR(verpuffung_01), QPVAR
 [
     { 
         [QGVAR(EH_burn), [_this , 2 + ceil random 3], _this] call CBA_fnc_targetEvent;
-        _this setVariable [QPVAR(isSmoking), false, true];
+        _this setVariable [QPVAR(isConsuming), false, true];
     },
     _unit,
     1

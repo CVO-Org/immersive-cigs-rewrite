@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-(_unit getVariable [QPVAR(isSucking), false])
+_unit getVariable [QPVAR(isConsuming), false] isEqualTo "SUCK"
 && 
 {
     getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSuckable)) == 1

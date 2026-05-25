@@ -78,9 +78,20 @@ private _intensity = SET(smoking_intensity) + ( random 0.15 * selectRandom [-1, 
 
 
 ////////////////////////////////////////
-// ConsumeType Exclusives
+// Effects
 ////////////////////////////////////////
 
+////////////////////////////////////////
+//// Common Effects
+
+// Special Effects
+private _sfxCode = getText (_currentConfig >> "statement") call CBA_fnc_convertStringCode;
+
+if (_sfxCode isNotEqualTo {}) then { _this call _sfxCode; };
+
+
+////////////////////////////////////////
+//// Individual Effects
 switch (_consumeType) do {
     case "SMOKE": {
         // Sound Effect
@@ -105,6 +116,9 @@ switch (_consumeType) do {
         [_unit, _sound, 20 * _intensity, true, true, true] call CBA_fnc_globalSay3D;
     };
 };
+
+
+
 
 ////////////////////////////////////////
 // Update Current Consumes

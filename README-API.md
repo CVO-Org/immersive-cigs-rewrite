@@ -30,4 +30,5 @@ Make sure to broadcast the variable as the checks will be on the individual clie
 - `["PACKAGES"] call cigs_core_fnc_getAllItems;` - To retrieve all Packages classnames
 - `["LIGHTERS"] call cigs_core_fnc_getAllItems;` - To retrieve all Lighters classnames
 - `["ALL"] call cigs_core_fnc_getAllItems;` - To retrieve Both
-- `[_unit, "cigs_baja_blast_cigpack"] call cigs_ai_fnc_startConsuming;` to give ai cigarettes and make them consume.
+
+<!-- - `[_unit, "cigs_baja_blast_cigpack"] call cigs_ai_fnc_startConsuming;` to give ai cigarettes and make them consume. --->

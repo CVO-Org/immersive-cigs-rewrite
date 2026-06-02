@@ -85,9 +85,10 @@ private _intensity = SET(smoking_intensity) + ( random 0.15 * selectRandom [-1, 
 //// Common Effects
 
 // Special Effects
-private _sfxCode = getText (_currentConfig >> "statement") call CBA_fnc_convertStringCode;
-
-if (_sfxCode isNotEqualTo {}) then { _this call _sfxCode; };
+private _sfxCode = getText (_currentConfig >> QPVAR(sfx_code)) call CBA_fnc_convertStringCode;
+private _sfxParams = (_currentConfig >> QPVAR(sfx_params)) call BIS_fnc_getCfgDataArray;
+if (isNil "_sfxParams") then { _sfxParams = []; }; 
+if (_sfxCode isNotEqualTo {}) then { [_unit, _loopData, _intensity, _sfxParams] call _sfxCode; };
 
 
 ////////////////////////////////////////

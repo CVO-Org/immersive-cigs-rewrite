@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_sfx">
+    <Package name="Main">
+        <Key ID="STR_cigs_sfx_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <German>OverlordZorn</German>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+        <Key ID="STR_cigs_sfx_authors">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <German>OverlordZorn</German>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

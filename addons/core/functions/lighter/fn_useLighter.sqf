@@ -43,7 +43,10 @@ if (_mode isNotEqualTo "GIVING") then {
     private _sound = switch (_lighterType) do {
         case "typeMagazine": { [ configFile >> "CfgMagazines" >> _lighterClass >> QPVAR(LighterSound) ] call CBA_fnc_getCfgDataRandom };
         case "typeItem":     { [ configFile >> "CfgWeapons"   >> _lighterClass >> QPVAR(LighterSound) ] call CBA_fnc_getCfgDataRandom };
-        default { QGVAR(matches_01) };
+        default {
+            ZRN_LOG_2(_this,_lighterType);
+            QPVAR(matches_01)
+        };
     };
     // Sound and Light Effects
     [ CBA_fnc_globalSay3D , [ _unit, _sound, 50, true, true, true ],      1 ] call CBA_fnc_waitAndExecute;

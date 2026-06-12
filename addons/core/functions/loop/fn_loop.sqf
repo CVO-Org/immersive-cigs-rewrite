@@ -17,8 +17,6 @@
 
 params ["_unit","_loopData"];
 
-ZRN_LOG_1(_this);
-
 ////////////////////////////////////////
 // Check Locality - transfer loop to unit owner
 ////////////////////////////////////////

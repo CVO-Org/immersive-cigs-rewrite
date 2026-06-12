@@ -56,7 +56,6 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_fire")) exitWith {};
 // Event: When starting Refueling, is the unit doing it smoking?
 ["ace_refuel_started", {
     if ( !(missionNamespace getVariable ["ace_fire_enabled", false]) || { SET(effect_combustion_chance) isEqualTo 0 } ) exitWith {};
-    ZRN_LOG_MSG_1(refuel started,_this);
     [ FUNC(combustion_check) , [_this#3], 1 + ceil random 5 ] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 

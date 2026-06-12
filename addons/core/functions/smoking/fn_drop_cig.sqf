@@ -15,8 +15,6 @@
 * Public: No
 */
 
-ZRN_LOG_1(_this);
-
 params [ "_unit", "_loopData", ["_vanish", true, [false]] ];
 
 if (isNil "_loopData") then { _loopData = _unit getVariable QPVAR(loopData); };

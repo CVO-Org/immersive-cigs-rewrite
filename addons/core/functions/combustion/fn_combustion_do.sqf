@@ -15,8 +15,6 @@
 * Public: No
 */
 
-ZRN_LOG_1(_this);
-
 params ["_unit"];
 
 private _sound = selectRandom [QPVAR(verpuffung_00), QPVAR(verpuffung_01), QPVAR(verpuffung_02), QPVAR(verpuffung_03), QPVAR(verpuffung_04)];

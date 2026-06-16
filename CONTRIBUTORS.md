@@ -20,4 +20,5 @@ Feel free to add yourself to this when creating a pull request, preferably inclu
 | Apricot-ale    |                        | Japanese Translations                            |
 | Alfred-Neumann |                        | French Translations                              |
 | ChemicalCo     |                        | Translations                                     |
+| Quebec         |                        | Artworks                                         |
 |                |                        |                                                  |

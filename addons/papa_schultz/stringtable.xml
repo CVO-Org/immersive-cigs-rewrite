@@ -2,22 +2,19 @@
 <Project name="cigs_papa_schultz">
     <Package name="Items">
         <Key ID="STR_cigs_papa_schultz_cigar">
-            <English>Papa Schultz' Cigar</English>
-            <French>Papa Schultz' Cigar</French>
-            <German>Papa Schultz' Zigarre</German>
+            <English>Papa Schultz's Cigar</English>
+            <French>Papa Schultz's Cigar</French>
+            <German>Papa Schultz's Zigarre</German>
             <Japanese>葉巻たばこ</Japanese>
         </Key>
         <Key ID="STR_cigs_papa_schultz_cigarbox_5">
-            <English>Box of Papa Schultz' Cigars</English>
-            <French>Boîte de Papa Schultz' cigares</French>
-            <German>Papa Schultz' Zigarrenschachtel</German>
-            <Japanese>葉巻たばこケース</Japanese>
+            <English>Box of Papa Schultz's Cigars</English>
+            <French>Boîte de Papa Schultz's cigares</French>
+            <German>Papa Schultz's Zigarrenschachtel</German>
+            <Japanese>Papa Schultz's 葉巻たばこケース</Japanese>
         </Key>
         <Key ID="STR_cigs_papa_schultz_cigarbox_5_desc">
-            <English>Box with 5 cigars.</English>
-            <French>Coffret de 5 cigares.</French>
-            <German>Zigarrenschachtel mit 5 Zigarren.</German>
-            <Japanese>葉巻たばこ5本入り。</Japanese>
+            <English>The Sergeant's Second Favourite Brand.&lt;br/&gt;Box with 5 cigars.</English>
         </Key>
     </Package>
     <Package name="Main">

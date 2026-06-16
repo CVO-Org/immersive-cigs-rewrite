@@ -14,6 +14,8 @@ We now have a Discord for multiple Modding Projects, including the Immersion Cig
 - [Readme: Rewrite](README-Rewrite.md)
 - [Readme: Classnames](readme-classnames.md)
 - [Readme: API](README-API.md)
+- [Readme: Features](FEATURES.md)
+
 
 ## Overview
 

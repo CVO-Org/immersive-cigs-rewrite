@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_papa_schultz">
+    <Package name="Items">
+        <Key ID="STR_cigs_papa_schultz_cigar">
+            <English>Papa Schultz' Cigar</English>
+            <French>Papa Schultz' Cigar</French>
+            <German>Papa Schultz' Zigarre</German>
+            <Japanese>葉巻たばこ</Japanese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_cigarbox_5">
+            <English>Box of Papa Schultz' Cigars</English>
+            <French>Boîte de Papa Schultz' cigares</French>
+            <German>Papa Schultz' Zigarrenschachtel</German>
+            <Japanese>葉巻たばこケース</Japanese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_cigarbox_5_desc">
+            <English>Box with 5 cigars.</English>
+            <French>Coffret de 5 cigares.</French>
+            <German>Zigarrenschachtel mit 5 Zigarren.</German>
+            <Japanese>葉巻たばこ5本入り。</Japanese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_papa_schultz_author">
+            <English>Rebel / Facel / LongLiveQuebec / OverlordZorn</English>
+            <French>Rebel / Facel / LongLiveQuebec / OverlordZorn</French>
+            <German>Rebel / Facel / LongLiveQuebec / OverlordZorn</German>
+            <Japanese>Rebel / Facel / LongLiveQuebec / OverlordZorn</Japanese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_author_cigarbox_5">
+            <English>Bromine / OverlordZorn / LongLiveQuebec</English>
+            <French>Bromine / OverlordZorn / LongLiveQuebec</French>
+            <German>Bromine / OverlordZorn / LongLiveQuebec</German>
+            <Japanese>Bromine / OverlordZorn / LongLiveQuebec</Japanese>
+        </Key>
+    </Package>
+</Project>

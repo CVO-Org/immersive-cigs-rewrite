@@ -7,9 +7,9 @@
             <Japanese>ACE武器庫でカスタムされた分類を有効化</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_ace_arsenal_tab_desc">
-            <English>When Enabled, this will create a Immersion Cig Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
-            <French>Lorsque cette option est activée, elle crée un onglet « Immersion Cig » dans l'arsenal ACE (côté droit). Pour le désactiver, la mission doit être redémarrée.</French>
-            <Japanese>有効化するとImmersion CigカテゴリがACE武器庫に追加されます(右側の列)。\nこれはミッション中でも有効化できますが、無効化にはリスタートが必要です。</Japanese>
+            <English>When Enabled, this will create a Immersive Cigs Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
+            <French>Lorsque cette option est activée, elle crée un onglet « Immersive Cigs » dans l'arsenal ACE (côté droit). Pour le désactiver, la mission doit être redémarrée.</French>
+            <Japanese>有効化するとImmersive CigsカテゴリがACE武器庫に追加されます(右側の列)。\nこれはミッション中でも有効化できますが、無効化にはリスタートが必要です。</Japanese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier">
             <English>Coughing Modifier</English>
@@ -224,10 +224,10 @@
     </Package>
     <Package name="EditorCategories">
         <Key ID="STR_cigs_core_editor_category_main">
-            <English>Immersion Cigs</English>
+            <English>Immersive Cigs</English>
             <French>Cigarettes immersives</French>
             <German>Immersive Zigaretten</German>
-            <Japanese>Immersion Cigs</Japanese>
+            <Japanese>Immersive Cigs</Japanese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
             <English>Cig Packs</English>

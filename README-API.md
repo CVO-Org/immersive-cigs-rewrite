@@ -20,9 +20,11 @@ As of v3.0.7, API Event Keys have been renamed from `cigs_core_api` to `cigs_api
 The following APIs can be used by `_unit setVariable [_apiKey, _value, true];`.
 Make sure to broadcast the variable as the checks will be on the individual clients.
 
-| ApiKey                     | Values | Desc                                                 |
-| -------------------------- | ------ | ---------------------------------------------------- |
-| `cigs_api_blockAnimations` | true   | Will block all cigs related animations on said unit. |
+| ApiKey                         | Values | Desc                                                 |
+| ------------------------------ | ------ | ---------------------------------------------------- |
+| `cigs_api_blockAnimations`     | true   | Will block all cigs related animations on said unit. |
+| `cigs_api_blockDynamicSmoking` | true   | Will block unit from smoking dynamically.            |
+| `cigs_api_blockCigsOnAI`       | true   | Will block unit from getting cig items dynamically.  |
 
 
 ## Useful Functions

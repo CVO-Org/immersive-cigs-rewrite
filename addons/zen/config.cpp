@@ -5,10 +5,10 @@ class CfgPatches {
 
         // Meta information for editor
 		name = ADDON_NAME;
-		author = CSTRING(author);
-        authors[] = { CSTRING(authors) };
+		author = ECSTRING(main,author);
+        authors[] = { "OverlordZorn [CVO]" };
 		
-        url = "$STR_mod_URL";
+        url = ECSTRING(main,url);
 
 		VERSION_CONFIG;
 
@@ -33,4 +33,3 @@ class CfgPatches {
 };
 
 #include "CfgFunctions.hpp"
-#include "XEH\CfgXEH.hpp"

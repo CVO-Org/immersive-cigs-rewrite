@@ -5,7 +5,7 @@ class Cfg3DEN {
     class Object {
         class AttributeCategories {
             class ADDON {
-                displayName = CSTRING(3den_category);   // Category name visible in Edit Attributes window
+                displayName = CSTRING(3den_category_api);   // Category name visible in Edit Attributes window
                 collapsed = 1;                          // When 1, the category is collapsed by default
                 class Attributes {
                     class EGVAR(api,blockDynamicSmoking) {

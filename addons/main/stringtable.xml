@@ -2,16 +2,16 @@
 <Project name="cigs_main">
     <Package name="Main">
         <Key ID="STR_mod_URL">
-            <English>https://github.com/OverlordZorn/immersion-cigs-rewrite</English>
-            <French>https://github.com/OverlordZorn/immersion-cigs-rewrite</French>
-            <German>https://github.com/OverlordZorn/immersion-cigs-rewrite</German>
-            <Japanese>https://github.com/OverlordZorn/immersion-cigs-rewrite</Japanese>
-            <Chinese>https://github.com/OverlordZorn/immersion-cigs-rewrite</Chinese>
+            <English>https://github.com/OverlordZorn/immersive-cigs-rewrite</English>
+            <French>https://github.com/OverlordZorn/immersive-cigs-rewrite</French>
+            <German>https://github.com/OverlordZorn/immersive-cigs-rewrite</German>
+            <Japanese>https://github.com/OverlordZorn/immersive-cigs-rewrite</Japanese>
+            <Chinese>https://github.com/OverlordZorn/immersive-cigs-rewrite</Chinese>
         </Key>
         <Key ID="STR_mod_author">
-            <English>Immersion Cigs - Rewrite Team</English>
-            <French>Immersion Cigs - Rewrite Team</French>
-            <Japanese>Immersion Cigs - Rewrite チーム</Japanese>
+            <English>Immersive Cigs - Rewrite Team</English>
+            <French>Immersive Cigs - Rewrite Team</French>
+            <Japanese>Immersive Cigs - Rewrite チーム</Japanese>
         </Key>
     </Package>
 </Project>

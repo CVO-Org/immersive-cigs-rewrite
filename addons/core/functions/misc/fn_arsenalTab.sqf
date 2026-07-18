@@ -27,7 +27,7 @@ if (_value) then {
 
         [
             [] call FUNC(getAllItems),
-            "Immersion Cigs",
+            "Immersive Cigs",
             QPATHTOF(data\ui\light_cig.paa) // Image Path
         ] call ace_arsenal_fnc_addRightPanelButton
     };

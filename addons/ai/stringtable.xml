@@ -121,16 +121,4 @@
             <Japanese>両方のスロットが既に占有されている場合、アイテムを置く優先スロットを定義します。</Japanese>
         </Key>
     </Package>
-    <Package name="Main">
-        <Key ID="STR_cigs_ai_author">
-            <English>Cigs Rewrite Team</English>
-            <French>Cigs Rewrite Team</French>
-            <Japanese>Cigs Rewrite Team</Japanese>
-        </Key>
-        <Key ID="STR_cigs_ai_authors">
-            <English>OverlordZorn</English>
-            <French>OverlordZorn</French>
-            <Japanese>OverlordZorn</Japanese>
-        </Key>
-    </Package>
 </Project>

@@ -119,9 +119,6 @@
             <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
             <Japanese>タバコをどれくらいの強さで、どれくらいの時間吸い込むかを定義します。</Japanese>
         </Key>
-        <Key ID="STR_cigs_core_set_smoking_intensity_entry_thomas">
-            <English>Thomas</English>
-        </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_long">
             <English>More Intensive</English>
             <French>Plus intensif</French>
@@ -136,6 +133,9 @@
             <English>Less Intensive</English>
             <French>Moins intensif</French>
             <Japanese>高強度</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_set_smoking_intensity_entry_thomas">
+            <English>Thomas</English>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack">
             <English>Start with a CigPack</English>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_modules">
+    <Package name="Main">
+        <Key ID="STR_cigs_zen_author">
+            <English>Cigs Rewrite Team</English>
+        </Key>
+    </Package>
+</Project>

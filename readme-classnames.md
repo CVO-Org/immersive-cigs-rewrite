@@ -27,9 +27,9 @@
 + assosiated `_crayon_COLOR` / `_crayon_COLOR_nv` classnames for facewear/nvg slot
 
 ## SOG:PF Compat
-- `vn_b_item_lighter_01` - Vanilla Item (zippo lighter) updated with config properties to enable Immersion Cigs integration.
-- `vn_b_item_cigs_01` - Vanilla Item (cigarette pack) updated with config properties to enable Immersion Cigs integration.
+- `vn_b_item_lighter_01` - Vanilla Item (zippo lighter) updated with config properties to enable Immersive Cigs integration.
+- `vn_b_item_cigs_01` - Vanilla Item (cigarette pack) updated with config properties to enable Immersive Cigs integration.
 
-- `cigs_savage_cigpack` - as an additional Item to go in line with the immersion cigs naming structure.
+- `cigs_savage_cigpack` - as an additional Item to go in line with the immersive cigs naming structure.
 + assosiated `_cig0..4` / `_cig0..4_nv` classnames for facewear/nvg slot
 

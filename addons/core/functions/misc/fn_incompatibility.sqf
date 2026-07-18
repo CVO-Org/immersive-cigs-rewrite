@@ -28,7 +28,7 @@
 
 private _incompatibleMods = [
     //"450814997",    // CBA - For Testing
-    REWRITE_MOD,    // Immersion Cigs - Rewrite - The alternate Version - Stable or DEV
+    REWRITE_MOD,    // Immersive Cigs - Rewrite - The alternate Version - Stable or DEV
 
     "2975583316",   // ACE - D.U.M.P - some animations get stuck orsomething
     "2311516767",   // Immersion Crayons
@@ -44,7 +44,7 @@ private _incompatibleMods = [
     "2493500261",   // Compat Mod: SOG
     "2975033007",   // Compat Mod: KJW Imposter
     
-    "753946944"    // Original Immersion Cigs
+    "753946944"    // Original Immersive Cigs
 ];
 
 private _loadedIncompatibleMods = getLoadedModsInfo select { (_x select 7) in _incompatibleMods };

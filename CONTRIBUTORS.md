@@ -1,4 +1,4 @@
-## IMMERSION CIGS - REWRITE CONTRIBUTOR LIST
+## IMMERSIVE CIGS - REWRITE CONTRIBUTOR LIST
 
 Feel free to add yourself to this when creating a pull request, preferably including a summary of the work.
 

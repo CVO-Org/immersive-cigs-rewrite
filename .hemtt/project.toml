@@ -1,10 +1,10 @@
-name = "Immersion Cigs - Rewrite"
+name = "Immersive Cigs - Rewrite"
 prefix = "cigs"
 mainprefix = "z"
 
 [properties]
 author = "Rebel / Facel / Panimala / OverlordZorn / prisonerMO / Kneely / Vespade"
-url = "https://github.com/OverlordZorn/immersion-cigs-rewrite"
+url = "https://github.com/OverlordZorn/immersive-cigs-rewrite"
 
 
 [binarize]

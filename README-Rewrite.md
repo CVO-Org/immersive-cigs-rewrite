@@ -1,10 +1,10 @@
 
 # The Rewrite
 
-This is Mod is a full Rewrite of the original Immersion Cigs Mod by Rebel & Facel:
-- [Immersion Cigs - Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=753946944)
-- [Immersion Cigs - Git Hub](https://github.com/rebelvg/immersion_cigs/tree/master)
-- [Immersion Cigs - Forum Thread](https://forums.bistudio.com/forums/topic/181841-immersion-cigs/)
+This is Mod is a full Rewrite of the original Immersive Cigs Mod by Rebel & Facel:
+- [Immersive Cigs - Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=753946944)
+- [Immersive Cigs - Git Hub](https://github.com/rebelvg/immersion_cigs/tree/master)
+- [Immersive Cigs - Forum Thread](https://forums.bistudio.com/forums/topic/181841-immersion-cigs/)
 
 > [!WARNING]
 > Due to the extensive rewrite, this is not compatible with Mods which have been based/are dependend on the original Mod.

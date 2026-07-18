@@ -2,7 +2,7 @@
 <Project name="cigs_modules">
     <Package name="3den-categories">
         <Key ID="STR_cigs_modules_3den_category">
-            <English>Immersion Cigs - Rewrite</English>
+            <English>Immersive Cigs - Rewrite</English>
         </Key>
     </Package>
     <Package name="3den-attributes">
@@ -24,7 +24,7 @@
             <English>Block Animations</English>
         </Key>
         <Key ID="STR_cigs_modules_blockAnimations_tooltip">
-            <English>Will block any Immersion Cigs related animations.\nUseful for decorative Units with their own animation loop.</English>
+            <English>Will block any Immersive Cigs related animations.\nUseful for decorative Units with their own animation loop.</English>
         </Key>
     </Package>
 </Project>

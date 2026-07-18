@@ -2,7 +2,7 @@
 <Project name="cigs_modules">
     <Package name="3den-categories">
         <Key ID="STR_cigs_modules_3den_category">
-            <English>Immersion Cigs - Rewrite</English>
+            <English>Immersion Cigs: API</English>
         </Key>
     </Package>
     <Package name="3den-attributes">

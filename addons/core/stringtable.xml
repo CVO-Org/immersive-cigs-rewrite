@@ -106,6 +106,9 @@
             <French>Plus souvent</French>
             <Japanese>高頻度</Japanese>
         </Key>
+        <Key ID="STR_cigs_core_set_smoking_frequency_entry_thomas">
+            <English>Thomas</English>
+        </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity">
             <English>Smoking Intensity</English>
             <French>Intensité du tabagisme</French>
@@ -115,6 +118,9 @@
             <English>Defines which how strong/long you puff/draw a smokable.</English>
             <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
             <Japanese>タバコをどれくらいの強さで、どれくらいの時間吸い込むかを定義します。</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_set_smoking_intensity_entry_thomas">
+            <English>Thomas</English>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_long">
             <English>More Intensive</English>

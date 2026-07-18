@@ -26,7 +26,7 @@ private _code = {
 
     // Check if valid target
     if !( missionNamespace getVariable [ [ QSET(cigsonai_side_enabled), str side _unit ] joinString "_", false ] ) exitWith {};
-
+    if !(_unit getVariable [QEGVAR(api,blockCigsOnAI), false]) exitWith {};
 
     // Proceed
     private _counter = missionNamespace getVariable [QGVAR(counter_cigsonai), 0];

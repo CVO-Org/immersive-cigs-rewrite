@@ -36,6 +36,7 @@
     {                          // statement - CODE - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         params ["_unit", "_container", "_item", "_slot", "_params"];
         [_unit, _item, _slot] call FUNC(takeFromPack);
+        _unit action ["Gear", objNull];
         false
     }
 ] call CBA_fnc_addItemContextMenuOption;

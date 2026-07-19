@@ -9,7 +9,7 @@
 * Return Value:
 * None
 *
-* Example: ["PACKAGES", true] call cigs_core_getAllItems;
+* Example: ["PACKAGES", true] call cigs_core_fnc_getAllItems;
 * 
 *
 * Public: No

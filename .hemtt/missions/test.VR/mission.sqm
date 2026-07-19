@@ -77,65 +77,65 @@ class AddonsMetaData
 		class Item3
 		{
 			className="cigs_lucky_strike";
-			name="Immersion Cigs - Rewrite - Lucky Strike Cigarettes (WW2 Edition)";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Lucky Strike Cigarettes (WW2 Edition)";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item4
 		{
 			className="cigs_apollo";
-			name="Immersion Cigs - Rewrite - Apollo Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Apollo Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item5
 		{
 			className="cigs_black_devil";
-			name="Immersion Cigs - Rewrite - Black Devil Pink Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Black Devil Pink Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item6
 		{
 			className="cigs_cigars";
-			name="Immersion Cigs - Rewrite - Cigars";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Cigars";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item7
 		{
 			className="cigs_core";
-			name="Immersion Cigs - Rewrite - Core";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Core";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item8
 		{
 			className="cigs_kosmos";
-			name="Immersion Cigs - Rewrite - Kosmos Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Kosmos Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item9
 		{
 			className="cigs_pops";
-			name="Immersion Cigs - Rewrite - Lollipops";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Lollipops";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item10
 		{
 			className="cigs_crayons";
-			name="Immersion Cigs - Rewrite - Crayons";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Crayons";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item11
 		{
 			className="cigs_voron";
-			name="Immersion Cigs - Rewrite - Voron Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Voron Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item12
 		{
@@ -147,9 +147,9 @@ class AddonsMetaData
 		class Item13
 		{
 			className="cigs_morley";
-			name="Immersion Cigs - Rewrite - Morley Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Morley Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item14
 		{
@@ -161,23 +161,23 @@ class AddonsMetaData
 		class Item15
 		{
 			className="cigs_craven";
-			name="Immersion Cigs - Rewrite - Craven Cigarettes (WW2 Edition)";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Craven Cigarettes (WW2 Edition)";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item16
 		{
 			className="cigs_eckstein";
-			name="Immersion Cigs - Rewrite - Eckstein No. 5 Cigarettes (WW2 Edition)";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Eckstein No. 5 Cigarettes (WW2 Edition)";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item17
 		{
 			className="cigs_baja_blast";
-			name="Immersion Cigs - Rewrite - Newport Mtn Dew Baja Blast Cigarettes";
-			author="Immersion Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
+			name="Immersive Cigs - Rewrite - Newport Mtn Dew Baja Blast Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 		class Item18
 		{
@@ -203,8 +203,8 @@ class AddonsMetaData
 		class Item21
 		{
 			className="cigs_nil";
-			name="Immersion Cigs - Rewrite - NIL Cigarettes";
-			author="OverlordZorn";
+			name="Immersive Cigs - Rewrite - NIL Cigarettes";
+			author="Immersive Cigs - Rewrite Team";
 			url="https://github.com/";
 		};
 		class Item22

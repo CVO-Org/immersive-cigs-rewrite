@@ -1,4 +1,4 @@
-name: Update Translation Issue
+name: Stringtable.xml
 
 on:
   workflow_dispatch:

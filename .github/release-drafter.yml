@@ -1,0 +1,46 @@
+# Automatically generates draft releases based on merged PRs
+
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+categories:
+  - title: 'Features 🚀'
+    labels:
+      - pr/new
+      - pr/improvement
+  - title: 'Bug Fixes 🐛'
+    labels:
+      - pr/fix
+  - title: 'Documentation 📚'
+    labels:
+      - pr/docs
+  - title: 'Translation 📚'
+    labels:
+      - pr/translation
+  - title: 'Maintenance 🛠️'
+    labels:
+      - pr/maintenance
+      - pr/cleanup
+
+# change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
+exclude-labels:
+  - pr/ignore
+
+change-template: '* $TITLE (#$NUMBER)'
+template: |
+  ## Summary
+
+  ## Changelog
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS
+
+replacers:
+  # Category titles
+  # Release Drafter automatically makes the category a ## heading
+  # and we want it as a ### heading
+  - search: '/\#\# (\#\#\# (NEW|FIXED|IMPROVED|CHANGED|SETTINGS|TRANSLATIONS|DOCUMENTATION):)/g'
+    replace: '$1'

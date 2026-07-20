@@ -23,7 +23,7 @@ private _id = _unit addEventHandler [
         params ["_unit", "_name", "_slot", "_assigned", "_weapon"];
 
         // Define Remove Eventhandler Codeblock
-	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil]; };
+        private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil]; };
 
         // Check if unit is not consuming
         if ( _unit getVariable [QPVAR(isConsuming), false] isEqualTo false ) exitWith _rm_eh;

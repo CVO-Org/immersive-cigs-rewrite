@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture = "a3\data_f\default_ti_ca.paa";
+    texture = "a3\data_f\default_ti_ca.paa";
 };
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="#(argb,8,8,3)color(1,0,1,0,SMDI)";
+    texture="#(argb,8,8,3)color(1,0,1,0,SMDI)";
     uvSource = "tex";
     class uvTransform
     {

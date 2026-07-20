@@ -47,8 +47,8 @@ class CfgWeapons {
 
 
         class ItemInfo: ItemInfo {
-    		uniformModel = QPATHTOF(data\cigars\cigar1.p3d);
-	    	modelOff = QPATHTOF(data\cigars\cigar1.p3d);
+            uniformModel = QPATHTOF(data\cigars\cigar1.p3d);
+            modelOff = QPATHTOF(data\cigars\cigar1.p3d);
         };
     };
 
@@ -64,8 +64,8 @@ class CfgWeapons {
 
 
         class ItemInfo: ItemInfo {
-    		uniformModel = QPATHTOF(data\cigars\cigar2.p3d);
-	    	modelOff = QPATHTOF(data\cigars\cigar2.p3d);
+            uniformModel = QPATHTOF(data\cigars\cigar2.p3d);
+            modelOff = QPATHTOF(data\cigars\cigar2.p3d);
         };
     };
 
@@ -80,8 +80,8 @@ class CfgWeapons {
         
 
         class ItemInfo: ItemInfo {
-    		uniformModel = QPATHTOF(data\cigars\cigar3.p3d);
-	    	modelOff = QPATHTOF(data\cigars\cigar3.p3d);
+            uniformModel = QPATHTOF(data\cigars\cigar3.p3d);
+            modelOff = QPATHTOF(data\cigars\cigar3.p3d);
         };
     };
 
@@ -96,8 +96,8 @@ class CfgWeapons {
         
 
         class ItemInfo: ItemInfo {
-    		uniformModel = QPATHTOF(data\cigars\cigar4.p3d);
-	    	modelOff = QPATHTOF(data\cigars\cigar4.p3d);
+            uniformModel = QPATHTOF(data\cigars\cigar4.p3d);
+            modelOff = QPATHTOF(data\cigars\cigar4.p3d);
         };
     };
 };

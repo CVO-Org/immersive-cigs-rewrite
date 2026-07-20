@@ -82,8 +82,8 @@ private _condition = { _this#1 > time && { lifeState (_this#3) in ["HEALTHY", "I
 
 private _exitCode = { { deleteVehicle _x } forEach (_this#4) };
 private _codeToRun = {
-	params [ "_startTime", "_endTime", "_peakTime", "_unit", "_sources" ];
-	_sources params ["_vis", "_ir_flare"];
+    params [ "_startTime", "_endTime", "_peakTime", "_unit", "_sources" ];
+    _sources params ["_vis", "_ir_flare"];
 
     private _freq = 1 + random 1; // Hz – Schwingungen pro Sekunde
 
@@ -94,23 +94,23 @@ private _codeToRun = {
     };
 
 
-	private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];
-	private _intensity_flare = linearConversion [ 0, 1, _intensity max 0, 0, MAX_FLARESIZE ];
+    private _intensity_light = linearConversion [ 0, 1, _intensity max 0, 0, MAX_BRIGHTNESS ];
+    private _intensity_flare = linearConversion [ 0, 1, _intensity max 0, 0, MAX_FLARESIZE ];
 
-	_vis setLightIntensity 1.00 * _intensity_light;
+    _vis setLightIntensity 1.00 * _intensity_light;
 
-	_ir_flare setLightIntensity _intensity_light;
-	_ir_flare setLightFlareSize _intensity_flare;
+    _ir_flare setLightIntensity _intensity_light;
+    _ir_flare setLightFlareSize _intensity_flare;
 };
 
 [{
-	params ["_args", "_handle"];
-	_args params ["_codeToRun", "_parameters", "_exitCode", "_condition"];
+    params ["_args", "_handle"];
+    _args params ["_codeToRun", "_parameters", "_exitCode", "_condition"];
 
-	if (_parameters call _condition) then {
-		_parameters call _codeToRun;
-	} else {
-		_handle call CBA_fnc_removePerFrameHandler;
-		_parameters call _exitCode;
-	};
+    if (_parameters call _condition) then {
+        _parameters call _codeToRun;
+    } else {
+        _handle call CBA_fnc_removePerFrameHandler;
+        _parameters call _exitCode;
+    };
 }, 0, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;

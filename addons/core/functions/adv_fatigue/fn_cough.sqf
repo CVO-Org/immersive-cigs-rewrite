@@ -37,11 +37,11 @@ _distance = linearConversion [
 
 if (_unit call EFUNC(core,isPlayer)) then {
     enableCamShake true;
-	addCamShake [
-		1 + (4 * _coughIntensity),
-		3 + (2 * _coughIntensity),
-		3 + (3 * _coughIntensity)
-	];
+    addCamShake [
+        1 + (4 * _coughIntensity),
+        3 + (2 * _coughIntensity),
+        3 + (3 * _coughIntensity)
+    ];
 };
 
 if ( 1 * _coughIntensity > random 3 ) then { [QGVAR(EH_cough), [_unit, _distance ]] call CBA_fnc_serverEvent; };

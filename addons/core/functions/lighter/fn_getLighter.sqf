@@ -17,11 +17,10 @@
 
 params ["_unit"];
 
-private "_index";
 
 // Check for Finite Lighters - might need to add a bit of code to always use the lighter with the least ammo in it?
 private _magazines = magazines _unit;
-_index = _magazines findIf { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isLighter) ) == 1};
+private _index = _magazines findIf { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isLighter) ) == 1};
 if (_index > -1) exitWith { [_magazines select _index, "typeMagazine"] };
 
 // return when no lighter found

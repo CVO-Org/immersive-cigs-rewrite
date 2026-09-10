@@ -46,7 +46,7 @@ private _container = switch (true) do {
     default { objNull };
 };
 
-if (isNull _container) exitWith { [FUNC(providePropaganda), _this, 90] call CBA_fnc_waitAndExecute; };
+if (isNull _container) exitWith { [FUNC(providePropaganda), _this, 600] call CBA_fnc_waitAndExecute; };
 
 [QGVAR(EH_addItemsOverloadServer), [_container, _package]] call CBA_fnc_serverEvent;
 

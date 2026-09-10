@@ -19,7 +19,7 @@
 
 if (!isServer) exitWith {};
 
-params ["_container", "_items"];
+params [ "_container", "_items" ];
 
 // Get Additional Mass
 private _addedLoad = 0;

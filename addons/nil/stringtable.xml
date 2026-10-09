@@ -4,14 +4,24 @@
         <Key ID="STR_cigs_nil_author">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
             <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
             <Japanese>OverlordZorn</Japanese>
             <Chinese>OverlordZorn</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_url">
             <English>https://github.com/</English>
             <French>https://github.com/</French>
+            <Spanish>https://github.com/</Spanish>
+            <Polish>https://github.com/</Polish>
+            <Portuguese>https://github.com/</Portuguese>
+            <Russian>https://github.com/</Russian>
             <German>https://github.com/</German>
+            <Korean>https://github.com/</Korean>
             <Japanese>https://github.com/</Japanese>
             <Chinese>https://github.com/</Chinese>
         </Key>
@@ -20,21 +30,36 @@
         <Key ID="STR_cigs_nil_cigarette">
             <English>NIL Cigarette</English>
             <French>NIL Cigarette</French>
+            <Spanish>Cigarrillo NIL</Spanish>
+            <Polish>Papieros NIL</Polish>
+            <Portuguese>Cigarro NIL</Portuguese>
+            <Russian>Сигарета NIL</Russian>
             <German>NIL Zigarette</German>
+            <Korean>NIL 담배</Korean>
             <Japanese>紙巻たばこ NIL</Japanese>
             <Chinese>NIL 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack">
             <English>NIL Cigarette Pack</English>
             <French>NIL Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos NIL</Spanish>
+            <Polish>Paczka papierosów NIL</Polish>
+            <Portuguese>Maço de cigarros NIL</Portuguese>
+            <Russian>Пачка сигарет NIL</Russian>
             <German>NIL Zigarettenschachtel</German>
+            <Korean>NIL 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ NIL</Japanese>
             <Chinese>NIL 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack_desc">
             <English>NIL&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>NIL&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>NIL&amp;lt;br/&amp;gt;Contiene 20 cigarrillos.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>NIL&amp;lt;br/&amp;gt;Zawiera 20 papierosów.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>NIL&amp;lt;br/&amp;gt;Contém 20 cigarros.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>NIL&amp;lt;br/&amp;gt;Содержит 20 сигарет.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>NIL&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>NIL&amp;lt;br/&amp;gt;20개의 담배가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>NIL&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>NIL&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>

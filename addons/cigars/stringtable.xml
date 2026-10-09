@@ -4,34 +4,64 @@
         <Key ID="STR_cigs_cigars_cigar">
             <English>Cigar</English>
             <French>Cigar</French>
+            <Spanish>Cigarro</Spanish>
+            <Polish>Cygaro</Polish>
+            <Portuguese>Charuto</Portuguese>
+            <Russian>Сигара</Russian>
             <German>Zigarre</German>
+            <Korean>시가</Korean>
             <Japanese>葉巻たばこ</Japanese>
+            <Chinese>雪茄</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5">
             <English>Box of Cigars</English>
             <French>Boîte de cigares</French>
+            <Spanish>Caja de cigarros</Spanish>
+            <Polish>Pudło cygar</Polish>
+            <Portuguese>Caixa de charutos</Portuguese>
+            <Russian>Коробка сигар</Russian>
             <German>Zigarrenschachtel</German>
+            <Korean>시가 상자</Korean>
             <Japanese>葉巻たばこケース</Japanese>
+            <Chinese>5 支装雪茄盒</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5_desc">
             <English>Box of Cigars with 5 cigars.</English>
             <French>Coffret de 5 cigares.</French>
+            <Spanish>Caja de cigarros con 5 cigarros.</Spanish>
+            <Polish>Pudło z 5 cygarami.</Polish>
+            <Portuguese>Caixa de charutos com 5 charutos.</Portuguese>
+            <Russian>Коробка сигар с 5 сигарами.</Russian>
             <German>Zigarrenschachtel mit 5 Zigarren.</German>
+            <Korean>5개의 시가가 들어 있는 상자입니다.</Korean>
             <Japanese>葉巻たばこ5本入り。</Japanese>
+            <Chinese>装有 5 支雪茄的盒子。</Chinese>
         </Key>
     </Package>
     <Package name="Main">
         <Key ID="STR_cigs_cigars_author">
             <English>Rebel / Facel</English>
             <French>Rebel / Facel</French>
+            <Spanish>Rebel / Facel</Spanish>
+            <Polish>Rebel / Facel</Polish>
+            <Portuguese>Rebel / Facel</Portuguese>
+            <Russian>Rebel / Facel</Russian>
             <German>Rebel / Facel</German>
+            <Korean>Rebel / Facel</Korean>
             <Japanese>Rebel / Facel</Japanese>
+            <Chinese>Rebel / Facel</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_author_cigarbox_5">
             <English>Bromine / OverlordZorn</English>
             <French>Bromine / OverlordZorn</French>
+            <Spanish>Bromine / OverlordZorn</Spanish>
+            <Polish>Bromine / OverlordZorn</Polish>
+            <Portuguese>Bromine / OverlordZorn</Portuguese>
+            <Russian>Bromine / OverlordZorn</Russian>
             <German>Bromine / OverlordZorn</German>
+            <Korean>Bromine / OverlordZorn</Korean>
             <Japanese>Bromine / OverlordZorn</Japanese>
+            <Chinese>Bromine / OverlordZorn</Chinese>
         </Key>
     </Package>
 </Project>

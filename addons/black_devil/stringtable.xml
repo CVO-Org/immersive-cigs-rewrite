@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_black_devil_cigarette">
             <English>Black Devil Pink Cigarette</English>
             <French>Black Devil Pink Cigarette</French>
+            <Spanish>Cigarrillo rosa Black Devil</Spanish>
+            <Polish>Różowy papieros Black Devil</Polish>
+            <Portuguese>Cigarro rosa Black Devil</Portuguese>
+            <Russian>Розовая сигарета Black Devil</Russian>
             <German>Black Devil Pink Zigarette</German>
+            <Korean>Black Devil 핑크 담배</Korean>
             <Japanese>紙巻たばこ ブラックデビル ピンク</Japanese>
             <Chinese>Black Devil Pink 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_black_devil_cigpack">
             <English>Black Devil Pink Cigs Pack</English>
             <French>Black Devil Pink Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos Black Devil Pink</Spanish>
+            <Polish>Paczka papierosów Black Devil Pink</Polish>
+            <Portuguese>Maço de cigarros Black Devil Pink</Portuguese>
+            <Russian>Пачка сигарет Black Devil Pink</Russian>
             <German>Black Devil Pink Zigarettenschachtel</German>
+            <Korean>Black Devil Pink 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ ブラックデビル ピンク</Japanese>
             <Chinese>Black Devil Pink 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_black_devil_cigpack_desc">
             <English>Smells like smoke. Tastes like pussy.&lt;br/&gt;Contains 20 pink filter cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Smells like smoke. Tastes like pussy.&lt;br/&gt;Contient 20 pink filter cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Huele a humo. Sabe a ...&amp;lt;br/&amp;gt;Contiene 20 cigarrillos con filtro rosa.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Pachnie dymem. Smakuje jak ...&amp;lt;br/&amp;gt;Zawiera 20 różowych papierosów z filtrem.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Cheira a fumaça. Sabe a ...&amp;lt;br/&amp;gt;Contém 20 cigarros com filtro rosa.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Пахнет дымом. На вкус как ...&amp;lt;br/&amp;gt;Содержит 20 розовых сигарет с фильтром.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>Smells like smoke. Tastes like pussy.&lt;br/&gt;Enthält 20 pink filter Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>연기 냄새가 나고 맛은 ...&amp;lt;br/&amp;gt;분홍색 필터 담배 20개가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>ケムリの匂い。オンナの味。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>Smells like smoke. Tastes like pussy.&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="STR_cigs_black_devil_author">
             <English>Jenna / Grahame / OverlordZorn / Rebel / Facel</English>
             <French>Jenna / Grahame / OverlordZorn / Rebel / Facel</French>
+            <Spanish>Jenna / Grahame / OverlordZorn / Rebel / Facel</Spanish>
+            <Polish>Jenna / Grahame / OverlordZorn / Rebel / Facel</Polish>
+            <Portuguese>Jenna / Grahame / OverlordZorn / Rebel / Facel</Portuguese>
+            <Russian>Jenna / Grahame / OverlordZorn / Rebel / Facel</Russian>
             <German>Jenna / Grahame / OverlordZorn / Rebel / Facel</German>
+            <Korean>Jenna / Grahame / OverlordZorn / Rebel / Facel</Korean>
             <Japanese>Jenna / Grahame / OverlordZorn / Rebel / Facel</Japanese>
             <Chinese>Jenna / Grahame / OverlordZorn / Rebel / Facel</Chinese>
         </Key>

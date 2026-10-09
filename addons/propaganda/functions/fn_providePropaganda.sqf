@@ -17,7 +17,7 @@
 
 params ["_player"];
 
-private _package = switch (getPlayerUID _player) do {
+private _items = switch (getPlayerUID _player) do {
     case "76561197970306509": {
         [
             "CVO_SpraypaintWhite",
@@ -46,9 +46,9 @@ private _container = switch (true) do {
     default { objNull };
 };
 
-if (isNull _container) exitWith { [FUNC(providePropaganda), _this, 90] call CBA_fnc_waitAndExecute; };
+if (isNull _container) exitWith { [ FUNC(providePropaganda), _this, 300 ] call CBA_fnc_waitAndExecute; };
 
-[QGVAR(EH_addItemsOverloadServer), [_container, _package]] call CBA_fnc_serverEvent;
+[ QGVAR(EH_addItemsOverloadServer), [ _container, _items ] ] call CBA_fnc_serverEvent;
 
 [
     {

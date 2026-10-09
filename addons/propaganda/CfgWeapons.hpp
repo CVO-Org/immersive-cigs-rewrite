@@ -1,4 +1,5 @@
-#define CVO_SOUNDS sounds[] = { Q(cvo_raven_caw) }
+#define CVO_SOUNDS sounds[] = { Q(cvo_raven_caw), "ace_tagging_spray","ace_tagging_spray01","ace_tagging_spray02" }
+
 
 
 class CfgWeapons {

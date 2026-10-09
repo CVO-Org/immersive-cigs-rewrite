@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_eckstein_cigarette">
             <English>Eckstein No. 5 Cigarette</English>
             <French>Eckstein No. 5 Cigarette</French>
+            <Spanish>Cigarrillo Eckstein No. 5</Spanish>
+            <Polish>Papieros Eckstein No. 5</Polish>
+            <Portuguese>Cigarro Eckstein No. 5</Portuguese>
+            <Russian>Сигарета Eckstein No. 5</Russian>
             <German>Eckstein No. 5 Zigarette</German>
+            <Korean>Eckstein No. 5 담배</Korean>
             <Japanese>紙巻たばこ エクスタイン No. 5</Japanese>
             <Chinese>Eckstein No. 5 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_eckstein_cigpack">
             <English>Eckstein No. 5 Cigarette Pack</English>
             <French>Eckstein No. 5 Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos Eckstein No. 5</Spanish>
+            <Polish>Paczka papierosów Eckstein No. 5</Polish>
+            <Portuguese>Maço de cigarros Eckstein No. 5</Portuguese>
+            <Russian>Пачка сигарет Eckstein No. 5</Russian>
             <German>Eckstein No. 5 Zigarettenschachtel</German>
+            <Korean>Eckstein No. 5 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ エクスタイン No. 5</Japanese>
             <Chinese>Eckstein No. 5 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_eckstein_cigpack_desc">
             <English>Real and right!&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Real and right!&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>¡Real y correcto!&amp;lt;br/&amp;gt;Contiene 20 cigarrillos.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Prawdziwe i słuszne!&amp;lt;br/&amp;gt;Zawiera 20 papierosów.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Real e certo!&amp;lt;br/&amp;gt;Contém 20 cigarros.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>По-настоящему и правильно!&amp;lt;br/&amp;gt;Содержит 20 сигарет.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>Real and right!&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>진짜이고 맞습니다!&amp;lt;br/&amp;gt;20개의 담배가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>純粋で正統!&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>Real and right!&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="STR_cigs_eckstein_author">
             <English>B. Kneely / Vespade</English>
             <French>B. Kneely / Vespade</French>
+            <Spanish>B. Kneely / Vespade</Spanish>
+            <Polish>B. Kneely / Vespade</Polish>
+            <Portuguese>B. Kneely / Vespade</Portuguese>
+            <Russian>B. Kneely / Vespade</Russian>
             <German>B. Kneely / Vespade</German>
+            <Korean>B. Kneely / Vespade</Korean>
             <Japanese>B. Kneely / Vespade</Japanese>
             <Chinese>B. Kneely / Vespade</Chinese>
         </Key>

@@ -3,26 +3,116 @@
     <Package name="3den-attributes">
         <Key ID="STR_cigs_modules_blockAiCigs_displayName">
             <English>Block Ai Cigs</English>
+            <French>Bloquer les cigarettes IA</French>
+            <Spanish>Bloquear cigarrillos de IA</Spanish>
+            <Polish>Zablokuj papierosy SI</Polish>
+            <Portuguese>Bloquear cigarros da IA</Portuguese>
+            <Russian>Блокировать сигареты ИИ</Russian>
+            <German>AI-Zigaretten blockieren</German>
+            <Korean>AI 담배 차단</Korean>
+            <Japanese>AIのタバコをブロック</Japanese>
+            <Chinese>屏蔽 AI 烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockAiCigs_tooltip">
             <English>Will prevent distribution of cig-items on this unit.\nWill also prevent unit from being added to the dynamic smoking system.</English>
+            <French>Empêche la distribution des objets à cigarette sur cette unité.
+Empêche également l’ajout de l’unité au système de tabagisme dynamique.</French>
+            <Spanish>Impide la distribución de objetos de cigarro en esta unidad.
+También evita que la unidad se añada al sistema dinámico de fumar.</Spanish>
+            <Polish>Zapobiega dystrybucji papierosów dla tej jednostki.
+Także blokuje dodanie jednostki do dynamicznego systemu palenia.</Polish>
+            <Portuguese>Impede a distribuição de itens de cigarro nesta unidade.
+Também impede que a unidade seja adicionada ao sistema de fumar dinâmico.</Portuguese>
+            <Russian>Предотвращает распределение сигаретных предметов на этом юните.
+Также не позволит добавить юнит в систему динамического курения.</Russian>
+            <German>Verhindert die Verteilung von Zigaretten-Gegenständen auf dieser Einheit.
+Verhindert außerdem, dass die Einheit dem dynamischen Rauchsystem hinzugefügt wird.</German>
+            <Korean>이 유닛에 담배 아이템이 배포되는 것을 막습니다.
+또한 동적 흡연 시스템에 추가되는 것도 막습니다.</Korean>
+            <Japanese>このユニットへのタバコアイテムの配布を防ぎます。
+また、ユニットがダイナミック喫煙システムに追加されるのも防ぎます。</Japanese>
+            <Chinese>阻止该单位分发烟草物品。
+同时也会阻止该单位被加入动态吸烟系统。</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockAnimations_displayName">
             <English>Block Animations</English>
+            <French>Bloquer les animations</French>
+            <Spanish>Bloquear animaciones</Spanish>
+            <Polish>Zablokuj animacje</Polish>
+            <Portuguese>Bloquear animações</Portuguese>
+            <Russian>Блокировать анимации</Russian>
+            <German>Animationen blockieren</German>
+            <Korean>애니메이션 차단</Korean>
+            <Japanese>アニメーションをブロック</Japanese>
+            <Chinese>屏蔽动画</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockAnimations_tooltip">
             <English>Will block any Immersive Cigs related animations.\nUseful for decorative Units with their own animation loop.</English>
+            <French>Bloque toutes les animations liées à Immersive Cigs.
+Utile pour les unités décoratives avec leur propre boucle d’animation.</French>
+            <Spanish>Bloquea cualquier animación relacionada con Immersive Cigs.
+Útil para unidades decorativas con su propio bucle de animación.</Spanish>
+            <Polish>Blokuje wszystkie animacje związane z Immersive Cigs.
+Przydatne dla dekoracyjnych jednostek z własną pętlą animacji.</Polish>
+            <Portuguese>Bloqueia qualquer animação relacionada ao Immersive Cigs.
+Útil para unidades decorativas com seu próprio ciclo de animação.</Portuguese>
+            <Russian>Блокирует все анимации, связанные с Immersive Cigs.
+Полезно для декоративных юнитов со своим циклом анимации.</Russian>
+            <German>Blockiert alle mit Immersive Cigs verbundenen Animationen.
+Nützlich für dekorative Einheiten mit eigener Animationsschleife.</German>
+            <Korean>Immersive Cigs 관련 애니메이션을 모두 차단합니다.
+자체 애니메이션 루프를 가진 장식용 유닛에 유용합니다.</Korean>
+            <Japanese>Immersive Cigsに関連するアニメーションをすべてブロックします。
+独自のアニメーションループを持つ装飾用ユニットに便利です。</Japanese>
+            <Chinese>屏蔽所有与 Immersive Cigs 相关的动画。
+适用于带有自定义动画循环的装饰单位。</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockDynamicSmoking_displayName">
             <English>Block Dynamic Smoking</English>
+            <French>Bloquer le tabagisme dynamique</French>
+            <Spanish>Bloquear fumar dinámico</Spanish>
+            <Polish>Zablokuj dynamiczne palenie</Polish>
+            <Portuguese>Bloquear fumo dinâmico</Portuguese>
+            <Russian>Блокировать динамическое курение</Russian>
+            <German>Dynamisches Rauchen blockieren</German>
+            <Korean>동적 흡연 차단</Korean>
+            <Japanese>ダイナミック喫煙をブロック</Japanese>
+            <Chinese>屏蔽动态吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockDynamicSmoking_tooltip">
             <English>Will prevent adding the unit to the dynamic smoking system.\nWill only take effect when Dynamic Smoking is enabled.</English>
+            <French>Empêche l’ajout de l’unité au système de tabagisme dynamique.
+Prendra effet uniquement lorsque le tabagisme dynamique est activé.</French>
+            <Spanish>Impide añadir la unidad al sistema de fumar dinámico.
+Sólo tendrá efecto cuando el fumar dinámico esté activado.</Spanish>
+            <Polish>Zapobiega dodaniu jednostki do systemu dynamicznego palenia.
+Działa tylko wtedy, gdy dynamiczne palenie jest włączone.</Polish>
+            <Portuguese>Impede a adição da unidade ao sistema de fumo dinâmico.
+Só terá efeito quando o fumo dinâmico estiver ativado.</Portuguese>
+            <Russian>Запрещает добавлять юнит в систему динамического курения.
+Эффект работает только при включённом динамическом курении.</Russian>
+            <German>Verhindert, dass die Einheit dem dynamischen Rauchsystem hinzugefügt wird.
+Wirkt nur dann, wenn dynamisches Rauchen aktiviert ist.</German>
+            <Korean>유닛이 동적 흡연 시스템에 추가되는 것을 막습니다.
+동적 흡연이 활성화될 때만 적용됩니다.</Korean>
+            <Japanese>ユニットをダイナミック喫煙システムに追加するのを防ぎます。
+ダイナミック喫煙が有効になっている場合にのみ効果があります。</Japanese>
+            <Chinese>阻止单位加入动态吸烟系统。
+仅在动态吸烟启用时生效。</Chinese>
         </Key>
     </Package>
     <Package name="3den-categories">
         <Key ID="STR_cigs_modules_3den_category_api">
             <English>Immersive Cigs: API</English>
+            <French>Immersive Cigs : API</French>
+            <Spanish>Immersive Cigs: API</Spanish>
+            <Polish>Immersive Cigs: API</Polish>
+            <Portuguese>Immersive Cigs: API</Portuguese>
+            <Russian>Immersive Cigs: API</Russian>
+            <German>Immersive Cigs: API</German>
+            <Korean>Immersive Cigs: API</Korean>
+            <Japanese>Immersive Cigs: API</Japanese>
+            <Chinese>沉浸式烟草：API</Chinese>
         </Key>
     </Package>
 </Project>

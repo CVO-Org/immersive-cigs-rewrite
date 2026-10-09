@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_savage_cigarette">
             <English>Savage Cigarette</English>
             <French>Savage Cigarette</French>
+            <Spanish>Cigarrillo Savage</Spanish>
+            <Polish>Papieros Savage</Polish>
+            <Portuguese>Cigarro Savage</Portuguese>
+            <Russian>Сигарета Savage</Russian>
             <German>Savage Zigarette</German>
+            <Korean>Savage 담배</Korean>
             <Japanese>紙巻たばこ サベージ</Japanese>
             <Chinese>Savage 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack">
             <English>Savage Cigarette Pack</English>
             <French>Savage Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos Savage</Spanish>
+            <Polish>Paczka papierosów Savage</Polish>
+            <Portuguese>Maço de cigarros Savage</Portuguese>
+            <Russian>Пачка сигарет Savage</Russian>
             <German>Savage Zigarettenschachtel</German>
+            <Korean>Savage 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ サベージ</Japanese>
             <Chinese>Savage 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack_desc">
             <English>Wild Tiger Premium&lt;br/&gt;Contains 16 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Wild Tiger Premium&lt;br/&gt;Contient 16 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Wild Tiger Premium&amp;lt;br/&amp;gt;Contiene 16 cigarrillos.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Wild Tiger Premium&amp;lt;br/&amp;gt;Zawiera 16 papierosów.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Wild Tiger Premium&amp;lt;br/&amp;gt;Contém 16 cigarros.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Wild Tiger Premium&amp;lt;br/&amp;gt;Содержит 16 сигарет.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>Wild Tiger Premium&lt;br/&gt;Enthält 16 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>Wild Tiger Premium&amp;lt;br/&amp;gt;16개의 담배가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>ワイルドタイガー・プレミアム&lt;br/&gt;紙巻たばこ16本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>Wild Tiger Premium&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="STR_cigs_savage_author">
             <English>Savage Game Design / Overlord Zorn</English>
             <French>Savage Game Design / Overlord Zorn</French>
+            <Spanish>Savage Game Design / Overlord Zorn</Spanish>
+            <Polish>Savage Game Design / Overlord Zorn</Polish>
+            <Portuguese>Savage Game Design / Overlord Zorn</Portuguese>
+            <Russian>Savage Game Design / Overlord Zorn</Russian>
             <German>Savage Game Design / Overlord Zorn</German>
+            <Korean>Savage Game Design / Overlord Zorn</Korean>
             <Japanese>Savage Game Design / Overlord Zorn</Japanese>
             <Chinese>Savage Game Design / Overlord Zorn</Chinese>
         </Key>

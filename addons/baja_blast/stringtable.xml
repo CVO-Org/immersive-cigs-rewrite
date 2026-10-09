@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_baja_blast_cigarette">
             <English>Mtn Dew Baja Blast Cigarette</English>
             <French>Mtn Dew Baja Blast Cigarette</French>
+            <Spanish>Cigarrillo Mtn Dew Baja Blast</Spanish>
+            <Polish>Papieros Mtn Dew Baja Blast</Polish>
+            <Portuguese>Cigarro Mtn Dew Baja Blast</Portuguese>
+            <Russian>Сигарета Mtn Dew Baja Blast</Russian>
             <German>Mtn Dew Baja Blast Zigarette</German>
+            <Korean>Mtn Dew Baja Blast 담배</Korean>
             <Japanese>紙巻たばこ マウンテンデュー バハ・ブラスト</Japanese>
             <Chinese>Mtn Dew Baja Blast 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_baja_blast_cigpack">
             <English>Mtn Dew Baja Blast Cigs Pack</English>
             <French>Mtn Dew Baja Blast Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos Mtn Dew Baja Blast</Spanish>
+            <Polish>Paczka papierosów Mtn Dew Baja Blast</Polish>
+            <Portuguese>Maço de cigarros Mtn Dew Baja Blast</Portuguese>
+            <Russian>Пачка сигарет Mtn Dew Baja Blast</Russian>
             <German>Mtn Dew Baja Blast Zigarettenschachtel</German>
+            <Korean>Mtn Dew Baja Blast 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ マウンテンデュー バハ・ブラスト</Japanese>
             <Chinese>Mtn Dew Baja Blast 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_baja_blast_cigpack_desc">
             <English>GUARANTEED TO MAKE YOU GO FUCKING BAJA BONKERS&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>GUARANTEED TO MAKE YOU GO FUCKING BAJA BONKERS&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>GARANTIZADO PARA VOLVERTE LOCO CON EL BAJA BONKERS&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Gwarantowane, że doprowadzi to do BAJA BONKERS&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>GARANTIDO QUE VAI TE TORNAR UM BAJA BONKERS&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Гарантированно доведёт тебя до BAJA BONKERS&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>GUARANTEED TO MAKE YOU GO FUCKING BAJA BONKERS&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>확실히 BAJA BONKERS 상태가 됩니다&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>間違いなくお前をクレイジーなバハ・ボンカーズにさせてくれる。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>GUARANTEED TO MAKE YOU GO FUCKING BAJA BONKERS&lt;br/&gt;內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="STR_cigs_baja_blast_author">
             <English>Jenna / OverlordZorn / Rebel / Facel</English>
             <French>Jenna / OverlordZorn / Rebel / Facel</French>
+            <Spanish>Jenna / OverlordZorn / Rebel / Facel</Spanish>
+            <Polish>Jenna / OverlordZorn / Rebel / Facel</Polish>
+            <Portuguese>Jenna / OverlordZorn / Rebel / Facel</Portuguese>
+            <Russian>Jenna / OverlordZorn / Rebel / Facel</Russian>
             <German>Jenna / OverlordZorn / Rebel / Facel</German>
+            <Korean>Jenna / OverlordZorn / Rebel / Facel</Korean>
             <Japanese>Jenna / OverlordZorn / Rebel / Facel</Japanese>
             <Chinese>Jenna / OverlordZorn / Rebel / Facel</Chinese>
         </Key>

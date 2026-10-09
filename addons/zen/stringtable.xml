@@ -4,102 +4,249 @@
         <Key ID="STR_cigs_zen_module_makeUnitSmoke">
             <English>Unit Start Smoking</English>
             <French>Commencer à fumer</French>
+            <Spanish>La unidad empieza a fumar</Spanish>
+            <Polish>Jednostka zaczyna palić</Polish>
+            <Portuguese>A unidade começou a fumar</Portuguese>
+            <Russian>Юнит начинает курить</Russian>
+            <German>Einheit beginnt zu rauchen</German>
+            <Korean>유닛이 흡연을 시작함</Korean>
             <Japanese>ユニットの喫煙開始</Japanese>
+            <Chinese>单位开始吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand">
             <English>Type Cigarette Brand</English>
             <French>Marque de cigarettes</French>
+            <Spanish>Tipo de marca de cigarrillos</Spanish>
+            <Polish>Wybierz markę papierosów</Polish>
+            <Portuguese>Tipo de marca de cigarro</Portuguese>
+            <Russian>Выбрать марку сигарет</Russian>
+            <German>Zigarettenmarke auswählen</German>
+            <Korean>담배 브랜드 선택</Korean>
             <Japanese>タバコの銘柄を選択</Japanese>
+            <Chinese>选择香烟品牌</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand_desc">
             <English>Select the desired cigarette brand.</English>
             <French>Sélectionnez la marque de cigarettes souhaitée.</French>
+            <Spanish>Selecciona la marca de cigarrillos deseada.</Spanish>
+            <Polish>Wybierz pożądaną markę papierosów.</Polish>
+            <Portuguese>Selecione a marca de cigarro desejada.</Portuguese>
+            <Russian>Выберите желаемую марку сигарет.</Russian>
+            <German>Wähle die gewünschte Zigarettenmarke aus.</German>
+            <Korean>원하는 담배 브랜드를 선택하세요.</Korean>
             <Japanese>希望のタバコの銘柄を選択してください。</Japanese>
+            <Chinese>选择所需的香烟品牌。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_add">
             <English>Automate Smoking</English>
             <French>Fumer automatiquement</French>
+            <Spanish>Fumar automático</Spanish>
+            <Polish>Automatyczne palenie</Polish>
+            <Portuguese>Fumar automático</Portuguese>
+            <Russian>Автоматическое курение</Russian>
+            <German>Automatisches Rauchen</German>
+            <Korean>자동 흡연</Korean>
             <Japanese>喫煙の自動化</Japanese>
+            <Chinese>自动吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_add_desc">
             <English>Will add the Unit to the AI Dynamic Smoking System.\nThe Unit will automatically smoke again after the first cigarette.</English>
             <French>Ajoute l'unité au système dynamique de tabagisme de l'IA.\nL'unité recommencera automatiquement à fumer après la première cigarette.</French>
+            <Spanish>Añade la unidad al sistema dinámico de fumar de la IA.
+La unidad empezará a fumar de nuevo tras el primer cigarro.</Spanish>
+            <Polish>Dodaje jednostkę do systemu dynamicznego palenia SI.
+Jednostka automatycznie zacznie palić ponownie po pierwszym papierosie.</Polish>
+            <Portuguese>Adiciona a unidade ao sistema dinâmico de fumar da IA.
+A unidade vai fumar novamente automaticamente após o primeiro cigarro.</Portuguese>
+            <Russian>Добавляет юнит в систему динамического курения ИИ.
+После первой сигареты юнит автоматически начнёт курить снова.</Russian>
+            <German>Fügt die Einheit dem dynamischen KI-Rauchsystem hinzu.
+Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</German>
+            <Korean>유닛을 AI 동적 흡연 시스템에 추가합니다.
+유닛은 첫 담배 후 자동으로 다시 흡연합니다.</Korean>
             <Japanese>ユニットをAIダイナミック喫煙システムに追加します。\nユニットは最初のタバコを吸った後、自動的に再び喫煙します。</Japanese>
+            <Chinese>将单位加入 AI 动态吸烟系统。
+单位在第一支烟后会自动再次吸烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySmoking">
             <English>Failed - Unit already smoking.</English>
             <French>Échec - L'unité fume déjà.</French>
+            <Spanish>Error: la unidad ya está fumando.</Spanish>
+            <Polish>Błąd: jednostka już pali.</Polish>
+            <Portuguese>Falha: a unidade já está fumando.</Portuguese>
+            <Russian>Ошибка: юнит уже курит.</Russian>
+            <German>Fehlgeschlagen - Einheit raucht bereits.</German>
+            <Korean>실패 - 유닛이 이미 흡연 중입니다.</Korean>
             <Japanese>失敗 - ユニットは既に喫煙しています。</Japanese>
+            <Chinese>失败 - 单位已经在吸烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_alreadySucking">
             <English>Failed - Unit already sucking.</English>
             <French>Échec - L'unité suce déjà.</French>
+            <Spanish>Error: la unidad ya está chupando.</Spanish>
+            <Polish>Błąd: jednostka już ssie.</Polish>
+            <Portuguese>Falha: a unidade já está chupando.</Portuguese>
+            <Russian>Ошибка: юнит уже сосёт.</Russian>
+            <German>Fehlgeschlagen - Einheit lutscht bereits.</German>
+            <Korean>실패 - 유닛이 이미 빨고 있습니다.</Korean>
             <Japanese>失敗 - ユニットは既に吸っています。</Japanese>
+            <Chinese>失败 - 单位已经在吸吮。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
             <English>Type Lighter</English>
             <French>Allume-cigare</French>
+            <Spanish>Tipo de encendedor</Spanish>
+            <Polish>Typ zapalniczki</Polish>
+            <Portuguese>Tipo de isqueiro</Portuguese>
+            <Russian>Тип зажигалки</Russian>
+            <German>Feuerzeugtyp</German>
+            <Korean>라이터 종류</Korean>
             <Japanese>ライターを選択</Japanese>
+            <Chinese>打火机类型</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_desc">
             <English>Select the desired Lighter Type.</English>
             <French>Sélectionnez le type de briquet souhaité.</French>
+            <Spanish>Selecciona el tipo de encendedor deseado.</Spanish>
+            <Polish>Wybierz pożądany typ zapalniczki.</Polish>
+            <Portuguese>Selecione o tipo de isqueiro desejado.</Portuguese>
+            <Russian>Выберите желаемый тип зажигалки.</Russian>
+            <German>Wähle den gewünschten Feuerzeugtyp aus.</German>
+            <Korean>원하는 라이터 종류를 선택하세요.</Korean>
             <Japanese>希望のライターの種類を選択してください。</Japanese>
+            <Chinese>选择所需的打火机类型。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
             <English>Failed - No Unit has been selected.</English>
             <French>Échec - Aucune unité n'a été sélectionnée.</French>
+            <Spanish>Error: no se ha seleccionado ninguna unidad.</Spanish>
+            <Polish>Błąd: nie wybrano jednostki.</Polish>
+            <Portuguese>Falha: nenhuma unidade foi selecionada.</Portuguese>
+            <Russian>Ошибка: единица не выбрана.</Russian>
+            <German>Fehlgeschlagen - Keine Einheit ausgewählt.</German>
+            <Korean>실패 - 선택된 유닛이 없습니다.</Korean>
             <Japanese>失敗 - ユニットが選択されていません。</Japanese>
+            <Chinese>失败 - 未选择单位。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_notAlive">
             <English>Failed - Target not alive.</English>
             <French>Échec - La cible n'est pas en vie.</French>
+            <Spanish>Error: el objetivo no está vivo.</Spanish>
+            <Polish>Błąd: cel nie jest żywy.</Polish>
+            <Portuguese>Falha: o alvo não está vivo.</Portuguese>
+            <Russian>Ошибка: цель не жива.</Russian>
+            <German>Fehlgeschlagen - Ziel ist nicht lebendig.</German>
+            <Korean>실패 - 대상이 살아 있지 않습니다.</Korean>
             <Japanese>失敗 - 対象が生存していません。</Japanese>
+            <Chinese>失败 - 目标未存活。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_notUnit">
             <English>Failed - Target not a unit.</English>
             <French>Échec - La cible n'est pas une unité.</French>
+            <Spanish>Error: el objetivo no es una unidad.</Spanish>
+            <Polish>Błąd: cel nie jest jednostką.</Polish>
+            <Portuguese>Falha: o alvo não é uma unidade.</Portuguese>
+            <Russian>Ошибка: цель не является юнитом.</Russian>
+            <German>Fehlgeschlagen - Ziel ist keine Einheit.</German>
+            <Korean>실패 - 대상이 유닛이 아닙니다.</Korean>
             <Japanese>失敗 - 対象がユニットではありません。</Japanese>
+            <Chinese>失败 - 目标不是单位。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_player">
             <English>Failed - Selected Unit is Player controlled.</English>
             <French>Échec - L'unité sélectionnée est contrôlée par le joueur.</French>
+            <Spanish>Error: la unidad seleccionada está controlada por el jugador.</Spanish>
+            <Polish>Błąd: wybrana jednostka jest kontrolowana przez gracza.</Polish>
+            <Portuguese>Falha: a unidade selecionada é controlada pelo jogador.</Portuguese>
+            <Russian>Ошибка: выбранный юнит контролируется игроком.</Russian>
+            <German>Fehlgeschlagen - Ausgewählte Einheit wird vom Spieler gesteuert.</German>
+            <Korean>실패 - 선택한 유닛이 플레이어에 의해 제어됩니다.</Korean>
             <Japanese>失敗 - 選択したユニットはプレイヤーが操作しています。</Japanese>
+            <Chinese>失败 - 所选单位由玩家控制。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot">
             <English>Preffered Slot</English>
             <French>Emplacement préféré</French>
+            <Spanish>Hueco preferido</Spanish>
+            <Polish>Preferowane gniazdo</Polish>
+            <Portuguese>Slot preferido</Portuguese>
+            <Russian>Предпочитаемый слот</Russian>
+            <German>Bevorzugter Slot</German>
+            <Korean>선호 슬롯</Korean>
             <Japanese>優先スロット</Japanese>
+            <Chinese>首选插槽</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
             <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
             <French>Aucun emplacement n'est libre pour la cigarette, quel emplacement faut-il libérer ?</French>
+            <Spanish>Si la unidad no tiene un hueco libre para el cigarro, ¿qué hueco debería liberarse?</Spanish>
+            <Polish>Jeśli jednostka nie ma wolnego gniazda na papierosa, które gniazdo należy zwolnić?</Polish>
+            <Portuguese>Se a unidade não tiver um slot livre para o cigarro, qual slot deve ser liberado?</Portuguese>
+            <Russian>Если у юнита нет свободного слота для сигарет, какой слот следует освободить?</Russian>
+            <German>Falls die Einheit keinen freien Slot für die Zigarette hat, welcher Slot soll freigemacht werden?</German>
+            <Korean>유닛이 담배를 놓을 빈 슬롯이 없다면, 어떤 슬롯을 비워야 합니까?</Korean>
             <Japanese>ユニットにタバコ用の空きスロットがない場合、どのスロットを空けるかを指定します。</Japanese>
+            <Chinese>如果单位没有空闲的香烟插槽，应释放哪个插槽？</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
             <English>Done - Unit is now smoking/sucking.</English>
             <French>C'est fait – L'unité fume/suce désormais.</French>
+            <Spanish>Hecho: la unidad ya está fumando/chupando.</Spanish>
+            <Polish>Gotowe: jednostka teraz pali/ssie.</Polish>
+            <Portuguese>Concluído: a unidade agora está fumando/chupando.</Portuguese>
+            <Russian>Готово: юнит теперь курит/сосёт.</Russian>
+            <German>Erledigt - Einheit raucht/zieht jetzt.</German>
+            <Korean>완료 - 유닛이 이제 흡연/빨기 중입니다.</Korean>
             <Japanese>完了 - ユニットは喫煙/吸っています。</Japanese>
+            <Chinese>完成 - 单位现在正在吸烟/吮吸。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke">
             <English>Unit Stop Smoking</English>
             <French>L'unité a arrêter de fumer</French>
+            <Spanish>La unidad deja de fumar</Spanish>
+            <Polish>Jednostka przestaje palić</Polish>
+            <Portuguese>Unidade para de fumar</Portuguese>
+            <Russian>Юнит прекращает курить</Russian>
+            <German>Einheit hört auf zu rauchen</German>
+            <Korean>유닛이 흡연을 멈춤</Korean>
             <Japanese>ユニットの喫煙停止</Japanese>
+            <Chinese>单位停止吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_notConsuming">
             <English>Failed - Unit isn't smoking/sucking.</English>
             <French>Échec - L'appareil ne fume pas/ne suce pas.</French>
+            <Spanish>Error: la unidad no está fumando/chupando.</Spanish>
+            <Polish>Błąd: jednostka nie pali i nie ssie.</Polish>
+            <Portuguese>Falha: a unidade não está fumando/chupando.</Portuguese>
+            <Russian>Ошибка: юнит не курит и не сосёт.</Russian>
+            <German>Fehlgeschlagen - Einheit raucht/zieht nicht.</German>
+            <Korean>실패 - 유닛이 흡연/빨기를 하고 있지 않습니다.</Korean>
             <Japanese>失敗 - ユニットは喫煙/吸っていません。</Japanese>
+            <Chinese>失败 - 单位没有在吸烟/吮吸。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSmoking">
             <English>Done - Unit stopped smoking.</English>
             <French>C'est fait: l'unité ne fume plus.</French>
+            <Spanish>Hecho: la unidad dejó de fumar.</Spanish>
+            <Polish>Gotowe: jednostka przestała palić.</Polish>
+            <Portuguese>Concluído: a unidade parou de fumar.</Portuguese>
+            <Russian>Готово: юнит перестал курить.</Russian>
+            <German>Erledigt - Einheit hat aufgehört zu rauchen.</German>
+            <Korean>완료 - 유닛이 흡연을 멈췄습니다.</Korean>
             <Japanese>完了 - ユニットは喫煙を停止しました。</Japanese>
+            <Chinese>完成 - 单位已停止吸烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_stopUnitSmoke_stoppedSucking">
             <English>Done - Unit stopped sucking.</English>
             <French>C'est fait - L'unité a cessé de sucer.</French>
+            <Spanish>Hecho: la unidad dejó de chupar.</Spanish>
+            <Polish>Gotowe: jednostka przestała ssać.</Polish>
+            <Portuguese>Concluído: a unidade parou de chupar.</Portuguese>
+            <Russian>Готово: юнит перестал сосать.</Russian>
+            <German>Erledigt - Einheit hat aufgehört zu saugen.</German>
+            <Korean>완료 - 유닛이 빨기를 멈췄습니다.</Korean>
             <Japanese>完了 - ユニットは吸うのを停止しました。</Japanese>
+            <Chinese>完成 - 单位已停止吮吸。</Chinese>
         </Key>
     </Package>
 </Project>

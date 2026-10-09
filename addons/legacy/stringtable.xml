@@ -4,29 +4,64 @@
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission">
             <English>Update Missions Arsenal Loadouts</English>
             <French>Mise à jour des chargements d'arsenal de missions</French>
+            <Spanish>Actualizar equipamientos del Arsenal de misiones</Spanish>
+            <Polish>Zaktualizuj zestawy uzbrojenia misji</Polish>
+            <Portuguese>Atualizar carregamentos do arsenal da missão</Portuguese>
+            <Russian>Обновить наборы оружия миссий</Russian>
+            <German>Missions-Arsenal-Loadouts aktualisieren</German>
+            <Korean>미션 무기고 장비 업데이트</Korean>
             <Japanese>ミッションの装備の更新</Japanese>
+            <Chinese>更新任务武器库装备</Chinese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission_desc">
             <English>On mission start or setting change to true, will scan default ace loadouts and replace deprecated legacy classnames with the new counterparts.</English>
             <French>Au début de la mission ou lorsque le paramètre est réglé sur true, le système analyse les chargements par défaut de ace et remplace les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
+            <Spanish>Al iniciar la misión o cambiar la configuración a true, escaneará los equipamientos predeterminados de ACE y reemplazará los nombres de clase obsoletos por los nuevos.</Spanish>
+            <Polish>Po starcie misji lub przełączeniu ustawienia na true skanuje domyślne zestawy ACE i zastępuje przestarzałe stare nazwy klas nowymi.</Polish>
+            <Portuguese>Ao iniciar a missão ou ao ativar a configuração, o sistema escaneia os loadouts padrão do ACE e substitui nomes de classe obsoletos pelos novos.</Portuguese>
+            <Russian>При запуске миссии или включении настройки будет произведён сканинг стандартных наборов ACE и заменены устаревшие имена классов на новые.</Russian>
+            <German>Beim Missionsstart oder bei einer Änderung auf „true“ wird das Standard-ACE-Loadout gescannt und veraltete Legacy-Klassennamen durch neue ersetzt.</German>
+            <Korean>미션 시작 시 또는 설정을 true로 변경하면 기본 ACE 장비를 스캔하고 구식 레거시 클래스명을 새 클래스명으로 교체합니다.</Korean>
             <Japanese>ミッション開始時、または設定をtrueに変更すると、デフォルトのエース装備をスキャンし、非推奨の旧クラス名を新しいクラス名に置き換えます。</Japanese>
+            <Chinese>在任务开始时或者设置切换为 true 时，会扫描默认 ACE 装备，并将已弃用的旧类名替换成新类名。</Chinese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_personal">
             <English>Update Personal Arsenal Loadouts</English>
             <French>Mise à jour des chargements d'arsenal personnels</French>
+            <Spanish>Actualizar equipamientos personales del Arsenal</Spanish>
+            <Polish>Zaktualizuj osobiste zestawy uzbrojenia</Polish>
+            <Portuguese>Atualizar carregamentos pessoais do arsenal</Portuguese>
+            <Russian>Обновить личные наборы оружия</Russian>
+            <German>Persönliche Arsenal-Loadouts aktualisieren</German>
+            <Korean>개인 무기고 장비 업데이트</Korean>
             <Japanese>武器庫の個人装備の更新</Japanese>
+            <Chinese>更新个人武器库装备</Chinese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_personal_desc">
             <English>Whenever the ace or vanilla arsenal are being opened, it will scan the saved loadouts and will replace deprecated legacy classnames with their new counterparts.</English>
             <French>Chaque fois que l'ACE ou  l'arsenal vanille sont ouverts, il analysera les chargements sauvegardés et remplacera les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
+            <Spanish>Cada vez que se abra el arsenal de ACE o vanilla, escaneará los equipamientos guardados y reemplazará los nombres de clase obsoletos por los nuevos.</Spanish>
+            <Polish>Za każdym razem, gdy otworzony zostanie arsenal ACE lub vanilla, zeskanuje zapisane zestawy i zastąpi przestarzałe nazwy klas nowymi.</Polish>
+            <Portuguese>Sempre que o arsenal do ACE ou vanilla for aberto, ele escaneia os loadouts salvos e substitui nomes de classe obsoletos pelos novos.</Portuguese>
+            <Russian>Каждый раз при открытии Arsenal ACE или vanilla будет сканироваться сохранённый набор и заменяться устаревшие имена классов на новые.</Russian>
+            <German>Immer wenn das ACE- oder Vanilla-Arsenal geöffnet wird, werden die gespeicherten Loadouts gescannt und veraltete Legacy-Klassennamen durch neue ersetzt.</German>
+            <Korean>ACE 또는 바닐라 무기고가 열릴 때마다 저장된 장비를 스캔해 구식 레거시 클래스명을 새 클래스명으로 교체합니다.</Korean>
             <Japanese>エースアーセナルまたはバニラアーセナルを開くたびに、保存されているロードアウトをスキャンし、廃止された旧式のクラス名を新しいクラス名に置き換えます。</Japanese>
+            <Chinese>每次打开 ACE 或原版武器库时，都会扫描已保存的装备，并将已弃用的旧类名替换成新类名。</Chinese>
         </Key>
     </Package>
     <Package name="Settings-Categories">
         <Key ID="STR_cigs_legacy_set_subCat_loadout">
             <English>Legacy Classnames and Loadouts</English>
             <French>Anciens noms de classe et chargements</French>
+            <Spanish>Nombres de clase heredados y equipamientos</Spanish>
+            <Polish>Przestarzałe klasy i zestawy</Polish>
+            <Portuguese>Nomes de classe legados e loadouts</Portuguese>
+            <Russian>Устаревшие классы и наборы</Russian>
+            <German>Legacy-Klassennamen und Loadouts</German>
+            <Korean>레거시 클래스명 및 장비</Korean>
             <Japanese>旧版クラス名と装備構成</Japanese>
+            <Chinese>旧版类名与装备</Chinese>
         </Key>
     </Package>
 </Project>

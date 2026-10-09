@@ -4,129 +4,331 @@
         <Key ID="STR_cigs_ai_set_mainCat_AI">
             <English>Immersive Cigs - AI</English>
             <French>Immersive Cigs - AI</French>
+            <Spanish>Immersive Cigs - IA</Spanish>
+            <Polish>Immersive Cigs - SI</Polish>
+            <Portuguese>Immersive Cigs - IA</Portuguese>
+            <Russian>Immersive Cigs - ИИ</Russian>
+            <German>Immersive Cigs - KI</German>
+            <Korean>Immersive Cigs - AI</Korean>
             <Japanese>Immersive Cigs - AI</Japanese>
+            <Chinese>沉浸式烟草 - AI</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_aiCigs">
             <English>02. AI Cigs</English>
             <French>02. AI Cigs</French>
+            <Spanish>02. Cigarrillos de IA</Spanish>
+            <Polish>02. Papierosy SI</Polish>
+            <Portuguese>02. Cigarros da IA</Portuguese>
+            <Russian>02. Сигареты ИИ</Russian>
+            <German>02. KI-Zigaretten</German>
+            <Korean>02. AI 담배</Korean>
             <Japanese>02. AIのタバコ</Japanese>
+            <Chinese>02. AI 烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides">
             <English>04. AI Cigs</English>
             <French>04. AI Cigs</French>
+            <Spanish>04. Cigarrillos de IA</Spanish>
+            <Polish>04. Papierosy SI</Polish>
+            <Portuguese>04. Cigarros da IA</Portuguese>
+            <Russian>04. Сигареты ИИ</Russian>
+            <German>04. KI-Zigaretten</German>
+            <Korean>04. AI 담배</Korean>
             <Japanese>04. AIのタバコ</Japanese>
+            <Chinese>04. AI 烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides_enabled">
             <English>03. AI Cigs - Enable individual Side</English>
             <French>03. AI Cigs - Enable individual Side</French>
+            <Spanish>03. Cigarrillos de IA - Habilitar bando individual</Spanish>
+            <Polish>03. Papierosy SI - włącz pojedynczą stronę</Polish>
+            <Portuguese>03. Cigarros da IA - ativar lado individual</Portuguese>
+            <Russian>03. Сигареты ИИ - включить отдельную сторону</Russian>
+            <German>03. KI-Zigaretten - Einzelne Seiten aktivieren</German>
+            <Korean>03. AI 담배 - 개별 편대 활성화</Korean>
             <Japanese>03. AIのタバコ - 陣営別に有効</Japanese>
+            <Chinese>03. AI 烟草 - 启用特定阵营</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
             <English>01. Dynamic AI Smoking</English>
             <French>01. Fumeur dynamique IA</French>
+            <Spanish>01. Fumar dinámico de IA</Spanish>
+            <Polish>01. Dynamiczne palenie SI</Polish>
+            <Portuguese>01. Fumo dinâmico da IA</Portuguese>
+            <Russian>01. Динамическое курение ИИ</Russian>
+            <German>01. Dynamisches KI-Rauchen</German>
+            <Korean>01. AI 동적 흡연</Korean>
             <Japanese>01. ダイナミックAI喫煙</Japanese>
+            <Chinese>01. AI 动态吸烟</Chinese>
         </Key>
     </Package>
     <Package name="CBASettings_aiCigs">
         <Key ID="STR_cigs_ai_set_aiCigs_chance">
             <English>Probability</English>
             <French>Probabilité</French>
+            <Spanish>Probabilidad</Spanish>
+            <Polish>Prawdopodobieństwo</Polish>
+            <Portuguese>Probabilidade</Portuguese>
+            <Russian>Вероятность</Russian>
+            <German>Wahrscheinlichkeit</German>
+            <Korean>확률</Korean>
             <Japanese>可能性</Japanese>
+            <Chinese>概率</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_chance_desc">
             <English>Defines how likely it is that a unit has cigarettes on them.</English>
             <French>Définit la probabilité qu'une unité ait des cigarettes sur elle.</French>
+            <Spanish>Define la probabilidad de que una unidad lleve cigarrillos.</Spanish>
+            <Polish>Określa prawdopodobieństwo, że jednostka ma przy sobie papierosy.</Polish>
+            <Portuguese>Define a probabilidade de uma unidade ter cigarros.</Portuguese>
+            <Russian>Определяет вероятность наличия сигарет у юнита.</Russian>
+            <German>Legt fest, wie wahrscheinlich es ist, dass eine Einheit Zigaretten dabei hat.</German>
+            <Korean>유닛이 담배를 소지할 가능성을 설정합니다.</Korean>
             <Japanese>ユニット上にタバコが置かれている可能性を定義します。</Japanese>
+            <Chinese>定义单位身上携带香烟的可能性。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_delay">
             <English>Delay</English>
             <French>Délai</French>
+            <Spanish>Retraso</Spanish>
+            <Polish>Opóźnienie</Polish>
+            <Portuguese>Atraso</Portuguese>
+            <Russian>Задержка</Russian>
+            <German>Verzögerung</German>
+            <Korean>지연</Korean>
             <Japanese>遅延</Japanese>
+            <Chinese>延迟</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_delay_desc">
             <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
             <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
+            <Spanish>Retrasa la adición de objetos en caso de que algún mod o misión use gestión de inventario por script.</Spanish>
+            <Polish>Opóźnia dodawanie przedmiotów, jeśli jakiś mod lub misja używa skryptowego zarządzania ekwipunkiem.</Polish>
+            <Portuguese>Atrasa a adição de itens caso algum mod ou missão use gestão de inventário por script.</Portuguese>
+            <Russian>Задерживает добавление предметов, если мод или миссия используют скриптовое управление инвентарём.</Russian>
+            <German>Verzögert das Hinzufügen von Gegenständen, falls ein Mod oder eine Mission eine skriptbasierte Inventarverwaltung verwendet.</German>
+            <Korean>일부 모드나 미션이 스크립트로 인벤토리를 관리할 경우 아이템 추가를 지연시킵니다.</Korean>
             <Japanese>一部のMODやミッションがスクリプトによるインベントリ管理を行う場合に備えて、アイテムの追加を遅延させます。</Japanese>
+            <Chinese>延迟添加物品，以防某些模组/任务使用脚本库存管理。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_enable">
             <English>Enable</English>
             <French>Activer</French>
+            <Spanish>Activar</Spanish>
+            <Polish>Włącz</Polish>
+            <Portuguese>Ativar</Portuguese>
+            <Russian>Включить</Russian>
+            <German>Aktivieren</German>
+            <Korean>활성화</Korean>
             <Japanese>有効化</Japanese>
+            <Chinese>启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_enable_desc">
             <English>Enables the system to distribute cigarettes across AI units.</English>
             <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
+            <Spanish>Activa el sistema para distribuir cigarrillos entre las unidades de IA.</Spanish>
+            <Polish>Włącza system dystrybucji papierosów między jednostkami SI.</Polish>
+            <Portuguese>Ativa o sistema para distribuir cigarros entre unidades de IA.</Portuguese>
+            <Russian>Включает систему распределения сигарет между юнитами ИИ.</Russian>
+            <German>Aktiviert das Verteilen von Zigaretten an KI-Einheiten.</German>
+            <Korean>AI 유닛 간에 담배를 배포하는 시스템을 활성화합니다.</Korean>
             <Japanese>システムがAIユニット間でタバコを分配できるようにする。</Japanese>
+            <Chinese>启用该系统以在 AI 单位之间分发香烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_side_enabled">
             <English>Enable for %1</English>
             <French>Activer pour %1</French>
+            <Spanish>Activar para %1</Spanish>
+            <Polish>Włącz dla %1</Polish>
+            <Portuguese>Ativar para %1</Portuguese>
+            <Russian>Включить для %1</Russian>
+            <German>Für %1 aktivieren</German>
+            <Korean>%1에 대해 활성화</Korean>
             <Japanese>%1 に対して有効化</Japanese>
+            <Chinese>为 %1 启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_side_enabled_desc">
             <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
             <French>Contrôle si les unités IA du côté %1 doivent recevoir des cigarettes.</French>
+            <Spanish>Controla si las unidades de IA del bando %1 recibirán cigarrillos.</Spanish>
+            <Polish>Decyduje, czy jednostki SI strony %1 otrzymają papierosy.</Polish>
+            <Portuguese>Controla se as unidades da IA do lado %1 receberão cigarros.</Portuguese>
+            <Russian>Определяет, будут ли юниты ИИ стороны %1 получать сигареты.</Russian>
+            <German>Steuert, ob KI-Einheiten auf der Seite %1 Zigaretten erhalten sollen.</German>
+            <Korean>%1 편대의 AI 유닛이 담배를 받을지 제어합니다.</Korean>
             <Japanese>%1側のAIユニットがタバコを受け取るかどうかを制御します。</Japanese>
+            <Chinese>控制 %1 阵营的 AI 单位是否应获得香烟。</Chinese>
         </Key>
     </Package>
     <Package name="CBASettings_dynamicSmoking">
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory">
             <English>Check Unit for compatible Items</English>
             <French>Vérifiez l'unité pour les articles compatibles</French>
+            <Spanish>Comprobar si la unidad tiene objetos compatibles</Spanish>
+            <Polish>Sprawdź jednostkę pod kątem kompatybilnych przedmiotów</Polish>
+            <Portuguese>Verificar se a unidade tem itens compatíveis</Portuguese>
+            <Russian>Проверить инвентарь юнита на совместимые предметы</Russian>
+            <German>Einheit auf kompatible Gegenstände prüfen</German>
+            <Korean>유닛의 호환 가능한 아이템 확인</Korean>
             <Japanese>ユニットの互換アイテムを確認する</Japanese>
+            <Chinese>检查单位是否有兼容物品</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
             <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>
             <French>Lorsque cette option est activée, elle vérifie si une unité dispose d'un paquet, qu'il soit fumable ou à sucer. Si c'est le cas, ces unités seront ajoutées.</French>
+            <Spanish>Si está activado, comprueba si la unidad tiene un paquete, ya sea fumable o chupable. Si es así, se añade al sistema.</Spanish>
+            <Polish>Po włączeniu sprawdza, czy jednostka ma paczkę — palną lub ssącą. Jeśli tak, jednostka zostanie dodana do systemu.</Polish>
+            <Portuguese>Quando ativado, verifica se uma unidade tem um pacote — fumável ou sugável. Se sim, será adicionada ao sistema.</Portuguese>
+            <Russian>Если включено, проверяется, есть ли у юнита пакет — курительный или сосательный. Если есть, такая единица добавляется в систему.</Russian>
+            <German>Wenn aktiviert, prüft es, ob eine Einheit ein Paket hat – sowohl rauchbar als auch saugbar. Wenn ja, werden diese Einheiten dem Framework hinzugefügt.</German>
+            <Korean>활성화하면 유닛이 흡연용 또는 빨아먹는 용품을 가지고 있는지 확인합니다. 있으면 시스템에 추가됩니다.</Korean>
             <Japanese>有効にすると、ユニットに喫煙用または吸引用のパッケージがあるかどうかを確認します。パッケージがある場合、これらのユニットはフレームワークに追加されます。</Japanese>
+            <Chinese>启用后，它会检查单位是否持有可吸食或可咀嚼的包装物。如果有，这些单位会被加入框架。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable">
             <English>Enable</English>
             <French>Activer</French>
+            <Spanish>Activar</Spanish>
+            <Polish>Włącz</Polish>
+            <Portuguese>Ativar</Portuguese>
+            <Russian>Включить</Russian>
+            <German>Aktivieren</German>
+            <Korean>활성화</Korean>
             <Japanese>有効化</Japanese>
+            <Chinese>启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
             <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
             <French>Permet au système de faire fumer dynamiquement des cigarettes à l'IA.\nNécessite l'activation de Cigs on AI pour distribuer des objets et les ajouter.</French>
+            <Spanish>Activa el sistema para que la IA fume cigarrillos dinámicamente.
+Requiere que los cigarrillos de IA estén activados para distribuir objetos y añadirlos al sistema.</Spanish>
+            <Polish>Włącza system dynamicznego palenia przez SI.
+Wymaga włączenia Papierosy SI, aby rozdzielać przedmioty i dodawać je do systemu.</Polish>
+            <Portuguese>Ativa o sistema para que a IA fume cigarros dinamicamente.
+Requer que os cigarros da IA estejam ativados para distribuir itens e adicioná-los ao sistema.</Portuguese>
+            <Russian>Включает систему, которая заставляет ИИ курить сигареты динамически.
+Требуется включённый режим «Сигареты для ИИ», чтобы распределять предметы и добавлять их в систему.</Russian>
+            <German>Aktiviert das System, damit KI dynamisch Zigaretten raucht.
+Es benötigt aktivierte KI-Zigaretten, damit Gegenstände verteilt und dem Framework hinzugefügt werden.</German>
+            <Korean>AI가 동적으로 담배를 피우도록 하는 시스템을 활성화합니다.
+아이템 배포 및 시스템 추가를 위해 AI 담배 활성화가 필요합니다.</Korean>
             <Japanese>システムがAIにタバコを吸わせるように動的に動作させます。\nアイテムを配布してフレームワークに追加するには、Cigs on AIが有効になっている必要があります。</Japanese>
+            <Chinese>启用系统，使 AI 能动态抽烟。
+需要同时启用 AI 烟草，以分发物品并加入框架。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove">
             <English>Remove Slot Item</English>
             <French>Supprimer l'élément de l'emplacement</French>
+            <Spanish>Quitar objeto del hueco</Spanish>
+            <Polish>Usuń przedmiot z gniazda</Polish>
+            <Portuguese>Remover item do slot</Portuguese>
+            <Russian>Удалить предмет из слота</Russian>
+            <German>Platzierung entfernen</German>
+            <Korean>슬롯 아이템 제거</Korean>
             <Japanese>スロットアイテムを削除</Japanese>
+            <Chinese>移除插槽物品</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
             <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
             <French>Lorsque cette option est activée, s'il n'y a pas d'emplacement disponible pour que l'IA y place la cigarette, elle retirera l'objet actuel de l'emplacement sélectionné.\nElle tentera de placer l'objet dans l'inventaire de l'unité.</French>
+            <Spanish>Si está activado y no hay hueco libre para la IA, se quitará el objeto actual del hueco seleccionado.
+Intentará colocarlo en el inventario de la unidad.</Spanish>
+            <Polish>Po włączeniu, jeśli nie ma wolnego gniazda dla SI, obecny przedmiot zostanie usunięty z wybranego gniazda.
+Spróbuje umieścić przedmiot w ekwipunku jednostki.</Polish>
+            <Portuguese>Quando ativado, se não houver slot disponível para a IA colocar o cigarro, o item atual será removido do slot selecionado.
+Tentará colocá-lo no inventário da unidade.</Portuguese>
+            <Russian>Если включено и у ИИ нет свободного слота для сигареты, текущий предмет будет удалён из выбранного слота.
+Затем система попытается положить предмет в инвентарь юнита.</Russian>
+            <German>Wenn aktiviert und kein freier Slot für die KI zur Verfügung steht, wird das aktuelle Gegenstand aus dem gewählten Slot entfernt.
+Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
+            <Korean>활성화하면 AI가 담배를 놓을 빈 슬롯이 없을 때 선택된 슬롯의 현재 아이템을 제거합니다.
+그 뒤 유닛 인벤토리에 넣으려고 시도합니다.</Korean>
             <Japanese>有効にすると、AIがタバコを置くための空きスロットがない場合、選択されたスロットから現在のアイテムを削除します。\nアイテムをユニットのインベントリに入れようとします。</Japanese>
+            <Chinese>启用后，如果 AI 没有可放置香烟的空闲插槽，将从所选插槽移除当前物品。
+系统会尝试将该物品放入单位库存中。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg">
             <English>Average Time between Cigs</English>
             <French>Temps moyen entre deux cigarettes</French>
+            <Spanish>Tiempo medio entre cigarrillos</Spanish>
+            <Polish>Średni czas między papierosami</Polish>
+            <Portuguese>Tempo médio entre cigarros</Portuguese>
+            <Russian>Среднее время между сигаретами</Russian>
+            <German>Durchschnittliche Zeit zwischen Zigaretten</German>
+            <Korean>담배 사이 평균 시간</Korean>
             <Japanese>タバコを吸う間隔の平均</Japanese>
+            <Chinese>两支烟之间的平均时间</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
             <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
             <French>Ces valeurs définissent le temps moyen en minutes qui doit s'écouler avant qu'une unité puisse fumer une autre cigarette.</French>
+            <Spanish>Estos valores definen el tiempo medio en minutos que debe pasar antes de que la unidad pueda fumar otra cigarrillo.</Spanish>
+            <Polish>Te wartości określają średni czas w minutach, który musi upłynąć, zanim jednostka będzie mogła zapalić kolejnego papierosa.</Polish>
+            <Portuguese>Esses valores definem o tempo médio em minutos que deve passar antes de a unidade fumar outro cigarro.</Portuguese>
+            <Russian>Эти значения задают среднее время в минутах, которое должно пройти, прежде чем юнит сможет курить следующую сигарету.</Russian>
+            <German>Diese Werte definieren die durchschnittliche Zeit in Minuten, die vergehen muss, bevor eine Einheit wieder eine Zigarette rauchen kann.</German>
+            <Korean>이 값은 유닛이 다음 담배를 피우기 전에 지나야 하는 평균 시간을 분 단위로 정의합니다.</Korean>
             <Japanese>これらの値は、次のタバコを吸うまでに経過しなければならない平均時間（分）を定義するものです。</Japanese>
+            <Chinese>这些数值定义了单位在再次吸下一支烟之前必须经过的平均分钟数。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
             <English>Preffered Slot</English>
             <French>Emplacement préféré</French>
+            <Spanish>Hueco preferido</Spanish>
+            <Polish>Preferowane gniazdo</Polish>
+            <Portuguese>Slot preferido</Portuguese>
+            <Russian>Предпочитаемый слот</Russian>
+            <German>Bevorzugter Slot</German>
+            <Korean>선호 슬롯</Korean>
             <Japanese>優先スロット</Japanese>
+            <Chinese>首选插槽</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot_desc">
             <English>Defines the prefered slot to put the item if both are already occupied.</English>
             <French>Définit l'emplacement préféré pour placer l'objet si les deux sont déjà occupés.</French>
+            <Spanish>Define el hueco preferido para colocar el objeto si ambos ya están ocupados.</Spanish>
+            <Polish>Określa preferowane gniazdo do umieszczenia przedmiotu, jeśli oba są już zajęte.</Polish>
+            <Portuguese>Define o slot preferido para colocar o item se ambos já estiverem ocupados.</Portuguese>
+            <Russian>Определяет предпочтительный слот для предмета, если оба уже заняты.</Russian>
+            <German>Legt den bevorzugten Slot fest, in den das Item gelegt wird, falls beide schon belegt sind.</German>
+            <Korean>두 슬롯이 이미 사용 중일 때 아이템을 놓을 선호 슬롯을 정의합니다.</Korean>
             <Japanese>両方のスロットが既に占有されている場合、アイテムを置く優先スロットを定義します。</Japanese>
+            <Chinese>如果两个插槽都已占用，则定义物品应被放置到哪个首选插槽。</Chinese>
         </Key>
     </Package>
     <Package name="modules">
         <Key ID="STR_cigs_aiCigs_module_displayName">
             <English>Configure AI Cigs</English>
+            <French>Configurer AI Cigs</French>
+            <Spanish>Configurar cigarrillos de IA</Spanish>
+            <Polish>Skonfiguruj papierosy SI</Polish>
+            <Portuguese>Configurar cigarros da IA</Portuguese>
+            <Russian>Настроить сигареты ИИ</Russian>
+            <German>AI-Zigaretten konfigurieren</German>
+            <Korean>AI 담배 설정</Korean>
+            <Japanese>AIのタバコ設定</Japanese>
+            <Chinese>配置 AI 烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_aiCigs_module_tooltip">
             <English>Provide classnames of cigarette packages for this side.\nSeperated by , or space</English>
+            <French>Fournit les noms de classe des paquets de cigarettes pour ce côté.
+Séparés par , ou espace</French>
+            <Spanish>Proporciona los nombres de clase de los paquetes de cigarrillos para este bando.
+Separados por , o espacio</Spanish>
+            <Polish>Podaj nazwy klas paczek papierosów dla tej strony.
+Oddzielone przecinkiem lub spacją</Polish>
+            <Portuguese>Fornece os nomes de classe dos pacotes de cigarros para este lado.
+Separados por , ou espaço</Portuguese>
+            <Russian>Указывает имена классов пачек сигарет для этой стороны.
+Разделяются запятой или пробелом</Russian>
+            <German>Gibt die Klassennamen der Zigarettenpakete für diese Seite an.
+Getrennt durch , oder Leerzeichen</German>
+            <Korean>이 편대의 담배 팩 클래스명을 입력합니다.
+, 또는 공백으로 구분합니다.</Korean>
+            <Japanese>この陣営のタバコのクラス名を指定します。
+, またはスペースで区切る</Japanese>
+            <Chinese>为此阵营提供香烟包的类名。
+使用 , 或空格分隔</Chinese>
         </Key>
     </Package>
 </Project>

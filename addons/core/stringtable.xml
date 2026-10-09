@@ -4,366 +4,873 @@
         <Key ID="STR_cigs_core_set_ace_arsenal_tab">
             <English>Enable Custom Category Tab in ACE Arsenal</English>
             <French>Activer les catégories personnalisées dans ACE Arsenal</French>
+            <Spanish>Activar la pestaña personalizada en el Arsenal de ACE</Spanish>
+            <Polish>Włącz własną zakładkę w Arsenal ACE</Polish>
+            <Portuguese>Ativar guia personalizada no Arsenal do ACE</Portuguese>
+            <Russian>Включить пользовательскую вкладку в Arsenal ACE</Russian>
+            <German>Custom-Kategorie in ACE-Arsenal aktivieren</German>
+            <Korean>ACE 무기고에 사용자 지정 탭 활성화</Korean>
             <Japanese>ACE武器庫でカスタムされた分類を有効化</Japanese>
+            <Chinese>启用 ACE 武器库中的自定义分类标签</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_ace_arsenal_tab_desc">
             <English>When Enabled, this will create a Immersive Cigs Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
             <French>Lorsque cette option est activée, elle crée un onglet « Immersive Cigs » dans l'arsenal ACE (côté droit). Pour le désactiver, la mission doit être redémarrée.</French>
+            <Spanish>Si está activado, creará una pestaña de Immersive Cigs en el Arsenal de ACE (lado derecho).
+Se puede activar durante la misión. Para desactivarlo, la misión debe reiniciarse.</Spanish>
+            <Polish>Po włączeniu utworzy zakładkę Immersive Cigs w Arsenal ACE (po prawej stronie).
+Można włączyć podczas misji. Aby wyłączyć, trzeba uruchomić misję ponownie.</Polish>
+            <Portuguese>Quando ativado, cria uma guia do Immersive Cigs no Arsenal do ACE (lado direito).
+Pode ser ativado durante a missão. Para desativar, a missão precisa ser reiniciada.</Portuguese>
+            <Russian>Если включено, в Arsenal ACE будет создана вкладка Immersive Cigs (справа).
+Её можно включить во время миссии. Чтобы отключить, миссию нужно перезапустить.</Russian>
+            <German>Wenn aktiviert, wird in der ACE-Waffenbibliothek ein eigener Immersive-Cigs-Tab rechts erstellt.
+Dies kann während der Mission aktiviert werden. Zum Deaktivieren muss die Mission neu gestartet werden.</German>
+            <Korean>활성화하면 ACE 무기고(오른쪽)에 Immersive Cigs 탭이 생성됩니다.
+미션 중에도 활성화할 수 있으며, 비활성화하려면 미션을 다시 시작해야 합니다.</Korean>
             <Japanese>有効化するとImmersive CigsカテゴリがACE武器庫に追加されます(右側の列)。\nこれはミッション中でも有効化できますが、無効化にはリスタートが必要です。</Japanese>
+            <Chinese>启用后，会在 ACE 武器库右侧创建一个 “Immersive Cigs” 自定义标签页。
+此设置可在任务进行中启用；若要停用，需要重启任务。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier">
             <English>Coughing Modifier</English>
             <French>Modificateur de toux</French>
+            <Spanish>Modificador de tos</Spanish>
+            <Polish>Modyfikator kaszlu</Polish>
+            <Portuguese>Modificador de tosse</Portuguese>
+            <Russian>Модификатор кашля</Russian>
+            <German>Hustenmodifikator</German>
+            <Korean>기침 수치</Korean>
             <Japanese>咳込みの頻度</Japanese>
+            <Chinese>咳嗽修正</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_cough_modifier_desc">
             <English>Defines how likely it is for a smoker to cough.\n0% disables the feature.</English>
             <French>Définit la probabilité qu'un fumeur tousse.\n0 % désactive cette fonctionnalité.</French>
+            <Spanish>Define la probabilidad de que un fumador tosa.
+0% desactiva la función.</Spanish>
+            <Polish>Określa prawdopodobieństwo kaszlu u palacza.
+0% wyłącza funkcję.</Polish>
+            <Portuguese>Define a probabilidade de um fumante tossir.
+0% desativa a função.</Portuguese>
+            <Russian>Определяет вероятность кашля у курильщика.
+0% отключает эту функцию.</Russian>
+            <German>Legt fest, wie wahrscheinlich ein Raucher hustet.
+0 % deaktiviert diese Funktion.</German>
+            <Korean>흡연자가 기침할 확률을 설정합니다.
+0%이면 기능이 비활성화됩니다.</Korean>
             <Japanese>喫煙者がどのくらいの頻度で咳き込むかを定義します。\n0%で機能を無効化。</Japanese>
+            <Chinese>定义吸烟者咳嗽的概率。
+0% 会关闭此功能。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay">
             <English>Fatigue Decrease Delay</English>
             <French>Réduction du retard lié à la fatigue</French>
+            <Spanish>Retraso de reducción de fatiga</Spanish>
+            <Polish>Opóźnienie zmniejszania zmęczenia</Polish>
+            <Portuguese>Atraso de redução de fadiga</Portuguese>
+            <Russian>Задержка снижения усталости</Russian>
+            <German>Verzögerung bei Erholungsabzug</German>
+            <Korean>피로 감소 지연</Korean>
             <Japanese>ファティーグ低下の遅延</Japanese>
+            <Chinese>疲劳恢复延迟</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay_desc">
             <English>Defines the delay before the smoking penalty will start to wear off.\nin Minutes.</English>
             <French>Définit le délai avant que la pénalité pour avoir fumé commence à s'estomper.\En minutes.</French>
+            <Spanish>Define el retraso antes de que la penalización del humo empiece a desaparecer.
+En minutos.</Spanish>
+            <Polish>Określa opóźnienie przed rozpoczęciem zanikania kary za palenie.
+W minutach.</Polish>
+            <Portuguese>Define o atraso antes de a penalidade por fumar começar a desaparecer.
+Em minutos.</Portuguese>
+            <Russian>Определяет задержку перед началом исчезновения штрафа за курение.
+В минутах.</Russian>
+            <German>Legt die Verzögerung fest, bis der Raucher-Status beginnt, nachzulassen.
+In Minuten.</German>
+            <Korean>흡연 패널티가 서서히 사라지기 전까지의 지연 시간을 설정합니다.
+분 단위.</Korean>
             <Japanese>喫煙者が何分後にファティーグ(スタミナ)低下ペナルティが終了し始めるかを調整します。</Japanese>
+            <Chinese>定义吸烟惩罚开始缓解前的等待时间。
+单位：分钟。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled">
             <English>Enable Adv. Fatigue Integration</English>
             <French>Activer l'intégration avancée de la fatigue</French>
+            <Spanish>Activar integración avanzada de fatiga</Spanish>
+            <Polish>Włącz zaawansowaną integrację zmęczenia</Polish>
+            <Portuguese>Ativar integração avançada de fadiga</Portuguese>
+            <Russian>Включить интеграцию продвинутой усталости</Russian>
+            <German>Erweiterte Fatigue-Integration aktivieren</German>
+            <Korean>고급 피로 통합 활성화</Korean>
             <Japanese>高度な疲労(ファティーグ)の統合</Japanese>
+            <Chinese>启用高级疲劳集成</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled_desc">
             <English>When Enabled, smoking will affect ACE Advanced Fatigue System.</English>
             <French>Lorsque cette option est activée, le tabagisme aura une incidence sur le système avancé de fatigue ACE.</French>
+            <Spanish>Si está activado, fumar afectará al sistema avanzado de fatiga de ACE.</Spanish>
+            <Polish>Po włączeniu palenie będzie wpływać na zaawansowany system zmęczenia ACE.</Polish>
+            <Portuguese>Quando ativado, fumar afetará o sistema avançado de fadiga do ACE.</Portuguese>
+            <Russian>Если включено, курение будет влиять на систему продвинутой усталости ACE.</Russian>
+            <German>Wenn aktiviert, beeinflusst Rauchen das ACE-Advanced-Fatigue-System.</German>
+            <Korean>활성화하면 흡연이 ACE 고급 피로 시스템에 영향을 줍니다.</Korean>
             <Japanese>有効化するとACE高度な疲労(ファティーグ)システムに影響するようになります。</Japanese>
+            <Chinese>启用后，吸烟会影响 ACE 高级疲劳系统。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier">
             <English>Fatigue Modifier</English>
             <French>Modificateur de fatigue</French>
+            <Spanish>Modificador de fatiga</Spanish>
+            <Polish>Modyfikator zmęczenia</Polish>
+            <Portuguese>Modificador de fadiga</Portuguese>
+            <Russian>Модификатор усталости</Russian>
+            <German>Fatigue-Modifikator</German>
+            <Korean>피로도 수정치</Korean>
             <Japanese>ファティーグ調整</Japanese>
+            <Chinese>疲劳修正</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier_desc">
             <English>Defines how strong smoking will be taken into account for the fatigue impact.</English>
             <French>Définit dans quelle mesure le tabagisme sera pris en compte dans l'impact de la fatigue.</French>
+            <Spanish>Define qué tan fuerte se tendrá en cuenta el efecto del humo en la fatiga.</Spanish>
+            <Polish>Określa, jak mocno palenie uwzględniane jest przy wpływie na zmęczenie.</Polish>
+            <Portuguese>Define a intensidade com que o fumo será considerado no impacto de fadiga.</Portuguese>
+            <Russian>Определяет, насколько сильно курение учитывается при расчёте усталости.</Russian>
+            <German>Legt fest, wie stark Rauchen in der Fatigue-Auswirkung berücksichtigt wird.</German>
+            <Korean>흡연이 피로도에 얼마나 반영되는지를 설정합니다.</Korean>
             <Japanese>喫煙がどのくらいファティーグ(疲労・スタミナ低下)へ影響を及ぼすかを定義します。</Japanese>
+            <Chinese>定义吸烟对疲劳影响的强度。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance">
             <English>Chance of Spontaneous Combustion</English>
             <French>Risque de combustion spontanée</French>
+            <Spanish>Probabilidad de combustión espontánea</Spanish>
+            <Polish>Szansa na samozapłon</Polish>
+            <Portuguese>Chance de combustão espontânea</Portuguese>
+            <Russian>Шанс самовозгорания</Russian>
+            <German>Chance auf spontane Verbrennung</German>
+            <Korean>자연 발화 확률</Korean>
             <Japanese>自然発火の可能性</Japanese>
+            <Chinese>自燃几率</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance_desc">
             <English>Defines the chance at which a player/unit might start burning if they're doing something silly and/or risky while smoking.\n 0% disables the effect.</English>
             <French>Définit le risque qu'un joueur ou une unité commence à brûler s'il fait quelque chose de stupide et/ou de risqué en fumant.</French>
+            <Spanish>Define la probabilidad de que un jugador o unidad empiece a arder si hace algo poco sensato o arriesgado mientras fuma.
+0% desactiva el efecto.</Spanish>
+            <Polish>Określa szansę, że gracz lub jednostka zacznie się palić, jeśli podczas palenia zrobi coś głupiego lub ryzykownego.
+0% wyłącza efekt.</Polish>
+            <Portuguese>Define a chance de um jogador ou unidade começar a pegar fogo se fizer algo bobo ou arriscado enquanto fuma.
+0% desativa o efeito.</Portuguese>
+            <Russian>Определяет шанс, что игрок или юнит начнёт гореть, если во время курения совершит глупое или рискованное действие.
+0% отключает эффект.</Russian>
+            <German>Legt die Chance fest, mit der ein Spieler oder eine Einheit in Brand gerät, wenn er/sie beim Rauchen etwas Dummes bzw. Riskantes tut.
+0 % deaktiviert den Effekt.</German>
+            <Korean>흡연 중 어리석거나 위험한 행동을 할 때 플레이어나 유닛이 불에 타기 시작할 확률을 설정합니다.
+0%이면 효과가 비활성화됩니다.</Korean>
             <Japanese>プレイヤーが喫煙中に危険や愚かな行動をしたときにタバコの火が原因で体に着火する可能性を定義します。/n0%で機能を無効化。</Japanese>
+            <Chinese>定义玩家/单位在吸烟时做出愚蠢或危险行为时起火的概率。
+0% 会关闭此效果。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_smoke_particles">
             <English>Amount of smoke particles</English>
             <French>Risque de combustion spontanée</French>
+            <Spanish>Cantidad de partículas de humo</Spanish>
+            <Polish>Ilość cząstek dymu</Polish>
+            <Portuguese>Quantidade de partículas de fumaça</Portuguese>
+            <Russian>Количество дыма</Russian>
+            <German>Rauchpartikelmenge</German>
+            <Korean>연기 입자량</Korean>
             <Japanese>パーティクルの量</Japanese>
+            <Chinese>烟雾粒子数量</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_smoke_particles_desc">
             <English>Defines the amount of smoke particles dropped when a person is smoking. Client side setting.</English>
             <French>Définit la quantité de particules de fumée rejetées lorsqu'une personne fume. Réglage côté client.</French>
+            <Spanish>Define la cantidad de partículas de humo que se generan al fumar. Ajuste del cliente.</Spanish>
+            <Polish>Określa ilość cząstek dymu generowanych podczas palenia. Ustawienie po stronie klienta.</Polish>
+            <Portuguese>Define a quantidade de partículas de fumaça geradas ao fumar. Configuração do cliente.</Portuguese>
+            <Russian>Определяет количество частиц дыма, которые появляются при курении. Настройка клиента.</Russian>
+            <German>Legt die Menge der Rauchpartikel fest, die beim Rauchen entstehen. Client-seitige Einstellung.</German>
+            <Korean>흡연 시 생성되는 연기 입자 수를 설정합니다. 클라이언트 설정입니다.</Korean>
             <Japanese>喫煙時にユニットから発生するパーティクルの量を定義します。クライアント側設定。</Japanese>
+            <Chinese>定义单位吸烟时产生的烟雾粒子数量。客户端设置。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon">
             <English>Holster Weapon when using Lighter</English>
             <French>Ranger l'arme dans son étui lorsque vous utilisez le briquet</French>
+            <Spanish>Guardar el arma al usar encendedor</Spanish>
+            <Polish>Schowaj broń podczas używania zapalniczki</Polish>
+            <Portuguese>Guardar arma ao usar isqueiro</Portuguese>
+            <Russian>Убирать оружие при использовании зажигалки</Russian>
+            <German>Waffe beim Benutzen des Feuerzeugs einstecken</German>
+            <Korean>라이터 사용 시 무기 집어넣기</Korean>
             <Japanese>ライター使用時に武器をしまう</Japanese>
+            <Chinese>使用打火机时收起武器</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
             <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
             <French>Lorsqu'il utilise un briquet ou des allumettes, le joueur range automatiquement son arme dans son étui.\nCela est nécessaire pour éviter les animations douteuses.</French>
+            <Spanish>Al usar un encendedor o cerillas, el jugador guarda automáticamente el arma.
+Esto evita animaciones extrañas.</Spanish>
+            <Polish>Po użyciu zapalniczki lub zapałek gracz automatycznie chowa broń.
+To konieczne, aby uniknąć niedokładnych animacji.</Polish>
+            <Portuguese>Ao usar um isqueiro ou fósforos, o jogador guarda automaticamente a arma.
+Isso é necessário para evitar animações estranhas.</Portuguese>
+            <Russian>При использовании зажигалки или спичек игрок автоматически убирает оружие.
+Это необходимо, чтобы избежать некорректных анимаций.</Russian>
+            <German>Beim Benutzen von Feuerzeug oder Streichhölzern steckt der Spieler automatisch die Waffe weg.
+Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
+            <Korean>라이터나 성냥을 사용할 때 플레이어가 자동으로 무기를 집어넣습니다.
+이건 이상한 애니메이션을 피하기 위해 필요합니다.</Korean>
             <Japanese>ライターやマッチの使用時にプレイヤーが自動的に銃を収めます。\nこれは、不自然なアニメーションを回避するために必要です。</Japanese>
+            <Chinese>使用打火机或火柴时，玩家会自动收起武器。
+这是为了避免异常动画。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency">
             <English>Smoking Frequency</English>
             <French>Fréquence du tabagisme</French>
+            <Spanish>Frecuencia de fumar</Spanish>
+            <Polish>Częstotliwość palenia</Polish>
+            <Portuguese>Frequência de fumar</Portuguese>
+            <Russian>Частота курения</Russian>
+            <German>Rauchfrequenz</German>
+            <Korean>흡연 빈도</Korean>
             <Japanese>吸排気の頻度</Japanese>
+            <Chinese>吸烟频率</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_desc">
             <English>Defines how often you puff/draw on a smokable.</English>
             <French>Définit la fréquence à laquelle vous tirez sur un produit à fumer.</French>
+            <Spanish>Define la frecuencia con la que fumas o inhalas.</Spanish>
+            <Polish>Określa, jak często sięgasz po papierosa i palisz.</Polish>
+            <Portuguese>Define com que frequência você acende e fuma.</Portuguese>
+            <Russian>Определяет, как часто вы затягиваетесь и курите.</Russian>
+            <German>Legt fest, wie oft du an einer rauchbaren Sache ziehst.</German>
+            <Korean>흡연 빈도를 설정합니다.</Korean>
             <Japanese>タバコを吸う頻度を定義します。</Japanese>
+            <Chinese>定义你吸烟的频率。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_less">
             <English>Less Often</English>
             <French>Moins souvent</French>
+            <Spanish>Menos a menudo</Spanish>
+            <Polish>Rzadziej</Polish>
+            <Portuguese>Menos frequentemente</Portuguese>
+            <Russian>Реже</Russian>
+            <German>Weniger oft</German>
+            <Korean>덜 자주</Korean>
             <Japanese>低頻度</Japanese>
+            <Chinese>较少</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_normal">
             <English>Normal</English>
             <French>Normal</French>
+            <Spanish>Normal</Spanish>
+            <Polish>Normalnie</Polish>
+            <Portuguese>Normal</Portuguese>
+            <Russian>Обычно</Russian>
+            <German>Normal</German>
+            <Korean>보통</Korean>
             <Japanese>普通</Japanese>
+            <Chinese>正常</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_often">
             <English>More Often</English>
             <French>Plus souvent</French>
+            <Spanish>Más a menudo</Spanish>
+            <Polish>Częściej</Polish>
+            <Portuguese>Mais frequentemente</Portuguese>
+            <Russian>Чаще</Russian>
+            <German>Häufiger</German>
+            <Korean>더 자주</Korean>
             <Japanese>高頻度</Japanese>
+            <Chinese>较多</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_frequency_entry_thomas">
             <English>Thomas</English>
+            <French>Thomas</French>
+            <Spanish>Thomas</Spanish>
+            <Polish>Thomas</Polish>
+            <Portuguese>Thomas</Portuguese>
+            <Russian>Thomas</Russian>
+            <German>Thomas</German>
+            <Korean>Thomas</Korean>
+            <Japanese>Thomas</Japanese>
+            <Chinese>托马斯</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity">
             <English>Smoking Intensity</English>
             <French>Intensité du tabagisme</French>
+            <Spanish>Intensidad de fumar</Spanish>
+            <Polish>Intensywność palenia</Polish>
+            <Portuguese>Intensidade de fumar</Portuguese>
+            <Russian>Интенсивность курения</Russian>
+            <German>Rauchintensität</German>
+            <Korean>흡연 강도</Korean>
             <Japanese>吸排気の強度</Japanese>
+            <Chinese>吸烟强度</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_desc">
             <English>Defines which how strong/long you puff/draw a smokable.</English>
             <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
+            <Spanish>Define cuán fuerte y cuánto tiempo inhalas al fumar.</Spanish>
+            <Polish>Określa, jak mocno i długo palisz.</Polish>
+            <Portuguese>Define quão forte e por quanto tempo você fuma.</Portuguese>
+            <Russian>Определяет, насколько сильно и долго вы затягиваетесь при курении.</Russian>
+            <German>Legt fest, wie stark und lange du an einer rauchbaren Sache ziehst.</German>
+            <Korean>흡연할 때 힘과 시간을 얼마나 강하게 하는지 설정합니다.</Korean>
             <Japanese>タバコをどれくらいの強さで、どれくらいの時間吸い込むかを定義します。</Japanese>
+            <Chinese>定义吸烟时吸入的强度和持续时间。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_long">
             <English>More Intensive</English>
             <French>Plus intensif</French>
+            <Spanish>Más intenso</Spanish>
+            <Polish>Silniej</Polish>
+            <Portuguese>Mais intenso</Portuguese>
+            <Russian>Сильнее</Russian>
+            <German>Stärker</German>
+            <Korean>강함</Korean>
             <Japanese>低強度</Japanese>
+            <Chinese>更强</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_normal">
             <English>Normal</English>
             <French>Normal</French>
+            <Spanish>Normal</Spanish>
+            <Polish>Normalnie</Polish>
+            <Portuguese>Normal</Portuguese>
+            <Russian>Обычно</Russian>
+            <German>Normal</German>
+            <Korean>보통</Korean>
             <Japanese>普通</Japanese>
+            <Chinese>正常</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_short">
             <English>Less Intensive</English>
             <French>Moins intensif</French>
+            <Spanish>Menos intenso</Spanish>
+            <Polish>Słabiej</Polish>
+            <Portuguese>Menos intenso</Portuguese>
+            <Russian>Слабее</Russian>
+            <German>Schwächer</German>
+            <Korean>약함</Korean>
             <Japanese>高強度</Japanese>
+            <Chinese>较弱</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_entry_thomas">
             <English>Thomas</English>
+            <French>Thomas</French>
+            <Spanish>Thomas</Spanish>
+            <Polish>Thomas</Polish>
+            <Portuguese>Thomas</Portuguese>
+            <Russian>Thomas</Russian>
+            <German>Thomas</German>
+            <Korean>Thomas</Korean>
+            <Japanese>Thomas</Japanese>
+            <Chinese>托马斯</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack">
             <English>Start with a CigPack</English>
             <French>Commencer avec un CigPack</French>
+            <Spanish>Empezar con un paquete de cigarrillos</Spanish>
+            <Polish>Zacznij z paczką papierosów</Polish>
+            <Portuguese>Começar com um maço de cigarros</Portuguese>
+            <Russian>Начать с пачкой сигарет</Russian>
+            <German>Mit Paket starten</German>
+            <Korean>담배 한 팩을 들고 시작</Korean>
             <Japanese>タバコを所持した状態で開始</Japanese>
+            <Chinese>从带烟包开始</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_desc">
             <English>Adds a CigPack the beginning of a single player mission.</English>
             <French>Ajoute un CigPack au début d'une mission singleplayer.</French>
+            <Spanish>Añade un paquete de cigarrillos al inicio de una misión de un solo jugador.</Spanish>
+            <Polish>Dodaje paczkę papierosów na początku misji dla jednego gracza.</Polish>
+            <Portuguese>Adiciona um maço de cigarros no início de uma missão single-player.</Portuguese>
+            <Russian>Добавляет пачку сигарет в начале миссии для одного игрока.</Russian>
+            <German>Fügt am Anfang einer Einzelspieler-Mission ein Zigarettenpaket hinzu.</German>
+            <Korean>싱글플레이어 미션 시작 시 담배 한 팩을 추가합니다.</Korean>
             <Japanese>シングルプレイヤーミッションの開始時にタバコの箱を追加します。</Japanese>
+            <Chinese>在单人任务开始时添加一包香烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type">
             <English>Type of Pack</English>
             <French>Type d'emballage</French>
+            <Spanish>Tipo de paquete</Spanish>
+            <Polish>Typ paczki</Polish>
+            <Portuguese>Tipo de pacote</Portuguese>
+            <Russian>Тип пачки</Russian>
+            <German>Pakettyp</German>
+            <Korean>담배 종류</Korean>
             <Japanese>タバコの種類</Japanese>
+            <Chinese>烟包类型</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type_desc">
             <English>Defines which type of CigPack (or other) will be added at the beginning of a single player mission.</English>
             <French>Définit le type de CigPack (ou autre) qui sera ajouté au début d'une mission singleplayer.</French>
+            <Spanish>Define qué tipo de paquete (u otro artículo) se añadirá al comienzo de una misión de un solo jugador.</Spanish>
+            <Polish>Określa, jaki typ paczki (lub innego przedmiotu) zostanie dodany na początku misji dla jednego gracza.</Polish>
+            <Portuguese>Define que tipo de pacote (ou outro item) será adicionado no início de uma missão single-player.</Portuguese>
+            <Russian>Определяет, какой тип пачки (или другого предмета) будет добавлен в начале миссии для одного игрока.</Russian>
+            <German>Legt fest, welche Art von Zigarettenpaket (oder anderem) zu Beginn einer Einzelspieler-Mission hinzugefügt wird.</German>
+            <Korean>싱글플레이어 미션 시작 시 어떤 종류의 담배 팩(또는 다른 아이템)이 추가될지 설정합니다.</Korean>
             <Japanese>シングルプレイヤーミッションの開始時に追加されるタバコの箱（またはその他のアイテム）の種類を定義します。</Japanese>
+            <Chinese>定义在单人任务开始时添加哪种烟包（或其他物品）类型。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems">
             <English>Add Items to Player in SP</English>
             <French>Ajouter des éléments au joueur dans le SP</French>
+            <Spanish>Añadir objetos al jugador en SP</Spanish>
+            <Polish>Dodaj przedmioty graczowi w trybie SP</Polish>
+            <Portuguese>Adicionar itens ao jogador no SP</Portuguese>
+            <Russian>Добавлять предметы игроку в одиночной игре</Russian>
+            <German>Gegenstände für Spieler in SP hinzufügen</German>
+            <Korean>싱글플레이어에서 플레이어에게 아이템 추가</Korean>
             <Japanese>シングルプレイヤーでアイテム追加</Japanese>
+            <Chinese>在单人模式中为玩家添加物品</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems_desc">
             <English>When this is enabled, the following items will be added in single player to the players inventory.</English>
             <French>Lorsque cette option est activée, les objets suivants sont ajoutés à l'inventaire du joueur en mode solo.</French>
+            <Spanish>Si está activado, se añadirán los siguientes objetos al inventario del jugador en modo individual.</Spanish>
+            <Polish>Po włączeniu następujące przedmioty zostaną dodane do ekwipunku gracza w trybie solo.</Polish>
+            <Portuguese>Quando ativado, os itens a seguir serão adicionados ao inventário do jogador em modo solo.</Portuguese>
+            <Russian>Если включено, в инвентарь игрока в одиночной игре будут добавлены следующие предметы.</Russian>
+            <German>Wenn aktiviert, werden am Anfang einer Einzelspieler-Mission die folgenden Gegenstände dem Inventar des Spielers hinzugefügt.</German>
+            <Korean>활성화하면 싱글플레이어에서 플레이어 인벤토리에 다음 아이템이 추가됩니다.</Korean>
             <Japanese>有効化するとシングルプレイヤーでこれらのアイテムがプレイヤーのインベントリに追加されます。</Japanese>
+            <Chinese>启用后，单人模式中会将以下物品加入玩家库存。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter">
             <English>Start with a Lighter</English>
             <French>Commencer avec un briquet</French>
+            <Spanish>Empezar con un encendedor</Spanish>
+            <Polish>Zacznij z zapalniczką</Polish>
+            <Portuguese>Começar com um isqueiro</Portuguese>
+            <Russian>Начать с зажигалкой</Russian>
+            <German>Mit Feuerzeug starten</German>
+            <Korean>라이터를 들고 시작</Korean>
             <Japanese>ライターを所持した状態で開始</Japanese>
+            <Chinese>从带打火机开始</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_desc">
             <English>Adds a Lighter at the beginning of a single player mission.</English>
             <French>Ajoute un briquet au début d'une mission (SP seulement).</French>
+            <Spanish>Añade un encendedor al inicio de una misión de un solo jugador.</Spanish>
+            <Polish>Dodaje zapalniczkę na początku misji dla jednego gracza.</Polish>
+            <Portuguese>Adiciona um isqueiro no início de uma missão single-player.</Portuguese>
+            <Russian>Добавляет зажигалку в начале миссии для одного игрока.</Russian>
+            <German>Fügt am Anfang einer Einzelspieler-Mission ein Feuerzeug hinzu.</German>
+            <Korean>싱글플레이어 미션 시작 시 라이터를 추가합니다.</Korean>
             <Japanese>シングルプレイヤーミッションの開始時にライターを追加します。</Japanese>
+            <Chinese>在单人任务开始时添加一个打火机。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_type">
             <English>Type of Lighter</English>
             <French>Type de briquet</French>
+            <Spanish>Tipo de encendedor</Spanish>
+            <Polish>Typ zapalniczki</Polish>
+            <Portuguese>Tipo de isqueiro</Portuguese>
+            <Russian>Тип зажигалки</Russian>
+            <German>Feuerzeugtyp</German>
+            <Korean>라이터 종류</Korean>
             <Japanese>ライターの種類</Japanese>
+            <Chinese>打火机类型</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_type_desc">
             <English>Defines which type of lighter will be added at the beginning of a single player mission.</English>
             <French>Définit le type de briquet qui sera ajouté au début d'une mission (SP seulement).</French>
+            <Spanish>Define qué tipo de encendedor se añadirá al inicio de una misión de un solo jugador.</Spanish>
+            <Polish>Określa, jaki typ zapalniczki zostanie dodany na początku misji dla jednego gracza.</Polish>
+            <Portuguese>Define que tipo de isqueiro será adicionado no início de uma missão single-player.</Portuguese>
+            <Russian>Определяет, какой тип зажигалки будет добавлен в начале миссии для одного игрока.</Russian>
+            <German>Legt fest, welche Art von Feuerzeug zu Beginn einer Einzelspieler-Mission hinzugefügt wird.</German>
+            <Korean>싱글플레이어 미션 시작 시 어떤 종류의 라이터를 추가할지 설정합니다.</Korean>
             <Japanese>シングルプレイヤーミッションの開始時に追加されるライターの種類を定義します。</Japanese>
+            <Chinese>定义在单人任务开始时添加哪种类型的打火机。</Chinese>
         </Key>
     </Package>
     <Package name="CBASettings_Categories">
         <Key ID="STR_cigs_core_set_mainCat_common">
             <English>Immersive Cigs - Common</English>
             <French>Immersive Cigs - Common</French>
+            <Spanish>Immersive Cigs - General</Spanish>
+            <Polish>Immersive Cigs - Ogólne</Polish>
+            <Portuguese>Immersive Cigs - Gerais</Portuguese>
+            <Russian>Immersive Cigs - Общие</Russian>
+            <German>Immersive Cigs - Allgemein</German>
+            <Korean>Immersive Cigs - 일반</Korean>
             <Japanese>Immersive Cigs - 一般設定</Japanese>
+            <Chinese>沉浸式烟草 - 通用</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_mainCat_player">
             <English>Immersive Cigs - Player Preferences</English>
             <French>Immersive Cigs - Préférences du joueur</French>
+            <Spanish>Immersive Cigs - Preferencias del jugador</Spanish>
+            <Polish>Immersive Cigs - Preferencje gracza</Polish>
+            <Portuguese>Immersive Cigs - Preferências do jogador</Portuguese>
+            <Russian>Immersive Cigs - Настройки игрока</Russian>
+            <German>Immersive Cigs - Spielerpräferenzen</German>
+            <Korean>Immersive Cigs - 플레이어 설정</Korean>
             <Japanese>Immersive Cigs - プレイヤー設定</Japanese>
+            <Chinese>沉浸式烟草 - 玩家偏好</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_ace_arsenal">
             <English>ACE Arsenal</English>
             <French>Arsenal ACE</French>
+            <Spanish>Arsenal de ACE</Spanish>
+            <Polish>Arsenal ACE</Polish>
+            <Portuguese>Arsenal do ACE</Portuguese>
+            <Russian>Arsenal ACE</Russian>
+            <German>ACE-Arsenal</German>
+            <Korean>ACE 무기고</Korean>
             <Japanese>ACE 武器庫</Japanese>
+            <Chinese>ACE 武器库</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_effects">
             <English>Effects</English>
             <French>Effets</French>
+            <Spanish>Efectos</Spanish>
+            <Polish>Efekty</Polish>
+            <Portuguese>Efeitos</Portuguese>
+            <Russian>Эффекты</Russian>
             <German>Effekte</German>
+            <Korean>효과</Korean>
             <Japanese>エフェクト</Japanese>
+            <Chinese>效果</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_habits_smoking">
             <English>Smoking Habits</English>
             <French>L'habitude de fumer</French>
+            <Spanish>Hábitos de fumar</Spanish>
+            <Polish>Nawyki palenia</Polish>
+            <Portuguese>Hábitos de fumar</Portuguese>
+            <Russian>Курительные привычки</Russian>
+            <German>Rauchgewohnheiten</German>
+            <Korean>흡연 습관</Korean>
             <Japanese>喫煙環境</Japanese>
+            <Chinese>吸烟习惯</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_subCat_sp">
             <English>Singleplayer</English>
             <French>Joueur unique</French>
+            <Spanish>Un jugador</Spanish>
+            <Polish>Tryb solo</Polish>
+            <Portuguese>Singleplayer</Portuguese>
+            <Russian>Одиночная игра</Russian>
             <German>Einzelspieler</German>
+            <Korean>싱글플레이어</Korean>
             <Japanese>シングルプレイヤー</Japanese>
+            <Chinese>单人模式</Chinese>
         </Key>
     </Package>
     <Package name="EditorCategories">
         <Key ID="STR_cigs_core_editor_category_main">
             <English>Immersive Cigs</English>
             <French>Cigarettes immersives</French>
+            <Spanish>Immersive Cigs</Spanish>
+            <Polish>Immersive Cigs</Polish>
+            <Portuguese>Immersive Cigs</Portuguese>
+            <Russian>Immersive Cigs</Russian>
             <German>Immersive Zigaretten</German>
+            <Korean>Immersive Cigs</Korean>
             <Japanese>Immersive Cigs</Japanese>
+            <Chinese>沉浸式烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
             <English>Cig Packs</English>
             <French>Paquets de cigarettes</French>
+            <Spanish>Paquetes de cigarrillos</Spanish>
+            <Polish>Paczki papierosów</Polish>
+            <Portuguese>Maços de cigarro</Portuguese>
+            <Russian>Пачки сигарет</Russian>
             <German>Schachteln</German>
+            <Korean>담배 팩</Korean>
             <Japanese>タバコ箱</Japanese>
+            <Chinese>烟包</Chinese>
         </Key>
         <Key ID="STR_cigs_core_editor_subCategory_lighters">
             <English>Lighters</English>
             <French>Briquets</French>
+            <Spanish>Encendedores</Spanish>
+            <Polish>Zapalniczki</Polish>
+            <Portuguese>Isqueiros</Portuguese>
+            <Russian>Зажигалки</Russian>
             <German>Feuerzeuge</German>
+            <Korean>라이터</Korean>
             <Japanese>ライター</Japanese>
+            <Chinese>打火机</Chinese>
         </Key>
     </Package>
     <Package name="GlobalDescription">
         <Key ID="STR_cigs_core_glasses_stage0">
             <English>Glasses Slot - Stage 0</English>
             <French>Masques - Stage 0</French>
+            <Spanish>Ranura de gafas - Etapa 0</Spanish>
+            <Polish>Gniazdo okularów - etap 0</Polish>
+            <Portuguese>Slot de óculos - Etapa 0</Portuguese>
+            <Russian>Слот очков - этап 0</Russian>
+            <German>Brillen-Slot - Stufe 0</German>
+            <Korean>안경 슬롯 - 단계 0</Korean>
             <Japanese>ゴーグル枠 - 0段階目</Japanese>
+            <Chinese>护目镜槽 - 阶段 0</Chinese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage1">
             <English>Glasses Slot - Stage 1</English>
             <French>Masques - Stage 1</French>
+            <Spanish>Ranura de gafas - Etapa 1</Spanish>
+            <Polish>Gniazdo okularów - etap 1</Polish>
+            <Portuguese>Slot de óculos - Etapa 1</Portuguese>
+            <Russian>Слот очков - этап 1</Russian>
+            <German>Brillen-Slot - Stufe 1</German>
+            <Korean>안경 슬롯 - 단계 1</Korean>
             <Japanese>ゴーグル枠 - 1段階目</Japanese>
+            <Chinese>护目镜槽 - 阶段 1</Chinese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage2">
             <English>Glasses Slot - Stage 2</English>
             <French>Masques - Stage 2</French>
+            <Spanish>Ranura de gafas - Etapa 2</Spanish>
+            <Polish>Gniazdo okularów - etap 2</Polish>
+            <Portuguese>Slot de óculos - Etapa 2</Portuguese>
+            <Russian>Слот очков - этап 2</Russian>
+            <German>Brillen-Slot - Stufe 2</German>
+            <Korean>안경 슬롯 - 단계 2</Korean>
             <Japanese>ゴーグル枠 - 2段階目</Japanese>
+            <Chinese>护目镜槽 - 阶段 2</Chinese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage3">
             <English>Glasses Slot - Stage 3</English>
             <French>Masques - Stage 3</French>
+            <Spanish>Ranura de gafas - Etapa 3</Spanish>
+            <Polish>Gniazdo okularów - etap 3</Polish>
+            <Portuguese>Slot de óculos - Etapa 3</Portuguese>
+            <Russian>Слот очков - этап 3</Russian>
+            <German>Brillen-Slot - Stufe 3</German>
+            <Korean>안경 슬롯 - 단계 3</Korean>
             <Japanese>ゴーグル枠 - 3段階目</Japanese>
+            <Chinese>护目镜槽 - 阶段 3</Chinese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage4">
             <English>Glasses Slot - Stage 4</English>
             <French>Masques - Stage 4</French>
+            <Spanish>Ranura de gafas - Etapa 4</Spanish>
+            <Polish>Gniazdo okularów - etap 4</Polish>
+            <Portuguese>Slot de óculos - Etapa 4</Portuguese>
+            <Russian>Слот очков - этап 4</Russian>
+            <German>Brillen-Slot - Stufe 4</German>
+            <Korean>안경 슬롯 - 단계 4</Korean>
             <Japanese>ゴーグル枠 - 4段階目</Japanese>
+            <Chinese>护目镜槽 - 阶段 4</Chinese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage0">
             <English>Nightvision Slot - Stage 0</English>
             <French>Vision nocturne - Stage 0</French>
+            <Spanish>Ranura de visión nocturna - Etapa 0</Spanish>
+            <Polish>Gniazdo noktowizora - etap 0</Polish>
+            <Portuguese>Slot de visão noturna - Etapa 0</Portuguese>
+            <Russian>Слот ночного видения - этап 0</Russian>
+            <German>Nachtsicht-Slot - Stufe 0</German>
+            <Korean>야간투시 슬롯 - 단계 0</Korean>
             <Japanese>NVG枠 - 0段階目</Japanese>
+            <Chinese>夜视装备槽 - 阶段 0</Chinese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage1">
             <English>Nightvision Slot - Stage 1</English>
             <French>Vision nocturne - Stage 1</French>
+            <Spanish>Ranura de visión nocturna - Etapa 1</Spanish>
+            <Polish>Gniazdo noktowizora - etap 1</Polish>
+            <Portuguese>Slot de visão noturna - Etapa 1</Portuguese>
+            <Russian>Слот ночного видения - этап 1</Russian>
+            <German>Nachtsicht-Slot - Stufe 1</German>
+            <Korean>야간투시 슬롯 - 단계 1</Korean>
             <Japanese>NVG枠 - 1段階目</Japanese>
+            <Chinese>夜视装备槽 - 阶段 1</Chinese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage2">
             <English>Nightvision Slot - Stage 2</English>
             <French>Vision nocturne - Stage 2</French>
+            <Spanish>Ranura de visión nocturna - Etapa 2</Spanish>
+            <Polish>Gniazdo noktowizora - etap 2</Polish>
+            <Portuguese>Slot de visão noturna - Etapa 2</Portuguese>
+            <Russian>Слот ночного видения - этап 2</Russian>
+            <German>Nachtsicht-Slot - Stufe 2</German>
+            <Korean>야간투시 슬롯 - 단계 2</Korean>
             <Japanese>NVG枠 - 2段階目</Japanese>
+            <Chinese>夜视装备槽 - 阶段 2</Chinese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage3">
             <English>Nightvision Slot - Stage 3</English>
             <French>Vision nocturne - Stage 3</French>
+            <Spanish>Ranura de visión nocturna - Etapa 3</Spanish>
+            <Polish>Gniazdo noktowizora - etap 3</Polish>
+            <Portuguese>Slot de visão noturna - Etapa 3</Portuguese>
+            <Russian>Слот ночного видения - этап 3</Russian>
+            <German>Nachtsicht-Slot - Stufe 3</German>
+            <Korean>야간투시 슬롯 - 단계 3</Korean>
             <Japanese>NVG枠 - 3段階目</Japanese>
+            <Chinese>夜视装备槽 - 阶段 3</Chinese>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage4">
             <English>Nightvision Slot - Stage 4</English>
             <French>Vision nocturne - Stage 4</French>
+            <Spanish>Ranura de visión nocturna - Etapa 4</Spanish>
+            <Polish>Gniazdo noktowizora - etap 4</Polish>
+            <Portuguese>Slot de visão noturna - Etapa 4</Portuguese>
+            <Russian>Слот ночного видения - этап 4</Russian>
+            <German>Nachtsicht-Slot - Stufe 4</German>
+            <Korean>야간투시 슬롯 - 단계 4</Korean>
             <Japanese>NVG枠 - 4段階目</Japanese>
+            <Chinese>夜视装备槽 - 阶段 4</Chinese>
         </Key>
     </Package>
     <Package name="Incompatibility">
         <Key ID="STR_cigs_core_incompat_message1">
             <English>The following mods are incompatible:</English>
             <French>Les mods suivants sont incompatibles:</French>
+            <Spanish>Los siguientes mods son incompatibles:</Spanish>
+            <Polish>Następujące mody są niekompatybilne:</Polish>
+            <Portuguese>Os seguintes mods são incompatíveis:</Portuguese>
+            <Russian>Следующие моды несовместимы:</Russian>
+            <German>Die folgenden Mods sind inkompatibel:</German>
+            <Korean>다음 모드는 호환되지 않습니다:</Korean>
             <Japanese>このMODは互換性がありません:</Japanese>
+            <Chinese>以下模组不兼容：</Chinese>
         </Key>
         <Key ID="STR_cigs_core_incompat_message2">
             <English>These mods should not be loaded together.</English>
             <French>Ces mods ne doivent pas être chargés ensemble.</French>
+            <Spanish>Estos mods no deberían cargarse juntos.</Spanish>
+            <Polish>Te mody nie powinny być ładowane razem.</Polish>
+            <Portuguese>Esses mods não devem ser carregados juntos.</Portuguese>
+            <Russian>Эти моды нельзя загружать вместе.</Russian>
+            <German>Diese Mods sollten nicht gemeinsam geladen werden.</German>
+            <Korean>이 모드들은 함께 로드하면 안 됩니다.</Korean>
             <Japanese>これらのMODを同時に読み込むことは出来ません。</Japanese>
+            <Chinese>这些模组不应同时加载。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_incompat_message3">
             <English>You may experience unexpected behavior and issues.</English>
             <French>Vous pouvez rencontrer des comportements et des problèmes inattendus.</French>
+            <Spanish>Podrás experimentar comportamientos y problemas inesperados.</Spanish>
+            <Polish>Możesz napotkać nieoczekiwane zachowania i problemy.</Polish>
+            <Portuguese>Você pode sofrer comportamentos e problemas inesperados.</Portuguese>
+            <Russian>Могут возникнуть непредвиденные ошибки и проблемы.</Russian>
+            <German>Es kann zu unerwartetem Verhalten und Problemen kommen.</German>
+            <Korean>예상치 못한 동작과 문제가 발생할 수 있습니다.</Korean>
             <Japanese>予期せぬ挙動や問題が発生する可能性があります。</Japanese>
+            <Chinese>可能会出现意外行为和问题。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_incompat_title">
             <English>%1: Incompatible Mods</English>
             <French>%1: Mods incompatibles</French>
+            <Spanish>%1: Mods incompatibles</Spanish>
+            <Polish>%1: Niekompatybilne mody</Polish>
+            <Portuguese>%1: Mods incompatíveis</Portuguese>
+            <Russian>%1: Несовместимые моды</Russian>
+            <German>%1: Inkompatible Mods</German>
+            <Korean>%1: 호환되지 않는 모드</Korean>
             <Japanese>%1: 非互換MOD</Japanese>
+            <Chinese>%1：不兼容模组</Chinese>
         </Key>
     </Package>
     <Package name="Interactions_cigs">
         <Key ID="STR_cigs_core_eat_cig">
             <English>Eat</English>
             <French>Manger</French>
+            <Spanish>Comer</Spanish>
+            <Polish>Zjedz</Polish>
+            <Portuguese>Comer</Portuguese>
+            <Russian>Съесть</Russian>
             <German>Essen</German>
+            <Korean>먹기</Korean>
             <Japanese>食べる</Japanese>
+            <Chinese>吃掉</Chinese>
         </Key>
         <Key ID="STR_cigs_core_eat_cig_desc">
             <English>Eat the thing, duh</English>
             <French>Manger la chose, bien sûr</French>
+            <Spanish>Cómetelo, ya sabes</Spanish>
+            <Polish>Po prostu to zjedz</Polish>
+            <Portuguese>Só come isso, duh</Portuguese>
+            <Russian>Просто съешь это, да ладно</Russian>
             <German>Du hast schon richtig gelesen</German>
+            <Korean>그냥 먹어, 뭐</Korean>
             <Japanese>そりゃあ、食べるって意味だろ</Japanese>
+            <Chinese>就把它吃掉，懂吗</Chinese>
         </Key>
         <Key ID="STR_cigs_core_pay_respect">
             <English>Pay Respect to the fallen...</English>
             <French>Rendez hommage aux disparus...</French>
+            <Spanish>Rinde homenaje a los caídos...</Spanish>
+            <Polish>Oddaj cześć poległym...</Polish>
+            <Portuguese>Homenagear os caídos...</Portuguese>
+            <Russian>Почтить павших...</Russian>
             <German>Den Gefallenen Respekt zollen...</German>
+            <Korean>떨어진 자들에게 경의를 표하다...</Korean>
             <Japanese>亡くなった方々に敬意を表しましょう…</Japanese>
+            <Chinese>向逝者致敬……</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
             <English>Light Up your cigarette</English>
             <French>Allumer Cigarette</French>
+            <Spanish>Encender tu cigarrillo</Spanish>
+            <Polish>Zapalić swój papieros</Polish>
+            <Portuguese>Acender seu cigarro</Portuguese>
+            <Russian>Зажечь свою сигарету</Russian>
             <German>Zigarette anzünden</German>
+            <Korean>담배에 불 붙이기</Korean>
             <Japanese>煙草に火をつける</Japanese>
             <Chinese>點菸</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_custom">
             <English>Light Up your %1</English>
             <French>Illuminez votre %1</French>
+            <Spanish>Enciende tu %1</Spanish>
+            <Polish>Zapalić swój %1</Polish>
+            <Portuguese>Acenda seu %1</Portuguese>
+            <Russian>Зажгите свой %1</Russian>
+            <German>Zünde deinen %1 an</German>
+            <Korean>당신의 %1에 불을 붙이세요</Korean>
             <Japanese>%1 に火をつける</Japanese>
+            <Chinese>点燃你的 %1</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_desc">
             <English>Requires a Lighter or Matches in your inventory</English>
             <French>Nécessite un briquet ou des allumettes dans votre inventaire</French>
+            <Spanish>Necesitas un encendedor o cerillas en tu inventario</Spanish>
+            <Polish>Wymaga zapalniczki lub zapałek w ekwipunku</Polish>
+            <Portuguese>Precisa de um isqueiro ou fósforos no inventário</Portuguese>
+            <Russian>Нужна зажигалка или спички в инвентаре</Russian>
             <German>Benötigt Feuerzeug oder Streichhölzer im Inventar</German>
+            <Korean>인벤토리에 라이터 또는 성냥이 있어야 합니다</Korean>
             <Japanese>ライターまたはマッチを所持している必要があります</Japanese>
+            <Chinese>需要你背包里有打火机或火柴</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_their">
             <English>Light Up their cigarette</English>
             <French>Allumer Cigarette</French>
+            <Spanish>Encender su cigarrillo</Spanish>
+            <Polish>Zapalić ich papierosa</Polish>
+            <Portuguese>Acender o cigarro deles</Portuguese>
+            <Russian>Зажечь их сигарету</Russian>
             <German>Feuer geben</German>
+            <Korean>상대의 담배에 불 붙이기</Korean>
             <Japanese>火を貸す</Japanese>
             <Chinese>幫他點菸</Chinese>
         </Key>
         <Key ID="STR_cigs_core_stop_cig">
             <English>Put cigarette out</English>
             <French>Eteindre Cigarette</French>
+            <Spanish>Apagar el cigarrillo</Spanish>
+            <Polish>Gasić papierosa</Polish>
+            <Portuguese>Apagar o cigarro</Portuguese>
+            <Russian>Потушить сигарету</Russian>
             <German>Zigarette aus machen</German>
+            <Korean>담배 끄기</Korean>
             <Japanese>煙草の火を消す</Japanese>
             <Chinese>滅菸</Chinese>
         </Key>
@@ -372,7 +879,12 @@
         <Key ID="STR_cigs_core_takeFromPack">
             <English>Take from pack</English>
             <French>Prendre du paquet</French>
+            <Spanish>Sacar del paquete</Spanish>
+            <Polish>Wyjąć z paczki</Polish>
+            <Portuguese>Pegar do pacote</Portuguese>
+            <Russian>Взять из пачки</Russian>
             <German>Aus der Sachtel nehmen</German>
+            <Korean>담배 팩에서 꺼내기</Korean>
             <Japanese>箱から煙草を出す</Japanese>
             <Chinese>抽一根菸出來</Chinese>
         </Key>
@@ -381,18 +893,36 @@
         <Key ID="STR_cigs_core_sucking_start">
             <English>Start sucking</English>
             <French>Lèche la sucette</French>
+            <Spanish>Empezar a chupar</Spanish>
+            <Polish>Zacząć ssać</Polish>
+            <Portuguese>Começar a chupar</Portuguese>
+            <Russian>Начать сосать</Russian>
             <German>Lutsch den Lutscher</German>
+            <Korean>빨기 시작</Korean>
             <Japanese>吸い始める</Japanese>
             <Chinese>放進嘴巴含</Chinese>
         </Key>
         <Key ID="STR_cigs_core_sucking_start_desc">
             <English>Licking whatever’s in your mouth</English>
+            <French>Lèche tout ce qui est dans ta bouche</French>
+            <Spanish>Lamiendo lo que esté en tu boca</Spanish>
+            <Polish>Lizanie tego, co jest w ustach</Polish>
+            <Portuguese>Lambendo o que estiver na sua boca</Portuguese>
+            <Russian>Облизываю то, что у тебя во рту</Russian>
+            <German>Leck daran, was in deinem Mund ist</German>
+            <Korean>입 안에 있는 걸 핥는다</Korean>
             <Japanese>口の中にあるものを何でも舐める</Japanese>
+            <Chinese>舔嘴里的一切东西</Chinese>
         </Key>
         <Key ID="STR_cigs_core_sucking_stop">
             <English>Stop shoulducking</English>
             <French>Arrêter de sucer</French>
+            <Spanish>Dejar de chupar</Spanish>
+            <Polish>Przestać ssać</Polish>
+            <Portuguese>Parar de chupar</Portuguese>
+            <Russian>Перестать сосать</Russian>
             <German>Stop das Lutschen</German>
+            <Korean>빨기 중지</Korean>
             <Japanese>吸うのを止める</Japanese>
             <Chinese>從嘴巴拿出來</Chinese>
         </Key>
@@ -401,28 +931,48 @@
         <Key ID="STR_cigs_core_lighter">
             <English>Lighter</English>
             <French>Briquet</French>
+            <Spanish>Encendedor</Spanish>
+            <Polish>Zapalniczka</Polish>
+            <Portuguese>Isqueiro</Portuguese>
+            <Russian>Зажигалка</Russian>
             <German>Feuerzeug</German>
+            <Korean>라이터</Korean>
             <Japanese>ライター</Japanese>
             <Chinese>打火機</Chinese>
         </Key>
         <Key ID="STR_cigs_core_lighter_desc">
             <English>Can light up 100 cigarettes.</English>
             <French>Peut allumer 100 cigarettes</French>
+            <Spanish>Puede encender 100 cigarrillos.</Spanish>
+            <Polish>Może zapalić 100 papierosów.</Polish>
+            <Portuguese>Pode acender 100 cigarros.</Portuguese>
+            <Russian>Может зажечь 100 сигарет.</Russian>
             <German>Kann bis zu 100 Zigaretten anzünden.</German>
+            <Korean>100개의 담배를 켤 수 있습니다.</Korean>
             <Japanese>煙草100本分に着火可能。</Japanese>
             <Chinese>可以點一百根菸。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_matches">
             <English>Matches</English>
             <French>Allumettes</French>
+            <Spanish>Cerillas</Spanish>
+            <Polish>Zapałki</Polish>
+            <Portuguese>Fósforos</Portuguese>
+            <Russian>Спички</Russian>
             <German>Streichhölzer</German>
+            <Korean>성냥</Korean>
             <Japanese>マッチ箱</Japanese>
             <Chinese>火柴</Chinese>
         </Key>
         <Key ID="STR_cigs_core_matches_desc">
             <English>Contains 10 matches.</English>
             <French>Contient 10 allumettes.</French>
+            <Spanish>Contiene 10 cerillas.</Spanish>
+            <Polish>Zawiera 10 zapałek.</Polish>
+            <Portuguese>Contém 10 fósforos.</Portuguese>
+            <Russian>В коробке 10 спичек.</Russian>
             <German>Enthält 10 Streichhölzer</German>
+            <Korean>성냥 10개가 들어 있습니다.</Korean>
             <Japanese>マッチ10本入り。</Japanese>
             <Chinese>內含十根火柴。</Chinese>
         </Key>
@@ -431,27 +981,52 @@
         <Key ID="STR_cigs_core_author">
             <English>OverlordZorn</English>
             <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
             <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
         </Key>
     </Package>
     <Package name="Notification">
         <Key ID="STR_cigs_core_gave_fire">
             <English>%1 gave you a light.</English>
             <French>%1 vous a donné du feu.</French>
+            <Spanish>%1 te dio fuego.</Spanish>
+            <Polish>%1 dał ci ogień.</Polish>
+            <Portuguese>%1 te deu fogo.</Portuguese>
+            <Russian>%1 дал тебе огонь.</Russian>
             <German>%1 hat dir Feuer gegeben.</German>
+            <Korean>%1이(가) 불을 줬습니다.</Korean>
             <Japanese>%1 が火を貸してくれた。</Japanese>
+            <Chinese>%1 给了你一束火。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_is_Empty">
             <English>%1 is now empty.</English>
             <French>%1 est maintenant vide.</French>
+            <Spanish>%1 ya está vacío.</Spanish>
+            <Polish>%1 jest teraz pusty.</Polish>
+            <Portuguese>%1 agora está vazio.</Portuguese>
+            <Russian>%1 теперь пуст.</Russian>
             <German>%1 ist nun leer.</German>
+            <Korean>%1이(가) 비어 있습니다.</Korean>
             <Japanese>%1 はもう空だ。</Japanese>
+            <Chinese>%1 现在空了。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_taste_flavor">
             <English>Hmm, it tastes like %1!</English>
             <French>Hmm, ça a un goût de %1!</French>
+            <Spanish>Hmm, ¡sabe a %1!</Spanish>
+            <Polish>Hmm, smakuje jak %1!</Polish>
+            <Portuguese>Hmm, parece com %1!</Portuguese>
+            <Russian>Хм, это похоже на %1!</Russian>
             <German>Hmm, es schmeckt nach %1!</German>
+            <Korean>음, %1 맛이 나네!</Korean>
             <Japanese>うーん、これは %1 みたいな味だ!</Japanese>
+            <Chinese>嗯，它尝起来像 %1！</Chinese>
         </Key>
     </Package>
 </Project>

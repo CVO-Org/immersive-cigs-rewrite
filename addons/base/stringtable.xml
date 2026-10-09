@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_base_cigarette">
             <English>Base Cigarette</English>
             <French>Base Cigarette</French>
+            <Spanish>Cigarrillo Base</Spanish>
+            <Polish>Papieros Base</Polish>
+            <Portuguese>Cigarro Base</Portuguese>
+            <Russian>Сигарета Base</Russian>
             <German>Base Zigarette</German>
+            <Korean>Base 담배</Korean>
             <Japanese>紙巻たばこ Base</Japanese>
             <Chinese>Base 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_base_cigpack">
             <English>Base Cigarette Pack</English>
             <French>Base Paquet de cigarettes</French>
+            <Spanish>Paquete de cigarrillos Base</Spanish>
+            <Polish>Paczka papierosów Base</Polish>
+            <Portuguese>Maço de cigarros Base</Portuguese>
+            <Russian>Пачка сигарет Base</Russian>
             <German>Base Zigarettenschachtel</German>
+            <Korean>Base 담배 팩</Korean>
             <Japanese>箱入り紙巻たばこ Base</Japanese>
             <Chinese>Base 一包菸</Chinese>
         </Key>
         <Key ID="STR_cigs_base_cigpack_desc">
             <English>Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Contiene 20 cigarrillos.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Zawiera 20 papierosów.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Contém 20 cigarros.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Содержит 20 сигарет.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>20개의 담배가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
             <Chinese>內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="str_cigs_base_author">
             <English>Zorn / Bromine</English>
             <French>Zorn / Bromine</French>
+            <Spanish>Zorn / Bromine</Spanish>
+            <Polish>Zorn / Bromine</Polish>
+            <Portuguese>Zorn / Bromine</Portuguese>
+            <Russian>Zorn / Bromine</Russian>
             <German>Zorn / Bromine</German>
+            <Korean>Zorn / Bromine</Korean>
             <Japanese>Zorn / Bromine</Japanese>
             <Chinese>Zorn / Bromine</Chinese>
         </Key>

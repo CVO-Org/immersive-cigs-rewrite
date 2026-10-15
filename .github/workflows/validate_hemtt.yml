@@ -19,10 +19,10 @@ jobs:
       # The placeholders are assembled from T on purpose, so the "find and replace" during mod setup doesn't alter this step
       run: |
         T='~'
-        files=$(grep -rlI --exclude-dir=.git --exclude-dir=include -e "${T}MAINPREFIX${T}" -e "${T}PREFIX${T}" -e "${T}TEMPLATE_ADDON${T}" . || true)
+        files=$(grep -rlI --exclude-dir=.git --exclude-dir=include -e "${T}MAINPREFIX${T}" -e "${T}PREFIX${T}" . || true)
         if [ -n "$files" ]; then
           echo "Template placeholders found, filling them in for this check"
-          echo "$files" | xargs sed -i "s/${T}MAINPREFIX${T}/z/g; s/${T}PREFIX${T}/tmpl/g; s/${T}TEMPLATE_ADDON${T}/template_addon/g"
+          echo "$files" | xargs sed -i "s/${T}MAINPREFIX${T}/z/g; s/${T}PREFIX${T}/tmpl/g"
         fi
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1

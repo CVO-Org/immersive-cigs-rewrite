@@ -1,41 +1,53 @@
-name: Stringtable.xml
+# Keeps an open issue titled "Translations" updated with the localization coverage report of `hemtt ln coverage`
+# The issue is created automatically if it does not exist yet
+
+name: "Github: Translation Issue"
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-      - master
+    paths:
+      - '**/stringtable.xml'
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
   update-translations:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read        # allow reading repo files
-      issues: write         # allow editing issues (required!)
-      pull-requests: read   # optional safety
-
     env:
-      # GitHub automatically provides this token with repo write permissions
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Optional issue number secret or variable (safe if missing)
-      TRANSLATION_ISSUE: ${{ secrets.TRANSLATION_ISSUE || vars.TRANSLATION_ISSUE || '' }}
-
+      GH_REPO: ${{ github.repository }}
     steps:
-      - name: 🧰 Checkout repository
+      - name: Checkout the source code
         uses: actions/checkout@v4
 
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
 
-      - name: 📦 Install dependencies
+      - name: Generate translation report
         run: |
-          python -m pip install --upgrade pip
-          pip install PyGithub
+          set -o pipefail
+          {
+            echo "**[Translation Guide](https://ace3.acemod.org/wiki/development/how-to-translate-ace3.html)**"
+            echo
+            # hemtt also logs to stdout - only keep the markdown table
+            hemtt ln coverage --format markdown | grep '^|'
+          } > report.md
+          cat report.md
 
-      - name: 🧪 Run translation diagnostics and update issue
+      - name: Create or update the "Translations" issue
         run: |
-          python tools/stringtableDeploy.py
+          issue=$(gh issue list --state open --limit 1000 --json number,title \
+            --jq '[.[] | select(.title | ascii_downcase == "translations")][0].number // empty')
+
+          if [ -z "$issue" ]; then
+            gh issue create --title "Translations" --body-file report.md
+          elif [ "$(gh issue view "$issue" --json body --jq .body)" = "$(cat report.md)" ]; then
+            echo "Issue #$issue is already up to date"
+          else
+            gh issue edit "$issue" --body-file report.md
+          fi

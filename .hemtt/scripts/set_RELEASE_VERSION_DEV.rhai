@@ -1,6 +1,6 @@
 let content = "#define _DEV_VERSION_ 1\n";
 
-// Write the modified contents to script_version.hpp
+// Write the dev/stable flag to debug_mode.hpp
 HEMTT_RFS.join("addons")
     .join("main")
     .join("debug_mode.hpp")

@@ -1,4 +1,4 @@
-name: Require Any Label
+name: "Github: Require Label"
 
 on:
   pull_request:

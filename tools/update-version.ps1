@@ -5,18 +5,15 @@ param (
 # Hardcoded path to script_version.hpp
 $filePath = "addons/main/script_version.hpp"
 
-# Strip leading "v" and ignore any ".RC.x"
-$cleanVersion = $Version -replace '^v', '' -replace '\.RC\..*$', ''
-$parts = $cleanVersion.Split('.')
-
-if ($parts.Count -lt 3) {
+# Take MAJOR.MINOR.PATCH from the tag - ignores a leading "v" and any suffix like ".RC.1" or "-rc1"
+if ($Version -notmatch '^v?(\d+)\.(\d+)\.(\d+)') {
     Write-Error "Invalid version format: $Version"
     exit 1
 }
 
-$major = $parts[0]
-$minor = $parts[1]
-$patch = $parts[2]
+$major = $Matches[1]
+$minor = $Matches[2]
+$patch = $Matches[3]
 
 Write-Host "Updating $filePath → MAJOR=$major, MINOR=$minor, PATCH=$patch"
 

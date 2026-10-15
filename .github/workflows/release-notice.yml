@@ -1,0 +1,32 @@
+# Posts the GitHub release notes into a Discord channel via webhook
+#
+# How to use
+#
+# 1. Add DISCORD_WEBHOOK_URL as github repo secret
+# 2. Update username, avatar, content (role ping) and footer below
+# 3. Remove the `if: false` line of the job
+
+name: "Release: Discord Notice"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  github-releases-to-discord:
+    if: false # Remove this line once the workflow is set up - see "How to use" above
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Github Releases To Discord
+        uses: SethCohen/github-releases-to-discord@v1.19.0
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "Example Mod"
+          # avatar_url: "https://raw.githubusercontent.com/<owner>/<repo>/main/img/<logo>.png"
+          # content: "||<@&ROLE_ID>||"
+          footer_title: "Example Mod"
+          # footer_icon_url: "https://raw.githubusercontent.com/<owner>/<repo>/main/img/<logo>.png"
+          footer_timestamp: true

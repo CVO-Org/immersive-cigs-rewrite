@@ -1,23 +1,30 @@
-# .github/release.yml
+# Used by githubs "Generate release notes" button on the release page
+# Unlike release-drafter, a PR is only listed in the FIRST matching category
 changelog:
   exclude:
     labels:
-      - changelog/ignore
-categories:
-  - title: 'Features 🚀'
-    labels:
-      - pr/new
-      - pr/improvement
-  - title: 'Bug Fixes 🐛'
-    labels:
-      - pr/fix
-  - title: 'Documentation 📚'
-    labels:
-      - pr/docs
-  - title: 'Translations 📚'
-    labels:
-      - pr/translation
-  - title: 'Maintenance 🛠️'
-    labels:
-      - pr/maintenance
-      - pr/cleanup
+      - pr/ignore
+  categories:
+    - title: 'Features 🚀'
+      labels:
+        - pr/new
+        - pr/improvement
+    - title: 'Bug Fixes 🐛'
+      labels:
+        - pr/fix
+    - title: 'Settings ⚙️'
+      labels:
+        - pr/settings
+    - title: 'Translations 📚'
+      labels:
+        - pr/translation
+    - title: 'Documentation 📚'
+      labels:
+        - pr/docs
+    - title: 'Maintenance 🛠️'
+      labels:
+        - pr/maintenance
+        - pr/cleanup
+    - title: 'Breaking Changes ⚠️'
+      labels:
+        - pr/breaking

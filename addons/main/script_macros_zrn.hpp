@@ -15,7 +15,6 @@
 // #define QXML(var1) Q(XML(var1))
 #define SETLSTRING(key) [LSTRING(DOUBLES(set,key)),LSTRING(TRIPLES(set,key,desc))]
 
-
 // hashMapObjects
 #define OGET(var1) (_self get Q(var1))
 #define OSET(var1,var2) (_self set [Q(var1), var2])
@@ -75,35 +74,33 @@
 #define QPATH_TO_ADDON(var1) QUOTE(\MAINPREFIX\PREFIX\addons\COMPONENT\var1)
 #define QQPATH_TO_ADDON(var1) Q(QUOTE(\MAINPREFIX\PREFIX\addons\COMPONENT\var1))
 
-
-
 #define DEBUG_HEADER format [QUOTE([PREFIX][COMPONENT](%1)),_fnc_scriptName]
 
-#define ZRN_LOG_MSG(MSG) diag_log (DEBUG_HEADER + " " + QUOTE(MSG))
+#define ZRN_LOG_MSG(MSG) diag_log text (DEBUG_HEADER + " " + QUOTE(MSG))
 
 #ifdef _ZRN_DEBUG_
     #define ZRN_SCRIPTNAME(var1) private _fnc_scriptName = Q(var1)
 
-    #define ZRN_LOG_MSG_1(MSG,A) diag_log (DEBUG_HEADER + (format [' %1 - A: %2',QUOTE(MSG),RETNIL(A)]))
-    #define ZRN_LOG_MSG_2(MSG,A,B) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3',QUOTE(MSG),RETNIL(A),RETNIL(B)]))
-    #define ZRN_LOG_MSG_3(MSG,A,B,C) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C)]))
-    #define ZRN_LOG_MSG_4(MSG,A,B,C,D) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D)]))
-    #define ZRN_LOG_MSG_5(MSG,A,B,C,D,E) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E)]))
-    #define ZRN_LOG_MSG_6(MSG,A,B,C,D,E,F) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F)]))
-    #define ZRN_LOG_MSG_7(MSG,A,B,C,D,E,F,G) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7 - H: %8',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G)]))
-    #define ZRN_LOG_MSG_8(MSG,A,B,C,D,E,F,G,H) diag_log (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7 - H: %8 - I: %9',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G),RETNIL(H)]))
+    #define ZRN_LOG_MSG_1(MSG,A) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2',QUOTE(MSG),RETNIL(A)]))
+    #define ZRN_LOG_MSG_2(MSG,A,B) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3',QUOTE(MSG),RETNIL(A),RETNIL(B)]))
+    #define ZRN_LOG_MSG_3(MSG,A,B,C) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C)]))
+    #define ZRN_LOG_MSG_4(MSG,A,B,C,D) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D)]))
+    #define ZRN_LOG_MSG_5(MSG,A,B,C,D,E) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E)]))
+    #define ZRN_LOG_MSG_6(MSG,A,B,C,D,E,F) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F)]))
+    #define ZRN_LOG_MSG_7(MSG,A,B,C,D,E,F,G) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7 - H: %8',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G)]))
+    #define ZRN_LOG_MSG_8(MSG,A,B,C,D,E,F,G,H) diag_log text (DEBUG_HEADER + (format [' %1 - A: %2 - B: %3 - C: %4 - D: %5 - E: %6 - F: %7 - H: %8 - I: %9',QUOTE(MSG),RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G),RETNIL(H)]))
 
-    #define ZRN_LOG_1(A) diag_log (DEBUG_HEADER + (format [' A: %1',RETNIL(A)]))
-    #define ZRN_LOG_2(A,B) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2',RETNIL(A),RETNIL(B)]))
-    #define ZRN_LOG_3(A,B,C) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3',RETNIL(A),RETNIL(B),RETNIL(C)]))
-    #define ZRN_LOG_4(A,B,C,D) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D)]))
-    #define ZRN_LOG_5(A,B,C,D,E) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E)]))
-    #define ZRN_LOG_6(A,B,C,D,E,F) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F)]))
-    #define ZRN_LOG_7(A,B,C,D,E,F,G) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6 - H: %7',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G)]))
-    #define ZRN_LOG_8(A,B,C,D,E,F,G,H) diag_log (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6 - H: %7 - I: %8',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G),RETNIL(H)]))
+    #define ZRN_LOG_1(A) diag_log text (DEBUG_HEADER + (format [' A: %1',RETNIL(A)]))
+    #define ZRN_LOG_2(A,B) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2',RETNIL(A),RETNIL(B)]))
+    #define ZRN_LOG_3(A,B,C) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3',RETNIL(A),RETNIL(B),RETNIL(C)]))
+    #define ZRN_LOG_4(A,B,C,D) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D)]))
+    #define ZRN_LOG_5(A,B,C,D,E) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E)]))
+    #define ZRN_LOG_6(A,B,C,D,E,F) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F)]))
+    #define ZRN_LOG_7(A,B,C,D,E,F,G) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6 - H: %7',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G)]))
+    #define ZRN_LOG_8(A,B,C,D,E,F,G,H) diag_log text (DEBUG_HEADER + (format [' A: %1 - B: %2 - C: %3 - D: %4 - E: %5 - F: %6 - H: %7 - I: %8',RETNIL(A),RETNIL(B),RETNIL(C),RETNIL(D),RETNIL(E),RETNIL(F),RETNIL(G),RETNIL(H)]))
 
-    #define ZRN_LOG_HMO(var1) { if ('#' in _x || 'Meth' in _x) then {continue}; diag_log (DEBUG_HEADER + (format [' %3 - %1 - %2', _x, _y, Q(MSG)])) } forEach var1;
-    #define ZRN_LOG_MSG_HMO(MSG,var1) { if ('#' in _x || 'Meth' in _x) then {continue}; diag_log (DEBUG_HEADER + (format [' %3 - %1 - %2', _x, _y, Q(MSG)])) } forEach var1;
+    #define ZRN_LOG_HMO(var1) { if ('#' in _x || 'Meth' in _x) then {continue}; diag_log text (DEBUG_HEADER + (format [' %3 - %1 - %2', _x, _y, Q(MSG)])) } forEach var1;
+    #define ZRN_LOG_MSG_HMO(MSG,var1) { if ('#' in _x || 'Meth' in _x) then {continue}; diag_log text (DEBUG_HEADER + (format [' %3 - %1 - %2', _x, _y, Q(MSG)])) } forEach var1;
 
 #else
     #define ZRN_SCRIPTNAME(var1)
@@ -129,3 +126,7 @@
     #define ZRN_LOG_HMO(var1)
     #define ZRN_LOG_MSG_HMO(MSG,var1)
 #endif
+
+// UI IDCs/IDDs - example: IDC(listbox) -> PREFIX_idc_COMPONENT_listbox
+#define IDC(VAR) DOUBLES(TRIPLES(PREFIX,idc,COMPONENT),VAR)
+#define IDD(VAR) DOUBLES(TRIPLES(PREFIX,idd,COMPONENT),VAR)

@@ -3,7 +3,7 @@
 
 [
     QSET(dynamicSmoking_enable),                                                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(dynamicSmoking_enable),
                                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_dynamicAiSmoking)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -16,7 +16,7 @@
 
 [
     QSET(dynamicSmoking_slot),                                                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "LIST",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "LIST",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(dynamicSmoking_slot),
                                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_dynamicAiSmoking)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -29,7 +29,7 @@
 
 [
     QSET(dynamicSmoking_slot_remove),                                                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(dynamicSmoking_slot_remove),
                                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_dynamicAiSmoking)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -42,7 +42,7 @@
 
 [
     QSET(dynamicSmoking_time_avg),                                                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "SLIDER",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "SLIDER",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(dynamicSmoking_time_avg),
                                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_dynamicAiSmoking)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -55,7 +55,7 @@
 
 [
     QSET(dynamicSmoking_checkUnitInventory),                                                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(dynamicSmoking_checkUnitInventory),
                                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_dynamicAiSmoking)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>

@@ -1,7 +1,7 @@
 // Smoking Habbits of the individual player
 [
     QSET(smoking_intensity),                                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "LIST",                                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "LIST",                                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(smoking_intensity),
                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_habits_smoking)],     //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -15,7 +15,7 @@
 
 [
     QSET(smoking_frequency),                                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "LIST",                                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "LIST",                                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(smoking_frequency),
                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_habits_smoking)],     //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -31,7 +31,7 @@
 // Singleplayer setLightnings
 [
     QSET(sp_addItems),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(sp_addItems),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_sp)],                //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -60,7 +60,7 @@ private _array_lighters = [ _cfgs apply { configName _x }, _cfgs apply _code, 0 
 
 [
     QSET(sp_addLighter),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(sp_addLighter),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_sp)],        //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -72,7 +72,7 @@ private _array_lighters = [ _cfgs apply { configName _x }, _cfgs apply _code, 0 
 
 [
     QSET(sp_addLighter_type),                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "LIST",                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "LIST",                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(sp_addLighter_type),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_sp)],        //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -84,7 +84,7 @@ private _array_lighters = [ _cfgs apply { configName _x }, _cfgs apply _code, 0 
 
 [
     QSET(sp_addCigpack),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(sp_addCigpack),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_sp)],                    //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -101,7 +101,7 @@ private _array_packs = [ _cfgs apply { configName _x }, _cfgs apply { getText ( 
 
 [
     QSET(sp_addCigpack_type),                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "LIST",                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "LIST",                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(sp_addCigpack_type),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_sp)],        //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -117,7 +117,7 @@ private _aceLoaded = isClass (configFile >> "CfgPatches" >> "ace_arsenal");
 if (_aceLoaded) then {
     [
         QSET(ace_arsenal_tab),                      //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-        "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+        "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
         SETLSTRING(ace_arsenal_tab),
                                                     //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_player),LSTRING(set_subCat_ace_arsenal)],        //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -132,7 +132,7 @@ if (_aceLoaded) then {
 // Smoke Particle Intensity
 [
     QSET(smoke_particles),                            //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(effect_smoke_particles),
                                                     //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_player),LSTRING(set_subCat_effects)], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>

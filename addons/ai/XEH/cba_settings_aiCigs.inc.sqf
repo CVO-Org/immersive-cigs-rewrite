@@ -3,7 +3,7 @@
 
 [
     QSET(aiCigs_enable),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(aiCigs_enable),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs)],            //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -15,7 +15,7 @@
 
 [
     QSET(aiCigs_chance),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "SLIDER",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "SLIDER",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(aiCigs_chance),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs)],                //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -27,7 +27,7 @@
 
 [
     QSET(aiCigs_delay),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "SLIDER",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "SLIDER",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(aiCigs_delay),
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs)],                //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>

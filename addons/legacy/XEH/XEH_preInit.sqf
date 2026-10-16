@@ -6,7 +6,7 @@ https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#create-a-custom-setti
 
 [
     QSET(displayMusic),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     ["Display Music Title","This enables the message of the currently played music title by the CVO Music System"],
                                             //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     ["CVO", "CVO Music"],                    //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -19,7 +19,7 @@ https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#create-a-custom-setti
 
 [
     QSET(loudout_replacer_enable_personal),                        //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(loudout_replacer_enable_personal),
                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [ELSTRING(core,set_mainCat_common), LSTRING(set_subCat_loadout)],    //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -31,7 +31,7 @@ https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#create-a-custom-setti
 
 [
     QSET(loudout_replacer_enable_mission),                        //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                                    //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(loudout_replacer_enable_mission),
                                                                 //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [ELSTRING(core,set_mainCat_common), LSTRING(set_subCat_loadout)],    //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>

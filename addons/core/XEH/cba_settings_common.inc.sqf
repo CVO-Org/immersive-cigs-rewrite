@@ -2,7 +2,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
     // Adv. Fatigue
     [
         QSET(adv_fatigue_enabled),                        //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-        "CHECKBOX",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+        "CHECKBOX",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
         SETLSTRING(adv_fatigue_enabled),
                                                         //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_common), localize "STR_ACE_Advanced_Fatigue_DisplayName"], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -14,7 +14,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
 
     [
         QSET(adv_fatigue_modifier),                        //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
         SETLSTRING(adv_fatigue_modifier),
                                                         //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_common), localize "STR_ACE_Advanced_Fatigue_DisplayName"], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -26,7 +26,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
 
     [
         QSET(adv_fatigue_cough_modifier),                //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
         SETLSTRING(adv_fatigue_cough_modifier),
                                                         //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_common), localize "STR_ACE_Advanced_Fatigue_DisplayName"], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -38,7 +38,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
 
     [
         QSET(adv_fatigue_decrease_delay),                        //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+        "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
         SETLSTRING(adv_fatigue_decrease_delay),
                                                         //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_common), localize "STR_ACE_Advanced_Fatigue_DisplayName"], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -54,7 +54,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
 // Effects
 [
     QSET(effect_combustion_chance),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "SLIDER",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(effect_combustion_chance),
                                                     //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_common),LSTRING(set_subCat_effects)], //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
@@ -68,7 +68,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_fatigue") ) then {
 // Common
 [
     QSET(require_holstered_weapon),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
-    "CHECKBOX",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
+    "CHECKBOX",                                        //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER", "COLOR" or "TIME" <STRING>
     SETLSTRING(require_holstered_weapon),
                                                     //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
     [LSTRING(set_mainCat_common)],                     //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>

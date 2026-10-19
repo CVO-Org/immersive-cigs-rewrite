@@ -30,12 +30,8 @@ addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 
 // Default Hashmap
 
-EGVAR(aiCigs,default) = createHashMapFromArray [
-    [ "WEST", [ QEGVAR(morley,cigpack),     QEGVAR(crayons,crayonpack) ]  ],
-    [ "EAST", [ QEGVAR(apollo,cigpack),     QEGVAR(kosmos,cigpack)     ]  ],
-    [ "GUER", [ QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) ] ],
-    [ "CIV",  [ QEGVAR(morley,cigpack),     QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) ] ]
-];
+// Defined in config, see defaultPacks.hpp - shared with the default selection of the aiCigs module
+EGVAR(aiCigs,default) = createHashMapFromArray ( [ "WEST", "EAST", "GUER", "CIV" ] apply { [ _x, getArray (configFile >> QGVAR(defaultPacks) >> _x) ] } );
 
 
 ///////////// Dynamic AI Smoking

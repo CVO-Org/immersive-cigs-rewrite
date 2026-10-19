@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=37;
+	toggles=1061;
 	class ItemIDProvider
 	{
-		nextID=392;
+		nextID=396;
 	};
 	class Camera
 	{
-		pos[]={1710.6022,16.727694,5197.1782};
-		dir[]={-0.31146541,-0.55817956,-0.76904488};
-		up[]={-0.20953321,0.82971805,-0.51736045};
-		aside[]={-0.92687207,-1.9019353e-08,0.37538549};
+		pos[]={1723.2063,18.712299,5203.7417};
+		dir[]={-0.41660759,-0.51325488,-0.75034225};
+		up[]={-0.2491456,0.85823601,-0.44872975};
+		aside[]={-0.8742829,1.2111195e-07,0.48542267};
 	};
 };
 binarizationWanted=0;
@@ -4177,9 +4177,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1697.175,5,5185.0918};
+				position[]={1699.215,5,5191.1138};
 			};
-			id=391;
+			id=395;
 			type="cigs_aiCigs_module";
 			class CustomAttributes
 			{
@@ -4192,7 +4192,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[]";
 						};
 					};
 				};
@@ -4205,7 +4205,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[]";
 						};
 					};
 				};
@@ -4218,7 +4218,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[]";
 						};
 					};
 				};
@@ -4231,7 +4231,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[]";
 						};
 					};
 				};

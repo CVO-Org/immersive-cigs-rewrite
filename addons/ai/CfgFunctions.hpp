@@ -46,6 +46,11 @@ class CfgFunctions {
             file = PATH_TO_FUNC_SUB(modules);
             
             class aiCigs_module {};
+
+            class packList_load {};
+            class packList_save {};
+            class packList_setAll {};
+            class packList_parse {};
         };
     };
 };

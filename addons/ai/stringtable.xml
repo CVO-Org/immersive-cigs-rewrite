@@ -309,26 +309,19 @@ Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
             <Japanese>AIのタバコ設定</Japanese>
             <Chinese>配置 AI 烟草</Chinese>
         </Key>
-        <Key ID="STR_cigs_aiCigs_module_tooltip">
-            <English>Provide classnames of cigarette packages for this side.\nSeperated by , or space</English>
-            <French>Fournit les noms de classe des paquets de cigarettes pour ce côté.
-Séparés par , ou espace</French>
-            <Spanish>Proporciona los nombres de clase de los paquetes de cigarrillos para este bando.
-Separados por , o espacio</Spanish>
-            <Polish>Podaj nazwy klas paczek papierosów dla tej strony.
-Oddzielone przecinkiem lub spacją</Polish>
-            <Portuguese>Fornece os nomes de classe dos pacotes de cigarros para este lado.
-Separados por , ou espaço</Portuguese>
-            <Russian>Указывает имена классов пачек сигарет для этой стороны.
-Разделяются запятой или пробелом</Russian>
-            <German>Gibt die Klassennamen der Zigarettenpakete für diese Seite an.
-Getrennt durch , oder Leerzeichen</German>
-            <Korean>이 편대의 담배 팩 클래스명을 입력합니다.
-, 또는 공백으로 구분합니다.</Korean>
-            <Japanese>この陣営のタバコのクラス名を指定します。
-, またはスペースで区切る</Japanese>
-            <Chinese>为此阵营提供香烟包的类名。
-使用 , 或空格分隔</Chinese>
+        <Key ID="STR_cigs_aiCigs_module_packList_deselectAll">
+            <English>Deselect all</English>
+            <German>Alle abwählen</German>
+        </Key>
+        <Key ID="STR_cigs_aiCigs_module_packList_selectAll">
+            <English>Select all</English>
+            <German>Alle auswählen</German>
+        </Key>
+        <Key ID="STR_cigs_aiCigs_module_packList_tooltip">
+            <English>Packages which AI units of this side can receive. Each package is picked at random from the selected ones.
+Nothing selected: this side receives no packages.</English>
+            <German>Pakete, die KI-Einheiten dieser Seite erhalten können. Jedes Paket wird zufällig aus den ausgewählten gezogen.
+Nichts ausgewählt: diese Seite erhält keine Pakete.</German>
         </Key>
     </Package>
 </Project>

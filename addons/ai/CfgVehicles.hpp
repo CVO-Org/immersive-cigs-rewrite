@@ -2,8 +2,8 @@ class CfgVehicles {
     class Logic;
     class Module_F: Logic {
         class AttributesBase {
-            // class Default;
-            class Edit;                 // Default edit box (i.e. text input field)
+            class Default;
+            // class Edit;                 // Default edit box (i.e. text input field)
             // class Combo;                // Default combo box (i.e. drop-down menu)
             // class Checkbox;             // Default checkbox (returned value is Boolean)
             // class CheckboxNumber;       // Default checkbox (returned value is Number)
@@ -41,33 +41,27 @@ class CfgVehicles {
         // Module attributes (uses https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Attributes#Entity_Specific):
         class Attributes: AttributesBase {
             // Module-specific arguments:
-            class EGVAR(aiCigs,west): Edit {
-                displayName = "WEST";
-                tooltip = ECSTRING(aiCigs,module_tooltip);
+            // Value: stringified array of the selected classnames - older missions hold a comma separated list, see cigs_ai_fnc_packList_parse
+            // Default: the default packages of the side, see defaultPacks.hpp
+            class EGVAR(aiCigs,west): Default {
                 property = QEGVAR(aiCigs,west);
-                // Default text for the input box:
-                defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
+                control = QGVAR(packList_west);
+                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'WEST'));
             };
-            class EGVAR(aiCigs,east): Edit {
-                displayName = "EAST";
-                tooltip = ECSTRING(aiCigs,module_tooltip);
+            class EGVAR(aiCigs,east): Default {
                 property = QEGVAR(aiCigs,east);
-                // Default text for the input box:
-                defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
+                control = QGVAR(packList_east);
+                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'EAST'));
             };
-            class EGVAR(aiCigs,guer): Edit {
-                displayName = "GUER";
-                tooltip = ECSTRING(aiCigs,module_tooltip);
+            class EGVAR(aiCigs,guer): Default {
                 property = QEGVAR(aiCigs,guer);
-                // Default text for the input box:
-                defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
+                control = QGVAR(packList_guer);
+                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'GUER'));
             };
-            class EGVAR(aiCigs,civ): Edit {
-                displayName = "CIV";
-                tooltip = ECSTRING(aiCigs,module_tooltip);
+            class EGVAR(aiCigs,civ): Default {
                 property = QEGVAR(aiCigs,civ);
-                // Default text for the input box:
-                defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
+                control = QGVAR(packList_civ);
+                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'CIV'));
             };
 
             class ModuleDescription: ModuleDescription {}; // Module description should be shown last
@@ -76,7 +70,7 @@ class CfgVehicles {
 
         // Module description (must inherit from base class, otherwise pre-defined entities won't be available)
         class ModuleDescription: ModuleDescription {
-            description = "Defines classnames of pop or cigarettepackages to be allocated to each side.\nMultiple entries possible - seperated by ,";    // Short description, will be formatted as structured text
+            description = "Defines which pop or cigarette packages will be allocated to each side.";    // Short description, will be formatted as structured text
             sync[] = {};                // Array of synced entities (can contain base classes)
         };
     };

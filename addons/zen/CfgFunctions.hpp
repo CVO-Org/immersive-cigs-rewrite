@@ -14,6 +14,7 @@ class CfgFunctions {
             class makeUnitSmoke_init { preInit = 1; };
             class makeUnitSmoke_module {};
             class makeUnitSmoke_statement {};
+            class makeUnitSmoke_server {};
         };
         class stopUnitSmoke {
             file = PATH_TO_FUNC_SUB(stopUnitSmoke);

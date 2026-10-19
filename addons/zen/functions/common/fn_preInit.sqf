@@ -16,3 +16,5 @@
 */
 
 [QGVAR(EH_addItem), CBA_fnc_addItem] call CBA_fnc_addEventHandler;
+
+if (isServer) then { [QGVAR(EH_makeUnitSmoke), FUNC(makeUnitSmoke_server)] call CBA_fnc_addEventHandler; };

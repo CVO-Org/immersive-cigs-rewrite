@@ -19,12 +19,8 @@ params ["_return", "_params"];
 _return params ["_return_cigpacks", "_return_lighters", "_return_slot", "_addToDynamicSmoking"];
 _params params ["_posASL", "_unit"];
 
+// "SIDE" stays as is - resolved on the server, where the package tables exist
 private _cigpack = switch (_return_cigpacks) do {
-    case "SIDE": {
-        private _package = selectRandom ( _unit call EFUNC(ai,getCigItems) );
-        if (isNil "_package") then { _package = QEGVAR(nil,cigpack); };
-        _package
-    };
     case "RANDOM": { selectRandom (["PACKAGES"] call EFUNC(core,getAllItems)) };
     default { _return_cigpacks };
 };
@@ -39,14 +35,8 @@ private _slot = switch (_return_slot) do {
     default { _return_slot };
 };
 
-// Add package and lighter
-[QGVAR(EH_addItem), [_unit, _cigpack, true, true], _unit] call CBA_fnc_targetEvent;
-[QGVAR(EH_addItem), [_unit, _lighter, true, true], _unit] call CBA_fnc_targetEvent;
-
-[QEGVAR(ai,EH_startConsuming), [_unit, _cigpack, _slot], _unit] call CBA_fnc_targetEvent;
-
-// Add unit to Framework
-if (_addToDynamicSmoking) then { [QEGVAR(ai,EH_addUnitToFramework), _unit] call CBA_fnc_serverEvent; };
+// Finalized on the server
+[QGVAR(EH_makeUnitSmoke), [_unit, _cigpack, _lighter, _slot, _addToDynamicSmoking]] call CBA_fnc_serverEvent;
 
 // Info
 [ LLSTRING(module_makeUnitSmoke_success) ] call zen_common_fnc_showMessage;

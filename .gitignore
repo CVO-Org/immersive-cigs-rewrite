@@ -7,3 +7,6 @@ hemtt.exe
 /releases
 
 .hemttprivatekey
+
+# 3DEN temporary mission copies
+/.hemtt/missions/**/~*

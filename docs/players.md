@@ -57,7 +57,7 @@ AI units can carry cigarettes and smoke them on their own. See [Mission Makers](
 Give a fallen comrade their last cigarette.
 
 ### Don't like smoking? Eat them
-Yes, you can eat cigarettes. Don't eat a lit one, though, unless you enjoy burns.
+Yes, you can eat cigarettes. Don't eat a lit one, though, unless you enjoy burns (with ACE Medical).
 
 ## Your own settings
 

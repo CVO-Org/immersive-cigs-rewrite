@@ -22,8 +22,8 @@ params [
     [ "_forceVanish",   false, [true] ]
 ];
 
-// Already stopped - e.g. stopped directly while the loop was still waiting
-if (isNil { _unit getVariable QPVAR(loopData) }) exitWith {};
+// Already stopped, or a stale loop - e.g. stopped directly while the loop was still waiting, or the next cigarette was lit from this one
+if !(_loopData isEqualRef (_unit getVariable [QPVAR(loopData), objNull])) exitWith {};
 
 private _consumeType = _loopData get "consumeType";
 

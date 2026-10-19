@@ -110,6 +110,14 @@ class CfgFunctions {
             class start_cig {};
             class stop_cig {};
             class drop_cig {};
+
+            class canGiveFireFromCig {};
+            class giveFireFromCig {};
+            class canLightFromTheirs {};
+            class lightFromTheirs {};
+            class canChainLight {};
+            class chainLight {};
+            class lightFromCig {};
             
             class smoking_start {};
             class smoking_stop {};

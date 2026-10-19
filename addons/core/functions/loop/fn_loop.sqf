@@ -30,6 +30,11 @@ if (!local _unit) exitWith {
     _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil];
 };
 
+////////////////////////////////////////
+// Stale loop - the unit started consuming something new in the meantime (e.g. lit the next cigarette from this one)
+////////////////////////////////////////
+if !(_loopData isEqualRef (_unit getVariable [QPVAR(loopData), objNull])) exitWith {};
+
 
 ////////////////////////////////////////
 // AI - Stop based on Combat Behavior

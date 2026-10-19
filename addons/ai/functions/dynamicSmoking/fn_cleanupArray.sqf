@@ -32,7 +32,8 @@ private _code = {
     // Continue with the Cleanup
     if (_index isNotEqualTo (count _array - 1) ) then { [ _code, [_array, _index + 1, _code] ] call CBA_fnc_execNextFrame; } else {
         // Stop the Cleanup
-        _array = _array select { ! isNil "_x" };
+        // Assign to the global variable - _array is only the local reference. Units added in the meantime were pushed into _array as well.
+        GVAR(dynamicSmoking_units) = _array select { ! isNil "_x" };
         GVAR(dynamicSmoking_cleanup_inProgress) = nil;
     };
 }; 

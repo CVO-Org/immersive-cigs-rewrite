@@ -25,18 +25,6 @@
             <Japanese>02. AIのタバコ</Japanese>
             <Chinese>02. AI 烟草</Chinese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides">
-            <English>04. AI Cigs</English>
-            <French>04. AI Cigs</French>
-            <Spanish>04. Cigarrillos de IA</Spanish>
-            <Polish>04. Papierosy SI</Polish>
-            <Portuguese>04. Cigarros da IA</Portuguese>
-            <Russian>04. Сигареты ИИ</Russian>
-            <German>04. KI-Zigaretten</German>
-            <Korean>04. AI 담배</Korean>
-            <Japanese>04. AIのタバコ</Japanese>
-            <Chinese>04. AI 烟草</Chinese>
-        </Key>
         <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides_enabled">
             <English>03. AI Cigs - Enable individual Side</English>
             <French>03. AI Cigs - Enable individual Side</French>

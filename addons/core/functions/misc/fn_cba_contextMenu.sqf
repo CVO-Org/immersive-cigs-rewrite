@@ -168,3 +168,40 @@
         false
     }
 ] call CBA_fnc_addItemContextMenuOption;
+
+// Convert between facewear and NVG item - equipped and in containers, not while smoking/sucking
+{
+    _x params ["_slots", "_cfgFrom", "_displayName"];
+    [
+        "#All"
+        ,_slots
+        ,_displayName
+        ,[]
+        ,QPATHTOF(data\ui\take_cig.paa)
+        ,[
+            {
+                params ["_unit"];
+                _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+            },
+            {
+                params ["_unit", "_container", "_item", "_slot", "_params"];
+                _params params ["_cfgFrom"];
+                getNumber (configFile >> _cfgFrom >> _item >> QPVAR(isSmokable)) == 1
+                ||
+                { getNumber (configFile >> _cfgFrom >> _item >> QPVAR(isSuckable)) == 1 }
+            }
+        ]
+        ,{
+            params ["_unit", "_container", "_item", "_slot", "_params"];
+            [_unit, _container, _item, _slot] call FUNC(convertItem);
+            false
+        }
+        ,true       // Consumes the original item
+        ,[_cfgFrom]
+    ] call CBA_fnc_addItemContextMenuOption;
+} forEach [
+    [ ["GOGGLES"],   "CfgGlasses", [LLSTRING(convert_toHMD),     LLSTRING(convert_toHMD_desc)]     ],
+    [ ["HMD"],       "CfgWeapons", [LLSTRING(convert_toGoggles), LLSTRING(convert_toGoggles_desc)] ],
+    [ ["CONTAINER"], "CfgGlasses", LLSTRING(convert_toHMD)     ],
+    [ ["CONTAINER"], "CfgWeapons", LLSTRING(convert_toGoggles) ]
+];

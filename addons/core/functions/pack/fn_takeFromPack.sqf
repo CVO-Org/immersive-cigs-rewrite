@@ -27,7 +27,7 @@ if (isNil "_class_cigpack") then {
 
 
 private _sound = [ configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(unpackSound) ] call CBA_fnc_getCfgDataRandom;
-if (_sound != "") then { [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D; };
+if (!isNil "_sound" && { _sound != "" }) then { [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D; };
 
 
 private _item_glasses = [ ( configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(item_glasses) ) ] call CBA_fnc_getCfgDataRandom;
@@ -37,7 +37,7 @@ private _item_hmd =     [ ( configFile >> "CfgMagazines" >> _class_cigpack >> QP
 switch (true) do {
     case (goggles _unit == ""): { _unit addGoggles _item_glasses };
     case (    hmd _unit == ""): { _unit addItem _item_hmd; _unit assignItem _item_hmd; };
-    default { _unit addItem _item_glasses; };
+    default { [_unit, _item_glasses, true] call CBA_fnc_addItem; }; // Inventory, or the ground when it's full
 };
 
 

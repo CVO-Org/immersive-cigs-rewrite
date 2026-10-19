@@ -20,7 +20,7 @@ params ["_player"];
 private _actions = [];
 
 private _cigPacks = magazines _player select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) == 1};
-private _cigPacks = _cigPacks arrayIntersect _cigPacks;
+_cigPacks = _cigPacks arrayIntersect _cigPacks;
 
 {
     private _cigPack = _x;

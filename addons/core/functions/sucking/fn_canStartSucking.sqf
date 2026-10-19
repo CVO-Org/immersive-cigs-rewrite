@@ -18,7 +18,11 @@
 params ["_unit"];
 
 
- _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+alive _unit
+&&
+{
+    _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+}
 &&
 {
     ( [_unit] call EFUNC(core,checkCompatibleSkeleton) )

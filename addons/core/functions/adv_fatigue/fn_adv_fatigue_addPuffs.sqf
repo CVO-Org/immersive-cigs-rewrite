@@ -18,6 +18,9 @@
 
 params ["_unit", [ "_puffValue", 1, [0] ] ];
 
+// Only players have advanced fatigue and cough
+if !(_unit call FUNC(isPlayer)) exitWith {};
+
 private _puffs = _unit getVariable [QPVAR(recent_puffs), -1];
 
 if (_puffs isEqualTo -1) then {

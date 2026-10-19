@@ -5,7 +5,7 @@
 ## How to smoke
 
 1. Have a **cigarette pack** and **matches or a lighter** in your inventory.
-2. **Take a cigarette from the pack.** It goes into your facewear slot. If that slot is taken, it goes into the NVG slot, and only if both are taken into your inventory.
+2. **Take a cigarette from the pack.** It goes into your facewear slot. If that slot is taken, it goes into the NVG slot, and only if both are taken into your inventory. You can convert it between facewear and NVG item yourself (see below).
 3. **Light it up.** You need matches or a lighter in your inventory.
 4. **Put it out** whenever you want, or smoke it until it's gone.
 
@@ -25,6 +25,7 @@ You can use every action in two ways:
 | Put cigarette out | the burning cigarette | Self → Equipment |
 | Start / stop sucking | the lollipop or crayon in the facewear/NVG slot | Self → Equipment |
 | Eat | the cigarette, lollipop or crayon in the facewear/NVG slot | - |
+| Convert to NVG / facewear item | a cigarette, lollipop or crayon - worn or in your inventory. Not while smoking or sucking. | - |
 | Light up *their* cigarette | - | Interact with another unit → Head |
 | Pay respect to the fallen | - | While smoking: interact with a dead or unconscious unit → Head |
 

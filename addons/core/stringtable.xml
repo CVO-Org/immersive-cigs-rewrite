@@ -778,6 +778,22 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="Interactions_cigs">
+        <Key ID="STR_cigs_core_convert_toGoggles">
+            <English>Convert to facewear item</English>
+            <German>In Brillen-Gegenstand umwandeln</German>
+        </Key>
+        <Key ID="STR_cigs_core_convert_toGoggles_desc">
+            <English>Moves it to the facewear slot if it's free, otherwise to your inventory. Not possible while smoking or sucking.</English>
+            <German>Legt es in den Brillen-Slot, wenn er frei ist, sonst ins Inventar. Nicht möglich während man raucht oder lutscht.</German>
+        </Key>
+        <Key ID="STR_cigs_core_convert_toHMD">
+            <English>Convert to NVG item</English>
+            <German>In Nachtsicht-Gegenstand umwandeln</German>
+        </Key>
+        <Key ID="STR_cigs_core_convert_toHMD_desc">
+            <English>Moves it to the NVG slot if it's free, otherwise to your inventory. Not possible while smoking or sucking.</English>
+            <German>Legt es in den Nachtsicht-Slot, wenn er frei ist, sonst ins Inventar. Nicht möglich während man raucht oder lutscht.</German>
+        </Key>
         <Key ID="STR_cigs_core_eat_cig">
             <English>Eat</English>
             <French>Manger</French>

@@ -1,121 +1,82 @@
+Real chads report bugs when they encounter them.
+
+[h1]Support the Project[/h1]
+[img]https://i.imgur.com/3Qd4tiO.gif[/img]
+
+[h1][url=https://discord.gg/ag4v6kxYAa]Join Our Discord![/url][/h1]
+
+[h1]Found an Issue?[/h1]
+Please report any issues that you have on GitHub.
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/issues]https://github.com/CVO-Org/immersive-cigs-rewrite/issues[/url]
+
+
+[h1]Immersive Cigs: Extensions[/h1]
+A Steam Workshop Collection of [b]Cigs Extensions made by the Arma 3 Community[/b] can be found here: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3552089026]Immersive Cigs: Extensions[/url]
+Want to make your own brand? Start with the [url=https://github.com/OverlordZorn/immersion-cigs-extension-template]Extension Template[/url].
+
+
 [h1]Immersive Cigs - Rewrite[/h1]
 
 [h2]Overview[/h2]
+Enjoy smoking and being cool with your imaginary online friends?
+Smoke cigarettes or suck some lollipops and let everyone around see and hear how cool you really are!
 
-This mod adds an ability to smoke cigarettes or enjoy lollipops.
-While smoking, the cig will change it's model to a smaller version disappearing in the end (around 5 minutes) and producing smoke while it's active.
-Mod is fully multiplayer compatible so you will hear the sound of the matches from other players and you'll see the smoke coming from the cigarette synchronized between all clients.
-
-We do not encourage anyone to smoke in real life, we don't smoke irl, it's just a small addition in favour for some additional immersion.
-
-[h3]Usage[/h3]
 [list]
-[*] By Left Clicking on the Items in the Inventory (Cig Packs, Smokable and Suckable Items)
-[*] With ACE Loaded, via ACE Interaction Menu
+[*] Multiplayer-synchronised smoke, sounds and glow in the dark
+[*] Light up your own cigarette - or someone else's
+[*] AI carry cigarettes and smoke them on their own
+[*] ACE Advanced Fatigue: chainsmokers cough, and coughing can alert enemies
+[*] Spontaneous combustion when smoking next to fuel (ACE Fire)
+[*] Pay respect to your fallen comrades with a last cigarette
 [/list]
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/players.md]All features and how to use them[/url]
 
-[h3]For MissionMakers[/h3]
-[code][_unit] call cigs_core_fnc_start_smoking;[/code] (Requires Smokeable Item in Glasses or HMD Slot)
-
-[h3]Credits[/h3]
-Original Authors:
-[list]
-[*] Rebel - Configs, Scripting.
-[*] Facel - 3d models, Textures.
-[*] Panimala - Icons, Sounds.
-[/list]
-Contributing Authors:
-[list]
-[*] prisonerMO - Scripting: remoteExec -> CBA Events
-[*] kneely - WW2 Cigarette Models and Textures
-[*] Vespade - Immersive Crayon Models and Textures
-[*] OverlordZorn - Rewrite of configs and scripts, fixing some models here, adding some new textures there and glueing everything together.
-[*] ArtemisGodfrey - Helping with models.
-[/list]
+[h3]How to Use[/h3]
+Left-click the items in your inventory (cig packs, smokable and suckable items).
+With ACE loaded, via the ACE Interaction Menu.
 
 [h3]Dependencies[/h3]
-[list]
-[*] Latest Arma 3
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA - Community Based Addon[/url]
-[/list]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=450814997]CBA - Community Based Addons[/url]
 
 [h3]Optionals[/h3]
-[list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
-[/list]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=463939057]ACE3[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631]ZEN - Zeus Enhanced[/url] - Zeus modules to make units smoke
 
-[h3]Compats for[/h3]
-[list]
-[*] SOG: Prarie Fire
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2917554904]KJW's Imposter[/url]
-[/list]
+[h3]Supported[/h3]
+S.O.G. Prairie Fire
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2917554904]KJW's Imposters[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3487820370]Helmet on Ass - Helmet Slinging[/url]
 
 [h3]For Server Admins[/h3]
-This mod has to be loaded on both, Server and Client.
+[b]Do NOT load the rewrite combined with any of the integrated/merged mods![/b]
+This mod has to be loaded on both, server and client.
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/server-admins.md]Installation and all CBA settings[/url]
 
-[h1]Bug Reports, Feature Requests, ...[/h1]
-For Issues, bugreports and suggestions, please head to github.
-Anything here might get missed.
-[url=https://github.com/OverlordZorn/immersive-cigs-rewrite/issues]Immersive Cigs - Rewrite - Github Issues[/url]
+[h3]For Mission Makers[/h3]
+Decide which cigarettes AI of each side carry with the [b]Configure AI Cigs[/b] module, block units via their 3DEN attributes, or make units smoke via Zeus.
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/mission-makers.md]Mission Makers Guide[/url] - [url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/api.md]Scripting API[/url]
+
+[h3]For Modders[/h3]
+Config properties, default pack presets for your own mod, and how to add a brand: [url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/modders.md]Modders Guide[/url]
+
+[h3]For Screenshot-Artists[/h3]
+The Stable Version hides the intermediary stages of the cigarettes in the arsenal.
+The [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3518473416]Dev Version[/url] will have all stages available in the arsenal.
+
+[h3]License[/h3]
+You are not allowed to reupload this mod.
+While parts of the mod are licensed under [url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/license.md]APL-SA[/url], some addons have a separate license.
+Specifically, Core and Base addons are licensed under [url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/addons/core/license.md]APL-ND[/url].
+
+[h3]Links[/h3]
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite]GitHub: Immersive Cigs - Rewrite[/url]
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/README.md]Documentation[/url]
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/docs/history.md]Learn more about the Rewrite[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3518473416]Dev Version: Immersive Cigs - Rewrite [DEV][/url]
+
+[h3]Credits and Contributors[/h3]
+[url=https://github.com/CVO-Org/immersive-cigs-rewrite/blob/main/CONTRIBUTORS.md]List of all Contributors[/url]
 
 
-[h1]The Rewrite[/h1]
-[url=https://github.com/OverlordZorn/immersive-cigs-rewrite]Github: Immersive Cigs - Rewrite[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3375788189]Steam Workshop: Immersive Cigs - Rewrite[/url]
 
-
-This is Mod is a full Rewrite of the original Immersive Cigs Mod by Rebel & Facel:
-[list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=753946944]Immersion Cigs - Workshop[/url]
-[*] [url=https://github.com/rebelvg/immersion_cigs/tree/master]Immersive Cigs - Github[/url]
-[*] [url=https://forums.bistudio.com/forums/topic/181841-immersion-cigs/]Immersive Cigs - Forum Thread[/url]
-[/list]
-
-[!WARNING]
-Due to the extensive rewrite, this is not compatible with Mods which have been based/are dependend on the original Mod.
-
-[h2]What is included?[/h2]
-
-[h3]Full Rewrite of pretty much everything.[/h3]
-[list]
-[*] no more scheduled code
-[*] dependency on CBA
-[*] Vanilla ScrollWheel Actions are replaced with CBA's Context Menu (Left Click on Inventory Screen)
-[*] No more hard coded data, instead defined through config.
-[*] Extensions, Compats or addition of new Types of Smokables/Suckables is much easier. Ether through integration in the main mod or by making an extension mod with this mod as a dependency.
-[/list]
-
-Every fix that came with the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3146026772]Immersion Cig - Hotfix[/url]
-[list]
-[*] When taking a new Cigarette from the box, it will try to put the cig first in the goggles/face slot, ifn't, then the NVG slot and only as a last resort, it will put it in the inventory.
-[*] Allows to light someone else's cig when its in the NVG slot.
-[*] Rewrote all functions within the modified addon to avoid scheduled environment.(CBA Dependency).
-[*] Matches, Lighter, Box of Cigarettes are now found in the Misc. Section of the ACE Arsenal
-[/list]
-
-Integrated Compatibility for KJW's Imposter Mod
-
-[h3]The following Mods are merged into this Rewrite:[/h3]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3174419638]Kneely's WW2 Cigarettes[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2311516767]Vespade's Immersion Crayons[/url] 
-[list]
-[*] Implemented as Suckables, like the lollipops.
-[*] might maybe come as smokables later.
-[/list]
-
-[h3]The following CDLC's are supported[/h3]
-S.O.G. Prairie Fire
-[list]
-[*] Supports the DLC's Cigarette Pack
-[*] Supports the DLC's Lighter while retaining its vanilla feature of setting things on fire.
-[*] Added Smokable Cigarettes that can be taken from the Vanilla Cigarette Pack
-[/list]
-
-[h3]The Following CDLC's might be supported in the future[/h3]
-Spearhead 1944
-[list]
-[*] Since this DLC only provides Facewear Cigarettes, I have find a suitable integration method.
-[/list]
-
-[img=https://imgur.com/yvLbZ42]like[/img]
-
+We do not encourage anyone to smoke in real life - we don't smoke. It's just a small addition so we can be immersive and cool in game.

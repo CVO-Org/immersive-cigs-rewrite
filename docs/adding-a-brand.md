@@ -1,4 +1,9 @@
-# How to add your own cigarette brand
+# Adding a Brand
+
+[Back to the documentation overview](README.md) · [Modders](modders.md)
+
+> [!TIP]
+> This page is about adding a brand **to this repository**. To release a brand as **your own mod**, use the [Immersive Cigs extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template) instead. It comes with its own step-by-step guide.
 
 ## How to Contribute
 
@@ -47,13 +52,13 @@ all .p3d files within `addons/~youraddon~/data/cigs/` and `addons/~youraddon~/da
 by default, its `cigpack.p3d`, `cig0.p3d`,`cig1.p3d`,`cig2.p3d`,`cig3.p3d` and `cig4.p3d`
 
 #### 4.3.1 Open p3d
-![alt text](image.png)
+![Opening a p3d in Object Builder](img/objectbuilder-open.png)
 
 #### 4.3.2 Open `Tools / Mass Texture & Material Renaming`
-![alt text](image-1.png)
+![Tools / Mass Texture & Material Renaming](img/objectbuilder-mass-rename-menu.png)
 
 #### 4.3.3 Mass Rename the Paths
-![alt text](image-2.png)
+![Mass renaming the texture paths](img/objectbuilder-mass-rename.png)
 
 #### 4.3.4 Save
 

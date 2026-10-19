@@ -36,6 +36,9 @@
 // Light others cigs
 [ QGVAR(EH_smoking_start), FUNC(start_cig) ] call CBA_fnc_addEventHandler;
 
+// Pay respect - place the cigarette where the target is local
+[ QGVAR(EH_payRespect_target), FUNC(payRespect_target) ] call CBA_fnc_addEventHandler;
+
 // Effects
 [ QGVAR(EH_smoke_effect),   FUNC(smoke_effect)   ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_light_lighter),  FUNC(light_lighter)  ] call CBA_fnc_addEventHandler;

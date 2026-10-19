@@ -24,4 +24,13 @@ class GVAR(defaultPacks) {
         GUER[] = { QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
         CIV[]  = { QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) };
     };
+
+    class SOGPF {
+        priority = 10;
+        requiredAddons[] = { "weapons_f_vietnam_c" };
+        WEST[] = { QEGVAR(savage,cigpack) };
+        EAST[] = { QEGVAR(savage,cigpack) };
+        GUER[] = { QEGVAR(savage,cigpack) };
+        CIV[]  = { QEGVAR(savage,cigpack) };
+    };
 };

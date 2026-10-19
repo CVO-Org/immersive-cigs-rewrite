@@ -5,8 +5,8 @@
 * Converts a smokable/suckable item between its facewear (CfgGlasses) and NVG (CfgWeapons) version.
 * The original item is removed by the CBA context menu (consume).
 *
-* Equipped items are moved into the other slot if it's free, otherwise into the inventory (or onto the ground).
-* Items in a container are converted within that container.
+* The converted item is put into its slot (facewear or NVG) if it's free.
+* Otherwise, equipped items go into the inventory (or onto the ground) and items in a container stay in that container.
 *
 * Arguments:
 * 0: Unit <OBJECT>
@@ -34,9 +34,9 @@ private _toHMD = switch (_slot) do {
 private _newItem = if (_toHMD) then { _item + "_nv" } else { _item select [0, count _item - 3] };
 
 switch (true) do {
-    // Equipped: into the other slot if it's free
-    case ( _slot isEqualTo "GOGGLES" && { hmd _unit isEqualTo "" } ): { _unit linkItem _newItem; };
-    case ( _slot isEqualTo "HMD" && { goggles _unit isEqualTo "" } ): { _unit addGoggles _newItem; };
+    // Into the target slot if it's free - equipped and from a container
+    case ( _toHMD && { hmd _unit isEqualTo "" } ):         { _unit linkItem _newItem; };
+    case ( !_toHMD && { goggles _unit isEqualTo "" } ):    { _unit addGoggles _newItem; };
     // In a container: stay in that container
     case ( !(_slot in ["GOGGLES", "HMD"]) && { _container isEqualType objNull && { !isNull _container } } ): { _container addItemCargoGlobal [_newItem, 1]; };
     // Otherwise: inventory, or the ground when it's full

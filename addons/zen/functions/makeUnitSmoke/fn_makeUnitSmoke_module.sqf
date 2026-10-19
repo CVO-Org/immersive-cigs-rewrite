@@ -32,8 +32,8 @@ if  ( _unit getVariable [QPVAR(isConsuming), false] isEqualTo "SUCK"  ) exitWith
 private _return_cigpacks = ["SIDE", "RANDOM"];
 // can have Displayname, tooltip, picture, text color
 private _displayName_cigpacks = [
-    ["Based on Side", "Will select a random Brand based on the CBA Settings for Cigs On AI System"],
-    ["Random", "Will select a random Brand from all loaded brands"]
+    [LLSTRING(module_makeUnitSmoke_brand_side), LLSTRING(module_makeUnitSmoke_brand_side_desc)],
+    [LLSTRING(module_makeUnitSmoke_random), LLSTRING(module_makeUnitSmoke_brand_random_desc)]
 ];
 
 private _blacklist = ["murshun_cigs_cigpack"];
@@ -67,7 +67,7 @@ private _combo_cigpacks = [
 private _return_lighters = ["RANDOM"];
 // can have Displayname, tooltip, picture, text color
 private _displayName_lighters = [
-    ["Random", "Will select a random Brand from all loaded brands"]
+    [LLSTRING(module_makeUnitSmoke_random), LLSTRING(module_makeUnitSmoke_lighter_random_desc)]
 ];
 
 {
@@ -96,7 +96,7 @@ private _combo_slot = [
     MODLSTRING(makeUnitSmoke_slot),    // DisplayName and Tooltop
     [
         ["GOGGLES", "HMD", "RANDOM"],
-        ["Goggles/Facewear", "Nightvision", "Random"], 
+        [LLSTRING(module_makeUnitSmoke_slot_goggles), LLSTRING(module_makeUnitSmoke_slot_hmd), LLSTRING(module_makeUnitSmoke_random)],
         0 // Default Index
     ],         // Specific Arguments
     false       // Force Default

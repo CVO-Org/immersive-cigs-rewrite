@@ -92,6 +92,18 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Japanese>失敗 - ユニットは既に吸っています。</Japanese>
             <Chinese>失败 - 单位已经在吸吮。</Chinese>
         </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_random_desc">
+            <English>Picks a random pack from all loaded packs.</English>
+            <German>Wählt ein zufälliges Paket aus allen geladenen Paketen.</German>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_side">
+            <English>Based on Side</English>
+            <German>Nach Seite</German>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_side_desc">
+            <English>Picks a random pack from the packs of the unit's side (Configure AI Cigs module or default packs).</English>
+            <German>Wählt ein zufälliges Paket aus den Paketen der Seite der Einheit (Modul "Configure AI Cigs" oder Standardpakete).</German>
+        </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
             <English>Type Lighter</English>
             <French>Allume-cigare</French>
@@ -115,6 +127,10 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Korean>원하는 라이터 종류를 선택하세요.</Korean>
             <Japanese>希望のライターの種類を選択してください。</Japanese>
             <Chinese>选择所需的打火机类型。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_random_desc">
+            <English>Picks a random lighter from all loaded lighters.</English>
+            <German>Wählt ein zufälliges Feuerzeug aus allen geladenen Feuerzeugen.</German>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
             <English>Failed - No Unit has been selected.</English>
@@ -164,8 +180,12 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Japanese>失敗 - 選択したユニットはプレイヤーが操作しています。</Japanese>
             <Chinese>失败 - 所选单位由玩家控制。</Chinese>
         </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_random">
+            <English>Random</English>
+            <German>Zufällig</German>
+        </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot">
-            <English>Preffered Slot</English>
+            <English>Preferred Slot</English>
             <French>Emplacement préféré</French>
             <Spanish>Hueco preferido</Spanish>
             <Polish>Preferowane gniazdo</Polish>
@@ -187,6 +207,14 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Korean>유닛이 담배를 놓을 빈 슬롯이 없다면, 어떤 슬롯을 비워야 합니까?</Korean>
             <Japanese>ユニットにタバコ用の空きスロットがない場合、どのスロットを空けるかを指定します。</Japanese>
             <Chinese>如果单位没有空闲的香烟插槽，应释放哪个插槽？</Chinese>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_goggles">
+            <English>Goggles/Facewear</English>
+            <German>Brille/Gesicht</German>
+        </Key>
+        <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_hmd">
+            <English>Nightvision</English>
+            <German>Nachtsicht</German>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
             <English>Done - Unit is now smoking/sucking.</English>

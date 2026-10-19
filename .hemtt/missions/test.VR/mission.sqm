@@ -259,7 +259,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										class data
@@ -308,6 +308,14 @@ class CustomAttributes
 											value="cigs_ai_set_dynamicsmoking_min_time";
 										};
 									};
+									class Item6
+									{
+										class data
+										{
+											singleType="STRING";
+											value="cigs_core_set_sp_addcigpack_type";
+										};
+									};
 								};
 							};
 						};
@@ -318,7 +326,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										class data
@@ -468,6 +476,33 @@ class CustomAttributes
 													{
 														singleType="SCALAR";
 														value=15;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="cigs_voron_cigpack";
 													};
 												};
 												class Item1

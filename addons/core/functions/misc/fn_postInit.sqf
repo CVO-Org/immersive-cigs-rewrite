@@ -36,6 +36,9 @@
 // Light others cigs
 [ QGVAR(EH_smoking_start), FUNC(start_cig) ] call CBA_fnc_addEventHandler;
 
+// Light a cigarette from another burning cigarette - where the lighting unit is local
+[ QGVAR(EH_lightFromCig), FUNC(lightFromCig) ] call CBA_fnc_addEventHandler;
+
 // Pay respect - place the cigarette where the target is local
 [ QGVAR(EH_payRespect_target), FUNC(payRespect_target) ] call CBA_fnc_addEventHandler;
 
@@ -73,6 +76,10 @@ private _code = {
     player addEventHandler ["InventoryClosed", {
         params ["_unit", "_container"];
         if (
+            // Not while smoking/sucking - the second item may be the next cigarette, see chainLight
+            _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+            &&
+            {
             (
                 getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
                 ||
@@ -83,6 +90,7 @@ private _code = {
                 getNumber (configFile >> "CfgWeapons" >> hmd     _unit >> QPVAR(isSmokable)) == 1
                 ||
               { getNumber (configFile >> "CfgWeapons" >> hmd     _unit >> QPVAR(isSuckable)) == 1 }
+            }
             }
         ) then {
             _unit addItem (hmd _unit);

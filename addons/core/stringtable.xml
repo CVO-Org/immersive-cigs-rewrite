@@ -606,6 +606,10 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="GlobalDescription">
+        <Key ID="STR_cigs_core_give_fire_from_cig">
+            <English>Light up their cigarette with yours</English>
+            <German>Ihre Zigarette mit deiner anzünden</German>
+        </Key>
         <Key ID="STR_cigs_core_glasses_stage0">
             <English>Glasses Slot - Stage 0</English>
             <French>Masques - Stage 0</French>
@@ -778,6 +782,14 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="Interactions_cigs">
+        <Key ID="STR_cigs_core_chain_light">
+            <English>Light the next one from this cigarette</English>
+            <German>Die nächste an dieser Zigarette anzünden</German>
+        </Key>
+        <Key ID="STR_cigs_core_chain_light_desc">
+            <English>Lights the cigarette in your other slot from the one you are smoking. The current one is put out.</English>
+            <German>Zündet die Zigarette im anderen Slot an der an, die du gerade rauchst. Die aktuelle wird ausgemacht.</German>
+        </Key>
         <Key ID="STR_cigs_core_convert_toGoggles">
             <English>Convert to facewear item</English>
             <German>In Brillen-Gegenstand umwandeln</German>
@@ -944,6 +956,10 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="Items">
+        <Key ID="STR_cigs_core_light_from_theirs">
+            <English>Light your cigarette from theirs</English>
+            <German>Deine Zigarette an ihrer anzünden</German>
+        </Key>
         <Key ID="STR_cigs_core_lighter">
             <English>Lighter</English>
             <French>Briquet</French>
@@ -967,6 +983,10 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Korean>100개의 담배를 켤 수 있습니다.</Korean>
             <Japanese>煙草100本分に着火可能。</Japanese>
             <Chinese>可以點一百根菸。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_core_lit_from_yours">
+            <English>%1 lit their cigarette from yours.</English>
+            <German>%1 hat sich die Zigarette an deiner angezündet.</German>
         </Key>
         <Key ID="STR_cigs_core_matches">
             <English>Matches</English>

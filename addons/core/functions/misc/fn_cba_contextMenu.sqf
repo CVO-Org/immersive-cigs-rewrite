@@ -205,3 +205,29 @@
     [ ["CONTAINER"], "CfgGlasses", LLSTRING(convert_toHMD)     ],
     [ ["CONTAINER"], "CfgWeapons", LLSTRING(convert_toGoggles) ]
 ];
+
+// Light the unlit cigarette in the other slot from the one being smoked
+[
+    "#All"
+    ,["GOGGLES", "HMD"]
+    ,[LLSTRING(chain_light), LLSTRING(chain_light_desc)]
+    ,[]
+    ,QPATHTOF(data\ui\light_cig.paa)
+    ,[
+        {
+            params ["_unit"];
+            [_unit] call FUNC(canChainLight)
+        },
+        {
+            params ["_unit", "_container", "_item", "_slot", "_params"];
+            [_unit] call FUNC(canChainLight)
+            &&
+            { _slot isNotEqualTo (_unit getVariable QPVAR(loopData) get "itemType") }
+        }
+    ]
+    ,{
+        params ["_unit"];
+        [_unit] call FUNC(chainLight);
+        false
+    }
+] call CBA_fnc_addItemContextMenuOption;

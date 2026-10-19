@@ -11,6 +11,24 @@ class CAManBase: Man {
                 exceptions[] = {"isNotInside", "isNotSitting"};
                 icon = QPATHTOF(data\ui\light_cig.paa);
             };        
+            class PVAR(give_fire_from_cig)
+            {
+                displayName = CSTRING(give_fire_from_cig);
+                condition = Q(call FUNC(canGiveFireFromCig));
+                statement = Q(call FUNC(giveFireFromCig));
+                showDisabled = 0;
+                exceptions[] = {"isNotInside", "isNotSitting"};
+                icon = QPATHTOF(data\ui\light_cig.paa);
+            };
+            class PVAR(light_from_theirs)
+            {
+                displayName = CSTRING(light_from_theirs);
+                condition = Q(call FUNC(canLightFromTheirs));
+                statement = Q(call FUNC(lightFromTheirs));
+                showDisabled = 0;
+                exceptions[] = {"isNotInside", "isNotSitting"};
+                icon = QPATHTOF(data\ui\light_cig.paa);
+            };
             class PVAR(pay_respect)
             {
                 displayName = CSTRING(pay_respect);
@@ -44,6 +62,15 @@ class CAManBase: Man {
                 condition = Q([_player] call FUNC(hasLighter) && { [_player] call FUNC(canStartSmoking) });
                 statement = Q([_player] call FUNC(start_cig));
                 modifierFunction = Q(call FUNC(modifyLighterAction));
+                showDisabled = 0;
+                exceptions[] = {"isNotInside", "isNotSitting"};
+                icon = QPATHTOF(data\ui\light_cig.paa);
+            };
+            class PVAR(chain_light)
+            {
+                displayName = CSTRING(chain_light);
+                condition = Q([_player] call FUNC(canChainLight));
+                statement = Q([_player] call FUNC(chainLight));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
                 icon = QPATHTOF(data\ui\light_cig.paa);

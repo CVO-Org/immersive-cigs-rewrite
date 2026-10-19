@@ -9,6 +9,8 @@
 3. **Light it up.** You need matches or a lighter in your inventory.
 4. **Put it out** whenever you want, or smoke it until it's gone.
 
+No lighter? Light your cigarette from someone else's burning one, or light the next one from your own: take a new cigarette while smoking (it goes into your other slot) and use *Light the next one from this cigarette*.
+
 Lollipops and crayons work the same way, except you *suck* them instead of lighting them.
 
 ## Where to find the actions
@@ -26,7 +28,10 @@ You can use every action in two ways:
 | Start / stop sucking | the lollipop or crayon in the facewear/NVG slot | Self → Equipment |
 | Eat | the cigarette, lollipop or crayon in the facewear/NVG slot | - |
 | Convert to NVG / facewear item | a cigarette, lollipop or crayon - worn or in your inventory. It goes into the matching slot if that's free. Not while smoking or sucking. | - |
-| Light up *their* cigarette | - | Interact with another unit → Head |
+| Light up *their* cigarette | - | Interact with another unit → Head (needs a lighter) |
+| Light up their cigarette with yours | - | While smoking: interact with another unit → Head |
+| Light your cigarette from theirs | - | Interact with a smoking unit → Head |
+| Light the next one from this cigarette | the unlit cigarette in your other slot, while smoking | Self → Equipment |
 | Pay respect to the fallen | - | While smoking: interact with a dead or unconscious unit → Head |
 
 Using a lighter or matches holsters your weapon first, unless the server has turned that off.

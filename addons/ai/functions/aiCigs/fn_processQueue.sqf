@@ -26,7 +26,7 @@ private _addToDynamicAI = { _unit call FUNC(addUnitToFramework); };
 
 // Conditions
 private _checkUnitInventory =  { SET(dynamicSmoking_checkUnitInventory) && { [_unit] call EFUNC(core,canTakeFromPack) } };
-private _checkaiCigsChance = { SET(aiCigs_enable)                   && { random 1 < SET(aiCigs_chance)    } };
+private _checkaiCigsChance = { SET(aiCigs_enable)                   && { random 1 < SET(aiCigs_chance)    } && { _unit call FUNC(getCigItems) isNotEqualTo [] } }; // Sides without packages are excluded
 
 
 switch (true) do {

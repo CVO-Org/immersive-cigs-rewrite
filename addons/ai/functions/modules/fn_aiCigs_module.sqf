@@ -24,22 +24,14 @@ params [
 ];
 
 // Get and Validate Input
-private _west = _logic getVariable [QEGVAR(aiCigs,west), ""] splitString " ," select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) isEqualTo 1 };
-private _east = _logic getVariable [QEGVAR(aiCigs,east), ""] splitString " ," select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) isEqualTo 1 };
-private _guer = _logic getVariable [QEGVAR(aiCigs,guer), ""] splitString " ," select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) isEqualTo 1 };
-private _civ  = _logic getVariable [QEGVAR(aiCigs,civ),  ""] splitString " ," select { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) isEqualTo 1 };
+private _isPack = { getNumber (configFile >> "CfgMagazines" >> _x >> QPVAR(isPack)) isEqualTo 1 };
+private _west = (_logic getVariable [QEGVAR(aiCigs,west), ""] call FUNC(packList_parse)) select _isPack;
+private _east = (_logic getVariable [QEGVAR(aiCigs,east), ""] call FUNC(packList_parse)) select _isPack;
+private _guer = (_logic getVariable [QEGVAR(aiCigs,guer), ""] call FUNC(packList_parse)) select _isPack;
+private _civ  = (_logic getVariable [QEGVAR(aiCigs,civ),  ""] call FUNC(packList_parse)) select _isPack;
 
-// Create hashmap, but only if there's any actual values
-private "_map";
-{
-	_x params ["_key", "_value"];
-	if (_value isEqualTo []) then { continue };
-	if (isNil "_map") then { _map = createHashMap; };
-	_map set [_key, _value];
-
-} forEach [["WEST",_west], ["EAST", _east], ["GUER", _guer], ["CIV", _civ]];
-
-if (isNil "_map") exitWith { INFO("Immersive Cigs - aiCigs Module has not been stored - no valid input"); };
+// Sides without packages are stored as well - they are disabled for aiCigs
+private _map = createHashMapFromArray [["WEST",_west], ["EAST", _east], ["GUER", _guer], ["CIV", _civ]];
 
 missionNamespace setVariable [QEGVAR(aiCigs,module), _map];
 INFO_1("Immersive Cigs - aiCigs Module has been stored: %1",_map);

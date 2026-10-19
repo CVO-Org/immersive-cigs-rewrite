@@ -37,3 +37,5 @@ class CfgPatches {
 
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
+#include "defaultPacks.hpp"
+#include "Cfg3DEN.hpp"

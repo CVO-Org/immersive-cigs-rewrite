@@ -21,7 +21,6 @@ _params params ["_posASL", "_unit"];
 
 private _cigpack = switch (_return_cigpacks) do {
     case "SIDE": {
-        private _map = missionNamespace getVariable [QEGVAR(aiCigs,settings), nil];
         private _package = selectRandom ( _unit call EFUNC(ai,getCigItems) );
         if (isNil "_package") then { _package = QEGVAR(nil,cigpack); };
         _package

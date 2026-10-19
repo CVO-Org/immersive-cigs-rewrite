@@ -42,26 +42,26 @@ class CfgVehicles {
         class Attributes: AttributesBase {
             // Module-specific arguments:
             // Value: stringified array of the selected classnames - older missions hold a comma separated list, see cigs_ai_fnc_packList_parse
-            // Default: the default packages of the side, see defaultPacks.hpp
+            // Default: the default packages of the side, see defaultPacks.hpp / cigs_ai_fnc_getDefaultPacks
             class EGVAR(aiCigs,west): Default {
                 property = QEGVAR(aiCigs,west);
                 control = QGVAR(packList_west);
-                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'WEST'));
+                defaultValue = QUOTE(str (['WEST'] call FUNC(getDefaultPacks)));
             };
             class EGVAR(aiCigs,east): Default {
                 property = QEGVAR(aiCigs,east);
                 control = QGVAR(packList_east);
-                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'EAST'));
+                defaultValue = QUOTE(str (['EAST'] call FUNC(getDefaultPacks)));
             };
             class EGVAR(aiCigs,guer): Default {
                 property = QEGVAR(aiCigs,guer);
                 control = QGVAR(packList_guer);
-                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'GUER'));
+                defaultValue = QUOTE(str (['GUER'] call FUNC(getDefaultPacks)));
             };
             class EGVAR(aiCigs,civ): Default {
                 property = QEGVAR(aiCigs,civ);
                 control = QGVAR(packList_civ);
-                defaultValue = QUOTE(str getArray (configFile >> QQGVAR(defaultPacks) >> 'CIV'));
+                defaultValue = QUOTE(str (['CIV'] call FUNC(getDefaultPacks)));
             };
 
             class ModuleDescription: ModuleDescription {}; // Module description should be shown last

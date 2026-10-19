@@ -21,7 +21,6 @@ params [ "_unit" ];
 private _map = switch (true) do {
     case (! isNil QEGVAR(aiCigs,api) ):      { missionNamespace getVariable QEGVAR(aiCigs,api) };
     case (! isNil QEGVAR(aiCigs,module) ):   { missionNamespace getVariable QEGVAR(aiCigs,module) };
-    case (! isNil QEGVAR(aiCigs,settings) ): { missionNamespace getVariable QEGVAR(aiCigs,settings) };
     default { EGVAR(aiCigs,default) };
 };
 

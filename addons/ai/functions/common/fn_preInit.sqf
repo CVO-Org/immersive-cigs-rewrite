@@ -25,13 +25,12 @@ if (!isServer) exitWith {};
 
 ///////////// Cigs on AI
 
-["CBA_SettingChanged", FUNC(handleSettingChange)] call CBA_fnc_addEventHandler;
 addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 
 // Default Hashmap
 
-// Defined in config, see defaultPacks.hpp - shared with the default selection of the aiCigs module
-EGVAR(aiCigs,default) = createHashMapFromArray ( [ "WEST", "EAST", "GUER", "CIV" ] apply { [ _x, getArray (configFile >> QGVAR(defaultPacks) >> _x) ] } );
+// Resolved from the presets in config, see defaultPacks.hpp - shared with the default selection of the aiCigs module
+EGVAR(aiCigs,default) = [] call FUNC(getDefaultPacks);
 
 
 ///////////// Dynamic AI Smoking

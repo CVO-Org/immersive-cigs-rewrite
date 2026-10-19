@@ -11,17 +11,14 @@ class CfgFunctions {
         class aiCigs {
             file = PATH_TO_FUNC_SUB(aiCigs);
 
-            class cbaSetting_addSetting {};
-            class cbaSetting_perSide {};
-
             class onEntityCreated {};
-            class handleSettingChange {};
 
             class addToQueue {};
             class processQueue {};
 
             class addCigItemsToUnit {};
             class getCigItems {};
+            class getDefaultPacks {};
         };
 
         class dynamicSmoking {

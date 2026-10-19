@@ -55,6 +55,3 @@
 
 } forEach [west,east,independent,civilian];
 
-
-// Select Cigs based on Side
-{ [_x] call FUNC(cbaSetting_perSide); } forEach [west,east,independent,civilian];

@@ -16,6 +16,9 @@
 */
 
 
+// Server only - also called by the CBA setting script, which runs on every machine
+if (!isServer) exitWith {};
+
 if ( ! SET(dynamicSmoking_enable) ) exitWith { GVAR(dynamicSmoking_LoopRunning) = nil; };
 
 if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {

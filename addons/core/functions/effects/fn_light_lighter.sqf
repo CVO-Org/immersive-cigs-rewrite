@@ -26,6 +26,9 @@ private _attenuation = [0, 0, 0, 1, 10, 0, 0]; // [start, constant, linear, quad
 
 params [ "_unit", "_sound" ];
 
+// Only where someone can see it - up to the distance the flare is visible
+if ( !hasInterface || { positionCameraToWorld [0, 0, 0] distance _unit > MAX_FLAREDIST } ) exitWith {};
+
 private _cfg = (configFile >> "CfgSounds" >> _sound);
 // Durations
 private _t_start = getNumber (_cfg >> "t_start");
@@ -60,7 +63,7 @@ private _vis_flare = createVehicleLocal [_flareType, getPosATL _unit, [], 0, "CA
 _vis_flare attachTo [_unit, _offset vectorAdd [ 0, 0.28, 0 ], "head"];
 
 _vis_flare setLightIR false;
-e_vis_flare setLightColor _color; // RGB
+_vis_flare setLightColor _color; // RGB
 if (_flareType isEqualTo "#lightreflector") then { _vis_flare setLightConePars _lightCone; };
 
 // Flare

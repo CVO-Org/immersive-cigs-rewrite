@@ -26,6 +26,9 @@ private _attenuation = [0, 0, 0, 1, 1000, 0, 0];
 
 params [ "_unit", "_sound" ];
 
+// Only where someone can see it - up to the distance the flare is visible
+if ( !hasInterface || { positionCameraToWorld [0, 0, 0] distance _unit > MAX_FLAREDIST } ) exitWith {};
+
 private _cfg = (configFile >> "CfgSounds" >> _sound);
 // Durations
 private _t_start = getNumber (_cfg >> "t_start");

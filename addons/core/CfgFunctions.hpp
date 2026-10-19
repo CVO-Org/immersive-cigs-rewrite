@@ -55,6 +55,14 @@ class CfgFunctions {
             class light_cig_glow {};
         };
 
+        class fire {
+            file = PATH_TO_FUNC_SUB(fire);
+            class isFireSource {};
+            class getFireSourceClasses {};
+            class addFireActions {};
+            class canLightFromFire {};
+            class lightFromFire {};
+        };
         class lighter {
             file = PATH_TO_FUNC_SUB(lighter);
             class hasLighter {};

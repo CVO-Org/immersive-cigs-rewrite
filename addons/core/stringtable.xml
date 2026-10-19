@@ -956,6 +956,10 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="Items">
+        <Key ID="STR_cigs_core_light_from_fire">
+            <English>Light your cigarette here</English>
+            <German>Zigarette hier anzünden</German>
+        </Key>
         <Key ID="STR_cigs_core_light_from_theirs">
             <English>Light your cigarette from theirs</English>
             <German>Deine Zigarette an ihrer anzünden</German>

@@ -52,8 +52,7 @@
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];
-            [_unit] call FUNC(canStartSmoking);
-            [_unit] call FUNC(hasLighter);
+            [_unit] call FUNC(canStartSmoking) && { [_unit] call FUNC(hasLighter) }
         },{
             params ["_unit", "_container", "_item", "_slot", "_params"];
             _hasCig = switch (_slot) do {

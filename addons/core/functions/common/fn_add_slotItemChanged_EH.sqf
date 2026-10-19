@@ -51,7 +51,7 @@ private _id = _unit addEventHandler [
 
         if (_stopConsuming) then {
             _unit setVariable [QPVAR(isConsuming), false, true];
-            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QPVAR(forceVanish), true]; }; // WTF?
+            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QGVAR(forceVanish), true]; }; // read by drop_cig
             call _rm_eh;
         };
     }

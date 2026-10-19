@@ -24,11 +24,7 @@ if !(local _unit) exitWith {};
 if !(_consumeType in ["SMOKE", "SUCK"] ) exitWith {};
 
 
-////////////////////////////////////////
-// Set Flag
-////////////////////////////////////////
 if (_unit getVariable [QPVAR(isConsuming), false] isNotEqualTo false) exitWith {};
-_unit setVariable [QPVAR(isConsuming), _consumeType, true];
 
 ////////////////////////////////////////
 // Get itemType
@@ -43,6 +39,14 @@ private _itemType = switch (true) do {
     case (getNumber (configFile >> "CfgGlasses" >> goggles _unit >> _property) == 1): { "GOGGLES" };
     case (getNumber (configFile >> "CfgWeapons" >>     hmd _unit >> _property) == 1): { "HMD" };
 };
+
+// No matching item in the goggles/hmd slot
+if (isNil "_itemType") exitWith {};
+
+////////////////////////////////////////
+// Set Flag
+////////////////////////////////////////
+_unit setVariable [QPVAR(isConsuming), _consumeType, true];
 
 ////////////////////////////////////////
 // Get itemConfig

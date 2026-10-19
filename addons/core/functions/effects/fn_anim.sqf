@@ -17,8 +17,6 @@
 
 params ["_unit", "_gestureName", "_duration"];
 
-if (!alive _unit) exitWith {};
-
 if (
     !alive _unit || {
     _unit getVariable ["ACE_isUnconscious", false] || {
@@ -29,7 +27,9 @@ if (
 private _oldGesture = gestureState _unit;
 
 private _time = time;
-_unit forceWalk true;
+// ACE status effects keep track of other mods forcing walk (carrying, overweight, ...)
+private _aceLoaded = isClass (configFile >> "CfgPatches" >> "ace_common");
+if (_aceLoaded) then { [_unit, "forceWalk", QPVAR(anim), true] call ace_common_fnc_statusEffect_set } else { _unit forceWalk true };
 
 private _handle = [
     {
@@ -45,7 +45,7 @@ private _handle = [
     {   // Statement
         params ["_unit", "_gestureName", "_oldGesture", "_handle"];
         [_handle] call CBA_fnc_removePerFrameHandler;
-        _unit forceWalk false;
+        if (isClass (configFile >> "CfgPatches" >> "ace_common")) then { [_unit, "forceWalk", QPVAR(anim), false] call ace_common_fnc_statusEffect_set } else { _unit forceWalk false };
         if (gestureState _unit isNotEqualTo _oldGesture ) then { _unit playActionNow _oldGesture };
     },
     [ _unit, _gestureName, _oldGesture, _handle ],

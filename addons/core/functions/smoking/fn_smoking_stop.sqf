@@ -33,7 +33,7 @@ if ( !_skipAnimation && { _isAwake && (!_isBurning) } ) then { [_unit, QEGVAR(an
 // Uncon
 ////////////////////////////////////////
 // 5% Chance for the unit to keep their cig when getting uncon/dead
-if ( !_isAwake && { random 1 > 0.05 } ) exitWith {};
+if ( !_isAwake && { random 1 < 0.05 } ) exitWith {};
 
 ////////////////////////////////////////
 // Remove Item

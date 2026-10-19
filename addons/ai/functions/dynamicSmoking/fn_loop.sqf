@@ -22,7 +22,7 @@ params ["_index"];
 private _array = GVAR(dynamicSmoking_units);
 private _index_end = count _array - 1;
 private _unit = _array select _index;
-private _canConsume = _unit call FUNC(canConsume);
+private _canConsume = !isNil "_unit" && { _unit call FUNC(canConsume) };
 
 if ( _canConsume ) then { [QGVAR(EH_startConsuming), _unit, _unit] call CBA_fnc_targetEvent; };
 

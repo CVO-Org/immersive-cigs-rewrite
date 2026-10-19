@@ -165,7 +165,7 @@
     ],
     {                          // statement - CODE - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         params ["_unit", "_container", "_item", "_slot", "_params"];
-        [_unit] call FUNC(sucking_stop);
+        [_unit] call FUNC(stop_suck);
         false
     }
 ] call CBA_fnc_addItemContextMenuOption;

@@ -15,7 +15,12 @@
 * Public: No
 */
 
+#define MAX_SMOKE_DISTANCE 300
+
 params [ "_unit", ["_cfg", configNull], ["_factor_params", 1, [0]], ["_ignoreLifeState", false, [false]]];
+
+// Only where someone can see it
+if ( !hasInterface || { positionCameraToWorld [0, 0, 0] distance _unit > MAX_SMOKE_DISTANCE } ) exitWith {};
 
 if ( ( !_ignoreLifeState ) && { !(lifeState _unit in ["HEALTHY", "INJURED"]) } ) exitWith {};
 

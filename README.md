@@ -57,16 +57,4 @@ Start at the [documentation overview](docs/README.md), or jump straight to your 
 - This mod has to be loaded on both, server and client. See [Server Admins](docs/server-admins.md).
 
 ### Credits
-- Original Authors:
-  - Rebel - Configs, Scripting
-  - Facel - 3d models, Textures
-  - Panimala - Icons, Sounds
-- Contributing Authors:
-  - prisonerMO - Scripting: remoteExec -> CBA Events
-  - kneely - WW2 Cigarette Models and Textures
-  - Vespade - Immersive Crayon Models and Textures
-  - Brominum - Model Cigarbox and new sounds
-  - ArtemisGodfrey - Helping with models
-  - yepperz - Artworks
-  - Dart - Scripting
-  - OverlordZorn - Rewrite of configs and scripts, fixing some models here, adding some new textures there and glueing everything together
+Based on the original Immersion Cigs by Rebel, Facel and Panimala. See the [list of all contributors](CONTRIBUTORS.md).

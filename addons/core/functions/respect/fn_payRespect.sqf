@@ -22,38 +22,16 @@ private _lookData = _player getVariable QPVAR(loopData);
 private _class = _lookData get "itemClass";
 private _itemType = _lookData get "itemType";
 
-switch (_itemType) do {
-    case "GOGGLES": { removeGoggles _player; };
-    case "HMD": { _player removeWeapon _class; };
-};
-
-[_player, _lookData, true, true] call FUNC(smoking_stop);
+// Stop smoking - removes the cigarette without animation and without dropping it
+[_player, _lookData, true, true] call FUNC(loopStop);
 
 switch (_itemType) do {
     case "GOGGLES": { [ _class, _class + "_nv" ] };
     case "HMD": {  [ _class trim ["_nv", 2], _class ] };
 } params ["_classGoggles", "_classHMD"];
 
-
-switch (true) do {
-    case (goggles _target isEqualTo ""): {
-        // place player cig type in goggles slot
-        _target addGoggles _classGoggles;
-    };
-    case (hmd _target isEqualTo ""): {
-        // place player cig type in hmd slot
-        _target addWeapon _classHMD;
-    };
-    default {
-        // rm hmd slot item
-        private _hmd = hmd _target;
-        _target removeWeapon _hmd;
-        // add cig to tgt
-        _target addWeapon _classHMD;
-        // place it in unit inventory or ground
-        [_player, _hmd, true, true] call CBA_fnc_addItem;
-    };
-};
+// Place the cigarette on the target - where the target is local, as the inventory commands need a local unit
+[QGVAR(EH_payRespect_target), [_target, _classGoggles, _classHMD], _target] call CBA_fnc_targetEvent;
 
 _target setVariable [QPVAR(respectPayed), true, true];
 

@@ -83,6 +83,7 @@ class CfgFunctions {
         class respect {
             file = PATH_TO_FUNC_SUB(respect);
             class payRespect {};
+            class payRespect_target {};
             class canPayRespect {};
         };
 

@@ -31,7 +31,8 @@ You can use every action in two ways:
 | Light up *their* cigarette | - | Interact with another unit → Head (needs a lighter) |
 | Light up their cigarette with yours | - | While smoking: interact with another unit → Head |
 | Light your cigarette from theirs | - | Interact with a smoking unit → Head |
-| Light your cigarette here | - | Interact with a burning campfire/fireplace (or, with ACE Fire, the head of a burning unit) |
+| Light up at the fire | - | Interact with a burning campfire/fireplace |
+| Light up on the burning body | - | With ACE Fire: interact with a burning unit → Head |
 | Light the next one from this cigarette | the unlit cigarette in your other slot, while smoking | Self → Equipment |
 | Pay respect to the fallen | - | While smoking: interact with a dead or unconscious unit → Head |
 

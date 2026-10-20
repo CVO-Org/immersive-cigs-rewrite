@@ -18,16 +18,26 @@
 
 if ( !hasInterface || { !isClass (configFile >> "CfgPatches" >> "ace_interact_menu") } ) exitWith {};
 
-private _action = [
-    QPVAR(light_from_fire),
-    LLSTRING(light_from_fire),
-    QPATHTOF(data\ui\light_cig.paa),
-    { call FUNC(lightFromFire) },
-    { call FUNC(canLightFromFire) }
-] call ace_interact_menu_fnc_createAction;
+private _fnc_createAction = {
+    params ["_name", "_displayName"];
+    [
+        _name,
+        _displayName,
+        QPATHTOF(data\ui\light_cig.paa),
+        { call FUNC(lightFromFire) },
+        { call FUNC(canLightFromFire) }
+    ] call ace_interact_menu_fnc_createAction
+};
+
+private _actionFire = [QPVAR(light_from_fire), LLSTRING(light_from_fire)] call _fnc_createAction;
+private _actionBody = [QPVAR(light_from_body), LLSTRING(light_from_body)] call _fnc_createAction;
 
 {
-    // Units: on the head, objects: on the object itself
-    private _parentPath = if (_x isEqualTo "CAManBase") then { ["ACE_Head"] } else { [] };
-    [_x, 0, _parentPath, _action, true] call ace_interact_menu_fnc_addActionToClass;
+    if (_x isEqualTo "CAManBase") then {
+        // Burning units - on the head
+        [_x, 0, ["ACE_Head"], _actionBody, true] call ace_interact_menu_fnc_addActionToClass;
+    } else {
+        // Fire sources - on the object itself
+        [_x, 0, [], _actionFire, true] call ace_interact_menu_fnc_addActionToClass;
+    };
 } forEach ([] call FUNC(getFireSourceClasses));

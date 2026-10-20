@@ -14,7 +14,7 @@
             <Chinese>启用 ACE 武器库中的自定义分类标签</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_ace_arsenal_tab_desc">
-            <English>When Enabled, this will create a Immersive Cigs Tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
+            <English>When enabled, this will create an Immersive Cigs tab in the ACE Arsenal (right side).\nThis can be enabled during the mission. To disable it, the mission needs to be restarted.</English>
             <French>Lorsque cette option est activée, elle crée un onglet « Immersive Cigs » dans l'arsenal ACE (côté droit). Pour le désactiver, la mission doit être redémarrée.</French>
             <Spanish>Si está activado, creará una pestaña de Immersive Cigs en el Arsenal de ACE (lado derecho).
 Se puede activar durante la misión. Para desactivarlo, la misión debe reiniciarse.</Spanish>
@@ -76,7 +76,7 @@ Dies kann während der Mission aktiviert werden. Zum Deaktivieren muss die Missi
             <Chinese>疲劳恢复延迟</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_decrease_delay_desc">
-            <English>Defines the delay before the smoking penalty will start to wear off.\nin Minutes.</English>
+            <English>Defines the delay before the smoking penalty starts to wear off.\nIn minutes.</English>
             <French>Définit le délai avant que la pénalité pour avoir fumé commence à s'estomper.\En minutes.</French>
             <Spanish>Define el retraso antes de que la penalización del humo empiece a desaparecer.
 En minutos.</Spanish>
@@ -107,7 +107,7 @@ In Minuten.</German>
             <Chinese>启用高级疲劳集成</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_enabled_desc">
-            <English>When Enabled, smoking will affect ACE Advanced Fatigue System.</English>
+            <English>When enabled, smoking will affect the ACE Advanced Fatigue system.</English>
             <French>Lorsque cette option est activée, le tabagisme aura une incidence sur le système avancé de fatigue ACE.</French>
             <Spanish>Si está activado, fumar afectará al sistema avanzado de fatiga de ACE.</Spanish>
             <Polish>Po włączeniu palenie będzie wpływać na zaawansowany system zmęczenia ACE.</Polish>
@@ -131,7 +131,7 @@ In Minuten.</German>
             <Chinese>疲劳修正</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_adv_fatigue_modifier_desc">
-            <English>Defines how strong smoking will be taken into account for the fatigue impact.</English>
+            <English>Defines how strongly smoking affects fatigue.</English>
             <French>Définit dans quelle mesure le tabagisme sera pris en compte dans l'impact de la fatigue.</French>
             <Spanish>Define qué tan fuerte se tendrá en cuenta el efecto del humo en la fatiga.</Spanish>
             <Polish>Określa, jak mocno palenie uwzględniane jest przy wpływie na zmęczenie.</Polish>
@@ -155,7 +155,7 @@ In Minuten.</German>
             <Chinese>自燃几率</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_effect_combustion_chance_desc">
-            <English>Defines the chance at which a player/unit might start burning if they're doing something silly and/or risky while smoking.\n 0% disables the effect.</English>
+            <English>Defines the chance at which a player/unit might start burning if they're doing something silly and/or risky while smoking.\n0% disables the effect.</English>
             <French>Définit le risque qu'un joueur ou une unité commence à brûler s'il fait quelque chose de stupide et/ou de risqué en fumant.</French>
             <Spanish>Define la probabilidad de que un jugador o unidad empiece a arder si hace algo poco sensato o arriesgado mientras fuma.
 0% desactiva el efecto.</Spanish>
@@ -210,7 +210,7 @@ In Minuten.</German>
             <Chinese>使用打火机时收起武器</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_require_holstered_weapon_desc">
-            <English>When using the a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
+            <English>When using a lighter or matches, the player automatically holsters their gun.\nThis is required to avoid dodgy animations.</English>
             <French>Lorsqu'il utilise un briquet ou des allumettes, le joueur range automatiquement son arme dans son étui.\nCela est nécessaire pour éviter les animations douteuses.</French>
             <Spanish>Al usar un encendedor o cerillas, el jugador guarda automáticamente el arma.
 Esto evita animaciones extrañas.</Spanish>
@@ -313,7 +313,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>吸烟强度</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_smoking_intensity_desc">
-            <English>Defines which how strong/long you puff/draw a smokable.</English>
+            <English>Defines how strongly/long you puff/draw on a smokable.</English>
             <French>Définit la force/durée avec laquelle vous tirez sur un produit à fumer.</French>
             <Spanish>Define cuán fuerte y cuánto tiempo inhalas al fumar.</Spanish>
             <Polish>Określa, jak mocno i długo palisz.</Polish>
@@ -373,7 +373,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>托马斯</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack">
-            <English>Start with a CigPack</English>
+            <English>Start with a Cig Pack</English>
             <French>Commencer avec un CigPack</French>
             <Spanish>Empezar con un paquete de cigarrillos</Spanish>
             <Polish>Zacznij z paczką papierosów</Polish>
@@ -385,7 +385,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>从带烟包开始</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_desc">
-            <English>Adds a CigPack the beginning of a single player mission.</English>
+            <English>Adds a cig pack at the beginning of a singleplayer mission.</English>
             <French>Ajoute un CigPack au début d'une mission singleplayer.</French>
             <Spanish>Añade un paquete de cigarrillos al inicio de una misión de un solo jugador.</Spanish>
             <Polish>Dodaje paczkę papierosów na początku misji dla jednego gracza.</Polish>
@@ -409,7 +409,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>烟包类型</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type_desc">
-            <English>Defines which type of CigPack (or other) will be added at the beginning of a single player mission.</English>
+            <English>Defines which type of cig pack (or other) will be added at the beginning of a singleplayer mission.</English>
             <French>Définit le type de CigPack (ou autre) qui sera ajouté au début d'une mission singleplayer.</French>
             <Spanish>Define qué tipo de paquete (u otro artículo) se añadirá al comienzo de una misión de un solo jugador.</Spanish>
             <Polish>Określa, jaki typ paczki (lub innego przedmiotu) zostanie dodany na początku misji dla jednego gracza.</Polish>
@@ -433,7 +433,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>在单人模式中为玩家添加物品</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems_desc">
-            <English>When this is enabled, the following items will be added in single player to the players inventory.</English>
+            <English>When enabled, the following items will be added to the player's inventory in singleplayer.</English>
             <French>Lorsque cette option est activée, les objets suivants sont ajoutés à l'inventaire du joueur en mode solo.</French>
             <Spanish>Si está activado, se añadirán los siguientes objetos al inventario del jugador en modo individual.</Spanish>
             <Polish>Po włączeniu następujące przedmioty zostaną dodane do ekwipunku gracza w trybie solo.</Polish>
@@ -457,7 +457,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>从带打火机开始</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_desc">
-            <English>Adds a Lighter at the beginning of a single player mission.</English>
+            <English>Adds a lighter at the beginning of a singleplayer mission.</English>
             <French>Ajoute un briquet au début d'une mission (SP seulement).</French>
             <Spanish>Añade un encendedor al inicio de una misión de un solo jugador.</Spanish>
             <Polish>Dodaje zapalniczkę na początku misji dla jednego gracza.</Polish>
@@ -481,7 +481,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>打火机类型</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addLighter_type_desc">
-            <English>Defines which type of lighter will be added at the beginning of a single player mission.</English>
+            <English>Defines which type of lighter will be added at the beginning of a singleplayer mission.</English>
             <French>Définit le type de briquet qui sera ajouté au début d'une mission (SP seulement).</French>
             <Spanish>Define qué tipo de encendedor se añadirá al inicio de una misión de un solo jugador.</Spanish>
             <Polish>Określa, jaki typ zapalniczki zostanie dodany na początku misji dla jednego gracza.</Polish>
@@ -843,7 +843,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>向逝者致敬……</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own">
-            <English>Light Up your cigarette</English>
+            <English>Light up your cigarette</English>
             <French>Allumer Cigarette</French>
             <Spanish>Encender tu cigarrillo</Spanish>
             <Polish>Zapalić swój papieros</Polish>
@@ -855,7 +855,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>點菸</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_custom">
-            <English>Light Up your %1</English>
+            <English>Light up your %1</English>
             <French>Illuminez votre %1</French>
             <Spanish>Enciende tu %1</Spanish>
             <Polish>Zapalić swój %1</Polish>
@@ -867,7 +867,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>点燃你的 %1</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_own_desc">
-            <English>Requires a Lighter or Matches in your inventory</English>
+            <English>Requires a lighter or matches in your inventory</English>
             <French>Nécessite un briquet ou des allumettes dans votre inventaire</French>
             <Spanish>Necesitas un encendedor o cerillas en tu inventario</Spanish>
             <Polish>Wymaga zapalniczki lub zapałek w ekwipunku</Polish>
@@ -879,7 +879,7 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Chinese>需要你背包里有打火机或火柴</Chinese>
         </Key>
         <Key ID="STR_cigs_core_start_cig_their">
-            <English>Light Up their cigarette</English>
+            <English>Light up their cigarette</English>
             <French>Allumer Cigarette</French>
             <Spanish>Encender su cigarrillo</Spanish>
             <Polish>Zapalić ich papierosa</Polish>

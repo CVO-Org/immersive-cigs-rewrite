@@ -76,6 +76,18 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+        - name: Prepare Steam changelog
+          id: changelog
+          env:
+            RELEASE_BODY: ${{ github.event.release.body }}
+          run: |
+            # steamcmd writes the changelog into a VDF file - double quotes and backslashes in the release notes would break it - both are replaced with ' (octal: \042 ", \134 \, \047 ')
+            {
+              echo 'text<<CHANGELOG_EOF'
+              printf '%s\n' "$RELEASE_BODY" | tr '\042\134' '\047\047'
+              echo 'CHANGELOG_EOF'
+            } >> "$GITHUB_OUTPUT"
+
         - name: Update to Steam Workshop (stable)
           uses: arma-actions/workshop-upload@v1
           with:
@@ -84,7 +96,7 @@ jobs:
             changelog: |
               https://github.com/${{ github.repository }}/releases/tag/v${{ env.VERSION }}
 
-              ${{ github.event.release.body }}
+              ${{ steps.changelog.outputs.text }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}

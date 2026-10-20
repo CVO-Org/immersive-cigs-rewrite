@@ -299,17 +299,49 @@ Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
         </Key>
         <Key ID="STR_cigs_aiCigs_module_packList_deselectAll">
             <English>Deselect all</English>
+            <French>Tout désélectionner</French>
+            <Spanish>Deseleccionar todo</Spanish>
+            <Polish>Odznacz wszystko</Polish>
+            <Portuguese>Desmarcar tudo</Portuguese>
+            <Russian>Снять выбор</Russian>
             <German>Alle abwählen</German>
+            <Korean>모두 선택 해제</Korean>
+            <Japanese>すべて選択解除</Japanese>
+            <Chinese>全部取消</Chinese>
         </Key>
         <Key ID="STR_cigs_aiCigs_module_packList_selectAll">
             <English>Select all</English>
+            <French>Tout sélectionner</French>
+            <Spanish>Seleccionar todo</Spanish>
+            <Polish>Zaznacz wszystko</Polish>
+            <Portuguese>Selecionar tudo</Portuguese>
+            <Russian>Выбрать все</Russian>
             <German>Alle auswählen</German>
+            <Korean>모두 선택</Korean>
+            <Japanese>すべて選択</Japanese>
+            <Chinese>全选</Chinese>
         </Key>
         <Key ID="STR_cigs_aiCigs_module_packList_tooltip">
             <English>Packages which AI units of this side can receive. Each package is picked at random from the selected ones.
 Nothing selected: this side receives no packages.</English>
+            <French>Paquets que les unités IA de ce camp peuvent recevoir. Chaque paquet est choisi au hasard parmi ceux sélectionnés.
+Aucune sélection : ce camp ne reçoit aucun paquet.</French>
+            <Spanish>Paquetes que las unidades de IA de este bando pueden recibir. Cada paquete se elige al azar entre los seleccionados.
+Nada seleccionado: este bando no recibe paquetes.</Spanish>
+            <Polish>Paczki, które jednostki SI tej strony mogą otrzymać. Każda paczka jest losowana spośród zaznaczonych.
+Nic nie zaznaczono: ta strona nie otrzymuje paczek.</Polish>
+            <Portuguese>Pacotes que as unidades de IA deste lado podem receber. Cada pacote é escolhido aleatoriamente entre os selecionados.
+Nada selecionado: este lado não recebe pacotes.</Portuguese>
+            <Russian>Пачки, которые могут получить юниты ИИ этой стороны. Каждая пачка выбирается случайно из отмеченных.
+Ничего не отмечено: эта сторона не получает пачек.</Russian>
             <German>Pakete, die KI-Einheiten dieser Seite erhalten können. Jedes Paket wird zufällig aus den ausgewählten gezogen.
 Nichts ausgewählt: diese Seite erhält keine Pakete.</German>
+            <Korean>이 진영의 AI 유닛이 받을 수 있는 팩입니다. 각 팩은 선택된 것 중에서 무작위로 고릅니다.
+선택 없음: 이 진영은 팩을 받지 않습니다.</Korean>
+            <Japanese>この陣営のAIユニットが受け取れるパックです。各パックは選択したものからランダムに選ばれます。
+何も選択しない場合：この陣営はパックを受け取りません。</Japanese>
+            <Chinese>该阵营 AI 单位可获得的烟盒。每个烟盒从所选项中随机选取。
+未选择任何项：该阵营不会获得烟盒。</Chinese>
         </Key>
     </Package>
 </Project>

@@ -608,7 +608,15 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
     <Package name="GlobalDescription">
         <Key ID="STR_cigs_core_give_fire_from_cig">
             <English>Light up their cigarette with yours</English>
+            <French>Allumer sa cigarette avec la vôtre</French>
+            <Spanish>Encender su cigarrillo con el tuyo</Spanish>
+            <Polish>Zapalić ich papierosa swoim</Polish>
+            <Portuguese>Acender o cigarro deles com o seu</Portuguese>
+            <Russian>Дать прикурить от своей сигареты</Russian>
             <German>Ihre Zigarette mit deiner anzünden</German>
+            <Korean>내 담배로 상대 담배에 불 붙이기</Korean>
+            <Japanese>自分のタバコで火を貸す</Japanese>
+            <Chinese>用你的烟帮他点烟</Chinese>
         </Key>
         <Key ID="STR_cigs_core_glasses_stage0">
             <English>Glasses Slot - Stage 0</English>
@@ -784,27 +792,75 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
     <Package name="Interactions_cigs">
         <Key ID="STR_cigs_core_chain_light">
             <English>Light the next one from this cigarette</English>
+            <French>Allumer la suivante avec cette cigarette</French>
+            <Spanish>Encender el siguiente con este cigarrillo</Spanish>
+            <Polish>Odpal następnego od tego papierosa</Polish>
+            <Portuguese>Acender o próximo com este cigarro</Portuguese>
+            <Russian>Прикурить следующую от этой сигареты</Russian>
             <German>Die nächste an dieser Zigarette anzünden</German>
+            <Korean>이 담배로 다음 담배에 불 붙이기</Korean>
+            <Japanese>このタバコで次の一本に火をつける</Japanese>
+            <Chinese>用这支烟点燃下一支</Chinese>
         </Key>
         <Key ID="STR_cigs_core_chain_light_desc">
             <English>Lights the cigarette in your other slot from the one you are smoking. The current one is put out.</English>
+            <French>Allume la cigarette de votre autre emplacement avec celle que vous fumez. La cigarette actuelle est éteinte.</French>
+            <Spanish>Enciende el cigarrillo de tu otra ranura con el que estás fumando. El actual se apaga.</Spanish>
+            <Polish>Zapala papierosa w drugim slocie od tego, którego palisz. Obecny zostaje zgaszony.</Polish>
+            <Portuguese>Acende o cigarro do seu outro espaço com o que você está fumando. O atual é apagado.</Portuguese>
+            <Russian>Прикуривает сигарету из другого слота от той, что вы курите. Текущая тушится.</Russian>
             <German>Zündet die Zigarette im anderen Slot an der an, die du gerade rauchst. Die aktuelle wird ausgemacht.</German>
+            <Korean>피우고 있는 담배로 다른 슬롯의 담배에 불을 붙입니다. 현재 담배는 꺼집니다.</Korean>
+            <Japanese>吸っているタバコで、もう一方のスロットのタバコに火をつけます。今のタバコは消えます。</Japanese>
+            <Chinese>用正在抽的烟点燃另一栏位中的烟。当前这支会被熄灭。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_convert_toGoggles">
             <English>Convert to facewear item</English>
+            <French>Convertir en objet de visage</French>
+            <Spanish>Convertir en objeto facial</Spanish>
+            <Polish>Zamień na przedmiot na twarz</Polish>
+            <Portuguese>Converter em item facial</Portuguese>
+            <Russian>Превратить в предмет для лица</Russian>
             <German>In Brillen-Gegenstand umwandeln</German>
+            <Korean>얼굴 착용 아이템으로 변환</Korean>
+            <Japanese>フェイスウェアアイテムに変換</Japanese>
+            <Chinese>转换为面部物品</Chinese>
         </Key>
         <Key ID="STR_cigs_core_convert_toGoggles_desc">
             <English>Moves it to the facewear slot if it's free, otherwise to your inventory. Not possible while smoking or sucking.</English>
+            <French>Le place dans l'emplacement visage s'il est libre, sinon dans votre inventaire. Impossible en fumant ou en suçant.</French>
+            <Spanish>Lo coloca en la ranura facial si está libre; si no, en tu inventario. No es posible mientras fumas o chupas.</Spanish>
+            <Polish>Umieszcza go w slocie na twarz, jeśli jest wolny, w przeciwnym razie w ekwipunku. Niemożliwe podczas palenia lub ssania.</Polish>
+            <Portuguese>Coloca no espaço facial se estiver livre, senão no seu inventário. Não é possível enquanto fuma ou chupa.</Portuguese>
+            <Russian>Помещает в слот для лица, если он свободен, иначе в инвентарь. Недоступно во время курения или сосания.</Russian>
             <German>Legt es in den Brillen-Slot, wenn er frei ist, sonst ins Inventar. Nicht möglich während man raucht oder lutscht.</German>
+            <Korean>얼굴 슬롯이 비어 있으면 그곳에, 아니면 인벤토리에 넣습니다. 흡연 중이거나 빠는 중에는 할 수 없습니다.</Korean>
+            <Japanese>フェイスウェアスロットが空いていればそこへ、空いていなければインベントリへ移します。喫煙中・舐めている間は使用できません。</Japanese>
+            <Chinese>若面部栏位空闲则放入其中，否则放入背包。吸烟或含着时无法使用。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_convert_toHMD">
             <English>Convert to NVG item</English>
+            <French>Convertir en objet de vision nocturne</French>
+            <Spanish>Convertir en objeto de visión nocturna</Spanish>
+            <Polish>Zamień na przedmiot noktowizora</Polish>
+            <Portuguese>Converter em item de visão noturna</Portuguese>
+            <Russian>Превратить в предмет для слота ПНВ</Russian>
             <German>In Nachtsicht-Gegenstand umwandeln</German>
+            <Korean>야간투시경 아이템으로 변환</Korean>
+            <Japanese>暗視装置アイテムに変換</Japanese>
+            <Chinese>转换为夜视仪物品</Chinese>
         </Key>
         <Key ID="STR_cigs_core_convert_toHMD_desc">
             <English>Moves it to the NVG slot if it's free, otherwise to your inventory. Not possible while smoking or sucking.</English>
+            <French>Le place dans l'emplacement de vision nocturne s'il est libre, sinon dans votre inventaire. Impossible en fumant ou en suçant.</French>
+            <Spanish>Lo coloca en la ranura de visión nocturna si está libre; si no, en tu inventario. No es posible mientras fumas o chupas.</Spanish>
+            <Polish>Umieszcza go w slocie noktowizora, jeśli jest wolny, w przeciwnym razie w ekwipunku. Niemożliwe podczas palenia lub ssania.</Polish>
+            <Portuguese>Coloca no espaço de visão noturna se estiver livre, senão no seu inventário. Não é possível enquanto fuma ou chupa.</Portuguese>
+            <Russian>Помещает в слот ПНВ, если он свободен, иначе в инвентарь. Недоступно во время курения или сосания.</Russian>
             <German>Legt es in den Nachtsicht-Slot, wenn er frei ist, sonst ins Inventar. Nicht möglich während man raucht oder lutscht.</German>
+            <Korean>야간투시경 슬롯이 비어 있으면 그곳에, 아니면 인벤토리에 넣습니다. 흡연 중이거나 빠는 중에는 할 수 없습니다.</Korean>
+            <Japanese>暗視装置スロットが空いていればそこへ、空いていなければインベントリへ移します。喫煙中・舐めている間は使用できません。</Japanese>
+            <Chinese>若夜视仪栏位空闲则放入其中，否则放入背包。吸烟或含着时无法使用。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_eat_cig">
             <English>Eat</English>
@@ -958,7 +1014,15 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
     <Package name="Items">
         <Key ID="STR_cigs_core_light_from_theirs">
             <English>Light your cigarette from theirs</English>
+            <French>Allumer votre cigarette avec la sienne</French>
+            <Spanish>Encender tu cigarrillo con el suyo</Spanish>
+            <Polish>Zapalić swojego papierosa od ich</Polish>
+            <Portuguese>Acender seu cigarro com o deles</Portuguese>
+            <Russian>Прикурить от их сигареты</Russian>
             <German>Deine Zigarette an ihrer anzünden</German>
+            <Korean>상대 담배로 내 담배에 불 붙이기</Korean>
+            <Japanese>相手のタバコで火をもらう</Japanese>
+            <Chinese>借他的烟点燃你的烟</Chinese>
         </Key>
         <Key ID="STR_cigs_core_lighter">
             <English>Lighter</English>
@@ -986,7 +1050,15 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
         <Key ID="STR_cigs_core_lit_from_yours">
             <English>%1 lit their cigarette from yours.</English>
+            <French>%1 a allumé sa cigarette avec la vôtre.</French>
+            <Spanish>%1 encendió su cigarrillo con el tuyo.</Spanish>
+            <Polish>%1 zapalił(a) papierosa od twojego.</Polish>
+            <Portuguese>%1 acendeu o cigarro com o seu.</Portuguese>
+            <Russian>%1 прикурил(а) от вашей сигареты.</Russian>
             <German>%1 hat sich die Zigarette an deiner angezündet.</German>
+            <Korean>%1님이 당신의 담배로 불을 붙였습니다.</Korean>
+            <Japanese>%1があなたのタバコで火をつけました。</Japanese>
+            <Chinese>%1 用你的烟点燃了自己的烟。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_matches">
             <English>Matches</English>

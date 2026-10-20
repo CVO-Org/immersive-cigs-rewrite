@@ -27,7 +27,7 @@ You can use every action in two ways:
 | Put cigarette out | the burning cigarette | Self → Equipment |
 | Start / stop sucking | the lollipop or crayon in the facewear/NVG slot | Self → Equipment |
 | Eat | the cigarette, lollipop or crayon in the facewear/NVG slot | - |
-| Convert to NVG / facewear item | a cigarette, lollipop or crayon - worn or in your inventory. It goes into the matching slot if that's free. Not while smoking or sucking. | - |
+| Convert to NVG / facewear item | a cigarette, lollipop or crayon - worn or in your inventory. It goes into the matching slot if that's free (from your inventory only if you don't already wear one in the other slot). Not while smoking or sucking. | - |
 | Light up *their* cigarette | - | Interact with another unit → Head (needs a lighter) |
 | Light up their cigarette with yours | - | While smoking: interact with another unit → Head |
 | Light your cigarette from theirs | - | Interact with a smoking unit → Head |

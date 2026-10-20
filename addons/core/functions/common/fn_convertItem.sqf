@@ -5,7 +5,8 @@
 * Converts a smokable/suckable item between its facewear (CfgGlasses) and NVG (CfgWeapons) version.
 * The original item is removed by the CBA context menu (consume).
 *
-* The converted item is put into its slot (facewear or NVG) if it's free.
+* The converted item is put into its slot (facewear or NVG) if it's free - from a container only if the other slot
+* doesn't hold a smokable/suckable already, the InventoryClosed handler (postInit) would move it back.
 * Otherwise, equipped items go into the inventory (or onto the ground) and items in a container stay in that container.
 *
 * Arguments:
@@ -33,10 +34,17 @@ private _toHMD = switch (_slot) do {
 };
 private _newItem = if (_toHMD) then { _item + "_nv" } else { _item select [0, count _item - 3] };
 
+// From a container: does the other slot hold a smokable/suckable already?
+private _fromContainer = !(_slot in ["GOGGLES", "HMD"]);
+private _otherSlotConsumable = _fromContainer && {
+    private _cfg = if (_toHMD) then { configFile >> "CfgGlasses" >> goggles _unit } else { configFile >> "CfgWeapons" >> hmd _unit };
+    getNumber (_cfg >> QPVAR(isSmokable)) == 1 || { getNumber (_cfg >> QPVAR(isSuckable)) == 1 }
+};
+
 switch (true) do {
     // Into the target slot if it's free - equipped and from a container
-    case ( _toHMD && { hmd _unit isEqualTo "" } ):         { _unit linkItem _newItem; };
-    case ( !_toHMD && { goggles _unit isEqualTo "" } ):    { _unit addGoggles _newItem; };
+    case ( !_otherSlotConsumable && { _toHMD } && { hmd _unit isEqualTo "" } ):        { _unit linkItem _newItem; };
+    case ( !_otherSlotConsumable && { !_toHMD } && { goggles _unit isEqualTo "" } ):   { _unit addGoggles _newItem; };
     // In a container: stay in that container
     case ( !(_slot in ["GOGGLES", "HMD"]) && { _container isEqualType objNull && { !isNull _container } } ): { _container addItemCargoGlobal [_newItem, 1]; };
     // Otherwise: inventory, or the ground when it's full

@@ -44,8 +44,12 @@
         private _sound = selectRandom [QPVAR(eat_bread_1), QPVAR(eat_bread_2), QPVAR(eat_bread_3), QPVAR(eat_bread_4), QPVAR(eat_bread_5)];
         [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D;
 
-        // Add Damage when Unit was Smoking - ACE Medical only
-        if (_unit getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE" && { isClass (configFile >> "CfgPatches" >> "ace_medical") }) then {
+        // Add Damage when eating the burning cigarette - not a second, unlit one - ACE Medical only
+        if (
+            _unit getVariable [QPVAR(isConsuming), false] isEqualTo "SMOKE"
+            && { _item isEqualTo ((_unit getVariable [QPVAR(loopData), createHashMap]) getOrDefault ["itemClass", ""]) }
+            && { isClass (configFile >> "CfgPatches" >> "ace_medical") }
+        ) then {
             [_unit, 0.5 + random 0.5, "head", "burn", _unit] call ace_medical_fnc_addDamageToUnit;
         };
 

@@ -94,15 +94,39 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_random_desc">
             <English>Picks a random pack from all loaded packs.</English>
+            <French>Choisit un paquet au hasard parmi tous les paquets chargés.</French>
+            <Spanish>Elige un paquete al azar entre todos los paquetes cargados.</Spanish>
+            <Polish>Losuje paczkę spośród wszystkich wczytanych paczek.</Polish>
+            <Portuguese>Escolhe um pacote aleatório entre todos os pacotes carregados.</Portuguese>
+            <Russian>Выбирает случайную пачку из всех загруженных.</Russian>
             <German>Wählt ein zufälliges Paket aus allen geladenen Paketen.</German>
+            <Korean>불러온 모든 팩 중에서 무작위로 고릅니다.</Korean>
+            <Japanese>読み込まれたすべてのパックからランダムに選びます。</Japanese>
+            <Chinese>从所有已加载的烟盒中随机选择。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_side">
             <English>Based on Side</English>
+            <French>Selon le camp</French>
+            <Spanish>Según el bando</Spanish>
+            <Polish>Według strony</Polish>
+            <Portuguese>Conforme o lado</Portuguese>
+            <Russian>По стороне</Russian>
             <German>Nach Seite</German>
+            <Korean>진영 기준</Korean>
+            <Japanese>陣営に応じて</Japanese>
+            <Chinese>按阵营</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_brand_side_desc">
             <English>Picks a random pack from the packs of the unit's side (Configure AI Cigs module or default packs).</English>
+            <French>Choisit un paquet au hasard parmi les paquets du camp de l'unité (module Configure AI Cigs ou paquets par défaut).</French>
+            <Spanish>Elige un paquete al azar entre los paquetes del bando de la unidad (módulo Configure AI Cigs o paquetes por defecto).</Spanish>
+            <Polish>Losuje paczkę spośród paczek strony jednostki (moduł Configure AI Cigs lub paczki domyślne).</Polish>
+            <Portuguese>Escolhe um pacote aleatório entre os pacotes do lado da unidade (módulo Configure AI Cigs ou pacotes padrão).</Portuguese>
+            <Russian>Выбирает случайную пачку из пачек стороны юнита (модуль Configure AI Cigs или пачки по умолчанию).</Russian>
             <German>Wählt ein zufälliges Paket aus den Paketen der Seite der Einheit (Modul "Configure AI Cigs" oder Standardpakete).</German>
+            <Korean>유닛 진영의 팩 중에서 무작위로 고릅니다 (Configure AI Cigs 모듈 또는 기본 팩).</Korean>
+            <Japanese>ユニットの陣営のパックからランダムに選びます（Configure AI Cigs モジュールまたはデフォルトのパック）。</Japanese>
+            <Chinese>从单位所属阵营的烟盒中随机选择（Configure AI Cigs 模块或默认烟盒）。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
             <English>Lighter</English>
@@ -130,7 +154,15 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_random_desc">
             <English>Picks a random lighter from all loaded lighters.</English>
+            <French>Choisit un briquet au hasard parmi tous les briquets chargés.</French>
+            <Spanish>Elige un encendedor al azar entre todos los cargados.</Spanish>
+            <Polish>Losuje zapalniczkę spośród wszystkich wczytanych.</Polish>
+            <Portuguese>Escolhe um isqueiro aleatório entre todos os carregados.</Portuguese>
+            <Russian>Выбирает случайную зажигалку из всех загруженных.</Russian>
             <German>Wählt ein zufälliges Feuerzeug aus allen geladenen Feuerzeugen.</German>
+            <Korean>불러온 모든 라이터 중에서 무작위로 고릅니다.</Korean>
+            <Japanese>読み込まれたすべてのライターからランダムに選びます。</Japanese>
+            <Chinese>从所有已加载的打火机中随机选择。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
             <English>Failed - No unit has been selected.</English>
@@ -182,7 +214,15 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_random">
             <English>Random</English>
+            <French>Aléatoire</French>
+            <Spanish>Aleatorio</Spanish>
+            <Polish>Losowo</Polish>
+            <Portuguese>Aleatório</Portuguese>
+            <Russian>Случайно</Russian>
             <German>Zufällig</German>
+            <Korean>무작위</Korean>
+            <Japanese>ランダム</Japanese>
+            <Chinese>随机</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot">
             <English>Preferred Slot</English>
@@ -210,11 +250,27 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_goggles">
             <English>Goggles/Facewear</English>
+            <French>Lunettes/Visage</French>
+            <Spanish>Gafas/Cara</Spanish>
+            <Polish>Gogle/Twarz</Polish>
+            <Portuguese>Óculos/Rosto</Portuguese>
+            <Russian>Очки/Лицо</Russian>
             <German>Brille/Gesicht</German>
+            <Korean>고글/얼굴</Korean>
+            <Japanese>ゴーグル/フェイスウェア</Japanese>
+            <Chinese>护目镜/面部</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_hmd">
             <English>Nightvision</English>
+            <French>Vision nocturne</French>
+            <Spanish>Visión nocturna</Spanish>
+            <Polish>Noktowizor</Polish>
+            <Portuguese>Visão noturna</Portuguese>
+            <Russian>ПНВ</Russian>
             <German>Nachtsicht</German>
+            <Korean>야간투시경</Korean>
+            <Japanese>暗視装置</Japanese>
+            <Chinese>夜视仪</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_success">
             <English>Done - Unit is now smoking/sucking.</English>

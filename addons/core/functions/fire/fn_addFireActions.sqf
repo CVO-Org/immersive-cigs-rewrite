@@ -34,8 +34,8 @@ private _actionBody = [QPVAR(light_from_body), LLSTRING(light_from_body)] call _
 
 {
     if (_x isEqualTo "CAManBase") then {
-        // Burning units - on the head
-        [_x, 0, ["ACE_Head"], _actionBody, true] call ace_interact_menu_fnc_addActionToClass;
+        // Burning units - in the main interaction menu
+        [_x, 0, ["ACE_MainActions"], _actionBody, true] call ace_interact_menu_fnc_addActionToClass;
     } else {
         // Fire sources - on the object itself
         [_x, 0, [], _actionFire, true] call ace_interact_menu_fnc_addActionToClass;

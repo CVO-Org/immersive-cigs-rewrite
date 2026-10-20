@@ -88,7 +88,7 @@
             <Chinese>延迟</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_delay_desc">
-            <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
+            <English>Delays the addition of items, in case a mod or mission manages the inventory by script.</English>
             <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
             <Spanish>Retrasa la adición de objetos en caso de que algún mod o misión use gestión de inventario por script.</Spanish>
             <Polish>Opóźnia dodawanie przedmiotów, jeśli jakiś mod lub misja używa skryptowego zarządzania ekwipunkiem.</Polish>
@@ -136,7 +136,7 @@
             <Chinese>为 %1 启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_side_enabled_desc">
-            <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
+            <English>Controls if AI units of the %1 side receive cigarettes.</English>
             <French>Contrôle si les unités IA du côté %1 doivent recevoir des cigarettes.</French>
             <Spanish>Controla si las unidades de IA del bando %1 recibirán cigarrillos.</Spanish>
             <Polish>Decyduje, czy jednostki SI strony %1 otrzymają papierosy.</Polish>
@@ -162,7 +162,7 @@
             <Chinese>检查单位是否有兼容物品</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_checkUnitInventory_desc">
-            <English>When enabled, it will check if a unit has a package - both smokable or suckable. If so, these units will be added to the framework.</English>
+            <English>When enabled, units that already carry a package (smokable or suckable) are added to the framework.</English>
             <French>Lorsque cette option est activée, elle vérifie si une unité dispose d'un paquet, qu'il soit fumable ou à sucer. Si c'est le cas, ces unités seront ajoutées.</French>
             <Spanish>Si está activado, comprueba si la unidad tiene un paquete, ya sea fumable o chupable. Si es así, se añade al sistema.</Spanish>
             <Polish>Po włączeniu sprawdza, czy jednostka ma paczkę — palną lub ssącą. Jeśli tak, jednostka zostanie dodana do systemu.</Polish>
@@ -186,8 +186,8 @@
             <Chinese>启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_enable_desc">
-            <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires Cigs on AI to be enabled to distribute items and add to the framework.</English>
-            <French>Permet au système de faire fumer dynamiquement des cigarettes à l'IA.\nNécessite l'activation de Cigs on AI pour distribuer des objets et les ajouter.</French>
+            <English>Enables the system to dynamically make AI smoke cigarettes.\nRequires AI Cigs to be enabled to distribute items and add units to the framework.</English>
+            <French>Permet au système de faire fumer dynamiquement des cigarettes à l'IA.\nNécessite l'activation de AI Cigs pour distribuer des objets et les ajouter.</French>
             <Spanish>Activa el sistema para que la IA fume cigarrillos dinámicamente.
 Requiere que los cigarrillos de IA estén activados para distribuir objetos y añadirlos al sistema.</Spanish>
             <Polish>Włącza system dynamicznego palenia przez SI.
@@ -200,7 +200,7 @@ Requer que os cigarros da IA estejam ativados para distribuir itens e adicioná-
 Es benötigt aktivierte KI-Zigaretten, damit Gegenstände verteilt und dem Framework hinzugefügt werden.</German>
             <Korean>AI가 동적으로 담배를 피우도록 하는 시스템을 활성화합니다.
 아이템 배포 및 시스템 추가를 위해 AI 담배 활성화가 필요합니다.</Korean>
-            <Japanese>システムがAIにタバコを吸わせるように動的に動作させます。\nアイテムを配布してフレームワークに追加するには、Cigs on AIが有効になっている必要があります。</Japanese>
+            <Japanese>システムがAIにタバコを吸わせるように動的に動作させます。\nアイテムを配布してフレームワークに追加するには、AI Cigsが有効になっている必要があります。</Japanese>
             <Chinese>启用系统，使 AI 能动态抽烟。
 需要同时启用 AI 烟草，以分发物品并加入框架。</Chinese>
         </Key>
@@ -217,7 +217,7 @@ Es benötigt aktivierte KI-Zigaretten, damit Gegenstände verteilt und dem Frame
             <Chinese>移除插槽物品</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_slot_remove_desc">
-            <English>When Enabled, if there is no available slot for the AI to put the cigarette, it will remove current item from selected slot.\nIt will attempt to put item into the units inventory.</English>
+            <English>When enabled and there is no free slot for the cigarette, the AI removes the current item from the preferred slot.\nIt will attempt to put the item into the unit's inventory.</English>
             <French>Lorsque cette option est activée, s'il n'y a pas d'emplacement disponible pour que l'IA y place la cigarette, elle retirera l'objet actuel de l'emplacement sélectionné.\nElle tentera de placer l'objet dans l'inventaire de l'unité.</French>
             <Spanish>Si está activado y no hay hueco libre para la IA, se quitará el objeto actual del hueco seleccionado.
 Intentará colocarlo en el inventario de la unidad.</Spanish>
@@ -248,7 +248,7 @@ Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
             <Chinese>两支烟之间的平均时间</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicSmoking_time_avg_desc">
-            <English>This values define the average time in Minutes that must have passed before a unit can smoke another cigarette.</English>
+            <English>Average time in minutes before a unit can smoke another cigarette.</English>
             <French>Ces valeurs définissent le temps moyen en minutes qui doit s'écouler avant qu'une unité puisse fumer une autre cigarette.</French>
             <Spanish>Estos valores definen el tiempo medio en minutos que debe pasar antes de que la unidad pueda fumar otra cigarrillo.</Spanish>
             <Polish>Te wartości określają średni czas w minutach, który musi upłynąć, zanim jednostka będzie mogła zapalić kolejnego papierosa.</Polish>
@@ -260,7 +260,7 @@ Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
             <Chinese>这些数值定义了单位在再次吸下一支烟之前必须经过的平均分钟数。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot">
-            <English>Preffered Slot</English>
+            <English>Preferred Slot</English>
             <French>Emplacement préféré</French>
             <Spanish>Hueco preferido</Spanish>
             <Polish>Preferowane gniazdo</Polish>
@@ -272,7 +272,7 @@ Es wird versucht, das Objekt in das Inventar der Einheit zu legen.</German>
             <Chinese>首选插槽</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_dynamicsmoking_slot_desc">
-            <English>Defines the prefered slot to put the item if both are already occupied.</English>
+            <English>Defines the preferred slot to put the item in if both are already occupied.</English>
             <French>Définit l'emplacement préféré pour placer l'objet si les deux sont déjà occupés.</French>
             <Spanish>Define el hueco preferido para colocar el objeto si ambos ya están ocupados.</Spanish>
             <Polish>Określa preferowane gniazdo do umieszczenia przedmiotu, jeśli oba są już zajęte.</Polish>

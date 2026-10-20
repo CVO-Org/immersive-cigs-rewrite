@@ -2,7 +2,7 @@
 <Project name="cigs_legacy">
     <Package name="Settings">
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission">
-            <English>Update Missions Arsenal Loadouts</English>
+            <English>Update Mission Arsenal Loadouts</English>
             <French>Mise à jour des chargements d'arsenal de missions</French>
             <Spanish>Actualizar equipamientos del Arsenal de misiones</Spanish>
             <Polish>Zaktualizuj zestawy uzbrojenia misji</Polish>
@@ -14,7 +14,7 @@
             <Chinese>更新任务武器库装备</Chinese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_mission_desc">
-            <English>On mission start or setting change to true, will scan default ace loadouts and replace deprecated legacy classnames with the new counterparts.</English>
+            <English>On mission start, or when enabled, replaces deprecated legacy classnames in the ACE default loadouts with their new counterparts.</English>
             <French>Au début de la mission ou lorsque le paramètre est réglé sur true, le système analyse les chargements par défaut de ace et remplace les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
             <Spanish>Al iniciar la misión o cambiar la configuración a true, escaneará los equipamientos predeterminados de ACE y reemplazará los nombres de clase obsoletos por los nuevos.</Spanish>
             <Polish>Po starcie misji lub przełączeniu ustawienia na true skanuje domyślne zestawy ACE i zastępuje przestarzałe stare nazwy klas nowymi.</Polish>
@@ -38,7 +38,7 @@
             <Chinese>更新个人武器库装备</Chinese>
         </Key>
         <Key ID="STR_cigs_legacy_set_loudout_replacer_enable_personal_desc">
-            <English>Whenever the ace or vanilla arsenal are being opened, it will scan the saved loadouts and will replace deprecated legacy classnames with their new counterparts.</English>
+            <English>Whenever the ACE or vanilla arsenal is opened, replaces deprecated legacy classnames in the saved loadouts with their new counterparts.</English>
             <French>Chaque fois que l'ACE ou  l'arsenal vanille sont ouverts, il analysera les chargements sauvegardés et remplacera les anciens noms de classe obsolètes par leurs nouveaux équivalents.</French>
             <Spanish>Cada vez que se abra el arsenal de ACE o vanilla, escaneará los equipamientos guardados y reemplazará los nombres de clase obsoletos por los nuevos.</Spanish>
             <Polish>Za każdym razem, gdy otworzony zostanie arsenal ACE lub vanilla, zeskanuje zapisane zestawy i zastąpi przestarzałe nazwy klas nowymi.</Polish>

@@ -2,7 +2,7 @@
 <Project name="cigs_module">
     <Package name="3den-attributes">
         <Key ID="STR_cigs_modules_blockAiCigs_displayName">
-            <English>Block Ai Cigs</English>
+            <English>Block AI Cigs</English>
             <French>Bloquer les cigarettes IA</French>
             <Spanish>Bloquear cigarrillos de IA</Spanish>
             <Polish>Zablokuj papierosy SI</Polish>
@@ -14,7 +14,7 @@
             <Chinese>屏蔽 AI 烟草</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockAiCigs_tooltip">
-            <English>Will prevent distribution of cig-items on this unit.\nWill also prevent unit from being added to the dynamic smoking system.</English>
+            <English>Prevents the distribution of cig items to this unit.\nAlso prevents the unit from being added to the dynamic smoking system.</English>
             <French>Empêche la distribution des objets à cigarette sur cette unité.
 Empêche également l’ajout de l’unité au système de tabagisme dynamique.</French>
             <Spanish>Impide la distribución de objetos de cigarro en esta unidad.
@@ -47,7 +47,7 @@ Verhindert außerdem, dass die Einheit dem dynamischen Rauchsystem hinzugefügt 
             <Chinese>屏蔽动画</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockAnimations_tooltip">
-            <English>Will block any Immersive Cigs related animations.\nUseful for decorative Units with their own animation loop.</English>
+            <English>Blocks all Immersive Cigs related animations.\nUseful for decorative units with their own animation loop.</English>
             <French>Bloque toutes les animations liées à Immersive Cigs.
 Utile pour les unités décoratives avec leur propre boucle d’animation.</French>
             <Spanish>Bloquea cualquier animación relacionada con Immersive Cigs.
@@ -80,7 +80,7 @@ Nützlich für dekorative Einheiten mit eigener Animationsschleife.</German>
             <Chinese>屏蔽动态吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_modules_blockDynamicSmoking_tooltip">
-            <English>Will prevent adding the unit to the dynamic smoking system.\nWill only take effect when Dynamic Smoking is enabled.</English>
+            <English>Prevents the unit from being added to the dynamic smoking system.\nOnly takes effect when Dynamic Smoking is enabled.</English>
             <French>Empêche l’ajout de l’unité au système de tabagisme dynamique.
 Prendra effet uniquement lorsque le tabagisme dynamique est activé.</French>
             <Spanish>Impide añadir la unidad al sistema de fumar dinámico.

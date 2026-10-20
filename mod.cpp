@@ -11,7 +11,7 @@ overview        = "Immersive Cigs - Rewrite";                            // Over
 description     = "Immersive Cigs - Rewrite";                            // Probably in context with action
 
 actionName      = "Website";
-action          = "https://github.com/OverlordZorn/immersive-cigs-rewrite";
+action          = "https://github.com/CVO-Org/immersive-cigs-rewrite";
 
 
 picture         = "img\mod-rw-trans.paa";

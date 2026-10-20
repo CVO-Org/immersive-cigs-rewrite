@@ -14,7 +14,7 @@
             <Chinese>单位开始吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_Brand">
-            <English>Type Cigarette Brand</English>
+            <English>Cigarette Brand</English>
             <French>Marque de cigarettes</French>
             <Spanish>Tipo de marca de cigarrillos</Spanish>
             <Polish>Wybierz markę papierosów</Polish>
@@ -50,7 +50,7 @@
             <Chinese>自动吸烟</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_add_desc">
-            <English>Will add the Unit to the AI Dynamic Smoking System.\nThe Unit will automatically smoke again after the first cigarette.</English>
+            <English>Adds the unit to the AI dynamic smoking system.\nThe unit will automatically smoke again after the first cigarette.</English>
             <French>Ajoute l'unité au système dynamique de tabagisme de l'IA.\nL'unité recommencera automatiquement à fumer après la première cigarette.</French>
             <Spanish>Añade la unidad al sistema dinámico de fumar de la IA.
 La unidad empezará a fumar de nuevo tras el primer cigarro.</Spanish>
@@ -105,7 +105,7 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <German>Wählt ein zufälliges Paket aus den Paketen der Seite der Einheit (Modul "Configure AI Cigs" oder Standardpakete).</German>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter">
-            <English>Type Lighter</English>
+            <English>Lighter</English>
             <French>Allume-cigare</French>
             <Spanish>Tipo de encendedor</Spanish>
             <Polish>Typ zapalniczki</Polish>
@@ -117,7 +117,7 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Chinese>打火机类型</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_lighter_desc">
-            <English>Select the desired Lighter Type.</English>
+            <English>Select the desired lighter type.</English>
             <French>Sélectionnez le type de briquet souhaité.</French>
             <Spanish>Selecciona el tipo de encendedor deseado.</Spanish>
             <Polish>Wybierz pożądany typ zapalniczki.</Polish>
@@ -133,7 +133,7 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <German>Wählt ein zufälliges Feuerzeug aus allen geladenen Feuerzeugen.</German>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_noUnit">
-            <English>Failed - No Unit has been selected.</English>
+            <English>Failed - No unit has been selected.</English>
             <French>Échec - Aucune unité n'a été sélectionnée.</French>
             <Spanish>Error: no se ha seleccionado ninguna unidad.</Spanish>
             <Polish>Błąd: nie wybrano jednostki.</Polish>
@@ -169,7 +169,7 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Chinese>失败 - 目标不是单位。</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_player">
-            <English>Failed - Selected Unit is Player controlled.</English>
+            <English>Failed - Selected unit is player controlled.</English>
             <French>Échec - L'unité sélectionnée est contrôlée par le joueur.</French>
             <Spanish>Error: la unidad seleccionada está controlada por el jugador.</Spanish>
             <Polish>Błąd: wybrana jednostka jest kontrolowana przez gracza.</Polish>
@@ -197,7 +197,7 @@ Die Einheit beginnt nach der ersten Zigarette automatisch wieder zu rauchen.</Ge
             <Chinese>首选插槽</Chinese>
         </Key>
         <Key ID="STR_cigs_zen_module_makeUnitSmoke_slot_desc">
-            <English>In case the unit does not have a free slot for the cigarette, which slot should be free'd up.</English>
+            <English>In case the unit doesn't have a free slot for the cigarette, which slot should be freed up.</English>
             <French>Aucun emplacement n'est libre pour la cigarette, quel emplacement faut-il libérer ?</French>
             <Spanish>Si la unidad no tiene un hueco libre para el cigarro, ¿qué hueco debería liberarse?</Spanish>
             <Polish>Jeśli jednostka nie ma wolnego gniazda na papierosa, które gniazdo należy zwolnić?</Polish>

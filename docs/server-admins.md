@@ -26,7 +26,7 @@ All settings are under **Options → Addon Options**, in three categories.
 | Setting | Default | Scope | What it does |
 | ------- | ------- | ----- | ------------ |
 | Holster Weapon when using Lighter | on | Server | Players holster their weapon before using a lighter or matches. Avoids broken animations. |
-| Chance of Spontaneous Combustion | 10% | Server | Chance to catch fire when lighting up next to fuel, or smoking while refuelling. Needs ACE Fire. 0% turns it off. |
+| Chance of Spontaneous Combustion | 10% | Server | Chance to catch fire when lighting up next to fuel, smoking while refuelling, or lighting up at a campfire. Needs ACE Fire. 0% turns it off. |
 | **ACE Advanced Fatigue** *(only with ACE)* | | | |
 | Enable Adv. Fatigue Integration | on | Server | Smoking affects ACE Advanced Fatigue. |
 | Fatigue Modifier | 100% | Server | How much smoking affects fatigue. |

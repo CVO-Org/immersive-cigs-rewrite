@@ -9,7 +9,7 @@
 3. **Light it up.** You need matches or a lighter in your inventory.
 4. **Put it out** whenever you want, or smoke it until it's gone.
 
-No lighter? Light your cigarette from someone else's burning one, or light the next one from your own: take a new cigarette while smoking (it goes into your other slot) and use *Light the next one from this cigarette*.
+No lighter? Light your cigarette at a burning campfire, from someone else's burning one, or light the next one from your own: take a new cigarette while smoking (it goes into your other slot) and use *Light the next one from this cigarette*.
 
 Lollipops and crayons work the same way, except you *suck* them instead of lighting them.
 
@@ -31,6 +31,8 @@ You can use every action in two ways:
 | Light up *their* cigarette | - | Interact with another unit → Head (needs a lighter) |
 | Light up their cigarette with yours | - | While smoking: interact with another unit → Head |
 | Light your cigarette from theirs | - | Interact with a smoking unit → Head |
+| Light up at the fire | - | Interact with a burning campfire/fireplace |
+| Light up on the burning body | - | With ACE Fire: interact with a burning unit → Head |
 | Light the next one from this cigarette | the unlit cigarette in your other slot, while smoking | Self → Equipment |
 | Pay respect to the fallen | - | While smoking: interact with a dead or unconscious unit → Head |
 
@@ -54,7 +56,7 @@ Lollipops and some cigarettes come in flavours, which you are told about after a
 With ACE Advanced Fatigue enabled, smoking a lot affects your stamina, and heavy smokers start to cough. Coughing can alert nearby enemies.
 
 ### Spontaneous combustion
-With ACE Fire enabled, lighting up next to fuel sources, or smoking while refuelling, can set you on fire.
+With ACE Fire enabled, lighting up next to fuel sources, smoking while refuelling, or lighting up at a campfire can set you on fire.
 
 ### Smoking AI
 AI units can carry cigarettes and smoke them on their own. See [Mission Makers](mission-makers.md#cigarettes-on-ai).

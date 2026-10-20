@@ -956,6 +956,30 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
     </Package>
     <Package name="Items">
+        <Key ID="STR_cigs_core_light_from_body">
+            <English>Light up on the burning body</English>
+            <French>Allumer sur le corps en feu</French>
+            <Spanish>Encender en el cuerpo en llamas</Spanish>
+            <Polish>Zapalić od płonącego ciała</Polish>
+            <Portuguese>Acender no corpo em chamas</Portuguese>
+            <Russian>Прикурить от горящего тела</Russian>
+            <German>Am brennenden Körper anzünden</German>
+            <Korean>불타는 몸에서 불 붙이기</Korean>
+            <Japanese>燃えている体で火をつける</Japanese>
+            <Chinese>用燃烧的身体点燃</Chinese>
+        </Key>
+        <Key ID="STR_cigs_core_light_from_fire">
+            <English>Light up at the fire</English>
+            <French>Allumer au feu</French>
+            <Spanish>Encender en el fuego</Spanish>
+            <Polish>Zapalić od ognia</Polish>
+            <Portuguese>Acender no fogo</Portuguese>
+            <Russian>Прикурить от огня</Russian>
+            <German>Am Feuer anzünden</German>
+            <Korean>불에서 불 붙이기</Korean>
+            <Japanese>火で火をつける</Japanese>
+            <Chinese>用火点燃</Chinese>
+        </Key>
         <Key ID="STR_cigs_core_light_from_theirs">
             <English>Light your cigarette from theirs</English>
             <German>Deine Zigarette an ihrer anzünden</German>

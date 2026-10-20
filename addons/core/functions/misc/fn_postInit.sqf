@@ -65,6 +65,9 @@ if ( isServer && { isClass (configFile >> "CfgPatches" >> "ace_medical") } ) the
 
 if !(hasInterface) exitWith {};
 
+// ACE action to light a cigarette at fire sources (campfires, burning units, ...)
+[] call FUNC(addFireActions);
+
 // I dont remember why this waits for cba settings :harold:
 private _code = {
     // reset isSmoking/isSucking variable on respawn

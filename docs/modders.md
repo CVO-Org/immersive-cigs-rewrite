@@ -58,6 +58,14 @@ A lighter is a magazine as well; its ammo count is the number of uses (matches).
 | `cigs_isLighter` | `1` | Marks the magazine as a lighter. |
 | `cigs_LighterSound[]` | classes | `CfgSounds` classes played when lighting up. |
 
+### Objects to light a cigarette at (`CfgVehicles`)
+
+Burning fireplaces (`simulation = "fire"`, e.g. `Land_Campfire_F`) work automatically. For other objects that are always burning (barrels, stoves, ...):
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_isFireSource` | `1` | Players can light their cigarette at this object (ACE interaction). |
+
 ### Objects that can cause combustion (`CfgVehicles`)
 
 | Property | Type | Description |

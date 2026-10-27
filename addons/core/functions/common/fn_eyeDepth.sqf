@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
   Name: TFAR_fnc_eyeDepth

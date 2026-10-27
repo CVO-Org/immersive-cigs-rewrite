@@ -8,14 +8,14 @@ class EditorData
 	toggles=1061;
 	class ItemIDProvider
 	{
-		nextID=397;
+		nextID=403;
 	};
 	class Camera
 	{
-		pos[]={1723.2063,18.712299,5203.7417};
-		dir[]={-0.62804061,-0.56572539,-0.53434062};
-		up[]={-0.43087703,0.82459366,-0.36659271};
-		aside[]={-0.64800471,0,0.76163638};
+		pos[]={1707.8632,17.004261,5183.4146};
+		dir[]={-0.33720458,-0.48039529,-0.80966049};
+		up[]={-0.18469916,0.87704939,-0.44348136};
+		aside[]={-0.92315769,3.5390258e-08,0.3844758};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,14 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Soft_F_Offroad_01",
 	"cigs_nil",
-	"A3_Characters_F_Mark"
+	"A3_Characters_F_Mark",
+	"cigs_ai"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Characters_F_Exp";
@@ -79,63 +80,63 @@ class AddonsMetaData
 			className="cigs_lucky_strike";
 			name="Immersive Cigs - Rewrite - Lucky Strike Cigarettes (WW2 Edition)";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item4
 		{
 			className="cigs_apollo";
 			name="Immersive Cigs - Rewrite - Apollo Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item5
 		{
 			className="cigs_black_devil";
 			name="Immersive Cigs - Rewrite - Black Devil Pink Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item6
 		{
 			className="cigs_cigars";
 			name="Immersive Cigs - Rewrite - Cigars";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item7
 		{
 			className="cigs_core";
 			name="Immersive Cigs - Rewrite - Core";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item8
 		{
 			className="cigs_kosmos";
 			name="Immersive Cigs - Rewrite - Kosmos Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item9
 		{
 			className="cigs_pops";
 			name="Immersive Cigs - Rewrite - Lollipops";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item10
 		{
 			className="cigs_crayons";
 			name="Immersive Cigs - Rewrite - Crayons";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item11
 		{
 			className="cigs_voron";
 			name="Immersive Cigs - Rewrite - Voron Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item12
 		{
@@ -149,7 +150,7 @@ class AddonsMetaData
 			className="cigs_morley";
 			name="Immersive Cigs - Rewrite - Morley Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item14
 		{
@@ -163,21 +164,21 @@ class AddonsMetaData
 			className="cigs_craven";
 			name="Immersive Cigs - Rewrite - Craven Cigarettes (WW2 Edition)";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item16
 		{
 			className="cigs_eckstein";
 			name="Immersive Cigs - Rewrite - Eckstein No. 5 Cigarettes (WW2 Edition)";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item17
 		{
 			className="cigs_baja_blast";
 			name="Immersive Cigs - Rewrite - Newport Mtn Dew Baja Blast Cigarettes";
 			author="Immersive Cigs - Rewrite Team";
-			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 		class Item18
 		{
@@ -213,6 +214,13 @@ class AddonsMetaData
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="cigs_ai";
+			name="Immersive Cigs - Rewrite - AI Framework";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/CVO-Org/immersive-cigs-rewrite";
 		};
 	};
 };
@@ -557,7 +565,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=133;
+		items=134;
 		class Item0
 		{
 			dataType="Group";
@@ -4198,6 +4206,72 @@ class Mission
 			{
 			};
 			id=387;
+		};
+		class Item133
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1710.073,5,5195.7529};
+			};
+			id=402;
+			type="cigs_aiCigs_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="cigs_aiCigs_guer";
+					expression="_this setVariable ['cigs_aiCigs_guer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[""cigs_black_devil_cigpack"",""cigs_baja_blast_cigpack""]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="cigs_aiCigs_civ";
+					expression="_this setVariable ['cigs_aiCigs_civ',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[""cigs_apollo_cigpack"",""cigs_black_devil_cigpack"",""cigs_kosmos_cigpack"",""cigs_pops_poppack"",""cigs_morley_cigpack"",""cigs_baja_blast_cigpack"",""cigs_nil_cigpack"",""cigs_crayons_crayonpack""]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="cigs_aiCigs_east";
+					expression="_this setVariable ['cigs_aiCigs_east',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[""cigs_apollo_cigpack"",""cigs_kosmos_cigpack""]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="cigs_aiCigs_west";
+					expression="_this setVariable ['cigs_aiCigs_west',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[""cigs_morley_cigpack"",""cigs_crayons_crayonpack""]";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

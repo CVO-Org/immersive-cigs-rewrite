@@ -36,4 +36,5 @@ EGVAR(aiCigs,default) = [] call FUNC(getDefaultPacks);
 ///////////// Dynamic AI Smoking
 
 GVAR(dynamicSmoking_units) = [];
+GVAR(dynamicSmoking_loopID) = 0;
 

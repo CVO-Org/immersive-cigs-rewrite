@@ -4,15 +4,31 @@ on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize, reopened]
 
+# a newer event on the same PR (e.g. the label being added) cancels a run that is still waiting
+concurrency:
+  group: require-label-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   check-label:
     runs-on: ubuntu-latest
     steps:
+      # labels are often added right after the PR is opened - give them time to arrive
+      - name: Wait for labels
+        if: github.event.action == 'opened' || github.event.action == 'reopened'
+        run: sleep 15
+
       - name: Check for at least one label
         uses: actions/github-script@v7
         with:
           script: |
-            const labels = context.payload.pull_request.labels;
+            // fetch the current labels, the event payload only holds the labels at trigger time
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+            });
+            const labels = pr.labels;
             if (labels.length === 0) {
               core.setFailed("PR muss mindestens ein Label haben.");
             } else {

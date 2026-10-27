@@ -1,4 +1,4 @@
-#include "../script_component.hpp"
+#include "..\script_component.hpp"
 
 
 /*    here, you put in your CBA Settings so they are available in the editor!

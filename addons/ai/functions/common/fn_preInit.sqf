@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -36,4 +36,5 @@ EGVAR(aiCigs,default) = [] call FUNC(getDefaultPacks);
 ///////////// Dynamic AI Smoking
 
 GVAR(dynamicSmoking_units) = [];
+GVAR(dynamicSmoking_loopID) = 0;
 

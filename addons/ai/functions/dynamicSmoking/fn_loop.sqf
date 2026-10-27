@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -20,18 +20,22 @@ if (!isServer) exitWith {};
 
 if ( ! SET(dynamicSmoking_enable) ) exitWith { GVAR(dynamicSmoking_LoopRunning) = nil; };
 
-params ["_index"];
+params ["_index", "_loopID"];
+
+// A newer loop has been started - this one is stale and must not touch the shared state
+if (_loopID isNotEqualTo GVAR(dynamicSmoking_loopID)) exitWith {};
 
 private _array = GVAR(dynamicSmoking_units);
 private _index_end = count _array - 1;
-private _unit = _array select _index;
-private _canConsume = !isNil "_unit" && { _unit call FUNC(canConsume) };
+// param instead of select - the array can be replaced by a shorter one (cleanup) while the loop is running
+private _unit = _array param [_index, objNull];
+private _canConsume = !isNull _unit && { _unit call FUNC(canConsume) };
 
 if ( _canConsume ) then { [QGVAR(EH_startConsuming), _unit, _unit] call CBA_fnc_targetEvent; };
 
-if (_index isNotEqualTo _index_end) then {
+if (_index < _index_end) then {
     // Continue Iterating over the loop
-    [ FUNC(loop), [_index + 1], LOOP_DELAY ] call CBA_fnc_waitAndExecute;
+    [ FUNC(loop), [_index + 1, _loopID], LOOP_DELAY ] call CBA_fnc_waitAndExecute;
 } else {
     // Restart the loop
     GVAR(dynamicSmoking_LoopRunning) = nil;

@@ -1,4 +1,4 @@
-#define MAINPREFIX z
+#define MAINPREFIX zrn
 #define PREFIX cigs
 
 #define PREFIX_BEAUTIFIED Immersive Cigs - Rewrite

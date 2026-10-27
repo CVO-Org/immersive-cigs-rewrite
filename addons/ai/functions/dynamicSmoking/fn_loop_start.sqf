@@ -24,7 +24,10 @@ if ( ! SET(dynamicSmoking_enable) ) exitWith { GVAR(dynamicSmoking_LoopRunning) 
 if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {
 
     GVAR(dynamicSmoking_LoopRunning) = true;
-    
+
+    // Each start gets a new ID - an older iteration still pending in CBA's queue will see the mismatch and stop
+    GVAR(dynamicSmoking_loopID) = GVAR(dynamicSmoking_loopID) + 1;
+
     // Wait until There are any smokers defined + the aiCigs queue is empty
     [
         {
@@ -32,7 +35,7 @@ if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {
             &&
             { isNil QGVAR(aiCigs_queue) }
         },
-        {            
+        {
             // Start Cleanup
             GVAR(dynamicSmoking_cleanup_inProgress) = true;
             [] call FUNC(cleanupArray);
@@ -40,8 +43,10 @@ if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {
             // Wait until the Array Cleanup is done
             [
                 { isNil QGVAR(dynamicSmoking_cleanup_inProgress) },
-                { [ 0 ] call FUNC(loop) }
+                { [ 0, _this ] call FUNC(loop) },
+                _this
             ] call CBA_fnc_waitUntilAndExecute;
-        }
+        },
+        GVAR(dynamicSmoking_loopID)
     ] call CBA_fnc_waitUntilAndExecute;
 };

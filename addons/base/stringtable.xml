@@ -14,16 +14,16 @@
             <Chinese>Base 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_base_cigpack">
-            <English>Base Cigarette Pack</English>
-            <French>Base Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Base</Spanish>
-            <Polish>Paczka papierosów Base</Polish>
-            <Portuguese>Maço de cigarros Base</Portuguese>
-            <Russian>Пачка сигарет Base</Russian>
-            <German>Base Zigarettenschachtel</German>
-            <Korean>Base 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ Base</Japanese>
-            <Chinese>Base 一包菸</Chinese>
+            <English>Pack of Base</English>
+            <French>Paquet de Base</French>
+            <Spanish>Cajetilla de Base</Spanish>
+            <Polish>Paczka Base</Polish>
+            <Portuguese>Maço de Base</Portuguese>
+            <Russian>Пачка Base</Russian>
+            <German>Schachtel Base</German>
+            <Korean>Base 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (Base)</Japanese>
+            <Chinese>一包 Base</Chinese>
         </Key>
         <Key ID="STR_cigs_base_cigpack_desc">
             <English>Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

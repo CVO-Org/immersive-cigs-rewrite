@@ -14,16 +14,16 @@
             <Chinese>Lucky Strike 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_Lucky_Strike_cigpack">
-            <English>Lucky Strike Cigarette Pack</English>
-            <French>Lucky Strike Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Lucky Strike</Spanish>
-            <Polish>Paczka papierosów Lucky Strike</Polish>
-            <Portuguese>Maço de cigarros Lucky Strike</Portuguese>
-            <Russian>Пачка сигарет Lucky Strike</Russian>
-            <German>Lucky Strike Zigarettenschachtel</German>
-            <Korean>Lucky Strike 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ ラッキーストライク</Japanese>
-            <Chinese>Lucky Strike 一包菸</Chinese>
+            <English>Pack of Lucky Strike</English>
+            <French>Paquet de Lucky Strike</French>
+            <Spanish>Cajetilla de Lucky Strike</Spanish>
+            <Polish>Paczka Lucky Strike</Polish>
+            <Portuguese>Maço de Lucky Strike</Portuguese>
+            <Russian>Пачка Lucky Strike</Russian>
+            <German>Schachtel Lucky Strike</German>
+            <Korean>Lucky Strike 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (ラッキーストライク)</Japanese>
+            <Chinese>一包 Lucky Strike</Chinese>
         </Key>
         <Key ID="STR_cigs_Lucky_Strike_cigpack_desc">
             <English>It's toasted!&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

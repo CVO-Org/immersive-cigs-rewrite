@@ -14,16 +14,16 @@
             <Chinese>Savage 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack">
-            <English>Savage Cigarette Pack</English>
-            <French>Savage Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Savage</Spanish>
-            <Polish>Paczka papierosów Savage</Polish>
-            <Portuguese>Maço de cigarros Savage</Portuguese>
-            <Russian>Пачка сигарет Savage</Russian>
-            <German>Savage Zigarettenschachtel</German>
-            <Korean>Savage 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ サベージ</Japanese>
-            <Chinese>Savage 一包菸</Chinese>
+            <English>Pack of Savage Wild Tiger</English>
+            <French>Paquet de Savage Wild Tiger</French>
+            <Spanish>Cajetilla de Savage Wild Tiger</Spanish>
+            <Polish>Paczka Savage Wild Tiger</Polish>
+            <Portuguese>Maço de Savage Wild Tiger</Portuguese>
+            <Russian>Пачка Savage Wild Tiger</Russian>
+            <German>Schachtel Savage Wild Tiger</German>
+            <Korean>Savage Wild Tiger 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (サベージ ワイルドタイガー)</Japanese>
+            <Chinese>一包 Savage Wild Tiger</Chinese>
         </Key>
         <Key ID="STR_cigs_savage_cigpack_desc">
             <English>Wild Tiger Premium&lt;br/&gt;Contains 16 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

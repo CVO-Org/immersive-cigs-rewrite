@@ -28,14 +28,14 @@
         <Key ID="STR_cigs_base_cigpack_desc">
             <English>Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
             <French>Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
-            <Spanish>Contiene 20 cigarrillos.&amp;lt;br/&amp;gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
-            <Polish>Zawiera 20 papierosów.&amp;lt;br/&amp;gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
-            <Portuguese>Contém 20 cigarros.&amp;lt;br/&amp;gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
-            <Russian>Содержит 20 сигарет.&amp;lt;br/&amp;gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <Spanish>Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
             <German>Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
-            <Korean>20개의 담배가 들어 있습니다.&amp;lt;br/&amp;gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Korean>20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
             <Japanese>紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
-            <Chinese>內含二十根菸。警告：&lt;br/&gt;吸菸會導致性功能障礙。</Chinese>
+            <Chinese>內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
         </Key>
     </Package>
     <Package name="Main">

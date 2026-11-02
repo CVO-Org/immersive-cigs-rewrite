@@ -14,16 +14,16 @@
             <Chinese>Voron 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_voron_cigpack">
-            <English>Voron Cigarette Pack</English>
-            <French>Paquet de cigarettes Voron</French>
-            <Spanish>Paquete de cigarrillos Voron</Spanish>
-            <Polish>Paczka papierosów Voron</Polish>
-            <Portuguese>Maço de cigarros Voron</Portuguese>
-            <Russian>Пачка сигарет Voron</Russian>
-            <German>Voron Zigarettenschachtel</German>
-            <Korean>Voron 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ Voron</Japanese>
-            <Chinese>Voron 一包菸</Chinese>
+            <English>Pack of Voron</English>
+            <French>Paquet de Voron</French>
+            <Spanish>Cajetilla de Voron</Spanish>
+            <Polish>Paczka Voron</Polish>
+            <Portuguese>Maço de Voron</Portuguese>
+            <Russian>Пачка Voron</Russian>
+            <German>Schachtel Voron</German>
+            <Korean>Voron 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (ヴォロン)</Japanese>
+            <Chinese>一包 Voron</Chinese>
         </Key>
         <Key ID="STR_cigs_voron_cigpack_desc">
             <English>The only cigarettes that are good for your (mental) health.&lt;br/&gt;Contains 24 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

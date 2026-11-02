@@ -14,16 +14,16 @@
             <Chinese>Craven "A" 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_craven_cigpack">
-            <English>Craven "A" Cigarette Pack</English>
-            <French>Craven "A" Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Craven "A"</Spanish>
-            <Polish>Paczka papierosów Craven "A"</Polish>
-            <Portuguese>Maço de cigarros Craven "A"</Portuguese>
-            <Russian>Пачка сигарет Craven "A"</Russian>
-            <German>Craven "A" Zigarettenschachtel</German>
-            <Korean>Craven "A" 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ クレイヴン "A" シガレット</Japanese>
-            <Chinese>Craven "A" 一包菸</Chinese>
+            <English>Pack of Craven "A"</English>
+            <French>Paquet de Craven "A"</French>
+            <Spanish>Cajetilla de Craven "A"</Spanish>
+            <Polish>Paczka Craven "A"</Polish>
+            <Portuguese>Maço de Craven "A"</Portuguese>
+            <Russian>Пачка Craven "A"</Russian>
+            <German>Schachtel Craven "A"</German>
+            <Korean>Craven "A" 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (クレイヴン "A" シガレット)</Japanese>
+            <Chinese>一包 Craven "A"</Chinese>
         </Key>
         <Key ID="STR_cigs_craven_cigpack_desc">
             <English>For Your Throat's Sake!&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

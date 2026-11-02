@@ -40,16 +40,16 @@
             <Chinese>NIL 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack">
-            <English>NIL Cigarette Pack</English>
-            <French>NIL Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos NIL</Spanish>
-            <Polish>Paczka papierosów NIL</Polish>
-            <Portuguese>Maço de cigarros NIL</Portuguese>
-            <Russian>Пачка сигарет NIL</Russian>
-            <German>NIL Zigarettenschachtel</German>
-            <Korean>NIL 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ NIL</Japanese>
-            <Chinese>NIL 一包菸</Chinese>
+            <English>Pack of NIL</English>
+            <French>Paquet de NIL</French>
+            <Spanish>Cajetilla de NIL</Spanish>
+            <Polish>Paczka NIL</Polish>
+            <Portuguese>Maço de NIL</Portuguese>
+            <Russian>Пачка NIL</Russian>
+            <German>Schachtel NIL</German>
+            <Korean>NIL 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (NIL)</Japanese>
+            <Chinese>一包 NIL</Chinese>
         </Key>
         <Key ID="STR_cigs_nil_cigpack_desc">
             <English>NIL&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

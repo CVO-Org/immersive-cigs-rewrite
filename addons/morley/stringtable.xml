@@ -14,16 +14,16 @@
             <Chinese>Morley 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_morley_cigpack">
-            <English>Morley Cigarette Pack</English>
-            <French>Morley Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Morley</Spanish>
-            <Polish>Paczka papierosów Morley</Polish>
-            <Portuguese>Maço de cigarros Morley</Portuguese>
-            <Russian>Пачка сигарет Morley</Russian>
-            <German>Morley Zigarettenschachtel</German>
-            <Korean>Morley 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ モーリ―・シガレッツ</Japanese>
-            <Chinese>Morley 一包菸</Chinese>
+            <English>Pack of Morley</English>
+            <French>Paquet de Morley</French>
+            <Spanish>Cajetilla de Morley</Spanish>
+            <Polish>Paczka Morley</Polish>
+            <Portuguese>Maço de Morley</Portuguese>
+            <Russian>Пачка Morley</Russian>
+            <German>Schachtel Morley</German>
+            <Korean>Morley 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (モーリ―・シガレッツ)</Japanese>
+            <Chinese>一包 Morley</Chinese>
         </Key>
         <Key ID="STR_cigs_morley_cigpack_desc">
             <English>Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

@@ -14,27 +14,27 @@
             <Chinese>雪茄</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5">
-            <English>Box of Cigars</English>
-            <French>Boîte de cigares</French>
-            <Spanish>Caja de cigarros</Spanish>
-            <Polish>Pudło cygar</Polish>
-            <Portuguese>Caixa de charutos</Portuguese>
-            <Russian>Коробка сигар</Russian>
-            <German>Zigarrenschachtel</German>
-            <Korean>시가 상자</Korean>
-            <Japanese>葉巻たばこケース</Japanese>
-            <Chinese>5 支装雪茄盒</Chinese>
+            <English>Pack of Cigars</English>
+            <French>Paquet de cigares</French>
+            <Spanish>Paquete de puros</Spanish>
+            <Polish>Paczka cygar</Polish>
+            <Portuguese>Maço de charutos</Portuguese>
+            <Russian>Пачка сигар</Russian>
+            <German>Schachtel Zigarren</German>
+            <Korean>시가 한 갑</Korean>
+            <Japanese>箱入り葉巻たばこ</Japanese>
+            <Chinese>一包雪茄</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5_desc">
-            <English>Box of Cigars with 5 cigars.</English>
-            <French>Coffret de 5 cigares.</French>
+            <English>Contains 5 cigars.&lt;br/&gt;Warning: Smoke is harmful to health, whether it comes from cigars or cigarettes.</English>
+            <French>Contient 5 cigares.&lt;br/&gt;Avertissement : la fumée est nocive pour la santé, qu'elle provienne de cigares ou de cigarettes.</French>
             <Spanish>Caja de cigarros con 5 cigarros.</Spanish>
             <Polish>Pudło z 5 cygarami.</Polish>
             <Portuguese>Caixa de charutos com 5 charutos.</Portuguese>
             <Russian>Коробка сигар с 5 сигарами.</Russian>
-            <German>Zigarrenschachtel mit 5 Zigarren.</German>
+            <German>Enthält 5 Zigarren.&lt;br/&gt;Warnung: Rauch ist gesundheitsschädlich, egal ob von Zigarren oder Zigaretten.</German>
             <Korean>5개의 시가가 들어 있는 상자입니다.</Korean>
-            <Japanese>葉巻たばこ5本入り。</Japanese>
+            <Japanese>葉巻たばこ5本入り。&lt;br/&gt;警告: 葉巻であろうと紙巻であろうと、たばこの煙は健康に有害です。</Japanese>
             <Chinese>装有 5 支雪茄的盒子。</Chinese>
         </Key>
     </Package>

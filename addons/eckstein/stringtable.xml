@@ -14,16 +14,16 @@
             <Chinese>Eckstein No. 5 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_eckstein_cigpack">
-            <English>Eckstein No. 5 Cigarette Pack</English>
-            <French>Eckstein No. 5 Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Eckstein No. 5</Spanish>
-            <Polish>Paczka papierosów Eckstein No. 5</Polish>
-            <Portuguese>Maço de cigarros Eckstein No. 5</Portuguese>
-            <Russian>Пачка сигарет Eckstein No. 5</Russian>
-            <German>Eckstein No. 5 Zigarettenschachtel</German>
-            <Korean>Eckstein No. 5 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ エクスタイン No. 5</Japanese>
-            <Chinese>Eckstein No. 5 一包菸</Chinese>
+            <English>Pack of Eckstein No. 5</English>
+            <French>Paquet de Eckstein No. 5</French>
+            <Spanish>Cajetilla de Eckstein No. 5</Spanish>
+            <Polish>Paczka Eckstein No. 5</Polish>
+            <Portuguese>Maço de Eckstein No. 5</Portuguese>
+            <Russian>Пачка Eckstein No. 5</Russian>
+            <German>Schachtel Eckstein No. 5</German>
+            <Korean>Eckstein No. 5 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (エクスタイン No. 5)</Japanese>
+            <Chinese>一包 Eckstein No. 5</Chinese>
         </Key>
         <Key ID="STR_cigs_eckstein_cigpack_desc">
             <English>Real and right!&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

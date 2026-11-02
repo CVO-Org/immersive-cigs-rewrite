@@ -14,16 +14,16 @@
             <Chinese>Apollo Soyuz 香菸</Chinese>
         </Key>
         <Key ID="STR_cigs_apollo_cigpack">
-            <English>Apollo Soyuz Cigarette Pack</English>
-            <French>Apollo Soyuz Paquet de cigarettes</French>
-            <Spanish>Paquete de cigarrillos Apollo Soyuz</Spanish>
-            <Polish>Paczka papierosów Apollo Soyuz</Polish>
-            <Portuguese>Maço de cigarros Apollo Soyuz</Portuguese>
-            <Russian>Пачка сигарет Apollo Soyuz</Russian>
-            <German>Apollo Soyuz Zigarettenschachtel</German>
-            <Korean>Apollo Soyuz 담배 팩</Korean>
-            <Japanese>箱入り紙巻たばこ アポロ・ソユーズ シガレット</Japanese>
-            <Chinese>Apollo Soyuz 一包菸</Chinese>
+            <English>Pack of Apollo Soyuz</English>
+            <French>Paquet de Apollo Soyuz</French>
+            <Spanish>Cajetilla de Apollo Soyuz</Spanish>
+            <Polish>Paczka Apollo Soyuz</Polish>
+            <Portuguese>Maço de Apollo Soyuz</Portuguese>
+            <Russian>Пачка Apollo Soyuz</Russian>
+            <German>Schachtel Apollo Soyuz</German>
+            <Korean>Apollo Soyuz 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (アポロ・ソユーズ シガレット)</Japanese>
+            <Chinese>一包 Apollo Soyuz</Chinese>
         </Key>
         <Key ID="STR_cigs_apollo_cigpack_desc">
             <English>American Blend Cigarettes.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>

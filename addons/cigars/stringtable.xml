@@ -14,28 +14,28 @@
             <Chinese>雪茄</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5">
-            <English>Pack of Cigars</English>
-            <French>Paquet de cigares</French>
-            <Spanish>Paquete de puros</Spanish>
-            <Polish>Paczka cygar</Polish>
-            <Portuguese>Maço de charutos</Portuguese>
-            <Russian>Пачка сигар</Russian>
-            <German>Schachtel Zigarren</German>
-            <Korean>시가 한 갑</Korean>
-            <Japanese>箱入り葉巻たばこ</Japanese>
-            <Chinese>一包雪茄</Chinese>
+            <English>Pack of Vulcano Cigars</English>
+            <French>Paquet de cigares Vulcano</French>
+            <Spanish>Paquete de puros Vulcano</Spanish>
+            <Polish>Paczka cygar Vulcano</Polish>
+            <Portuguese>Maço de charutos Vulcano</Portuguese>
+            <Russian>Пачка сигар Vulcano</Russian>
+            <German>Schachtel Vulcano Zigarren</German>
+            <Korean>Vulcano 시가 한 갑</Korean>
+            <Japanese>箱入り葉巻たばこ (ヴルカーノ)</Japanese>
+            <Chinese>一包 Vulcano 雪茄</Chinese>
         </Key>
         <Key ID="STR_cigs_cigars_cigarbox_5_desc">
-            <English>Contains 5 cigars.&lt;br/&gt;Warning: Smoke is harmful to health, whether it comes from cigars or cigarettes.</English>
-            <French>Contient 5 cigares.&lt;br/&gt;Avertissement : la fumée est nocive pour la santé, qu'elle provienne de cigares ou de cigarettes.</French>
-            <Spanish>Caja de cigarros con 5 cigarros.</Spanish>
-            <Polish>Pudło z 5 cygarami.</Polish>
-            <Portuguese>Caixa de charutos com 5 charutos.</Portuguese>
-            <Russian>Коробка сигар с 5 сигарами.</Russian>
-            <German>Enthält 5 Zigarren.&lt;br/&gt;Warnung: Rauch ist gesundheitsschädlich, egal ob von Zigarren oder Zigaretten.</German>
-            <Korean>5개의 시가가 들어 있는 상자입니다.</Korean>
-            <Japanese>葉巻たばこ5本入り。&lt;br/&gt;警告: 葉巻であろうと紙巻であろうと、たばこの煙は健康に有害です。</Japanese>
-            <Chinese>装有 5 支雪茄的盒子。</Chinese>
+            <English>Fumo ergo sum.&lt;br/&gt;Contains 5 cigars.&lt;br/&gt;Warning: Smoke is harmful to health, whether it comes from cigars or cigarettes.</English>
+            <French>Fumo ergo sum.&lt;br/&gt;Contient 5 cigares.&lt;br/&gt;Avertissement : la fumée est nocive pour la santé, qu'elle provienne de cigares ou de cigarettes.</French>
+            <Spanish>Fumo ergo sum.&lt;br/&gt;Caja de cigarros con 5 cigarros.</Spanish>
+            <Polish>Fumo ergo sum.&lt;br/&gt;Pudło z 5 cygarami.</Polish>
+            <Portuguese>Fumo ergo sum.&lt;br/&gt;Caixa de charutos com 5 charutos.</Portuguese>
+            <Russian>Fumo ergo sum.&lt;br/&gt;Коробка сигар с 5 сигарами.</Russian>
+            <German>Fumo ergo sum.&lt;br/&gt;Enthält 5 Zigarren.&lt;br/&gt;Warnung: Rauch ist gesundheitsschädlich, egal ob von Zigarren oder Zigaretten.</German>
+            <Korean>Fumo ergo sum.&lt;br/&gt;5개의 시가가 들어 있는 상자입니다.</Korean>
+            <Japanese>Fumo ergo sum.&lt;br/&gt;葉巻たばこ5本入り。&lt;br/&gt;警告: 葉巻であろうと紙巻であろうと、たばこの煙は健康に有害です。</Japanese>
+            <Chinese>Fumo ergo sum.&lt;br/&gt;装有 5 支雪茄的盒子。</Chinese>
         </Key>
     </Package>
     <Package name="Main">

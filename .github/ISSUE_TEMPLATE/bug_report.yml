@@ -1,0 +1,53 @@
+name: Bug Report
+description: Something does not work as expected
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please check the existing issues first.
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      description: Shown in the main menu (mod list) or in the RPT.
+      placeholder: e.g. v1.2.3
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Place ...
+        2. Start the mission ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      multiple: true
+      options:
+        - Singleplayer / Editor
+        - Local hosted multiplayer
+        - Dedicated server
+        - Not sure
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods loaded
+      description: Does it also happen with only CBA_A3 / ACE3 and this mod loaded?
+  - type: textarea
+    id: rpt
+    attributes:
+      label: RPT log / errors
+      description: Attach the RPT file or paste the relevant lines (`%LOCALAPPDATA%\Arma 3`).
+      render: text

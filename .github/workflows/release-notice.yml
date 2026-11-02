@@ -1,0 +1,25 @@
+# Posts the GitHub release notes into a Discord channel via webhook
+#
+# Requires the DISCORD_WEBHOOK_URL github repo secret
+
+name: "Release: Discord Notice"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  github-releases-to-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Github Releases To Discord
+        uses: SethCohen/github-releases-to-discord@v1.19.0
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: "Immersive Cigs - Rewrite"
+          content: "||<@&1433861420008865872>||"
+          footer_title: "Immersive Cigs - Rewrite"
+          footer_timestamp: true

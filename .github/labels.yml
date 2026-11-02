@@ -1,0 +1,42 @@
+# Labels for this repo - applied by the "Github: Sync Labels" workflow (Actions tab -> Run workflow)
+# The pr/* labels are used by release-drafter.yml and release.yml to sort PRs into the changelog
+#
+# Colors are hex without "#" and MUST be quoted, otherwise yaml reads e.g. 000000 as the number 0
+# Color scheme: one color per changelog category - lighter shade = less significant label of the same category
+
+settings:
+  # false: only create/update the labels listed below
+  # true:  also DELETE every label of the repo that is not listed below (e.g. githubs default labels)
+  remove_unlisted: true
+
+labels:
+  - name: "pr/new"
+    color: "0e8a16"
+    description: "New feature - Changelog: Features"
+  - name: "pr/improvement"
+    color: "5ebd6b"
+    description: "Improves an existing feature - Changelog: Features"
+  - name: "pr/fix"
+    color: "d73a4a"
+    description: "Fixes a bug - Changelog: Bug Fixes"
+  - name: "pr/settings"
+    color: "1b7c83"
+    description: "Adds or changes CBA settings - Changelog: Settings"
+  - name: "pr/translation"
+    color: "8250df"
+    description: "Stringtable / translation changes - Changelog: Translation"
+  - name: "pr/docs"
+    color: "0075ca"
+    description: "Documentation only - Changelog: Documentation"
+  - name: "pr/maintenance"
+    color: "57606a"
+    description: "Tooling, workflows, dependencies - Changelog: Maintenance"
+  - name: "pr/cleanup"
+    color: "8c959f"
+    description: "Refactoring / cleanup without functional change - Changelog: Maintenance"
+  - name: "pr/breaking"
+    color: "e36209"
+    description: "May break existing missions or setups - Changelog: Breaking Changes (add to a main label)"
+  - name: "pr/ignore"
+    color: "e1e4e8"
+    description: "Excluded from the changelog"

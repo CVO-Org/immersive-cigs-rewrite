@@ -1,0 +1,20 @@
+name: Feature Request
+description: Suggest a new feature or an improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to achieve?
+      description: Describe the use case or the problem, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How could it work? Settings, Zeus/Eden modules, functions, ...
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / other mods
+      description: Workarounds you use today, or mods that already do something similar.

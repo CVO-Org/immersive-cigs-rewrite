@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -30,21 +30,26 @@ if (!local _unit) exitWith {
     _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil];
 };
 
+////////////////////////////////////////
+// Stale loop - the unit started consuming something new in the meantime (e.g. lit the next cigarette from this one)
+////////////////////////////////////////
+if !(_loopData isEqualRef (_unit getVariable [QPVAR(loopData), objNull])) exitWith {};
+
 
 ////////////////////////////////////////
 // AI - Stop based on Combat Behavior
 ////////////////////////////////////////
 
-if !( _unit call EFUNC(core,isPlayer) ) then {
-
-    private _exit = switch (combatBehaviour _unit) do {
+// exitWith needs to be on the function level, inside an if-then block it would only leave that block
+private _exitCombat = !( _unit call EFUNC(core,isPlayer) ) && {
+    switch (combatBehaviour _unit) do {
         case "COMBAT":  { random 1 > 0.33 };
         case "STEALTH": { true };
         default         { false };
-    };
-
-    if (_exit) exitWith { _this call FUNC(loopStop) };
+    }
 };
+
+if (_exitCombat) exitWith { _this call FUNC(loopStop) };
 
 
 ////////////////////////////////////////

@@ -4,21 +4,36 @@
         <Key ID="STR_cigs_pops_pop">
             <English>Lollipop</English>
             <French>Sucette</French>
+            <Spanish>Piruleta</Spanish>
+            <Polish>Lizak</Polish>
+            <Portuguese>Pirulito</Portuguese>
+            <Russian>Леденец</Russian>
             <German>Lutscher</German>
+            <Korean>막대사탕</Korean>
             <Japanese>ロリポップ</Japanese>
             <Chinese>棒棒糖</Chinese>
         </Key>
         <Key ID="STR_cigs_pops_poppack">
             <English>Lollipop (Packed)</English>
             <French>Lollipop (emballé)</French>
+            <Spanish>Piruleta (empaquetada)</Spanish>
+            <Polish>Lizak (zapakowany)</Polish>
+            <Portuguese>Pirulito (embalado)</Portuguese>
+            <Russian>Леденец (в упаковке)</Russian>
             <German>Lutscher (Verpackt)</German>
+            <Korean>막대사탕 (포장됨)</Korean>
             <Japanese>ロリポップ (未開封)</Japanese>
             <Chinese>棒棒糖（未開封）</Chinese>
         </Key>
         <Key ID="STR_cigs_pops_poppack_desc">
             <English>One packed lollipop. Not hazardous to your health and sweet.</English>
             <French>Une sucette emballée. Sans danger pour la santé et sucrée.</French>
+            <Spanish>Una piruleta empaquetada. No es perjudicial para la salud y es dulce.</Spanish>
+            <Polish>Zapakowany lizak. Nieszkodliwy dla zdrowia i słodki.</Polish>
+            <Portuguese>Um pirulito embalado. Não é prejudicial à saúde e é doce.</Portuguese>
+            <Russian>Упакованный леденец. Не вреден для здоровья и очень сладкий.</Russian>
             <German>Ein verpackter Lutscher. Nicht ungesund und auch noch süß.</German>
+            <Korean>포장된 막대사탕입니다. 건강에 해롭지 않고 달콤합니다.</Korean>
             <Japanese>1つの未開封のロリポップ。健康に害を与えず甘い。</Japanese>
             <Chinese>一根未開封的棒棒糖。不會導致你性功能障礙而且還很甜。</Chinese>
         </Key>
@@ -27,7 +42,12 @@
         <Key ID="STR_cigs_pops_author">
             <English>Rebel / Facel</English>
             <French>Rebel / Facel</French>
+            <Spanish>Rebel / Facel</Spanish>
+            <Polish>Rebel / Facel</Polish>
+            <Portuguese>Rebel / Facel</Portuguese>
+            <Russian>Rebel / Facel</Russian>
             <German>Rebel / Facel</German>
+            <Korean>Rebel / Facel</Korean>
             <Japanese>Rebel / Facel</Japanese>
             <Chinese>Rebel / Facel</Chinese>
         </Key>

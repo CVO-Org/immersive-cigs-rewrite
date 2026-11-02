@@ -1,16 +1,16 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-	class ADDON {
+    class ADDON {
 
         // Meta information for editor
-		name = ADDON_NAME;
-		author = "$STR_mod_author";
-        authors[] = {"Rebel", "Facel", "Panimala", "OverlordZorn [CVO]", "prisonerMO"};
-		
-        url = "$STR_mod_URL";
+        name = ADDON_NAME;
+        author = ECSTRING(main,author);
+        authors[] = {"Rebel", "Facel", "Panimala", "OverlordZorn [CVO]", "prisonerMO", "Apricot_ale"};
+        
+        url = ECSTRING(main,url);
 
-		VERSION_CONFIG;
+        VERSION_CONFIG;
 
         // Addon Specific Information
         // Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game.
@@ -20,16 +20,16 @@ class CfgPatches {
         // When any of the addons is missing, pop-up warning will appear when launching the game.
         requiredAddons[] = {"cigs_main", "cba_main", "cba_common"};
 
-		// Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
-		skipWhenMissingDependencies = 1;
+        // Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
+        skipWhenMissingDependencies = 1;
         
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups)
-        units[] = { QPVAR(matchesItem), QPVAR(lighterItem) };
+        units[] = { QPVAR(matchesItem), QPVAR(lighterItem), QPVAR(matches_huntingItem), QPVAR(lighter_cheapItem), QPVAR(lighter_cricketItem) };
 
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {};
 
-	};
+    };
 };
 
 #include "CfgFunctions.hpp"

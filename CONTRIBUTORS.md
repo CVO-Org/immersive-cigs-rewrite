@@ -1,4 +1,4 @@
-## IMMERSION CIGS - REWRITE CONTRIBUTOR LIST
+## IMMERSIVE CIGS - REWRITE CONTRIBUTOR LIST
 
 Feel free to add yourself to this when creating a pull request, preferably including a summary of the work.
 
@@ -11,13 +11,13 @@ Feel free to add yourself to this when creating a pull request, preferably inclu
 | Facel          |                        | Original Author, 3d models, textures             |
 | Panimala       |                        | Original Author, Icons, Sounds                   |
 | prisonerMO     |                        | Scripting, introduction of CBA Events            |
-| kneely         |                        | WW2 Cigarette MOdels and Textures                |
+| kneely         |                        | WW2 Cigarette Models and Textures                |
 | Vespade        |                        | Crayon Models and Textures                       |
 | Brominum       |                        | Cigarbox Model and Sounds                        |
 | ArtemisGodfrey |                        | Fixing some Models                               |
 | yepperz        |                        | Artworks                                         |
 | Dart           |                        | Scripting                                        |
-| Apricot-ale    |                        | Japanese Translations                            |
+| Apricot-ale    |                        | Japanese Translations, Lighters, Icons, Sounds   |
 | Alfred-Neumann |                        | French Translations                              |
 | ChemicalCo     |                        | Translations                                     |
-| LongLiveQuebec |                        | Artworks                                         |
+| Quebec         |                        | Artworks                                         |

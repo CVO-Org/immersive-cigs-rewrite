@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -22,6 +22,9 @@ params [
     [ "_forceVanish",   false, [true] ]
 ];
 
+// Already stopped, or a stale loop - e.g. stopped directly while the loop was still waiting, or the next cigarette was lit from this one
+if !(_loopData isEqualRef (_unit getVariable [QPVAR(loopData), objNull])) exitWith {};
+
 private _consumeType = _loopData get "consumeType";
 
 ////////////////////////////////////////
@@ -32,12 +35,6 @@ _unit setVariable [QPVAR(loopData), nil];
 
 
 ////////////////////////////////////////
-// AI
-////////////////////////////////////////
-[_unit] call EFUNC(ai,returnItemToSlot);
-if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
-
-////////////////////////////////////////
 // Type Dependent Changes
 ////////////////////////////////////////
 
@@ -45,6 +42,13 @@ switch (_consumeType) do {
     case "SMOKE": { [_unit, _loopData, _skipAnimation, _forceVanish] call FUNC(smoking_stop) };
     case "SUCK": { [_unit, _loopData] call FUNC(sucking_stop) };
 };
+
+////////////////////////////////////////
+// AI
+////////////////////////////////////////
+// After the item has been removed, otherwise removing the item would also remove the returned slot item
+[_unit] call EFUNC(ai,returnItemToSlot);
+if (! isPlayer _unit) then { _unit call EFUNC(AI,updateCanConsumeAgain); };
 
 
 ////////////////////////////////////////

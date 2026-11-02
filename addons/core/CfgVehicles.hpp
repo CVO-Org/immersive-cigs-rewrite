@@ -1,5 +1,4 @@
-class CfgVehicles
-{
+class CfgVehicles {
 
     #include "CfgVehiclesAceActions.hpp"
 
@@ -30,6 +29,39 @@ class CfgVehicles
         class TransportMagazines {
             class PVAR(lighter) {
                 magazine = QPVAR(lighter);
+                count = 1;
+            };
+        };
+    };
+
+    class PVAR(matches_huntingItem): PVAR(matchesItem) {
+        displayName = CSTRING(matches_hunting);
+
+        class TransportMagazines {
+            class PVAR(matches_hunting) {
+                magazine = QPVAR(matches_hunting);
+                count = 1;
+            };
+        };
+    };
+
+    class PVAR(lighter_cheapItem): PVAR(matchesItem) {
+        displayName = CSTRING(lighter_cheap);
+
+        class TransportMagazines {
+            class PVAR(lighter_cheap) {
+                magazine = QPVAR(lighter_cheap);
+                count = 1;
+            };
+        };
+    };
+
+    class PVAR(lighter_cricketItem): PVAR(matchesItem) {
+        displayName = CSTRING(lighter_cricket);
+
+        class TransportMagazines {
+            class PVAR(lighter_cricket) {
+                magazine = QPVAR(lighter_cricket);
                 count = 1;
             };
         };

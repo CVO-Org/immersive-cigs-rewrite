@@ -2,7 +2,7 @@
 // The Facewear Version is defined in CfgGoggles
 
 class CfgWeapons {
-	class NVGoggles;
+    class NVGoggles;
 
     class GVAR(popBase_nv): NVGoggles {
         scope = 0;
@@ -18,9 +18,9 @@ class CfgWeapons {
 
        // NVG Data
         visionMode[] = {"Normal"};
-		thermalMode[] = {0};
-		modelOptics[] = {};
-		opticsPPEffects[] = {};
+        thermalMode[] = {0};
+        modelOptics[] = {};
+        opticsPPEffects[] = {};
 
         PVAR(isSuckable) = 1;
         PVAR(totalSucks) = 1;
@@ -33,8 +33,8 @@ class CfgWeapons {
         class ItemInfo {
             type = 616;
             hmdType = 0;
-    		uniformModel = "";
-	    	modelOff = "";
+            uniformModel = "";
+            modelOff = "";
             mass = 0.02;
         };
 

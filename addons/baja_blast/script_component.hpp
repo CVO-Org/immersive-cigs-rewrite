@@ -4,7 +4,7 @@
 #define COMPONENT_BEAUTIFIED Newport Mtn Dew Baja Blast Cigarettes
 
 
-#include "\z\cigs\addons\main\script_mod.hpp"
-#include "\z\cigs\addons\main\script_macros.hpp"
+#include "\zrn\cigs\addons\main\script_mod.hpp"
+#include "\zrn\cigs\addons\main\script_macros.hpp"
 
 #include "defines.hpp"

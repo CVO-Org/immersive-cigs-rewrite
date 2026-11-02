@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -23,16 +23,18 @@
 
 if (!isServer) exitWith {};
 
-//////////////////////////////////////////////////
 ///////////// Cigs on AI
-//////////////////////////////////////////////////
 
-["CBA_SettingChanged", FUNC(handleSettingChange)] call CBA_fnc_addEventHandler;
 addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 
-//////////////////////////////////////////////////
+// Default Hashmap
+
+// Resolved from the presets in config, see defaultPacks.hpp - shared with the default selection of the aiCigs module
+EGVAR(aiCigs,default) = [] call FUNC(getDefaultPacks);
+
+
 ///////////// Dynamic AI Smoking
-//////////////////////////////////////////////////
 
 GVAR(dynamicSmoking_units) = [];
+GVAR(dynamicSmoking_loopID) = 0;
 

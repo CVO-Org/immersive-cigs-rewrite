@@ -1,10 +1,10 @@
-name = "Immersion Cigs - Rewrite"
+name = "Immersive Cigs - Rewrite"
 prefix = "cigs"
-mainprefix = "z"
+mainprefix = "zrn"
 
 [properties]
 author = "Rebel / Facel / Panimala / OverlordZorn / prisonerMO / Kneely / Vespade"
-url = "https://github.com/OverlordZorn/immersion-cigs-rewrite"
+url = "https://github.com/OverlordZorn/immersive-cigs-rewrite"
 
 
 [binarize]
@@ -24,7 +24,6 @@ exclude = [
     "*.psd",        # By default this list is empty
     "*.md",
     "/.vscode/",
-    "/template_addon/",
     "/Workshop/"
 ]
 

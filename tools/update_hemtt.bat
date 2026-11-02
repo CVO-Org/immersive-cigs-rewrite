@@ -1,1 +1,0 @@
-winget update BrettMayson.HEMTT

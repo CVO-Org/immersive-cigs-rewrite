@@ -2,7 +2,7 @@
 // The Facewear Version is defined in CfgGoggles
 
 class CfgWeapons {
-	class EGVAR(pops,popBase_nv);
+    class EGVAR(pops,popBase_nv);
 
     class GVAR(crayon_black_nv): EGVAR(pops,popBase_nv) {
         //Meta Data
@@ -24,12 +24,11 @@ class CfgWeapons {
         PVAR(totalSucks) = SUCKS_TOTAL;
         PVAR(flavor) =  "existential anguish"; 
 
-        class ItemInfo
-        {
+        class ItemInfo {
             type = 616;
             hmdType = 0;
-    		uniformModel = QPATHTOF(data\crayon\crayon.p3d);
-	    	modelOff = QPATHTOF(data\crayon\crayon.p3d);
+            uniformModel = QPATHTOF(data\crayon\crayon.p3d);
+            modelOff = QPATHTOF(data\crayon\crayon.p3d);
             mass = 0.02;
             hiddenSelections[] = {"camo"};
         };

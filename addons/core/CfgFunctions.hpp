@@ -1,7 +1,5 @@
-class CfgFunctions
-{
-    class ADDON
-    {
+class CfgFunctions {
+    class ADDON {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
         class adv_fatigue {
             file = PATH_TO_FUNC_SUB(adv_fatigue);
@@ -24,6 +22,7 @@ class CfgFunctions
         class common {
             file = PATH_TO_FUNC_SUB(common);
             class isPlayer {};
+            class convertItem {};
             class eyeDepth {};
             class isSwimming {};
 
@@ -56,6 +55,14 @@ class CfgFunctions
             class light_cig_glow {};
         };
 
+        class fire {
+            file = PATH_TO_FUNC_SUB(fire);
+            class isFireSource {};
+            class getFireSourceClasses {};
+            class addFireActions {};
+            class canLightFromFire {};
+            class lightFromFire {};
+        };
         class lighter {
             file = PATH_TO_FUNC_SUB(lighter);
             class hasLighter {};
@@ -85,6 +92,7 @@ class CfgFunctions
         class respect {
             file = PATH_TO_FUNC_SUB(respect);
             class payRespect {};
+            class payRespect_target {};
             class canPayRespect {};
         };
 
@@ -110,6 +118,14 @@ class CfgFunctions
             class start_cig {};
             class stop_cig {};
             class drop_cig {};
+
+            class canGiveFireFromCig {};
+            class giveFireFromCig {};
+            class canLightFromTheirs {};
+            class lightFromTheirs {};
+            class canChainLight {};
+            class chainLight {};
+            class lightFromCig {};
             
             class smoking_start {};
             class smoking_stop {};

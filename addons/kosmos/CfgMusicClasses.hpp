@@ -1,7 +1,5 @@
-class CfgMusicClasses
-{
-	class cigs_kino
-	{
-		displayName = "Kino";
-	};
+class CfgMusicClasses {
+    class cigs_kino {
+        displayName = "Kino";
+    };
 };

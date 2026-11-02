@@ -16,6 +16,5 @@
  */
 
 params ["_class"];
-private [];
 
 [configFile >> QPVAR(replacementItems), _class, _class] call BIS_fnc_returnConfigEntry;

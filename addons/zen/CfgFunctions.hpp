@@ -1,7 +1,5 @@
-class CfgFunctions
-{
-    class ADDON
-    {
+class CfgFunctions {
+    class ADDON {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
         class common {
             file = PATH_TO_FUNC_SUB(common);
@@ -16,6 +14,7 @@ class CfgFunctions
             class makeUnitSmoke_init { preInit = 1; };
             class makeUnitSmoke_module {};
             class makeUnitSmoke_statement {};
+            class makeUnitSmoke_server {};
         };
         class stopUnitSmoke {
             file = PATH_TO_FUNC_SUB(stopUnitSmoke);

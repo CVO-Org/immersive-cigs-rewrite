@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -36,6 +36,12 @@
 // Light others cigs
 [ QGVAR(EH_smoking_start), FUNC(start_cig) ] call CBA_fnc_addEventHandler;
 
+// Light a cigarette from another burning cigarette - where the lighting unit is local
+[ QGVAR(EH_lightFromCig), FUNC(lightFromCig) ] call CBA_fnc_addEventHandler;
+
+// Pay respect - place the cigarette where the target is local
+[ QGVAR(EH_payRespect_target), FUNC(payRespect_target) ] call CBA_fnc_addEventHandler;
+
 // Effects
 [ QGVAR(EH_smoke_effect),   FUNC(smoke_effect)   ] call CBA_fnc_addEventHandler;
 [ QGVAR(EH_light_lighter),  FUNC(light_lighter)  ] call CBA_fnc_addEventHandler;
@@ -59,6 +65,9 @@ if ( isServer && { isClass (configFile >> "CfgPatches" >> "ace_medical") } ) the
 
 if !(hasInterface) exitWith {};
 
+// ACE action to light a cigarette at fire sources (campfires, burning units, ...)
+[] call FUNC(addFireActions);
+
 // I dont remember why this waits for cba settings :harold:
 private _code = {
     // reset isSmoking/isSucking variable on respawn
@@ -70,6 +79,10 @@ private _code = {
     player addEventHandler ["InventoryClosed", {
         params ["_unit", "_container"];
         if (
+            // Not while smoking/sucking - the second item may be the next cigarette, see chainLight
+            _unit getVariable [QPVAR(isConsuming), false] isEqualTo false
+            &&
+            {
             (
                 getNumber (configFile >> "CfgGlasses" >> goggles _unit >> QPVAR(isSmokable)) == 1
                 ||
@@ -80,6 +93,7 @@ private _code = {
                 getNumber (configFile >> "CfgWeapons" >> hmd     _unit >> QPVAR(isSmokable)) == 1
                 ||
               { getNumber (configFile >> "CfgWeapons" >> hmd     _unit >> QPVAR(isSuckable)) == 1 }
+            }
             }
         ) then {
             _unit addItem (hmd _unit);

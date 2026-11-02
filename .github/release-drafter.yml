@@ -1,0 +1,46 @@
+# Automatically generates draft releases based on merged PRs
+# A PR with labels of several categories is listed in each of them
+
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+categories:
+  - title: 'Features 🚀'
+    labels:
+      - pr/new
+      - pr/improvement
+  - title: 'Bug Fixes 🐛'
+    labels:
+      - pr/fix
+  - title: 'Settings ⚙️'
+    labels:
+      - pr/settings
+  - title: 'Translation 📚'
+    labels:
+      - pr/translation
+  - title: 'Documentation 📚'
+    labels:
+      - pr/docs
+  - title: 'Maintenance 🛠️'
+    labels:
+      - pr/maintenance
+      - pr/cleanup
+  - title: 'Breaking Changes ⚠️'
+    labels:
+      - pr/breaking
+
+# change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
+exclude-labels:
+  - pr/ignore
+
+change-template: '* $TITLE (#$NUMBER)'
+template: |
+  ## Summary
+
+  ## Changelog
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS

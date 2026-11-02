@@ -1,6 +1,5 @@
 // Weaponholder - The "empty vehicle" to be placed in the world.
-class CfgVehicles
-{
+class CfgVehicles {
     class EGVAR(base,cigpackItem);
 
     class GVAR(cigarbox_5Item): EGVAR(base,cigpackItem) {
@@ -33,6 +32,8 @@ class CfgMagazines {
         picture = QPATHTOF(data\ui\gear_cigarbox_5_x_ca.paa);
 
         count = 5;
+
+        PVAR(unpackSound)[] = {QPVAR(unwrap_01)};
 
         PVAR(item_glasses) = QGVAR(cigar0);
         PVAR(item_hmd) = QGVAR(cigar0_nv);

@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -22,7 +22,7 @@ params [
     [ "_mode", "NORMAL", [""] ]
 ];
 
-if !(_mode in ["NORMAL", "GIVING", "RECIEVING"]) exitWith { systemChat "Someone Fucked Up!" }; 
+if !(_mode in ["NORMAL", "GIVING", "RECIEVING"]) exitWith { ERROR_1("useLighter: invalid mode %1",_mode); }; 
 
 [ _unit ] call FUNC(getLighter) params [ "_lighterClass", "_lighterType" ];
 

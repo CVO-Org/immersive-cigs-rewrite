@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -9,7 +9,7 @@
 * Return Value:
 * None
 *
-* Example: ["PACKAGES", true] call cigs_core_getAllItems;
+* Example: ["PACKAGES", true] call cigs_core_fnc_getAllItems;
 * 
 *
 * Public: No
@@ -45,8 +45,8 @@ switch (typeName _mode) do {
 // Fill the return array with the desired content.
 private _return = [];
 
-private _cfg_lighters_code = { ["CFG_LIGHTERS", { Q(getNumber (_x >> QQPVAR(isLighter)) == 1 && { getNumber (_x >> QQ(scope)) == 2 }) configClasses (configFile >> "CfgMagazines") }] call FUNC(getCached) };
-private _cfg_packages_code = { ["CFG_PACKAGES", { Q(getNumber (_x >> QQPVAR(isPack)   ) == 1 && { getNumber (_x >> QQ(scope)) == 2 }) configClasses (configFile >> "CfgMagazines") }] call FUNC(getCached) };
+private _cfg_lighters_code = { ["CFG_LIGHTERS", { Q(getNumber (_x >> QQPVAR(isLighter)) isEqualTo 1 && { getNumber (_x >> QQ(scope)) isEqualTo 2 && { getNumber (_x >> QQ(isDepricated)) isEqualTo 0 }}) configClasses (configFile >> "CfgMagazines") }] call FUNC(getCached) };
+private _cfg_packages_code = { ["CFG_PACKAGES", { Q(getNumber (_x >> QQPVAR(isPack)   ) isEqualTo 1 && { getNumber (_x >> QQ(scope)) isEqualTo 2 && { getNumber (_x >> QQ(isDepricated)) isEqualTo 0 }}) configClasses (configFile >> "CfgMagazines") }] call FUNC(getCached) };
 
 {
     switch (_x) do {

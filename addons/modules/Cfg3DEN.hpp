@@ -5,7 +5,7 @@ class Cfg3DEN {
     class Object {
         class AttributeCategories {
             class ADDON {
-                displayName = CSTRING(3den_category);   // Category name visible in Edit Attributes window
+                displayName = CSTRING(3den_category_api);   // Category name visible in Edit Attributes window
                 collapsed = 1;                          // When 1, the category is collapsed by default
                 class Attributes {
                     class EGVAR(api,blockDynamicSmoking) {
@@ -63,11 +63,11 @@ class Cfg3DEN {
                         condition = "objectControllable"; // Condition for attribute to appear (see the table below)
                         typeName = "BOOL"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants. This is a scripted feature and has no engine support. See code in (configFile >> "Cfg3DEN" >> "Attributes" >> "Combo" >> "attributeSave")
                     };
-                    class EGVAR(api,blockCigsOnAI) {
+                    class EGVAR(api,blockAiCigs) {
                         //--- Mandatory properties
-                        displayName = CSTRING(blockCigsOnAI_displayName); // Name assigned to UI control class Title
-                        tooltip = CSTRING(blockCigsOnAI_tooltip); // Tooltip assigned to UI control class Title
-                        property = QEGVAR(api,blockCigsOnAI); // Unique config property name saved in SQM
+                        displayName = CSTRING(blockAiCigs_displayName); // Name assigned to UI control class Title
+                        tooltip = CSTRING(blockAiCigs_tooltip); // Tooltip assigned to UI control class Title
+                        property = QEGVAR(api,blockAiCigs); // Unique config property name saved in SQM
                         control = "Checkbox"; // UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
 
                         // Expression called when applying the attribute in Eden and at the scenario start

@@ -17,9 +17,8 @@
  */
 
 params ["", "_camera"];
-private ["_loadouts", "_fnc_filterLoadout"];
 
-_loadouts = switch (_camera) do {
+private _loadouts = switch (_camera) do {
     case "arsenal": {
         profileNamespace getVariable ["bis_fnc_saveInventory_data", []];
     };
@@ -32,7 +31,7 @@ _loadouts = switch (_camera) do {
 };
 
 // From: https://github.com/acemod/ACE3/blob/master/addons/arsenal/functions/fnc_verifyLoadout.sqf#L39-L85
-_fnc_filterLoadout = {
+private _fnc_filterLoadout = {
     _this apply {
         if (_x isEqualType "" && {_x != ""}) then {
             _name = _x call FUNC(getReplacementItem);

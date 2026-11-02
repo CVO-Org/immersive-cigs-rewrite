@@ -1,0 +1,33 @@
+# Applies the labels from .github/labels.yml to this repo
+# Run it manually: Actions tab -> "Github: Sync Labels" -> Run workflow
+# Whether unlisted labels get deleted is controlled by settings.remove_unlisted in .github/labels.yml
+
+name: "Github: Sync Labels"
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run - only show what would change"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  issues: write   # labels are managed through the issues permission
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Sync labels
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: python tools/sync_labels.py ${{ inputs.dry_run && '--dry-run' || '' }}

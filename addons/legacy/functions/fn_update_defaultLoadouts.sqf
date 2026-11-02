@@ -16,12 +16,10 @@
  * Public: No
  */
 
-private ["_loadouts", "_fnc_filterLoadout"];
-
-_loadouts = missionNamespace getVariable ["ace_arsenal_defaultloadoutslist", []];
+private _loadouts = missionNamespace getVariable ["ace_arsenal_defaultloadoutslist", []];
 
 // From: https://github.com/acemod/ACE3/blob/master/addons/arsenal/functions/fnc_verifyLoadout.sqf#L39-L85
-_fnc_filterLoadout = {
+private _fnc_filterLoadout = {
     _this apply {
         if (_x isEqualType "" && {_x != ""}) then {
             _name = _x call FUNC(getReplacementItem);

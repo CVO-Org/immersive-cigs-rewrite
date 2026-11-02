@@ -1,4 +1,4 @@
-#include "../../script_component.hpp"
+#include "..\..\script_component.hpp"
 
 /*
 * Author: Zorn
@@ -23,7 +23,7 @@ private _id = _unit addEventHandler [
         params ["_unit", "_name", "_slot", "_assigned", "_weapon"];
 
         // Define Remove Eventhandler Codeblock
-	    private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil]; };
+        private _rm_eh = { _unit removeEventHandler [_thisEvent, _thisEventHandler]; _unit setVariable [QPVAR(SlotItemChanged_EH_ID), nil]; };
 
         // Check if unit is not consuming
         if ( _unit getVariable [QPVAR(isConsuming), false] isEqualTo false ) exitWith _rm_eh;
@@ -51,7 +51,7 @@ private _id = _unit addEventHandler [
 
         if (_stopConsuming) then {
             _unit setVariable [QPVAR(isConsuming), false, true];
-            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QPVAR(forceVanish), true]; }; // WTF?
+            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QGVAR(forceVanish), true]; }; // read by drop_cig
             call _rm_eh;
         };
     }

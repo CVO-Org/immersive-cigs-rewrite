@@ -1050,26 +1050,46 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
         </Key>
         <Key ID="STR_cigs_core_lighter">
             <English>Lighter</English>
-            <French>Briquet</French>
+            <French>Briquet à essence</French>
             <Spanish>Encendedor</Spanish>
             <Polish>Zapalniczka</Polish>
             <Portuguese>Isqueiro</Portuguese>
             <Russian>Зажигалка</Russian>
             <German>Feuerzeug</German>
             <Korean>라이터</Korean>
-            <Japanese>ライター</Japanese>
+            <Japanese>オイルライター</Japanese>
             <Chinese>打火機</Chinese>
         </Key>
+        <Key ID="STR_cigs_core_lighter_cheap">
+            <English>Disposable Lighter</English>
+            <French>Briquet jetable</French>
+            <Japanese>使い捨てガスライター</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_lighter_cheap_desc">
+            <English>Cheap, mass-produced disposable gas lighter.&lt;br/&gt;Can light up 15 cigarettes.</English>
+            <French>Briquet à gaz jetable, bon marché et produit en masse.&lt;br/&gt;Peut allumer 15 cigarettes.</French>
+            <Japanese>安価で大量生産された使い捨てガスライター。&lt;br/&gt;煙草15本分に着火可能。</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_lighter_cricket">
+            <English>Cricket Lighter</English>
+            <French>Briquet Cricket</French>
+            <Japanese>クリケット ライター</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_lighter_cricket_desc">
+            <English>A French-made disposable lighter, perfect for escapes.&lt;br/&gt;Can light up 25 cigarettes.</English>
+            <French>Un briquet jetable de fabrication française, idéal pour les escapades.&lt;br/&gt;Peut allumer 25 cigarettes.</French>
+            <Japanese>脱出に最適なフランス製使い捨てライター。&lt;br/&gt;煙草25本分に着火可能。</Japanese>
+        </Key>
         <Key ID="STR_cigs_core_lighter_desc">
-            <English>Can light up 100 cigarettes.</English>
-            <French>Peut allumer 100 cigarettes</French>
+            <English>Refillable lighter.&lt;br/&gt;Can light up 100 cigarettes.</English>
+            <French>Briquet à essence rechargeable.&lt;br/&gt;Peut allumer 100 cigarettes.</French>
             <Spanish>Puede encender 100 cigarrillos.</Spanish>
             <Polish>Może zapalić 100 papierosów.</Polish>
             <Portuguese>Pode acender 100 cigarros.</Portuguese>
             <Russian>Может зажечь 100 сигарет.</Russian>
             <German>Kann bis zu 100 Zigaretten anzünden.</German>
             <Korean>100개의 담배를 켤 수 있습니다.</Korean>
-            <Japanese>煙草100本分に着火可能。</Japanese>
+            <Japanese>繰り返し使えるオイルライター。&lt;br/&gt;煙草100本分に着火可能。</Japanese>
             <Chinese>可以點一百根菸。</Chinese>
         </Key>
         <Key ID="STR_cigs_core_lit_from_yours">
@@ -1107,6 +1127,16 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Korean>성냥 10개가 들어 있습니다.</Korean>
             <Japanese>マッチ10本入り。</Japanese>
             <Chinese>內含十根火柴。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_core_matches_hunting">
+            <English>Hunting Matches</English>
+            <French>Allumettes de chasse</French>
+            <Japanese>ハンティングマッチ</Japanese>
+        </Key>
+        <Key ID="STR_cigs_core_matches_hunting_desc">
+            <English>Soviet heritage matches that burn in the wind and in the water (yeah, for real!)&lt;br/&gt;Can light up 6 cigarettes.</English>
+            <French>Allumettes d'héritage soviétique qui brûlent au vent et dans l'eau (oui, vraiment !)&lt;br/&gt;Peut allumer 6 cigarettes.</French>
+            <Japanese>風の中でも水の中でも火がつく(いや、マジで!)ソ連時代のマッチ&lt;br/&gt;煙草6本分に着火可能。</Japanese>
         </Key>
     </Package>
     <Package name="Main">

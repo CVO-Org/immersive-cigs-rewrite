@@ -45,7 +45,7 @@ class CfgMagazines {
         count = 16;
 
         PVAR(isPack) = 1;
-        PVAR(unpackSound) = QPVAR(unwrap_01);
+        PVAR(unpackSound)[] = {QPVAR(unwrap_01),QPVAR(unwrap_02),QPVAR(unwrap_03)};
         PVAR(item_glasses) = QGVAR(cig0);
         PVAR(item_hmd) = QGVAR(cig0_nv);
 

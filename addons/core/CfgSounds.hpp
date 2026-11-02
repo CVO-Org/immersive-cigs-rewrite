@@ -27,6 +27,14 @@ class CfgSounds {
 
 
     };
+    class PVAR(matches_03) {
+        sound[] = {QPATHTOF(data\sounds\matches_03.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 0.4;
+        t_peak = 1.7;
+        t_duration = 3.5;
+    };
 
     class PVAR(lighter_01) {
         sound[] = {QPATHTOF(data\sounds\lighter_01.ogg), 4, 1, 30};
@@ -39,6 +47,24 @@ class CfgSounds {
 
     class PVAR(lighter_02) {
         sound[] = {QPATHTOF(data\sounds\lighter_02.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 1;
+        t_peak = 1.5;
+        t_duration = 3.5;
+    };
+
+    class PVAR(lighter_03) {
+        sound[] = {QPATHTOF(data\sounds\lighter_03.ogg), 4, 1, 30};
+        titles[] = {};
+
+        t_start = 1;
+        t_peak = 1.5;
+        t_duration = 3.5;
+    };
+
+    class PVAR(lighter_04) {
+        sound[] = {QPATHTOF(data\sounds\lighter_04.ogg), 4, 1, 30};
         titles[] = {};
 
         t_start = 1;
@@ -69,6 +95,8 @@ class CfgSounds {
 
 
     SOUND(unwrap_01,4,1,30);
+    SOUND(unwrap_02,4,1,30);
+    SOUND(unwrap_03,4,1,30);
 
     SOUND(eat_01,4,1,30);
     SOUND(eat_02,4,1,30);

@@ -17,7 +17,7 @@ Feel free to add yourself to this when creating a pull request, preferably inclu
 | ArtemisGodfrey |                        | Fixing some Models                               |
 | yepperz        |                        | Artworks                                         |
 | Dart           |                        | Scripting                                        |
-| Apricot-ale    |                        | Japanese Translations                            |
+| Apricot-ale    |                        | Japanese Translations, Lighters, Icons, Sounds   |
 | Alfred-Neumann |                        | French Translations                              |
 | ChemicalCo     |                        | Translations                                     |
 | Quebec         |                        | Artworks                                         |

@@ -33,6 +33,8 @@ class CfgMagazines {
 
         count = 5;
 
+        PVAR(unpackSound)[] = {QPVAR(unwrap_01)};
+
         PVAR(item_glasses) = QGVAR(cigar0);
         PVAR(item_hmd) = QGVAR(cigar0_nv);
     };

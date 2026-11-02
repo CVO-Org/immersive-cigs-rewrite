@@ -54,20 +54,22 @@ for "_i" from 1 to (ceil random 3) do {
 // Add lighter if any package is a smokeable
 if ( _smokablesAmount isNotEqualTo 0 ) then {
 
-    private _lighterClass = switch (true) do {
-        case ( PVAR(isLoaded_SOG) ): { "vn_b_item_lighter_01" };
-        case ( _smokablesAmount > 40 ): { QPVAR(lighter) };
-        default { QPVAR(matches) };
-    };
-
-    private _lighterCfg = configFile >> "CfgMagazines" >> _lighterClass;
-    private _lighterSize = getNumber (_lighterCfg >> "count");
+    private _lighterPool = [["LIGHTERS"] call EFUNC(core,getAllItems), ["vn_b_item_lighter_01"]] select PVAR(isLoaded_SOG);
+    if (_lighterPool isEqualTo []) exitWith { ERROR_1("No Lighters available for %1",_unit) };
+    private _lighterSizes = _lighterPool apply { getNumber (configFile >> "CfgMagazines" >> _x >> "count") max 1 };
 
     private _lighterAmount = 0;
 
     while { _lighterAmount < _smokablesAmount } do {
 
-            
+        // Weighted by how well a lighter's size fits the remaining smokables - 1 is a perfect fit
+        private _remaining = _smokablesAmount - _lighterAmount;
+        private _weighted = [];
+        { _weighted append [_x, (_lighterSizes#_forEachIndex min _remaining) / (_lighterSizes#_forEachIndex max _remaining)]; } forEach _lighterPool;
+
+        private _lighterClass = selectRandomWeighted _weighted;
+        private _lighterSize = _lighterSizes # (_lighterPool find _lighterClass);
+
         private _amount = ceil random [1, _lighterSize * 0.66, _lighterSize];
 
         _lighterAmount = _lighterAmount + _amount;

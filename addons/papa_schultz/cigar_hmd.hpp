@@ -11,26 +11,29 @@ class CfgWeapons {
         displayName = CSTRING(cigar);
         descriptionShort = ECSTRING(core,hmd_stage0);
 
-        model = QPATHTOF(data\cigars\cigar0.p3d);
+        model = QPATH_BASE_MODEL_CIGAR0;
         picture = QPATHTOF(data\ui\gear_cigar0_x_ca.paa);
 
         // Texture paths for the hiddenSelections are defined in an array in the same order as listed in hiddenSelections:
-        hiddenSelections[]={ };
-        hiddenSelectionsTextures[] = { };
-        hiddenSelectionsMaterials[] = { };
+        hiddenSelectionsTextures[] = { QPATH_TEXTURE_CIGAR, QPATH_TEXTURE_CIGAR };
+        hiddenSelectionsMaterials[] = { QPATH_BASE_RVMAT_CIGAR, QPATH_BASE_RVMAT_CIGAR_LIT };
 
         PVAR(totalPuffs) = TOTALPUFFS;
         PVAR(curStage) = 0;
 
         PVAR(smokeMultiplier) = 1.5;
-        
+
 
         class ItemInfo {
             type = 616;
             hmdType = 0;
-            uniformModel = QPATHTOF(data\cigars\cigar0.p3d);
-            modelOff = QPATHTOF(data\cigars\cigar0.p3d);
+            uniformModel = QPATH_BASE_MODEL_CIGAR0;
+            modelOff = QPATH_BASE_MODEL_CIGAR0;
             mass = 0.1;
+
+            hiddenSelections[]={"Camo","CamoB"};
+            hiddenSelectionsTextures[] = { QPATH_TEXTURE_CIGAR, QPATH_TEXTURE_CIGAR };
+            hiddenSelectionsMaterials[] = { QPATH_BASE_RVMAT_CIGAR, QPATH_BASE_RVMAT_CIGAR_LIT };
         };
     };
 
@@ -39,16 +42,16 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage1);
 
-        model = QPATHTOF(data\cigars\cigar1.p3d);
+        model = QPATH_BASE_MODEL_CIGAR1;
         picture = QPATHTOF(data\ui\gear_cigar1_x_ca.paa);
 
         PVAR(curStage) = 1;
-        
+
 
 
         class ItemInfo: ItemInfo {
-            uniformModel = QPATHTOF(data\cigars\cigar1.p3d);
-            modelOff = QPATHTOF(data\cigars\cigar1.p3d);
+            uniformModel = QPATH_BASE_MODEL_CIGAR1;
+            modelOff = QPATH_BASE_MODEL_CIGAR1;
         };
     };
 
@@ -56,16 +59,16 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage2);
 
-        model = QPATHTOF(data\cigars\cigar2.p3d);
+        model = QPATH_BASE_MODEL_CIGAR2;
         picture = QPATHTOF(data\ui\gear_cigar2_x_ca.paa);
 
         PVAR(curStage) = 2;
-        
+
 
 
         class ItemInfo: ItemInfo {
-            uniformModel = QPATHTOF(data\cigars\cigar2.p3d);
-            modelOff = QPATHTOF(data\cigars\cigar2.p3d);
+            uniformModel = QPATH_BASE_MODEL_CIGAR2;
+            modelOff = QPATH_BASE_MODEL_CIGAR2;
         };
     };
 
@@ -73,15 +76,15 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage3);
 
-        model = QPATHTOF(data\cigars\cigar3.p3d);
+        model = QPATH_BASE_MODEL_CIGAR3;
         picture = QPATHTOF(data\ui\gear_cigar3_x_ca.paa);
 
         PVAR(curStage) = 3;
-        
+
 
         class ItemInfo: ItemInfo {
-            uniformModel = QPATHTOF(data\cigars\cigar3.p3d);
-            modelOff = QPATHTOF(data\cigars\cigar3.p3d);
+            uniformModel = QPATH_BASE_MODEL_CIGAR3;
+            modelOff = QPATH_BASE_MODEL_CIGAR3;
         };
     };
 
@@ -89,15 +92,15 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage4);
 
-        model = QPATHTOF(data\cigars\cigar4.p3d);
+        model = QPATH_BASE_MODEL_CIGAR4;
         picture = QPATHTOF(data\ui\gear_cigar4_x_ca.paa);
 
         PVAR(curStage) = 4;
-        
+
 
         class ItemInfo: ItemInfo {
-            uniformModel = QPATHTOF(data\cigars\cigar4.p3d);
-            modelOff = QPATHTOF(data\cigars\cigar4.p3d);
+            uniformModel = QPATH_BASE_MODEL_CIGAR4;
+            modelOff = QPATH_BASE_MODEL_CIGAR4;
         };
     };
 };

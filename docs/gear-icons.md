@@ -2,7 +2,7 @@
 
 [Back to the documentation overview](README.md) · [Adding a Brand](adding-a-brand.md)
 
-Every cigarette brand has six inventory icons in `addons/<brand>/data/UI/`. They are rendered from the brand's own `data/texture.paa` by [`tools/gear_icons.py`](../tools/gear_icons.py), so all brands look the same and the icons always match the in-game models.
+Every cigarette brand has six inventory icons in `addons/<brand>/data/UI/`. They are rendered from the brand's own `data/texture.paa` by [`tools/gear_icons/gear_icons.py`](../tools/gear_icons/gear_icons.py), so all brands look the same and the icons always match the in-game models.
 
 | File | Size | Shows |
 | --- | --- | --- |
@@ -16,16 +16,18 @@ You need Python 3 with Pillow (`pip install pillow`) and `hemtt` on your `PATH`.
 
 1. Preview first. This writes PNGs and a `preview.png` sheet, and does not touch the addon:
    ```powershell
-   python tools/gear_icons.py <brand> --out .hemttout/icons/<brand>
+   python tools/gear_icons/gear_icons.py <brand> --out .hemttout/icons/<brand>
    ```
 2. Open `preview.png`. It shows every icon on a dark and a light background, plus at the 64 px size the inventory actually uses. Check the points in [What to check](#what-to-check).
 3. When it looks right, write the PAAs into `addons/<brand>/data/UI/`:
    ```powershell
-   python tools/gear_icons.py <brand> --out .hemttout/icons/<brand> --apply
+   python tools/gear_icons/gear_icons.py <brand> --out .hemttout/icons/<brand> --apply
    ```
 4. Check them in-game (`hemtt launch` opens `test.VR`).
 
 A brand without a `data/cigpack.p3d` (for example `savage`) only gets the five cigarette icons.
+
+The same folder has helper scripts: overview sheets, cigarette strip and logo finder, texture fixes, a pack renderer for non-brand packs, and readers for the `.p3d` models. See [tools/gear_icons/README.md](../tools/gear_icons/README.md).
 
 ## The pack icon
 
@@ -70,4 +72,4 @@ If a brand's texture has faces that are upside down on the model, fix the textur
 
 ## Changing the style
 
-All the numbers above are constants at the top of `tools/gear_icons.py`. If you change the style, re-render every brand so they stay consistent.
+All the numbers above are constants at the top of `tools/gear_icons/gear_icons.py`. If you change the style, re-render every brand so they stay consistent.

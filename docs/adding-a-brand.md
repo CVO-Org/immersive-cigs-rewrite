@@ -38,7 +38,7 @@ There is a "template PSD" in `tools/PSD UI Automations` which you can use.
 Furthermore, you have to place the UI textures for the Package and each stage of the cigarette.
 
 Those can be found in `addons/~youraddon~/data/UI/`
-Render them from your texture with `tools/gear_icons.py`, so they match the other brands. See [Gear Icons](gear-icons.md).
+Render them from your texture with `tools/gear_icons/gear_icons.py`, so they match the other brands. See [Gear Icons](gear-icons.md).
 
 
 ## 4. Fix the .p3d texture paths

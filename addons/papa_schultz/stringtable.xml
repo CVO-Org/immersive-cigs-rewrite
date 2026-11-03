@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_papa_schultz">
+    <Package name="Items">
+        <Key ID="STR_cigs_papa_schultz_cigar">
+            <English>Papa Schultz' Cigar</English>
+            <French>Cigare Papa Schultz</French>
+            <Spanish>Puro Papa Schultz</Spanish>
+            <Polish>Cygaro Papa Schultz</Polish>
+            <Portuguese>Charuto Papa Schultz</Portuguese>
+            <Russian>Сигара Papa Schultz</Russian>
+            <German>Papa Schultz' Zigarre</German>
+            <Korean>Papa Schultz 시가</Korean>
+            <Japanese>葉巻たばこ (パパ・シュルツ)</Japanese>
+            <Chinese>Papa Schultz 雪茄</Chinese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_cigarbox_5">
+            <English>Pack of Papa Schultz' Cigars</English>
+            <French>Paquet de cigares Papa Schultz</French>
+            <Spanish>Paquete de puros Papa Schultz</Spanish>
+            <Polish>Paczka cygar Papa Schultz</Polish>
+            <Portuguese>Maço de charutos Papa Schultz</Portuguese>
+            <Russian>Пачка сигар Papa Schultz</Russian>
+            <German>Schachtel Papa Schultz' Zigarren</German>
+            <Korean>Papa Schultz 시가 한 갑</Korean>
+            <Japanese>箱入り葉巻たばこ (パパ・シュルツ)</Japanese>
+            <Chinese>一包 Papa Schultz 雪茄</Chinese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_cigarbox_5_desc">
+            <English>The Sergeant's second favourite brand.&lt;br/&gt;Contains 5 cigars.</English>
+            <French>La deuxième marque préférée du sergent.&lt;br/&gt;Contient 5 cigares.</French>
+            <Spanish>La segunda marca favorita del sargento.&lt;br/&gt;Contiene 5 puros.</Spanish>
+            <Polish>Druga ulubiona marka sierżanta.&lt;br/&gt;Zawiera 5 cygar.</Polish>
+            <Portuguese>A segunda marca favorita do sargento.&lt;br/&gt;Contém 5 charutos.</Portuguese>
+            <Russian>Вторая любимая марка сержанта.&lt;br/&gt;Содержит 5 сигар.</Russian>
+            <German>Die zweitliebste Marke des Feldwebels.&lt;br/&gt;Enthält 5 Zigarren.</German>
+            <Korean>병장이 두 번째로 좋아하는 브랜드.&lt;br/&gt;시가 5개가 들어 있습니다.</Korean>
+            <Japanese>軍曹が二番目に好きな銘柄。&lt;br/&gt;葉巻たばこ5本入り。</Japanese>
+            <Chinese>中士第二喜欢的品牌。&lt;br/&gt;内含 5 支雪茄。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_papa_schultz_author">
+            <English>Rebel / Facel / LongLiveQuebec / OverlordZorn</English>
+            <French>Rebel / Facel / LongLiveQuebec / OverlordZorn</French>
+            <Spanish>Rebel / Facel / LongLiveQuebec / OverlordZorn</Spanish>
+            <Polish>Rebel / Facel / LongLiveQuebec / OverlordZorn</Polish>
+            <Portuguese>Rebel / Facel / LongLiveQuebec / OverlordZorn</Portuguese>
+            <Russian>Rebel / Facel / LongLiveQuebec / OverlordZorn</Russian>
+            <German>Rebel / Facel / LongLiveQuebec / OverlordZorn</German>
+            <Korean>Rebel / Facel / LongLiveQuebec / OverlordZorn</Korean>
+            <Japanese>Rebel / Facel / LongLiveQuebec / OverlordZorn</Japanese>
+            <Chinese>Rebel / Facel / LongLiveQuebec / OverlordZorn</Chinese>
+        </Key>
+        <Key ID="STR_cigs_papa_schultz_author_cigarbox_5">
+            <English>Bromine / OverlordZorn / LongLiveQuebec</English>
+            <French>Bromine / OverlordZorn / LongLiveQuebec</French>
+            <Spanish>Bromine / OverlordZorn / LongLiveQuebec</Spanish>
+            <Polish>Bromine / OverlordZorn / LongLiveQuebec</Polish>
+            <Portuguese>Bromine / OverlordZorn / LongLiveQuebec</Portuguese>
+            <Russian>Bromine / OverlordZorn / LongLiveQuebec</Russian>
+            <German>Bromine / OverlordZorn / LongLiveQuebec</German>
+            <Korean>Bromine / OverlordZorn / LongLiveQuebec</Korean>
+            <Japanese>Bromine / OverlordZorn / LongLiveQuebec</Japanese>
+            <Chinese>Bromine / OverlordZorn / LongLiveQuebec</Chinese>
+        </Key>
+    </Package>
+</Project>

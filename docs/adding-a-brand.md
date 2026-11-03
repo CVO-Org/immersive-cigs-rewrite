@@ -26,11 +26,13 @@ Some Cigarettes have differnt models, be it the Cigarettes or the cigpacks
 
 ## 3. Retexturing
 ### 3.1 Object Textures
-There are two main texture files:
-1. `addons/~youraddon~/data/cigs/cigs.paa`
-2. `addons/~youraddon~/data/cigpack/cigpack.paa`
-   
-They basically the same files, both need to be updated/replaced. (Dont ask my why, tldr: its a remnant from the original mod and i haven't bothered to clean it up).
+One texture, `addons/~youraddon~/data/texture.paa`, covers both the pack and the cigarettes. The cigarettes are the shared models in `addons/base/data/`, which take your texture through `hiddenSelectionsTextures[]`, so you don't copy any cigarette models.
+
+Pick the cigarette in `cigs_glasses.hpp` and `cigs_hmd.hpp`:
+- with a filter (85 mm): `QPATH_BASE_MODEL_CIG0` … `CIG4`, as in `morley`
+- without a filter (56 mm): `QPATH_BASE_MODEL_NOFILTER_CIG0` … `CIG4`, as in `eckstein`. The paper ends at the mouth with a tobacco end; the filter part of the texture (u 391–585) isn't used.
+
+Either way, print the logo on the paper's end next to the filter (u 330–389): that end stays as the cigarette burns down. See [Gear Icons](gear-icons.md) for the strip's layout.
 
 There is a "template PSD" in `tools/PSD UI Automations` which you can use.
 
@@ -41,15 +43,20 @@ Those can be found in `addons/~youraddon~/data/UI/`
 Render them from your texture with `tools/gear_icons/gear_icons.py`, so they match the other brands. See [Gear Icons](gear-icons.md).
 
 
-## 4. Fix the .p3d texture paths
-all .p3d files within `addons/~youraddon~/data/cigs/` and `addons/~youraddon~/data/cigpack/` need their texture paths replaced, which is done with Arma 3 Tools / Object Builder
+## 4. Fix the pack's texture path
+`addons/~youraddon~/data/cigpack.p3d` still points at the texture of the addon you copied. Replace the path with the script, from the repository root:
+
+```powershell
+python tools/gear_icons/mlod.py addons/~youraddon~/data/cigpack.p3d --rename addons\morley\ addons\~youraddon~\
+```
+
+Or do it by hand in Object Builder:
 
 ### 4.1. Download Arma 3 Tools via Steam
 
 ### 4.2. Open Object Builder from Arma 3 Tools
 
-### 4.3. For each of the p3d files inside the addon:
-by default, its `cigpack.p3d`, `cig0.p3d`,`cig1.p3d`,`cig2.p3d`,`cig3.p3d` and `cig4.p3d`
+### 4.3. For `cigpack.p3d`:
 
 #### 4.3.1 Open p3d
 ![Opening a p3d in Object Builder](img/objectbuilder-open.png)

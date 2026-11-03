@@ -49,6 +49,7 @@ If a brand's texture has faces that are upside down on the model, fix the textur
 
 - **Layout:** 45°, rising to the right, with the filter end at the same spot (118, 11) in every stage. Each stage burns down from the bottom-left end.
 - **Lengths:** taken from the base models `addons/base/data/cig0.p3d` … `cig4.p3d`: 83.9, 83.8, 69.1, 55.4 and 42.6 mm, with a 30.5 mm filter and a 7.6 mm diameter. At 1.78 px per mm the fresh cigarette spans about 150 px of the diagonal.
+- **Filterless brands** (`eckstein`, `craven`, `lucky_strike`) use `cig_nofilter0.p3d` … `cig_nofilter4.p3d`: 56, 56, 44, 32 and 20 mm of paper, no filter. The script spots them from the `NOFILTER` models in their `cigs_glasses.hpp`, draws them at the same scale and puts the mouth end at the same spot.
 - **Texture:** the cigarette strip at the top of the texture, which every brand shares with the base models:
 
   | Part | Texture pixels |
@@ -59,7 +60,7 @@ If a brand's texture has faces that are upside down on the model, fix the textur
   | ash | u 836–994, v 70–96 |
 
 - **No stretching:** the paper is wrapped at the strip's own scale, 6.57 px per mm. The side view shows half the circumference (π × d / 2 ≈ 78 px of the strip) folded onto the diameter. The fold is half arcsine and half flat, so a logo looks round without its top and bottom collapsing.
-- **Logo placement:** the wrap is centred on whatever is printed next to the filter: on the paper's end or on the filter's white band. The script finds it and prints `logo at v …`. A shorter stage keeps the paper next to the filter and loses paper from the burnt end, so the logo stays put until the stub burns into it.
+- **Logo placement:** the wrap is centred on whatever is printed next to the filter: on the paper's end or on the filter's white band. The script finds it and prints `logo at v …`. A shorter stage keeps the paper next to the filter and loses paper from the burnt end, so the logo stays put until the stub burns into it. The models do the same; [`cig_models.py`](../tools/gear_icons/cig_models.py) holds them to it.
 - **Lit stages:** grey ash tip, the strip's charred edge behind it, and an orange ember glow where ash meets paper.
 - **Shading:** cylindrical, lit from above, with a faint dark rim so the icon reads on light backgrounds too.
 

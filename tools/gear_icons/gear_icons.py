@@ -40,6 +40,8 @@ FILTER_MM = 30.5
 DIAM_MM = 7.6
 TIP_MM = 6.5
 STAGES = [(83.9, False), (83.8, True), (69.1, True), (55.4, True), (42.6, True)]
+# addons/base/data/cig_nofilter0..4.p3d, for brands whose config uses them
+STAGES_NOFILTER = [(56.0, False), (56.0, True), (44.0, True), (32.0, True), (20.0, True)]
 
 SS = 8                  # supersampling for the cigarette icons
 PX_MM = 1.78            # 84 mm cigarette spans ~150 px of diagonal in a 128 px icon
@@ -108,13 +110,14 @@ def pack_icon(tex):
 
 # ---------- cigarettes ----------
 
-def find_logo_v(tex):
+def find_logo_v(tex, filterless=False):
     # Centre of whatever is printed next to the filter: on the paper's end or on the white
     # band where the filter starts (u 400-428). Skips the seam line around u 395. Each
-    # channel counts on its own so pale gold or pink prints still show up.
+    # channel counts on its own so pale gold or pink prints still show up. A filterless
+    # cigarette only shows the paper.
     paper = tex.crop((100, 60, 250, 200)).resize((1, 1), Image.BOX).getpixel((0, 0))
     band = ImageStat.Stat(tex.crop((FILTER_U[0] + 10, 60, FILTER_U[0] + 37, 200))).median
-    band_is_white = max(abs(a - b) for a, b in zip(band, paper)) < 30
+    band_is_white = not filterless and max(abs(a - b) for a, b in zip(band, paper)) < 30
     u0, u1 = PAPER_U[1] - 190, FILTER_U[0] + 37 if band_is_white else PAPER_U[1]
     region = tex.crop((u0, STRIP_V[0], u1, STRIP_V[1]))
     diff = ImageChops.difference(region, Image.new("RGB", region.size, paper))
@@ -167,11 +170,11 @@ def shade(img):
     return ImageChops.multiply(img, g.resize((w, h)).convert("RGB"))
 
 
-def cigarette(tex, length, lit, v_centre):
+def cigarette(tex, length, lit, v_centre, filter_mm=FILTER_MM):
     s = PX_MM * SS
     L = round(length * s)
     D = round(DIAM_MM * s)
-    fl = round(FILTER_MM * s)
+    fl = round(filter_mm * s)
     tip = round(TIP_MM * s) if lit else 0
     pl = L - fl - tip
     body = Image.new("RGB", (L, D))
@@ -181,7 +184,8 @@ def cigarette(tex, length, lit, v_centre):
     body.paste(wrap(tex, u0, PAPER_U[1], pl, D, v_centre), (tip, 0))
     if lit:
         body.paste(wrap(tex, *CHAR_U, round(1.5 * s), D, v_centre), (tip, 0))
-    body.paste(wrap(tex, *FILTER_U, fl, D, v_centre), (L - fl, 0))
+    if fl:
+        body.paste(wrap(tex, *FILTER_U, fl, D, v_centre), (L - fl, 0))
     mask = Image.new("L", (L, D), 0)
     md = ImageDraw.Draw(mask)
     md.rounded_rectangle((tip, 0, L - 1, D - 1), radius=SS, fill=255)
@@ -197,8 +201,8 @@ def cigarette(tex, length, lit, v_centre):
     return img
 
 
-def cig_icon(tex, length, lit, v_centre):
-    cig = cigarette(tex, length, lit, v_centre)
+def cig_icon(tex, length, lit, v_centre, filter_mm=FILTER_MM):
+    cig = cigarette(tex, length, lit, v_centre, filter_mm)
     # soft dark rim so the icon reads on light inventory backgrounds
     pad = 4 * SS
     rim = Image.new("RGBA", (cig.width + 2 * pad, cig.height + 2 * pad), (0, 0, 0, 0))
@@ -256,7 +260,14 @@ def main():
     hemtt_convert(tex_paa, tex_png)
     tex = Image.open(tex_png).convert("RGB")
 
-    v_centre, logo = (args.logo_v, None) if args.logo_v else find_logo_v(tex)
+    # a brand whose config uses the base filterless models gets their lengths and no filter
+    glasses = os.path.join("addons", args.addon, "cigs_glasses.hpp")
+    filterless = os.path.exists(glasses) and "NOFILTER" in open(glasses, encoding="utf-8", errors="replace").read()
+    stages, filter_mm = (STAGES_NOFILTER, 0) if filterless else (STAGES, FILTER_MM)
+    if filterless:
+        print("filterless cigarette (cig_nofilter models)")
+
+    v_centre, logo = (args.logo_v, None) if args.logo_v else find_logo_v(tex, filterless)
     if v_centre is None:
         v_centre = sum(STRIP_V) / 2
         print(f"no logo found on the paper, wrapping around v {v_centre:.0f}")
@@ -269,8 +280,8 @@ def main():
     icons = {}
     if os.path.exists(os.path.join(data, "cigpack.p3d")):
         icons["gear_cigpack_x_ca"] = pack_icon(tex)
-    for i, (length, lit) in enumerate(STAGES):
-        icons[f"gear_cig{i}_x_ca"] = cig_icon(tex, length, lit, v_centre)
+    for i, (length, lit) in enumerate(stages):
+        icons[f"gear_cig{i}_x_ca"] = cig_icon(tex, length, lit, v_centre, filter_mm)
 
     for name, img in icons.items():
         img.save(os.path.join(out, name + ".png"))

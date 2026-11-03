@@ -6,11 +6,17 @@ Small texture fixes, done on the PAA directly (converted to PNG and back with he
              upside down on the model. Default region: the pack's top flap.
   move-logo  move what is printed in a box on the cigarette paper by dx pixels along
              the strip, and cover the old spot with clean paper from the same rows.
+  copy       copy a box of the texture to another spot, e.g. a filter's cork pattern
+             onto the paper's end for a filterless, cork-tipped cigarette.
 
     python tools/gear_icons/texture_fix.py rotate morley
     python tools/gear_icons/texture_fix.py move-logo savage --box 268 88 341 162 --dx 48
+    python tools/gear_icons/texture_fix.py move-logo craven --box 325 92 385 161 --dx -72 --dry-run
+    python tools/gear_icons/texture_fix.py copy craven --box 391 41 463 217 --to 317 41 --input .hemttout/icons/_edit/craven_texture.png
 
 Add --dry-run to only write the PNG to .hemttout/icons/_edit and leave the PAA alone.
+--input starts from such a PNG instead of the PAA, to chain several fixes into one
+re-encode.
 Re-encoding keeps the PAA format (DXT1/DXT5) but compresses it anew, so expect a small
 size change. Re-render the icons afterwards with gear_icons.py.
 """
@@ -55,22 +61,34 @@ def main():
     m.add_argument("--box", type=int, nargs=4, required=True, metavar=("U0", "V0", "U1", "V1"), help="the print, with a few px margin (strips.py prints it)")
     m.add_argument("--dx", type=int, required=True, help="pixels to move along the strip, positive towards the filter")
     m.add_argument("--paper-from", type=int, default=-120, help="where to take clean paper from, relative to the box (default -120)")
-    for p in (r, m):
+    c = sub.add_parser("copy", help="copy a box to another spot")
+    c.add_argument("--box", type=int, nargs=4, required=True, metavar=("U0", "V0", "U1", "V1"))
+    c.add_argument("--to", type=int, nargs=2, required=True, metavar=("U", "V"), help="top-left corner of the copy")
+    for p in (r, m, c):
         p.add_argument("addon")
         p.add_argument("--texture", help="texture inside addons/<addon>/data (default texture.paa)", default="texture.paa")
+        p.add_argument("--input", help="start from this PNG instead of the PAA (e.g. a --dry-run result)")
         p.add_argument("--dry-run", action="store_true", help="only write the PNG")
     args = parser.parse_args()
 
     paa = os.path.join("addons", args.addon, "data", args.texture)
     os.makedirs(OUT, exist_ok=True)
     name = f"{args.addon}_{os.path.splitext(args.texture)[0]}"
-    src = os.path.join(OUT, name + "_orig.png")
-    hemtt_convert(paa, src)
+    src = args.input
+    if not src:
+        src = os.path.join(OUT, name + "_orig.png")
+        hemtt_convert(paa, src)
     tex = Image.open(src)
-    tex = rotate(tex, tuple(args.box)) if args.cmd == "rotate" else move_logo(tex, tuple(args.box), args.dx, args.paper_from)
+    tex.load()
+    if args.cmd == "rotate":
+        tex = rotate(tex, tuple(args.box))
+    elif args.cmd == "move-logo":
+        tex = move_logo(tex, tuple(args.box), args.dx, args.paper_from)
+    else:
+        tex.paste(tex.crop(tuple(args.box)), tuple(args.to))
     png = os.path.join(OUT, name + ".png")
     tex.save(png)
-    print(f"wrote {png} (original in {src})")
+    print(f"wrote {png} (from {src})")
     if not args.dry_run:
         hemtt_convert(png, paa)
         print(f"converted it to {paa}")

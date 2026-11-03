@@ -8,29 +8,22 @@ Use it to check which part of the strip (and so which logo) a stage really shows
 """
 
 import argparse
-import math
 
-from mlod import read
+from cig_models import Cig
+from mlod import load, read
 
 
 def sections(path, size=1024):
     """Returns (length mm, [(mm0, u0, mm1, u1, lit, v0, v1)]) for the first LOD."""
     lod = read(path)[0]
     pts = lod["pts"]
-    # the cigarette's axis runs between the two points farthest apart; a is the burnt end
-    a, b = max(((p, q) for p in pts for q in pts), key=lambda pq: math.dist(*pq))
-    if a[2] > b[2]:
-        a, b = b, a
-    length = math.dist(a, b)
-    axis = [(y - x) / length for x, y in zip(a, b)]
-
-    def along(p):
-        return sum((pc - ac) * k for pc, ac, k in zip(p, a, axis)) * 1000
+    cig = Cig(load(path)["lods"][0])
+    along, length = cig.t, cig.length / 1000
 
     merged = {}
     for verts, tex, mat in lod["faces"]:
         ends = sorted((round(along(pts[pi]), 1), round(u * size), round(v * size)) for pi, _, u, v in verts)
-        if ends[-1][0] - ends[0][0] < 1.5:
+        if ends[-1][0] - ends[0][0] < 0.5:
             continue  # an end cap, not a side face
         lo = next(e for e in ends if e[0] == ends[0][0])
         hi = next(e for e in ends if e[0] == ends[-1][0])

@@ -10,4 +10,11 @@
 #define QPATH_BASE_MODEL_CIG3 QPATHTOEF(base,data\cig3.p3d)
 #define QPATH_BASE_MODEL_CIG4 QPATHTOEF(base,data\cig4.p3d)
 
+// Filterless cigarettes: the same texture layout, paper only, 56 mm down to 20 mm
+#define QPATH_BASE_MODEL_NOFILTER_CIG0 QPATHTOEF(base,data\cig_nofilter0.p3d)
+#define QPATH_BASE_MODEL_NOFILTER_CIG1 QPATHTOEF(base,data\cig_nofilter1.p3d)
+#define QPATH_BASE_MODEL_NOFILTER_CIG2 QPATHTOEF(base,data\cig_nofilter2.p3d)
+#define QPATH_BASE_MODEL_NOFILTER_CIG3 QPATHTOEF(base,data\cig_nofilter3.p3d)
+#define QPATH_BASE_MODEL_NOFILTER_CIG4 QPATHTOEF(base,data\cig_nofilter4.p3d)
+
 #define MODLSTRING(key) [LSTRING(DOUBLES(module,key)),LSTRING(TRIPLES(module,key,desc))]

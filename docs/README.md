@@ -10,5 +10,6 @@ Pick the page for what you want to do.
 | [Scripting API](api.md) | Mission makers and modders who write SQF | Events, unit variables, functions |
 | [Modders](modders.md) | People extending the mod with config | Config properties, default pack presets |
 | [Adding a Brand](adding-a-brand.md) | Modders | Adding a brand to this repository. For your own mod, use the [extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template). |
+| [Gear Icons](gear-icons.md) | Modders | Rendering a brand's inventory icons from its texture with `tools/gear_icons.py` |
 | [Classnames](classnames.md) | Everyone who needs a classname | All packs and lighters, renamed legacy classnames |
 | [History](history.md) | Anyone curious | What the rewrite changed compared to the original mod |

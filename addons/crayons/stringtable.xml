@@ -28,14 +28,14 @@
         <Key ID="STR_cigs_crayons_crayonpack_desc">
             <English>A pack of 24 crayons.&lt;br/&gt;A Marine's C-Ration.</English>
             <French>Un paquet de 24 crayons de couleur.&lt;br/&gt;La C-Ration d'un Marine.</French>
-            <Spanish>Un paquete de 24 crayones.&amp;lt;br/&amp;gt;Ración C del marine.</Spanish>
-            <Polish>Paczka 24 kredek.&amp;lt;br/&amp;gt;Racja żywnościowa marines.</Polish>
-            <Portuguese>Um pacote com 24 lápis de cor.&amp;lt;br/&amp;gt;Ração de marine.</Portuguese>
-            <Russian>Пачка из 24 карандашей.&amp;lt;br/&amp;gt;Распределённая пайка морских пехотинцев.</Russian>
-            <German>Ein Pack mit 24 Wachsmalkreiden.&amp;lt;br/&amp;gt;Eine C-Ration eines Marines.</German>
-            <Korean>24개의 크레용이 들어 있는 세트입니다.&amp;lt;br/&amp;gt;해병의 C식량.</Korean>
+            <Spanish>Un paquete de 24 crayones.&lt;br/&gt;Ración C del marine.</Spanish>
+            <Polish>Paczka 24 kredek.&lt;br/&gt;Racja żywnościowa marines.</Polish>
+            <Portuguese>Um pacote com 24 lápis de cor.&lt;br/&gt;Ração de marine.</Portuguese>
+            <Russian>Пачка из 24 карандашей.&lt;br/&gt;Распределённая пайка морских пехотинцев.</Russian>
+            <German>Ein Pack mit 24 Wachsmalkreiden.&lt;br/&gt;Eine C-Ration eines Marines.</German>
+            <Korean>24개의 크레용이 들어 있는 세트입니다.&lt;br/&gt;해병의 C식량.</Korean>
             <Japanese>クレヨン24本入りの箱。&lt;br/&gt;海兵隊のためのC-レーシヨン。</Japanese>
-            <Chinese>一盒 24 支蜡笔。&amp;lt;br/&amp;gt;一份海军陆战队的 C 口粮。</Chinese>
+            <Chinese>一盒 24 支蜡笔。&lt;br/&gt;一份海军陆战队的 C 口粮。</Chinese>
         </Key>
     </Package>
     <Package name="Main">

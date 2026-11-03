@@ -55,8 +55,8 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage2);
 
-        model = QPATH_BASE_MODEL_CIG1;
-        picture = QPATHTOF(data\ui\gear_cig1_x_ca.paa);
+        model = QPATH_BASE_MODEL_CIG2;
+        picture = QPATHTOF(data\ui\gear_cig2_x_ca.paa);
 
         PVAR(curStage) = 2;
         
@@ -72,7 +72,7 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage3);
 
-        model = QPATH_BASE_MODEL_CIG1;
+        model = QPATH_BASE_MODEL_CIG3;
         picture = QPATHTOF(data\ui\gear_cig3_x_ca.paa);
 
         PVAR(curStage) = 3;
@@ -89,7 +89,7 @@ class CfgWeapons {
 
         descriptionShort = ECSTRING(core,hmd_stage4);
 
-        model = QPATH_BASE_MODEL_CIG1;
+        model = QPATH_BASE_MODEL_CIG4;
         picture = QPATHTOF(data\ui\gear_cig4_x_ca.paa);
 
         PVAR(curStage) = 4;

@@ -141,6 +141,20 @@ def set_sharp_edges(lod, edges):
     lod["tags"] = [(a, n, k, b"".join(struct.pack("<2i", *e) for e in edges) if k == "edges" else r) for a, n, k, r in lod["tags"]]
 
 
+def add_selection(lod, name, faces):
+    """Adds (or replaces) the named selection: the given face indices and every point they
+    use. It goes before the first #Property# tag, where Object Builder keeps selections."""
+    used = {v[0] for i in faces for v in lod["faces"][i]["verts"]}
+    for i, p in enumerate(lod["points"]):
+        p["sel"][name] = 1 if i in used else 0
+    for i, f in enumerate(lod["faces"]):
+        f["sel"][name] = 1 if i in set(faces) else 0
+    tags = [t for t in lod["tags"] if t[1] != name]
+    at = next((i for i, t in enumerate(tags) if t[1] == "#Property#"), len(tags) - 1)
+    tags.insert(at, (1, name, "sel", b""))
+    lod["tags"] = tags
+
+
 def remove_points(lod, drop):
     """Removes the points in `drop` (indices) and re-indexes faces and sharp edges. Faces
     that still use a dropped point must be removed or re-pointed first."""

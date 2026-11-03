@@ -9,9 +9,12 @@ Edits the base cigarette models in addons/base/data/.
   nofilter   writes cig_nofilter0..4.p3d from the (fixed) cig0..4: the same cigarette
              without the filter, closed with the tobacco end cap, the mouth end where
              the filter's end was. Lengths 56, 56, 44, 32, 20 mm.
+  cigars     makes cigar0..4.p3d retexturable: Camo on the body, CamoB on the lit tip
+             (the Tip selection), no texture of their own, the base cigar materials.
 
     python tools/gear_icons/cig_models.py fix-base
     python tools/gear_icons/cig_models.py nofilter
+    python tools/gear_icons/cig_models.py cigars
 
 Check the result with cig_uvmap.py, and in Object Builder or in-game before committing.
 """
@@ -21,7 +24,7 @@ import copy
 import math
 import os
 
-from mlod import load, remove_points, save, set_sharp_edges, sharp_edges
+from mlod import add_selection, load, remove_points, save, set_sharp_edges, sharp_edges
 
 DATA = os.path.join("addons", "base", "data")
 PX = 1 / 1024           # one texture pixel in UV units
@@ -197,11 +200,32 @@ def nofilter(args):
         print(f"{out}: {Cig(model['lods'][0]).length:.1f} mm")
 
 
+def cigars(args):
+    rvmat = "zrn\\cigs\\addons\\base\\data\\cigar.rvmat"
+    rvmat_lit = "zrn\\cigs\\addons\\base\\data\\cigar_lit.rvmat"
+    for k in range(5):
+        path = os.path.join(DATA, f"cigar{k}.p3d")
+        model = load(path)
+        lod = model["lods"][0]
+        tip = [i for i, f in enumerate(lod["faces"]) if f["sel"].get("Tip")]
+        body = [i for i, f in enumerate(lod["faces"]) if not f["sel"].get("Tip")]
+        add_selection(lod, "Camo", body)
+        if tip:
+            add_selection(lod, "CamoB", tip)
+        # the texture comes from hiddenSelectionsTextures; the materials are the shared ones
+        for i, f in enumerate(lod["faces"]):
+            f["tex"] = ""
+            f["mat"] = rvmat_lit if i in tip else rvmat
+        save(model, path)
+        print(f"{path}: Camo {len(body)} faces, CamoB {len(tip)} faces")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="cmd", required=True)
     sub.add_parser("fix-base", help="cig1..4 keep the paper's filter end").set_defaults(run=fix_base)
     sub.add_parser("nofilter", help="write cig_nofilter0..4.p3d").set_defaults(run=nofilter)
+    sub.add_parser("cigars", help="Camo/CamoB and base materials on cigar0..4.p3d").set_defaults(run=cigars)
     args = parser.parse_args()
     args.run(args)
 

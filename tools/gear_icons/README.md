@@ -114,6 +114,9 @@ python tools/gear_icons/cig_models.py nofilter
   - Before (until November 2026), these stages kept the strip's burnt-end side (u 3 → 322 / 228 / 135 / 47) and cut the logo off after `cig0`.
 - `cig_models.py nofilter` writes `cig_nofilter0..4.p3d` from the fixed `cig0..4`. The filter is removed, and the paper is closed at the mouth with the tobacco end cap (u 722–788), where the filter's end was. The stages are 56, 56, 44, 32 and 20 mm, and the shadow LOD is shortened to match. `Camo`/`CamoB`, the lit tip and the sharp edges stay as in the base models.
   - These replaced the old per-brand models of `eckstein`, `craven` and `lucky_strike`. Those were 56 mm with no selections and a texture per stage, and Eckstein's `cig3` was the same length as its `cig2`.
+- `cig_models.py cigars` makes `addons/base/data/cigar0..4.p3d` retexturable. It adds `Camo` on the body and `CamoB` on the lit tip (the existing `Tip` selection), clears the texture baked into the faces, and uses the shared `cigar.rvmat` / `cigar_lit.rvmat`. Running it again gives the same result.
+  - `cigars` and `papa_schultz` used to carry identical copies of these models with their own texture baked in. They now use the base models and bring only `data/cigars/cigar_co.paa`, through `QPATH_TEXTURE_CIGAR`.
+  - The cigar box stays per addon, like `cigpack.p3d`, because a pack item can't be retextured from config. Its cigars use the base `cigar.rvmat`.
 
 Open a model you changed in Object Builder, or look at it in-game, before you release it.
 

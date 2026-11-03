@@ -93,7 +93,7 @@ def pack_icon(tex):
     sd = round(fh * 151 / 564)
     dx, dy = sd * 0.62, -sd * 0.42
     x0 = (n - fw - dx) / 2
-    y0 = (n - fh - dy) / 2 - dy
+    y0 = (n - fh - dy) / 2  # dy < 0: the top flap rises above the front
     front = [(x0, y0), (x0 + fw, y0), (x0 + fw, y0 + fh), (x0, y0 + fh)]
     side = [(x0 + fw, y0), (x0 + fw + dx, y0 + dy), (x0 + fw + dx, y0 + fh + dy), (x0 + fw, y0 + fh)]
     top = [(x0 + dx, y0 + dy), (x0 + fw + dx, y0 + dy), (x0 + fw, y0), (x0, y0)]

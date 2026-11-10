@@ -1,12 +1,17 @@
 # Posts the GitHub release notes into a Discord channel via webhook
 #
 # Requires the DISCORD_WEBHOOK_URL github repo secret
+#
+# This is a reusable workflow - it does not trigger on its own.
+# It is called by the release workflows after their Steam upload succeeded:
+# - release-dev.yml calls it for pre-releases
+# - release-stable.yml calls it for full releases
+# The callers pass their release event through, so github.event.release is available here.
 
 name: "Release: Discord Notice"
 
 on:
-  release:
-    types: [published]
+  workflow_call:
 
 jobs:
   github-releases-to-discord:

@@ -31,7 +31,8 @@ permissions:
 jobs:
 
   release-addon:
-    runs-on: ubuntu-latest
+    # pinned - steamcmd in arma-actions/workshop-upload can't get online on ubuntu-26.04 ("Steamcmd needs to be online to update")
+    runs-on: ubuntu-24.04
     steps:
         - name: Set VERSION env
           run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV

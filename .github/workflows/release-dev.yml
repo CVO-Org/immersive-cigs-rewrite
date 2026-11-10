@@ -101,3 +101,10 @@ jobs:
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+
+  # Announces pre-releases only after the upload succeeded - full releases are announced by release-stable.yml
+  discord-notice:
+    needs: release-addon
+    if: github.event.action == 'prereleased'
+    uses: ./.github/workflows/release-notice.yml
+    secrets: inherit

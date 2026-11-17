@@ -18,6 +18,7 @@ class CfgFunctions {
 
             class addCigItemsToUnit {};
             class getCigItems {};
+            class getCbaPacks {};
             class getDefaultPacks {};
         };
 

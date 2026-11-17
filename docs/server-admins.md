@@ -53,10 +53,15 @@ All settings are under **Options → Addon Options**, in three categories.
 | **03. AI Cigs - Enable individual Side** | | | |
 | Enable for WEST / EAST / GUER / CIV | on | Server | Per side: should AI of this side get cigarettes at all. *Needs a mission restart.* |
 
-Which packs each side gets is not a CBA setting. It comes from the mission's *Configure AI Cigs* module, or from the default presets. See [Mission Makers](mission-makers.md#which-packs-a-side-gets).
+| **04. AI Cigs - Custom Packs** | | | |
+| Use Custom Packs | off | Server | Use the packs ticked below instead of the default presets. A side with nothing ticked gets no packs. |
+| **05. - 08. AI Cigs - Custom Packs - WEST / EAST / GUER / CIV** | | | |
+| *one checkbox per loaded pack* | off | Server | AI of this side can get this pack. Only used while *Use Custom Packs* is on. |
+
+Which packs a side gets comes from the first of: a script, the mission's *Configure AI Cigs* module, the custom packs above, the default presets. So a mission with the module ignores the custom packs. See [Mission Makers](mission-makers.md#which-packs-a-side-gets).
 
 > [!NOTE]
-> Older versions had one CBA setting per side and pack (*"04. AI Cigs - WEST"* etc.). These were removed. Values still saved in a `cba_settings.sqf` are ignored.
+> Older versions had per-pack settings named `cigs_ai_set_aiCigs_custom_#_<SIDE>_<class>`. The current ones have no `#` in the name, so values of the old ones still saved in a `cba_settings.sqf` are ignored.
 
 ### Immersive Cigs - Player Preferences
 

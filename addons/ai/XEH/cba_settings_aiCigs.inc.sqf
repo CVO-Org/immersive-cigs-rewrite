@@ -55,3 +55,42 @@
 
 } forEach [west,east,independent,civilian];
 
+
+// Pack Selection - a level of its own, below the API and the module, above the default presets (see fn_getCigItems)
+// While active, it defines all sides: a side without ticked packs gets none.
+// Any change clears the cached map, which fn_getSettingsPacks rebuilds on demand.
+[
+    QSET(aiCigs_packSelection_enable),
+    "CHECKBOX",
+    SETLSTRING(aiCigs_packSelection_enable),
+    [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs_packSelection)],
+    false,
+    1,
+    { EGVAR(aiCigs,settings) = nil; },
+    false
+] call CBA_fnc_addSetting;
+
+// One checkbox per side and pack, one sub-category per side
+{
+    private _sideStr = _x;
+    // 05. - 08., after "04. AI Cigs - Pack Selection"
+    private _category = format [LLSTRING(set_subCat_aiCigs_packSelection_side), "0" + str (5 + _forEachIndex), _sideStr];
+
+    {
+        private _displayName = getText ( _x >> "displayName" );
+
+        [
+            [QSET(aiCigs_packSelection), _sideStr, configName _x] joinString "_",
+            "CHECKBOX",
+            [_displayName, format [LLSTRING(set_aiCigs_packSelection_pack_desc), _displayName, _sideStr]],
+            [LSTRING(set_mainCat_ai), _category],
+            false,
+            1,
+            { EGVAR(aiCigs,settings) = nil; },
+            false
+        ] call CBA_fnc_addSetting;
+
+    } forEach ( ["PACKAGES", true] call EFUNC(core,getAllItems) );
+
+} forEach ["WEST", "EAST", "GUER", "CIV"];
+

@@ -3,7 +3,7 @@ class CfgFunctions {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
         class common {
             file = PATH_TO_FUNC_SUB(common);
-            
+
             class preInit  { preInit  = 1; };
             class postInit { postInit = 1; };
         };
@@ -18,18 +18,19 @@ class CfgFunctions {
 
             class addCigItemsToUnit {};
             class getCigItems {};
+            class getSettingsPacks {};
             class getDefaultPacks {};
         };
 
         class dynamicSmoking {
             file = PATH_TO_FUNC_SUB(dynamicSmoking);
-            
+
             class cleanupArray {};
             class cleanupArray_condition {};
 
             class loop_start {};
             class loop {};
-            
+
             class canConsume {};
             class startConsuming {};
 
@@ -41,7 +42,7 @@ class CfgFunctions {
 
         class modules {
             file = PATH_TO_FUNC_SUB(modules);
-            
+
             class aiCigs_module {};
 
             class packList_load {};

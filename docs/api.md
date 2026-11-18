@@ -44,7 +44,7 @@ In 3DEN, these are the checkboxes in the unit's attributes, see [Mission Makers]
 
 ## AI Cigs: packs per side
 
-To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the custom packs CBA settings and the default presets.
+To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings and the default presets.
 
 ```sqf
 // initServer.sqf

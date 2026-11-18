@@ -19,9 +19,9 @@ params [ "_unit" ];
 
 // Prioritize - the first active level defines all sides, a side without packages gets none
 private _map = switch (true) do {
-    case (! isNil QEGVAR(aiCigs,api) ):      { missionNamespace getVariable QEGVAR(aiCigs,api) };
-    case (! isNil QEGVAR(aiCigs,module) ):   { missionNamespace getVariable QEGVAR(aiCigs,module) };
-    case ( missionNamespace getVariable [QSET(aiCigs_custom_enable), false] ): { [] call FUNC(getCbaPacks) };
+    case (! isNil QEGVAR(aiCigs,api) ):                                               { missionNamespace getVariable QEGVAR(aiCigs,api) };
+    case (! isNil QEGVAR(aiCigs,module) ):                                            { missionNamespace getVariable QEGVAR(aiCigs,module) };
+    case ( missionNamespace getVariable [QSET(aiCigs_packSelection_enable), false] ): { [] call FUNC(getSettingsPacks) };
     default { EGVAR(aiCigs,default) };
 };
 

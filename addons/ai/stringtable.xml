@@ -25,29 +25,29 @@
             <Japanese>02. AIのタバコ</Japanese>
             <Chinese>02. AI 烟草</Chinese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_aiCigs_custom">
-            <English>04. AI Cigs - Custom Packs</English>
-            <French>04. AI Cigs - Paquets personnalisés</French>
-            <Spanish>04. Cigarrillos de IA - Paquetes personalizados</Spanish>
-            <Polish>04. Papierosy SI - własne paczki</Polish>
-            <Portuguese>04. Cigarros da IA - Maços personalizados</Portuguese>
-            <Russian>04. Сигареты ИИ - свои пачки</Russian>
-            <German>04. KI-Zigaretten - Eigene Packungen</German>
-            <Korean>04. AI 담배 - 사용자 지정 갑</Korean>
-            <Japanese>04. AIのタバコ - カスタムパック</Japanese>
-            <Chinese>04. AI 烟草 - 自定义烟盒</Chinese>
+        <Key ID="STR_cigs_ai_set_subCat_aiCigs_packSelection">
+            <English>04. AI Cigs - Pack Selection</English>
+            <French>04. AI Cigs - Sélection de paquets</French>
+            <Spanish>04. Cigarrillos de IA - Selección de paquetes</Spanish>
+            <Polish>04. Papierosy SI - wybór paczek</Polish>
+            <Portuguese>04. Cigarros da IA - Seleção de maços</Portuguese>
+            <Russian>04. Сигареты ИИ - выбор пачек</Russian>
+            <German>04. KI-Zigaretten - Packungsauswahl</German>
+            <Korean>04. AI 담배 - 갑 선택</Korean>
+            <Japanese>04. AIのタバコ - パック選択</Japanese>
+            <Chinese>04. AI 烟草 - 烟盒选择</Chinese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_aiCigs_custom_side">
-            <English>%1. AI Cigs - Custom Packs - %2</English>
-            <French>%1. AI Cigs - Paquets personnalisés - %2</French>
-            <Spanish>%1. Cigarrillos de IA - Paquetes personalizados - %2</Spanish>
-            <Polish>%1. Papierosy SI - własne paczki - %2</Polish>
-            <Portuguese>%1. Cigarros da IA - Maços personalizados - %2</Portuguese>
-            <Russian>%1. Сигареты ИИ - свои пачки - %2</Russian>
-            <German>%1. KI-Zigaretten - Eigene Packungen - %2</German>
-            <Korean>%1. AI 담배 - 사용자 지정 갑 - %2</Korean>
-            <Japanese>%1. AIのタバコ - カスタムパック - %2</Japanese>
-            <Chinese>%1. AI 烟草 - 自定义烟盒 - %2</Chinese>
+        <Key ID="STR_cigs_ai_set_subCat_aiCigs_packSelection_side">
+            <English>%1. AI Cigs - Pack Selection - %2</English>
+            <French>%1. AI Cigs - Sélection de paquets - %2</French>
+            <Spanish>%1. Cigarrillos de IA - Selección de paquetes - %2</Spanish>
+            <Polish>%1. Papierosy SI - wybór paczek - %2</Polish>
+            <Portuguese>%1. Cigarros da IA - Seleção de maços - %2</Portuguese>
+            <Russian>%1. Сигареты ИИ - выбор пачек - %2</Russian>
+            <German>%1. KI-Zigaretten - Packungsauswahl - %2</German>
+            <Korean>%1. AI 담배 - 갑 선택 - %2</Korean>
+            <Japanese>%1. AIのタバコ - パック選択 - %2</Japanese>
+            <Chinese>%1. AI 烟草 - 烟盒选择 - %2</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides_enabled">
             <English>03. AI Cigs - Enable individual Side</English>
@@ -99,42 +99,6 @@
             <Japanese>ユニット上にタバコが置かれている可能性を定義します。</Japanese>
             <Chinese>定义单位身上携带香烟的可能性。</Chinese>
         </Key>
-        <Key ID="STR_cigs_ai_set_aiCigs_custom_enable">
-            <English>Use Custom Packs</English>
-            <French>Utiliser les paquets personnalisés</French>
-            <Spanish>Usar paquetes personalizados</Spanish>
-            <Polish>Użyj własnych paczek</Polish>
-            <Portuguese>Usar maços personalizados</Portuguese>
-            <Russian>Использовать свои пачки</Russian>
-            <German>Eigene Packungen verwenden</German>
-            <Korean>사용자 지정 갑 사용</Korean>
-            <Japanese>カスタムパックを使用</Japanese>
-            <Chinese>使用自定义烟盒</Chinese>
-        </Key>
-        <Key ID="STR_cigs_ai_set_aiCigs_custom_enable_desc">
-            <English>AI units get the packs ticked in the Custom Packs categories of their side, instead of the default presets. A side with nothing ticked gets no packs. A Configure AI Cigs module in the mission or the cigs_aiCigs_api variable still take priority.</English>
-            <French>Les unités IA reçoivent les paquets cochés dans les catégories Paquets personnalisés de leur camp, au lieu des préréglages par défaut. Un camp sans paquet coché n'en reçoit aucun. Un module Configure AI Cigs dans la mission ou la variable cigs_aiCigs_api restent prioritaires.</French>
-            <Spanish>Las unidades de IA reciben los paquetes marcados en las categorías Paquetes personalizados de su bando, en lugar de los preajustes por defecto. Un bando sin nada marcado no recibe paquetes. Un módulo Configure AI Cigs en la misión o la variable cigs_aiCigs_api siguen teniendo prioridad.</Spanish>
-            <Polish>Jednostki SI otrzymują paczki zaznaczone w kategoriach własnych paczek swojej strony zamiast domyślnych presetów. Strona bez zaznaczonych paczek nie otrzymuje żadnych. Moduł Configure AI Cigs w misji lub zmienna cigs_aiCigs_api nadal mają pierwszeństwo.</Polish>
-            <Portuguese>As unidades da IA recebem os maços marcados nas categorias Maços personalizados do seu lado, em vez das predefinições padrão. Um lado sem nada marcado não recebe maços. Um módulo Configure AI Cigs na missão ou a variável cigs_aiCigs_api continuam a ter prioridade.</Portuguese>
-            <Russian>Юниты ИИ получают пачки, отмеченные в категориях своих пачек для их стороны, вместо стандартных пресетов. Сторона без отмеченных пачек не получает ничего. Модуль Configure AI Cigs в миссии или переменная cigs_aiCigs_api по-прежнему имеют приоритет.</Russian>
-            <German>KI-Einheiten erhalten die Packungen, die in den Kategorien Eigene Packungen ihrer Seite angehakt sind, statt der Standard-Presets. Eine Seite ohne angehakte Packung erhält keine. Ein Configure AI Cigs Modul in der Mission oder die Variable cigs_aiCigs_api haben weiterhin Vorrang.</German>
-            <Korean>AI 유닛은 기본 프리셋 대신 자기 편대의 사용자 지정 갑 카테고리에서 체크된 갑을 받습니다. 아무것도 체크되지 않은 편대는 갑을 받지 않습니다. 미션의 Configure AI Cigs 모듈이나 cigs_aiCigs_api 변수가 여전히 우선합니다.</Korean>
-            <Japanese>AIユニットは、デフォルトのプリセットの代わりに、自陣営のカスタムパックのカテゴリでチェックされたパックを受け取ります。何もチェックされていない陣営はパックを受け取りません。ミッション内のConfigure AI Cigsモジュールやcigs_aiCigs_api変数が引き続き優先されます。</Japanese>
-            <Chinese>AI 单位将获得其阵营自定义烟盒类别中勾选的烟盒，而不是默认预设。未勾选任何烟盒的阵营不会获得烟盒。任务中的 Configure AI Cigs 模块或 cigs_aiCigs_api 变量仍然优先。</Chinese>
-        </Key>
-        <Key ID="STR_cigs_ai_set_aiCigs_custom_pack_desc">
-            <English>AI units of the %2 side can get %1. Only used while Use Custom Packs is on.</English>
-            <French>Les unités IA du camp %2 peuvent recevoir %1. Utilisé uniquement si Utiliser les paquets personnalisés est activé.</French>
-            <Spanish>Las unidades de IA del bando %2 pueden recibir %1. Solo se usa si Usar paquetes personalizados está activado.</Spanish>
-            <Polish>Jednostki SI strony %2 mogą otrzymać %1. Używane tylko, gdy włączone jest Użyj własnych paczek.</Polish>
-            <Portuguese>As unidades da IA do lado %2 podem receber %1. Só é usado com Usar maços personalizados ativado.</Portuguese>
-            <Russian>Юниты ИИ стороны %2 могут получить %1. Используется, только если включено Использовать свои пачки.</Russian>
-            <German>KI-Einheiten der Seite %2 können %1 erhalten. Wird nur verwendet, wenn Eigene Packungen verwenden aktiv ist.</German>
-            <Korean>%2 편대의 AI 유닛이 %1을(를) 받을 수 있습니다. 사용자 지정 갑 사용이 켜져 있을 때만 사용됩니다.</Korean>
-            <Japanese>%2側のAIユニットが%1を受け取れます。カスタムパックを使用がオンの場合のみ使用されます。</Japanese>
-            <Chinese>%2 阵营的 AI 单位可以获得 %1。仅在启用使用自定义烟盒时使用。</Chinese>
-        </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_delay">
             <English>Delay</English>
             <French>Délai</French>
@@ -172,16 +136,52 @@
             <Chinese>启用</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_enable_desc">
-            <English>Enables the system to distribute cigarettes across AI units.</English>
-            <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
-            <Spanish>Activa el sistema para distribuir cigarrillos entre las unidades de IA.</Spanish>
-            <Polish>Włącza system dystrybucji papierosów między jednostkami SI.</Polish>
-            <Portuguese>Ativa o sistema para distribuir cigarros entre unidades de IA.</Portuguese>
-            <Russian>Включает систему распределения сигарет между юнитами ИИ.</Russian>
-            <German>Aktiviert das Verteilen von Zigaretten an KI-Einheiten.</German>
-            <Korean>AI 유닛 간에 담배를 배포하는 시스템을 활성화합니다.</Korean>
-            <Japanese>システムがAIユニット間でタバコを分配できるようにする。</Japanese>
-            <Chinese>启用该系统以在 AI 单位之间分发香烟。</Chinese>
+            <English>Enables the system to distribute cigarettes across AI units. The AI only smoke them if Dynamic AI Smoking is enabled as well, otherwise they just carry them.</English>
+            <French>Permet au système de distribuer des cigarettes parmi les unités IA. Les IA ne les fument que si Fumeur dynamique IA est également activé, sinon elles les portent simplement sur elles.</French>
+            <Spanish>Activa el sistema para distribuir cigarrillos entre las unidades de IA. La IA solo los fuma si Fumar dinámico de IA también está activado; si no, solo los lleva encima.</Spanish>
+            <Polish>Włącza system dystrybucji papierosów między jednostkami SI. SI pali je tylko wtedy, gdy włączone jest też Dynamiczne palenie SI, w przeciwnym razie tylko je nosi.</Polish>
+            <Portuguese>Ativa o sistema para distribuir cigarros entre unidades de IA. A IA só os fuma se o Fumo dinâmico da IA também estiver ativado; caso contrário, apenas os carrega.</Portuguese>
+            <Russian>Включает систему распределения сигарет между юнитами ИИ. ИИ курит их, только если также включено Динамическое курение ИИ, иначе просто носит их с собой.</Russian>
+            <German>Aktiviert das Verteilen von Zigaretten an KI-Einheiten. Geraucht werden sie nur, wenn auch Dynamisches KI-Rauchen aktiviert ist, sonst trägt die KI sie nur bei sich.</German>
+            <Korean>AI 유닛 간에 담배를 배포하는 시스템을 활성화합니다. AI 동적 흡연도 활성화되어 있어야 AI가 담배를 피우며, 그렇지 않으면 소지만 합니다.</Korean>
+            <Japanese>システムがAIユニット間でタバコを分配できるようにする。ダイナミックAI喫煙も有効な場合のみAIはタバコを吸い、そうでない場合は所持するだけです。</Japanese>
+            <Chinese>启用该系统以在 AI 单位之间分发香烟。只有同时启用 AI 动态吸烟时，AI 才会吸烟，否则只会随身携带。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_ai_set_aiCigs_packSelection_enable">
+            <English>Use Pack Selection</English>
+            <French>Utiliser la sélection de paquets</French>
+            <Spanish>Usar selección de paquetes</Spanish>
+            <Polish>Użyj wyboru paczek</Polish>
+            <Portuguese>Usar seleção de maços</Portuguese>
+            <Russian>Использовать выбор пачек</Russian>
+            <German>Packungsauswahl verwenden</German>
+            <Korean>갑 선택 사용</Korean>
+            <Japanese>パック選択を使用</Japanese>
+            <Chinese>使用烟盒选择</Chinese>
+        </Key>
+        <Key ID="STR_cigs_ai_set_aiCigs_packSelection_enable_desc">
+            <English>AI units get the packs ticked in the Pack Selection categories of their side. This overrides the default presets. A side with nothing ticked gets no packs. It is overridden itself if the mission defines the cigs_aiCigs_api variable or has a Configure AI Cigs module placed.</English>
+            <French>Les unités IA reçoivent les paquets cochés dans les catégories Sélection de paquets de leur camp. Cela remplace les préréglages par défaut. Un camp sans paquet coché n'en reçoit aucun. Ce réglage est lui-même remplacé si la mission définit la variable cigs_aiCigs_api ou contient un module Configure AI Cigs.</French>
+            <Spanish>Las unidades de IA reciben los paquetes marcados en las categorías Selección de paquetes de su bando. Esto reemplaza los preajustes por defecto. Un bando sin nada marcado no recibe paquetes. A su vez, queda reemplazado si la misión define la variable cigs_aiCigs_api o tiene un módulo Configure AI Cigs colocado.</Spanish>
+            <Polish>Jednostki SI otrzymują paczki zaznaczone w kategoriach wyboru paczek swojej strony. Zastępuje to domyślne presety. Strona bez zaznaczonych paczek nie otrzymuje żadnych. Samo ustawienie jest zastępowane, jeśli misja definiuje zmienną cigs_aiCigs_api lub ma umieszczony moduł Configure AI Cigs.</Polish>
+            <Portuguese>As unidades da IA recebem os maços marcados nas categorias Seleção de maços do seu lado. Isto substitui as predefinições padrão. Um lado sem nada marcado não recebe maços. Por sua vez, é substituído se a missão definir a variável cigs_aiCigs_api ou tiver um módulo Configure AI Cigs colocado.</Portuguese>
+            <Russian>Юниты ИИ получают пачки, отмеченные в категориях выбора пачек своей стороны. Это заменяет стандартные пресеты. Сторона без отмеченных пачек не получает ничего. Сам выбор заменяется, если в миссии задана переменная cigs_aiCigs_api или размещён модуль Configure AI Cigs.</Russian>
+            <German>KI-Einheiten erhalten die Packungen, die in den Kategorien Packungsauswahl ihrer Seite angehakt sind. Das überschreibt die Standard-Presets. Eine Seite ohne angehakte Packung erhält keine. Selbst überschrieben wird die Auswahl, wenn die Mission die Variable cigs_aiCigs_api definiert oder ein Configure AI Cigs Modul platziert ist.</German>
+            <Korean>AI 유닛은 자기 편대의 갑 선택 카테고리에서 체크된 갑을 받습니다. 이는 기본 프리셋을 덮어씁니다. 아무것도 체크되지 않은 편대는 갑을 받지 않습니다. 미션에 cigs_aiCigs_api 변수가 정의되어 있거나 Configure AI Cigs 모듈이 배치되어 있으면 이 설정이 덮어써집니다.</Korean>
+            <Japanese>AIユニットは、自陣営のパック選択のカテゴリでチェックされたパックを受け取ります。これはデフォルトのプリセットを上書きします。何もチェックされていない陣営はパックを受け取りません。ミッションでcigs_aiCigs_api変数が定義されているか、Configure AI Cigsモジュールが配置されている場合は、この設定が上書きされます。</Japanese>
+            <Chinese>AI 单位将获得其阵营烟盒选择类别中勾选的烟盒。这会覆盖默认预设。未勾选任何烟盒的阵营不会获得烟盒。如果任务定义了 cigs_aiCigs_api 变量或放置了 Configure AI Cigs 模块，此设置本身会被覆盖。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_ai_set_aiCigs_packSelection_pack_desc">
+            <English>AI units of the %2 side can get %1. Only used while Use Pack Selection is on.</English>
+            <French>Les unités IA du camp %2 peuvent recevoir %1. Utilisé uniquement si Utiliser la sélection de paquets est activé.</French>
+            <Spanish>Las unidades de IA del bando %2 pueden recibir %1. Solo se usa si Usar selección de paquetes está activado.</Spanish>
+            <Polish>Jednostki SI strony %2 mogą otrzymać %1. Używane tylko, gdy włączone jest Użyj wyboru paczek.</Polish>
+            <Portuguese>As unidades da IA do lado %2 podem receber %1. Só é usado com Usar seleção de maços ativado.</Portuguese>
+            <Russian>Юниты ИИ стороны %2 могут получить %1. Используется, только если включено Использовать выбор пачек.</Russian>
+            <German>KI-Einheiten der Seite %2 können %1 erhalten. Wird nur verwendet, wenn Packungsauswahl verwenden aktiv ist.</German>
+            <Korean>%2 편대의 AI 유닛이 %1을(를) 받을 수 있습니다. 갑 선택 사용이 켜져 있을 때만 사용됩니다.</Korean>
+            <Japanese>%2側のAIユニットが%1を受け取れます。パック選択を使用がオンの場合のみ使用されます。</Japanese>
+            <Chinese>%2 阵营的 AI 单位可以获得 %1。仅在启用使用烟盒选择时使用。</Chinese>
         </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_side_enabled">
             <English>Enable for %1</English>

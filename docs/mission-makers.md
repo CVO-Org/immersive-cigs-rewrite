@@ -30,10 +30,10 @@ The packs per side come from the first of these that exists:
 | -------- | ------ | ------ |
 | 1 | `cigs_aiCigs_api` | a script, see [Scripting API](api.md#ai-cigs-packs-per-side) |
 | 2 | *Configure AI Cigs* module | you, in 3DEN |
-| 3 | Custom packs CBA settings, while *Use Custom Packs* is on | the server admin (or you, as mission settings), see [Server Admins](server-admins.md#immersive-cigs---ai) |
+| 3 | Pack selection CBA settings, while *Use Pack Selection* is on | the server admin (or you, as mission settings), see [Server Admins](server-admins.md#immersive-cigs---ai) |
 | 4 | Default presets | the mod (and other mods), see below |
 
-The first one that exists is used for **all** sides. If you place the module, sides you leave empty in it get nothing. They do not fall back to the custom packs or the defaults. The same goes for the custom packs: a side with nothing ticked gets nothing.
+The first one that exists is used for **all** sides. If you place the module, sides you leave empty in it get nothing. They do not fall back to the pack selection or the defaults. The same goes for the pack selection: a side with nothing ticked gets nothing.
 
 ### The *Configure AI Cigs* module
 

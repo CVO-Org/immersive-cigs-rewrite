@@ -44,7 +44,7 @@ In 3DEN, these are the checkboxes in the unit's attributes, see [Mission Makers]
 
 ## AI Cigs: packs per side
 
-To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings and the default presets.
+To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings, `cigs_aiCigs_api_lesser` and the default presets.
 
 ```sqf
 // initServer.sqf
@@ -59,6 +59,41 @@ cigs_aiCigs_api = createHashMapFromArray [
 - Keys: `"WEST"`, `"EAST"`, `"GUER"`, `"CIV"`. Values: arrays of pack classnames, see [Classnames](classnames.md).
 - A side that is missing or empty gets nothing.
 - An empty hashmap turns AI Cigs off for all sides.
+
+### Defaults the server admin can override: `cigs_aiCigs_api_lesser`
+
+`cigs_aiCigs_api` wins over everything, including the server admin's choice. A gamemode or mission that only wants to bring **its own defaults** uses `cigs_aiCigs_api_lesser` instead. It ranks below the module and the pack selection CBA settings, and above the default presets. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for the full order.
+
+Define it **on the server**, before the AI are processed. It takes one of two forms:
+
+**A hashmap per side**, in the same format as `cigs_aiCigs_api`. While it is defined it decides all sides: a side that is missing or empty gets nothing.
+
+```sqf
+// initServer.sqf
+cigs_aiCigs_api_lesser = createHashMapFromArray [
+    ["WEST", ["cigs_lucky_strike_cigpack"]],
+    ["EAST", ["cigs_kosmos_cigpack"]]
+];
+```
+
+**Code that runs per unit**, for gamemodes with their own faction system. It gets `[_unit]` and returns an array of pack classnames:
+
+- An array, even an empty one: the unit gets these packs, or none.
+- `nil`: this one unit is handed down to the default presets.
+
+```sqf
+// initServer.sqf
+cigs_aiCigs_api_lesser = {
+    params ["_unit"];
+    switch (_unit getVariable ["myGamemode_faction", ""]) do {
+        case "occupants": { ["cigs_eckstein_cigpack"] };
+        case "invaders":  { ["cigs_kosmos_cigpack"] };
+        default { nil };                // everything else: default presets
+    };
+};
+```
+
+Keep the code quick and free of side effects. It runs on the server, and it can run more than once for the same unit.
 
 ## Events
 

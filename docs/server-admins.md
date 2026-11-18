@@ -53,11 +53,11 @@ All settings are under **Options → Addon Options**, in three categories.
 | **03. AI Cigs - Enable individual Side** | | | |
 | Enable for WEST / EAST / GUER / CIV | on | Server | Per side: should AI of this side get cigarettes at all. *Needs a mission restart.* |
 | **04. AI Cigs - Pack Selection** | | | |
-| Use Pack Selection | off | Server | Use the packs ticked below. This overrides the default presets. A side with nothing ticked gets no packs. It is overridden itself if the mission defines `cigs_aiCigs_api` or has a *Configure AI Cigs* module placed. |
+| Use Pack Selection | off | Server | Use the packs ticked below. This overrides the default presets and a gamemode's own defaults (`cigs_aiCigs_api_lesser`). A side with nothing ticked gets no packs. It is overridden itself if the mission defines `cigs_aiCigs_api` or has a *Configure AI Cigs* module placed. |
 | **05. - 08. AI Cigs - Pack Selection - WEST / EAST / GUER / CIV** | | | |
 | *one checkbox per loaded pack* | off | Server | AI of this side can get this pack. Only used while *Use Pack Selection* is on. |
 
-Which packs a side gets comes from the first of: a script, the mission's *Configure AI Cigs* module, the pack selection above, the default presets. So a mission with the module ignores the pack selection. See [Mission Makers](mission-makers.md#which-packs-a-side-gets).
+Which packs a side gets comes from the first of: a script (`cigs_aiCigs_api`), the mission's *Configure AI Cigs* module, the pack selection above, a gamemode's own defaults (`cigs_aiCigs_api_lesser`), the default presets. So a mission with the module ignores the pack selection, while the pack selection overrides a gamemode's defaults. See [Mission Makers](mission-makers.md#which-packs-a-side-gets).
 
 > [!NOTE]
 > Older versions had one CBA setting per side and pack (`cigs_ai_set_aiCigs_custom_#_<SIDE>_<class>`). These were replaced by the pack selection, so values of the old ones still saved in a `cba_settings.sqf` are ignored.

@@ -18,6 +18,7 @@
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
 | `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |
 | `cigs_lucky_strike_cigpack` | Lucky Strike Cigarette Pack | cigarettes | WW2 |
+| `cigs_matelot_cigpack` | Pack of Matelot | cigarettes (without filter) | Tanoa |
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |

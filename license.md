@@ -15,6 +15,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\lipa
    - \addons\lipa_dzwonek
    - \addons\crayons
+   - \addons\matelot
    - \addons\morley
    - \addons\pops
    - \addons\shanhai

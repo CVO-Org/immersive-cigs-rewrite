@@ -12,6 +12,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\cigars
    - \addons\kosmos
    - \addons\crayons
+   - \addons\matelot
    - \addons\morley
    - \addons\pops
    - \addons\voron

@@ -17,6 +17,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\crayons
    - \addons\morley
    - \addons\pops
+   - \addons\shanhai
    - \addons\voron
 
 The following Folders are under no license

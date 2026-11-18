@@ -26,6 +26,7 @@ The inventory icon shows the front, the right side and the top flap. Put the bra
 | charred paper edge (burnt end) | 0-10 | 41-217 |
 | paper | 10-389 | 41-217 |
 | logo spot on the paper, next to the filter | 330-389 | centred on 127 |
+| logo spot on a filterless cigarette, a bit away from the mouth end | 273-327 | centred on 127 |
 | filter: white band, ring, cork | 391-431, 431-437, 437-591 | 41-217 |
 | tobacco end (filterless mouth end) | 722-788 | 85-155 |
 | ash, glow | 836-1010 | 60-200 |
@@ -33,6 +34,8 @@ The inventory icon shows the front, the right side and the top flap. Put the bra
 - u runs along the cigarette: burnt end on the left, mouth on the right, 6.57 px per mm. v runs round it: 47-207 go once round (7.6 mm), and only about 78 px of that face the viewer.
 - The burn stages keep the paper next to the filter and lose paper from the left. So a logo at u 330-389 stays visible until the stub; anything further left burns away.
 - A logo taller than about 70 px wraps round the back. Keep it small, or accept that only part of it shows (`gear_icons.py` warns).
+- **The logo reads from the front of the cigarette:** its top points towards the filter (towards the mouth end on a filterless cigarette), not up or down the strip. In the strip, text then reads top to bottom. If there is text and a mark, stack them along the cigarette, the mark nearer the filter, both pointing the same way. Most brands do this already (Morley, Lucky Strike, Craven, Kosmos, Apollo, NIL). The exception is a design printed over the whole paper (Black Devil), whose name may run along the cigarette.
+- **Filterless cigarettes:** keep the logo a bit away from the mouth end, centred on u 300 (u 273-327, about 9-18 mm from the end), as Lucky Strike and Craven do. The paper there survives up to `cig3` (u 225-389); the last stub `cig4` keeps u 303-389 and cuts the logo.
 - Leave the tobacco end and the ash as they are.
 
 ## From artwork to texture.paa
@@ -43,7 +46,7 @@ The inventory icon shows the front, the right side and the top flap. Put the bra
 | --- | --- |
 | `--front --back --top --left --right --bottom` | a picture per face, upright as described above. It is scaled to fill the face and cropped at the edges, so match the face's aspect ratio. A landscape picture for a side is turned for you. |
 | `--pack-colour #rrggbb` | the card colour behind faces you leave out |
-| `--paper-logo` | a PNG with transparency, fitted into 54 x 72 px at the logo spot. `--paper-logo-rotate 90` turns it to run along the cigarette. |
+| `--paper-logo` | a PNG with transparency, fitted into 54 x 72 px at the logo spot. Draw it upright, with text and mark stacked, and pass `--paper-logo-rotate -90`: that turns its top towards the filter. `90` would turn it towards the burnt end. Add `--paper-logo-u 300` for a filterless cigarette. |
 | `--paper #rrggbb` | tints the paper and the filter's white band, keeping the paper grain |
 | `--filter` | `#rrggbb` tints the cork, `white` makes a plain white filter, a picture replaces u 391-591 |
 | `--out`, `--paa` | the PNG to write, and the PAA (`addons/<brand>/data/texture.paa`) |

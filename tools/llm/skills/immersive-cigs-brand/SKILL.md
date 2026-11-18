@@ -62,10 +62,10 @@ Cigarette brands: one 1024 x 1024 `data/texture.paa` covers the pack and the cig
 
 ```powershell
 python tools/gear_icons/texture_compose.py guide --over-base --out .hemttout/llm/guide.png
-python tools/gear_icons/texture_compose.py compose --front <png> --back <png> --top <png> --left <png> --right <png> --bottom <png> --paper-logo <png> --filter "#rrggbb" --out .hemttout/llm/<brand>/texture.png --paa addons/<brand>/data/texture.paa
+python tools/gear_icons/texture_compose.py compose --front <png> --back <png> --top <png> --left <png> --right <png> --bottom <png> --paper-logo <png> --paper-logo-rotate -90 --filter "#rrggbb" --out .hemttout/llm/<brand>/texture.png --paa addons/<brand>/data/texture.paa
 ```
 
-Look at the PNG it writes (read the image) before you go on. Cigars and suckables have their own textures; see `references/item-types.md`.
+Draw the paper logo upright, with text and mark stacked, and let `--paper-logo-rotate -90` turn its top towards the filter: the logo reads from the front of the cigarette, like on the other brands (`references/texture.md`). For a filterless cigarette, also pass `--paper-logo-u 300`, so the logo sits a bit away from the mouth end. Look at the PNG it writes (read the image) before you go on. Cigars and suckables have their own textures; see `references/item-types.md`.
 
 ## 5. Render the gear icons
 

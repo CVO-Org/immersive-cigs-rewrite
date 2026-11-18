@@ -54,7 +54,13 @@ for "_i" from 1 to (ceil random 3) do {
 // Add lighter if any package is a smokeable
 if ( _smokablesAmount isNotEqualTo 0 ) then {
 
-    private _lighterPool = [["LIGHTERS"] call EFUNC(core,getAllItems), ["vn_b_item_lighter_01"]] select PVAR(isLoaded_SOG);
+    // Faction presets can define the lighters (e.g. matches for an era) - an empty or missing list uses the normal pool
+    private _configLighters = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { ([_unit] call FUNC(getConfigPresets)) getOrDefault ["lighters", []] } else { [] };
+    private _lighterPool = switch (true) do {
+        case ( _configLighters isNotEqualTo [] ): { _configLighters };
+        case ( PVAR(isLoaded_SOG) ):              { ["vn_b_item_lighter_01"] };
+        default { ["LIGHTERS"] call EFUNC(core,getAllItems) };
+    };
     if (_lighterPool isEqualTo []) exitWith { ERROR_1("No Lighters available for %1",_unit) };
     private _lighterSizes = _lighterPool apply { getNumber (configFile >> "CfgMagazines" >> _x >> "count") max 1 };
 

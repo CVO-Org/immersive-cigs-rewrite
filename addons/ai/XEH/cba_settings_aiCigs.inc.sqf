@@ -37,6 +37,19 @@
     false                                    //    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>
 ] call CBA_fnc_addSetting;
 
+// Faction presets - cigs_packs[] / cigs_lighters[] in CfgFactionClasses, see fn_getConfigPresets
+// When off, units skip that level and get the default presets
+[
+    QSET(aiCigs_configPresets_enable),
+    "CHECKBOX",
+    SETLSTRING(aiCigs_configPresets_enable),
+    [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs)],
+    true,
+    1,
+    {},
+    false
+] call CBA_fnc_addSetting;
+
 
 // Enable individual Sides
 {

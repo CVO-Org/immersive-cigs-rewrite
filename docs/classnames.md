@@ -6,6 +6,7 @@
 
 | Classname | Name | Contains | Notes |
 | --------- | ---- | -------- | ----- |
+| `cigs_alborz_cigpack` | Pack of Alborz | cigarettes | |
 | `cigs_almyra_cigpack` | Pack of Almyra | cigarettes | Altis |
 | `cigs_apollo_cigpack` | Apollo Soyuz Cigarette Pack | cigarettes | |
 | `cigs_baja_blast_cigpack` | Mtn Dew Baja Blast Cigs Pack | cigarettes | tinted smoke |
@@ -15,10 +16,14 @@
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
+| `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
+| `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |
 | `cigs_lucky_strike_cigpack` | Lucky Strike Cigarette Pack | cigarettes | WW2 |
+| `cigs_matelot_cigpack` | Pack of Matelot | cigarettes (without filter) | Tanoa |
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
+| `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |
 | `vn_b_item_cigs_01` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire's own pack, made usable |

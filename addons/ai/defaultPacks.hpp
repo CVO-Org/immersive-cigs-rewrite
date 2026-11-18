@@ -1,5 +1,5 @@
 // Default packages per side, as presets.
-// Used when neither the API, the aiCigs module nor the pack selection CBA settings define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
+// Used when neither the API, the aiCigs module, the pack selection CBA settings, the lesser API nor the faction presets (cigs_packs[] in CfgFactionClasses) define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
 // and as the default selection of a newly placed aiCigs module (see CfgVehicles).
 //
 // Resolved once by cigs_ai_fnc_getDefaultPacks:

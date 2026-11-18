@@ -7,14 +7,19 @@ Arma Public License No Derivatives (APL-ND)
    - \addons\core
 
 Creative Commons Attribution 4.0 International Public License
+   - \addons\alborz
    - \addons\almyra
    - \addons\anim
    - \addons\apollo
    - \addons\cigars
    - \addons\kosmos
+   - \addons\lipa
+   - \addons\lipa_dzwonek
    - \addons\crayons
+   - \addons\matelot
    - \addons\morley
    - \addons\pops
+   - \addons\shanhai
    - \addons\voron
 
 The following Folders are under no license

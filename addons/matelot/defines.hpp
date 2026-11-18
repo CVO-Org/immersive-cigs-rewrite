@@ -1,0 +1,3 @@
+#define TOTALPUFFS 17
+
+#define SMOKE_COLOR_MATELOT 0.25, 0.24, 0.22

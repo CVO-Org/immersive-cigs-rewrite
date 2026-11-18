@@ -11,6 +11,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\apollo
    - \addons\cigars
    - \addons\kosmos
+   - \addons\lipa
    - \addons\crayons
    - \addons\morley
    - \addons\pops

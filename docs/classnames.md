@@ -18,6 +18,7 @@
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
+| `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |
 | `vn_b_item_cigs_01` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire's own pack, made usable |

@@ -3,6 +3,9 @@
 [Back to the documentation overview](README.md) · [Modders](modders.md)
 
 > [!TIP]
+> Working with an AI coding assistant? Point it at the [LLM instructions](../tools/llm/README.md). They cover the steps below and build the texture from your pictures.
+
+> [!TIP]
 > This page is about adding a brand **to this repository**. To release a brand as **your own mod**, use the [Immersive Cigs extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template) instead. It comes with its own step-by-step guide.
 
 ## How to Contribute
@@ -35,6 +38,8 @@ Pick the cigarette in `cigs_glasses.hpp` and `cigs_hmd.hpp`:
 Either way, print the logo on the paper's end next to the filter (u 330–389): that end stays as the cigarette burns down. See [Gear Icons](gear-icons.md) for the strip's layout.
 
 There is a "template PSD" in `tools/PSD UI Automations` which you can use.
+
+Or build the texture from separate pictures (one per pack face, plus a small logo for the paper) with `tools/gear_icons/texture_compose.py`. `texture_compose.py guide` draws the layout with every face's size and which way is up. See [tools/gear_icons/README.md](../tools/gear_icons/README.md#build-a-texture-from-pictures).
 
 ### 3.2 UI Textures
 Furthermore, you have to place the UI textures for the Package and each stage of the cigarette.

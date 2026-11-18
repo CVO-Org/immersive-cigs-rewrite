@@ -11,5 +11,6 @@ Pick the page for what you want to do.
 | [Modders](modders.md) | People extending the mod with config | Config properties, default pack presets |
 | [Adding a Brand](adding-a-brand.md) | Modders | Adding a brand to this repository. For your own mod, use the [extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template). |
 | [Gear Icons](gear-icons.md) | Modders | Rendering a brand's inventory icons from its texture with `tools/gear_icons/gear_icons.py` |
+| [LLM instructions](../tools/llm/README.md) | Modders using an AI coding assistant | A skill that walks the assistant through adding a brand, from artwork to icons |
 | [Classnames](classnames.md) | Everyone who needs a classname | All packs and lighters, renamed legacy classnames |
 | [History](history.md) | Anyone curious | What the rewrite changed compared to the original mod |

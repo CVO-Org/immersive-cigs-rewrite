@@ -37,6 +37,7 @@ Start at the [documentation overview](docs/README.md), or jump straight to your 
 | [Mission Makers](docs/mission-makers.md) | Cigarettes on AI, the *Configure AI Cigs* module, unit attributes, Zeus modules |
 | [Scripting API](docs/api.md) | Events, unit variables, functions |
 | [Modders](docs/modders.md) | Your own cigarette brand ([extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template)), config properties, default pack presets |
+| [LLM instructions](tools/llm/README.md) | Having an AI coding assistant build a new brand for you |
 | [Classnames](docs/classnames.md) | All packs and lighters, legacy classnames |
 | [History](docs/history.md) | What the rewrite changed compared to the original mod |
 

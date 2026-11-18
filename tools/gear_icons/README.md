@@ -49,7 +49,7 @@ python tools/gear_icons/texture_compose.py compose --front front.png --back back
 - `guide` draws every pack face and the cigarette strip with its size and which way is up. `--over-base` draws it over the clean base texture instead of grey.
 - `compose` starts from `addons/base/data/texture.paa` with every print removed, so the paper grain, the cork, the tobacco end and the ash stay. It scales each picture to fill its face and crops the edges, so give it the face's aspect ratio. A face you leave out stays plain card (`--pack-colour` sets its colour).
 - Draw every face upright, pack top at the top. The top flap has the back edge at the top. The bottom is turned by 180° for you. A side picture wider than tall is turned to run along the side.
-- `--paper-logo` is fitted into 54 x 72 px on the paper next to the filter, centred on v 127. Render the icons with `--logo-v 127` afterwards: a tinted paper (`--paper`) can fool `gear_icons.py`'s logo detection.
+- `--paper-logo` is fitted into 54 x 72 px on the paper next to the filter, centred on v 127. Draw the logo upright and pass `--paper-logo-rotate -90`, so its top points towards the filter like on the other brands. For a filterless cigarette, add `--paper-logo-u 300` to move it a bit away from the mouth end. Render the icons with `--logo-v 127` afterwards: a tinted paper (`--paper`) can fool `gear_icons.py`'s logo detection.
 - `--filter` takes a `#rrggbb` tint for the cork, `white`, or a picture for u 391-591.
 
 ## Cigars

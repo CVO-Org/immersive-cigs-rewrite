@@ -30,5 +30,6 @@ Go through every point before telling the user the brand is done. Say which ones
 
 - [ ] Pack icon: front, side and top flap the right way up, brand readable at 64 px.
 - [ ] Cigarette icons: the logo sits next to the filter and survives into `cig3`; the stages differ by length and the lit tip.
+- [ ] Paper logo: its top points towards the filter (mouth end without a filter), not towards the lit end; text and mark are stacked along the cigarette. Without a filter, it sits a bit away from the mouth end (u 273-327).
 - [ ] Texture: no face upside down or mirrored compared with `guide.png`.
 - [ ] Tell the user what to look at in game (`hemtt launch`): the pack on the ground and in the inventory, taking a cigarette out, lighting it, all five stages, the smoke.

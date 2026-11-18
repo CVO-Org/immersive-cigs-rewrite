@@ -27,9 +27,12 @@ A side picture that is wider than tall is turned by 90 degrees, so its text runs
 the side: top to bottom on the right side, bottom to top on the left (as on most packs).
 
 The paper logo is printed on the paper's end next to the filter (u 330-389), which stays
-until the stub. It is drawn upright with the filter to its right and fitted into
-54 x 72 px, centred on v 127. Render the icons afterwards with
-gear_icons.py <addon> --logo-v 127; a tinted paper can fool its logo detection.
+until the stub. It is fitted into 54 x 72 px, centred on v 127. Draw it upright and pass
+--paper-logo-rotate -90, so its top points towards the filter (it reads from the front of
+the cigarette, like on the other brands). For a filterless cigarette, pass
+--paper-logo-u 300 to keep it a bit away from the mouth end (u 273-327, still visible on
+the cig3 stage). Render the icons afterwards with gear_icons.py <addon> --logo-v 127;
+a tinted paper can fool its logo detection.
 
 Requires Pillow (pip install pillow) and hemtt on PATH (for PAA reading and writing).
 """
@@ -194,6 +197,11 @@ def compose(args):
             tex.paste(tint(base.crop(cork), parse_colour(args.filter)), (cork[0], v0))
     if args.paper_logo:
         lu0, lv0, lu1, lv1 = LOGO_BOX
+        if args.paper_logo_u is not None:
+            half = (lu1 - lu0) // 2
+            lu0, lu1 = args.paper_logo_u - half, args.paper_logo_u + half
+            if lu0 < PAPER_U[0] or lu1 > PAPER_U[1]:
+                sys.exit(f"--paper-logo-u {args.paper_logo_u} puts the logo off the paper (u {PAPER_U[0]}-{PAPER_U[1]})")
         logo = Image.open(args.paper_logo)
         if args.paper_logo_rotate:
             logo = logo.convert("RGBA").rotate(args.paper_logo_rotate, expand=True)
@@ -316,7 +324,8 @@ def main():
     c.add_argument("--pack-colour", help="#rrggbb behind faces you leave out")
     c.add_argument("--paper", help="#rrggbb tint for the cigarette paper (default: white)")
     c.add_argument("--paper-logo", help="picture printed on the paper next to the filter (PNG with transparency)")
-    c.add_argument("--paper-logo-rotate", type=int, default=0, help="degrees counter-clockwise, e.g. 90 for text along the cigarette")
+    c.add_argument("--paper-logo-rotate", type=int, default=0, help="degrees counter-clockwise; -90 turns an upright logo's top towards the filter (the usual way, see references/texture.md)")
+    c.add_argument("--paper-logo-u", type=int, help="u pixel to centre the paper logo on (default 359, next to the filter); 300 for a filterless cigarette")
     c.add_argument("--filter", help="cork tint #rrggbb, 'white', or a picture for u 391-591 (default: the base's cork)")
     c.add_argument("--base", default=BASE_TEXTURE, help="texture to start from (default: addons/base/data/texture.paa)")
     c.add_argument("--out", required=True, help="PNG to write")

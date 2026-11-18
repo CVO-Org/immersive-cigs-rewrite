@@ -37,6 +37,10 @@ Pick the cigarette in `cigs_glasses.hpp` and `cigs_hmd.hpp`:
 
 Either way, print the logo on the paper's end next to the filter (u 330–389): that end stays as the cigarette burns down. See [Gear Icons](gear-icons.md) for the strip's layout.
 
+Turn the logo so it reads from the front of the cigarette: its top points towards the filter (towards the mouth end without a filter), so text runs top to bottom in the strip. Text and a mark go on top of each other along the cigarette, the mark nearer the filter. Morley, Kosmos or Lucky Strike show how it looks.
+
+On a cigarette without a filter, keep the logo a bit away from the mouth end: around u 273–327 instead of right at the end, as on Lucky Strike and Craven.
+
 There is a "template PSD" in `tools/PSD UI Automations` which you can use.
 
 Or build the texture from separate pictures (one per pack face, plus a small logo for the paper) with `tools/gear_icons/texture_compose.py`. `texture_compose.py guide` draws the layout with every face's size and which way is up. See [tools/gear_icons/README.md](../tools/gear_icons/README.md#build-a-texture-from-pictures).

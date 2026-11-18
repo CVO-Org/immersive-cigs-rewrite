@@ -6,7 +6,7 @@ Which addon to copy, what it brings, and how its icons are made. Look at the cop
 | --- | --- | --- | --- | --- |
 | Cigarette with filter | `voron` | `base/data/cig0..4.p3d`, own `data/cigpack.p3d` | `data/texture.paa` | `gear_icons.py` |
 | Cigarette without filter | `eckstein` | `base/data/cig_nofilter0..4.p3d`, own `data/cigpack.p3d` | `data/texture.paa` | `gear_icons.py` (detects filterless) |
-| Cigar | `papa_schultz` | `base/data/cigar0..4.p3d`, own `data/cigarbox_5/cigarbox_5.p3d` | `data/cigars/cigar_co.paa`, `data/cigarbox_5/cigarbox_5_co.paa` (+ `_nohq`) | no script, see below |
+| Cigar | `papa_schultz` | `base/data/cigar0..4.p3d`, own `data/cigarbox_5/cigarbox_5.p3d` | `data/cigars/cigar_co.paa`, `data/cigarbox_5/cigarbox_5_co.paa` (+ `_nohq`) | `cigar_icons.py`, see below |
 | Suckable (lollipop) | `pops` | own `data/pop/pop.p3d`, own `data/poppack/poppack.p3d` | the textures those models use | no script, see below |
 | Variety pack (one of several items at random) | `crayons` | own models | own textures | `render_pack.py` for the pack |
 
@@ -24,12 +24,7 @@ Same texture layout. The models are paper only: 56 mm fresh, burning down to 20 
 
 ## Cigar (`papa_schultz`)
 
-- `requiredAddons[]` includes `cigs_cigars`.
-- The cigar models are shared (`QPATH_BASE_MODEL_CIGAR0..4`). The brand brings `data/cigars/cigar_co.paa` through `QPATH_TEXTURE_CIGAR`, and the shared materials `QPATH_BASE_RVMAT_CIGAR` / `_LIT`.
-- The box is per addon: `data/cigarbox_5/cigarbox_5.p3d` with its own texture and `.rvmat`. Rename both model paths with `mlod.py --rename` (the box's faces point at the box texture and at the brand's `cigar_co.paa`), and fix the `_nohq` path inside `cigarbox_5.rvmat` by hand.
-- The cigar texture is not the cigarette layout. Start from `addons/papa_schultz/data/cigars/cigar_co.png` and repaint it; keep where the band and the body are. Check the result on the model with `render_model.py` (see below).
-- `count = 5`, `TOTALPUFFS 135`, `PVAR(smokeMultiplier) = 1.5`.
-- Icons (`gear_cigarbox_5_x_ca.paa` 512 px, `gear_cigar0..4_x_ca.paa` 128 px) have no script. Keep the template's icons, render the box and the cigars with `render_model.py` as a starting point, or ask the user to make them. Arma models are left-handed: a render that comes out mirrored flips any print on the band, so compare it with the texture.
+Cigars have their own skill: follow `immersive-cigs-cigar` (`tools/llm/skills/immersive-cigs-cigar/SKILL.md`) instead of this one. In short: the cigar models are shared, the brand brings a cigar texture (`texture_compose.py cigar`) and its own box, and `cigar_icons.py` renders the icons from the models.
 
 ## Suckable (`pops`)
 

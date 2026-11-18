@@ -20,7 +20,8 @@ Every script has `--help`.
 | [`icon_sheet.py`](icon_sheet.py) | Puts icons side by side: an overview of brands, or any set of PAA/PNG icons. |
 | [`strips.py`](strips.py) | Shows the cigarette strips of several textures on one sheet and prints where each paper logo sits. |
 | [`texture_fix.py`](texture_fix.py) | Turns a texture region by 180°, moves a logo along the cigarette paper, or copies a box elsewhere. |
-| [`texture_compose.py`](texture_compose.py) | Draws the texture's UV layout, and builds a brand's texture from one picture per pack face and a paper logo. |
+| [`texture_compose.py`](texture_compose.py) | Draws the texture's UV layout, and builds a brand's texture from one picture per pack face and a paper logo, or a cigar's texture from a wrapper colour, a band and its print. |
+| [`cigar_icons.py`](cigar_icons.py) | Renders a cigar brand's box and cigar0..4 icons from the models, and draws the cigar and box UV layouts. Needs numpy. |
 | [`mlod.py`](mlod.py) | Reads and writes MLOD models, byte for byte. Summarises them, lists faces, renames texture paths. Other scripts import it. |
 | [`cig_uvmap.py`](cig_uvmap.py) | Shows which part of the strip a cigarette model maps along its length. |
 | [`cig_models.py`](cig_models.py) | Fixes the base cigarette models' paper mapping and builds the filterless models from them. |
@@ -50,6 +51,20 @@ python tools/gear_icons/texture_compose.py compose --front front.png --back back
 - Draw every face upright, pack top at the top. The top flap has the back edge at the top. The bottom is turned by 180° for you. A side picture wider than tall is turned to run along the side.
 - `--paper-logo` is fitted into 54 x 72 px on the paper next to the filter, centred on v 127. Render the icons with `--logo-v 127` afterwards: a tinted paper (`--paper`) can fool `gear_icons.py`'s logo detection.
 - `--filter` takes a `#rrggbb` tint for the cork, `white`, or a picture for u 391-591.
+
+## Cigars
+
+```powershell
+python tools/gear_icons/cigar_icons.py layout papa_schultz --out .hemttout/icons/papa_schultz
+python tools/gear_icons/texture_compose.py cigar --wrapper "#8a5a32" --band "#7a1010" --band-print medallion.png --out .hemttout/icons/mybrand/cigar_co.png --paa addons/mybrand/data/cigars/cigar_co.paa
+python tools/gear_icons/cigar_icons.py all mybrand --out .hemttout/icons/mybrand
+python tools/gear_icons/cigar_icons.py all mybrand --out .hemttout/icons/mybrand --apply
+```
+
+- `layout` draws the UVs over the brand's `cigar_co.paa` (wrapper, head, foot, ash, ember) and `cigarbox_5_co.paa` (the box's faces by the way they face) into `cigar_layout.png` and `box_layout.png`.
+- The wrapper runs along u from the foot (u 3) to the mouth (u 1019), about 10 px per mm, and round v 602-1023. The last stage only shows u 599-1019, so keep the band at u 645 or higher.
+- `texture_compose.py cigar` starts from Papa Schultz' `cigar_co.png` with its band and medallion removed. `--wrapper` tints the wrapper and the head (or takes a picture), `--band` paints a band at `--band-u` (default 765), `--band-print` puts a picture of up to 130 x 130 on it at `--print-v` (default 820).
+- `cigar_icons.py` renders with a small z-buffered rasteriser: smooth shading, lit from the top left, the lit tip glowing. `stages` writes `gear_cigar0..4_x_ca` (256 px): the base cigar models at 45°, mouth end top right, the ember leaning towards you, and turned so the band's print faces you (`--logo-v` picks another spot). `box` writes `gear_cigarbox_5_x_ca` (512 px) from the brand's own box model in 3/4 view, with the textures its faces name. `--apply` writes the PAAs into `data/UI/`.
 
 ## Compare brands
 
@@ -97,7 +112,7 @@ These edit the committed PAA in place. Running one twice applies it twice, so th
 python tools/gear_icons/render_pack.py addons/crayons/data/crayonpack/crayonpack.paa .hemttout/icons/crayons/gear_crayonpack_ca.png --paa addons/crayons/data/UI/gear_crayonpack_ca.paa
 ```
 
-This only works if the model uses the same UVs as `cigpack.p3d`. Check that with `mlod.py --faces`. The cigar boxes are different models, so it doesn't work for them.
+This only works if the model uses the same UVs as `cigpack.p3d`. Check that with `mlod.py --faces`. The cigar boxes are different models; use `cigar_icons.py box` for them.
 
 ## Inspect a model
 

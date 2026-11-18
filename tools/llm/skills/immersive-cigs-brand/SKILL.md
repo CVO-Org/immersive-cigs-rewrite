@@ -20,9 +20,9 @@ Read these before you start. They are the source of truth; this skill only tells
 
 Settle these with the user before touching files. Don't invent them:
 1. **Where it goes.** This repository (a PR to Immersive Cigs) or the user's own mod? For their own mod, the [extension template](https://github.com/OverlordZorn/immersion-cigs-extension-template) is the start; its guide replaces steps 1-3 below. The texture and icon steps (4-6) still apply: run the scripts in a clone of this repository, with the brand's folder copied into `addons/` for the time being.
-2. **Kind of item:** cigarette with filter, cigarette without filter, cigar, or a suckable (lollipop, crayon). See `references/item-types.md`.
+2. **Kind of item:** cigarette with filter, cigarette without filter, or a suckable (lollipop, crayon). See `references/item-types.md`. For a cigar, switch to the `immersive-cigs-cigar` skill (`tools/llm/skills/immersive-cigs-cigar/SKILL.md`).
 3. **Names:** the addon folder name (`snake_case`, ASCII, becomes the classname `cigs_<brand>_cigpack`), the display name in English, and the author credit.
-4. **Numbers:** cigarettes per pack (`count`), puffs per cigarette (`TOTALPUFFS`, 17 for a cigarette, 135 for a cigar), optionally a smoke colour.
+4. **Numbers:** cigarettes per pack (`count`), puffs per cigarette (`TOTALPUFFS`, 17), optionally a smoke colour.
 5. **Artwork:** what the user has. Pictures for the pack faces and a small logo for the cigarette paper are ideal. If they have none, you can't paint them: ask for them, or build a plain placeholder pack with `--pack-colour` and say that it is one.
 6. **Rights:** the artwork must be the user's own or free to use. Real brand names and logos are the user's call, not yours; point it out once if it is a real trademark, then go on.
 
@@ -75,7 +75,7 @@ python tools/gear_icons/gear_icons.py <brand> --out .hemttout/icons/<brand> --lo
 
 Read `.hemttout/icons/<brand>/preview.png` and check it against "What to check" in `docs/gear-icons.md`. When it is right, run the same command with `--apply`, which writes the six PAAs into `addons/<brand>/data/UI/`. Pass `--logo-v 127` when the logo came from `texture_compose.py`; otherwise let the script find it and check the `logo at v ...` line it prints.
 
-`gear_icons.py` only does cigarette brands. For cigars and suckables, see `references/item-types.md`.
+`gear_icons.py` only does cigarette brands. Cigars have `cigar_icons.py` (see the cigar skill); for suckables, see `references/item-types.md`.
 
 ## 6. Check it
 

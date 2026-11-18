@@ -36,6 +36,12 @@ workshop = [
     "1652506957", # Arma Script Profiler
 ]
 
+[aceax]
+extends = "default"
+workshop = [
+    "2522638637", # ACE3 Arsenal Extended - Core
+]
+
 [light]
 extends = "default"
 mission = "test.altis"

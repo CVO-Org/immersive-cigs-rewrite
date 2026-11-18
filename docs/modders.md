@@ -6,6 +6,7 @@ Everything in Immersive Cigs is driven by config. You can add brands, lighters o
 
 - [Adding a brand](#adding-a-brand)
 - [Config properties](#config-properties)
+- [Faction presets](#faction-presets)
 - [Default pack presets](#default-pack-presets)
 - Scripting: see the [Scripting API](api.md)
 
@@ -71,6 +72,50 @@ Burning fireplaces (`simulation = "fire"`, e.g. `Land_Campfire_F`) work automati
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | `cigs_canCauseCombustion` | `1` | Using a lighter within 7 m of this object can set the user on fire (needs ACE Fire). Fuel sources (ACE Refuel) count automatically. |
+
+## Faction presets
+
+A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_packs[]` | classes | Packs AI of this faction can get. An empty array means the faction gets no packs. |
+| `cigs_lighters[]` | classes | Lighters (or matches) those AI get with the packs. Missing or empty: the normal lighter pool. |
+
+```cpp
+class CfgFactionClasses {
+    class MyMod_Partisans {
+        // ... the faction's own entries
+        cigs_packs[]    = { "cigs_eckstein_cigpack", "cigs_kosmos_cigpack" };
+        cigs_lighters[] = { "cigs_matches" };
+    };
+};
+```
+
+- **No dependency needed.** These are plain strings, so a faction mod can add them to its own factions without requiring Immersive Cigs.
+- **Classnames that aren't loaded are dropped.** A faction can list packs of optional brands. If none of them are loaded, the faction gets no packs.
+- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Faction Presets*.
+- **No inheritance between factions.** `BLU_F` and `BLU_T_F` each need their own entry.
+
+To add presets to **another mod's** factions, use a compat addon that loads after that mod and is skipped when it's missing:
+
+```cpp
+class CfgPatches {
+    class MyMod_cigs_compat_theirMod {
+        requiredAddons[] = { "their_mod_factions" };   // the CfgPatches class that defines the factions
+        skipWhenMissingDependencies = 1;
+        units[] = {};
+        weapons[] = {};
+    };
+};
+class CfgFactionClasses {
+    class their_faction {
+        cigs_packs[] = { "cigs_lucky_strike_cigpack" };
+    };
+};
+```
+
+If the faction class has a parent class, declare it with the same parent, or the inheritance breaks.
 
 ## Default pack presets
 

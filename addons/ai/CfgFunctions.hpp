@@ -19,6 +19,7 @@ class CfgFunctions {
             class addCigItemsToUnit {};
             class getCigItems {};
             class getSettingsPacks {};
+            class getConfigPresets {};
             class getDefaultPacks {};
         };
 

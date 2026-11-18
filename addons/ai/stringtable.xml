@@ -99,6 +99,30 @@
             <Japanese>ユニット上にタバコが置かれている可能性を定義します。</Japanese>
             <Chinese>定义单位身上携带香烟的可能性。</Chinese>
         </Key>
+        <Key ID="STR_cigs_ai_set_aiCigs_configPresets_enable">
+            <English>Use Faction Presets</English>
+            <French>Utiliser les préréglages de faction</French>
+            <Spanish>Usar preajustes de facción</Spanish>
+            <Polish>Użyj presetów frakcji</Polish>
+            <Portuguese>Usar predefinições de facção</Portuguese>
+            <Russian>Использовать пресеты фракций</Russian>
+            <German>Fraktions-Presets verwenden</German>
+            <Korean>진영 프리셋 사용</Korean>
+            <Japanese>勢力プリセットを使用</Japanese>
+            <Chinese>使用阵营预设</Chinese>
+        </Key>
+        <Key ID="STR_cigs_ai_set_aiCigs_configPresets_enable_desc">
+            <English>AI units get the packs their faction defines in its config (cigs_packs[]), and the matching lighters (cigs_lighters[]). Factions without such an entry get the default presets. Only used when no higher level applies: the cigs_aiCigs_api variable, a Configure AI Cigs module, the pack selection or a gamemode's cigs_aiCigs_api_lesser.</English>
+            <French>Les unités IA reçoivent les paquets que leur faction définit dans sa config (cigs_packs[]), et les briquets correspondants (cigs_lighters[]). Les factions sans cette entrée reçoivent les préréglages par défaut. Utilisé uniquement si aucun niveau supérieur ne s'applique : la variable cigs_aiCigs_api, un module Configure AI Cigs, la sélection de paquets ou cigs_aiCigs_api_lesser d'un mode de jeu.</French>
+            <Spanish>Las unidades de IA reciben los paquetes que su facción define en su config (cigs_packs[]) y los mecheros correspondientes (cigs_lighters[]). Las facciones sin esa entrada reciben los preajustes por defecto. Solo se usa si no se aplica ningún nivel superior: la variable cigs_aiCigs_api, un módulo Configure AI Cigs, la selección de paquetes o cigs_aiCigs_api_lesser de un modo de juego.</Spanish>
+            <Polish>Jednostki SI otrzymują paczki zdefiniowane przez ich frakcję w configu (cigs_packs[]) oraz pasujące zapalniczki (cigs_lighters[]). Frakcje bez takiego wpisu otrzymują domyślne presety. Używane tylko, gdy nie obowiązuje żaden wyższy poziom: zmienna cigs_aiCigs_api, moduł Configure AI Cigs, wybór paczek lub cigs_aiCigs_api_lesser trybu gry.</Polish>
+            <Portuguese>As unidades da IA recebem os maços que a sua facção define na config (cigs_packs[]) e os isqueiros correspondentes (cigs_lighters[]). Facções sem essa entrada recebem as predefinições padrão. Só é usado se nenhum nível superior se aplicar: a variável cigs_aiCigs_api, um módulo Configure AI Cigs, a seleção de maços ou cigs_aiCigs_api_lesser de um modo de jogo.</Portuguese>
+            <Russian>Юниты ИИ получают пачки, заданные их фракцией в конфиге (cigs_packs[]), и подходящие зажигалки (cigs_lighters[]). Фракции без такой записи получают стандартные пресеты. Используется, только если не действует более высокий уровень: переменная cigs_aiCigs_api, модуль Configure AI Cigs, выбор пачек или cigs_aiCigs_api_lesser игрового режима.</Russian>
+            <German>KI-Einheiten erhalten die Packungen, die ihre Fraktion in ihrer Config festlegt (cigs_packs[]), und die passenden Feuerzeuge (cigs_lighters[]). Fraktionen ohne solchen Eintrag erhalten die Standard-Presets. Wird nur verwendet, wenn keine höhere Ebene greift: die Variable cigs_aiCigs_api, ein Configure AI Cigs Modul, die Packungsauswahl oder cigs_aiCigs_api_lesser eines Spielmodus.</German>
+            <Korean>AI 유닛은 자기 진영이 config에 정의한 갑(cigs_packs[])과 그에 맞는 라이터(cigs_lighters[])를 받습니다. 그런 항목이 없는 진영은 기본 프리셋을 받습니다. 더 높은 단계가 적용되지 않을 때만 사용됩니다: cigs_aiCigs_api 변수, Configure AI Cigs 모듈, 갑 선택 또는 게임 모드의 cigs_aiCigs_api_lesser.</Korean>
+            <Japanese>AIユニットは、所属勢力がconfigで定義したパック(cigs_packs[])と、対応するライター(cigs_lighters[])を受け取ります。その項目がない勢力はデフォルトのプリセットを受け取ります。より上位の段階が適用されない場合のみ使用されます:cigs_aiCigs_api変数、Configure AI Cigsモジュール、パック選択、またはゲームモードのcigs_aiCigs_api_lesser。</Japanese>
+            <Chinese>AI 单位将获得其阵营在 config 中定义的烟盒（cigs_packs[]）以及对应的打火机（cigs_lighters[]）。没有该条目的阵营获得默认预设。仅在没有更高层级生效时使用：cigs_aiCigs_api 变量、Configure AI Cigs 模块、烟盒选择或游戏模式的 cigs_aiCigs_api_lesser。</Chinese>
+        </Key>
         <Key ID="STR_cigs_ai_set_aiCigs_delay">
             <English>Delay</English>
             <French>Délai</French>

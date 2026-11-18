@@ -35,7 +35,7 @@ python tools/gear_icons/gear_icons.py kosmos --out .hemttout/icons/kosmos
 
 Open `.hemttout/icons/kosmos/preview.png`. When it looks right, run it again with `--apply` to write the PAAs into `addons/kosmos/data/UI/`. If the logo on the cigarette is off-centre, find the right v with `strips.py` and pass `--logo-v <v>`.
 
-Used so far: `baja_blast --logo-v 91` (centres on "BLAST") and `kosmos --logo-v 112` (the start of "КОСМОС").
+Used so far: `baja_blast --logo-v 144` (centres on "BLAST") and `kosmos --logo-v 112` (the start of "КОСМОС").
 
 A brand whose `cigs_glasses.hpp` uses the `QPATH_BASE_MODEL_NOFILTER_*` models is rendered as a filterless cigarette (56, 56, 44, 32, 20 mm) automatically.
 

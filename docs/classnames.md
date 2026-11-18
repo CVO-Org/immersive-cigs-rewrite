@@ -7,6 +7,7 @@
 | Classname | Name | Contains | Notes |
 | --------- | ---- | -------- | ----- |
 | `cigs_alborz_cigpack` | Pack of Alborz | cigarettes | |
+| `cigs_almyra_cigpack` | Pack of Almyra | cigarettes | Altis |
 | `cigs_apollo_cigpack` | Apollo Soyuz Cigarette Pack | cigarettes | |
 | `cigs_baja_blast_cigpack` | Mtn Dew Baja Blast Cigs Pack | cigarettes | tinted smoke |
 | `cigs_black_devil_cigpack` | Black Devil Pink Cigs Pack | cigarettes | |

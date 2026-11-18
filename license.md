@@ -8,6 +8,7 @@ Arma Public License No Derivatives (APL-ND)
 
 Creative Commons Attribution 4.0 International Public License
    - \addons\alborz
+   - \addons\almyra
    - \addons\anim
    - \addons\apollo
    - \addons\cigars

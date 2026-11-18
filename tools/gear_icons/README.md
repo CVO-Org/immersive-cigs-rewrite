@@ -20,6 +20,7 @@ Every script has `--help`.
 | [`icon_sheet.py`](icon_sheet.py) | Puts icons side by side: an overview of brands, or any set of PAA/PNG icons. |
 | [`strips.py`](strips.py) | Shows the cigarette strips of several textures on one sheet and prints where each paper logo sits. |
 | [`texture_fix.py`](texture_fix.py) | Turns a texture region by 180°, moves a logo along the cigarette paper, or copies a box elsewhere. |
+| [`texture_compose.py`](texture_compose.py) | Draws the texture's UV layout, and builds a brand's texture from one picture per pack face and a paper logo. |
 | [`mlod.py`](mlod.py) | Reads and writes MLOD models, byte for byte. Summarises them, lists faces, renames texture paths. Other scripts import it. |
 | [`cig_uvmap.py`](cig_uvmap.py) | Shows which part of the strip a cigarette model maps along its length. |
 | [`cig_models.py`](cig_models.py) | Fixes the base cigarette models' paper mapping and builds the filterless models from them. |
@@ -36,6 +37,19 @@ Open `.hemttout/icons/kosmos/preview.png`. When it looks right, run it again wit
 Used so far: `baja_blast --logo-v 91` (centres on "BLAST") and `kosmos --logo-v 112` (the start of "КОСМОС").
 
 A brand whose `cigs_glasses.hpp` uses the `QPATH_BASE_MODEL_NOFILTER_*` models is rendered as a filterless cigarette (56, 56, 44, 32, 20 mm) automatically.
+
+## Build a texture from pictures
+
+```powershell
+python tools/gear_icons/texture_compose.py guide --over-base --out .hemttout/icons/guide.png
+python tools/gear_icons/texture_compose.py compose --front front.png --back back.png --top top.png --left left.png --right right.png --bottom bottom.png --paper-logo logo.png --filter "#b01818" --out .hemttout/icons/mybrand/texture.png --paa addons/mybrand/data/texture.paa
+```
+
+- `guide` draws every pack face and the cigarette strip with its size and which way is up. `--over-base` draws it over the clean base texture instead of grey.
+- `compose` starts from `addons/base/data/texture.paa` with every print removed, so the paper grain, the cork, the tobacco end and the ash stay. It scales each picture to fill its face and crops the edges, so give it the face's aspect ratio. A face you leave out stays plain card (`--pack-colour` sets its colour).
+- Draw every face upright, pack top at the top. The top flap has the back edge at the top. The bottom is turned by 180° for you. A side picture wider than tall is turned to run along the side.
+- `--paper-logo` is fitted into 54 x 72 px on the paper next to the filter, centred on v 127. Render the icons with `--logo-v 127` afterwards: a tinted paper (`--paper`) can fool `gear_icons.py`'s logo detection.
+- `--filter` takes a `#rrggbb` tint for the cork, `white`, or a picture for u 391-591.
 
 ## Compare brands
 

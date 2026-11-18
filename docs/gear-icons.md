@@ -27,7 +27,7 @@ You need Python 3 with Pillow (`pip install pillow`) and `hemtt` on your `PATH`.
 
 A brand without a `data/cigpack.p3d` (for example `savage`) only gets the five cigarette icons.
 
-The same folder has helper scripts: overview sheets, cigarette strip and logo finder, texture fixes, a pack renderer for non-brand packs, and readers for the `.p3d` models. See [tools/gear_icons/README.md](../tools/gear_icons/README.md).
+The same folder has helper scripts: a texture builder that places one picture per pack face (`texture_compose.py`), overview sheets, cigarette strip and logo finder, texture fixes, a pack renderer for non-brand packs, and readers for the `.p3d` models. See [tools/gear_icons/README.md](../tools/gear_icons/README.md).
 
 ## The pack icon
 

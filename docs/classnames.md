@@ -15,6 +15,7 @@
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
+| `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |
 | `cigs_lucky_strike_cigpack` | Lucky Strike Cigarette Pack | cigarettes | WW2 |
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |

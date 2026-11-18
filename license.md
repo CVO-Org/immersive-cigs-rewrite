@@ -12,6 +12,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\cigars
    - \addons\kosmos
    - \addons\lipa
+   - \addons\lipa_dzwonek
    - \addons\crayons
    - \addons\morley
    - \addons\pops

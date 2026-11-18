@@ -42,3 +42,17 @@ mission = "test.altis"
 workshop = [
     "1613905318", # Emitter 3Ditor
 ]
+
+# Vanilla + all CDLCs, without ACE - to read the faction classes for the faction presets
+[factions]
+extends = "base"
+dlc = [
+    "Contact",
+    "Global Mobilization",
+    "S.O.G. Prairie Fire",
+    "CSLA Iron Curtain",
+    "Western Sahara",
+    "Spearhead 1944",
+    "Reaction Forces",
+    "Expeditionary Forces",
+]

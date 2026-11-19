@@ -43,11 +43,12 @@ workshop = [
     "1613905318", # Emitter 3Ditor
 ]
 
-# Vanilla + all CDLCs, without ACE - to read the faction classes for the faction presets
+# The default mods (CBA, ADT, ACE, ZEN) + all CDLCs - to read the faction classes for the faction presets
+# (test.VR writes them to the RPT, see tests\listFactions.sqf).
+# Without Contact: as a DLC it starts the game in its own platform mode.
 [factions]
-extends = "base"
+extends = "default"
 dlc = [
-    "Contact",
     "Global Mobilization",
     "S.O.G. Prairie Fire",
     "CSLA Iron Curtain",

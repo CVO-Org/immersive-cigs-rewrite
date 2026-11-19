@@ -4,14 +4,27 @@
 // To run it again, from the debug console: [] call cigs_test_fnc_listFactions;
 //
 // One faction per line, ";"-separated, every line prefixed with "[cigs][factions]":
-//   mod;class;displayName;side;parent;sourceAddon;hasCigsPacks
+//   mod;class;displayName;side;parent;sourceAddon;hasCigsPacks;men;vehicles
 // - mod:          configSourceMod, e.g. "vn" for S.O.G. Prairie Fire, "" for the base game
 // - parent:       the parent class (needed when a preset declares the class), "" when none
 // - sourceAddon:  the CfgPatches class that defines the faction, the one to put in requiredAddons[]
 // - hasCigsPacks: whether the faction already has cigs_packs[]
+// - men:          editor-placeable (scope 2) CAManBase classes of the faction - 0 means it has no infantry, so no preset needed
+// - vehicles:     editor-placeable (scope 2) other CfgVehicles classes of the faction
 // Filter the RPT for "[cigs][factions]", strip the prefix and paste into a spreadsheet with ";" as separator.
 
 private _sideNames = ["EAST", "WEST", "GUER", "CIV"];
+
+// men and vehicles per faction, only those placeable in the editor (scope 2) - a faction with 0 men has no infantry
+private _men = createHashMap;
+private _vehicles = createHashMap;
+{
+    private _faction = getText (_x >> "faction");
+    if (_faction != "") then {
+        private _map = [_vehicles, _men] select ((configName _x) isKindOf "CAManBase");
+        _map set [_faction, (_map getOrDefault [_faction, 0]) + 1];
+    };
+} forEach ("getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgVehicles"));
 
 private _rows = ("true" configClasses (configFile >> "CfgFactionClasses")) apply {
     private _parent = inheritsFrom _x;
@@ -34,13 +47,15 @@ private _rows = ("true" configClasses (configFile >> "CfgFactionClasses")) apply
         _sideName,
         _parentName,
         _sourceAddon,
-        str isArray (_x >> "cigs_packs")
+        str isArray (_x >> "cigs_packs"),
+        str (_men getOrDefault [configName _x, 0]),
+        str (_vehicles getOrDefault [configName _x, 0])
     ]
 };
 
 _rows sort true;
 
-diag_log text "[cigs][factions] mod;class;displayName;side;parent;sourceAddon;hasCigsPacks";
+diag_log text "[cigs][factions] mod;class;displayName;side;parent;sourceAddon;hasCigsPacks;men;vehicles";
 {
     diag_log text ("[cigs][factions] " + (_x joinString ";"));
 } forEach _rows;

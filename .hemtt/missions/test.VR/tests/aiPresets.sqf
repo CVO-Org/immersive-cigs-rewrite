@@ -168,4 +168,4 @@ private _failed = _results select { !(_x # 1) };
 private _summary = format ["AI cigs preset tests: %1 passed, %2 failed", count _results - count _failed, count _failed];
 [_summary] call _log;
 if ( _failed isNotEqualTo [] ) then { ["Failed: " + (( _failed apply { _x # 0 }) joinString ", ")] call _log; };
-[_summary] remoteExec ["hint", 0];
+_summary remoteExec ["hint", 0];

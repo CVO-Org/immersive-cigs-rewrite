@@ -62,27 +62,26 @@ private _defaultPacks = { params ["_sideStr"]; cigs_aiCigs_default getOrDefault 
 private _packs = { params ["_unit"]; [_unit] call cigs_ai_fnc_getCigItems };
 
 
-// ---------------------------------------------------------------- level variables: save, reset, restore
+// ---------------------------------------------------------------- levels: save, reset, restore
+// Script variables (api, module, lesser API) are set directly.
+// CBA settings go through CBA_settings_fnc_set ("server" source, as in init.sqf), so their change scripts run too:
+// the pack selection's script clears its cached map (cigs_aiCigs_settings), which the tests rely on.
 private _packSelVar = "cigs_ai_set_aiCigs_packSelection_WEST_cigs_morley_cigpack";
-private _vars = [
-    "cigs_aiCigs_api",
-    "cigs_aiCigs_module",
-    "cigs_aiCigs_api_lesser",
-    "cigs_ai_set_aiCigs_packSelection_enable",
-    "cigs_ai_set_aiCigs_configPresets_enable",
-    "cigs_aiCigs_settings",
-    _packSelVar
-];
-private _saved = _vars apply { missionNamespace getVariable _x };
+private _scriptVars = [ "cigs_aiCigs_api", "cigs_aiCigs_module", "cigs_aiCigs_api_lesser" ];
+private _settings = [ "cigs_ai_set_aiCigs_packSelection_enable", "cigs_ai_set_aiCigs_configPresets_enable", _packSelVar ];
+
+private _savedVars = _scriptVars apply { missionNamespace getVariable _x };
+private _savedSettings = _settings apply { [_x, "server"] call CBA_settings_fnc_get };
+
+private _set = { params ["_setting", "_value"]; [_setting, _value, nil, "server"] call CBA_settings_fnc_set };
 
 private _reset = {
     cigs_aiCigs_api = nil;
     cigs_aiCigs_module = nil;
     cigs_aiCigs_api_lesser = nil;
-    cigs_ai_set_aiCigs_packSelection_enable = false;
-    cigs_ai_set_aiCigs_configPresets_enable = true;
-    missionNamespace setVariable [_packSelVar, false];
-    cigs_aiCigs_settings = nil;     // cached pack selection map
+    ["cigs_ai_set_aiCigs_packSelection_enable", false] call _set;
+    ["cigs_ai_set_aiCigs_configPresets_enable", true] call _set;
+    [_packSelVar, false] call _set;
 };
 
 ["---- AI cigs preset tests ----"] call _log;
@@ -110,7 +109,7 @@ private _civ = ["CIV_F"] call _spawn;
 
 // ---------------------------------------------------------------- 3. Use Faction Presets off
 call _reset;
-cigs_ai_set_aiCigs_configPresets_enable = false;
+["cigs_ai_set_aiCigs_configPresets_enable", false] call _set;
 ["faction presets off -> default presets (WEST)", [_blu] call _packs, ["WEST"] call _defaultPacks] call _check;
 
 // ---------------------------------------------------------------- 4. lesser API as hashmap - decides all sides
@@ -137,11 +136,15 @@ cigs_aiCigs_api_lesser = "oops";
 // ---------------------------------------------------------------- 7. pack selection beats the lesser API
 call _reset;
 cigs_aiCigs_api_lesser = createHashMapFromArray [["WEST", ["cigs_nil_cigpack"]], ["EAST", ["cigs_nil_cigpack"]]];
-cigs_ai_set_aiCigs_packSelection_enable = true;
-missionNamespace setVariable [_packSelVar, true];
-cigs_aiCigs_settings = nil;
+["cigs_ai_set_aiCigs_packSelection_enable", true] call _set;
+[_packSelVar, true] call _set;
 ["pack selection: WEST ticked Morley", [_blu] call _packs, ["cigs_morley_cigpack"]] call _check;
 ["pack selection: EAST nothing ticked -> none", [_opf] call _packs, []] call _check;
+
+// the change script clears the cached map, so unticking shows at once
+[_packSelVar, false] call _set;
+["pack selection: Morley unticked again -> none (cache cleared)", [_blu] call _packs, []] call _check;
+[_packSelVar, true] call _set;
 
 // ---------------------------------------------------------------- 8. module beats the pack selection
 cigs_aiCigs_module = createHashMapFromArray [["WEST", ["cigs_kosmos_cigpack"]], ["EAST", []], ["GUER", []], ["CIV", []]];
@@ -157,7 +160,8 @@ call _reset;
 
 
 // ---------------------------------------------------------------- restore and clean up
-{ missionNamespace setVariable [_x, _saved # _forEachIndex] } forEach _vars;
+{ missionNamespace setVariable [_x, _savedVars # _forEachIndex] } forEach _scriptVars;
+{ [_x, _savedSettings # _forEachIndex] call _set } forEach _settings;
 { deleteVehicle _x } forEach _spawned;
 
 private _failed = _results select { !(_x # 1) };

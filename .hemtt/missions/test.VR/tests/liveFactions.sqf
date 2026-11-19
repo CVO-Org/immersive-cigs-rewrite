@@ -63,9 +63,14 @@ private _units = [];
     };
 } forEach _factions;
 
-private _wait = (missionNamespace getVariable ["cigs_ai_set_aiCigs_delay", 5]) + 10;
-[format ["Spawned %1 units (one per faction), report in %2 s", count _units, _wait]] call _log;
-sleep _wait;
+// Wait for the AI cigs queue to process them (one unit per PFH tick - slow while the game is still loading),
+// then for the item delay plus a margin. Times out after 90 s.
+private _start = time;
+[format ["Spawned %1 units (one per faction), waiting for the AI cigs queue", count _units]] call _log;
+sleep 6;    // the queue starts 5 s after its first unit
+waitUntil { sleep 1; isNil "cigs_ai_aiCigs_queue" || { time - _start > 90 } };
+sleep ((missionNamespace getVariable ["cigs_ai_set_aiCigs_delay", 5]) + 3);
+[format ["Queue %1 after %2 s, reporting", ["still busy (timeout)", "empty"] select (isNil "cigs_ai_aiCigs_queue"), round (time - _start)]] call _log;
 
 // report
 private _isPack = { getNumber (configFile >> "CfgMagazines" >> _x >> "cigs_isPack") isEqualTo 1 };

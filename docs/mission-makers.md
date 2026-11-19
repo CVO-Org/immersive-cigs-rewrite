@@ -32,14 +32,16 @@ The packs per side come from the first of these that exists:
 | 2 | *Configure AI Cigs* module | you, in 3DEN |
 | 3 | Pack selection CBA settings, while *Use Pack Selection* is on | the server admin (or you, as mission settings), see [Server Admins](server-admins.md#immersive-cigs---ai) |
 | 4 | `cigs_aiCigs_api_lesser` | a script, usually a gamemode's own defaults, see [Scripting API](api.md#defaults-the-server-admin-can-override-cigs_aicigs_api_lesser) |
-| 5 | Faction presets: `cigs_packs[]` of the unit's faction, while *Use Faction Presets* is on | the mod and faction mods, see [Modders](modders.md#faction-presets) |
-| 6 | Default presets | the mod (and other mods), see below |
+| 5 | Unit class presets: `cigs_packs[]` of the unit's class, while *Use Unit and Faction Presets* is on | the mod and unit mods, see [Modders](modders.md#unit-class-presets) |
+| 6 | Faction presets: `cigs_packs[]` of the unit's faction, while *Use Unit and Faction Presets* is on | the mod and faction mods, see [Modders](modders.md#faction-presets) |
+| 7 | Default presets | the mod (and other mods), see below |
 
 The first one that exists is used for **all** sides. If you place the module, sides you leave empty in it get nothing. They do not fall back to the pack selection or the defaults. The same goes for the pack selection: a side with nothing ticked gets nothing.
 
-There are two exceptions, because both work per unit, not per side:
-- `cigs_aiCigs_api_lesser` as code can return `nil` for a single unit, which then goes on to the faction presets.
-- Faction presets only apply to units whose faction has an entry. All other units get the default presets.
+There are three exceptions, because they work per unit, not per side:
+- `cigs_aiCigs_api_lesser` as code can return `nil` for a single unit, which then goes on to the unit class and faction presets.
+- Unit class and faction presets only apply to units whose class or faction has an entry. All other units get the default presets.
+- A unit class can add packs with `cigs_packsExtra[]` (e.g. cigars for officers). They are added on levels 5 to 7 only.
 
 ### The *Configure AI Cigs* module
 

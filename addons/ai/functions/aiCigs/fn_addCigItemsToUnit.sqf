@@ -54,7 +54,7 @@ for "_i" from 1 to (ceil random 3) do {
 // Add lighter if any package is a smokeable
 if ( _smokablesAmount isNotEqualTo 0 ) then {
 
-    // Faction presets can define the lighters (e.g. matches for an era) - an empty or missing list uses the normal pool
+    // Unit class and faction presets can define the lighters (e.g. matches for an era) - an empty or missing list uses the normal pool
     private _configLighters = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { ([_unit] call FUNC(getConfigPresets)) getOrDefault ["lighters", []] } else { [] };
     private _lighterPool = switch (true) do {
         case ( _configLighters isNotEqualTo [] ): { _configLighters };

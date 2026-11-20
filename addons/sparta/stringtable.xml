@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_sparta">
+    <Package name="Items">
+        <Key ID="STR_cigs_sparta_cigarette">
+            <English>Sparta Cigarette</English>
+            <Czech>Cigareta Sparta</Czech>
+            <French>Cigarette Sparta</French>
+            <Spanish>Cigarrillo Sparta</Spanish>
+            <Polish>Papieros Sparta</Polish>
+            <Portuguese>Cigarro Sparta</Portuguese>
+            <Russian>Сигарета Sparta</Russian>
+            <German>Sparta Zigarette</German>
+            <Korean>Sparta 담배</Korean>
+            <Japanese>紙巻たばこ スパルタ</Japanese>
+            <Chinese>Sparta 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_sparta_cigpack">
+            <English>Pack of Sparta</English>
+            <Czech>Krabička Sparty</Czech>
+            <French>Paquet de Sparta</French>
+            <Spanish>Cajetilla de Sparta</Spanish>
+            <Polish>Paczka Sparta</Polish>
+            <Portuguese>Maço de Sparta</Portuguese>
+            <Russian>Пачка Sparta</Russian>
+            <German>Schachtel Sparta</German>
+            <Korean>Sparta 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (スパルタ)</Japanese>
+            <Chinese>一包 Sparta</Chinese>
+        </Key>
+        <Key ID="STR_cigs_sparta_cigpack_desc">
+            <English>Kutná Hora's finest since 1964, and worth more than the price on the pack.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <Czech>To nejlepší z Kutné Hory od roku 1964, a cennější, než kolik stojí na krabičce.&lt;br/&gt;Obsahuje 20 cigaret.&lt;br/&gt;Varování: Kouření škodí zdraví.</Czech>
+            <French>Le meilleur de Kutná Hora depuis 1964, et qui vaut plus que le prix imprimé.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Lo mejor de Kutná Hora desde 1964, y vale más que el precio del paquete.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Najlepsze z Kutnej Hory od 1964 roku, warte więcej niż cena na paczce.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>O melhor de Kutná Hora desde 1964, e vale mais do que o preço no maço.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Лучшее из Кутна-Горы с 1964 года, и стоит больше, чем цена на пачке.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <German>Das Beste aus Kutná Hora seit 1964, und mehr wert als der Preis auf der Packung.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>1964년부터 쿠트나호라 최고의 담배, 갑에 적힌 값보다 더 귀합니다.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Japanese>1964年からクトナー・ホラの最高級品。箱の値段以上の価値がある。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>自1964年起的庫特納霍拉精品，比包裝上的價格更值錢。&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_sparta_author">
+            <English>OverlordZorn</English>
+            <Czech>OverlordZorn</Czech>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

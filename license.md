@@ -30,6 +30,7 @@ The following Folders are under no license
    - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
+   - \addons\casa_sport
    - \addons\sparta
    - \addons\prince
    - \addons\popularne

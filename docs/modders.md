@@ -141,6 +141,19 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### S.O.G. Prairie Fire
+
+Addon `presets_sog`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| MACV `B_MACV`, US CIA `B_CIA`, US MEDT `B_MEDT` | Lucky Strike, Savage, Morley |
+| Australia `B_AUS`, New Zealand `B_NZ` | Craven "A", Savage, Morley |
+| Republic Of Korea `B_ROK` | Hwarang, Lucky Strike, Savage |
+| ARVN `I_ARVN` | Ruby Queen, Lucky Strike, Savage |
+| Royal Lao Army `I_LAO`, FANK `I_CAM`, Vietnamese `C_VIET` | Ruby Queen, Savage, Morley |
+| PAVN `O_PAVN`, Viet Cong `O_VC`, Pathet Lao `O_PL`, Khmer Rouge `O_CAM` | Ruby Queen, Kosmos, Savage |
+
 ## Default pack presets
 
 The packs AI get when the mission has no *Configure AI Cigs* module come from presets in `class cigs_ai_defaultPacks`. A newly placed module also starts with these packs ticked. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for how the sources are prioritised.
@@ -154,7 +167,6 @@ How they're resolved:
 | Preset | Priority | Active when | Sides |
 | ------ | -------- | ----------- | ----- |
 | `Vanilla` | 0 | always | all four |
-| `SOGPF` | 10 | S.O.G. Prairie Fire is loaded (`weapons_f_vietnam_c`) | all four: Savage pack |
 
 ### Adding your own preset
 
@@ -163,7 +175,7 @@ Add a class to `cigs_ai_defaultPacks` in your mod's `config.cpp`. Make your `Cfg
 ```cpp
 class cigs_ai_defaultPacks {
     class MyMod_Desert {
-        priority = 20;                                  // Higher wins. Vanilla is 0, SOGPF is 10.
+        priority = 20;                                  // Higher wins. Vanilla is 0.
         requiredAddons[] = { "my_desert_units" };       // Optional - all need to be loaded
         condition = "true";                             // Optional - SQF, needs to return a BOOL
         WEST[] = { "cigs_lucky_strike_cigpack" };       // Optional per side: WEST, EAST, GUER, CIV
@@ -172,7 +184,7 @@ class cigs_ai_defaultPacks {
 };
 ```
 
-Here, WEST and GUER come from `MyMod_Desert`, while EAST and CIV fall through to `SOGPF` or `Vanilla`.
+Here, WEST and GUER come from `MyMod_Desert`, while EAST and CIV fall through to `Vanilla`.
 
 > [!TIP]
 > Prefer `requiredAddons[]` over `condition` to check for a mod.

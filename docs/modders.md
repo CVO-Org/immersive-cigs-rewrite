@@ -141,6 +141,18 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### Western Sahara
+
+Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.
+
+| Faction | Packs |
+| ------- | ----- |
+| SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Black Devil, Morley |
+| Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Black Devil, Mtn Dew Baja Blast |
+| ION Services `BLU_ION_lxWS` | Camel, Morley, Lucky Strike |
+| UNA `BLU_UN_lxWS` | Camel, Morley, Craven "A" |
+| NATO (Desert) `BLU_NATO_lxWS` | Morley, Lucky Strike, Craven "A", Crayons |
+
 ## Default pack presets
 
 The packs AI get when the mission has no *Configure AI Cigs* module come from presets in `class cigs_ai_defaultPacks`. A newly placed module also starts with these packs ticked. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for how the sources are prioritised.

@@ -23,23 +23,23 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\voron
 
 The following Folders are under no license
-   - \addons\craven
-   - \addons\eckstein
-   - \addons\hwarang
-   - \addons\f6
-   - \addons\ernte_23
-   - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
-   - \addons\marlboro
    - \addons\camel
-   - \addons\juno
-   - \addons\troupes
    - \addons\casa_sport
-   - \addons\sparta
-   - \addons\prince
+   - \addons\craven
+   - \addons\eckstein
+   - \addons\ernte_23
+   - \addons\f6
+   - \addons\hwarang
+   - \addons\juno
+   - \addons\lucky_strike
+   - \addons\marlboro
    - \addons\popularne
+   - \addons\prince
    - \addons\ruby_queen
+   - \addons\sparta
+   - \addons\troupes
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.
    - addons\core\data\sounds\cough_0.ogg

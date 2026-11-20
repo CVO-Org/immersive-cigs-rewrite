@@ -28,6 +28,7 @@ The following Folders are under no license
    - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
+   - \addons\troupes
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.
    - addons\core\data\sounds\cough_0.ogg

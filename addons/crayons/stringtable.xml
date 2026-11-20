@@ -1,5 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="cigs_crayons">
+    <Package name="ACE Arsenal Extended">
+        <Key ID="STR_cigs_crayons_aceax_color">
+            <English>Color</English>
+            <French>Couleur</French>
+            <Spanish>Color</Spanish>
+            <Polish>Kolor</Polish>
+            <Portuguese>Cor</Portuguese>
+            <Russian>Цвет</Russian>
+            <German>Farbe</German>
+            <Korean>색상</Korean>
+            <Japanese>色</Japanese>
+            <Chinese>顏色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_black">
+            <English>Black</English>
+            <French>Noir</French>
+            <Spanish>Negro</Spanish>
+            <Polish>Czarny</Polish>
+            <Portuguese>Preto</Portuguese>
+            <Russian>Чёрный</Russian>
+            <German>Schwarz</German>
+            <Korean>검정</Korean>
+            <Japanese>黒</Japanese>
+            <Chinese>黑色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_blue">
+            <English>Blue</English>
+            <French>Bleu</French>
+            <Spanish>Azul</Spanish>
+            <Polish>Niebieski</Polish>
+            <Portuguese>Azul</Portuguese>
+            <Russian>Синий</Russian>
+            <German>Blau</German>
+            <Korean>파랑</Korean>
+            <Japanese>青</Japanese>
+            <Chinese>藍色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_brown">
+            <English>Brown</English>
+            <French>Marron</French>
+            <Spanish>Marrón</Spanish>
+            <Polish>Brązowy</Polish>
+            <Portuguese>Marrom</Portuguese>
+            <Russian>Коричневый</Russian>
+            <German>Braun</German>
+            <Korean>갈색</Korean>
+            <Japanese>茶色</Japanese>
+            <Chinese>棕色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_gray">
+            <English>Gray</English>
+            <French>Gris</French>
+            <Spanish>Gris</Spanish>
+            <Polish>Szary</Polish>
+            <Portuguese>Cinza</Portuguese>
+            <Russian>Серый</Russian>
+            <German>Grau</German>
+            <Korean>회색</Korean>
+            <Japanese>灰色</Japanese>
+            <Chinese>灰色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_green">
+            <English>Green</English>
+            <French>Vert</French>
+            <Spanish>Verde</Spanish>
+            <Polish>Zielony</Polish>
+            <Portuguese>Verde</Portuguese>
+            <Russian>Зелёный</Russian>
+            <German>Grün</German>
+            <Korean>초록</Korean>
+            <Japanese>緑</Japanese>
+            <Chinese>綠色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_orange">
+            <English>Orange</English>
+            <French>Orange</French>
+            <Spanish>Naranja</Spanish>
+            <Polish>Pomarańczowy</Polish>
+            <Portuguese>Laranja</Portuguese>
+            <Russian>Оранжевый</Russian>
+            <German>Orange</German>
+            <Korean>주황</Korean>
+            <Japanese>オレンジ</Japanese>
+            <Chinese>橙色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_pink">
+            <English>Pink</English>
+            <French>Rose</French>
+            <Spanish>Rosa</Spanish>
+            <Polish>Różowy</Polish>
+            <Portuguese>Rosa</Portuguese>
+            <Russian>Розовый</Russian>
+            <German>Rosa</German>
+            <Korean>분홍</Korean>
+            <Japanese>ピンク</Japanese>
+            <Chinese>粉紅色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_purple">
+            <English>Purple</English>
+            <French>Violet</French>
+            <Spanish>Morado</Spanish>
+            <Polish>Fioletowy</Polish>
+            <Portuguese>Roxo</Portuguese>
+            <Russian>Фиолетовый</Russian>
+            <German>Lila</German>
+            <Korean>보라</Korean>
+            <Japanese>紫</Japanese>
+            <Chinese>紫色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_red">
+            <English>Red</English>
+            <French>Rouge</French>
+            <Spanish>Rojo</Spanish>
+            <Polish>Czerwony</Polish>
+            <Portuguese>Vermelho</Portuguese>
+            <Russian>Красный</Russian>
+            <German>Rot</German>
+            <Korean>빨강</Korean>
+            <Japanese>赤</Japanese>
+            <Chinese>紅色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_white">
+            <English>White</English>
+            <French>Blanc</French>
+            <Spanish>Blanco</Spanish>
+            <Polish>Biały</Polish>
+            <Portuguese>Branco</Portuguese>
+            <Russian>Белый</Russian>
+            <German>Weiß</German>
+            <Korean>흰색</Korean>
+            <Japanese>白</Japanese>
+            <Chinese>白色</Chinese>
+        </Key>
+        <Key ID="STR_cigs_crayons_aceax_color_yellow">
+            <English>Yellow</English>
+            <French>Jaune</French>
+            <Spanish>Amarillo</Spanish>
+            <Polish>Żółty</Polish>
+            <Portuguese>Amarelo</Portuguese>
+            <Russian>Жёлтый</Russian>
+            <German>Gelb</German>
+            <Korean>노랑</Korean>
+            <Japanese>黄色</Japanese>
+            <Chinese>黃色</Chinese>
+        </Key>
+    </Package>
     <Package name="Items">
         <Key ID="STR_cigs_crayons_crayon">
             <English>Crayon</English>

@@ -20,6 +20,7 @@ Go through every point before telling the user the brand is done. Say which ones
 - [ ] Pack: `scope = 2`, `count` matches the description, `PVAR(item_glasses)` / `PVAR(item_hmd)` name this brand's stage 0 classes.
 - [ ] Every stage has its model and `picture`; only stage 0 is `scope = 2`, the rest `_DEBUG_SCOPE_`.
 - [ ] `stringtable.xml`: every key is `STR_cigs_<brand>_*`, every key has `<English>`, and each `CSTRING(x)` in the configs has a key `STR_cigs_<brand>_x`.
+- [ ] ACE Arsenal Extended: `aceax.hpp` (copied with the brand, uses `COMPONENT`) is included at the end of `config.cpp`, and the brand is in `values[]` and has a value class in `addons/base/aceax.hpp` (`addons/cigars/aceax.hpp` for cigars).
 
 ## Build
 

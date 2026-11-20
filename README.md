@@ -53,6 +53,7 @@ Start at the [documentation overview](docs/README.md), or jump straight to your 
 - S.O.G. Prairie Fire
 - [KJW's Imposters](https://steamcommunity.com/sharedfiles/filedetails/?id=2917554904)
 - [Helmet on Ass - Helmet Slinging](https://steamcommunity.com/sharedfiles/filedetails/?id=3487820370)
+- [ACE3 Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637)
 
 ### For Server Admins
 - This mod has to be loaded on both, server and client. See [Server Admins](docs/server-admins.md).

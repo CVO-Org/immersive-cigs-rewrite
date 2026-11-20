@@ -1,0 +1,10 @@
+Add Stockton cigarettes (international, filter)
+
+New addon stockton, copied from voron (filter template): a mainstream
+American full-flavour brand for international factions and as modern
+western filler. cigs_stockton_cigpack with 20 filter cigarettes,
+17 puffs and flavour lines. Pack art and paper logo are a first pass
+drawn as SVG; texture and gear icons built with texture_compose.py and
+gear_icons.py.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.25  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#30281a" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#30281a" stop-opacity="0.25"/>
+</radialGradient>
+
+<g id="spark">
+  <path d="M70.71,-70.71 L16.00,0.00 L70.71,70.71 L0.00,16.00 L-70.71,70.71 L-16.00,0.00 L-70.71,-70.71 L-0.00,-16.00z" fill="#f29a1f"/>
+  <path d="M0.00,-120.00 L12.73,-12.73 L120.00,0.00 L12.73,12.73 L0.00,120.00 L-12.73,12.73 L-120.00,0.00 L-12.73,-12.73z" fill="#d8381e"/>
+  <circle r="20" fill="#f29a1f"/>
+  <circle r="9" fill="#fff6dc"/>
+</g>
+
+</defs>
+<rect width="361" height="564" fill="#f3efe4"/>
+
+<rect x="0" y="0" width="361" height="52" fill="#1f4e9c"/>
+<rect x="0" y="52" width="361" height="5" fill="#d8381e"/>
+<rect x="0" y="474" width="361" height="5" fill="#d8381e"/>
+<rect x="0" y="479" width="361" height="85" fill="#1f4e9c"/>
+
+<text x="180.5" y="35" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="4" fill="#ffffff">CIGARETY S FILTREM</text>
+<rect x="14" y="192" width="74" height="7" fill="#1f4e9c"/><rect x="28" y="208" width="56" height="7" fill="#1f4e9c"/><rect x="42" y="224" width="38" height="7" fill="#1f4e9c"/>
+<use href="#spark" transform="translate(220.5,215) scale(1.05)"/>
+<text x="180.5" y="392" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="104" font-weight="bold" fill="#163a74"
+      textLength="320" lengthAdjust="spacingAndGlyphs">JISKRA</text>
+<path d="M30 414 H331" stroke="#d8381e" stroke-width="3"/>
+<text x="180.5" y="447" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="21" fill="#a02512">Malá jiskra, plná chuť.</text>
+<text x="180.5" y="520" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="bold" letter-spacing="3" fill="#ffffff">20 CIGARET</text>
+<text x="180.5" y="549" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="17" letter-spacing="2" fill="#f29a1f">Kčs 12,-</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="564" filter="url(#grain)" opacity="0.10"/><rect width="361" height="564" fill="url(#wear)"/></svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.1  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#3a2a10" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#3a2a10" stop-opacity="0.30"/>
+</radialGradient>
+<g id="cockade">
+  <circle r="50" fill="#27408b"/>
+  <circle r="33" fill="#f1ead6"/>
+  <circle r="17" fill="#b3262c"/>
+  <circle r="50" fill="none" stroke="#141d3b" stroke-width="1.5"/>
+</g>
+</defs>
+<rect width="361" height="564" fill="#e2d3a8"/>
+<rect x="0" y="0" width="361" height="58" fill="#1f2d57"/>
+<text x="180.5" y="40" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="27" font-weight="bold" letter-spacing="5" fill="#e2d3a8">TABAC DE TROUPE</text>
+<rect x="0" y="58" width="120.33333333333333" height="10" fill="#27408b"/><rect x="120.33333333333333" y="58" width="120.33333333333333" height="10" fill="#f1ead6"/><rect x="240.66666666666666" y="58" width="120.33333333333333" height="10" fill="#b3262c"/>
+<use href="#cockade" transform="translate(180.5,176) scale(1.62)"/>
+<text x="180.5" y="348" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="86" font-weight="bold" fill="#1f2d57"
+      textLength="326" lengthAdjust="spacingAndGlyphs">COCARDE</text>
+<path d="M30 368 H331" stroke="#b3262c" stroke-width="3"/>
+<text x="180.5" y="398" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="21" fill="#1f2d57">Le tabac du soldat.</text>
+<text x="180.5" y="436" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="3" fill="#1f2d57">TABAC NOIR · CAPORAL</text>
+<g transform="translate(180.5,478) rotate(-4)">
+  <rect x="-118" y="-19" width="236" height="34" fill="none" stroke="#b3262c" stroke-width="3"/>
+  <text x="0" y="7" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="3" fill="#b3262c">RÉSERVÉ AUX ARMÉES</text>
+</g>
+<rect x="0" y="510" width="361" height="54" fill="#1f2d57"/>
+<text x="180.5" y="544" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="2" fill="#e2d3a8">20 CIGARETTES · SANS FILTRE</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.14"/><rect width="361" height="564" filter="url(#grain)" opacity="0.10"/><rect width="361" height="564" fill="url(#wear)"/></svg>

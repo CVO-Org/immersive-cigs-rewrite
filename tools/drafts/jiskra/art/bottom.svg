@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="151" viewBox="0 0 361 151"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.25  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#30281a" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#30281a" stop-opacity="0.25"/>
+</radialGradient>
+
+<g id="spark">
+  <path d="M70.71,-70.71 L16.00,0.00 L70.71,70.71 L0.00,16.00 L-70.71,70.71 L-16.00,0.00 L-70.71,-70.71 L-0.00,-16.00z" fill="#f29a1f"/>
+  <path d="M0.00,-120.00 L12.73,-12.73 L120.00,0.00 L12.73,12.73 L0.00,120.00 L-12.73,12.73 L-120.00,0.00 L-12.73,-12.73z" fill="#d8381e"/>
+  <circle r="20" fill="#f29a1f"/>
+  <circle r="9" fill="#fff6dc"/>
+</g>
+
+</defs>
+<rect width="361" height="151" fill="#1f4e9c"/>
+<path d="M0 20 H361 M0 131 H361" stroke="#d8381e" stroke-width="4"/>
+<text x="180.5" y="70" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">JISKRA</text>
+<text x="180.5" y="102" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#f29a1f">VYROBENO 03/1984 · Kčs 12,-</text>
+<rect width="361" height="151" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="151" filter="url(#grain)" opacity="0.10"/><rect width="361" height="151" fill="url(#wear)"/></svg>

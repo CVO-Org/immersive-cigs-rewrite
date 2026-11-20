@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="151" viewBox="0 0 361 151"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.1  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#3a2a10" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#3a2a10" stop-opacity="0.30"/>
+</radialGradient>
+<g id="cockade">
+  <circle r="50" fill="#27408b"/>
+  <circle r="33" fill="#f1ead6"/>
+  <circle r="17" fill="#b3262c"/>
+  <circle r="50" fill="none" stroke="#141d3b" stroke-width="1.5"/>
+</g>
+</defs>
+<rect width="361" height="151" fill="#1f2d57"/>
+<rect x="0" y="44" width="361" height="62" fill="#e2d3a8"/>
+<path d="M0 46 H361 M0 104 H361" stroke="#b3262c" stroke-width="2" stroke-dasharray="6 4"/>
+<use href="#cockade" transform="translate(40,75) scale(0.42)"/>
+<text x="212" y="71" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2d57" textLength="270" lengthAdjust="spacingAndGlyphs">TABAC DE TROUPE · VENTE INTERDITE</text>
+<text x="212" y="95" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#b3262c">Nº 44 0611 · 20 PCS</text>
+<rect width="361" height="151" filter="url(#blotch)" opacity="0.14"/><rect width="361" height="151" filter="url(#grain)" opacity="0.10"/><rect width="361" height="151" fill="url(#wear)"/></svg>

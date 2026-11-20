@@ -1,0 +1,3 @@
+#define TOTALPUFFS 17
+
+#define SMOKE_COLOR_BONG_SEN 0.27, 0.26, 0.23

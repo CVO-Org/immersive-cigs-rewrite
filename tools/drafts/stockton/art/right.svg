@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="564" viewBox="0 0 151 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.0" />
+</filter>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="1" stop-color="#000000" stop-opacity="0.10"/>
+</linearGradient>
+<g id="mark">
+  <path d="M0 -100 L100 0 L0 100 L-100 0Z" fill="#17295a"/>
+  <path d="M0 -88 L88 0 L0 88 L-88 0Z" fill="#f6f4ee"/>
+  <path d="M0 -76 L76 0 L0 76 L-76 0Z" fill="#c8202d"/>
+  <path d="M0.000,-1.000 L0.235,-0.324 L0.951,-0.309 L0.380,0.124 L0.588,0.809 L0.000,0.400 L-0.588,0.809 L-0.380,0.124 L-0.951,-0.309 L-0.235,-0.324Z" transform="translate(0,4) scale(50)" fill="#f6f4ee"/>
+</g>
+</defs>
+<rect width="151" height="564" fill="#17295a"/>
+<rect x="0" y="0" width="151" height="62" fill="#0c1736"/>
+<rect y="62" width="151" height="6" fill="#c8202d"/>
+<use href="#mark" transform="translate(75.5,118) scale(0.34)"/>
+<g transform="translate(75.5,330) rotate(90)">
+  <text x="0" y="12" text-anchor="middle" font-family="'Arial Black', 'Segoe UI Black', sans-serif" font-size="50" fill="#f6f4ee"
+        textLength="330" lengthAdjust="spacingAndGlyphs">STOCKTON</text>
+  <text x="0" y="46" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="17" font-weight="bold" letter-spacing="4" fill="#b8bfcc">AMERICA'S FULL FLAVOR</text>
+</g>
+<rect y="526" width="151" height="6" fill="#c8202d"/>
+<rect width="151" height="564" filter="url(#grain)" opacity="0.06"/><rect width="151" height="564" fill="url(#sheen)"/></svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.26"/>
+</radialGradient>
+</defs>
+<rect width="361" height="564" fill="#b3292b"/>
+<rect x="0" y="0" width="361" height="48" fill="#f0e6cf"/>
+<text x="180.5" y="33" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="22" fill="#b3292b" font-weight="bold" letter-spacing="9">PAPIEROSY</text>
+<rect x="22" y="70" width="317" height="378" fill="#f0e6cf"/>
+<rect x="30" y="78" width="301" height="362" fill="none" stroke="#b3292b" stroke-width="1.5"/>
+<g transform="translate(172.5,128) rotate(-14) scale(0.72)">
+<g>
+  <path d="M-62 4 H32 V52 L14 42 L-6 52 L-26 42 L-44 52 L-62 42 Z" fill="#b3292b"/>
+  <path d="M-62 30 H32" stroke="#f0e6cf" stroke-width="7"/>
+  <rect x="-104" y="-4" width="160" height="8" fill="#b3292b"/>
+  <rect x="-114" y="-7" width="10" height="14" rx="2" fill="#b3292b"/>
+  <circle cx="-30" cy="0" r="8" fill="#b3292b"/>
+  <circle cx="-30" cy="0" r="3" fill="#f0e6cf"/>
+  <path d="M54 -4 Q86 -6 104 -28 L104 28 Q86 6 54 4 Z" fill="#b3292b"/>
+  <path d="M114 -18 q8 18 0 36 M124 -27 q12 27 0 54 M134 -36 q16 36 0 72" stroke="#b3292b" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g></g>
+<text x="180.5" y="238" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="70" fill="#b3292b" style="font-stretch:condensed; font-variation-settings:'wdth' 75, 'wght' 700; font-weight:700" textLength="200" lengthAdjust="spacingAndGlyphs">HEJNAŁ</text>
+<text x="180.5" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#1d1816" font-style="italic">Na każdą godzinę.</text>
+<text x="180.5" y="318" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="17" fill="#1d1816" >Mieszanka tytoni krajowych</text>
+<text x="180.5" y="340" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="17" fill="#1d1816" >o pełnym, mocnym smaku.</text>
+<path d="M80 366 H281" stroke="#b3292b" stroke-width="1.2"/>
+<text x="180.5" y="398" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="19" fill="#1d1816" font-weight="bold">Palenie tytoniu</text>
+<text x="180.5" y="422" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="19" fill="#1d1816" font-weight="bold">szkodzi zdrowiu.</text>
+<rect x="0" y="472" width="361" height="92" fill="#1d1816"/>
+<path d="M0 472 H361" stroke="#d6a647" stroke-width="3"/>
+<text x="180.5" y="512" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="22" fill="#f0e6cf" font-weight="bold" letter-spacing="3">Cena 24 zł</text>
+<text x="180.5" y="540" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#d6a647" >BN-78/9131-02</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="564" filter="url(#grain)" opacity="0.11"/><rect width="361" height="564" fill="url(#wear)"/></svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="23" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="8" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.2  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#2a2410" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#2a2410" stop-opacity="0.32"/>
+</radialGradient>
+<g id="tiger">
+  <!-- ears -->
+  <circle cx="-64" cy="-66" r="27" fill="#d9822b" stroke="#1d1b16" stroke-width="4"/>
+  <circle cx="64" cy="-66" r="27" fill="#d9822b" stroke="#1d1b16" stroke-width="4"/>
+  <circle cx="-64" cy="-66" r="13" fill="#1d1b16"/>
+  <circle cx="64" cy="-66" r="13" fill="#1d1b16"/>
+  <!-- head -->
+  <ellipse cx="0" cy="0" rx="94" ry="84" fill="#d9822b" stroke="#1d1b16" stroke-width="4"/>
+  <!-- side stripes -->
+  <path d="M-94 -8 L-58 -2 L-92 8z M-90 24 L-52 22 L-84 38z M-82 -34 L-54 -22 L-88 -20z" fill="#1d1b16"/>
+  <path d="M94 -8 L58 -2 L92 8z M90 24 L52 22 L84 38z M82 -34 L54 -22 L88 -20z" fill="#1d1b16"/>
+  <!-- forehead marks -->
+  <path d="M-26 -70 H26 M-20 -56 H20 M-26 -42 H26 M0 -72 V-40" stroke="#1d1b16" stroke-width="6" stroke-linecap="round"/>
+  <path d="M-46 -66 Q-36 -50 -44 -34 M46 -66 Q36 -50 44 -34" stroke="#1d1b16" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- muzzle and cheeks -->
+  <ellipse cx="-30" cy="38" rx="38" ry="28" fill="#efe5c6"/>
+  <ellipse cx="30" cy="38" rx="38" ry="28" fill="#efe5c6"/>
+  <ellipse cx="0" cy="62" rx="22" ry="12" fill="#efe5c6"/>
+  <!-- eyes, slanted -->
+  <path d="M-58 -14 Q-38 -30 -16 -12 Q-38 -4 -58 -14z" fill="#e8d84a" stroke="#1d1b16" stroke-width="3.5"/>
+  <path d="M58 -14 Q38 -30 16 -12 Q38 -4 58 -14z" fill="#e8d84a" stroke="#1d1b16" stroke-width="3.5"/>
+  <ellipse cx="-36" cy="-14" rx="3.5" ry="8" fill="#1d1b16"/>
+  <ellipse cx="36" cy="-14" rx="3.5" ry="8" fill="#1d1b16"/>
+  <path d="M-64 -34 L-14 -20 M64 -34 L14 -20" stroke="#1d1b16" stroke-width="6" stroke-linecap="round"/>
+  <!-- nose and snarling mouth with fangs -->
+  <path d="M-15 12 H15 L0 28z" fill="#7c191c" stroke="#1d1b16" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M0 28 V34" stroke="#1d1b16" stroke-width="3.5"/>
+  <path d="M-32 38 Q0 30 32 38 Q22 70 0 72 Q-22 70 -32 38z" fill="#7c191c" stroke="#1d1b16" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M-24 38 L-18 56 L-12 36z M24 38 L18 56 L12 36z" fill="#ffffff" stroke="#1d1b16" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- whisker dots -->
+  <circle cx="-40" cy="38" r="2.5" fill="#1d1b16"/><circle cx="-52" cy="32" r="2.5" fill="#1d1b16"/><circle cx="-50" cy="46" r="2.5" fill="#1d1b16"/>
+  <circle cx="40" cy="38" r="2.5" fill="#1d1b16"/><circle cx="52" cy="32" r="2.5" fill="#1d1b16"/><circle cx="50" cy="46" r="2.5" fill="#1d1b16"/>
+</g>
+</defs>
+<rect width="361" height="564" fill="#4d5524"/>
+<rect x="10" y="10" width="341" height="544" fill="none" stroke="#d8c99a" stroke-width="2"/>
+<text x="180.5" y="44" text-anchor="middle" font-family="'Malgun Gothic', sans-serif" font-size="18" font-weight="bold" letter-spacing="10" fill="#d8c99a">대한민국</text>
+<rect x="34" y="70" width="293" height="250" fill="#efe5c6"/>
+<rect x="40" y="76" width="281" height="238" fill="none" stroke="#b2262a" stroke-width="2"/>
+<use href="#tiger" transform="translate(180.5,176) scale(0.8)"/>
+<text x="180.5" y="298" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="bold" letter-spacing="7" fill="#b2262a">MAENGHO</text>
+<text x="180.5" y="370" text-anchor="middle" font-family="'Malgun Gothic', sans-serif" font-size="26" font-weight="bold" fill="#efe5c6">용맹한 장병에게</text>
+<text x="180.5" y="404" text-anchor="middle" font-family="'Malgun Gothic', sans-serif" font-size="15" fill="#d8c99a">호랑이처럼 용맹하게</text>
+<path d="M70 428 H291" stroke="#cfae52" stroke-width="2"/>
+<rect x="0" y="482" width="361" height="82" fill="#343a17"/>
+<path d="M0 484 H361" stroke="#cfae52" stroke-width="3"/>
+<text x="180.5" y="518" text-anchor="middle" font-family="'Malgun Gothic', sans-serif" font-size="17" font-weight="bold" letter-spacing="3" fill="#efe5c6">대한민국 제조</text>
+<text x="180.5" y="544" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#cfae52">제 0612 호 · 1967</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.14"/><rect width="361" height="564" filter="url(#grain)" opacity="0.12"/><rect width="361" height="564" fill="url(#wear)"/></svg>

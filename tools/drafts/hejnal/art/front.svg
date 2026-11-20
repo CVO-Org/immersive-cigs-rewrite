@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.26"/>
+</radialGradient>
+</defs>
+<rect width="361" height="564" fill="#b3292b"/>
+<rect x="0" y="0" width="361" height="48" fill="#f0e6cf"/>
+<text x="180.5" y="33" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="22" fill="#b3292b" font-weight="bold" letter-spacing="9">PAPIEROSY</text>
+<rect x="14" y="62" width="333" height="396" fill="none" stroke="#f0e6cf" stroke-width="2"/>
+<rect x="19" y="67" width="323" height="386" fill="none" stroke="#f0e6cf" stroke-width="0.8"/>
+<g transform="translate(166.5,180) rotate(-14) scale(1.15)">
+<g>
+  <path d="M-62 4 H32 V52 L14 42 L-6 52 L-26 42 L-44 52 L-62 42 Z" fill="#f0e6cf"/>
+  <path d="M-62 30 H32" stroke="#b3292b" stroke-width="7"/>
+  <rect x="-104" y="-4" width="160" height="8" fill="#f0e6cf"/>
+  <rect x="-114" y="-7" width="10" height="14" rx="2" fill="#f0e6cf"/>
+  <circle cx="-30" cy="0" r="8" fill="#f0e6cf"/>
+  <circle cx="-30" cy="0" r="3" fill="#b3292b"/>
+  <path d="M54 -4 Q86 -6 104 -28 L104 28 Q86 6 54 4 Z" fill="#f0e6cf"/>
+  <path d="M114 -18 q8 18 0 36 M124 -27 q12 27 0 54 M134 -36 q16 36 0 72" stroke="#f0e6cf" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g></g>
+<text x="180.5" y="382" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="128" fill="#f0e6cf" style="font-stretch:condensed; font-variation-settings:'wdth' 75, 'wght' 700; font-weight:700" textLength="300" lengthAdjust="spacingAndGlyphs">HEJNAŁ</text>
+<path d="M60 404 H301" stroke="#f0e6cf" stroke-width="2"/>
+<text x="180.5" y="436" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="22" fill="#f0e6cf" font-weight="bold" letter-spacing="7">BEZ FILTRA</text>
+<rect x="0" y="472" width="361" height="92" fill="#1d1816"/>
+<path d="M0 472 H361" stroke="#d6a647" stroke-width="3"/>
+<text x="180.5" y="512" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="26" fill="#f0e6cf" font-weight="bold" letter-spacing="5">20 SZTUK</text>
+<text x="180.5" y="542" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="17" fill="#d6a647" letter-spacing="2">Cena 24 zł</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="564" filter="url(#grain)" opacity="0.11"/><rect width="361" height="564" fill="url(#wear)"/></svg>

@@ -1,0 +1,9 @@
+Add Bông Sen cigarettes (Vietnam War era, filterless)
+
+New addon bong_sen, copied from matelot (filterless template):
+cigs_bong_sen_cigpack with 20 filterless cigarettes, 17 puffs, a
+slightly darker smoke and flavour lines. Pack art and paper logo are a
+first pass drawn as SVG; texture and gear icons built with
+texture_compose.py and gear_icons.py.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

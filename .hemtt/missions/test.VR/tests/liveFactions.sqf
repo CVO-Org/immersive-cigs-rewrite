@@ -97,8 +97,8 @@ private _empty = 0;
     ]] call _log;
 } forEach _units;
 
-// restore and clean up
-missionNamespace setVariable ["cigs_aiCigs_module", _module];
+// restore and clean up - _module is nil when the mission had no module, then it stays cleared
+if (!isNil "_module") then { missionNamespace setVariable ["cigs_aiCigs_module", _module]; };
 { deleteVehicle _x } forEach _units;
 
 private _summary = format ["AI cigs live test: %1 units, %2 failed, %3 without packs", count _units, _failed, _empty];

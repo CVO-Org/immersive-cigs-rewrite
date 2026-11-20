@@ -25,6 +25,7 @@ Creative Commons Attribution 4.0 International Public License
 The following Folders are under no license
    - \addons\craven
    - \addons\eckstein
+   - \addons\hwarang
    - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil

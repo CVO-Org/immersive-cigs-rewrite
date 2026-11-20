@@ -15,6 +15,7 @@
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
+| `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
 | `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |

@@ -141,6 +141,16 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### CSLA Iron Curtain
+
+Addon `presets_csla`, active when the CDLC is loaded. `AFMC` has no entry yet and gets the default presets.
+
+| Faction | Packs |
+| ------- | ----- |
+| CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
+| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
+| US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
+
 ## Default pack presets
 
 The packs AI get when the mission has no *Configure AI Cigs* module come from presets in `class cigs_ai_defaultPacks`. A newly placed module also starts with these packs ticked. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for how the sources are prioritised.

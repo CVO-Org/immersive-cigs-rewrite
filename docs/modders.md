@@ -141,6 +141,15 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### Expeditionary Forces
+
+Addon `presets_ef`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
+| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
+
 ## Default pack presets
 
 The packs AI get when the mission has no *Configure AI Cigs* module come from presets in `class cigs_ai_defaultPacks`. A newly placed module also starts with these packs ticked. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for how the sources are prioritised.

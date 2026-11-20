@@ -94,7 +94,7 @@ class CfgFactionClasses {
 
 - **No dependency needed.** These are plain strings, so a faction mod can add them to its own factions without requiring Immersive Cigs.
 - **Classnames that aren't loaded are dropped.** A faction can list packs of optional brands. If none of them are loaded, the faction gets no packs.
-- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Faction Presets*.
+- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Unit and Faction Presets*. A [unit class preset](#unit-class-presets) ranks above them.
 - **Related factions don't share entries.** `BLU_F` and `BLU_T_F` each need their own entry. The exception is config inheritance: a faction class that inherits from another one (e.g. Global Mobilization's `gm_fc_gc_civ: gm_fc_gc`) also inherits its `cigs_packs[]`. Give the child class its own entry if it should get something else.
 
 To add presets to **another mod's** factions, use a compat addon that loads after that mod and is skipped when it's missing:
@@ -116,6 +116,29 @@ class CfgFactionClasses {
 ```
 
 If the faction class has a parent class, declare it with the same parent, or the inheritance breaks.
+
+### Unit class presets
+
+A single unit class can have its own presets, e.g. officers or the civilians of one map. Add the same arrays to its class in `CfgVehicles`. Child classes inherit them through config, like any other property.
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_packs[]` | classes | Packs this unit can get. Replaces the faction's list. An empty array means the unit gets no packs. |
+| `cigs_lighters[]` | classes | Replaces the faction's lighters. Missing or empty: the faction's lighters, or the normal lighter pool. |
+| `cigs_packsExtra[]` | classes | Packs added to the list the unit would get otherwise: its own `cigs_packs[]`, its faction's, or the default presets. |
+
+```cpp
+class CfgVehicles {
+    class MyMod_Soldier_base;
+    class MyMod_Officer: MyMod_Soldier_base {
+        cigs_packsExtra[] = { "cigs_cigars_cigarbox_5" };   // cigars on top of the faction's cigarettes
+    };
+};
+```
+
+- **Where it ranks.** Unit class presets come right before the faction presets and are switched with the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` is only added on these levels and the default presets. When a script, the module, the pack selection or `cigs_aiCigs_api_lesser` decides, it is ignored.
+- **Unloaded classnames are dropped**, as with factions.
+- For another mod's units, use a compat addon as shown above, and declare the unit class with its real parent class.
 
 ### Included faction presets
 

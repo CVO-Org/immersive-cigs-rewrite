@@ -10,8 +10,10 @@
 * 2. aiCigs module                   - HASHMAP per side, set by the module in 3DEN
 * 3. Pack selection CBA settings     - while cigs_ai_set_aiCigs_packSelection_enable is on
 * 4. cigs_aiCigs_api_lesser          - HASHMAP per side, or CODE per unit. CODE returning nil hands this unit to the next level.
-* 5. Faction presets                 - cigs_packs[] of the unit's faction, while cigs_ai_set_aiCigs_configPresets_enable is on
-* 6. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
+* 5. Unit class presets              - cigs_packs[] of the unit's CfgVehicles class, while cigs_ai_set_aiCigs_configPresets_enable is on
+* 6. Faction presets                 - cigs_packs[] of the unit's faction, while cigs_ai_set_aiCigs_configPresets_enable is on
+* 7. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
+* On levels 5-7, the unit class's cigs_packsExtra[] is added to the list.
 *
 * Arguments:
 * 0: Unit <OBJECT>
@@ -48,11 +50,15 @@ private _return = call {
     };
     if ( !isNil "_packs" ) exitWith { _packs };
 
-    // Faction presets - cigs_packs[] in CfgFactionClasses, see fn_getConfigPresets
-    private _configPacks = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { ([_unit] call FUNC(getConfigPresets)) get "packs" } else { nil };
-    if ( !isNil "_configPacks" ) exitWith { _configPacks };
-
-    [EGVAR(aiCigs,default)] call _fromMap
+    // Unit class and faction presets - cigs_packs[] in CfgVehicles, then in CfgFactionClasses, see fn_getConfigPresets
+    // cigs_packsExtra[] of the unit class is added to whichever of these levels decides
+    private _presets = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { [_unit] call FUNC(getConfigPresets) } else { createHashMap };
+    private _configPacks = _presets getOrDefault [ "packs", [EGVAR(aiCigs,default)] call _fromMap ];
+    if !( _configPacks isEqualType [] ) then { _configPacks = [_configPacks]; };
+    private _extra = _presets getOrDefault [ "packsExtra", [] ];
+    if ( _extra isEqualTo [] ) exitWith { _configPacks };
+    _configPacks = _configPacks + _extra;
+    _configPacks arrayIntersect _configPacks
 };
 
 if ( isNil "_return" ) then { _return = []; };

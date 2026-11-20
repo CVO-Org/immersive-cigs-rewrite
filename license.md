@@ -25,10 +25,14 @@ Creative Commons Attribution 4.0 International Public License
 The following Folders are under no license
    - \addons\craven
    - \addons\eckstein
+   - \addons\f6
+   - \addons\ernte_23
    - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
    - \addons\prince
+   - \addons\popularne
+   - \addons\ruby_queen
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.
    - addons\core\data\sounds\cough_0.ogg

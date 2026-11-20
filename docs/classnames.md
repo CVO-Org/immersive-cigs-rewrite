@@ -44,8 +44,11 @@
 
 | Classname | Name | Notes |
 | --------- | ---- | ----- |
-| `cigs_matches` | Matches | |
-| `cigs_lighter` | Lighter | |
+| `cigs_matches` | Matches | 10 uses |
+| `cigs_matches_hunting` | Hunting Matches | 6 uses, burn in wind and water |
+| `cigs_lighter` | Lighter | 100 uses, refillable |
+| `cigs_lighter_cheap` | Disposable Lighter | 15 uses |
+| `cigs_lighter_cricket` | Cricket Lighter | 25 uses |
 | `vn_b_item_lighter_01` | *(S.O.G. name)* | S.O.G. Prairie Fire's own lighter, made usable. Keeps its vanilla ability to set things on fire. |
 
 ## Cigarettes, cigars, lollipops and crayons

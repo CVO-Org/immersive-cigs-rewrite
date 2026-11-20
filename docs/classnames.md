@@ -29,6 +29,7 @@
 | `cigs_popularne_cigpack` | Pack of Popularne | cigarettes (without filter) | Cold War Poland |
 | `cigs_ruby_queen_cigpack` | Pack of Ruby Queen | cigarettes (without filter) | Vietnam War era, Saigon |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
+| `cigs_sparta_cigpack` | Pack of Sparta | cigarettes | Czechoslovakia, 1980s |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |
 | `vn_b_item_cigs_01` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire's own pack, made usable |

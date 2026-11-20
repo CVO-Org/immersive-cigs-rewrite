@@ -23,6 +23,7 @@
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
+| `cigs_prince_cigpack` | Pack of Prince | cigarettes | Denmark, Global Mobilization |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |

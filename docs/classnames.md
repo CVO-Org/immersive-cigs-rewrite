@@ -23,6 +23,7 @@
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
+| `cigs_ruby_queen_cigpack` | Pack of Ruby Queen | cigarettes (without filter) | Vietnam War era, Saigon |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |

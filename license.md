@@ -31,6 +31,7 @@ The following Folders are under no license
    - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
+   - \addons\camel
    - \addons\juno
    - \addons\troupes
    - \addons\casa_sport

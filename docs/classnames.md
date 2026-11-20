@@ -11,6 +11,7 @@
 | `cigs_apollo_cigpack` | Apollo Soyuz Cigarette Pack | cigarettes | |
 | `cigs_baja_blast_cigpack` | Mtn Dew Baja Blast Cigs Pack | cigarettes | tinted smoke |
 | `cigs_black_devil_cigpack` | Black Devil Pink Cigs Pack | cigarettes | |
+| `cigs_camel_cigpack` | Pack of Camel | cigarettes | international, modern western filler |
 | `cigs_casa_sport_cigpack` | Pack of Casa Sports | cigarettes (without filter) | Western Sahara |
 | `cigs_cigars_cigarbox_5` | Box of Cigars | cigars | |
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |

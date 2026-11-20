@@ -16,6 +16,7 @@
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
+| `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
 | `cigs_f6_cigpack` | Pack of f6 | cigarettes | East Germany (GDR), Global Mobilization era |
 | `cigs_ernte_23_cigpack` | Pack of Ernte 23 | cigarettes | West Germany, 1970s-80s (GM) |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |

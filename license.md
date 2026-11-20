@@ -25,6 +25,7 @@ Creative Commons Attribution 4.0 International Public License
 The following Folders are under no license
    - \addons\craven
    - \addons\eckstein
+   - \addons\hwarang
    - \addons\f6
    - \addons\ernte_23
    - \addons\lucky_strike

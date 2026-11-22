@@ -11,7 +11,7 @@ class XtdGearModels {
 
         class brand {
             label = CSTRING(aceax_brand);
-            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "hwarang", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sparta", "troupes", "voron" };
+            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sosna", "sparta", "troupes", "voron", "zamok" };
 
             class alborz       { label = ECSTRING(alborz,cigarette); };
             class almyra       { label = ECSTRING(almyra,cigarette); };
@@ -24,6 +24,7 @@ class XtdGearModels {
             class eckstein     { label = ECSTRING(eckstein,cigarette); };
             class ernte_23     { label = ECSTRING(ernte_23,cigarette); };
             class f6           { label = ECSTRING(f6,cigarette); };
+            class gudok        { label = ECSTRING(gudok,cigarette); };
             class hwarang      { label = ECSTRING(hwarang,cigarette); };
             class juno         { label = ECSTRING(juno,cigarette); };
             class kosmos       { label = ECSTRING(kosmos,cigarette); };
@@ -39,9 +40,11 @@ class XtdGearModels {
             class ruby_queen   { label = ECSTRING(ruby_queen,cigarette); };
             class savage       { label = ECSTRING(savage,cigarette); };
             class shanhai      { label = ECSTRING(shanhai,cigarette); };
+            class sosna        { label = ECSTRING(sosna,cigarette); };
             class sparta       { label = ECSTRING(sparta,cigarette); };
             class troupes      { label = ECSTRING(troupes,cigarette); };
             class voron        { label = ECSTRING(voron,cigarette); };
+            class zamok        { label = ECSTRING(zamok,cigarette); };
         };
     };
 

@@ -76,7 +76,7 @@ Burning fireplaces (`simulation = "fire"`, e.g. `Land_Campfire_F`) work automati
 
 ## Faction presets
 
-A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`:
+A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`. [Brands](readme_brands.md) lists every brand with its era and where it may be used.
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
@@ -124,10 +124,10 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 | Faction | Packs |
 | ------- | ----- |
-| NATO `BLU_F` | Morley, Lucky Strike, Craven "A", Crayons |
-| NATO (Pacific) `BLU_T_F` | Morley, Lucky Strike, Matelot, Crayons |
-| NATO (Woodland) `BLU_W_F` | Morley, Lucky Strike, Lipa, Crayons |
-| CTRG `BLU_CTRG_F` | Craven "A", Morley, NIL |
+| NATO `BLU_F` | Morley, Marlboro, Camel, Crayons |
+| NATO (Pacific) `BLU_T_F` | Morley, Marlboro, Matelot, Crayons |
+| NATO (Woodland) `BLU_W_F` | Morley, Marlboro, Lipa, Crayons |
+| CTRG `BLU_CTRG_F` | Marlboro, Morley, NIL |
 | Gendarmerie `BLU_GEN_F`, `OPF_GEN_F` | Matelot, Morley, NIL |
 | Syndikat `IND_C_F` | Matelot, Black Devil, Baja Blast |
 | AAF `IND_F` | Almyra, Morley, NIL |
@@ -148,8 +148,8 @@ Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians 
 
 | Faction | Packs |
 | ------- | ----- |
-| West Germany `gm_fc_ge` | Ernte 23, Lucky Strike, Morley |
-| Denmark `gm_fc_dk` | Prince, Morley, Lucky Strike, Craven "A" |
+| West Germany `gm_fc_ge` | Ernte 23, Marlboro, Morley |
+| Denmark `gm_fc_dk` | Prince, Morley, Marlboro, Camel |
 | East Germany `gm_fc_gc` | f6, Kosmos, Apollo Soyuz |
 | Poland `gm_fc_pl` | Popularne, Kosmos, Apollo Soyuz |
 | Revolutionaries `gm_fc_xx` | Popularne, f6, Kosmos |
@@ -160,10 +160,10 @@ Addon `presets_sog`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
-| MACV `B_MACV`, US CIA `B_CIA`, US MEDT `B_MEDT` | Lucky Strike, Savage, Morley |
-| Australia `B_AUS`, New Zealand `B_NZ` | Craven "A", Savage, Morley |
-| Republic Of Korea `B_ROK` | Hwarang, Lucky Strike, Savage |
-| ARVN `I_ARVN` | Ruby Queen, Lucky Strike, Savage |
+| MACV `B_MACV`, US CIA `B_CIA`, US MEDT `B_MEDT` | Marlboro, Camel, Savage, Morley |
+| Australia `B_AUS`, New Zealand `B_NZ` | Camel, Savage, Morley |
+| Republic Of Korea `B_ROK` | Hwarang, Marlboro, Savage |
+| ARVN `I_ARVN` | Ruby Queen, Marlboro, Savage |
 | Royal Lao Army `I_LAO`, FANK `I_CAM`, Vietnamese `C_VIET` | Ruby Queen, Savage, Morley |
 | PAVN `O_PAVN`, Viet Cong `O_VC`, Pathet Lao `O_PL`, Khmer Rouge `O_CAM` | Ruby Queen, Kosmos, Savage |
 
@@ -174,9 +174,9 @@ Addon `presets_csla`, active when the CDLC is loaded.
 | Faction | Packs |
 | ------- | ----- |
 | CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
-| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
-| Armed Forces of the Midland Coalition `AFMC` | Gudok, Zamok, Sosna, Craven "A", Marlboro, Camel |
-| US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
+| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Marlboro |
+| Armed Forces of the Midland Coalition `AFMC` | Gudok, Zamok, Sosna, Marlboro, Camel |
+| US '85 `US85`, `US85_DES` | Marlboro, Morley, Camel |
 
 #### Western Sahara
 
@@ -186,9 +186,9 @@ Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of
 | ------- | ----- |
 | SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Black Devil, Morley |
 | Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Black Devil, Mtn Dew Baja Blast |
-| ION Services `BLU_ION_lxWS` | Camel, Morley, Lucky Strike |
-| UNA `BLU_UN_lxWS` | Camel, Morley, Craven "A" |
-| NATO (Desert) `BLU_NATO_lxWS` | Morley, Lucky Strike, Craven "A", Crayons |
+| ION Services `BLU_ION_lxWS` | Camel, Morley, Marlboro |
+| UNA `BLU_UN_lxWS` | Camel, Morley, Prince |
+| NATO (Desert) `BLU_NATO_lxWS` | Morley, Marlboro, Camel, Crayons |
 
 #### Spearhead 1944
 
@@ -209,8 +209,8 @@ Addon `presets_ef`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
-| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
-| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
+| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Matelot, Morley, Marlboro, Crayons |
+| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Morley, Marlboro |
 
 ## Terrain presets
 
@@ -231,19 +231,21 @@ class cigs_terrainPacks {
 
 ### Included terrain presets
 
+Each terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era, then international brands that fit the era. Units pick 1–3 at random. No gag brands and no Voron, as these reach civilians and soldiers alike. The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only appear on the 1940s terrains.
+
 Every vanilla military and guerrilla faction has its own faction preset, so these reach the civilians and mod factions without a preset. VR has no entry.
 
 | Terrain | Packs |
 | ------- | ----- |
-| Altis `Altis`, Stratis `Stratis` | Almyra, Morley, NIL |
-| Malden `Malden` | Troupes, Matelot, Morley |
-| Tanoa `Tanoa` | Matelot, Morley, NIL |
-| Livonia `Enoch` | Lipa, Lipa Dzwonek, NIL |
-| Weferlingen (Global Mobilization) `gm_weferlingen_summer`, `gm_weferlingen_winter` | f6, Ernte 23, Kosmos |
-| Cam Lao Nam, Khe Sanh, The Bra (S.O.G. Prairie Fire) `Cam_Lao_Nam`, `vn_khe_sanh`, `vn_the_bra` | Ruby Queen, Savage, Lucky Strike |
-| Stožec (CSLA Iron Curtain) `Stozec` | Sparta, Kosmos, Apollo Soyuz |
-| Sefrou-Ramal (Western Sahara) `SefrouRamal` | Casa Sports, Camel, Morley |
-| Normandy, Mortain (Spearhead 1944) `SPE_Normandy`, `SPE_Mortain` | Troupes, Matelot, Eckstein |
+| Altis `Altis`, Stratis `Stratis` | Almyra, Morley, Marlboro, Camel, NIL |
+| Malden `Malden` | Matelot, Morley, Marlboro, Camel, NIL |
+| Tanoa `Tanoa` | Matelot, Morley, Shanhai, Marlboro, Camel, NIL |
+| Livonia `Enoch` | Lipa, Lipa Dzwonek, Popularne, Marlboro, Camel, NIL |
+| Weferlingen (Global Mobilization) `gm_weferlingen_summer`, `gm_weferlingen_winter` | f6, Ernte 23, Kosmos, Apollo Soyuz, Marlboro |
+| Cam Lao Nam, Khe Sanh, The Bra (S.O.G. Prairie Fire) `Cam_Lao_Nam`, `vn_khe_sanh`, `vn_the_bra` | Ruby Queen, Savage, Marlboro, Camel, Kosmos |
+| Stožec (CSLA Iron Curtain) `Stozec` | Sparta, Kosmos, Apollo Soyuz, Popularne, f6 |
+| Sefrou-Ramal (Western Sahara) `SefrouRamal` | Casa Sports, Camel, Marlboro, Morley |
+| Normandy, Mortain (Spearhead 1944) `SPE_Normandy`, `SPE_Mortain` | Troupes, Matelot, Eckstein, Juno, Lucky Strike, Craven "A", Camel |
 
 The CDLC entries need no dependency: they only apply while that terrain is loaded. The CDLC factions keep their own faction presets, so these reach the other factions on the terrain. Expeditionary Forces and Reaction Forces bring no terrain.
 

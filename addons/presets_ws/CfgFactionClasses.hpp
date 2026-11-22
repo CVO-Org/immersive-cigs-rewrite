@@ -19,12 +19,12 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ International
     class BLU_ION_lxWS {    // ION Services
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class BLU_UN_lxWS {     // UNA
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(craven,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(prince,cigpack) };
     };
     class BLU_NATO_lxWS {   // NATO (Desert)
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(craven,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
     };
 };

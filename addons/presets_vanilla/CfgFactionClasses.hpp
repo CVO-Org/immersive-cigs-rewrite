@@ -12,16 +12,16 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ NATO
     class BLU_F {           // NATO
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(craven,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_T_F {         // NATO (Pacific)
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(matelot,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(matelot,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_W_F {         // NATO (Woodland)
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(lipa,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(lipa,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_CTRG_F {      // CTRG
-        PVAR(packs)[] = { QEGVAR(craven,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Tanoa

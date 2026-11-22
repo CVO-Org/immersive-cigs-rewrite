@@ -32,4 +32,45 @@ class PVAR(terrainPacks) {
     class Enoch {           // Livonia
         packs[] = { QEGVAR(lipa,cigpack), QEGVAR(lipa_dzwonek,cigpack), QEGVAR(nil,cigpack) };
     };
+
+    // ------------------------------------------------------------------------ CDLC terrains
+    // Plain entries, no dependency: they only apply while the terrain is loaded.
+    // The CDLC factions have their own faction presets (presets_<cdlc>), so these reach the other factions on the terrain.
+
+    // Global Mobilization - Weferlingen, on the inner German border
+    class gm_weferlingen_summer {
+        packs[] = { QEGVAR(f6,cigpack), QEGVAR(ernte_23,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class gm_weferlingen_winter {
+        packs[] = { QEGVAR(f6,cigpack), QEGVAR(ernte_23,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+
+    // S.O.G. Prairie Fire - Vietnam
+    class Cam_Lao_Nam {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(lucky_strike,cigpack) };
+    };
+    class vn_khe_sanh {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(lucky_strike,cigpack) };
+    };
+    class vn_the_bra {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(lucky_strike,cigpack) };
+    };
+
+    // CSLA Iron Curtain - Stozec, Czechoslovakia 1980s
+    class Stozec {
+        packs[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(apollo,cigpack) };
+    };
+
+    // Western Sahara - Sefrou-Ramal
+    class SefrouRamal {
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+    };
+
+    // Spearhead 1944 - occupied France
+    class SPE_Normandy {
+        packs[] = { QEGVAR(troupes,cigpack), QEGVAR(matelot,cigpack), QEGVAR(eckstein,cigpack) };
+    };
+    class SPE_Mortain {
+        packs[] = { QEGVAR(troupes,cigpack), QEGVAR(matelot,cigpack), QEGVAR(eckstein,cigpack) };
+    };
 };

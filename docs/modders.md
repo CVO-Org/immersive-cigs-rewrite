@@ -239,6 +239,13 @@ Every vanilla military and guerrilla faction has its own faction preset, so thes
 | Malden `Malden` | Troupes, Matelot, Morley |
 | Tanoa `Tanoa` | Matelot, Morley, NIL |
 | Livonia `Enoch` | Lipa, Lipa Dzwonek, NIL |
+| Weferlingen (Global Mobilization) `gm_weferlingen_summer`, `gm_weferlingen_winter` | f6, Ernte 23, Kosmos |
+| Cam Lao Nam, Khe Sanh, The Bra (S.O.G. Prairie Fire) `Cam_Lao_Nam`, `vn_khe_sanh`, `vn_the_bra` | Ruby Queen, Savage, Lucky Strike |
+| Stožec (CSLA Iron Curtain) `Stozec` | Sparta, Kosmos, Apollo Soyuz |
+| Sefrou-Ramal (Western Sahara) `SefrouRamal` | Casa Sports, Camel, Morley |
+| Normandy, Mortain (Spearhead 1944) `SPE_Normandy`, `SPE_Mortain` | Troupes, Matelot, Eckstein |
+
+The CDLC entries need no dependency: they only apply while that terrain is loaded. The CDLC factions keep their own faction presets, so these reach the other factions on the terrain. Expeditionary Forces and Reaction Forces bring no terrain.
 
 ## Default pack presets
 

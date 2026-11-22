@@ -62,9 +62,10 @@ private _equip = {
 };
 
 // Waits until the consume loop has stopped (loopData is cleared by loopStop). Returns the seconds it took, -1 on timeout.
+// 70 s: without the event the loop's own check comes after 20-30 s divided by the smoking frequency setting.
 private _waitStopped = {
     private _t = time;
-    waitUntil { sleep 0.5; isNil { _unit getVariable "cigs_loopData" } || { time - _t > 40 } };
+    waitUntil { sleep 0.5; isNil { _unit getVariable "cigs_loopData" } || { time - _t > 70 } };
     sleep 2;    // the drop happens in loopStop, give the animation and the weapon holder a moment
     [-1, round (time - _t)] select (isNil { _unit getVariable "cigs_loopData" })
 };
@@ -89,7 +90,9 @@ private _case = {
             [_type, _swapTo] call _equip;
         };
         case "out": {
-            if (_type isEqualTo "GOGGLES") then { removeGoggles _unit; _unit addItem _item } else { _unit unassignItem _item };
+            // unassignItem doesn't take this NVG item out, so remove it and add it to the inventory, as with the goggles
+            if (_type isEqualTo "GOGGLES") then { removeGoggles _unit } else { _unit unlinkItem _item };
+            _unit addItem _item;
         };
         case "stop": {
             _unit setVariable ["cigs_isConsuming", false, true];    // what the put out / stop action does
@@ -104,7 +107,10 @@ private _case = {
     private _took = call _waitStopped;
     if (_took < 0) exitWith {
         _results pushBack [_name, false];
-        [format ["FAIL  %1  - the loop didn't stop within 40 s", _name]] call _log;
+        [format ["FAIL  %1  - the loop didn't stop within 70 s (slot: %2)", _name, [_type] call _slot]] call _log;
+        // stop it, so the next case can start
+        _unit setVariable ["cigs_isConsuming", false, true];
+        call _waitStopped;
     };
 
     private _slotNow = [_type] call _slot;

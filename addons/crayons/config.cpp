@@ -36,5 +36,3 @@ class CfgPatches {
 
 #include "pops_glasses.hpp"
 #include "pops_hmd.hpp"
-
-#include "aceax.hpp"

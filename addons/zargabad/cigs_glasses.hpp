@@ -5,7 +5,7 @@ class CfgGlasses {
     class EGVAR(base,cigBase);
 
     class GVAR(cig0): EGVAR(base,cigBase) {
-        scope = 2;
+        scope = 1;  // hidden without ACE Arsenal Extended; compat_aceax shows it with AAE
         author = CSTRING(author);
 
         displayName = CSTRING(cigarette);

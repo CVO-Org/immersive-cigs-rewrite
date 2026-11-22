@@ -35,5 +35,3 @@ class CfgPatches {
 #include "cigs_glasses.hpp"
 #include "cigs_hmd.hpp"
 #include "cigpack.hpp"
-
-#include "aceax.hpp"

@@ -6,7 +6,7 @@ class CfgWeapons {
 
     class GVAR(crayon_black_nv): EGVAR(pops,popBase_nv) {
         //Meta Data
-        scope = 2;
+        scope = 1;  // hidden without ACE Arsenal Extended; compat_aceax shows it with AAE
         author = CSTRING(author);
 
         displayName = CSTRING(crayon);

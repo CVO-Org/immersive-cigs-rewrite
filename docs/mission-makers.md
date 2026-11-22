@@ -66,7 +66,7 @@ Without a module (and without the script variable), these defaults are used:
 | GUER | Mtn Dew Baja Blast, Black Devil |
 | CIV | Morley, Lollipops, NIL, Apollo Soyuz, Kosmos, Mtn Dew Baja Blast, Black Devil, Crayons |
 
-With **S.O.G. Prairie Fire** loaded, every side gets Savage cigarettes instead.
+The S.O.G. Prairie Fire factions get their packs from faction presets instead (Savage, Ruby Queen and others). See [Modders](modders.md#included-faction-presets).
 
 The defaults are presets in config, so other mods can add their own. See [Modders](modders.md#default-pack-presets). To check what's active in your setup, run `[] call cigs_ai_fnc_getDefaultPacks` in the debug console.
 

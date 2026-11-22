@@ -16,3 +16,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Validate Config
       run: python tools/validate_config.py
+    - name: Check every model has a model.cfg entry
+      run: python tools/check_model_cfg.py

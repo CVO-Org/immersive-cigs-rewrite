@@ -13,6 +13,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\apollo
    - \addons\cigars
    - \addons\gudok
+   - \addons\jaffudi
    - \addons\kosmos
    - \addons\lipa
    - \addons\lipa_dzwonek

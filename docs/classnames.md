@@ -21,6 +21,7 @@
 | `cigs_f6_cigpack` | Pack of f6 | cigarettes | East Germany (GDR), Global Mobilization era |
 | `cigs_gudok_cigpack` | Pack of Gudok | cigarettes (without filter) | Chernarus, 1980s, cheap domestic |
 | `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
+| `cigs_jaffudi_cigpack` | Pack of Jaffudi | cigarettes | Takistan, kingdom era (1960s-80s), royal brand |
 | `cigs_juno_cigpack` | Pack of Juno | cigarettes (without filter) | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |

@@ -249,6 +249,21 @@ Every vanilla military and guerrilla faction has its own faction preset, so thes
 
 The CDLC entries need no dependency: they only apply while that terrain is loaded. The CDLC factions keep their own faction presets, so these reach the other factions on the terrain. Expeditionary Forces and Reaction Forces bring no terrain.
 
+Mod terrains, also without a dependency. They are all modern settings, so Kosmos and the WW2 looks stay out:
+
+| Terrain | Packs |
+| ------- | ----- |
+| Chernarus, Chernarus (Summer), Chernarus (Winter), Utes (CUP) `chernarus`, `chernarus_summer`, `Chernarus_Winter`, `utes`<br>Chernarus 2020 (CUP Maps 2.0) `cup_chernarus_A3`<br>Namalsk `namalsk` | Gudok, Zamok, Sosna, Apollo Soyuz, Marlboro, Camel |
+| Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| Zargabad (CUP) `zargabad`, Zargabad 2025 (CUP Maps 2.0) `cup_Zargabad_a3` | Zargabad, Jaffudi, Sharig, Marlboro, Camel |
+| Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi (CUP) `sara`, `saralite`, `sara_dbe1`, `porto`, `intro` | Morley, Marlboro, Camel, NIL |
+| Bystrica, Bukovina (CUP) `Woodland_ACR`, `Bootcamp_ACR` | Sparta, Marlboro, Camel, Morley, NIL |
+| Ruha `ruha`, Virolahti `vt7` | Prince, Marlboro, Camel, Morley, NIL |
+| Kujari `tem_kujari` | Casa Sports, Marlboro, Camel, Morley, NIL |
+| Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
+| Napf `Napf`, `NapfWinter` | NIL, Marlboro, Camel, Morley |
+| Pulau `pulau`, Prei Khmaoch Luong `rhspkl`, Lingor `lingor3`, Dingor `dingor`, Mull of Kintyre `rof_mok` | Marlboro, Camel, Morley, NIL |
+
 ## Default pack presets
 
 The packs AI get when the mission has no *Configure AI Cigs* module come from presets in `class cigs_ai_defaultPacks`. A newly placed module also starts with these packs ticked. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for how the sources are prioritised.

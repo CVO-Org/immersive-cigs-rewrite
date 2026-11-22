@@ -86,4 +86,142 @@ class PVAR(terrainPacks) {
     class SPE_Mortain {
         packs[] = { QEGVAR(troupes,cigpack), QEGVAR(matelot,cigpack), QEGVAR(eckstein,cigpack), QEGVAR(juno,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(craven,cigpack), QEGVAR(camel,cigpack) };
     };
+
+    // ------------------------------------------------------------------------ Mod terrains
+    // Plain entries, no dependency: they only apply while the terrain is loaded. All of these are modern settings,
+    // so the Cold War Eastern Bloc filler (Kosmos) and the WW2 looks stay out.
+    // Terrains without a brand of their own region get the international filler (Morley, Marlboro, Camel, NIL).
+
+    // CUP Terrains - Maps: Chernarus, Utes - post-Soviet Chernarus
+    class chernarus {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class chernarus_summer {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Chernarus_Winter {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class utes {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // CUP Terrains - Maps: Takistan, Zargabad, Takistan Mountains, Desert, Shapur, Proving Grounds - Takistan
+    class takistan {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class zargabad {
+        packs[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Mountains_ACR {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Desert_E {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Shapur_BAF {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class ProvingGrounds_PMC {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // CUP Terrains - Maps: Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi - no Sahrani brand yet
+    class sara {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class saralite {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class sara_dbe1 {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class porto {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class intro {                                   // Rahmadi
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // CUP Terrains - Maps: Bystrica, Bukovina - Czech Republic
+    class Woodland_ACR {                            // Bystrica
+        packs[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class Bootcamp_ACR {                            // Bukovina
+        packs[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // CUP Terrains - Maps 2.0: Chernarus 2020, Zargabad 2025
+    class cup_chernarus_A3 {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class cup_Zargabad_a3 {
+        packs[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // Namalsk - island north of Chernarus
+    class namalsk {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // Lythium, Kunduz River, Uzbin Valley, North Takistan - Central Asia, Takistan brands
+    class lythium {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class kunduz_valley {                           // Kunduz River
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class uzbin {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class NorthTakistan {
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // Ruha, Virolahti - Finland. Prince stands in as the Nordic brand
+    class ruha {
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class vt7 {                                     // Virolahti
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Kujari - Sahel, West Africa. Casa Sports as the nearest regional brand
+    class tem_kujari {
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Rosche - northern West Germany
+    class WL_Rosche {
+        packs[] = { QEGVAR(ernte_23,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+    };
+
+    // Napf - Switzerland. NIL as the alpine neighbour
+    class Napf {
+        packs[] = { QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+    };
+    class NapfWinter {
+        packs[] = { QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+    };
+
+    // Pulau, Prei Khmaoch Luong - Southeast Asia, no modern brand of the region yet
+    class pulau {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class rhspkl {                                  // Prei Khmaoch Luong
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Lingor, Dingor - South America, no brand of the region yet
+    class lingor3 {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class dingor {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Mull of Kintyre - Scotland, no British brand yet
+    class rof_mok {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
 };

@@ -141,6 +141,17 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### Global Mobilization
+
+Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.
+
+| Faction | Packs |
+| ------- | ----- |
+| West Germany `gm_fc_ge` | Ernte 23, Lucky Strike, Morley |
+| Denmark `gm_fc_dk` | Prince, Morley, Lucky Strike, Craven "A" |
+| East Germany `gm_fc_gc` | f6, Kosmos, Apollo Soyuz |
+| Poland `gm_fc_pl` | Popularne, Kosmos, Apollo Soyuz |
+| Revolutionaries `gm_fc_xx` | Popularne, f6, Kosmos |
 #### S.O.G. Prairie Fire
 
 Addon `presets_sog`, active when the CDLC is loaded.

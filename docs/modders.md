@@ -212,6 +212,24 @@ Addon `presets_ef`, active when the CDLC is loaded.
 | MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Matelot, Morley, Marlboro, Crayons |
 | MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Morley, Marlboro |
 
+#### RHS
+
+Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Parliament, Newport and Drina are planned brands (issues #358, #359, #357, #361): until they are in the mod, those packs are dropped and the rest of the list is used.
+
+| Faction | Packs |
+| ------- | ----- |
+| Russia `rhs_faction_msv` (+ VDV, VDV 1945, VMF, VV, TV, VPVO, VVS, RVA) | Belomorkanal, Parliament, Kosmos, Apollo Soyuz, Marlboro |
+| Eastern Militia `rhs_faction_insurgents` | Gudok, Belomorkanal, Zamok, Kosmos |
+| US Army `rhs_faction_usarmy` (+ USMC, USAF, USN, SOCOM, woodland and desert variants) | Marlboro, Camel, Newport, Morley |
+| CDF Ground Forces, Air Forces, National Guard `rhsgref_faction_cdf_ground`, `_air`, `_ng` (+ `_b`) | Zamok, Sosna, Gudok, Marlboro |
+| NAPA `rhsgref_faction_nationalist` | Sosna, Gudok, Marlboro |
+| ChDKZ `rhsgref_faction_chdkz` (+ `_g`) | Gudok, Belomorkanal, Kosmos |
+| United Nations `rhsgref_faction_un` | Camel, Morley, Prince |
+| Horizon Islands Defence Force `rhsgref_faction_hidf` | Matelot, Marlboro, Morley |
+| Tanoan Liberation Army `rhsgref_faction_tla` (+ `_g`) | Matelot, Black Devil Pink, Mtn Dew Baja Blast |
+| Serbian Army, Air Force `rhssaf_faction_army`, `_airforce` (+ `_opfor`) | Drina, Marlboro, Camel |
+| Serbian UN contingent `rhssaf_faction_un` | Drina, Camel, Prince |
+
 ## Terrain presets
 
 Units whose faction has no faction preset get the packs that are locally available on the current terrain, whatever their side. This is mainly for civilians: vanilla `CIV_F` is one faction for Altis, Tanoa and Livonia, so only the terrain can say which brands are local. Add a class named after the terrain's `worldName` to `cigs_terrainPacks`:

@@ -141,6 +141,18 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### Spearhead 1944
+
+Addon `presets_spe`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| Wehrmacht `SPE_WEHRMACHT`, Sturmtroopers `SPE_STURM` | Eckstein, Juno |
+| La Milice `SPE_MILICE` | Troupes, Eckstein, Juno |
+| French Interior Forces `SPE_FFI` | Troupes, Matelot, Lucky Strike |
+| French Liberation Army `SPE_FR_ARMY` | Troupes, Lucky Strike, Craven "A" |
+| 40s Civilians `SPE_CIV` | Troupes, Matelot, Eckstein |
+| US Army `SPE_US_ARMY` | Lucky Strike, Morley, Craven "A" |
 #### Expeditionary Forces
 
 Addon `presets_ef`, active when the CDLC is loaded.

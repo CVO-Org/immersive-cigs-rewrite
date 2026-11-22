@@ -49,11 +49,10 @@ workshop = [
     "1613905318", # Emitter 3Ditor
 ]
 
-# All CDLCs - to read the faction classes for the faction presets
+# All CDLCs but Contact (singleplayer only; its freemium content loads without it) - to read the faction classes for the faction presets
 [factions]
 extends = "base"
 dlc = [
-    "Contact",
     "Global Mobilization",
     "S.O.G. Prairie Fire",
     "CSLA Iron Curtain",

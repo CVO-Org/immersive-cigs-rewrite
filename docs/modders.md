@@ -141,6 +141,15 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### CSLA Iron Curtain
+
+Addon `presets_csla`, active when the CDLC is loaded. `AFMC` has no entry yet and gets the default presets.
+
+| Faction | Packs |
+| ------- | ----- |
+| CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
+| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
+| US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
 #### Global Mobilization
 
 Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.

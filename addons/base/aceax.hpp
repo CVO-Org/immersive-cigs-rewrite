@@ -41,7 +41,7 @@ class XtdGearModels {
             class popularne    { label = ""; image = QPATHTOEF(popularne,data\ui\aceax_logo_ca.paa); description = ECSTRING(popularne,cigarette); };
             class prince       { label = ""; image = QPATHTOEF(prince,data\ui\aceax_logo_ca.paa); description = ECSTRING(prince,cigarette); };
             class ruby_queen   { label = ""; image = QPATHTOEF(ruby_queen,data\ui\aceax_logo_ca.paa); description = ECSTRING(ruby_queen,cigarette); };
-            class savage       { label = ""; image = "\vn\weapons_f_vietnam\ui\icon_vn_b_item_cigs_01_ca.paa"; description = ECSTRING(savage,cigarette); };
+            class savage       { label = "Savage"; description = ECSTRING(savage,cigarette); };    // no logo: its pack is S.O.G.'s, and AAE draws the button even without the CDLC
             class shanhai      { label = ""; image = QPATHTOEF(shanhai,data\ui\aceax_logo_ca.paa); description = ECSTRING(shanhai,cigarette); };
             class sosna        { label = ""; image = QPATHTOEF(sosna,data\ui\aceax_logo_ca.paa); description = ECSTRING(sosna,cigarette); };
             class sparta       { label = ""; image = QPATHTOEF(sparta,data\ui\aceax_logo_ca.paa); description = ECSTRING(sparta,cigarette); };

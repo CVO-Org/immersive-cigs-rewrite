@@ -24,7 +24,7 @@ from gear_icons import PACK_FRONT, hemtt_convert
 
 SIZE = 256
 MODEL = os.path.join("addons", "base", "aceax.hpp")
-SKIP = {"savage"}  # uses the S.O.G. pack icon, its pack is the DLC's
+SKIP = {"savage"}  # its pack is S.O.G.'s (no texture here); its button keeps a text label
 
 
 def brands():

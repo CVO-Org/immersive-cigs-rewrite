@@ -30,6 +30,8 @@ Settle these with the user before touching files. Don't invent them:
 
 Copy the folder named in `references/item-types.md` to `addons/<brand>/`, without `data/UI/*.paa` and `data/texture.paa` of the old brand (you make new ones). Don't copy the shared cigarette or cigar models: they live in `addons/base/data/` and take the brand's texture through `hiddenSelectionsTextures[]`.
 
+Keep the copied `data/model.cfg` next to the pack model. It gives the model its own CfgModels entry; without it the model falls back to the engine's global default, which other mods can break. CI (`tools/check_model_cfg.py`) fails a brand without it.
+
 ## 2. Rename
 
 Replace the old brand everywhere inside the new folder, and nowhere else:

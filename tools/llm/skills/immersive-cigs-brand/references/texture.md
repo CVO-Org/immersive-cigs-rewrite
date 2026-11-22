@@ -48,7 +48,9 @@ The inventory icon shows the front, the right side and the top flap. Put the bra
 | `--pack-colour #rrggbb` | the card colour behind faces you leave out |
 | `--paper-logo` | a PNG with transparency, fitted into 54 x 72 px at the logo spot. Draw it upright, with text and mark stacked, and pass `--paper-logo-rotate -90`: that turns its top towards the filter. `90` would turn it towards the burnt end. Add `--paper-logo-u 300` for a filterless cigarette. |
 | `--paper #rrggbb` | tints the paper and the filter's white band, keeping the paper grain |
-| `--filter` | `#rrggbb` tints the cork, `white` makes a plain white filter, a picture replaces u 391-591 |
+| `--filter` | `#rrggbb` tints the cork, `white` makes a plain white filter, a picture replaces u 391-591 (rows 41-217, so 200 x 176 px) |
+
+**Rings on the tipping** (a coloured line where the cork meets the paper, as on Jaffudi or Sharig): compose once with the cork tint, crop u 391-591 x v 41-217 from the PNG, paint the rings into that crop with Pillow (x 40-45 of the crop is the ring at u 431-437), and compose again with the crop as `--filter <picture>` and `--paa`. The PAA then still comes from the script.
 | `--out`, `--paa` | the PNG to write, and the PAA (`addons/<brand>/data/texture.paa`) |
 
 It starts from a clean copy of `addons/base/data/texture.paa` with every print removed, so the paper grain, the cork, the tobacco end and the ash are always right.

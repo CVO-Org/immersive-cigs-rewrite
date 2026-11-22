@@ -81,3 +81,22 @@ Or do it by hand in Object Builder:
 #### 4.3.4 Save
 
 #### 4.3.5 Repeat
+
+
+## 5. ACE Arsenal Extended
+With [ACE Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637) loaded, the arsenal groups all cigarettes into one entry with a brand and a stage selector. Your brand needs three things to show up there:
+1. `aceax.hpp` in your addon folder (it comes with the copy), included at the end of `config.cpp`. It uses `COMPONENT`, so there's nothing to rename.
+2. Your brand in `addons/base/aceax.hpp` (cigars: `addons/cigars/aceax.hpp`): its name in `values[]`, and a value class like the others, with `label = ""`, `image` pointing at your `data\ui\aceax_logo_ca.paa` and `description = ECSTRING(~youraddon~,cigarette)`.
+3. The logo, the flat pack front for the button:
+
+```powershell
+python tools/gear_icons/aceax_logos.py --only ~youraddon~ --apply
+```
+
+`hemtt launch aceax` starts the game with it. Without ACE Arsenal Extended these classes do nothing, so your addon doesn't depend on it.
+
+## 6. Check and PR
+- `hemtt check` must pass. It also bumps the build number in `addons/main/script_version.hpp`; leave that out of your commit.
+- Add your pack to [classnames.md](classnames.md) and your folder to the root `license.md`.
+- One PR per brand, titled `Brand - New: <Brand> cigarettes (<region>)`, label `pr/new`.
+- Should AI units of a faction smoke your brand? The faction presets (`addons/presets_*`, see [Modders](modders.md)) are a separate PR.

@@ -92,5 +92,7 @@ Fix every error and warning in your addon. Go through `references/checklist.md`,
 - PAAs are written by the scripts (`--paa`, `--apply`) or `hemtt utils paa convert`, which won't overwrite: delete the old PAA first.
 - Text files use CRLF, 4 spaces, UTF-8. Edit files with backslashes (paths, macros) with the Edit/Write tools, not with `sed` or `echo`.
 - New user-facing text goes into `stringtable.xml`.
-- Don't change `addons/base/`, `addons/core/`, `addons/main/` or `addons/cigars/` for a new brand. If it seems necessary, stop and ask.
+- Don't change `addons/base/`, `addons/core/`, `addons/main/` or `addons/cigars/` for a new brand, except the brand's value in `addons/cigars/aceax.hpp` (ACE Arsenal Extended, see the checklist). If more seems necessary, stop and ask.
+- `hemtt check` bumps the build number in `addons/main/script_version.hpp`: don't commit it.
+- One PR per brand. Brand PRs open at the same time conflict on `values[]` in `addons/cigars/aceax.hpp`: stack them or rebase after each merge. Faction presets (`addons/presets_*`) are a PR of their own; ask the user.
 - A PR to this repository follows `CONTRIBUTING.md`: title `Brand - New: Add <Brand> cigars`, label `pr/new`.

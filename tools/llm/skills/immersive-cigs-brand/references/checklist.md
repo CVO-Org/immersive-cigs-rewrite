@@ -13,6 +13,8 @@ Go through every point before telling the user the brand is done. Say which ones
 - [ ] No PNG, PSD or preview left in `addons/<brand>/` that the user didn't ask for.
 - [ ] Root `license.md` lists the folder under its licence.
 - [ ] `docs/classnames.md` lists `cigs_<brand>_cigpack` (alphabetical), with what it contains.
+- [ ] `data/UI/aceax_logo_ca.paa` exists (`aceax_logos.py --apply`), and you looked at its preview.
+- [ ] The only file changed outside `addons/<brand>/` besides `license.md` and `docs/classnames.md` is `addons/base/aceax.hpp`. `addons/main/script_version.hpp`, `README.md` and `mod.cpp`, which `hemtt check` touches, are not in the commit.
 
 ## Config
 
@@ -33,4 +35,9 @@ Go through every point before telling the user the brand is done. Say which ones
 - [ ] Cigarette icons: the logo sits next to the filter and survives into `cig3`; the stages differ by length and the lit tip.
 - [ ] Paper logo: its top points towards the filter (mouth end without a filter), not towards the lit end; text and mark are stacked along the cigarette. Without a filter, it sits a bit away from the mouth end (u 273-327).
 - [ ] Texture: no face upside down or mirrored compared with `guide.png`.
-- [ ] Tell the user what to look at in game (`hemtt launch`): the pack on the ground and in the inventory, taking a cigarette out, lighting it, all five stages, the smoke.
+- [ ] AAE logo: the pack front, upright, readable as a small square button.
+- [ ] Tell the user what to look at in game (`hemtt launch`): the pack on the ground and in the inventory, taking a cigarette out, lighting it, all five stages, the smoke, the flavour line, and the brand button in ACE Arsenal Extended (`hemtt launch aceax`).
+
+## Afterwards
+
+- [ ] Asked the user whether the brand goes into an AI faction preset (`addons/presets_*`), as its own PR.

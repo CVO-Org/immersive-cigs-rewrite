@@ -34,6 +34,7 @@
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
 | `cigs_popularne_cigpack` | Pack of Popularne | cigarettes (without filter) | Cold War Poland |
 | `cigs_prince_cigpack` | Pack of Prince | cigarettes | Denmark, Global Mobilization |
+| `cigs_prism_cigpack` | Pack of Prism | cigarettes | Pride brand, no faction |
 | `cigs_ruby_queen_cigpack` | Pack of Ruby Queen | cigarettes (without filter) | Vietnam War era, Saigon |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_sharig_cigpack` | Pack of Sharig | cigarettes | Takistan / Sharig Plateau, 1970s oil boom |

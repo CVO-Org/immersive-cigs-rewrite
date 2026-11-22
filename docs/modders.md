@@ -141,6 +141,14 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+#### Expeditionary Forces
+
+Addon `presets_ef`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
+| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
 #### Western Sahara
 
 Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.

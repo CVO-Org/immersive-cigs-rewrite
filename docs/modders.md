@@ -141,46 +141,6 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
-#### Spearhead 1944
-
-Addon `presets_spe`, active when the CDLC is loaded.
-
-| Faction | Packs |
-| ------- | ----- |
-| Wehrmacht `SPE_WEHRMACHT`, Sturmtroopers `SPE_STURM` | Eckstein, Juno |
-| La Milice `SPE_MILICE` | Troupes, Eckstein, Juno |
-| French Interior Forces `SPE_FFI` | Troupes, Matelot, Lucky Strike |
-| French Liberation Army `SPE_FR_ARMY` | Troupes, Lucky Strike, Craven "A" |
-| 40s Civilians `SPE_CIV` | Troupes, Matelot, Eckstein |
-| US Army `SPE_US_ARMY` | Lucky Strike, Morley, Craven "A" |
-#### Expeditionary Forces
-
-Addon `presets_ef`, active when the CDLC is loaded.
-
-| Faction | Packs |
-| ------- | ----- |
-| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
-| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
-#### Western Sahara
-
-Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.
-
-| Faction | Packs |
-| ------- | ----- |
-| SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Black Devil, Morley |
-| Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Black Devil, Mtn Dew Baja Blast |
-| ION Services `BLU_ION_lxWS` | Camel, Morley, Lucky Strike |
-| UNA `BLU_UN_lxWS` | Camel, Morley, Craven "A" |
-| NATO (Desert) `BLU_NATO_lxWS` | Morley, Lucky Strike, Craven "A", Crayons |
-#### CSLA Iron Curtain
-
-Addon `presets_csla`, active when the CDLC is loaded. `AFMC` has no entry yet and gets the default presets.
-
-| Faction | Packs |
-| ------- | ----- |
-| CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
-| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
-| US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
 #### Global Mobilization
 
 Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.
@@ -192,6 +152,7 @@ Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians 
 | East Germany `gm_fc_gc` | f6, Kosmos, Apollo Soyuz |
 | Poland `gm_fc_pl` | Popularne, Kosmos, Apollo Soyuz |
 | Revolutionaries `gm_fc_xx` | Popularne, f6, Kosmos |
+
 #### S.O.G. Prairie Fire
 
 Addon `presets_sog`, active when the CDLC is loaded.
@@ -204,6 +165,50 @@ Addon `presets_sog`, active when the CDLC is loaded.
 | ARVN `I_ARVN` | Ruby Queen, Lucky Strike, Savage |
 | Royal Lao Army `I_LAO`, FANK `I_CAM`, Vietnamese `C_VIET` | Ruby Queen, Savage, Morley |
 | PAVN `O_PAVN`, Viet Cong `O_VC`, Pathet Lao `O_PL`, Khmer Rouge `O_CAM` | Ruby Queen, Kosmos, Savage |
+
+#### CSLA Iron Curtain
+
+Addon `presets_csla`, active when the CDLC is loaded. `AFMC` has no entry yet and gets the default presets.
+
+| Faction | Packs |
+| ------- | ----- |
+| CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
+| FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
+| US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
+
+#### Western Sahara
+
+Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.
+
+| Faction | Packs |
+| ------- | ----- |
+| SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Black Devil, Morley |
+| Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Black Devil, Mtn Dew Baja Blast |
+| ION Services `BLU_ION_lxWS` | Camel, Morley, Lucky Strike |
+| UNA `BLU_UN_lxWS` | Camel, Morley, Craven "A" |
+| NATO (Desert) `BLU_NATO_lxWS` | Morley, Lucky Strike, Craven "A", Crayons |
+
+#### Spearhead 1944
+
+Addon `presets_spe`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| Wehrmacht `SPE_WEHRMACHT`, Sturmtroopers `SPE_STURM` | Eckstein, Juno |
+| La Milice `SPE_MILICE` | Troupes, Eckstein, Juno |
+| French Interior Forces `SPE_FFI` | Troupes, Matelot, Lucky Strike |
+| French Liberation Army `SPE_FR_ARMY` | Troupes, Lucky Strike, Craven "A" |
+| 40s Civilians `SPE_CIV` | Troupes, Matelot, Eckstein |
+| US Army `SPE_US_ARMY` | Lucky Strike, Morley, Craven "A" |
+
+#### Expeditionary Forces
+
+Addon `presets_ef`, active when the CDLC is loaded.
+
+| Faction | Packs |
+| ------- | ----- |
+| MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
+| MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
 
 ## Default pack presets
 

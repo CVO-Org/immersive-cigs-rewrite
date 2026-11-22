@@ -39,6 +39,7 @@
 | `cigs_sparta_cigpack` | Pack of Sparta | cigarettes | Czechoslovakia, 1980s |
 | `cigs_troupes_cigpack` | Pack of Troupes | cigarettes (without filter) | WW2, French army issue |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
+| `cigs_zamok_cigpack` | Pack of Zamok | cigarettes | Chernarus, 1980s, premium domestic filter |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |
 | `vn_b_item_cigs_01` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire's own pack, made usable |
 

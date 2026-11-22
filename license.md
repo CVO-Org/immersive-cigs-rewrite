@@ -23,6 +23,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\shanhai
    - \addons\sosna
    - \addons\voron
+   - \addons\zamok
 
 The following Folders are under no license
    - \addons\baja_blast

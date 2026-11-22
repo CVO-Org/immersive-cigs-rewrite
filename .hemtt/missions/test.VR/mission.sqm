@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1731.8846,17.004261,5209.4971};
-		dir[]={-0.59276593,-0.3467505,-0.72690624};
-		up[]={-0.21913776,0.93795741,-0.26872766};
-		aside[]={-0.77498853,-1.4901161e-08,0.63197535};
+		pos[]={1710.4202,12.059563,5189.019};
+		dir[]={-0.28916636,-0.42860967,-0.85596895};
+		up[]={-0.13717866,0.90348977,-0.406066};
+		aside[]={-0.94740266,5.0938979e-08,0.32005545};
 	};
 };
 binarizationWanted=0;
@@ -237,7 +237,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -4142,6 +4142,7 @@ class Mission
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=378;
 		};

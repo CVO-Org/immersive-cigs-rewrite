@@ -16,6 +16,7 @@ Every script has `--help`.
 | Script | What it does |
 | --- | --- |
 | [`gear_icons.py`](gear_icons.py) | Renders a cigarette brand's pack icon and cig0..4 icons from its `texture.paa`. |
+| [`aceax_logos.py`](aceax_logos.py) | Cuts each cigarette brand's flat pack front, or cigar brand's box front, out of its texture as `aceax_logo_ca.paa`, the picture on its ACE Arsenal Extended brand button. |
 | [`render_pack.py`](render_pack.py) | Renders the 3/4 pack icon from any texture with the cigarette pack's UV layout, such as the crayon pack. |
 | [`icon_sheet.py`](icon_sheet.py) | Puts icons side by side: an overview of brands, or any set of PAA/PNG icons. |
 | [`strips.py`](strips.py) | Shows the cigarette strips of several textures on one sheet and prints where each paper logo sits. |

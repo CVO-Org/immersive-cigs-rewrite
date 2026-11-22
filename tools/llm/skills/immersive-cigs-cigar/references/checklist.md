@@ -20,6 +20,7 @@ Go through every point before telling the user the cigar brand is done. Say whic
 - [ ] Box: `scope = 2`, `count` matches the description, `PVAR(item_glasses) = QGVAR(cigar0)`, `PVAR(item_hmd) = QGVAR(cigar0_nv)`.
 - [ ] Both `cigar_glasses.hpp` and `cigar_hmd.hpp`: every stage has `QPATH_BASE_MODEL_CIGARn` and `gear_cigarn_x_ca.paa`; `hiddenSelectionsTextures[]` uses `QPATH_TEXTURE_CIGAR` twice; only stage 0 is `scope = 2`.
 - [ ] `stringtable.xml`: every key is `STR_cigs_<brand>_*` with an `<English>` text, and each `CSTRING(x)` in the configs has its key.
+- [ ] ACE Arsenal Extended: `aceax.hpp` (copied from `papa_schultz`, uses `COMPONENT`) is included at the end of `config.cpp`, and the brand is in `values[]` and has a value class in `addons/cigars/aceax.hpp`, with `label = ""`, `image` pointing at its `data\ui\aceax_logo_ca.paa` and `description = ECSTRING(<brand>,cigar)`. Write the logo, the box front, with `python tools/gear_icons/aceax_logos.py --only <brand> --apply` once the brand is in `values[]`.
 
 ## Build
 

@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="cigs_base">
+    <Package name="ACE Arsenal Extended">
+        <Key ID="STR_cigs_base_aceax_brand">
+            <English>Brand</English>
+            <French>Marque</French>
+            <Spanish>Marca</Spanish>
+            <Polish>Marka</Polish>
+            <Portuguese>Marca</Portuguese>
+            <Russian>Марка</Russian>
+            <German>Marke</German>
+            <Korean>브랜드</Korean>
+            <Japanese>銘柄</Japanese>
+            <Chinese>品牌</Chinese>
+        </Key>
+        <Key ID="STR_cigs_base_aceax_cigarette">
+            <English>Cigarette</English>
+            <French>Cigarette</French>
+            <Spanish>Cigarrillo</Spanish>
+            <Polish>Papieros</Polish>
+            <Portuguese>Cigarro</Portuguese>
+            <Russian>Сигарета</Russian>
+            <German>Zigarette</German>
+            <Korean>담배</Korean>
+            <Japanese>紙巻たばこ</Japanese>
+            <Chinese>香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_base_aceax_stage">
+            <English>Stage</English>
+            <French>Stade</French>
+            <Spanish>Etapa</Spanish>
+            <Polish>Etap</Polish>
+            <Portuguese>Estágio</Portuguese>
+            <Russian>Стадия</Russian>
+            <German>Stufe</German>
+            <Korean>단계</Korean>
+            <Japanese>段階</Japanese>
+            <Chinese>阶段</Chinese>
+        </Key>
+    </Package>
     <Package name="Items">
         <Key ID="STR_cigs_base_cigarette">
             <English>Base Cigarette</English>

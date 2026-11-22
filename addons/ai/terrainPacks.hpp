@@ -88,9 +88,10 @@ class PVAR(terrainPacks) {
     };
 
     // ------------------------------------------------------------------------ Mod terrains
-    // Plain entries, no dependency: they only apply while the terrain is loaded. All of these are modern settings,
-    // so the Cold War Eastern Bloc filler (Kosmos) and the WW2 looks stay out.
+    // Plain entries, no dependency: they only apply while the terrain is loaded. Modern settings first, so the
+    // Cold War Eastern Bloc filler (Kosmos) and the WW2 looks stay out; the Vietnam War terrains follow at the end.
     // Terrains without a brand of their own region get the international filler (Morley, Marlboro, Camel, NIL).
+    // Empty test maps (VEU Expanses) get no entry, like VR.
 
     // CUP Terrains - Maps: Chernarus, Utes - post-Soviet Chernarus
     class chernarus {
@@ -212,7 +213,10 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Lingor, Dingor - South America, no brand of the region yet
+    // Lingor, Dingor, Colombia - South America, no brand of the region yet
+    class UMB_Colombia {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
     class lingor3 {
         packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
@@ -223,5 +227,211 @@ class PVAR(terrainPacks) {
     // Mull of Kintyre - Scotland, no British brand yet
     class rof_mok {
         packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Ivanivkova, Korsac, Lesser Swamp, Project Raid, Vereskovo - Ukraine and the Black Sea coast, post-Soviet like Chernarus
+    class Ivanivokova {                             // Ivanivkova
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class VTF_Korsac {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class VTF_Korsac_Winter {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class ST_Swamp {                                // Lesser Swamp
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class RaidMap {                                 // Project Raid
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Vereskovo {
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+
+    // Yulakia, Lybor, Leskovets - fictional Eastern Europe, no brand of the region yet
+    class yulakia {
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+    };
+    class VTF_Lybor {
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+    };
+    class VTF_Lybor_Winter {
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+    };
+    class pja314 {                                  // G.O.S Leskovets, Bulgaria
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+    };
+
+    // Sumava - Czech Republic
+    class brf_sumava {
+        packs[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Drakovac - Croatia, no Balkan brand yet
+    class drakovac {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Maksniemi, Stubbhult, Archie, Mehland, Tria - Finland, Sweden, Norway. Prince stands in as the Nordic brand
+    class Maksniemi {
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class stubbhult {
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class archie_w {                                // Archie, Winter
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class mehland {
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class jns_tria {                                // Tria
+        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel
+    class green_valley {
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class juju_kalahari {                           // Niakala
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand
+    class pja310 {
+        packs[] = { QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Sa'hatra - Iraq and Kuwait, 2003, no brand of the region yet
+    class juju_sahatra {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Sehreno - a take on Sahrani, no Sahrani brand yet
+    class Sehreno {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // Djalka (South Georgia), Kaska - remote islands, no brand of the region
+    class K9S_Djalka {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class kaska {
+        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // ------------------------------------------------------------------------ Mod terrains, Vietnam War
+    // Same packs as the S.O.G. terrains. Savage drops out without S.O.G. Prairie Fire.
+
+    // Hue 1968, Tien Giang, Fox Hutan, Pamai, Vanam - Vietnam and Cambodia
+    class Hue {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class rtbf_tien_giang {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class fox_hutan {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class fox_pamai {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class fox_vanam {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+
+    // November-Seven - Laos
+    class rtbf_november_seven {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+
+    // S.O.G. Nickel Steel - Dong Giang, Rung Sat
+    class dong_giang {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class vnx_rssz {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+
+    // UNSUNG - Lowlands, Da Krong, Rung Sat, Song Bin Tanh, Ba Long, Dak Pek
+    class csj_lowlands {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class DaKrong {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class RungSat {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class song_bin_tanh {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class urx_jnd_balong {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+    class urx_jnd_dakpek {
+        packs[] = { QEGVAR(ruby_queen,cigpack), QEGVAR(savage,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(kosmos,cigpack) };
+    };
+
+    // ------------------------------------------------------------------------ Mod terrains, science fiction
+    // 26th century and later: only the timeless packs. Officers get Papa Schultz at unit class level, not here.
+
+    // Operation TREBUCHET, OPTRE First Contact - Halo worlds
+    class OPTRE_Arcadia {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Archipelago {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class Glassed {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Installation04 {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Snowlands {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Wetlands {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class Blood_OPTRE {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_EridanusSecundus {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Gridlock {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Harvest {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_iberius {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Kholo {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Madrigal {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Phobos {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Roost {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class OPTRE_Sandstorm {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
+    // The Kuiper Engagements - Europa, Ganymede
+    class TKE_Ext_Europa {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+    class TKE_Ext_Ganymede {
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 };

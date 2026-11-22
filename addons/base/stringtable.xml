@@ -25,6 +25,18 @@
             <Japanese>紙巻たばこ</Japanese>
             <Chinese>香菸</Chinese>
         </Key>
+        <Key ID="STR_cigs_base_aceax_stage">
+            <English>Stage</English>
+            <French>Stade</French>
+            <Spanish>Etapa</Spanish>
+            <Polish>Etap</Polish>
+            <Portuguese>Estágio</Portuguese>
+            <Russian>Стадия</Russian>
+            <German>Stufe</German>
+            <Korean>단계</Korean>
+            <Japanese>段階</Japanese>
+            <Chinese>阶段</Chinese>
+        </Key>
     </Package>
     <Package name="Items">
         <Key ID="STR_cigs_base_cigarette">

@@ -168,12 +168,13 @@ Addon `presets_sog`, active when the CDLC is loaded.
 
 #### CSLA Iron Curtain
 
-Addon `presets_csla`, active when the CDLC is loaded. `AFMC` has no entry yet and gets the default presets.
+Addon `presets_csla`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
 | CSLA `CSLA`, `CSLA_DES`, Civilians `CSLA_CIV` | Sparta, Kosmos, Apollo Soyuz |
 | FIA `FIA`, `FIA_DES` | Sparta, Kosmos, Lucky Strike |
+| Armed Forces of the Midland Coalition `AFMC` | Gudok, Zamok, Sosna, Craven "A", Marlboro, Camel |
 | US '85 `US85`, `US85_DES` | Lucky Strike, Morley, Craven "A" |
 
 #### Western Sahara

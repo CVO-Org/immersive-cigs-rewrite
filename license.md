@@ -22,6 +22,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\pops
    - \addons\shanhai
    - \addons\voron
+   - \addons\zamok
 
 The following Folders are under no license
    - \addons\baja_blast

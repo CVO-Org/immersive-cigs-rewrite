@@ -41,7 +41,9 @@ Replace the old brand everywhere inside the new folder, and nowhere else:
 - `config.cpp`: `authors[]`, and `requiredAddons[]` if the item type needs more
 - `cigpack.hpp`: `count` and the pack description's number
 - `defines.hpp`: `TOTALPUFFS` / `SUCKS_TOTAL`
-- `license.md`: keep or replace with the user's licence, then add the folder to the matching list in the root `license.md`
+- `license.md`: keep or replace with the user's licence, then add the folder to the matching list in the root `license.md`. An invented brand keeps the template's CC BY 4.0 `license.md` and goes under "Creative Commons Attribution 4.0". A real brand (a real product's name and pack) gets no `license.md` and goes under "The following Folders are under no license".
+- `aceax.hpp`: nothing to rename, it uses `COMPONENT`. Keep it and its `#include` at the end of `config.cpp`; the brand's value in the shared model comes in step 5.
+- Optional: `PVAR(flavor)[] = { "...", ... };` on `cig0` in both `cigs_glasses.hpp` and `cigs_hmd.hpp`, the line shown after lighting up. Most brands have four.
 
 Then search the new folder for the old name (`grep -ri <old> addons/<brand>`). The only hits left should be none.
 
@@ -79,13 +81,23 @@ Read `.hemttout/icons/<brand>/preview.png` and check it against "What to check" 
 
 `gear_icons.py` only does cigarette brands. Cigars have `cigar_icons.py` (see the cigar skill); for suckables, see `references/item-types.md`.
 
-A cigarette brand also needs its ACE Arsenal Extended logo, the flat pack front for its brand button. Once the brand is in `values[]` of `addons/base/aceax.hpp` (step 6's checklist), write it with:
+### ACE Arsenal Extended
 
-```powershell
-python tools/gear_icons/aceax_logos.py --only <brand> --apply
-```
+Every cigarette brand shows up in ACE Arsenal Extended (AAE) as one button of the shared cigarette model. That takes three things; a brand without them is missing from the AAE selector:
+1. `aceax.hpp` in the brand folder (copied in step 1), included at the end of `config.cpp`. It maps all five stages, facewear and NVG item, to the model.
+2. The brand in the shared model `addons/base/aceax.hpp`: its name in `values[]` (alphabetical) and a value class next to the others, also alphabetical:
+   ```cpp
+   class <brand> { label = ""; image = QPATHTOEF(<brand>,data\ui\aceax_logo_ca.paa); description = ECSTRING(<brand>,cigarette); };
+   ```
+   This is the one edit in `addons/base/` a new brand makes. Use the Edit tool (backslashes).
+3. The logo, the flat pack front for the button. Once the brand is in `values[]`, write it:
+   ```powershell
+   python tools/gear_icons/aceax_logos.py --only <brand> --out .hemttout/aceax
+   python tools/gear_icons/aceax_logos.py --only <brand> --out .hemttout/aceax --apply
+   ```
+   Read `.hemttout/aceax/preview.png` after the first command; `--apply` writes `addons/<brand>/data/UI/aceax_logo_ca.paa`.
 
-This writes `addons/<brand>/data/UI/aceax_logo_ca.paa`; its value class in `addons/base/aceax.hpp` uses it as `image`, with an empty `label` and the full name as `description`.
+Without AAE these classes are plain config data and do nothing, so the brand needs no dependency on it.
 
 ## 6. Check it
 
@@ -93,7 +105,15 @@ This writes `addons/<brand>/data/UI/aceax_logo_ca.paa`; its value class in `addo
 hemtt check
 ```
 
-Fix every error and warning in your addon. Then go through `references/checklist.md`, add the pack to `docs/classnames.md`, and tell the user to try it in game: `hemtt launch` opens the test mission. You can't test in game yourself; say so instead of claiming it works.
+Fix every error and warning in your addon. `hemtt check` also bumps the build number in `addons/main/script_version.hpp` (and may touch `README.md` / `mod.cpp`): don't commit those, `git checkout` them. Then go through `references/checklist.md`, add the pack to `docs/classnames.md`, and tell the user to try it in game: `hemtt launch` opens the test mission, `hemtt launch aceax` adds ACE Arsenal Extended for the brand button. You can't test in game yourself; say so instead of claiming it works.
+
+## 7. AI faction presets
+
+The AI Cigs presets give factions their brands: `addons/presets_vanilla` and one `addons/presets_<cdlc>` per CDLC (`docs/modders.md` explains the classes). Ask the user whether the new brand belongs to a faction there. If it does, that's its own PR after the brand is merged, not part of the brand PR. Don't add a preset for a faction from a mod the repository has no preset addon for (CUP, RHS and the like); say so instead.
+
+## 8. The PR
+
+One PR per brand, so each gets its own changelog line. Title `Brand - New: <Brand> cigarettes (<region>)`, label `pr/new`, body as in `CONTRIBUTING.md`. Every brand adds to the same `values[]` line in `addons/base/aceax.hpp`, so two brand PRs open at once conflict there. When you build several brands, branch each from the previous one (stacked) and say in the PRs that they merge in order, or rebase the later ones after each merge.
 
 ## Rules
 
@@ -102,5 +122,5 @@ Fix every error and warning in your addon. Then go through `references/checklist
 - `texture_fix.py` edits a committed PAA in place. Running it twice applies the fix twice. Use `--dry-run` and `--input` to chain fixes on a PNG and convert once.
 - Text files use CRLF, 4 spaces, UTF-8 (`.editorconfig`). Edit files with backslashes (paths, macros) with the Edit/Write tools, not with `sed` or `echo`.
 - New user-facing text goes into `stringtable.xml`, never into the config directly.
-- Don't change anything in `addons/base/`, `addons/core/` or `addons/main/` for a new brand. If a brand seems to need it, stop and ask.
-- A PR to this repository follows `CONTRIBUTING.md`: title `Brand - New: Add <Brand> cigarettes`, label `pr/new`.
+- Don't change anything in `addons/base/`, `addons/core/` or `addons/main/` for a new brand, except the brand's value in `addons/base/aceax.hpp` (step 5). If a brand seems to need more, stop and ask.
+- A PR to this repository follows `CONTRIBUTING.md` (step 8).

@@ -79,6 +79,14 @@ Read `.hemttout/icons/<brand>/preview.png` and check it against "What to check" 
 
 `gear_icons.py` only does cigarette brands. Cigars have `cigar_icons.py` (see the cigar skill); for suckables, see `references/item-types.md`.
 
+A cigarette brand also needs its ACE Arsenal Extended logo, the flat pack front for its brand button. Once the brand is in `values[]` of `addons/base/aceax.hpp` (step 6's checklist), write it with:
+
+```powershell
+python tools/gear_icons/aceax_logos.py --only <brand> --apply
+```
+
+This writes `addons/<brand>/data/UI/aceax_logo_ca.paa`; its value class in `addons/base/aceax.hpp` uses it as `image`, with an empty `label` and the full name as `description`.
+
 ## 6. Check it
 
 ```powershell

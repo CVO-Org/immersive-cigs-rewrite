@@ -29,6 +29,16 @@ A brand without a `data/cigpack.p3d` (for example `savage`) only gets the five c
 
 Cigar brands have their own renderer, `cigar_icons.py`, which draws the box and the five cigar stages from the models.
 
+### ACE Arsenal Extended logo
+
+With ACE Arsenal Extended loaded, every cigarette brand is a button in the arsenal's brand selector, which shows the brand's flat pack front: `data/UI/aceax_logo_ca.paa`, 256 × 256, the front centred on a transparent square. [`tools/gear_icons/aceax_logos.py`](../tools/gear_icons/aceax_logos.py) cuts it from the texture:
+
+```powershell
+python tools/gear_icons/aceax_logos.py --only <brand>
+```
+
+Without `--only` it does every brand in `addons/base/aceax.hpp`. It writes PNGs and a `preview.png` of the buttons to `.hemttout/aceax_logos/`; add `--apply` to write the PAAs.
+
 The same folder has helper scripts: a texture builder that places one picture per pack face (`texture_compose.py`), overview sheets, cigarette strip and logo finder, texture fixes, a pack renderer for non-brand packs, and readers for the `.p3d` models. See [tools/gear_icons/README.md](../tools/gear_icons/README.md).
 
 ## The pack icon

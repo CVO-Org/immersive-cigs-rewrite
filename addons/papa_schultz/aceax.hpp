@@ -1,5 +1,5 @@
 // ACE Arsenal Extended (AAE) compat: adds this addon's items (every burn stage) to the cigar model, see cigars\aceax.hpp.
-// Plain config data only - without AAE these classes are unused, so no dependency is needed.
+// Included by compat_aceax\config.cpp, which only loads with AAE.
 // AAE only offers items that are in the arsenal: the burn stages show in dev builds, in release builds they're scope 1.
 
 class XtdGearInfos {

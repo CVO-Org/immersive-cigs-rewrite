@@ -1,5 +1,5 @@
 // ACE Arsenal Extended (AAE) compat: groups all cigars into one arsenal entry with a brand and a stage selector.
-// Plain config data only - without AAE these classes are unused, so no dependency is needed.
+// Included by compat_aceax\config.cpp, which only loads with AAE.
 // Each cigar brand adds its own items to this model in its aceax.hpp (XtdGearInfos). A new brand needs its value here too.
 
 class XtdGearModels {

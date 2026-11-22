@@ -6,7 +6,7 @@ class CfgGlasses {
 
     class GVAR(crayon_black): EGVAR(pops,popBase) {
         // Vanilla Data
-        scope = 2;
+        scope = 1;  // hidden without ACE Arsenal Extended; compat_aceax shows it with AAE
         author = CSTRING(author);
         mass = 0.2;
 

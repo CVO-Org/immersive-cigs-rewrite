@@ -85,7 +85,7 @@ Or do it by hand in Object Builder:
 
 ## 5. ACE Arsenal Extended
 With [ACE Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637) loaded, the arsenal groups all cigarettes into one entry with a brand and a stage selector. Your brand needs three things to show up there:
-1. `aceax.hpp` in your addon folder (it comes with the copy), included at the end of `config.cpp`. It uses `COMPONENT`, so there's nothing to rename.
+1. `compat_aceax/config.cpp` and `aceax.hpp` in your addon folder (both come with the copy). They use `COMPONENT`, so there's nothing to rename. Your stage 0 cigarette (`cig0`, `cig0_nv`) is `scope = 1`, hidden from the arsenal and the Eden lists; the sub-config only loads with ACE Arsenal Extended, sets it back to `scope = 2` and includes `aceax.hpp`.
 2. Your brand in `addons/base/aceax.hpp` (cigars: `addons/cigars/aceax.hpp`): its name in `values[]`, and a value class like the others, with `label = ""`, `image` pointing at your `data\ui\aceax_logo_ca.paa` and `description = ECSTRING(~youraddon~,cigarette)`.
 3. The logo, the flat pack front for the button:
 
@@ -93,7 +93,7 @@ With [ACE Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?
 python tools/gear_icons/aceax_logos.py --only ~youraddon~ --apply
 ```
 
-`hemtt launch aceax` starts the game with it. Without ACE Arsenal Extended these classes do nothing, so your addon doesn't depend on it.
+`hemtt launch aceax` starts the game with it. Without ACE Arsenal Extended the sub-config is dropped (`skipWhenMissingDependencies`), so your addon doesn't depend on it.
 
 ## 6. Check and PR
 - `hemtt check` must pass. It also bumps the build number in `addons/main/script_version.hpp`; leave that out of your commit.

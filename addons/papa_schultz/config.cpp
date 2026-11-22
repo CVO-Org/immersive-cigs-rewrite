@@ -35,5 +35,3 @@ class CfgPatches {
 #include "cigar_hmd.hpp"
 
 #include "cigarpack.hpp"
-
-#include "aceax.hpp"

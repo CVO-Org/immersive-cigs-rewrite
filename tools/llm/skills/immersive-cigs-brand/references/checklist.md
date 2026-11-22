@@ -20,9 +20,9 @@ Go through every point before telling the user the brand is done. Say which ones
 
 - [ ] `config.cpp`: `authors[]` has the user; `requiredAddons[]` has `cigs_base` (and `cigs_cigars` for cigars); `units[]` and `weapons[]` use the template's macros.
 - [ ] Pack: `scope = 2`, `count` matches the description, `PVAR(item_glasses)` / `PVAR(item_hmd)` name this brand's stage 0 classes.
-- [ ] Every stage has its model and `picture`; only stage 0 is `scope = 2`, the rest `_DEBUG_SCOPE_`.
+- [ ] Every stage has its model and `picture`; stage 0 (`cig0`, `cig0_nv`) is `scope = 1`, the rest `_DEBUG_SCOPE_`.
 - [ ] `stringtable.xml`: every key is `STR_cigs_<brand>_*`, every key has `<English>`, and each `CSTRING(x)` in the configs has a key `STR_cigs_<brand>_x`.
-- [ ] ACE Arsenal Extended: `aceax.hpp` (copied with the brand, uses `COMPONENT`) is included at the end of `config.cpp`, and the brand is in `values[]` and has a value class in `addons/base/aceax.hpp` (`addons/cigars/aceax.hpp` for cigars). A cigarette brand's value class has `label = ""`, `image` pointing at its `data\ui\aceax_logo_ca.paa` (made by `tools/gear_icons/aceax_logos.py`) and `description = ECSTRING(<brand>,cigarette)`.
+- [ ] ACE Arsenal Extended: `compat_aceax/config.cpp` (copied with the brand) sets `cig0` / `cig0_nv` to `scope = 2` and includes `..\aceax.hpp`; `config.cpp` doesn't include `aceax.hpp`. The brand is in `values[]` and has a value class in `addons/base/aceax.hpp` (`addons/cigars/aceax.hpp` for cigars). A cigarette brand's value class has `label = ""`, `image` pointing at its `data\ui\aceax_logo_ca.paa` (made by `tools/gear_icons/aceax_logos.py`) and `description = ECSTRING(<brand>,cigarette)`.
 
 ## Build
 

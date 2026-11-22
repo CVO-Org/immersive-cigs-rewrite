@@ -1,5 +1,5 @@
 // ACE Arsenal Extended (AAE) compat: groups all crayons into one arsenal entry with a color selector.
-// Plain config data only - without AAE these classes are unused, so no dependency is needed.
+// Included by compat_aceax\config.cpp, which only loads with AAE.
 
 class XtdGearModels {
     class GVAR(crayonBase) {

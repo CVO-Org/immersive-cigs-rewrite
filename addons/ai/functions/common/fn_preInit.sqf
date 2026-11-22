@@ -32,6 +32,9 @@ addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 // Resolved from the presets in config, see defaultPacks.hpp - shared with the default selection of the aiCigs module
 EGVAR(aiCigs,default) = [] call FUNC(getDefaultPacks);
 
+// Terrain presets of the current terrain, see terrainPacks.hpp
+EGVAR(aiCigs,terrain) = [] call FUNC(getTerrainPacks);
+
 
 ///////////// Dynamic AI Smoking
 

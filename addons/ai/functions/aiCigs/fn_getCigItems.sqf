@@ -11,7 +11,8 @@
 * 3. Pack selection CBA settings     - while cigs_ai_set_aiCigs_packSelection_enable is on
 * 4. cigs_aiCigs_api_lesser          - HASHMAP per side, or CODE per unit. CODE returning nil hands this unit to the next level.
 * 5. Faction presets                 - cigs_packs[] of the unit's faction, while cigs_ai_set_aiCigs_configPresets_enable is on
-* 6. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
+* 6. Terrain presets                 - cigs_aiCigs_terrain, the same for all sides, while cigs_ai_set_aiCigs_terrainPresets_enable is on
+* 7. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
 *
 * Arguments:
 * 0: Unit <OBJECT>
@@ -51,6 +52,10 @@ private _return = call {
     // Faction presets - cigs_packs[] in CfgFactionClasses, see fn_getConfigPresets
     private _configPacks = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { ([_unit] call FUNC(getConfigPresets)) get "packs" } else { nil };
     if ( !isNil "_configPacks" ) exitWith { _configPacks };
+
+    // Terrain presets - packs[] in cigs_terrainPacks >> worldName for all sides, see fn_getTerrainPacks. nil when the terrain has no entry.
+    private _terrainPacks = if ( missionNamespace getVariable [QSET(aiCigs_terrainPresets_enable), true] ) then { EGVAR(aiCigs,terrain) } else { nil };
+    if ( !isNil "_terrainPacks" ) exitWith { _terrainPacks };
 
     [EGVAR(aiCigs,default)] call _fromMap
 };

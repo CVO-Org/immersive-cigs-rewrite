@@ -7,6 +7,7 @@ Everything in Immersive Cigs is driven by config. You can add brands, lighters o
 - [Adding a brand](#adding-a-brand)
 - [Config properties](#config-properties)
 - [Faction presets](#faction-presets)
+- [Terrain presets](#terrain-presets)
 - [Default pack presets](#default-pack-presets)
 - Scripting: see the [Scripting API](api.md)
 
@@ -94,7 +95,7 @@ class CfgFactionClasses {
 
 - **No dependency needed.** These are plain strings, so a faction mod can add them to its own factions without requiring Immersive Cigs.
 - **Classnames that aren't loaded are dropped.** A faction can list packs of optional brands. If none of them are loaded, the faction gets no packs.
-- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Faction Presets*.
+- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the terrain and default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Faction Presets*.
 - **Related factions don't share entries.** `BLU_F` and `BLU_T_F` each need their own entry. The exception is config inheritance: a faction class that inherits from another one (e.g. Global Mobilization's `gm_fc_gc_civ: gm_fc_gc`) also inherits its `cigs_packs[]`. Give the child class its own entry if it should get something else.
 
 To add presets to **another mod's** factions, use a compat addon that loads after that mod and is skipped when it's missing:
@@ -139,7 +140,7 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 | Looters `IND_L_F` | Lipa, Voron, Black Devil, NIL |
 | IDAP `CIV_IDAP_F` | Lollipops, Morley, NIL |
 
-Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
+Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the [terrain presets](#terrain-presets) of the map instead. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
 #### Global Mobilization
 
@@ -210,6 +211,34 @@ Addon `presets_ef`, active when the CDLC is loaded.
 | ------- | ----- |
 | MJTF (Desert) `EF_B_MJTF_Des`, MJTF (Woodland) `EF_B_MJTF_Wdl` | Troupes, Matelot, Morley, Crayons |
 | MJTF (Navy) `EF_B_MJTF_Navy` | Matelot, Troupes, Morley |
+
+## Terrain presets
+
+Units whose faction has no faction preset get the packs that are locally available on the current terrain, whatever their side. This is mainly for civilians: vanilla `CIV_F` is one faction for Altis, Tanoa and Livonia, so only the terrain can say which brands are local. Add a class named after the terrain's `worldName` to `cigs_terrainPacks`:
+
+```cpp
+class cigs_terrainPacks {
+    class MyTerrain {                                       // worldName
+        packs[] = { "cigs_gudok_cigpack", "cigs_zamok_cigpack", "cigs_sosna_cigpack" };
+    };
+};
+```
+
+- **No dependency needed.** It is a plain root class, so a terrain mod can add its own entry without requiring Immersive Cigs, and nothing in `CfgWorlds` is touched.
+- **The same for all sides.** Every unit without a faction preset gets these packs, civilians and soldiers alike. An empty array means those units get no packs. Terrains without an entry leave them to the default presets.
+- **Classnames that aren't loaded are dropped**, as with faction presets.
+- **Where it ranks.** After the faction presets, before the default presets. Server admins can turn them off with *Use Terrain Presets*.
+
+### Included terrain presets
+
+Every vanilla military and guerrilla faction has its own faction preset, so these reach the civilians and mod factions without a preset. VR has no entry.
+
+| Terrain | Packs |
+| ------- | ----- |
+| Altis `Altis`, Stratis `Stratis` | Almyra, Morley, NIL |
+| Malden `Malden` | Troupes, Matelot, Morley |
+| Tanoa `Tanoa` | Matelot, Morley, NIL |
+| Livonia `Enoch` | Lipa, Lipa Dzwonek, NIL |
 
 ## Default pack presets
 

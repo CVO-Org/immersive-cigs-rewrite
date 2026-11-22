@@ -38,4 +38,5 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
 #include "defaultPacks.hpp"
+#include "terrainPacks.hpp"
 #include "Cfg3DEN.hpp"

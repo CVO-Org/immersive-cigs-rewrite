@@ -42,7 +42,8 @@ Replace the old brand everywhere inside the new folder, and nowhere else:
 - `cigpack.hpp`: `count` and the pack description's number
 - `defines.hpp`: `TOTALPUFFS` / `SUCKS_TOTAL`
 - `license.md`: keep or replace with the user's licence, then add the folder to the matching list in the root `license.md`. An invented brand keeps the template's CC BY 4.0 `license.md` and goes under "Creative Commons Attribution 4.0". A real brand (a real product's name and pack) gets no `license.md` and goes under "The following Folders are under no license".
-- `aceax.hpp`: nothing to rename, it uses `COMPONENT`. Keep it and its `#include` at the end of `config.cpp`; the brand's value in the shared model comes in step 5.
+- `aceax.hpp` and `compat_aceax/config.cpp`: nothing to rename, they use `COMPONENT` and the macros. Keep both; `config.cpp` doesn't include `aceax.hpp`, the sub-config does. The brand's value in the shared model comes in step 5.
+- Keep `scope = 1` on `cig0` (`cigs_glasses.hpp`) and `cig0_nv` (`cigs_hmd.hpp`); the compat sub-config shows them with ACE Arsenal Extended. The pack stays `scope = 2`.
 - Optional: `PVAR(flavor)[] = { "...", ... };` on `cig0` in both `cigs_glasses.hpp` and `cigs_hmd.hpp`, the line shown after lighting up. Most brands have four.
 
 Then search the new folder for the old name (`grep -ri <old> addons/<brand>`). The only hits left should be none.
@@ -83,8 +84,8 @@ Read `.hemttout/icons/<brand>/preview.png` and check it against "What to check" 
 
 ### ACE Arsenal Extended
 
-Every cigarette brand shows up in ACE Arsenal Extended (AAE) as one button of the shared cigarette model. That takes three things; a brand without them is missing from the AAE selector:
-1. `aceax.hpp` in the brand folder (copied in step 1), included at the end of `config.cpp`. It maps all five stages, facewear and NVG item, to the model.
+The stage 0 cigarette (`cig0` and `cig0_nv`) is `scope = 1`: without ACE Arsenal Extended (AAE) it's hidden from the arsenal and the Eden lists, and players take cigarettes out of the pack. With AAE every cigarette brand shows up as one button of the shared cigarette model. That takes three things; a brand without them is missing from the AAE selector, and its cigarette is hidden there too:
+1. The compat sub-config `compat_aceax/config.cpp` and `aceax.hpp` in the brand folder (both copied in step 1). The sub-config has its own `CfgPatches` (`cigs_<brand>_compat_aceax`) that requires `aceax_gearinfo` with `skipWhenMissingDependencies = 1`, so it only loads with AAE. It sets `cig0` and `cig0_nv` back to `scope = 2` and includes `..\aceax.hpp`, which maps all five stages, facewear and NVG item, to the model. `config.cpp` doesn't include `aceax.hpp`. HEMTT packs the sub-config into the brand's PBO.
 2. The brand in the shared model `addons/base/aceax.hpp`: its name in `values[]` (alphabetical) and a value class next to the others, also alphabetical:
    ```cpp
    class <brand> { label = ""; image = QPATHTOEF(<brand>,data\ui\aceax_logo_ca.paa); description = ECSTRING(<brand>,cigarette); };
@@ -97,7 +98,7 @@ Every cigarette brand shows up in ACE Arsenal Extended (AAE) as one button of th
    ```
    Read `.hemttout/aceax/preview.png` after the first command; `--apply` writes `addons/<brand>/data/UI/aceax_logo_ca.paa`.
 
-Without AAE these classes are plain config data and do nothing, so the brand needs no dependency on it.
+Without AAE the sub-config is dropped, so the brand needs no dependency on it.
 
 ## 6. Check it
 

@@ -8,7 +8,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 
 ## Rules for presets
 
-- **Era first.** A preset only uses brands whose pack look fits its era. The WW2 looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) stay in the 1940s presets (Spearhead 1944). Post-war Western filler is Marlboro and Camel; Morley and NIL are timeless.
+- **Era first.** A preset only uses brands whose pack look fits its era. The WW2 looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) stay in the 1940s presets (Spearhead 1944). Post-war Western filler is Marlboro and Camel; Morley, NIL and Matelot are timeless.
 - **Regional brand first.** A faction or terrain lists its own region's brand first, then brands of the same region and era, then international brands that fit the era.
 - **Gag brands** (Crayons, Mtn Dew Baja Blast, Black Devil Pink) only go to guerrillas, criminals and the NATO crayon joke (vanilla NATO, NATO (Desert), Expeditionary Forces). Never into terrain presets, as those reach everyone.
 - **Voron** is the brand of the author's unit. It only goes to Spetsnaz, the LDF and the Looters.
@@ -39,7 +39,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/lipa_dzwonek.png) | Lipa Dzwonek | `cigs_lipa_dzwonek_cigpack` | Livonia | 2035 | Filterless, blue "Bluebells" edition of Lipa | LDF, terrain Livonia |
 | ![](img/brands/lucky_strike.png) | Lucky Strike | `cigs_lucky_strike_cigpack` | USA | WW2 | WW2 look: 1940s presets only | French Interior Forces, French Liberation Army, US Army (SPE), terrains Normandy and Mortain |
 | ![](img/brands/marlboro.png) | Marlboro | `cigs_marlboro_cigpack` | USA | 1960s onwards | International Western filler for post-war presets | Most post-war Western factions and most terrains |
-| ![](img/brands/matelot.png) | Matelot | `cigs_matelot_cigpack` | Tanoa, sailors' brand | 2035 | Filterless. Regional brand of Tanoa. Also used in four 1944 entries (French Interior Forces, 40s Civilians, Normandy, Mortain) | NATO (Pacific), Gendarmerie, Syndikat, MJTF, terrains Tanoa and Malden |
+| ![](img/brands/matelot.png) | Matelot | `cigs_matelot_cigpack` | France / Tanoa, sailors' brand | timeless | Filterless. Regional brand of Tanoa and of French settings in any era, 1944 included | NATO (Pacific), Gendarmerie, Syndikat, MJTF, French Interior Forces, 40s Civilians, terrains Tanoa, Malden, Normandy and Mortain |
 | ![](img/brands/morley.png) | Morley | `cigs_morley_cigpack` | Fictional, the mod's original pack | timeless | Filler for any era. Was `murshun_cigs_cigpack` in the original mod | Most Western factions, default WEST and CIV |
 | ![](img/brands/nil.png) | NIL | `cigs_nil_cigpack` | Austria | timeless | Filler for any modern preset | Many vanilla factions, vanilla terrains, default CIV |
 | ![](img/brands/popularne.png) | Popularne | `cigs_popularne_cigpack` | Poland | Cold War | Filterless | Poland, Revolutionaries (GM), terrains Livonia and Stožec |

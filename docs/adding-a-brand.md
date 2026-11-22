@@ -21,6 +21,8 @@ We dont need 10 more messy and buggy cig mods on the workshop.
 ## 1. Copy an existing addon folder which you want to use as a base for your cig brand
 Some Cigarettes have differnt models, be it the Cigarettes or the cigpacks
 
+Keep `data/model.cfg`: it gives the pack model its own CfgModels entry. Without it the model uses the engine's global default, which other mods sometimes break. `tools/check_model_cfg.py` checks this.
+
 ## 2. Rename the Folder and replace all needed Strings inside the addon
 1. `$PBOPREFIX$`
 2. `script_component.hpp`

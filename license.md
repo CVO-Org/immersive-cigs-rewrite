@@ -20,6 +20,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\morley
    - \addons\pops
    - \addons\shanhai
+   - \addons\sosna
    - \addons\voron
 
 The following Folders are under no license

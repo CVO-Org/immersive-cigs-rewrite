@@ -10,10 +10,12 @@ class XtdGearModels {
 
         class brand {
             label = ECSTRING(base,aceax_brand);
+            centerImage = 1;    // box front as a square on each button
             values[] = { "cigars", "papa_schultz" };
 
-            class cigars       { label = CSTRING(cigar); };
-            class papa_schultz { label = ECSTRING(papa_schultz,cigar); };
+            // only the box front (data\ui\aceax_logo_ca.paa, made by tools/gear_icons/aceax_logos.py), no label; the full name is the tooltip
+            class cigars       { label = ""; image = QPATHTOF(data\ui\aceax_logo_ca.paa); description = CSTRING(cigar); };
+            class papa_schultz { label = ""; image = QPATHTOEF(papa_schultz,data\ui\aceax_logo_ca.paa); description = ECSTRING(papa_schultz,cigar); };
         };
 
         class stage {

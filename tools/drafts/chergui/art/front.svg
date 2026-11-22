@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.30"/>
+</radialGradient>
+<clipPath id="disc"><circle r="46"/></clipPath>
+<!-- the mark: a low sun over two dunes, with the east wind blowing across it (from the right) -->
+<g id="mark">
+  <circle r="46" fill="#e3bb62"/>
+  <g clip-path="url(#disc)">
+    <circle cx="-8" cy="4" r="20" fill="#a3301f"/>
+    <path d="M-50 22 Q-20 2 6 18 T52 14 V50 H-50z" fill="#c08f3a"/>
+    <path d="M-50 34 Q-12 18 22 30 T52 28 V50 H-50z" fill="#7a2116"/>
+  </g>
+  <path d="M42 -20 H-4 a9 9 0 1 1 9 -9" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 -7 H-32" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 6 H10 a8 8 0 1 0 8 8" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <circle r="46" fill="none" stroke="#1f1813" stroke-width="3"/>
+</g>
+<pattern id="zigzag" width="16" height="10" patternUnits="userSpaceOnUse">
+  <rect width="16" height="10" fill="#1f1813"/>
+  <path d="M0 9 L8 1 L16 9" fill="none" stroke="#e3bb62" stroke-width="2.2"/>
+</pattern>
+</defs>
+<rect width="361" height="564" fill="#e3bb62"/>
+<rect width="361" height="232" fill="#a3301f"/>
+<path d="M134.5 0 H226.5 V34 l-2 0 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-4 4 l-4 -4 l-2 0 Z" fill="#c9d3a6"/><rect x="138.5" y="0" width="84" height="31" fill="none" stroke="#3d4a22" stroke-width="1"/>
+<text x="180.5" y="128" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', Arial, sans-serif" font-size="86" font-weight="bold" font-stretch="condensed" fill="#f2e6c9"
+      textLength="318" lengthAdjust="spacingAndGlyphs">CHERGUI</text>
+<path d="M30 146 H331" stroke="#f2e6c9" stroke-width="2"/>
+<text x="180.5" y="208" text-anchor="middle" direction="rtl" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="52" font-weight="bold" fill="#f2e6c9">الشركي</text>
+<rect x="0" y="232" width="361" height="10" fill="url(#zigzag)"/>
+<use href="#mark" transform="translate(180.5,340) scale(1.85)"/>
+<text x="180.5" y="455" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="19" fill="#1f1813">Le vent de l'est.</text>
+<rect x="0" y="472" width="361" height="92" fill="#1f1813"/>
+<text x="180.5" y="506" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="2" fill="#f2e6c9">TABAC BRUN · SANS FILTRE</text>
+<text x="180.5" y="540" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', Arial, sans-serif" font-size="17" letter-spacing="3" fill="#e3bb62">20 CIGARETTES</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.12"/><rect width="361" height="564" filter="url(#grain)" opacity="0.12"/><rect width="361" height="564" fill="url(#wear)"/></svg>

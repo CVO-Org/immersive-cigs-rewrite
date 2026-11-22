@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="564" viewBox="0 0 151 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.25  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#30281a" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#30281a" stop-opacity="0.25"/>
+</radialGradient>
+
+<clipPath id="above"><rect x="-200" y="-200" width="400" height="200"/></clipPath>
+<g id="sun">
+  <path d="M-69.78,-5.49 L-117.19,-13.77 L-114.84,-27.15 L-67.45,-18.71z M-63.70,-29.03 L-105.42,-53.02 L-98.63,-64.78 L-56.99,-40.65z M-49.93,-49.06 L-80.93,-85.88 L-70.52,-94.61 L-39.65,-57.69z M-30.14,-63.18 L-46.67,-108.38 L-33.91,-113.02 L-17.53,-67.77z M-6.71,-69.68 L-6.79,-117.80 L6.79,-117.80 L6.71,-69.68z M17.53,-67.77 L33.91,-113.02 L46.67,-108.38 L30.14,-63.18z M39.65,-57.69 L70.52,-94.61 L80.93,-85.88 L49.93,-49.06z M56.99,-40.65 L98.63,-64.78 L105.42,-53.02 L63.70,-29.03z M67.45,-18.71 L114.84,-27.15 L117.19,-13.77 L69.78,-5.49z" fill="#e6ad2e"/>
+  <circle r="62" fill="#e2701d" clip-path="url(#above)"/>
+  <circle r="44" fill="#e6ad2e" clip-path="url(#above)" opacity="0.35"/>
+  <rect x="-120" y="0" width="240" height="9" fill="#4b2c17"/>
+  <rect x="-92" y="17" width="184" height="9" fill="#e2701d"/>
+  <rect x="-64" y="34" width="128" height="9" fill="#e6ad2e"/>
+  <rect x="-36" y="51" width="72" height="9" fill="#e2701d"/>
+</g>
+
+</defs>
+<rect width="151" height="564" fill="#f2e6c8"/>
+
+<rect x="0" y="0" width="151" height="54" fill="#4b2c17"/>
+<rect x="0" y="54" width="151" height="6" fill="#e2701d"/>
+<rect x="0" y="63" width="151" height="4" fill="#e6ad2e"/>
+<rect x="0" y="466" width="151" height="4" fill="#e6ad2e"/>
+<rect x="0" y="473" width="151" height="6" fill="#e2701d"/>
+<rect x="0" y="479" width="151" height="85" fill="#4b2c17"/>
+
+<g transform="translate(75.5,262) rotate(-90)">
+  <text x="0" y="-20" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="bold" fill="#4b2c17">Cigarettenfabrik Aldermann &amp; Sohn</text>
+  <text x="0" y="6" text-anchor="middle" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#b8341b">Bremen · Hergestellt in der BRD</text>
+  <text x="0" y="32" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#2a1a10">Seit 1952 für den Feierabend.</text>
+</g>
+<use href="#sun" transform="translate(75.5,525) scale(0.3)"/>
+<rect width="151" height="564" filter="url(#blotch)" opacity="0.10"/><rect width="151" height="564" filter="url(#grain)" opacity="0.10"/><rect width="151" height="564" fill="url(#wear)"/></svg>

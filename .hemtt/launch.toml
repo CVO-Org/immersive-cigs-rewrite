@@ -3,6 +3,7 @@ mission = "test.VR"
 workshop = [
     "450814997",  # CBA_A3's Workshop ID
     "3499977893", # Advanced Developer Tools
+    "463939057",  # ACE3 - in every profile, the test missions need it
 ]
 dlc = [
 ]
@@ -19,7 +20,6 @@ parameters = [
 [default]
 extends = "base"
 workshop = [
-    "463939057",  # ACE3
     "1779063631", # ZEN
 ]
 
@@ -36,6 +36,12 @@ workshop = [
     "1652506957", # Arma Script Profiler
 ]
 
+[aceax]
+extends = "default"
+workshop = [
+    "2522638637", # ACE3 Arsenal Extended - Core
+]
+
 [light]
 extends = "default"
 mission = "test.altis"
@@ -43,11 +49,10 @@ workshop = [
     "1613905318", # Emitter 3Ditor
 ]
 
-# Vanilla + all CDLCs, without ACE - to read the faction classes for the faction presets
+# All CDLCs but Contact (singleplayer only; its freemium content loads without it) - to read the faction classes for the faction presets
 [factions]
 extends = "base"
 dlc = [
-    "Contact",
     "Global Mobilization",
     "S.O.G. Prairie Fire",
     "CSLA Iron Curtain",

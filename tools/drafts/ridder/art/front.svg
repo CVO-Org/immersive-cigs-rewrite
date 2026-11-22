@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs><style>@font-face { font-family: RidderName; src: url('file:///C:/Users/ZD-PC/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Bold.ttf'); font-weight: bold; }</style>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.40  0 0 0 0 0.38  0 0 0 0 0.30  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#202430" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#202430" stop-opacity="0.22"/>
+</radialGradient>
+
+<g id="helm">
+  <circle r="60" fill="#1f4aa8"/>
+  <circle r="54" fill="none" stroke="#c49a3c" stroke-width="3"/>
+  <path d="M-28,-30 Q-28,-44 0,-46 Q28,-44 28,-30 L28,30 Q28,36 22,38 L-22,38 Q-28,36 -28,30 Z" fill="#c49a3c"/>
+  <rect x="-24" y="-8" width="48" height="6" fill="#1f4aa8"/>
+  <rect x="-3" y="-2" width="6" height="30" fill="#1f4aa8"/>
+  <g fill="#1f4aa8">
+    <circle cx="-14" cy="10" r="2"/><circle cx="-14" cy="18" r="2"/><circle cx="-14" cy="26" r="2"/>
+    <circle cx="14" cy="10" r="2"/><circle cx="14" cy="18" r="2"/><circle cx="14" cy="26" r="2"/>
+  </g>
+  <path d="M0,-46 L0,-30" stroke="#1f4aa8" stroke-width="2"/>
+  <path d="M-6,-46 Q0,-64 14,-58 Q6,-54 6,-46 Z" fill="#c0262d"/>
+</g>
+
+</defs>
+
+<rect width="361" height="564" fill="#f7f5ef"/>
+<rect x="0" y="0" width="361" height="12" fill="#1f4aa8"/>
+<rect x="0" y="12" width="361" height="3" fill="#c49a3c"/>
+<rect x="0" y="430" width="361" height="3" fill="#c49a3c"/>
+<rect x="0" y="433" width="361" height="131" fill="#1f4aa8"/>
+<rect x="0" y="440" width="361" height="2" fill="#c0262d"/>
+
+<text x="180.5" y="48" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="6" fill="#14306e">FILTER CIGARETTER</text>
+<rect x="60" y="62" width="241" height="1.5" fill="#c49a3c"/>
+<use href="#helm" transform="translate(180.5,168) scale(1.35)"/>
+<text x="180.5" y="330" text-anchor="middle" font-family="RidderName, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="84" font-weight="bold" fill="#1f4aa8"
+      textLength="320" lengthAdjust="spacingAndGlyphs">RIDDER</text>
+<rect x="60" y="348" width="241" height="1.5" fill="#c49a3c"/>
+<text x="180.5" y="384" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#c0262d">En ægte dansk cigaret.</text>
+<text x="180.5" y="414" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" letter-spacing="3" fill="#1b1f2a">MILD · FYLDIG · KØLIG</text>
+<text x="180.5" y="494" text-anchor="middle" font-family="RidderName, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="bold" letter-spacing="3" fill="#ffffff">20 CIGARETTER</text>
+<text x="180.5" y="530" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" letter-spacing="4" fill="#e2c57a">KØBENHAVN</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.08"/><rect width="361" height="564" filter="url(#grain)" opacity="0.09"/><rect width="361" height="564" fill="url(#wear)"/></svg>

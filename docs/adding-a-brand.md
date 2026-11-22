@@ -21,6 +21,8 @@ We dont need 10 more messy and buggy cig mods on the workshop.
 ## 1. Copy an existing addon folder which you want to use as a base for your cig brand
 Some Cigarettes have differnt models, be it the Cigarettes or the cigpacks
 
+Keep `data/model.cfg`: it gives the pack model its own CfgModels entry. Without it the model uses the engine's global default, which other mods sometimes break. `tools/check_model_cfg.py` checks this.
+
 ## 2. Rename the Folder and replace all needed Strings inside the addon
 1. `$PBOPREFIX$`
 2. `script_component.hpp`
@@ -79,3 +81,22 @@ Or do it by hand in Object Builder:
 #### 4.3.4 Save
 
 #### 4.3.5 Repeat
+
+
+## 5. ACE Arsenal Extended
+With [ACE Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637) loaded, the arsenal groups all cigarettes into one entry with a brand and a stage selector. Your brand needs three things to show up there:
+1. `compat_aceax/config.cpp` and `aceax.hpp` in your addon folder (both come with the copy). They use `COMPONENT`, so there's nothing to rename. Your stage 0 cigarette (`cig0`, `cig0_nv`) is `scope = 1`, hidden from the arsenal and the Eden lists; the sub-config only loads with ACE Arsenal Extended, sets it back to `scope = 2` and includes `aceax.hpp`.
+2. Your brand in `addons/base/aceax.hpp` (cigars: `addons/cigars/aceax.hpp`): its name in `values[]`, and a value class like the others, with `label = ""`, `image` pointing at your `data\ui\aceax_logo_ca.paa` and `description = ECSTRING(~youraddon~,cigarette)`.
+3. The logo, the flat pack front for the button:
+
+```powershell
+python tools/gear_icons/aceax_logos.py --only ~youraddon~ --apply
+```
+
+`hemtt launch aceax` starts the game with it. Without ACE Arsenal Extended the sub-config is dropped (`skipWhenMissingDependencies`), so your addon doesn't depend on it.
+
+## 6. Check and PR
+- `hemtt check` must pass. It also bumps the build number in `addons/main/script_version.hpp`; leave that out of your commit.
+- Add your pack to [classnames.md](classnames.md) and your folder to the root `license.md`.
+- One PR per brand, titled `Brand - New: <Brand> cigarettes (<region>)`, label `pr/new`.
+- Should AI units of a faction smoke your brand? The faction presets (`addons/presets_*`, see [Modders](modders.md)) are a separate PR.

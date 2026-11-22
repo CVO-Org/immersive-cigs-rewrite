@@ -1,0 +1,12 @@
+Add Addax cigarettes
+
+Addax is a mainstream American Turkish-blend filter cigarette for
+international factions (IDAP, ION, UN) and as general filler for
+modern western factions. Copied from voron: 20 cigarettes, 17 puffs,
+five flavour lines. Pack faces and paper logo are a first pass drawn
+as SVG (ivory card, deep teal, copper, a navy addax head with spiral
+horns before a desert sun).
+
+Part of #316
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

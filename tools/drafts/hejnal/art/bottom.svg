@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="151" viewBox="0 0 361 151"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.26"/>
+</radialGradient>
+</defs>
+<rect width="361" height="151" fill="#b3292b"/>
+<path d="M20 34 H341 M20 117 H341" stroke="#f0e6cf" stroke-width="1.5"/>
+<text x="180.5" y="72" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#f0e6cf" >PARTIA 0384 · 03.1984</text>
+<text x="180.5" y="98" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="12" fill="#f0e6cf" letter-spacing="1">PAŃSTWOWE ZAKŁADY TYTONIOWE · KRAKÓW</text>
+<rect width="361" height="151" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="151" filter="url(#grain)" opacity="0.11"/><rect width="361" height="151" fill="url(#wear)"/></svg>

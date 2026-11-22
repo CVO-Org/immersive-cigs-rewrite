@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class GVAR(cig0_nv): EGVAR(base,cigBase_nv) {
 
-        scope = 2;
+        scope = 1;  // hidden without ACE Arsenal Extended; compat_aceax shows it with AAE
         author = CSTRING(author);
 
         displayName = CSTRING(cigarette);

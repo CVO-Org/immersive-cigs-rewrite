@@ -6,6 +6,7 @@
 - [Dynamic AI smoking](#dynamic-ai-smoking)
 - [Unit attributes in 3DEN](#unit-attributes-in-3den)
 - [Zeus modules](#zeus-modules)
+- [Single cigarettes in the arsenal and Eden](#single-cigarettes-in-the-arsenal-and-eden)
 - [Legacy classnames in mission loadouts](#legacy-classnames-in-mission-loadouts)
 - Scripting: see the [Scripting API](api.md)
 
@@ -68,7 +69,7 @@ Without a module (and without the script variable), these defaults are used:
 | GUER | Mtn Dew Baja Blast, Black Devil |
 | CIV | Morley, Lollipops, NIL, Apollo Soyuz, Kosmos, Mtn Dew Baja Blast, Black Devil, Crayons |
 
-With **S.O.G. Prairie Fire** loaded, every side gets Savage cigarettes instead.
+The S.O.G. Prairie Fire factions get their packs from faction presets instead (Savage, Ruby Queen and others). See [Modders](modders.md#included-faction-presets).
 
 The defaults are presets in config, so other mods can add their own. See [Modders](modders.md#default-pack-presets). To check what's active in your setup, run `[] call cigs_ai_fnc_getDefaultPacks` in the debug console.
 
@@ -114,6 +115,12 @@ If *Based on Side* finds no packs for the unit's side, the unit gets a NIL pack.
 ### Unit Stop Smoking
 
 The unit puts out its cigarette, or stops sucking.
+
+## Single cigarettes in the arsenal and Eden
+
+The packs, cigar boxes, lighters and matches are always in the arsenal and the Eden lists. The single items (a cigarette, a cigar, a crayon) only show up there with [ACE3 Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637), grouped into one entry per kind with a brand or colour selector. Without it they're hidden (`scope = 1`), because with every brand twice (facewear and NVG slot) the lists got too long. Players take cigarettes out of a pack anyway.
+
+Hidden items still exist: loadouts, `addGoggles`, `addItem` and the AI Cigs modules work with their classnames (see [Classnames](classnames.md)) as before.
 
 ## Legacy classnames in mission loadouts
 

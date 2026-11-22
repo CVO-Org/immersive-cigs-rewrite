@@ -14,6 +14,7 @@ Load the mod on the **server and on every client**.
 | S.O.G. Prairie Fire (CDLC) | Optional | Its cigarette pack and zippo become usable, plus the Savage cigarettes |
 | [KJW's Imposters](https://steamcommunity.com/sharedfiles/filedetails/?id=2917554904) | Optional | Cigarettes don't raise suspicion |
 | [Helmet on Ass](https://steamcommunity.com/sharedfiles/filedetails/?id=3487820370) | Optional | A cigarette in the NVG slot stays in your face when you sling your helmet |
+| [ACE3 Arsenal Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637) | Optional | ACE Arsenal shows one entry each for cigarettes, cigars and crayons, with a brand or color selector. Without it, the single cigarettes, cigars and crayons are hidden from the arsenal and the Eden lists; the packs and boxes are always there |
 
 ## CBA settings
 

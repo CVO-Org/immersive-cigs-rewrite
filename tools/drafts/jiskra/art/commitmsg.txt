@@ -1,0 +1,8 @@
+Add Jiskra cigarettes (Czechoslovakia, 1980s, with filter)
+
+New addon jiskra, copied from voron (filter template):
+cigs_jiskra_cigpack with 20 filter cigarettes, 17 puffs and flavour
+lines. Pack art and paper logo are a first pass drawn as SVG; texture
+and gear icons built with texture_compose.py and gear_icons.py.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

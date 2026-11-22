@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_chergui">
+    <Package name="Items">
+        <Key ID="STR_cigs_chergui_cigarette">
+            <English>Chergui Cigarette</English>
+            <French>Cigarette Chergui</French>
+            <Spanish>Cigarrillo Chergui</Spanish>
+            <Polish>Papieros Chergui</Polish>
+            <Portuguese>Cigarro Chergui</Portuguese>
+            <Russian>Сигарета Chergui</Russian>
+            <German>Chergui Zigarette</German>
+            <Korean>Chergui 담배</Korean>
+            <Japanese>紙巻たばこ シェルギ</Japanese>
+            <Chinese>Chergui 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_chergui_cigpack">
+            <English>Pack of Chergui</English>
+            <French>Paquet de Chergui</French>
+            <Spanish>Cajetilla de Chergui</Spanish>
+            <Polish>Paczka Chergui</Polish>
+            <Portuguese>Maço de Chergui</Portuguese>
+            <Russian>Пачка Chergui</Russian>
+            <German>Schachtel Chergui</German>
+            <Korean>Chergui 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (シェルギ)</Japanese>
+            <Chinese>一包 Chergui</Chinese>
+        </Key>
+        <Key ID="STR_cigs_chergui_cigpack_desc">
+            <English>Le vent de l'est.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>Le vent de l'est.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Le vent de l'est.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Le vent de l'est.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Le vent de l'est.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Le vent de l'est.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <German>Le vent de l'est.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>Le vent de l'est.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Japanese>Le vent de l'est.&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>Le vent de l'est.&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_chergui_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

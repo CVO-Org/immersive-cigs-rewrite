@@ -12,6 +12,8 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\anim
    - \addons\apollo
    - \addons\cigars
+   - \addons\gudok
+   - \addons\jaffudi
    - \addons\kosmos
    - \addons\lipa
    - \addons\lipa_dzwonek
@@ -20,14 +22,30 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\morley
    - \addons\pops
    - \addons\shanhai
+   - \addons\sharig
+   - \addons\sosna
    - \addons\voron
+   - \addons\zamok
+   - \addons\zargabad
 
 The following Folders are under no license
-   - \addons\craven
-   - \addons\eckstein
-   - \addons\lucky_strike
    - \addons\baja_blast
    - \addons\black_devil
+   - \addons\camel
+   - \addons\casa_sport
+   - \addons\craven
+   - \addons\eckstein
+   - \addons\ernte_23
+   - \addons\f6
+   - \addons\hwarang
+   - \addons\juno
+   - \addons\lucky_strike
+   - \addons\marlboro
+   - \addons\popularne
+   - \addons\prince
+   - \addons\ruby_queen
+   - \addons\sparta
+   - \addons\troupes
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.
    - addons\core\data\sounds\cough_0.ogg

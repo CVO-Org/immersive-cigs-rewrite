@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.25"/>
+</radialGradient>
+<g id="roundel">
+  <circle r="60" fill="#b02a2a"/>
+  <circle r="52" fill="none" stroke="#ebe2c8" stroke-width="3"/>
+  <path d="M-38 30 H38" stroke="#ebe2c8" stroke-width="3"/>
+  <path d="M-38 36 H38" stroke="#ebe2c8" stroke-width="1.5"/>
+  <text x="0" y="22" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="74" fill="#ebe2c8" text-anchor="middle">B</text>
+</g>
+</defs>
+<rect width="361" height="564" fill="#ebe2c8"/>
+<rect width="361" height="14" fill="#2c4a3a"/>
+<use href="#roundel" transform="translate(180.5 88) scale(0.62)"/>
+
+<rect x="0" y="144" width="361" height="3" fill="#b02a2a"/>
+<rect x="0" y="150" width="361" height="80" fill="#2c4a3a"/>
+<rect x="0" y="233" width="361" height="3" fill="#b02a2a"/>
+<text x="180.5" y="215.92" font-family="'Bahnschrift SemiBold Condensed', 'Bahnschrift Condensed', Bahnschrift, 'Arial Narrow', sans-serif" font-weight="700" font-size="72" fill="#ebe2c8"
+      text-anchor="middle" textLength="300" lengthAdjust="spacingAndGlyphs">BRIGADE</text>
+<g font-family="Georgia, serif" font-size="17" fill="#221f1b" text-anchor="middle">
+  <text x="180.5" y="292" font-style="italic" font-size="20">Für die Frühschicht.</text>
+  <text x="180.5" y="336">Eine milde Mischung</text>
+  <text x="180.5" y="358">ausgesuchter Tabake</text>
+  <text x="180.5" y="380">mit Filter.</text>
+</g>
+<rect x="60" y="404" width="241" height="1.5" fill="#221f1b"/>
+<g font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#221f1b" text-anchor="middle" letter-spacing="1">
+  <text x="180.5" y="430">VEB TABAKWERK ELBAUE</text>
+  <text x="180.5" y="450">BETRIEB IM KOMBINAT TABAK</text>
+  <text x="180.5" y="476" font-size="11">TGL 22813 · Gütekl. I</text>
+</g>
+
+<rect x="0" y="508" width="361" height="56" fill="#2c4a3a"/>
+<text x="180.5" y="544.0" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="22" fill="#ebe2c8"
+      text-anchor="middle" letter-spacing="2">EVP 3,20 M</text>
+<rect width="361" height="564" filter="url(#blotch)" opacity="0.10"/><rect width="361" height="564" filter="url(#grain)" opacity="0.10"/><rect width="361" height="564" fill="url(#wear)"/></svg>

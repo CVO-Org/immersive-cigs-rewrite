@@ -1,0 +1,11 @@
+Add Chergui cigarettes (North Africa)
+
+New filterless brand for Western Sahara (Argana, SFIA and Tura):
+cheap local dark tobacco from the Régie des Tabacs de Sefrou-Ramal,
+printed in French and Arabic. Copied from matelot, 20 cigarettes,
+TOTALPUFFS 17, slightly darker smoke and five flavour lines. Texture
+built with texture_compose.py, icons with gear_icons.py.
+
+Closes #315
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

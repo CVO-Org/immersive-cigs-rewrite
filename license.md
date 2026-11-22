@@ -25,6 +25,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\sosna
    - \addons\voron
    - \addons\zamok
+   - \addons\zargabad
 
 The following Folders are under no license
    - \addons\baja_blast

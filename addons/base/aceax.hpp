@@ -14,7 +14,7 @@ class XtdGearModels {
         class brand {
             label = CSTRING(aceax_brand);
             centerImage = 1;    // pack front as a square on each button
-            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sosna", "sparta", "troupes", "voron", "zamok" };
+            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
 
             class alborz       { label = ""; image = QPATHTOEF(alborz,data\ui\aceax_logo_ca.paa); description = ECSTRING(alborz,cigarette); };
             class almyra       { label = ""; image = QPATHTOEF(almyra,data\ui\aceax_logo_ca.paa); description = ECSTRING(almyra,cigarette); };
@@ -49,6 +49,7 @@ class XtdGearModels {
             class troupes      { label = ""; image = QPATHTOEF(troupes,data\ui\aceax_logo_ca.paa); description = ECSTRING(troupes,cigarette); };
             class voron        { label = ""; image = QPATHTOEF(voron,data\ui\aceax_logo_ca.paa); description = ECSTRING(voron,cigarette); };
             class zamok        { label = ""; image = QPATHTOEF(zamok,data\ui\aceax_logo_ca.paa); description = ECSTRING(zamok,cigarette); };
+            class zargabad     { label = ""; image = QPATHTOEF(zargabad,data\ui\aceax_logo_ca.paa); description = ECSTRING(zargabad,cigarette); };
         };
 
         class stage {

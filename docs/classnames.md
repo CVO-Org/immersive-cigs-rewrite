@@ -41,6 +41,7 @@
 | `cigs_troupes_cigpack` | Pack of Troupes | cigarettes (without filter) | WW2, French army issue |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_zamok_cigpack` | Pack of Zamok | cigarettes | Chernarus, 1980s, premium domestic filter |
+| `cigs_zargabad_cigpack` | Pack of Zargabad | cigarettes | Takistan, kingdom era (1960s-80s), everyday bazaar brand |
 | `cigs_savage_cigpack` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire only |
 | `vn_b_item_cigs_01` | Savage Cigarette Pack | cigarettes | S.O.G. Prairie Fire's own pack, made usable |
 

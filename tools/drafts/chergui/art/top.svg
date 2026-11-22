@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="151" viewBox="0 0 361 151"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.42" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.30"/>
+</radialGradient>
+<clipPath id="disc"><circle r="46"/></clipPath>
+<!-- the mark: a low sun over two dunes, with the east wind blowing across it (from the right) -->
+<g id="mark">
+  <circle r="46" fill="#e3bb62"/>
+  <g clip-path="url(#disc)">
+    <circle cx="-8" cy="4" r="20" fill="#a3301f"/>
+    <path d="M-50 22 Q-20 2 6 18 T52 14 V50 H-50z" fill="#c08f3a"/>
+    <path d="M-50 34 Q-12 18 22 30 T52 28 V50 H-50z" fill="#7a2116"/>
+  </g>
+  <path d="M40 -18 H-2 q-12 0 -12 -9 q0 -8 8 -8 q7 0 7 6" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 -6 H-30" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 6 H6 q-10 0 -10 8 q0 7 7 7 q6 0 6 -5" fill="none" stroke="#1f1813" stroke-width="4" stroke-linecap="round"/>
+  <circle r="46" fill="none" stroke="#1f1813" stroke-width="3"/>
+</g>
+<pattern id="zigzag" width="16" height="10" patternUnits="userSpaceOnUse">
+  <rect width="16" height="10" fill="#1f1813"/>
+  <path d="M0 9 L8 1 L16 9" fill="none" stroke="#e3bb62" stroke-width="2.2"/>
+</pattern>
+</defs>
+<rect width="361" height="151" fill="#a3301f"/>
+<rect x="0" y="66" width="361" height="18" fill="#7a2116" opacity="0.5"/>
+<rect x="134.5" y="0" width="92" height="151" fill="#c9d3a6"/>
+<rect x="138.5" y="4" width="84" height="143" fill="none" stroke="#3d4a22" stroke-width="1"/>
+<g transform="translate(180.5,75.5) rotate(90)">
+  <text x="0" y="-14" text-anchor="middle" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="13" font-weight="bold" fill="#3d4a22">TIMBRE FISCAL</text>
+  <text x="0" y="4" text-anchor="middle" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="11" fill="#3d4a22">SEFROU-RAMAL</text>
+  <text x="0" y="22" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#3d4a22">Nº 0315 · 20 PCS</text>
+</g>
+<circle cx="210.5" cy="111.5" r="20" fill="none" stroke="#7a2116" stroke-width="2" opacity="0.6"/>
+<rect width="361" height="151" filter="url(#blotch)" opacity="0.12"/><rect width="361" height="151" filter="url(#grain)" opacity="0.12"/><rect width="361" height="151" fill="url(#wear)"/></svg>

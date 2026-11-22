@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="564" viewBox="0 0 151 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 0.95" />
+</filter>
+<filter id="blotch" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="5" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.1  0 0 0 0.9 -0.40" />
+</filter>
+<radialGradient id="wear" cx="50%" cy="50%" r="75%">
+  <stop offset="68%" stop-color="#3a2a10" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#3a2a10" stop-opacity="0.30"/>
+</radialGradient>
+<g id="cockade">
+  <circle r="50" fill="#27408b"/>
+  <circle r="33" fill="#f1ead6"/>
+  <circle r="17" fill="#b3262c"/>
+  <circle r="50" fill="none" stroke="#141d3b" stroke-width="1.5"/>
+</g>
+</defs>
+<rect width="151" height="564" fill="#e2d3a8"/>
+<rect x="0" y="0" width="151" height="58" fill="#1f2d57"/>
+<rect x="0" y="58" width="50.333333333333336" height="10" fill="#27408b"/><rect x="50.333333333333336" y="58" width="50.333333333333336" height="10" fill="#f1ead6"/><rect x="100.66666666666667" y="58" width="50.333333333333336" height="10" fill="#b3262c"/>
+<g transform="translate(75.5,270) rotate(90)">
+  <text x="0" y="-6" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#1f2d57">COCARDE</text>
+  <text x="0" y="26" text-anchor="middle" font-family="'Bahnschrift Condensed', 'Arial Narrow', Bahnschrift, Arial, sans-serif" font-size="17" font-weight="bold" letter-spacing="2" fill="#b3262c">20 CIGARETTES SANS FILTRE</text>
+</g>
+<use href="#cockade" transform="translate(75.5,462) scale(0.6)"/>
+<rect x="0" y="510" width="151" height="54" fill="#1f2d57"/>
+<rect width="151" height="564" filter="url(#blotch)" opacity="0.14"/><rect width="151" height="564" filter="url(#grain)" opacity="0.10"/><rect width="151" height="564" fill="url(#wear)"/></svg>

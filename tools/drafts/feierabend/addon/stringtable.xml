@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_feierabend">
+    <Package name="Items">
+        <Key ID="STR_cigs_feierabend_cigarette">
+            <English>Feierabend Cigarette</English>
+            <French>Cigarette Feierabend</French>
+            <Spanish>Cigarrillo Feierabend</Spanish>
+            <Polish>Papieros Feierabend</Polish>
+            <Portuguese>Cigarro Feierabend</Portuguese>
+            <Russian>Сигарета Feierabend</Russian>
+            <German>Feierabend Zigarette</German>
+            <Korean>Feierabend 담배</Korean>
+            <Japanese>紙巻たばこ ファイアーアーベント</Japanese>
+            <Chinese>Feierabend 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_feierabend_cigpack">
+            <English>Pack of Feierabend</English>
+            <French>Paquet de Feierabend</French>
+            <Spanish>Cajetilla de Feierabend</Spanish>
+            <Polish>Paczka Feierabend</Polish>
+            <Portuguese>Maço de Feierabend</Portuguese>
+            <Russian>Пачка Feierabend</Russian>
+            <German>Schachtel Feierabend</German>
+            <Korean>Feierabend 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (ファイアーアーベント)</Japanese>
+            <Chinese>一包 Feierabend</Chinese>
+        </Key>
+        <Key ID="STR_cigs_feierabend_cigpack_desc">
+            <English>Für die Stunde nach der Arbeit.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>Für die Stunde nach der Arbeit.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Für die Stunde nach der Arbeit.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Für die Stunde nach der Arbeit.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Für die Stunde nach der Arbeit.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Für die Stunde nach der Arbeit.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <German>Für die Stunde nach der Arbeit.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>Für die Stunde nach der Arbeit.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Japanese>Für die Stunde nach der Arbeit.&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>Für die Stunde nach der Arbeit.&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_feierabend_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

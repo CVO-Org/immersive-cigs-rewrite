@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="564" viewBox="0 0 361 564"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.0" />
+</filter>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="1" stop-color="#000000" stop-opacity="0.10"/>
+</linearGradient>
+<g id="mark">
+  <path d="M0 -100 L100 0 L0 100 L-100 0Z" fill="#17295a"/>
+  <path d="M0 -88 L88 0 L0 88 L-88 0Z" fill="#f6f4ee"/>
+  <path d="M0 -76 L76 0 L0 76 L-76 0Z" fill="#c8202d"/>
+  <path d="M0.000,-1.000 L0.235,-0.324 L0.951,-0.309 L0.380,0.124 L0.588,0.809 L0.000,0.400 L-0.588,0.809 L-0.380,0.124 L-0.951,-0.309 L-0.235,-0.324Z" transform="translate(0,4) scale(50)" fill="#f6f4ee"/>
+</g>
+</defs>
+<rect width="361" height="564" fill="#f6f4ee"/>
+<rect width="361" height="62" fill="#17295a"/>
+<rect y="62" width="361" height="6" fill="#c8202d"/>
+<text x="180.5" y="40" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="20" font-weight="bold" letter-spacing="5" fill="#f6f4ee">FILTER CIGARETTES</text>
+<use href="#mark" transform="translate(180.5,165) scale(0.80)"/>
+<text x="180.5" y="310" text-anchor="middle" font-family="'Arial Black', 'Segoe UI Black', sans-serif" font-size="64" fill="#17295a"
+      textLength="330" lengthAdjust="spacingAndGlyphs">STOCKTON</text>
+<rect x="30" y="326" width="301" height="4" fill="#c8202d"/>
+<text x="180.5" y="356" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="19" font-weight="bold" letter-spacing="3" fill="#c8202d">AMERICA'S FULL FLAVOR</text>
+<rect y="374" width="361" height="58" fill="#17295a"/>
+<text x="180.5" y="401" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="17" font-weight="bold" letter-spacing="3" fill="#f6f4ee">20 CLASS A CIGARETTES</text>
+<text x="180.5" y="422" text-anchor="middle" font-family="Bahnschrift, 'Arial Narrow', sans-serif" font-size="13" letter-spacing="4" fill="#b8bfcc">KING SIZE</text>
+<rect x="0" y="432" width="361" height="132" fill="#ffffff"/><rect x="5" y="437" width="351" height="122" fill="none" stroke="#111111" stroke-width="4"/><text x="180.5" y="479.9" text-anchor="middle" font-family="Arial, 'Segoe UI', sans-serif" font-size="21" font-weight="bold" fill="#111111">WARNING:</text><text x="180.5" y="505.6" text-anchor="middle" font-family="Arial, 'Segoe UI', sans-serif" font-size="21" font-weight="bold" fill="#111111">Smoking causes lung cancer,</text><text x="180.5" y="531.2" text-anchor="middle" font-family="Arial, 'Segoe UI', sans-serif" font-size="21" font-weight="bold" fill="#111111">heart disease and emphysema.</text>
+<rect width="361" height="564" filter="url(#grain)" opacity="0.06"/><rect width="361" height="564" fill="url(#sheen)"/></svg>

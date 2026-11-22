@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="151" viewBox="0 0 361 151"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.0" />
+</filter>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+  <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+  <stop offset="1" stop-color="#000000" stop-opacity="0.10"/>
+</linearGradient>
+<g id="mark">
+  <path d="M0 -100 L100 0 L0 100 L-100 0Z" fill="#17295a"/>
+  <path d="M0 -88 L88 0 L0 88 L-88 0Z" fill="#f6f4ee"/>
+  <path d="M0 -76 L76 0 L0 76 L-76 0Z" fill="#c8202d"/>
+  <path d="M0.000,-1.000 L0.235,-0.324 L0.951,-0.309 L0.380,0.124 L0.588,0.809 L0.000,0.400 L-0.588,0.809 L-0.380,0.124 L-0.951,-0.309 L-0.235,-0.324Z" transform="translate(0,4) scale(50)" fill="#f6f4ee"/>
+</g>
+</defs>
+<rect width="361" height="151" fill="#f6f4ee"/>
+<rect y="0" width="361" height="10" fill="#17295a"/>
+<rect y="141" width="361" height="10" fill="#17295a"/>
+<rect x="24" y="32" width="132" height="84" fill="#ffffff"/><rect x="30" y="38" width="1" height="60" fill="#111111"/><rect x="33" y="38" width="2" height="60" fill="#111111"/><rect x="38" y="38" width="1" height="60" fill="#111111"/><rect x="40" y="38" width="3" height="60" fill="#111111"/><rect x="45" y="38" width="1" height="60" fill="#111111"/><rect x="48" y="38" width="3" height="60" fill="#111111"/><rect x="54" y="38" width="3" height="60" fill="#111111"/><rect x="59" y="38" width="1" height="60" fill="#111111"/><rect x="62" y="38" width="3" height="60" fill="#111111"/><rect x="66" y="38" width="1" height="60" fill="#111111"/><rect x="69" y="38" width="1" height="60" fill="#111111"/><rect x="72" y="38" width="1" height="60" fill="#111111"/><rect x="75" y="38" width="3" height="60" fill="#111111"/><rect x="81" y="38" width="3" height="60" fill="#111111"/><rect x="87" y="38" width="3" height="60" fill="#111111"/><rect x="92" y="38" width="2" height="60" fill="#111111"/><rect x="95" y="38" width="1" height="60" fill="#111111"/><rect x="98" y="38" width="3" height="60" fill="#111111"/><rect x="103" y="38" width="2" height="60" fill="#111111"/><rect x="108" y="38" width="2" height="60" fill="#111111"/><rect x="113" y="38" width="3" height="60" fill="#111111"/><rect x="118" y="38" width="3" height="60" fill="#111111"/><rect x="123" y="38" width="2" height="60" fill="#111111"/><rect x="126" y="38" width="2" height="60" fill="#111111"/><rect x="130" y="38" width="2" height="60" fill="#111111"/><rect x="133" y="38" width="1" height="60" fill="#111111"/><rect x="136" y="38" width="2" height="60" fill="#111111"/><rect x="139" y="38" width="1" height="60" fill="#111111"/><rect x="143" y="38" width="3" height="60" fill="#111111"/><rect x="147" y="38" width="2" height="60" fill="#111111"/><text x="90.0" y="112" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="11" fill="#111111">0 28200 00417 6</text>
+<text x="250" y="60" text-anchor="middle" font-family="'Arial Black', 'Segoe UI Black', sans-serif" font-size="24" fill="#17295a">STOCKTON</text>
+<text x="250" y="84" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#111111">LOT 0417 R</text>
+<text x="250" y="104" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#111111">RICHMOND VA</text>
+<rect width="361" height="151" filter="url(#grain)" opacity="0.06"/><rect width="361" height="151" fill="url(#sheen)"/></svg>

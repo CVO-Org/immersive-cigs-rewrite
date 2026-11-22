@@ -1,0 +1,11 @@
+Add Brigade cigarettes (East Germany)
+
+New filter cigarette brand for the Cold War East German factions of
+Global Mobilization (gm_fc_gc): a plain VEB-style pack from the
+fictional VEB Tabakwerk Elbaue. 20 cigarettes, 17 puffs, cork filter,
+five flavour lines. Copied from voron; texture and gear icons built
+with texture_compose.py and gear_icons.py. No faction mapping yet.
+
+Part of #311
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

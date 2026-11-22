@@ -231,7 +231,7 @@ class cigs_terrainPacks {
 
 ### Included terrain presets
 
-Each terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era, then international brands that fit the era. Units pick 1–3 at random. No gag brands and no Voron, as these reach civilians and soldiers alike. The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only appear on the 1940s terrains.
+Each terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era, then international brands that fit the era. Units pick 1–3 at random. No gag brands and no Voron, as these reach civilians and soldiers alike; only the science fiction terrains get Baja Blast and Black Devil Pink. The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only appear on the 1940s terrains.
 
 Every vanilla military and guerrilla faction has its own faction preset, so these reach the civilians and mod factions without a preset. VR has no entry.
 
@@ -249,7 +249,7 @@ Every vanilla military and guerrilla faction has its own faction preset, so thes
 
 The CDLC entries need no dependency: they only apply while that terrain is loaded. The CDLC factions keep their own faction presets, so these reach the other factions on the terrain. Expeditionary Forces and Reaction Forces bring no terrain.
 
-Mod terrains, also without a dependency. The modern ones leave out Kosmos and the WW2 looks, the Vietnam War ones get the S.O.G. packs, and the science fiction ones only the timeless packs. Empty test maps (VEU Expanses) get no entry:
+Mod terrains, also without a dependency. The modern ones leave out Kosmos and the WW2 looks, the Vietnam War ones get the S.O.G. packs, and the science fiction ones the global filler plus the gag brands Baja Blast and Black Devil Pink, as no real era applies there. Empty test maps (VEU Expanses) get no entry:
 
 | Terrain | Packs |
 | ------- | ----- |
@@ -262,12 +262,13 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Kujari `tem_kujari`, Niakala `juju_kalahari`, Green Valley `green_valley` | Casa Sports, Marlboro, Camel, Morley, NIL |
 | Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
 | Napf `Napf`, `NapfWinter` | NIL, Marlboro, Camel, Morley |
-| Pulau `pulau`, Prei Khmaoch Luong `rhspkl`, Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia`, Mull of Kintyre `rof_mok`, Drakovac `drakovac`, Sa'hatra `juju_sahatra`, Djalka `K9S_Djalka`, Kaska `kaska` | Marlboro, Camel, Morley, NIL |
+| Pulau `pulau`, Prei Khmaoch Luong `rhspkl`, Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia`, Mull of Kintyre `rof_mok`, Drakovac `drakovac`, Djalka `K9S_Djalka`, Kaska `kaska` | Marlboro, Camel, Morley, NIL |
 | Sehreno `Sehreno` | Morley, Marlboro, Camel, NIL |
-| Yulakia `yulakia`, Lybor `VTF_Lybor`, `VTF_Lybor_Winter`, G.O.S Leskovets `pja314` | Apollo Soyuz, Marlboro, Camel, NIL, Morley |
-| G.O.S Al Rayak `pja310` | Alborz, Marlboro, Camel, Morley, NIL |
+| Yulakia `yulakia`, Lybor `VTF_Lybor`, `VTF_Lybor_Winter`, G.O.S Leskovets `pja314` | Apollo Soyuz, Gudok, Zamok, Sosna, Marlboro, Camel, NIL |
+| G.O.S Al Rayak `pja310` | Alborz, Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| Sa'hatra `juju_sahatra` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
 | Hue `Hue`, Tien Giang `rtbf_tien_giang`, November-Seven `rtbf_november_seven`, Fox Hutan `fox_hutan`, Pamai `fox_pamai`, Vanam `fox_vanam`<br>S.O.G. Nickel Steel `dong_giang`, `vnx_rssz`<br>UNSUNG `csj_lowlands`, `DaKrong`, `RungSat`, `song_bin_tanh`, `urx_jnd_balong`, `urx_jnd_dakpek` | Ruby Queen, Savage, Marlboro, Camel, Kosmos |
-| OPTRE (Operation TREBUCHET, First Contact) `OPTRE_Arcadia`, `OPTRE_Archipelago`, `Glassed`, `OPTRE_Installation04`, `OPTRE_Snowlands`, `OPTRE_Wetlands`, `Blood_OPTRE`, `OPTRE_EridanusSecundus`, `OPTRE_Gridlock`, `OPTRE_Harvest`, `OPTRE_iberius`, `OPTRE_Kholo`, `OPTRE_Madrigal`, `OPTRE_Phobos`, `OPTRE_Roost`, `OPTRE_Sandstorm`<br>The Kuiper Engagements `TKE_Ext_Europa`, `TKE_Ext_Ganymede` | Morley, NIL |
+| OPTRE (Operation TREBUCHET, First Contact) `OPTRE_Arcadia`, `OPTRE_Archipelago`, `Glassed`, `OPTRE_Installation04`, `OPTRE_Snowlands`, `OPTRE_Wetlands`, `Blood_OPTRE`, `OPTRE_EridanusSecundus`, `OPTRE_Gridlock`, `OPTRE_Harvest`, `OPTRE_iberius`, `OPTRE_Kholo`, `OPTRE_Madrigal`, `OPTRE_Phobos`, `OPTRE_Roost`, `OPTRE_Sandstorm`<br>The Kuiper Engagements `TKE_Ext_Europa`, `TKE_Ext_Ganymede` | Morley, NIL, Marlboro, Camel, Mtn Dew Baja Blast, Black Devil Pink |
 
 ## Default pack presets
 

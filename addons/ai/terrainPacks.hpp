@@ -16,6 +16,7 @@
 // A terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era,
 // then the international brands that fit the era. Units pick 1-3 of them at random.
 // No gag brands (Crayons, Baja Blast, Black Devil) and no Voron, as these reach civilians and soldiers alike.
+// Exception: the science fiction terrains may use Baja Blast and Black Devil.
 // The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) are kept for the 1940s terrains, see docs/classnames.md.
 class PVAR(terrainPacks) {
 
@@ -249,18 +250,18 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Yulakia, Lybor, Leskovets - fictional Eastern Europe, no brand of the region yet
+    // Yulakia, Lybor, Leskovets - fictional Eastern Europe, ex-Soviet and Chernarus brands
     class yulakia {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class VTF_Lybor {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class VTF_Lybor_Winter {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class pja314 {                                  // G.O.S Leskovets, Bulgaria
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // Sumava - Czech Republic
@@ -298,14 +299,14 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand
+    // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand, then the Takistan brands
     class pja310 {
-        packs[] = { QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(alborz,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Sa'hatra - Iraq and Kuwait, 2003, no brand of the region yet
+    // Sa'hatra - Iraq and Kuwait, 2003. The Takistan brands stand in for the region
     class juju_sahatra {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
     // Sehreno - a take on Sahrani, no Sahrani brand yet
@@ -375,63 +376,64 @@ class PVAR(terrainPacks) {
     };
 
     // ------------------------------------------------------------------------ Mod terrains, science fiction
-    // 26th century and later: only the timeless packs. Officers get Papa Schultz at unit class level, not here.
+    // 26th century and later: the global filler plus the gag brands, which are allowed here as no real era applies.
+    // Officers get Papa Schultz at unit class level, not here.
 
     // Operation TREBUCHET, OPTRE First Contact - Halo worlds
     class OPTRE_Arcadia {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Archipelago {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class Glassed {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Installation04 {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Snowlands {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Wetlands {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class Blood_OPTRE {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_EridanusSecundus {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Gridlock {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Harvest {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_iberius {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Kholo {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Madrigal {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Phobos {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Roost {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class OPTRE_Sandstorm {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
 
     // The Kuiper Engagements - Europa, Ganymede
     class TKE_Ext_Europa {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class TKE_Ext_Ganymede {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(morley,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
     };
 };

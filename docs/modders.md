@@ -164,6 +164,8 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 
 Civilians (`CIV_F`) have no entry, as they cover several maps at once; they get the default presets below. The Contact DLC's own factions (EMP variants, extraterrestrials) have none either.
 
+The vanilla officers have a [unit class preset](#unit-class-presets): `cigs_packsExtra[]` adds a box of cigars to their faction's packs. It is set on `B_officer_F`, `O_officer_F`, `I_officer_F`, `I_E_Officer_F` and `I_G_officer_F`, so their Pacific, Woodland, parade and FIA variants inherit it.
+
 #### Global Mobilization
 
 Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.

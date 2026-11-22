@@ -22,6 +22,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\morley
    - \addons\pops
    - \addons\shanhai
+   - \addons\sharig
    - \addons\sosna
    - \addons\voron
    - \addons\zamok

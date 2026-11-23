@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_parisienne">
+    <Package name="Items">
+        <Key ID="STR_cigs_parisienne_cigarette">
+            <English>Parisienne Cigarette</English>
+            <French>Cigarette Parisienne</French>
+            <Spanish>Cigarrillo Parisienne</Spanish>
+            <Polish>Papieros Parisienne</Polish>
+            <Portuguese>Cigarro Parisienne</Portuguese>
+            <Russian>Сигарета Parisienne</Russian>
+            <German>Parisienne Zigarette</German>
+            <Korean>Parisienne 담배</Korean>
+            <Japanese>紙巻たばこ パリジェンヌ</Japanese>
+            <Chinese>Parisienne 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_parisienne_cigpack">
+            <English>Pack of Parisienne</English>
+            <French>Paquet de Parisienne</French>
+            <Spanish>Cajetilla de Parisienne</Spanish>
+            <Polish>Paczka Parisienne</Polish>
+            <Portuguese>Maço de Parisienne</Portuguese>
+            <Russian>Пачка Parisienne</Russian>
+            <German>Schachtel Parisienne</German>
+            <Korean>Parisienne 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (パリジェンヌ)</Japanese>
+            <Chinese>一包 Parisienne</Chinese>
+        </Key>
+        <Key ID="STR_cigs_parisienne_cigpack_desc">
+            <English>The Swiss classic since 1887, from Boncourt.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking can cause your AI squad to ignore your orders.</English>
+            <French>Le classique suisse depuis 1887, de Boncourt.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer peut amener votre escouade IA à ignorer vos ordres.</French>
+            <Spanish>El clásico suizo desde 1887, de Boncourt.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar puede hacer que tu escuadra de IA ignore tus órdenes.</Spanish>
+            <Polish>Szwajcarski klasyk od 1887 roku, z Boncourt.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie może sprawić, że twój oddział AI zignoruje twoje rozkazy.</Polish>
+            <Portuguese>O clássico suíço desde 1887, de Boncourt.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar pode fazer seu esquadrão de IA ignorar suas ordens.</Portuguese>
+            <Russian>Швейцарская классика с 1887 года, из Бонкура.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение может заставить ваш ИИ-отряд игнорировать ваши приказы.</Russian>
+            <German>Der Schweizer Klassiker seit 1887, aus Boncourt.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen kann dazu führen, dass dein KI-Trupp deine Befehle ignoriert.</German>
+            <Korean>1887년부터 이어진 스위스 보뉴쿠르의 고전.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 AI 분대가 당신의 명령을 무시하게 만들 수 있습니다.</Korean>
+            <Japanese>1887年から続くボンクール産のスイスの定番。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙するとAI分隊があなたの命令を無視することがあります。</Japanese>
+            <Chinese>自1887年起的瑞士經典，產自博恩古爾。&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸可能導致你的AI小隊無視你的命令。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_parisienne_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

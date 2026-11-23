@@ -14,6 +14,8 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\cigars
    - \addons\gudok
    - \addons\jaffudi
+   - \addons\john_silver
+   - \addons\klubi
    - \addons\kosmos
    - \addons\lipa
    - \addons\lipa_dzwonek
@@ -33,19 +35,29 @@ The following Folders are under no license
    - \addons\black_devil
    - \addons\camel
    - \addons\casa_sport
+   - \addons\cleopatra
    - \addons\craven
+   - \addons\drina
+   - \addons\ducados
    - \addons\eckstein
    - \addons\ernte_23
    - \addons\f6
+   - \addons\gudang_garam
    - \addons\hwarang
    - \addons\juno
+   - \addons\lambert_butler
    - \addons\lucky_strike
    - \addons\marlboro
    - \addons\parliament
+   - \addons\newport
+   - \addons\parisienne
+   - \addons\pielroja
    - \addons\popularne
    - \addons\prince
    - \addons\ruby_queen
+   - \addons\sobranie
    - \addons\sparta
+   - \addons\sportsman
    - \addons\troupes
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.

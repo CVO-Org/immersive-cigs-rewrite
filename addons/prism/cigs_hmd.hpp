@@ -19,7 +19,7 @@ class CfgWeapons {
 
         PVAR(totalPuffs) = TOTALPUFFS;
         PVAR(curStage) = 0;
-        PVAR(flavor)[] = { "smooth, bright, unapologetic", "a parade on a sunny day", "every shade of smoke", "light, split six ways", "loud colours, quiet drag", "a rooftop party at golden hour", "brunch with the chosen family", "the after-party, still going", "a little fabulous, a little ashy", "out, proud and slightly coughing" };
+        PVAR(flavor)[] = { "smooth, bright, unapologetic", "a parade on a sunny day", "every shade of smoke", "light, split six ways", "loud colours, quiet drag", "a rooftop party at golden hour", "brunch with the chosen family", "the after-party, still going", "a little fabulous, a little ashy", "out, proud and slightly coughing", "M100F approved" };
         
 
         class ItemInfo {

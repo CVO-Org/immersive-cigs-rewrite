@@ -18,10 +18,12 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_cigars_cigarbox_5` | Box of Cigars | cigars | Vulcano |
 | `cigs_papa_schultz_cigarbox_5` | Pack of Papa Schultz' Cigars | cigars | |
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |
+| `cigs_ducados_cigpack` | Pack of Ducados | cigarettes | Spain / Sahrani, 1963 on, Negro |
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
 | `cigs_ernte_23_cigpack` | Pack of Ernte 23 | cigarettes | West Germany, 1970s-80s (GM) |
 | `cigs_f6_cigpack` | Pack of f6 | cigarettes | East Germany (GDR), Global Mobilization era |
+| `cigs_gudang_garam_cigpack` | Pack of Gudang Garam International | cigarettes (kretek) | Southeast Asia, modern |
 | `cigs_gudok_cigpack` | Pack of Gudok | cigarettes (without filter) | Chernarus, 1980s, cheap domestic |
 | `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
 | `cigs_jaffudi_cigpack` | Pack of Jaffudi | cigarettes | Takistan, kingdom era (1960s-80s), royal brand |

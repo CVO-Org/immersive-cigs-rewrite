@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_gudang_garam">
+    <Package name="Items">
+        <Key ID="STR_cigs_gudang_garam_cigarette">
+            <English>Gudang Garam International Cigarette</English>
+            <French>Cigarette Gudang Garam International</French>
+            <Spanish>Cigarrillo Gudang Garam International</Spanish>
+            <Polish>Papieros Gudang Garam International</Polish>
+            <Portuguese>Cigarro Gudang Garam International</Portuguese>
+            <Russian>Сигарета Gudang Garam International</Russian>
+            <German>Gudang Garam International Zigarette</German>
+            <Korean>Gudang Garam International 담배</Korean>
+            <Japanese>紙巻たばこ Gudang Garam International</Japanese>
+            <Chinese>Gudang Garam International 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_gudang_garam_cigpack">
+            <English>Pack of Gudang Garam International</English>
+            <French>Paquet de Gudang Garam International</French>
+            <Spanish>Cajetilla de Gudang Garam International</Spanish>
+            <Polish>Paczka Gudang Garam International</Polish>
+            <Portuguese>Maço de Gudang Garam International</Portuguese>
+            <Russian>Пачка Gudang Garam International</Russian>
+            <German>Schachtel Gudang Garam International</German>
+            <Korean>Gudang Garam International 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (Gudang Garam International)</Japanese>
+            <Chinese>一包 Gudang Garam International</Chinese>
+        </Key>
+        <Key ID="STR_cigs_gudang_garam_cigpack_desc">
+            <English>Filter kretek cigarettes.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;WARNING: Smoking in Arma makes you celibate.</English>
+            <French>Cigarettes kretek à filtre.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;ATTENTION: Fumer dans Arma vous rend célibataire.</French>
+            <Spanish>Cigarrillos kretek con filtro.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;ADVERTENCIA: fumar en Arma te deja célibe.</Spanish>
+            <Polish>Papierosy kretek z filtrem.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;UWAGA: palenie w Armie skazuje na celibat.</Polish>
+            <Portuguese>Cigarros kretek com filtro.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;AVISO: fumar no Arma deixa você celibatário.</Portuguese>
+            <Russian>Сигареты кретек с фильтром.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;ВНИМАНИЕ: курение в Arma обрекает на целибат.</Russian>
+            <German>Kretek-Filterzigaretten.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;ACHTUNG: Rauchen in Arma macht enthaltsam.</German>
+            <Korean>필터 크레텍 담배.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: Arma에서 흡연하면 독신이 됩니다.</Korean>
+            <Japanese>フィルター付きクレテック。&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: Armaでの喫煙は禁欲生活を招きます。</Japanese>
+            <Chinese>帶濾嘴丁香菸。&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：在 Arma 吸菸會讓你變成單身貴族。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_gudang_garam_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

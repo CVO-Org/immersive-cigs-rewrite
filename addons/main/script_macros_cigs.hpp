@@ -28,3 +28,17 @@
 #define QPATH_BASE_MODEL_CIGAR4 QPATHTOEF(base,data\cigar4.p3d)
 
 #define MODLSTRING(key) [LSTRING(DOUBLES(module,key)),LSTRING(TRIPLES(module,key,desc))]
+
+// Unit class preset for an officer (CfgVehicles): a box of cigars on top of the faction's packs.
+// PARENT must be the class's real parent, or the inheritance of the unit breaks.
+#define OFFICER_CIGARS(CLASS,PARENT) \
+    class PARENT; \
+    class CLASS: PARENT { \
+        PVAR(packsExtra)[] = { QEGVAR(cigars,cigarbox_5) }; \
+    }
+
+// The same, for a second officer whose parent was already declared by OFFICER_CIGARS (a class can only be declared once).
+#define OFFICER_CIGARS_SAME_PARENT(CLASS,PARENT) \
+    class CLASS: PARENT { \
+        PVAR(packsExtra)[] = { QEGVAR(cigars,cigarbox_5) }; \
+    }

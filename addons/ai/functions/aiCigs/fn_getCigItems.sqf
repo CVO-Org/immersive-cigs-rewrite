@@ -54,7 +54,7 @@ private _return = call {
     if ( !isNil "_configPacks" ) exitWith { _configPacks };
 
     // Terrain presets - packs[] in cigs_terrainPacks >> worldName for all sides, see fn_getTerrainPacks. nil when the terrain has no entry.
-    private _terrainPacks = if ( missionNamespace getVariable [QSET(aiCigs_terrainPresets_enable), true] ) then { EGVAR(aiCigs,terrain) } else { nil };
+    private _terrainPacks = if ( missionNamespace getVariable [QSET(aiCigs_terrainPresets_enable), true] ) then { missionNamespace getVariable QEGVAR(aiCigs,terrain) } else { nil };
     if ( !isNil "_terrainPacks" ) exitWith { _terrainPacks };
 
     [EGVAR(aiCigs,default)] call _fromMap

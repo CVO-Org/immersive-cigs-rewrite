@@ -2,7 +2,7 @@
 
 [Back to the documentation overview](README.md)
 
-Every brand in the mod, with where it comes from, the era its pack look belongs to, and where it may be used. Check this page before you put a brand into a [faction or terrain preset](modders.md#faction-presets).
+Every brand in the mod, with where it comes from, the era its pack look belongs to, and where it may be used. Check this page before you put a brand into a [faction or terrain preset](modders.md#faction-presets). For ready-made lists by region, faction and era, see [Pack groups](#pack-groups).
 
 The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), converted to PNG and scaled down.
 
@@ -91,3 +91,159 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | :--: | ---- | --------- | ------ | --- | ---------------------- | ------- |
 | ![](img/brands/crayons.png) | Crayons | `cigs_crayons_crayonpack` | Gag brand | any | Suckable, no smoke. Only for the NATO crayon joke | NATO, NATO (Pacific), NATO (Woodland), NATO (Desert), MJTF (Desert and Woodland), default WEST and CIV |
 | ![](img/brands/pops.png) | Lollipop | `cigs_pops_poppack` | – | any | Suckable, no smoke. For aid workers and civilians | IDAP, default CIV |
+
+## Pack groups
+
+Ready-made pack lists by region, faction and era, following the rules above: the regional brand first, then brands of the same region and era, then international filler. Copy one into `cigs_aiCigs_api` or `cigs_aiCigs_api_lesser` (see [Scripting API](api.md#ai-cigs-packs-per-side)), tick the same packs in the *Configure AI Cigs* module, or use it as the start of a new preset.
+
+```sqf
+// initServer.sqf - a mission on Takistan with US troops against the Takistani army
+cigs_aiCigs_api = createHashMapFromArray [
+    ["WEST", ["cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_newport_cigpack", "cigs_morley_cigpack"]],
+    ["EAST", ["cigs_jaffudi_cigpack", "cigs_zargabad_cigpack", "cigs_sharig_cigpack", "cigs_marlboro_cigpack"]],
+    ["CIV",  ["cigs_zargabad_cigpack", "cigs_jaffudi_cigpack", "cigs_sharig_cigpack"]]
+];
+```
+
+- Unlike the presets, the API does not drop packs that aren't loaded, so the groups leave out the planned Belomorkanal. Savage only exists with S.O.G. Prairie Fire.
+- AI pick 1 to 3 packs from a list, so a short list keeps a faction recognisable and a long one makes it varied.
+- Cigars are not in any group: give them to officers at unit class level (`cigs_packsExtra[]`). Prism, Sobranie Black Russian and Death are arsenal-only brands and in no group either.
+
+### Europe
+
+```sqf
+// Altis, Stratis - Mediterranean, 2035
+["cigs_almyra_cigpack", "cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// Livonia - Eastern Europe, 2035
+["cigs_lipa_cigpack", "cigs_lipa_dzwonek_cigpack", "cigs_popularne_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// Chernarus and the post-Soviet terrains - any era (Apollo Soyuz from 1975)
+["cigs_gudok_cigpack", "cigs_zamok_cigpack", "cigs_sosna_cigpack", "cigs_apollo_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack"]
+
+// Russia - modern
+["cigs_parliament_cigpack", "cigs_kosmos_cigpack", "cigs_apollo_cigpack", "cigs_marlboro_cigpack"]
+
+// Czechoslovakia, Czech Republic
+["cigs_sparta_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+
+// Yugoslavia, Serbia, the Balkans
+["cigs_drina_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack"]
+
+// Germany - West Germany in the Cold War, modern Germany
+["cigs_ernte_23_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+
+// Austria, Switzerland - the Alps
+["cigs_parisienne_cigpack", "cigs_nil_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack"]
+
+// France, Malden - any era
+["cigs_matelot_cigpack", "cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// Spain, Sahrani
+["cigs_ducados_cigpack", "cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// United Kingdom
+["cigs_lambert_butler_cigpack", "cigs_marlboro_cigpack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+
+// Western Europe, mixed
+["cigs_matelot_cigpack", "cigs_ducados_cigpack", "cigs_lambert_butler_cigpack", "cigs_ernte_23_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// Finland
+["cigs_klubi_cigpack", "cigs_john_silver_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack"]
+
+// Sweden, Norway, Denmark
+["cigs_john_silver_cigpack", "cigs_prince_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack"]
+```
+
+### Middle East, Africa, Asia, Americas
+
+```sqf
+// Takistan, Afghanistan, Central Asia
+["cigs_jaffudi_cigpack", "cigs_zargabad_cigpack", "cigs_sharig_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack"]
+
+// Middle East, Arab world
+["cigs_cleopatra_cigpack", "cigs_alborz_cigpack", "cigs_zargabad_cigpack", "cigs_jaffudi_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack"]
+
+// North Africa, Western Sahara (Argana)
+["cigs_casa_sport_cigpack", "cigs_cleopatra_cigpack", "cigs_camel_cigpack", "cigs_marlboro_cigpack", "cigs_morley_cigpack"]
+
+// Sub-Saharan Africa, the Sahel
+["cigs_sportsman_cigpack", "cigs_casa_sport_cigpack", "cigs_cleopatra_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack"]
+
+// Tanoa, the South Pacific
+["cigs_matelot_cigpack", "cigs_shanhai_cigpack", "cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_nil_cigpack"]
+
+// Southeast Asia - modern
+["cigs_gudang_garam_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+
+// South America
+["cigs_pielroja_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+
+// USA - post-war and modern
+["cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_newport_cigpack", "cigs_morley_cigpack"]
+```
+
+### Factions
+
+```sqf
+// NATO, 2035 - with the crayon joke
+["cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_newport_cigpack", "cigs_camel_cigpack", "cigs_crayons_crayonpack"]
+
+// CSAT, 2035
+["cigs_alborz_cigpack", "cigs_apollo_cigpack", "cigs_kosmos_cigpack"]
+
+// CSAT (Pacific), Viper
+["cigs_shanhai_cigpack", "cigs_alborz_cigpack", "cigs_apollo_cigpack"]
+
+// Spetsnaz
+["cigs_kosmos_cigpack", "cigs_apollo_cigpack", "cigs_parliament_cigpack", "cigs_voron_cigpack"]
+
+// UN peacekeepers
+["cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_prince_cigpack"]
+
+// Private military contractors (ION and the like)
+["cigs_camel_cigpack", "cigs_morley_cigpack", "cigs_marlboro_cigpack", "cigs_newport_cigpack"]
+
+// Guerrillas, criminals - the gag brands; add the region's brand in front
+["cigs_black_devil_cigpack", "cigs_baja_blast_cigpack"]
+
+// Aid workers
+["cigs_pops_poppack", "cigs_morley_cigpack", "cigs_nil_cigpack"]
+```
+
+### Eras
+
+```sqf
+// 1944 - Germany
+["cigs_eckstein_cigpack", "cigs_juno_cigpack"]
+
+// 1944 - France, resistance and civilians
+["cigs_troupes_cigpack", "cigs_matelot_cigpack", "cigs_lucky_strike_cigpack"]
+
+// 1944 - US Army and the Allies
+["cigs_lucky_strike_cigpack", "cigs_camel_cigpack", "cigs_craven_cigpack", "cigs_morley_cigpack"]
+
+// Cold War - Eastern Bloc (Apollo Soyuz from 1975)
+["cigs_kosmos_cigpack", "cigs_apollo_cigpack", "cigs_f6_cigpack", "cigs_popularne_cigpack", "cigs_sparta_cigpack"]
+
+// Cold War - East Germany
+["cigs_f6_cigpack", "cigs_kosmos_cigpack", "cigs_apollo_cigpack"]
+
+// Cold War - Poland
+["cigs_popularne_cigpack", "cigs_kosmos_cigpack", "cigs_apollo_cigpack"]
+
+// Cold War - West (US, West Germany)
+["cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_ernte_23_cigpack", "cigs_morley_cigpack"]
+
+// Vietnam War - US and allies (Savage needs S.O.G. Prairie Fire)
+["cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_savage_cigpack", "cigs_morley_cigpack"]
+
+// Vietnam War - South Vietnam, Laos, Cambodia, the communist side
+["cigs_ruby_queen_cigpack", "cigs_kosmos_cigpack", "cigs_savage_cigpack"]
+
+// Vietnam War - South Korea
+["cigs_hwarang_cigpack", "cigs_marlboro_cigpack", "cigs_savage_cigpack"]
+
+// Science fiction - no real era, so the gag brands are fine
+["cigs_morley_cigpack", "cigs_nil_cigpack", "cigs_marlboro_cigpack", "cigs_camel_cigpack", "cigs_baja_blast_cigpack", "cigs_black_devil_cigpack"]
+```

@@ -10,7 +10,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 
 - **Era first.** A preset only uses brands whose pack look fits its era. The WW2 looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) stay in the 1940s presets (Spearhead 1944). Post-war Western filler is Marlboro and Camel; Morley, NIL and Matelot are timeless. Two exceptions by choice: the Chernarus brands (Gudok, Zamok, Sosna) are used for Chernarus factions of every era, and Kosmos and Apollo Soyuz also go to modern Russian factions.
 - **Regional brand first.** A faction or terrain lists its own region's brand first, then brands of the same region and era, then international brands that fit the era.
-- **Gag brands** (Crayons, Mtn Dew Baja Blast, Black Devil Pink) only go to guerrillas, criminals and the NATO crayon joke (vanilla NATO, NATO (Desert), Expeditionary Forces). Never into terrain presets, as those reach everyone.
+- **Gag brands** (Crayons, Mtn Dew Baja Blast, Black Devil Pink, Black Death) only go to guerrillas, criminals and the NATO crayon joke (vanilla NATO, NATO (Desert), Expeditionary Forces). Never into terrain presets, as those reach everyone.
 - **Voron** is the brand of the author's unit. It only goes to Spetsnaz, the LDF and the Looters.
 - **Cigars** are for officers, at unit class level. Never per faction or terrain.
 - **Only real brands for real eras.** Historical settings use the real brand with its period pack look, not an invented stand-in.
@@ -23,6 +23,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/almyra.png) | Almyra | `cigs_almyra_cigpack` | Altis | 2035 | Regional brand of Altis and Stratis | AAF, FIA, terrains Altis and Stratis, 3CB AAF, APD, FIA |
 | ![](img/brands/apollo.png) | Apollo Soyuz | `cigs_apollo_cigpack` | Soviet Union, made for the 1975 Apollo–Soyuz mission | 1975 onwards | Not before 1975, so not in S.O.G. Prairie Fire. Also used for modern Russian factions | CSAT, Spetsnaz, East Germany, Poland, CSLA, default EAST and CIV, RHS Russia, 3CB CSAT, CW USSR Late |
 | ![](img/brands/baja_blast.png) | Mtn Dew Baja Blast | `cigs_baja_blast_cigpack` | Gag brand | any | Tinted smoke. Gag brand: guerrillas and criminals only | Syndikat, Tura, default GUER and CIV, RHS TLA, 3CB TNM |
+| ![](img/brands/black_death.png) | Black Death | `cigs_black_death_cigpack` | United Kingdom, 1990s novelty brand (skull in a top hat) | 1990s onwards | Black paper and filter. Gag brand: no preset of its own, arsenal and ZEN brand choice only; if ever added, guerrillas and criminals only | – |
 | ![](img/brands/black_devil.png) | Black Devil Pink | `cigs_black_devil_cigpack` | Netherlands, novelty pink cigarettes | modern | Gag brand: guerrillas and criminals only | Syndikat, FIA, Looters, SFIA, Tura, default GUER and CIV, RHS TLA, 3CB FIA, TNM, ADG, ADM, PLM, WEI |
 | ![](img/brands/camel.png) | Camel | `cigs_camel_cigpack` | USA | 1920s onwards | International Western filler, fits every era | Many post-war Western factions and most terrains, RHS US, UN, Serbia, 3CB African factions, PLM, WEI, UN, ION, CW US |
 | ![](img/brands/casa_sport.png) | Casa Sports | `cigs_casa_sport_cigpack` | Morocco | modern | Filterless. Regional brand of North Africa | SFIA, Tura, terrain Sefrou-Ramal, 3CB African factions |

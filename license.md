@@ -30,6 +30,7 @@ Creative Commons Attribution 4.0 International Public License
 
 The following Folders are under no license
    - \addons\baja_blast
+   - \addons\black_death
    - \addons\black_devil
    - \addons\camel
    - \addons\casa_sport

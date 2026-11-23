@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_black_death">
+    <Package name="Items">
+        <Key ID="STR_cigs_black_death_cigarette">
+            <English>Black Death Cigarette</English>
+            <French>Cigarette Black Death</French>
+            <Spanish>Cigarrillo Black Death</Spanish>
+            <Polish>Papieros Black Death</Polish>
+            <Portuguese>Cigarro Black Death</Portuguese>
+            <Russian>Сигарета Black Death</Russian>
+            <German>Black Death Zigarette</German>
+            <Korean>Black Death 담배</Korean>
+            <Japanese>紙巻たばこ ブラック・デス</Japanese>
+            <Chinese>Black Death 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_black_death_cigpack">
+            <English>Pack of Black Death</English>
+            <French>Paquet de Black Death</French>
+            <Spanish>Cajetilla de Black Death</Spanish>
+            <Polish>Paczka Black Death</Polish>
+            <Portuguese>Maço de Black Death</Portuguese>
+            <Russian>Пачка Black Death</Russian>
+            <German>Schachtel Black Death</German>
+            <Korean>Black Death 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (ブラック・デス)</Japanese>
+            <Chinese>一包 Black Death</Chinese>
+        </Key>
+        <Key ID="STR_cigs_black_death_cigpack_desc">
+            <English>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <German>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Japanese>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>The only honest cigarette: it says what it does on the pack.&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_black_death_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

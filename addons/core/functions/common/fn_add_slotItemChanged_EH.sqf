@@ -50,8 +50,7 @@ private _id = _unit addEventHandler [
         };
 
         if (_stopConsuming) then {
-            _unit setVariable [QPVAR(isConsuming), false, true];
-            if (_unit isNil QPVAR(loopData) ) then { _unit setVariable [QGVAR(forceVanish), true]; }; // read by drop_cig
+            _unit setVariable [QPVAR(isConsuming), false, true];    // drop_cig sees the item is no longer in its slot and leaves it where the player put it
             call _rm_eh;
         };
     }

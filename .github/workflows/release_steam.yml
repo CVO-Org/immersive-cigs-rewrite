@@ -1,0 +1,39 @@
+# Builds the mod with HEMTT and publishes it to the Steam Workshop on every release.
+# The logic lives centrally in A3-AZ/a3_workflows - this file only sets the values for this mod.
+# Documentation: https://github.com/A3-AZ/a3_workflows/tree/main/release_steam
+#
+# - Pre-release:  updates the DEV item, Discord ping
+# - Full release: updates the STABLE item and the DEV item, attaches the zip, Discord ping
+# - Models are binarized with Arma 3 Tools from the ARMA3_TOOLS_URL org secret (issue #371)
+
+name: "Release: Steam"
+
+on:
+  release:
+    types: [prereleased, released]
+
+permissions:
+  contents: write
+
+# Two releases of the same repository never upload at the same time
+concurrency:
+  group: release-steam
+  cancel-in-progress: false
+
+jobs:
+  release:
+    uses: A3-AZ/a3_workflows/.github/workflows/release_steam.yml@v1
+    with:
+      mod-folder: '@cigs'
+      mod-name: 'Immersive Cigs - Rewrite'
+      workshop-id: '3375788189'
+      workshop-id-dev: '3518473416'
+      mod-folder-dev: '@cigs-dev'
+      # Same as before the move to release_steam: only the role ping above the release notes
+      discord-message-stable: '||<@&1433861420008865872>||'
+      discord-message-dev: '||<@&1433861420008865872>||'
+    secrets:
+      steam-username: ${{ secrets.STEAM_USERNAME }}
+      steam-password: ${{ secrets.STEAM_PASSWORD }}
+      discord-webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      arma3-tools-url: ${{ secrets.ARMA3_TOOLS_URL }}

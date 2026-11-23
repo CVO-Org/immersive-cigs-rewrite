@@ -12,7 +12,7 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ NATO
     class BLU_F {           // NATO
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_T_F {         // NATO (Pacific)
         PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(matelot,cigpack), QEGVAR(crayons,crayonpack) };

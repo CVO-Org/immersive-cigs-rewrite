@@ -22,6 +22,6 @@ class GVAR(defaultPacks) {
         WEST[] = { QEGVAR(morley,cigpack), QEGVAR(crayons,crayonpack) };
         EAST[] = { QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack) };
         GUER[] = { QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
-        CIV[]  = { QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) };
+        CIV[]  = { QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(newport,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) };
     };
 };

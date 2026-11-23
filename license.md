@@ -46,6 +46,7 @@ The following Folders are under no license
    - \addons\juno
    - \addons\lucky_strike
    - \addons\marlboro
+   - \addons\newport
    - \addons\parisienne
    - \addons\pielroja
    - \addons\popularne

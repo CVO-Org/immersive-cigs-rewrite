@@ -12,7 +12,7 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ NATO
     class BLU_F {           // NATO
-        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
+        PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack), QEGVAR(camel,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_T_F {         // NATO (Pacific)
         PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(matelot,cigpack), QEGVAR(crayons,crayonpack) };
@@ -21,7 +21,7 @@ class CfgFactionClasses {
         PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(lipa,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_CTRG_F {      // CTRG
-        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack),QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Tanoa
@@ -62,7 +62,7 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ Livonia
     class OPF_R_F {         // Spetsnaz
-        PVAR(packs)[] = { QEGVAR(kosmos,cigpack), QEGVAR(apollo,cigpack), QEGVAR(voron,cigpack) };
+        PVAR(packs)[] = { QEGVAR(kosmos,cigpack), QEGVAR(apollo,cigpack), QEGVAR(parliament,cigpack), QEGVAR(voron,cigpack) };
     };
     class IND_E_F {         // LDF - the "Bluebells" get the Dzwonek edition
         PVAR(packs)[] = { QEGVAR(lipa_dzwonek,cigpack), QEGVAR(lipa,cigpack), QEGVAR(voron,cigpack), QEGVAR(nil,cigpack) };

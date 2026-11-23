@@ -76,7 +76,7 @@ Burning fireplaces (`simulation = "fire"`, e.g. `Land_Campfire_F`) work automati
 
 ## Faction presets
 
-A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`. [Brands](readme_brands.md) lists every brand with its era and where it may be used.
+A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`. [Brands](brands.md) lists every brand with its era and where it may be used.
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |

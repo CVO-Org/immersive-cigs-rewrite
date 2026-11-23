@@ -3,7 +3,7 @@
 //
 // - 3CB gives every faction separate classes per side (UK3CB_<X>_O / _B / _I, civilians also _C) without inheritance,
 //   so each side class gets its own entry. All sides of a faction get the same packs.
-// - Regional brand first, then other brands of the region, then international brands. See docs/readme_brands.md.
+// - Regional brand first, then other brands of the region, then international brands. See docs/brands.md.
 // - The Chernarus brands (Gudok, Zamok, Sosna) are used for every era; Belomorkanal and Kosmos stand in for Russian influence.
 // - The Takistan brands (Jaffudi, Zargabad, Sharig) cover Takistan, Afghanistan and the Central Asian and Middle Eastern factions.
 // - The Middle Eastern and African Desert factions add the Egyptian Cleopatra, the Arab world's best-known cigarette.

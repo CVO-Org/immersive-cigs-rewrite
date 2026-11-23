@@ -13,5 +13,5 @@ Pick the page for what you want to do.
 | [Gear Icons](gear-icons.md) | Modders | Rendering a brand's inventory icons from its texture with `tools/gear_icons/gear_icons.py` |
 | [LLM instructions](../tools/llm/README.md) | Modders using an AI coding assistant | A skill that walks the assistant through adding a brand, from artwork to icons |
 | [Classnames](classnames.md) | Everyone who needs a classname | All packs and lighters, renamed legacy classnames |
-| [Brands](readme_brands.md) | Modders and anyone choosing packs | Every brand with its pack, origin, era and where it may be used |
+| [Brands](brands.md) | Modders and anyone choosing packs | Every brand with its pack, origin, era and where it may be used |
 | [History](history.md) | Anyone curious | What the rewrite changed compared to the original mod |

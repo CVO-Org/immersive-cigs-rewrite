@@ -35,6 +35,7 @@ The following Folders are under no license
    - \addons\black_devil
    - \addons\camel
    - \addons\casa_sport
+   - \addons\cleopatra
    - \addons\craven
    - \addons\ducados
    - \addons\eckstein

@@ -44,6 +44,7 @@ The following Folders are under no license
    - \addons\gudang_garam
    - \addons\hwarang
    - \addons\juno
+   - \addons\lambert_butler
    - \addons\lucky_strike
    - \addons\marlboro
    - \addons\newport

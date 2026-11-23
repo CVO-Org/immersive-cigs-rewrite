@@ -32,6 +32,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_john_silver_cigpack` | Pack of John Silver | cigarettes | Sweden, 1947 onwards (Svenska Tobaks), modern pack look |
 | `cigs_juno_cigpack` | Pack of Juno | cigarettes (without filter) | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
+| `cigs_lambert_butler_cigpack` | Pack of Lambert & Butler | cigarettes | United Kingdom, modern |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
 | `cigs_klubi_cigpack` | Pack of Klubi | cigarettes | Finland, Cold War to 2000s |
 | `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |

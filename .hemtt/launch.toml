@@ -61,3 +61,24 @@ dlc = [
     "Reaction Forces",
     "Expeditionary Forces",
 ]
+
+# RHS (all four mods) - to read the faction classes for the faction presets. ACE comes from base.
+[rhs]
+extends = "base"
+workshop = [
+    "843425103", # RHSAFRF
+    "843577117", # RHSUSAF
+    "843593391", # RHSGREF
+    "843632231", # RHSSAF
+]
+
+# RHS + 3CB Factions + 3CB BAF - to read the 3CB faction classes for the faction presets. ACE comes from base.
+[3cb]
+extends = "rhs"
+workshop = [
+    "1673456286", # 3CB Factions
+    "893328083",  # 3CB BAF Equipment
+    "893339590",  # 3CB BAF Weapons
+    "893346105",  # 3CB BAF Units
+    "893349825",  # 3CB BAF Vehicles
+]

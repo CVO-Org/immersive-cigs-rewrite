@@ -21,6 +21,7 @@ class CfgFunctions {
             class getSettingsPacks {};
             class getConfigPresets {};
             class getDefaultPacks {};
+            class getTerrainPacks {};
         };
 
         class dynamicSmoking {

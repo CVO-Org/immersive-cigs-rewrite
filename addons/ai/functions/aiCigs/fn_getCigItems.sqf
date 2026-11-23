@@ -12,8 +12,9 @@
 * 4. cigs_aiCigs_api_lesser          - HASHMAP per side, or CODE per unit. CODE returning nil hands this unit to the next level.
 * 5. Unit class presets              - cigs_packs[] of the unit's CfgVehicles class, while cigs_ai_set_aiCigs_configPresets_enable is on
 * 6. Faction presets                 - cigs_packs[] of the unit's faction, while cigs_ai_set_aiCigs_configPresets_enable is on
-* 7. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
-* On levels 5-7, the unit class's cigs_packsExtra[] is added to the list.
+* 7. Terrain presets                 - cigs_aiCigs_terrain, the same for all sides, while cigs_ai_set_aiCigs_terrainPresets_enable is on
+* 8. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
+* On levels 5-8, the unit class's cigs_packsExtra[] is added to the list.
 *
 * Arguments:
 * 0: Unit <OBJECT>
@@ -51,10 +52,19 @@ private _return = call {
     if ( !isNil "_packs" ) exitWith { _packs };
 
     // Unit class and faction presets - cigs_packs[] in CfgVehicles, then in CfgFactionClasses, see fn_getConfigPresets
-    // cigs_packsExtra[] of the unit class is added to whichever of these levels decides
     private _presets = if ( missionNamespace getVariable [QSET(aiCigs_configPresets_enable), true] ) then { [_unit] call FUNC(getConfigPresets) } else { createHashMap };
-    private _configPacks = _presets getOrDefault [ "packs", [EGVAR(aiCigs,default)] call _fromMap ];
+    private _configPacks = _presets get "packs";
+
+    // Terrain presets - packs[] in cigs_terrainPacks >> worldName for all sides, see fn_getTerrainPacks. nil when the terrain has no entry.
+    if ( isNil "_configPacks" && { missionNamespace getVariable [QSET(aiCigs_terrainPresets_enable), true] } ) then {
+        _configPacks = missionNamespace getVariable QEGVAR(aiCigs,terrain);
+    };
+
+    // Default presets
+    if ( isNil "_configPacks" ) then { _configPacks = [EGVAR(aiCigs,default)] call _fromMap; };
     if !( _configPacks isEqualType [] ) then { _configPacks = [_configPacks]; };
+
+    // cigs_packsExtra[] of the unit class is added to whichever of these levels decides
     private _extra = _presets getOrDefault [ "packsExtra", [] ];
     if ( _extra isEqualTo [] ) exitWith { _configPacks };
     _configPacks = _configPacks + _extra;

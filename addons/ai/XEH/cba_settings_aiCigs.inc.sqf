@@ -50,6 +50,19 @@
     false
 ] call CBA_fnc_addSetting;
 
+// Terrain presets - packs[] in cigs_terrainPacks >> worldName, for all sides, see fn_getTerrainPacks
+// When off, units without a faction preset get the default presets
+[
+    QSET(aiCigs_terrainPresets_enable),
+    "CHECKBOX",
+    SETLSTRING(aiCigs_terrainPresets_enable),
+    [LSTRING(set_mainCat_ai), LSTRING(set_subCat_aiCigs)],
+    true,
+    1,
+    {},
+    false
+] call CBA_fnc_addSetting;
+
 
 // Enable individual Sides
 {

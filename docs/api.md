@@ -44,7 +44,7 @@ In 3DEN, these are the checkboxes in the unit's attributes, see [Mission Makers]
 
 ## AI Cigs: packs per side
 
-To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings, `cigs_aiCigs_api_lesser`, the unit class and faction presets and the default presets.
+To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings, `cigs_aiCigs_api_lesser`, the unit class and faction presets, the terrain presets and the default presets.
 
 ```sqf
 // initServer.sqf
@@ -62,7 +62,7 @@ cigs_aiCigs_api = createHashMapFromArray [
 
 ### Defaults the server admin can override: `cigs_aiCigs_api_lesser`
 
-`cigs_aiCigs_api` wins over everything, including the server admin's choice. A gamemode or mission that only wants to bring **its own defaults** uses `cigs_aiCigs_api_lesser` instead. It ranks below the module and the pack selection CBA settings, and above the faction and default presets. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for the full order.
+`cigs_aiCigs_api` wins over everything, including the server admin's choice. A gamemode or mission that only wants to bring **its own defaults** uses `cigs_aiCigs_api_lesser` instead. It ranks below the module and the pack selection CBA settings, and above the faction, terrain and default presets. See [Mission Makers](mission-makers.md#which-packs-a-side-gets) for the full order.
 
 Define it **on the server**, before the AI are processed. It takes one of two forms:
 
@@ -79,7 +79,7 @@ cigs_aiCigs_api_lesser = createHashMapFromArray [
 **Code that runs per unit**, for gamemodes with their own faction system. It gets `[_unit]` and returns an array of pack classnames:
 
 - An array, even an empty one: the unit gets these packs, or none.
-- `nil`: this one unit is handed down to the next level, the [unit class](modders.md#unit-class-presets) and [faction presets](modders.md#faction-presets) and then the default presets.
+- `nil`: this one unit is handed down to the next level, the [unit class](modders.md#unit-class-presets) and [faction presets](modders.md#faction-presets), the [terrain presets](modders.md#terrain-presets) and then the default presets.
 
 ```sqf
 // initServer.sqf
@@ -88,7 +88,7 @@ cigs_aiCigs_api_lesser = {
     switch (_unit getVariable ["myGamemode_faction", ""]) do {
         case "occupants": { ["cigs_eckstein_cigpack"] };
         case "invaders":  { ["cigs_kosmos_cigpack"] };
-        default { nil };                // everything else: faction or default presets
+        default { nil };                // everything else: faction, terrain or default presets
     };
 };
 ```

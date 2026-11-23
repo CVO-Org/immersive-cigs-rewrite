@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="cigs_john_silver">
+    <Package name="Items">
+        <Key ID="STR_cigs_john_silver_cigarette">
+            <English>John Silver Cigarette</English>
+            <French>Cigarette John Silver</French>
+            <Spanish>Cigarrillo John Silver</Spanish>
+            <Polish>Papieros John Silver</Polish>
+            <Portuguese>Cigarro John Silver</Portuguese>
+            <Russian>Сигарета John Silver</Russian>
+            <German>John Silver Zigarette</German>
+            <Korean>John Silver 담배</Korean>
+            <Japanese>紙巻たばこ ドリナ</Japanese>
+            <Chinese>John Silver 香菸</Chinese>
+        </Key>
+        <Key ID="STR_cigs_john_silver_cigpack">
+            <English>Pack of John Silver</English>
+            <French>Paquet de John Silver</French>
+            <Spanish>Cajetilla de John Silver</Spanish>
+            <Polish>Paczka John Silver</Polish>
+            <Portuguese>Maço de John Silver</Portuguese>
+            <Russian>Пачка John Silver</Russian>
+            <German>Schachtel John Silver</German>
+            <Korean>John Silver 한 갑</Korean>
+            <Japanese>箱入り紙巻たばこ (ドリナ)</Japanese>
+            <Chinese>一包 John Silver</Chinese>
+        </Key>
+        <Key ID="STR_cigs_john_silver_cigpack_desc">
+            <English>Choice quality since 1947.&lt;br/&gt;Contains 20 cigarettes.&lt;br/&gt;Warning: Smoking is hazardous to your health.</English>
+            <French>Choice quality since 1947.&lt;br/&gt;Contient 20 cigarettes.&lt;br/&gt;Attention: Fumer est dangereux pour votre santé.</French>
+            <Spanish>Choice quality since 1947.&lt;br/&gt;Contiene 20 cigarrillos.&lt;br/&gt;Advertencia: fumar es perjudicial para tu salud.</Spanish>
+            <Polish>Choice quality since 1947.&lt;br/&gt;Zawiera 20 papierosów.&lt;br/&gt;Uwaga: palenie szkodzi zdrowiu.</Polish>
+            <Portuguese>Choice quality since 1947.&lt;br/&gt;Contém 20 cigarros.&lt;br/&gt;Aviso: fumar é prejudicial à sua saúde.</Portuguese>
+            <Russian>Choice quality since 1947.&lt;br/&gt;Содержит 20 сигарет.&lt;br/&gt;Предупреждение: курение вредит вашему здоровью.</Russian>
+            <German>Choice quality since 1947.&lt;br/&gt;Enthält 20 Zigaretten.&lt;br/&gt;Achtung: Rauchen ist ungesund.</German>
+            <Korean>Choice quality since 1947.&lt;br/&gt;20개의 담배가 들어 있습니다.&lt;br/&gt;경고: 흡연은 건강에 해롭습니다.</Korean>
+            <Japanese>Choice quality since 1947.&lt;br/&gt;紙巻たばこ20本入り。&lt;br/&gt;警告: 喫煙はあなたの健康を害します。</Japanese>
+            <Chinese>Choice quality since 1947.&lt;br/&gt;內含二十根菸。&lt;br/&gt;警告：吸菸會導致性功能障礙。</Chinese>
+        </Key>
+    </Package>
+    <Package name="Main">
+        <Key ID="STR_cigs_john_silver_author">
+            <English>OverlordZorn</English>
+            <French>OverlordZorn</French>
+            <Spanish>OverlordZorn</Spanish>
+            <Polish>OverlordZorn</Polish>
+            <Portuguese>OverlordZorn</Portuguese>
+            <Russian>OverlordZorn</Russian>
+            <German>OverlordZorn</German>
+            <Korean>OverlordZorn</Korean>
+            <Japanese>OverlordZorn</Japanese>
+            <Chinese>OverlordZorn</Chinese>
+        </Key>
+    </Package>
+</Project>

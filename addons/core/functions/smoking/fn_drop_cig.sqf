@@ -21,13 +21,20 @@ if (isNil "_loopData") then { _loopData = _unit getVariable QPVAR(loopData); };
 
 private _className = _loopData get "itemClass";
 
-// Check if the unit has had their cigarette removed from the slot (SlotChangedEH)
-if ( _unit getVariable [QGVAR(forceVanish), false] ) then { _vanish = true; _unit setVariable [QGVAR(forceVanish), nil]; };
+// The player moved the cigarette out of its slot, or swapped something else in (#295):
+// it's already in the inventory or on the ground. Don't remove what's in the slot now, and don't drop a copy.
+private _itemType = _loopData get "itemType";
+private _inSlot = switch (_itemType) do {
+    case ("GOGGLES"): { goggles _unit isEqualTo _className };
+    case ("HMD"):     { hmd _unit isEqualTo _className };
+    default { false };
+};
+if (!_inSlot) exitWith {};
 
 ////////////////////////////////////////
 // Remove Item
 ////////////////////////////////////////
-switch (_loopData get "itemType") do {
+switch (_itemType) do {
     case ("GOGGLES"): { removeGoggles _unit; };
     case ("HMD"):     { _unit removeWeapon _className; };
 };

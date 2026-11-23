@@ -4,7 +4,7 @@
 // Server only. Results go to systemChat, the RPT ("[cigs][test]") and a hint.
 //
 // Order under test, highest first:
-// cigs_aiCigs_api > module > pack selection > cigs_aiCigs_api_lesser > unit class presets > faction presets > default presets
+// cigs_aiCigs_api > module > pack selection > cigs_aiCigs_api_lesser > unit class presets > faction presets > terrain presets > default presets
 // The unit class level is tested with the vanilla officers (presets_vanilla\CfgVehicles.hpp): cigs_packsExtra[] = cigar box.
 
 if (!isServer) exitWith {};

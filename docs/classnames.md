@@ -28,6 +28,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_gudok_cigpack` | Pack of Gudok | cigarettes (without filter) | Chernarus, 1980s, cheap domestic |
 | `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
 | `cigs_jaffudi_cigpack` | Pack of Jaffudi | cigarettes | Takistan, kingdom era (1960s-80s), royal brand |
+| `cigs_john_silver_cigpack` | Pack of John Silver | cigarettes | Sweden, 1947 onwards (Svenska Tobaks), modern pack look |
 | `cigs_juno_cigpack` | Pack of Juno | cigarettes (without filter) | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |

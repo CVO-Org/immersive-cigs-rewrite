@@ -48,6 +48,7 @@ The following Folders are under no license
    - \addons\popularne
    - \addons\prince
    - \addons\ruby_queen
+   - \addons\sobranie
    - \addons\sparta
    - \addons\troupes
 

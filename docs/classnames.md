@@ -45,6 +45,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_ruby_queen_cigpack` | Pack of Ruby Queen | cigarettes (without filter) | Vietnam War era, Saigon |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_sharig_cigpack` | Pack of Sharig | cigarettes | Takistan / Sharig Plateau, 1970s oil boom |
+| `cigs_sobranie_cigpack` | Pack of Sobranie Black Russian | cigarettes | United Kingdom, luxury, post-war onwards; black paper, gold filter, no preset |
 | `cigs_sosna_cigpack` | Pack of Sosna | cigarettes | menthol, Chernarus (Green Mountain), late-Soviet |
 | `cigs_sparta_cigpack` | Pack of Sparta | cigarettes | Czechoslovakia, 1980s |
 | `cigs_troupes_cigpack` | Pack of Troupes | cigarettes (without filter) | WW2, French army issue |

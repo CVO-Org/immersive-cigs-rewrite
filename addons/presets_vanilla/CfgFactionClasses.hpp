@@ -21,7 +21,7 @@ class CfgFactionClasses {
         PVAR(packs)[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(lipa,cigpack), QEGVAR(crayons,crayonpack) };
     };
     class BLU_CTRG_F {      // CTRG
-        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack),QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Tanoa

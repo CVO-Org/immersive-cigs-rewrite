@@ -35,6 +35,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/jaffudi.png) | Jaffudi | `cigs_jaffudi_cigpack` | Takistan, royal brand | Kingdom era, 1960s–80s | Also stands in for Afghanistan and the Central Asian and Middle Eastern factions | 3CB TKA, TKC, TKP, KRG, MEC |
 | ![](img/brands/juno.png) | Juno | `cigs_juno_cigpack` | Germany | WW2 | Round, filterless. WW2 look: 1940s presets only | Wehrmacht, Sturmtroopers, La Milice, terrains Normandy and Mortain |
 | ![](img/brands/kosmos.png) | Kosmos | `cigs_kosmos_cigpack` | Soviet Union | Cold War | The Eastern Bloc filler of the 1960s–80s. Also used for modern Russian factions | CSAT, Spetsnaz, GM East, CSLA, PAVN and other communist S.O.G. factions, terrains Weferlingen, Vietnam, Stožec, default EAST and CIV, RHS Russia, Eastern Militia, ChDKZ, 3CB LSM, Chernarus communists, KDF, Takistan, CSAT, CW USSR |
+| ![](img/brands/lambert_butler.png) | Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom, London (est. 1834), the cheap everyday British cigarette | modern (silver pack, 1990s onwards) | Regional brand of the UK and British-flavoured factions | CTRG, 3CB BAF |
 | ![](img/brands/lipa.png) | Lipa | `cigs_lipa_cigpack` | Livonia | 2035 | Filterless. Regional brand of Livonia | NATO (Woodland), LDF, Looters, terrain Livonia, 3CB LDF, LFR, LNM, LSM |
 | ![](img/brands/lipa_dzwonek.png) | Lipa Dzwonek | `cigs_lipa_dzwonek_cigpack` | Livonia | 2035 | Filterless, blue "Bluebells" edition of Lipa | LDF, terrain Livonia, 3CB LDF, LFR |
 | ![](img/brands/lucky_strike.png) | Lucky Strike | `cigs_lucky_strike_cigpack` | USA | WW2 | WW2 look: 1940s presets only | French Interior Forces, French Liberation Army, US Army (SPE), terrains Normandy and Mortain |
@@ -65,7 +66,6 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | Parliament | `cigs_parliament_cigpack` | modern Russia, premium | modern | RHS Russia | #359 |
 | Newport | `cigs_newport_cigpack` | USA, menthol | modern | RHS US | #357 |
 | Drina | `cigs_drina_cigpack` | Yugoslavia / Serbia | 1970s–90s look | RHS Serbia | #361 |
-| Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom | modern | 3CB BAF | #360 |
 | Sportsman | `cigs_sportsman_cigpack` | Kenya, East Africa | modern | 3CB African factions, CSAT Africa | #362 |
 
 ## Cigars

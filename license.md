@@ -39,6 +39,7 @@ The following Folders are under no license
    - \addons\f6
    - \addons\hwarang
    - \addons\juno
+   - \addons\lambert_butler
    - \addons\lucky_strike
    - \addons\marlboro
    - \addons\popularne

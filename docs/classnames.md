@@ -27,6 +27,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_jaffudi_cigpack` | Pack of Jaffudi | cigarettes | Takistan, kingdom era (1960s-80s), royal brand |
 | `cigs_juno_cigpack` | Pack of Juno | cigarettes (without filter) | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
+| `cigs_lambert_butler_cigpack` | Pack of Lambert & Butler | cigarettes | United Kingdom, modern |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
 | `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |
 | `cigs_lucky_strike_cigpack` | Lucky Strike Cigarette Pack | cigarettes | WW2 |

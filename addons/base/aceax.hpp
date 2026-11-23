@@ -14,7 +14,7 @@ class XtdGearModels {
         class brand {
             label = CSTRING(aceax_brand);
             centerImage = 1;    // pack front as a square on each button
-            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
+            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lambert_butler", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
 
             class alborz       { label = ""; image = QPATHTOEF(alborz,data\ui\aceax_logo_ca.paa); description = ECSTRING(alborz,cigarette); };
             class almyra       { label = ""; image = QPATHTOEF(almyra,data\ui\aceax_logo_ca.paa); description = ECSTRING(almyra,cigarette); };
@@ -32,6 +32,7 @@ class XtdGearModels {
             class jaffudi      { label = ""; image = QPATHTOEF(jaffudi,data\ui\aceax_logo_ca.paa); description = ECSTRING(jaffudi,cigarette); };
             class juno         { label = ""; image = QPATHTOEF(juno,data\ui\aceax_logo_ca.paa); description = ECSTRING(juno,cigarette); };
             class kosmos       { label = ""; image = QPATHTOEF(kosmos,data\ui\aceax_logo_ca.paa); description = ECSTRING(kosmos,cigarette); };
+            class lambert_butler { label = ""; image = QPATHTOEF(lambert_butler,data\ui\aceax_logo_ca.paa); description = ECSTRING(lambert_butler,cigarette); };
             class lipa         { label = ""; image = QPATHTOEF(lipa,data\ui\aceax_logo_ca.paa); description = ECSTRING(lipa,cigarette); };
             class lipa_dzwonek { label = ""; image = QPATHTOEF(lipa_dzwonek,data\ui\aceax_logo_ca.paa); description = ECSTRING(lipa_dzwonek,cigarette); };
             class lucky_strike { label = ""; image = QPATHTOEF(lucky_strike,data\ui\aceax_logo_ca.paa); description = ECSTRING(lucky_strike,cigarette); };

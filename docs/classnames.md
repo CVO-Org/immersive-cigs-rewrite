@@ -18,16 +18,21 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_cigars_cigarbox_5` | Box of Cigars | cigars | Vulcano |
 | `cigs_papa_schultz_cigarbox_5` | Pack of Papa Schultz' Cigars | cigars | |
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |
+| `cigs_ducados_cigpack` | Pack of Ducados | cigarettes | Spain / Sahrani, 1963 on, Negro |
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
+| `cigs_death_cigpack` | Pack of Death | cigarettes | UK, 1990s novelty, black paper and filter |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
 | `cigs_ernte_23_cigpack` | Pack of Ernte 23 | cigarettes | West Germany, 1970s-80s (GM) |
 | `cigs_f6_cigpack` | Pack of f6 | cigarettes | East Germany (GDR), Global Mobilization era |
+| `cigs_gudang_garam_cigpack` | Pack of Gudang Garam International | cigarettes (kretek) | Southeast Asia, modern |
 | `cigs_gudok_cigpack` | Pack of Gudok | cigarettes (without filter) | Chernarus, 1980s, cheap domestic |
 | `cigs_hwarang_cigpack` | Pack of Hwarang | cigarettes (without filter) | South Korean army issue, Vietnam War era |
 | `cigs_jaffudi_cigpack` | Pack of Jaffudi | cigarettes | Takistan, kingdom era (1960s-80s), royal brand |
+| `cigs_john_silver_cigpack` | Pack of John Silver | cigarettes | Sweden, 1947 onwards (Svenska Tobaks), modern pack look |
 | `cigs_juno_cigpack` | Pack of Juno | cigarettes (without filter) | WW2 |
 | `cigs_kosmos_cigpack` | Kosmos Cigarette Pack | cigarettes | |
 | `cigs_lipa_cigpack` | Pack of Lipa | cigarettes | filterless, Livonia |
+| `cigs_klubi_cigpack` | Pack of Klubi | cigarettes | Finland, Cold War to 2000s |
 | `cigs_lipa_dzwonek_cigpack` | Pack of Lipa Dzwonek | cigarettes | filterless, Livonia, blue "Bluebells" edition |
 | `cigs_lucky_strike_cigpack` | Lucky Strike Cigarette Pack | cigarettes | WW2 |
 | `cigs_marlboro_cigpack` | Pack of Marlboro | cigarettes | international, modern |
@@ -35,12 +40,14 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
 | `cigs_parisienne_cigpack` | Pack of Parisienne | cigarettes | Switzerland, filter, 1947 onwards |
+| `cigs_pielroja_cigpack` | Pack of Pielroja | cigarettes (without filter) | Colombia, classic era (1924 to 2019) |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
 | `cigs_popularne_cigpack` | Pack of Popularne | cigarettes (without filter) | Cold War Poland |
 | `cigs_prince_cigpack` | Pack of Prince | cigarettes | Denmark, Global Mobilization |
 | `cigs_ruby_queen_cigpack` | Pack of Ruby Queen | cigarettes (without filter) | Vietnam War era, Saigon |
 | `cigs_shanhai_cigpack` | Shanhai Cigarette Pack | cigarettes | |
 | `cigs_sharig_cigpack` | Pack of Sharig | cigarettes | Takistan / Sharig Plateau, 1970s oil boom |
+| `cigs_sobranie_cigpack` | Pack of Sobranie Black Russian | cigarettes | United Kingdom, luxury, post-war onwards; black paper, gold filter, no preset |
 | `cigs_sosna_cigpack` | Pack of Sosna | cigarettes | menthol, Chernarus (Green Mountain), late-Soviet |
 | `cigs_sparta_cigpack` | Pack of Sparta | cigarettes | Czechoslovakia, 1980s |
 | `cigs_troupes_cigpack` | Pack of Troupes | cigarettes (without filter) | WW2, French army issue |

@@ -22,14 +22,16 @@ systemChat "AI cigs test settings applied";
 
 
 // Tests - see tests\. They run once at mission start, one after the other, never side by side:
-// 1. aiPresets:    the level order, by asking getCigItems directly (waits for the CBA settings, then 5 s)
-// 2. liveFactions: one unit per faction through the real chain, with the mission's module cleared
-// 3. officers:     every unit class with cigs_packsExtra[] (the officer presets of the loaded mods), config and live
-// 4. slotSwap:     the player's own facewear / NVG slot (#295), about 2 minutes
+// 1. terrains:     every loaded terrain with its worldName and whether it has a terrain preset, to the RPT ("[cigs][terrains]").
+//                  A list, not a check - `.\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'` for the candidate terrains
+// 2. aiPresets:    the level order, by asking getCigItems directly (waits for the CBA settings, then 5 s)
+// 3. liveFactions: one unit per faction through the real chain, with the mission's module cleared
+// 4. officers:     every unit class with cigs_packsExtra[] (the officer presets of the loaded mods), config and live
+// 5. slotSwap:     the player's own facewear / NVG slot (#295), about 2 minutes
 // Each test adds its failures to cigs_test_failed; the runner reports them per test and in a summary at the end.
-// To run one again, from the debug console (server): [] spawn cigs_test_fnc_officers; (or _aiPresets, _liveFactions, _slotSwap)
+// To run one again, from the debug console (server): [] spawn cigs_test_fnc_officers; (or _terrains, _aiPresets, _liveFactions, _slotSwap)
 // To run all again: [] spawn cigs_test_fnc_runAll;
-cigs_test_list = ["aiPresets", "liveFactions", "officers", "slotSwap"];
+cigs_test_list = ["terrains", "aiPresets", "liveFactions", "officers", "slotSwap"];
 { missionNamespace setVariable ["cigs_test_fnc_" + _x, compileScript ["tests\" + _x + ".sqf"]]; } forEach cigs_test_list;
 
 cigs_test_fnc_runAll = {

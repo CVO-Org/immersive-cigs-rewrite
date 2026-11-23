@@ -20,7 +20,7 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ International
     class BLU_ION_lxWS {    // ION Services
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class BLU_UN_lxWS {     // UNA
         PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(prince,cigpack) };

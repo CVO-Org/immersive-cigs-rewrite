@@ -20,6 +20,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |
 | `cigs_ducados_cigpack` | Pack of Ducados | cigarettes | Spain / Sahrani, 1963 on, Negro |
 | `cigs_crayons_crayonpack` | Pack of Crayons | crayons (suckable) | |
+| `cigs_death_cigpack` | Pack of Death | cigarettes | UK, 1990s novelty, black paper and filter |
 | `cigs_eckstein_cigpack` | Eckstein No. 5 Cigarette Pack | cigarettes | WW2 |
 | `cigs_ernte_23_cigpack` | Pack of Ernte 23 | cigarettes | West Germany, 1970s-80s (GM) |
 | `cigs_f6_cigpack` | Pack of f6 | cigarettes | East Germany (GDR), Global Mobilization era |

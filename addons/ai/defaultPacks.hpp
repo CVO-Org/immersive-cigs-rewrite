@@ -1,5 +1,5 @@
 // Default packages per side, as presets.
-// Used when neither the API, the aiCigs module, the pack selection CBA settings, the lesser API nor the faction presets (cigs_packs[] in CfgFactionClasses) define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
+// Used when neither the API, the aiCigs module, the pack selection CBA settings, the lesser API, the faction presets (cigs_packs[] in CfgFactionClasses) nor the terrain presets (terrainPacks.hpp) define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
 // and as the default selection of a newly placed aiCigs module (see CfgVehicles).
 //
 // Resolved once by cigs_ai_fnc_getDefaultPacks:
@@ -22,6 +22,6 @@ class GVAR(defaultPacks) {
         WEST[] = { QEGVAR(morley,cigpack), QEGVAR(crayons,crayonpack) };
         EAST[] = { QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack) };
         GUER[] = { QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) };
-        CIV[]  = { QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) };
+        CIV[]  = { QEGVAR(morley,cigpack), QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(newport,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) };
     };
 };

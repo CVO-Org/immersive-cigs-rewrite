@@ -3,7 +3,7 @@
 //
 // - Era preset (1985): Sparta for the Czechoslovaks, Soviet brands behind it, US brands for the Americans. No gag brands.
 // - AFMC (Armed Forces of the Midland Coalition): Western-aligned states north of Chernarus with mixed Western kit,
-//   so the three Chernarus brands plus British and US brands.
+//   so the three Chernarus brands plus US brands.
 // - FIA_CIV has no units, so it has no entry.
 // - Cigars are kept for officers (unit class level), never per faction.
 // - cigs_lighters[] is left out everywhere, so the normal lighter pool is used.
@@ -23,22 +23,22 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ Resistance
     class FIA {             // FIA [CSLA]
-        PVAR(packs)[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(lucky_strike,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class FIA_DES {         // FIA [CSLA] (Desert)
-        PVAR(packs)[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(lucky_strike,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Midland Coalition
     class AFMC {            // Armed Forces of the Midland Coalition
-        PVAR(packs)[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(craven,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
     // ------------------------------------------------------------------------ US
     class US85 {            // US '85
-        PVAR(packs)[] = { QEGVAR(lucky_strike,cigpack), QEGVAR(morley,cigpack), QEGVAR(craven,cigpack) };
+        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack), QEGVAR(camel,cigpack) };
     };
     class US85_DES {        // US '85 (Desert)
-        PVAR(packs)[] = { QEGVAR(lucky_strike,cigpack), QEGVAR(morley,cigpack), QEGVAR(craven,cigpack) };
+        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack), QEGVAR(camel,cigpack) };
     };
 };

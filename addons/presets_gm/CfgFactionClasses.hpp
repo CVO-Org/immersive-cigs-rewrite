@@ -11,10 +11,10 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ WEST
     class gm_fc_ge {        // West Germany (+ Borderguards, Civilians)
-        PVAR(packs)[] = { QEGVAR(ernte_23,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(morley,cigpack) };
+        PVAR(packs)[] = { QEGVAR(ernte_23,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
     };
     class gm_fc_dk {        // Denmark
-        PVAR(packs)[] = { QEGVAR(prince,cigpack), QEGVAR(morley,cigpack), QEGVAR(lucky_strike,cigpack), QEGVAR(craven,cigpack) };
+        PVAR(packs)[] = { QEGVAR(prince,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
     // ------------------------------------------------------------------------ EAST

@@ -44,6 +44,7 @@ The following Folders are under no license
    - \addons\juno
    - \addons\lucky_strike
    - \addons\marlboro
+   - \addons\pielroja
    - \addons\popularne
    - \addons\prince
    - \addons\ruby_queen

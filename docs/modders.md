@@ -135,7 +135,7 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 | CSAT `OPF_F` | Alborz, Apollo Soyuz, Kosmos |
 | CSAT (Pacific) `OPF_T_F` | Shanhai, Alborz, Apollo Soyuz |
 | Viper `OPF_V_F` | Shanhai, Alborz, NIL |
-| Spetsnaz `OPF_R_F` | Kosmos, Apollo Soyuz, Voron |
+| Spetsnaz `OPF_R_F` | Kosmos, Apollo Soyuz, Parliament, Voron |
 | LDF `IND_E_F` | Lipa Dzwonek, Lipa, Voron, NIL |
 | Looters `IND_L_F` | Lipa, Voron, Black Devil, NIL |
 | IDAP `CIV_IDAP_F` | Lollipops, Morley, NIL |
@@ -214,7 +214,7 @@ Addon `presets_ef`, active when the CDLC is loaded.
 
 #### RHS
 
-Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Parliament, Newport and Drina are planned brands (issues #358, #359, #357, #361): until they are in the mod, those packs are dropped and the rest of the list is used.
+Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal is a planned brand (issue #358): until it is in the mod, its pack is dropped and the rest of the list is used.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -229,6 +229,61 @@ Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_r
 | Tanoan Liberation Army `rhsgref_faction_tla` (+ `_g`) | Matelot, Black Devil Pink, Mtn Dew Baja Blast |
 | Serbian Army, Air Force `rhssaf_faction_army`, `_airforce` (+ `_opfor`) | Drina, Marlboro, Camel |
 | Serbian UN contingent `rhssaf_faction_un` | Drina, Camel, Prince |
+
+#### 3CB Factions and 3CB BAF
+
+Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
+
+| Faction | Packs |
+| ------- | ----- |
+| AAF `AAF`, Altis Police `APD` | Almyra, Morley, NIL |
+| FIA `FIA` | Almyra, Morley, Black Devil Pink, NIL |
+| Malden Defence Force `MDF` | Matelot, Marlboro, Morley |
+| Tanoa Nationalist Militia `TNM` | Matelot, Black Devil Pink, Mtn Dew Baja Blast |
+| Horizon Islands Gendarmerie `TPD` | Matelot, Morley, NIL |
+| Livonia Defence Force `LDF` | Lipa Dzwonek, Lipa, Voron, NIL |
+| Livonia Forest Rangers `LFR` | Lipa, Lipa Dzwonek, NIL |
+| Livonian Nationalist Militia `LNM` | Lipa, Popularne, NIL |
+| Livonia Separatist Militia `LSM` | Belomorkanal, Parliament, Lipa, Kosmos |
+| Chernarus Civilians `CHC` | Gudok, Zamok, Sosna, Belomorkanal, Marlboro |
+| Chernarus Police `CPD` | Zamok, Gudok, Marlboro |
+| NAPA `NAP` | Sosna, Gudok, Marlboro |
+| Chernarus Communist Militia `CCM_O`, ChDKZ Red Star `CHD_O`, `CHD_W_O` | Gudok, Belomorkanal, Kosmos |
+| Chernarus Local Defence Volunteers `CCM_B`, ChDSZ Blue Star `CHD_B`, `CHD_W_B` | Zamok, Sosna, Marlboro |
+| Chernarus Nationalist Militia `CCM_I` | Sosna, Gudok, Marlboro |
+| ChDZZ Green Star `CHD_I`, `CHD_W_I` | Sosna, Gudok, Zamok |
+| Grozovia Armed Forces `GAF` | Zamok, Belomorkanal, Marlboro |
+| Nogovan Freedom Alliance `NFA` | Sparta, Belomorkanal, Marlboro |
+| Nogova Police `NPD` | Sparta, Marlboro, Morley |
+| Kolgujev Defence Force `KDF` | Belomorkanal, Parliament, Kosmos, Marlboro |
+| Takistan National Army `TKA` | Zargabad, Jaffudi, Sharig, Marlboro |
+| Takistan Civilians `TKC` | Zargabad, Sharig, Jaffudi, Kosmos, Marlboro |
+| Takistan National Police `TKP` | Zargabad, Jaffudi, Marlboro |
+| Takistan Insurgents `TKM_O`, Tribal Fighters `TKM_I` | Zargabad, Sharig, Kosmos |
+| Takistan Pro-Government Militia `TKM_B` | Zargabad, Sharig, Marlboro |
+| Afghan National Army `ANA_B`, Afghan National Police `ANP_B` | Zargabad, Sharig, Marlboro |
+| Ardistan Army `ARD` | Sharig, Zargabad, Belomorkanal |
+| Karzeghistan Royal Guard `KRG` | Jaffudi, Sharig, Marlboro |
+| Middle East Civilians `MEC` | Zargabad, Jaffudi, Alborz, Marlboro |
+| Middle East Insurgents `MEI` | Zargabad, Sharig, Alborz |
+| Middle East Extremists `MEE` | Sharig, Alborz, Zargabad |
+| African Desert Army `ADA` | Sportsman, Casa Sports, Marlboro, Camel |
+| African Desert Army Paramilitary `ADR` | Sportsman, Casa Sports, Marlboro |
+| African Desert National Police `ADP` | Sportsman, Casa Sports, Camel |
+| African Desert Civilians `ADC` | Sportsman, Casa Sports, Camel, Marlboro |
+| African Desert Civilian Militia `ADG`, Militia `ADM` | Sportsman, Casa Sports, Black Devil Pink |
+| African Desert Extremists `ADE` | Casa Sports, Sportsman, Camel |
+| PLM `PLM` | Camel, Marlboro, Black Devil Pink |
+| Western European Insurgents `WEI` | Marlboro, Camel, Black Devil Pink, NIL |
+| UN Peacekeepers `UN` | Camel, Morley, Prince |
+| ION Services, all camos and sides `ION_<side>_<camo>` | Camel, Morley, Marlboro |
+| CSAT Europe, Middle East, Mediterranean, Navy, Winter, Urban `CSAT_<W/B/M/F/S/U>_O` | Alborz, Apollo Soyuz, Kosmos |
+| CSAT Pacific, Navy (Pacific) `CSAT_G_O`, `CSAT_N_O` | Shanhai, Alborz, Apollo Soyuz |
+| CSAT Africa `CSAT_A_O` | Alborz, Apollo Soyuz, Sportsman |
+| Cold War USSR Early `CW_SOV_O_EARLY` | Kosmos, Belomorkanal |
+| Cold War USSR Late `CW_SOV_O_LATE` | Kosmos, Apollo Soyuz, Belomorkanal |
+| Cold War US Early, Late `CW_US_B_EARLY`, `_LATE` | Marlboro, Camel, Morley |
+| British Armed Forces (3CB BAF) `UK3CB_BAF_Faction` | Lambert & Butler, Marlboro, Morley |
 
 ## Terrain presets
 

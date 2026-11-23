@@ -1,7 +1,7 @@
 // Faction presets for the RHS: SAF factions: which packs AI of a faction get (see docs/modders.md, "Faction presets").
 //
 // - Entries go on the base classes. The OPFOR variants (_opfor) inherit from them and get the same packs.
-// - Serbia: Drina (separate brand addon, dropped until it is loaded), then international brands.
+// - Serbia: Drina, the Yugoslav brand, then international brands.
 // - The UN contingent adds Prince, like the other UN presets.
 // - Cigars are kept for officers (unit class level), never per faction.
 // - cigs_lighters[] is left out everywhere, so the normal lighter pool is used.

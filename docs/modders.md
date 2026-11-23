@@ -329,17 +329,22 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Chernarus, Chernarus (Summer), Chernarus (Winter), Utes (CUP) `chernarus`, `chernarus_summer`, `Chernarus_Winter`, `utes`<br>Chernarus 2020 (CUP Maps 2.0) `cup_chernarus_A3`<br>Namalsk `namalsk`, Ivanivkova `Ivanivokova`, Korsac `VTF_Korsac`, `VTF_Korsac_Winter`, Lesser Swamp `ST_Swamp`, Project Raid `RaidMap`, Vereskovo `Vereskovo` | Gudok, Zamok, Sosna, Apollo Soyuz, Marlboro, Camel |
 | Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
 | Zargabad (CUP) `zargabad`, Zargabad 2025 (CUP Maps 2.0) `cup_Zargabad_a3` | Zargabad, Jaffudi, Sharig, Marlboro, Camel |
-| Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi (CUP) `sara`, `saralite`, `sara_dbe1`, `porto`, `intro` | Morley, Marlboro, Camel, NIL |
+| Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi (CUP) `sara`, `saralite`, `sara_dbe1`, `porto`, `intro`<br>Sehreno `Sehreno` | Ducados, Morley, Marlboro, Camel, NIL |
 | Bystrica, Bukovina (CUP) `Woodland_ACR`, `Bootcamp_ACR`<br>Šumava `brf_sumava` | Sparta, Marlboro, Camel, Morley, NIL |
-| Ruha `ruha`, Virolahti `vt7`, Maksniemi `Maksniemi`, Stubbhult `stubbhult`, Archie (Winter) `archie_w`, Mehland `mehland`, Tria `jns_tria` | Prince, Marlboro, Camel, Morley, NIL |
-| Kujari `tem_kujari`, Niakala `juju_kalahari`, Green Valley `green_valley` | Casa Sports, Marlboro, Camel, Morley, NIL |
+| Ruha `ruha`, Virolahti `vt7`, Maksniemi `Maksniemi` | Klubi, John Silver, Marlboro, Camel, Morley, NIL |
+| Stubbhult `stubbhult`, Archie (Winter) `archie_w`, Mehland `mehland`, Tria `jns_tria` | John Silver, Prince, Marlboro, Camel, Morley, NIL |
+| Kujari `tem_kujari`, Niakala `juju_kalahari` | Sportsman, Casa Sports, Marlboro, Camel, Morley, NIL |
+| Green Valley `green_valley` | Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
-| Napf `Napf`, `NapfWinter` | NIL, Marlboro, Camel, Morley |
-| Pulau `pulau`, Prei Khmaoch Luong `rhspkl`, Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia`, Mull of Kintyre `rof_mok`, Drakovac `drakovac`, Djalka `K9S_Djalka`, Kaska `kaska` | Marlboro, Camel, Morley, NIL |
-| Sehreno `Sehreno` | Morley, Marlboro, Camel, NIL |
+| Napf `Napf`, `NapfWinter` | Parisienne, NIL, Marlboro, Camel, Morley |
+| Pulau `pulau`, Prei Khmaoch Luong `rhspkl` | Gudang Garam, Marlboro, Camel, Morley, NIL |
+| Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia` | Pielroja, Marlboro, Camel, Morley, NIL |
+| Mull of Kintyre `rof_mok`, Djalka `K9S_Djalka` | Lambert & Butler, Marlboro, Camel, Morley, NIL |
+| Drakovac `drakovac` | Drina, Marlboro, Camel, Morley, NIL |
+| Kaska `kaska` | Marlboro, Camel, Morley, NIL |
 | Yulakia `yulakia`, Lybor `VTF_Lybor`, `VTF_Lybor_Winter`, G.O.S Leskovets `pja314` | Apollo Soyuz, Gudok, Zamok, Sosna, Marlboro, Camel, NIL |
-| G.O.S Al Rayak `pja310` | Alborz, Jaffudi, Zargabad, Sharig, Marlboro, Camel |
-| Sa'hatra `juju_sahatra` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| G.O.S Al Rayak `pja310` | Alborz, Cleopatra, Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| Sa'hatra `juju_sahatra` | Cleopatra, Jaffudi, Zargabad, Sharig, Marlboro, Camel |
 | Hue `Hue`, Tien Giang `rtbf_tien_giang`, November-Seven `rtbf_november_seven`, Fox Hutan `fox_hutan`, Pamai `fox_pamai`, Vanam `fox_vanam`<br>S.O.G. Nickel Steel `dong_giang`, `vnx_rssz`<br>UNSUNG `csj_lowlands`, `DaKrong`, `RungSat`, `song_bin_tanh`, `urx_jnd_balong`, `urx_jnd_dakpek` | Ruby Queen, Savage, Marlboro, Camel, Kosmos |
 | OPTRE (Operation TREBUCHET, First Contact) `OPTRE_Arcadia`, `OPTRE_Archipelago`, `Glassed`, `OPTRE_Installation04`, `OPTRE_Snowlands`, `OPTRE_Wetlands`, `Blood_OPTRE`, `OPTRE_EridanusSecundus`, `OPTRE_Gridlock`, `OPTRE_Harvest`, `OPTRE_iberius`, `OPTRE_Kholo`, `OPTRE_Madrigal`, `OPTRE_Phobos`, `OPTRE_Roost`, `OPTRE_Sandstorm`<br>The Kuiper Engagements `TKE_Ext_Europa`, `TKE_Ext_Ganymede` | Morley, NIL, Marlboro, Camel, Mtn Dew Baja Blast, Black Devil Pink |
 

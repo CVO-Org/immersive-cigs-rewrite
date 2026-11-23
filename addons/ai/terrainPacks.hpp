@@ -128,21 +128,21 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // CUP Terrains - Maps: Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi - no Sahrani brand yet
+    // CUP Terrains - Maps: Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi - Spanish, Ducados
     class sara {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class saralite {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class sara_dbe1 {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class porto {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class intro {                                   // Rahmadi
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // CUP Terrains - Maps: Bystrica, Bukovina - Czech Republic
@@ -180,17 +180,17 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Ruha, Virolahti - Finland. Prince stands in as the Nordic brand
+    // Ruha, Virolahti - Finland. Klubi, then the Swedish John Silver
     class ruha {
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(klubi,cigpack), QEGVAR(john_silver,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class vt7 {                                     // Virolahti
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(klubi,cigpack), QEGVAR(john_silver,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Kujari - Sahel, West Africa. Casa Sports as the nearest regional brand
+    // Kujari - Sahel, West Africa. Sportsman as the sub-Saharan brand, Casa Sports from North Africa
     class tem_kujari {
-        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // Rosche - northern West Germany
@@ -198,36 +198,36 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(ernte_23,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
     };
 
-    // Napf - Switzerland. NIL as the alpine neighbour
+    // Napf - Switzerland. Parisienne, then NIL as the alpine neighbour
     class Napf {
-        packs[] = { QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(parisienne,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
     };
     class NapfWinter {
-        packs[] = { QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(parisienne,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
     };
 
-    // Pulau, Prei Khmaoch Luong - Southeast Asia, no modern brand of the region yet
+    // Pulau, Prei Khmaoch Luong - Southeast Asia, Gudang Garam
     class pulau {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class rhspkl {                                  // Prei Khmaoch Luong
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Lingor, Dingor, Colombia - South America, no brand of the region yet
+    // Lingor, Dingor, Colombia - South America, Pielroja
     class UMB_Colombia {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class lingor3 {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class dingor {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Mull of Kintyre - Scotland, no British brand yet
+    // Mull of Kintyre - Scotland, Lambert & Butler
     class rof_mok {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // Ivanivkova, Korsac, Lesser Swamp, Project Raid, Vereskovo - Ukraine and the Black Sea coast, post-Soviet like Chernarus
@@ -269,54 +269,54 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Drakovac - Croatia, no Balkan brand yet
+    // Drakovac - Croatia, the Yugoslav Drina
     class drakovac {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(drina,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Maksniemi, Stubbhult, Archie, Mehland, Tria - Finland, Sweden, Norway. Prince stands in as the Nordic brand
+    // Maksniemi, Stubbhult, Archie, Mehland, Tria - Finland, Sweden, Norway. Klubi for Finland, John Silver then the Danish Prince for the rest
     class Maksniemi {
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(klubi,cigpack), QEGVAR(john_silver,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class stubbhult {
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class archie_w {                                // Archie, Winter
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class mehland {
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class jns_tria {                                // Tria
-        packs[] = { QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel
+    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel. Libya gets Casa Sports and the Egyptian Cleopatra, Chad Sportsman first
     class green_valley {
-        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class juju_kalahari {                           // Niakala
-        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand, then the Takistan brands
+    // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand, the Egyptian Cleopatra, then the Takistan brands
     class pja310 {
-        packs[] = { QEGVAR(alborz,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(alborz,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Sa'hatra - Iraq and Kuwait, 2003. The Takistan brands stand in for the region
+    // Sa'hatra - Iraq and Kuwait, 2003. Cleopatra as the Arab brand, then the Takistan brands
     class juju_sahatra {
-        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Sehreno - a take on Sahrani, no Sahrani brand yet
+    // Sehreno - a take on Sahrani, Ducados
     class Sehreno {
-        packs[] = { QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(ducados,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Djalka (South Georgia), Kaska - remote islands, no brand of the region
+    // Djalka (South Georgia), Kaska - remote islands. Djalka is British, so Lambert & Butler; Kaska has no brand of the region
     class K9S_Djalka {
-        packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class kaska {
         packs[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };

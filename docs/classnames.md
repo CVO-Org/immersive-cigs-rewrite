@@ -39,6 +39,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_matelot_cigpack` | Pack of Matelot | cigarettes (without filter) | Tanoa |
 | `cigs_morley_cigpack` | Morley Cigarette Pack | cigarettes | |
 | `cigs_nil_cigpack` | NIL Cigarette Pack | cigarettes | |
+| `cigs_parisienne_cigpack` | Pack of Parisienne | cigarettes | Switzerland, filter, 1947 onwards |
 | `cigs_pielroja_cigpack` | Pack of Pielroja | cigarettes (without filter) | Colombia, classic era (1924 to 2019) |
 | `cigs_pops_poppack` | Lollipop (Packed) | lollipop (suckable) | |
 | `cigs_popularne_cigpack` | Pack of Popularne | cigarettes (without filter) | Cold War Poland |

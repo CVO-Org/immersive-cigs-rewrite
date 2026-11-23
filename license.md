@@ -23,6 +23,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\matelot
    - \addons\morley
    - \addons\pops
+   - \addons\prism
    - \addons\shanhai
    - \addons\sharig
    - \addons\sosna

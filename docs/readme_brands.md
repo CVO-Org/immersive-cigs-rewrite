@@ -50,6 +50,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/sharig.png) | Sharig | `cigs_sharig_cigpack` | Takistan, Sharig Plateau | 1970s oil boom | Also stands in for Afghanistan and the Central Asian and Middle Eastern factions | 3CB Takistan, Afghan, Ardistan, Karzeghistan and Middle East factions |
 | ![](img/brands/sosna.png) | Sosna | `cigs_sosna_cigpack` | Chernarus (Green Mountain) | 1980s look, used for every era | Menthol. The Chernarus brands are used for Chernarus factions of any era | AFMC, RHS CDF, NAPA, 3CB Chernarus factions |
 | ![](img/brands/sparta.png) | Sparta | `cigs_sparta_cigpack` | Czechoslovakia, Kutná Hora | 1964 onwards | Regional brand of Czechoslovakia | CSLA, FIA (CSLA), terrain Stožec, 3CB NFA, NPD |
+| ![](img/brands/sportsman.png) | Sportsman | `cigs_sportsman_cigpack` | Kenya, East Africa | 1950s onwards | Regional brand of sub-Saharan Africa, cork-tipped. Hunter emblem, red, white and navy pack | 3CB African factions, CSAT Africa |
 | ![](img/brands/troupes.png) | Troupes | `cigs_troupes_cigpack` | France, army issue | WW2 | Filterless. WW2 look: 1940s presets only | La Milice, French Interior Forces, French Liberation Army, 40s Civilians, terrains Normandy and Mortain |
 | ![](img/brands/voron.png) | Voron | `cigs_voron_cigpack` | The author's unit | 2035 | 24 per pack. Only Spetsnaz, LDF and Looters | Spetsnaz, LDF, Looters, 3CB LDF |
 | ![](img/brands/zamok.png) | Zamok | `cigs_zamok_cigpack` | Chernarus | 1980s look, used for every era | Premium domestic filter. The Chernarus brands are used for Chernarus factions of any era | AFMC, RHS Eastern Militia, CDF, 3CB Chernarus factions, GAF |
@@ -66,7 +67,6 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | Newport | `cigs_newport_cigpack` | USA, menthol | modern | RHS US | #357 |
 | Drina | `cigs_drina_cigpack` | Yugoslavia / Serbia | 1970s–90s look | RHS Serbia | #361 |
 | Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom | modern | 3CB BAF | #360 |
-| Sportsman | `cigs_sportsman_cigpack` | Kenya, East Africa | modern | 3CB African factions, CSAT Africa | #362 |
 
 ## Cigars
 

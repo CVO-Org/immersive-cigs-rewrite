@@ -232,7 +232,7 @@ Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_r
 
 #### 3CB Factions and 3CB BAF
 
-Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal, Sportsman and Lambert & Butler are planned brands (issues #358, #362, #360) and are dropped until they are in the mod.
+Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
 
 | Faction | Packs |
 | ------- | ----- |

@@ -42,6 +42,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_sharig_cigpack` | Pack of Sharig | cigarettes | Takistan / Sharig Plateau, 1970s oil boom |
 | `cigs_sosna_cigpack` | Pack of Sosna | cigarettes | menthol, Chernarus (Green Mountain), late-Soviet |
 | `cigs_sparta_cigpack` | Pack of Sparta | cigarettes | Czechoslovakia, 1980s |
+| `cigs_sportsman_cigpack` | Pack of Sportsman | cigarettes | Kenya, East Africa, 1950s onwards |
 | `cigs_troupes_cigpack` | Pack of Troupes | cigarettes (without filter) | WW2, French army issue |
 | `cigs_voron_cigpack` | Voron Cigarette Pack | cigarettes | |
 | `cigs_zamok_cigpack` | Pack of Zamok | cigarettes | Chernarus, 1980s, premium domestic filter |

@@ -6,7 +6,7 @@
 // - Regional brand first, then other brands of the region, then international brands. See docs/readme_brands.md.
 // - The Chernarus brands (Gudok, Zamok, Sosna) are used for every era; Belomorkanal and Kosmos stand in for Russian influence.
 // - The Takistan brands (Jaffudi, Zargabad, Sharig) cover Takistan, Afghanistan and the Central Asian and Middle Eastern factions.
-// - Belomorkanal and Sportsman are planned brands (issues #358, #362): dropped until they are in the mod.
+// - Belomorkanal is a planned brand (issue #358): dropped until it is in the mod.
 // - Gag brands only for guerrillas and militias. Voron only for the LDF. No WW2-era looks.
 // - Cigars are kept for officers (unit class level), never per faction.
 // - cigs_lighters[] is left out everywhere, so the normal lighter pool is used.

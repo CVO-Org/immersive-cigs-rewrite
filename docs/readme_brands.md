@@ -72,10 +72,6 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | Name | Classname | Origin | Era | Planned for | Issue |
 | ---- | --------- | ------ | --- | ----------- | ----- |
 | Belomorkanal | `cigs_belomorkanal_cigpack` | Soviet Union / Russia, papirosa | 1932 onwards | RHS Russia, Eastern Militia, ChDKZ; 3CB Chernarus, Livonian separatists, Grozovia, Nogova, Kolgujev, Ardistan, CW USSR | #358 |
-| Newport | `cigs_newport_cigpack` | USA, menthol | modern | RHS US | #357 |
-| Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom | modern | 3CB BAF | #360 |
-| Drina | `cigs_drina_cigpack` | Yugoslavia / Serbia | 1970s–90s look | RHS Serbia | #361 |
-| Sportsman | `cigs_sportsman_cigpack` | Kenya, East Africa | modern | 3CB African factions, CSAT Africa | #362 |
 
 ## Cigars
 

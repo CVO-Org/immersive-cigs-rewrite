@@ -15,6 +15,7 @@ Pictures, origin, era and preset rules of each brand are on [Brands](readme_bran
 | `cigs_black_devil_cigpack` | Black Devil Pink Cigs Pack | cigarettes | |
 | `cigs_camel_cigpack` | Pack of Camel | cigarettes | international, modern western filler |
 | `cigs_casa_sport_cigpack` | Pack of Casa Sports | cigarettes (without filter) | Western Sahara |
+| `cigs_cleopatra_cigpack` | Pack of Cleopatra | cigarettes | Egypt, 1961 onwards |
 | `cigs_cigars_cigarbox_5` | Box of Cigars | cigars | Vulcano |
 | `cigs_papa_schultz_cigarbox_5` | Pack of Papa Schultz' Cigars | cigars | |
 | `cigs_craven_cigpack` | Craven "A" Cigarette Pack | cigarettes | WW2 |

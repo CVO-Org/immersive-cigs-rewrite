@@ -34,9 +34,11 @@ The following Folders are under no license
    - \addons\camel
    - \addons\casa_sport
    - \addons\craven
+   - \addons\ducados
    - \addons\eckstein
    - \addons\ernte_23
    - \addons\f6
+   - \addons\gudang_garam
    - \addons\hwarang
    - \addons\juno
    - \addons\lucky_strike

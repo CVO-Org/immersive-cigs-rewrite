@@ -51,7 +51,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/morley.png) | Morley | `cigs_morley_cigpack` | Fictional, the mod's original pack | timeless | Filler for any era. Was `murshun_cigs_cigpack` in the original mod | Most Western factions, most mod terrains, default WEST and CIV, RHS US, UN, HIDF, 3CB AAF, APD, FIA, MDF, TPD, NPD, UN, ION, CW US, BAF |
 | ![](img/brands/newport.png) | Newport | `cigs_newport_cigpack` | USA, menthol | 1957 onwards, modern pack look | Menthol. US pop-culture pick for post-war presets | NATO, RHS US, default CIV |
 | ![](img/brands/nil.png) | NIL | `cigs_nil_cigpack` | Austria | timeless | Filler for any modern preset | Many vanilla factions, vanilla terrains, most mod terrains, default CIV, 3CB AAF, APD, FIA, TPD, LDF, LFR, LNM, WEI |
-| ![](img/brands/parliament.png) | Parliament | `cigs_parliament_cigpack` | Russia (US brand by Philip Morris), the status cigarette of Russia and the CIS | modern | Recessed filter. Premium pick for modern Russian factions, officers included | Spetsnaz, RHS Russia, 3CB LSM, KDF |
+| ![](img/brands/parliament.png) | Parliament | `cigs_parliament_cigpack` | Russia (US brand by Philip Morris), the status cigarette of Russia and the CIS | modern | Recessed filter. Premium pick for modern Russian factions, officers included | Spetsnaz, RHS Russia, terrains Chernarus 2020, Ivanivkova, Korsac, Lesser Swamp, Project Raid, Vereskovo, Yulakia and Lybor, 3CB LSM, KDF |
 | ![](img/brands/parisienne.png) | Parisienne | `cigs_parisienne_cigpack` | Switzerland (Burrus, Boncourt; now BAT), the Swiss national brand | 1947 onwards (filtered; the brand dates from 1887) | "Jaune" pack. The bottom panel carries a joke instead of a health warning. Regional brand of Switzerland | Terrains Napf and NapfWinter |
 | ![](img/brands/pielroja.png) | Pielroja | `cigs_pielroja_cigpack` | Colombia | 1924 to 2019 | Filterless. Regional brand of Colombia, stands in for South America | Terrains Colombia, Lingor and Dingor |
 | ![](img/brands/popularne.png) | Popularne | `cigs_popularne_cigpack` | Poland | Cold War | Filterless | Poland, Revolutionaries (GM), terrains Livonia and Stožec, 3CB LNM |
@@ -76,7 +76,7 @@ Brands with an open issue that faction presets already list. Their classnames ar
 
 | Name | Classname | Origin | Era | Planned for | Issue |
 | ---- | --------- | ------ | --- | ----------- | ----- |
-| Belomorkanal | `cigs_belomorkanal_cigpack` | Soviet Union / Russia, papirosa | 1932 onwards | RHS Russia, Eastern Militia, ChDKZ; 3CB Chernarus, Livonian separatists, Grozovia, Nogova, Kolgujev, Ardistan, CW USSR | #358 |
+| Belomorkanal | `cigs_belomorkanal_cigpack` | Soviet Union / Russia, papirosa | 1932 onwards | RHS Russia, Eastern Militia, ChDKZ; 3CB Chernarus, Livonian separatists, Grozovia, Nogova, Kolgujev, Ardistan, CW USSR; the post-Soviet terrains (Chernarus, Utes, Namalsk, the Ukrainian and Eastern European mod terrains) | #358 |
 
 ## Cigars
 

@@ -14,7 +14,7 @@ class XtdGearModels {
         class brand {
             label = CSTRING(aceax_brand);
             centerImage = 1;    // pack front as a square on each button
-            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
+            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "newport", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
 
             class alborz       { label = ""; image = QPATHTOEF(alborz,data\ui\aceax_logo_ca.paa); description = ECSTRING(alborz,cigarette); };
             class almyra       { label = ""; image = QPATHTOEF(almyra,data\ui\aceax_logo_ca.paa); description = ECSTRING(almyra,cigarette); };
@@ -38,6 +38,7 @@ class XtdGearModels {
             class marlboro     { label = ""; image = QPATHTOEF(marlboro,data\ui\aceax_logo_ca.paa); description = ECSTRING(marlboro,cigarette); };
             class matelot      { label = ""; image = QPATHTOEF(matelot,data\ui\aceax_logo_ca.paa); description = ECSTRING(matelot,cigarette); };
             class morley       { label = ""; image = QPATHTOEF(morley,data\ui\aceax_logo_ca.paa); description = ECSTRING(morley,cigarette); };
+            class newport      { label = ""; image = QPATHTOEF(newport,data\ui\aceax_logo_ca.paa); description = ECSTRING(newport,cigarette); };
             class nil          { label = ""; image = QPATHTOEF(nil,data\ui\aceax_logo_ca.paa); description = ECSTRING(nil,cigarette); };
             class popularne    { label = ""; image = QPATHTOEF(popularne,data\ui\aceax_logo_ca.paa); description = ECSTRING(popularne,cigarette); };
             class prince       { label = ""; image = QPATHTOEF(prince,data\ui\aceax_logo_ca.paa); description = ECSTRING(prince,cigarette); };

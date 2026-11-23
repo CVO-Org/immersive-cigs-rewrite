@@ -28,6 +28,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/casa_sport.png) | Casa Sports | `cigs_casa_sport_cigpack` | Morocco | modern | Filterless. Regional brand of North Africa | SFIA, Tura, terrain Sefrou-Ramal, 3CB African factions |
 | ![](img/brands/cleopatra.png) | Cleopatra | `cigs_cleopatra_cigpack` | Egypt, Eastern Company (Golden King pack) | 1961 onwards | Filter. Best-known cigarette of the Arab world and Africa. Planned for the terrains Al Rayak and Sa'hatra | – |
 | ![](img/brands/craven.png) | Craven "A" | `cigs_craven_cigpack` | United Kingdom | WW2 | WW2 look: 1940s presets only | French Liberation Army, US Army (SPE), terrains Normandy and Mortain |
+| ![](img/brands/drina.png) | Drina | `cigs_drina_cigpack` | Yugoslavia, Fabrika Duvana Sarajevo; later Bosnia and Serbia | 1970s–90s look | Regional brand of Serbia and the Yugoslav successor states. The Višegrad bridge over the Drina on the back | RHS Serbia (Army, Air Force, UN) |
 | ![](img/brands/death.png) | Death | `cigs_death_cigpack` | United Kingdom, The Enlightened Tobacco Company's 1990s novelty brand, a black pack with a skull and crossbones | 1990s onwards | Black paper and filter. Gag brand: no preset of its own, arsenal and ZEN brand choice only; if ever added, guerrillas and criminals only | – |
 | ![](img/brands/eckstein.png) | Eckstein No. 5 | `cigs_eckstein_cigpack` | Germany | WW2 | WW2 look: 1940s presets only | Wehrmacht, Sturmtroopers, La Milice, 40s Civilians, terrains Normandy and Mortain |
 | ![](img/brands/ernte_23.png) | Ernte 23 | `cigs_ernte_23_cigpack` | West Germany | 1970s–80s | Regional brand of West Germany | West Germany (GM), terrain Weferlingen |
@@ -71,6 +72,7 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | Belomorkanal | `cigs_belomorkanal_cigpack` | Soviet Union / Russia, papirosa | 1932 onwards | RHS Russia, Eastern Militia, ChDKZ; 3CB Chernarus, Livonian separatists, Grozovia, Nogova, Kolgujev, Ardistan, CW USSR | #358 |
 | Parliament | `cigs_parliament_cigpack` | modern Russia, premium | modern | RHS Russia | #359 |
 | Newport | `cigs_newport_cigpack` | USA, menthol | modern | RHS US | #357 |
+| Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom | modern | 3CB BAF | #360 |
 | Drina | `cigs_drina_cigpack` | Yugoslavia / Serbia | 1970s–90s look | RHS Serbia | #361 |
 | Sportsman | `cigs_sportsman_cigpack` | Kenya, East Africa | modern | 3CB African factions, CSAT Africa | #362 |
 

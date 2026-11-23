@@ -214,7 +214,7 @@ Addon `presets_ef`, active when the CDLC is loaded.
 
 #### RHS
 
-Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Parliament, Newport and Drina are planned brands (issues #358, #359, #357, #361): until they are in the mod, those packs are dropped and the rest of the list is used.
+Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Parliament and Newport are planned brands (issues #358, #359, #357): until they are in the mod, those packs are dropped and the rest of the list is used.
 
 | Faction | Packs |
 | ------- | ----- |

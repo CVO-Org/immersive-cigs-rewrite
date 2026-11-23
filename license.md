@@ -37,6 +37,7 @@ The following Folders are under no license
    - \addons\casa_sport
    - \addons\cleopatra
    - \addons\craven
+   - \addons\drina
    - \addons\ducados
    - \addons\eckstein
    - \addons\ernte_23

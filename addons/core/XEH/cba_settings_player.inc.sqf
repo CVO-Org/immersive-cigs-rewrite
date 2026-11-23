@@ -97,7 +97,12 @@ private _array_lighters = [ _cfgs apply { configName _x }, _cfgs apply _code, 0 
 
 // Auto-Detect Possible Cig Packs (including suckers)
 private _cfgs = ["PACKAGES", true] call FUNC(getAllItems);
-private _array_packs = [ _cfgs apply { configName _x }, _cfgs apply { getText ( _x >> "displayName" ) }, 0 ];
+// "default" (the pack AI of the player's unit would get, see fn_addItemsInSP) and "random" come first; "default" is the default value.
+private _array_packs = [
+    ["default", "random"] + (_cfgs apply { configName _x }),
+    [localize LSTRING(set_sp_addCigpack_type_default), localize LSTRING(set_sp_addCigpack_type_random)] + (_cfgs apply { getText ( _x >> "displayName" ) }),
+    0
+];
 
 [
     QSET(sp_addCigpack_type),                //    _setting     - Unique setting name. Matches resulting variable name <STRING>

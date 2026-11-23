@@ -85,4 +85,4 @@ In singleplayer missions you can start with cigarettes and a lighter. These sett
 | ------- | ------- | ------------ |
 | Add Items to Player in SP | off | Turns the two items below on. |
 | Start with a Lighter / Type of Lighter | on / first lighter | Which lighter you get. |
-| Start with a CigPack / Type of Pack | on / first pack | Which pack you get. |
+| Start with a CigPack / Type of Pack | on / Default | Which pack you get. *Default* gives you a pack that AI of your unit would carry: from your faction, the terrain or your side's default packs. *Random* picks any pack from the list. |

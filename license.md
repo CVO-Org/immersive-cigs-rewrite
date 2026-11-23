@@ -48,6 +48,7 @@ The following Folders are under no license
    - \addons\lambert_butler
    - \addons\lucky_strike
    - \addons\marlboro
+   - \addons\parliament
    - \addons\newport
    - \addons\parisienne
    - \addons\pielroja

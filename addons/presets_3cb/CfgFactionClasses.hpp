@@ -98,13 +98,13 @@ class CfgFactionClasses {
         PVAR(packs)[] = { QEGVAR(lipa,cigpack), QEGVAR(popularne,cigpack), QEGVAR(nil,cigpack) };
     };
     class UK3CB_LSM_O {                // Livonia Separatist Militia
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
     };
     class UK3CB_LSM_B {                // Livonia Separatist Militia
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
     };
     class UK3CB_LSM_I {                // Livonia Separatist Militia
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(lipa,cigpack), QEGVAR(kosmos,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Chernarus and neighbours
@@ -168,13 +168,13 @@ class CfgFactionClasses {
         PVAR(packs)[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
     };
     class UK3CB_KDF_O {                // Kolgujev Defence Force
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_KDF_B {                // Kolgujev Defence Force
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_KDF_I {                // Kolgujev Defence Force
-        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Takistan / Afghanistan / Central Asia

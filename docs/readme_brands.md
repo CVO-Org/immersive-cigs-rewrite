@@ -48,6 +48,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/morley.png) | Morley | `cigs_morley_cigpack` | Fictional, the mod's original pack | timeless | Filler for any era. Was `murshun_cigs_cigpack` in the original mod | Most Western factions, default WEST and CIV, RHS US, UN, HIDF, 3CB AAF, APD, FIA, MDF, TPD, NPD, UN, ION, CW US, BAF |
 | ![](img/brands/newport.png) | Newport | `cigs_newport_cigpack` | USA, menthol | 1957 onwards, modern pack look | Menthol. US pop-culture pick for post-war presets | NATO, RHS US, default CIV |
 | ![](img/brands/nil.png) | NIL | `cigs_nil_cigpack` | Austria | timeless | Filler for any modern preset | Many vanilla factions, vanilla terrains, default CIV, 3CB AAF, APD, FIA, TPD, LDF, LFR, LNM, WEI |
+| ![](img/brands/parliament.png) | Parliament | `cigs_parliament_cigpack` | Russia (US brand by Philip Morris), the status cigarette of Russia and the CIS | modern | Recessed filter. Premium pick for modern Russian factions, officers included | Spetsnaz, RHS Russia, 3CB LSM, KDF |
 | ![](img/brands/parisienne.png) | Parisienne | `cigs_parisienne_cigpack` | Switzerland (Burrus, Boncourt; now BAT), the Swiss national brand | 1947 onwards (filtered; the brand dates from 1887) | "Jaune" pack. The bottom panel carries a joke instead of a health warning. Regional brand of Napf and NapfWinter once terrain presets for mod maps are in | not yet in a preset |
 | ![](img/brands/popularne.png) | Popularne | `cigs_popularne_cigpack` | Poland | Cold War | Filterless | Poland, Revolutionaries (GM), terrains Livonia and Stožec, 3CB LNM |
 | ![](img/brands/prince.png) | Prince | `cigs_prince_cigpack` | Denmark | 1957 onwards | Danish, so also for Nordic peacekeepers | Denmark (GM), UNA (WS), RHS UN, Serbian UN, 3CB UN |
@@ -71,7 +72,6 @@ Brands with an open issue that faction presets already list. Their classnames ar
 | Name | Classname | Origin | Era | Planned for | Issue |
 | ---- | --------- | ------ | --- | ----------- | ----- |
 | Belomorkanal | `cigs_belomorkanal_cigpack` | Soviet Union / Russia, papirosa | 1932 onwards | RHS Russia, Eastern Militia, ChDKZ; 3CB Chernarus, Livonian separatists, Grozovia, Nogova, Kolgujev, Ardistan, CW USSR | #358 |
-| Parliament | `cigs_parliament_cigpack` | modern Russia, premium | modern | RHS Russia | #359 |
 | Newport | `cigs_newport_cigpack` | USA, menthol | modern | RHS US | #357 |
 | Lambert & Butler | `cigs_lambert_butler_cigpack` | United Kingdom | modern | 3CB BAF | #360 |
 | Drina | `cigs_drina_cigpack` | Yugoslavia / Serbia | 1970s–90s look | RHS Serbia | #361 |

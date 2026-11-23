@@ -135,7 +135,7 @@ Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`)
 | CSAT `OPF_F` | Alborz, Apollo Soyuz, Kosmos |
 | CSAT (Pacific) `OPF_T_F` | Shanhai, Alborz, Apollo Soyuz |
 | Viper `OPF_V_F` | Shanhai, Alborz, NIL |
-| Spetsnaz `OPF_R_F` | Kosmos, Apollo Soyuz, Voron |
+| Spetsnaz `OPF_R_F` | Kosmos, Apollo Soyuz, Parliament, Voron |
 | LDF `IND_E_F` | Lipa Dzwonek, Lipa, Voron, NIL |
 | Looters `IND_L_F` | Lipa, Voron, Black Devil, NIL |
 | IDAP `CIV_IDAP_F` | Lollipops, Morley, NIL |
@@ -214,6 +214,7 @@ Addon `presets_ef`, active when the CDLC is loaded.
 
 #### RHS
 
+Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Newport and Drina are planned brands (issues #358, #357, #361): until they are in the mod, those packs are dropped and the rest of the list is used.
 Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal, Parliament and Newport are planned brands (issues #358, #359, #357): until they are in the mod, those packs are dropped and the rest of the list is used.
 
 | Faction | Packs |
@@ -244,7 +245,7 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | Livonia Defence Force `LDF` | Lipa Dzwonek, Lipa, Voron, NIL |
 | Livonia Forest Rangers `LFR` | Lipa, Lipa Dzwonek, NIL |
 | Livonian Nationalist Militia `LNM` | Lipa, Popularne, NIL |
-| Livonia Separatist Militia `LSM` | Belomorkanal, Lipa, Kosmos |
+| Livonia Separatist Militia `LSM` | Belomorkanal, Parliament, Lipa, Kosmos |
 | Chernarus Civilians `CHC` | Gudok, Zamok, Sosna, Belomorkanal, Marlboro |
 | Chernarus Police `CPD` | Zamok, Gudok, Marlboro |
 | NAPA `NAP` | Sosna, Gudok, Marlboro |
@@ -255,7 +256,7 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | Grozovia Armed Forces `GAF` | Zamok, Belomorkanal, Marlboro |
 | Nogovan Freedom Alliance `NFA` | Sparta, Belomorkanal, Marlboro |
 | Nogova Police `NPD` | Sparta, Marlboro, Morley |
-| Kolgujev Defence Force `KDF` | Belomorkanal, Kosmos, Marlboro |
+| Kolgujev Defence Force `KDF` | Belomorkanal, Parliament, Kosmos, Marlboro |
 | Takistan National Army `TKA` | Zargabad, Jaffudi, Sharig, Marlboro |
 | Takistan Civilians `TKC` | Zargabad, Sharig, Jaffudi, Kosmos, Marlboro |
 | Takistan National Police `TKP` | Zargabad, Jaffudi, Marlboro |

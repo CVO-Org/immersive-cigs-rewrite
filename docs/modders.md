@@ -352,18 +352,20 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Terrain | Packs |
 | ------- | ----- |
 | Chernarus, Chernarus (Summer), Chernarus (Winter), Utes (CUP) `chernarus`, `chernarus_summer`, `Chernarus_Winter`, `utes`<br>Chernarus 2020 (CUP Maps 2.0) `cup_chernarus_A3`<br>Namalsk `namalsk`, Ivanivkova `Ivanivokova`, Korsac `VTF_Korsac`, `VTF_Korsac_Winter`, Lesser Swamp `ST_Swamp`, Project Raid `RaidMap`, Vereskovo `Vereskovo` | Gudok, Zamok, Sosna, Apollo Soyuz, Marlboro, Camel |
-| Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Kunduz `Kunduz`, Anizay `tem_anizay`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
 | Zargabad (CUP) `zargabad`, Zargabad 2025 (CUP Maps 2.0) `cup_Zargabad_a3` | Zargabad, Jaffudi, Sharig, Marlboro, Camel |
 | Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi (CUP) `sara`, `saralite`, `sara_dbe1`, `porto`, `intro`<br>Sehreno `Sehreno` | Ducados, Morley, Marlboro, Camel, NIL |
 | Bystrica, Bukovina (CUP) `Woodland_ACR`, `Bootcamp_ACR`<br>Šumava `brf_sumava` | Sparta, Marlboro, Camel, Morley, NIL |
 | Ruha `ruha`, Virolahti `vt7`, Maksniemi `Maksniemi` | Klubi, John Silver, Marlboro, Camel, Morley, NIL |
 | Stubbhult `stubbhult`, Archie (Winter) `archie_w`, Mehland `mehland`, Tria `jns_tria` | John Silver, Prince, Marlboro, Camel, Morley, NIL |
 | Kujari `tem_kujari`, Niakala `juju_kalahari` | Sportsman, Casa Sports, Marlboro, Camel, Morley, NIL |
+| Isla Duala `isladuala3` | Sportsman, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Green Valley `green_valley` | Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
 | Napf `Napf`, `NapfWinter` | Parisienne, NIL, Marlboro, Camel, Morley |
-| Pulau `pulau`, Prei Khmaoch Luong `rhspkl` | Gudang Garam, Marlboro, Camel, Morley, NIL |
+| Pulau `pulau`, Tembelan `Tembelan`, Prei Khmaoch Luong `rhspkl` | Gudang Garam, Marlboro, Camel, Morley, NIL |
 | Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia` | Pielroja, Marlboro, Camel, Morley, NIL |
+| Regero `regero` | Pielroja, Ducados, Marlboro, Camel, Morley |
 | Mull of Kintyre `rof_mok`, Djalka `K9S_Djalka` | Lambert & Butler, Marlboro, Camel, Morley, NIL |
 | Drakovac `drakovac` | Drina, Marlboro, Camel, Morley, NIL |
 | Kaska `kaska` | Marlboro, Camel, Morley, NIL |

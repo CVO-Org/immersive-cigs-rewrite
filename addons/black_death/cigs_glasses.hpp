@@ -18,7 +18,7 @@ class CfgGlasses {
 
         PVAR(totalPuffs) = TOTALPUFFS;
         PVAR(curStage) = 0;
-        PVAR(flavor)[] = { "grim honesty", "the Reaper tipping his top hat", "nineties irony, unfiltered", "a dark and dreadful blend" };
+        PVAR(flavor)[] = { "grim honesty", "the Reaper's own blend", "nineties irony, unfiltered", "a dark and dreadful draw" };
         
     };
 

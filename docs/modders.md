@@ -175,17 +175,26 @@ class A3A {
 
 Occupants and Invaders smoke what the same army smokes in its [faction preset](#included-faction-presets). Rebels and civilians have no entry: Antistasi plays them on any map, so they get the map's [terrain preset](#terrain-presets), like the police.
 
-| Template | Packs | Special forces (`sf`) |
-| -------- | ----- | --------------------- |
-| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
-| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | as NATO Arid |
-| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | as NATO Arid |
-| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – |
-| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | Shanhai, Alborz, NIL (Viper) |
-| A3 CSAT Enoch | as CSAT Arid | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
-| A3 AAF | Almyra, Morley, NIL | – |
-| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – |
-| A3 ION | Camel, Morley, Marlboro | – |
+A dash means that tier gets the template's packs. Belomorkanal is a planned brand (#358) and is dropped until it is in the mod.
+
+| Template | Packs | Militia (`militia`) | Special forces (`sf`) |
+| -------- | ----- | ------------------- | --------------------- |
+| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | – | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
+| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | – | as NATO Arid |
+| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | – | as NATO Arid |
+| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – | – |
+| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | – | Shanhai, Alborz, NIL (Viper) |
+| A3 CSAT Enoch | as CSAT Arid | – | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
+| A3 AAF | Almyra, Morley, NIL | – | – |
+| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – | – |
+| A3 ION | Camel, Morley, Marlboro | – | – |
+| RHS AFRF Arid, Temperate; RHS VDV Temperate, Arid | Belomorkanal, Parliament, Kosmos, Apollo Soyuz, Marlboro | Belomorkanal, Kosmos, Apollo Soyuz | Parliament, Kosmos, Marlboro |
+| RHS ChDKZ | Gudok, Belomorkanal, Kosmos | – | – |
+| RHS CDF | Zamok, Sosna, Gudok, Marlboro | Gudok, Sosna | – |
+| RHS US Army Arid, Temperate; RHS USMC Arid, Temperate | Marlboro, Camel, Newport, Morley | – | – |
+| RHS SAF | Drina, Marlboro, Camel | – | – |
+| RHS HIDF | Matelot, Marlboro, Morley | – | – |
+| RHS TLA | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
 
 ### Included faction presets
 

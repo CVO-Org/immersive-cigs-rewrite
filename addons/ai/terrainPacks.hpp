@@ -75,9 +75,9 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(apollo,cigpack), QEGVAR(popularne,cigpack), QEGVAR(f6,cigpack) };
     };
 
-    // Western Sahara - Sefrou-Ramal, North Africa
+    // Western Sahara - Sefrou-Ramal, North Africa. Casa Sports, then the Egyptian Cleopatra
     class SefrouRamal {
-        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
     };
 
     // Spearhead 1944 - occupied France
@@ -291,12 +291,13 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel. Libya gets Casa Sports and the Egyptian Cleopatra, Chad Sportsman first
+    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel. Libya gets Casa Sports and the Egyptian Cleopatra, Chad Sportsman first, then
+    // Casa Sports and Cleopatra from the Arab north
     class green_valley {
         packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class juju_kalahari {                           // Niakala
-        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand, the Egyptian Cleopatra, then the Takistan brands

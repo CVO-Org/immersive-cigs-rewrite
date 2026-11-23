@@ -209,8 +209,8 @@ Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of
 
 | Faction | Packs |
 | ------- | ----- |
-| SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Black Devil, Morley |
-| Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Black Devil, Mtn Dew Baja Blast |
+| SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Cleopatra, Black Devil, Morley |
+| Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Cleopatra, Black Devil, Mtn Dew Baja Blast |
 | ION Services `BLU_ION_lxWS` | Camel, Morley, Marlboro |
 | UNA `BLU_UN_lxWS` | Camel, Morley, Prince |
 | NATO (Desert) `BLU_NATO_lxWS` | Morley, Marlboro, Camel, Crayons |
@@ -289,15 +289,15 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | Afghan National Army `ANA_B`, Afghan National Police `ANP_B` | Zargabad, Sharig, Marlboro |
 | Ardistan Army `ARD` | Sharig, Zargabad, Belomorkanal |
 | Karzeghistan Royal Guard `KRG` | Jaffudi, Sharig, Marlboro |
-| Middle East Civilians `MEC` | Zargabad, Jaffudi, Alborz, Marlboro |
-| Middle East Insurgents `MEI` | Zargabad, Sharig, Alborz |
-| Middle East Extremists `MEE` | Sharig, Alborz, Zargabad |
-| African Desert Army `ADA` | Sportsman, Casa Sports, Marlboro, Camel |
-| African Desert Army Paramilitary `ADR` | Sportsman, Casa Sports, Marlboro |
-| African Desert National Police `ADP` | Sportsman, Casa Sports, Camel |
-| African Desert Civilians `ADC` | Sportsman, Casa Sports, Camel, Marlboro |
-| African Desert Civilian Militia `ADG`, Militia `ADM` | Sportsman, Casa Sports, Black Devil Pink |
-| African Desert Extremists `ADE` | Casa Sports, Sportsman, Camel |
+| Middle East Civilians `MEC` | Zargabad, Cleopatra, Jaffudi, Alborz, Marlboro |
+| Middle East Insurgents `MEI` | Zargabad, Cleopatra, Sharig, Alborz |
+| Middle East Extremists `MEE` | Sharig, Cleopatra, Alborz, Zargabad |
+| African Desert Army `ADA` | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel |
+| African Desert Army Paramilitary `ADR` | Sportsman, Casa Sports, Cleopatra, Marlboro |
+| African Desert National Police `ADP` | Sportsman, Casa Sports, Cleopatra, Camel |
+| African Desert Civilians `ADC` | Sportsman, Casa Sports, Cleopatra, Camel, Marlboro |
+| African Desert Civilian Militia `ADG`, Militia `ADM` | Sportsman, Casa Sports, Cleopatra, Black Devil Pink |
+| African Desert Extremists `ADE` | Casa Sports, Sportsman, Cleopatra, Camel |
 | PLM `PLM` | Camel, Marlboro, Black Devil Pink |
 | Western European Insurgents `WEI` | Marlboro, Camel, Black Devil Pink, NIL |
 | UN Peacekeepers `UN` | Camel, Morley, Prince |
@@ -342,7 +342,7 @@ Every vanilla military and guerrilla faction has its own faction preset, so thes
 | Weferlingen (Global Mobilization) `gm_weferlingen_summer`, `gm_weferlingen_winter` | f6, Ernte 23, Kosmos, Apollo Soyuz, Marlboro |
 | Cam Lao Nam, Khe Sanh, The Bra (S.O.G. Prairie Fire) `Cam_Lao_Nam`, `vn_khe_sanh`, `vn_the_bra` | Ruby Queen, Savage, Marlboro, Camel, Kosmos |
 | Stožec (CSLA Iron Curtain) `Stozec` | Sparta, Kosmos, Apollo Soyuz, Popularne, f6 |
-| Sefrou-Ramal (Western Sahara) `SefrouRamal` | Casa Sports, Camel, Marlboro, Morley |
+| Sefrou-Ramal (Western Sahara) `SefrouRamal` | Casa Sports, Cleopatra, Camel, Marlboro, Morley |
 | Normandy, Mortain (Spearhead 1944) `SPE_Normandy`, `SPE_Mortain` | Troupes, Matelot, Eckstein, Juno, Lucky Strike, Craven "A", Camel |
 
 The CDLC entries need no dependency: they only apply while that terrain is loaded. The CDLC factions keep their own faction presets, so these reach the other factions on the terrain. Expeditionary Forces and Reaction Forces bring no terrain.
@@ -358,7 +358,8 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Bystrica, Bukovina (CUP) `Woodland_ACR`, `Bootcamp_ACR`<br>Šumava `brf_sumava` | Sparta, Marlboro, Camel, Morley, NIL |
 | Ruha `ruha`, Virolahti `vt7`, Maksniemi `Maksniemi` | Klubi, John Silver, Marlboro, Camel, Morley, NIL |
 | Stubbhult `stubbhult`, Archie (Winter) `archie_w`, Mehland `mehland`, Tria `jns_tria` | John Silver, Prince, Marlboro, Camel, Morley, NIL |
-| Kujari `tem_kujari`, Niakala `juju_kalahari` | Sportsman, Casa Sports, Marlboro, Camel, Morley, NIL |
+| Kujari `tem_kujari` | Sportsman, Casa Sports, Marlboro, Camel, Morley, NIL |
+| Niakala `juju_kalahari` | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Green Valley `green_valley` | Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
 | Napf `Napf`, `NapfWinter` | Parisienne, NIL, Marlboro, Camel, Morley |

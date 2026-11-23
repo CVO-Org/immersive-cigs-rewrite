@@ -2,6 +2,7 @@
 //
 // - SFIA and Tura are entered on their GUER class. The other sides' classes (OPF_SFIA_lxWS, BLU/OPF_TURA_lxWS) inherit from it
 //   and get the same packs through config inheritance.
+// - SFIA and Tura: Casa Sports as the North African brand, the Egyptian Cleopatra behind it, then the gag brands.
 // - ION and UN are international and get the mainstream brands. Their GUER/EAST classes have no units, so only the WEST ones get an entry.
 // - NATO (Desert) mirrors vanilla NATO, Crayons included.
 // - Cigars are kept for officers (unit class level), never per faction.
@@ -11,10 +12,10 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ Argana
     class IND_SFIA_lxWS {   // SFIA (+ OPF_SFIA_lxWS)
-        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(morley,cigpack) };
+        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(morley,cigpack) };
     };
     class IND_TURA_lxWS {   // Tura (+ BLU_TURA_lxWS, OPF_TURA_lxWS)
-        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(baja_blast,cigpack) };
+        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(baja_blast,cigpack) };
     };
 
     // ------------------------------------------------------------------------ International

@@ -148,7 +148,7 @@ class CfgVehicles {
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | `cigs_packs_<tier>[]` | classes | Packs for one tier of the template's units: `militia`, `military`, `sf`, `police` or `other`. Replaces `cigs_packs[]` for that tier. |
-| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset. An empty array means they get no packs. |
+| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset, except the police. An empty array means they get no packs. |
 | `cigs_lighters[]` | classes | Lighters for every unit of the template. Missing or empty: the normal lighter pool. |
 
 ```cpp
@@ -166,6 +166,7 @@ class A3A {
 - **For Antistasi units, the template replaces the unit class and faction presets.** It ranks where they do and is switched by the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` of the generic unit classes doesn't apply.
 - **A template without an entry** leaves its units to the terrain presets and then the default presets, not to the FIA presets.
 - **The tier** comes from the unit's Antistasi loadout (`unitType`, e.g. `loadouts_occ_military_Rifleman`). Civilians have no tier.
+- **Police are local.** A template plays on many maps, and its police are the local force. Without `cigs_packs_police[]` they get the terrain preset of the map being played, not the template's `cigs_packs[]`.
 - **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
 - **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
 - Immersive Cigs brings its template presets in the addon `presets_a3a`, active when Antistasi is loaded. Only the Antistasi Community version is supported.

@@ -11,6 +11,7 @@
 * dressed with setUnitLoadout. Their real faction is the Antistasi template loaded for their role, so for them the template
 * replaces both places above: configFile >> "A3A" >> "Templates" >> <template> with cigs_packs_<tier>[] (tier from the unit's
 * "unitType": militia, military, sf, police, other), then cigs_packs[], and cigs_lighters[].
+* Police are the local force, so they only take cigs_packs_police[]: without it they get the terrain presets, not cigs_packs[].
 * A template without these properties returns an empty hashmap: the unit goes on to the terrain and default presets, not to FIA.
 *
 * Only properties that are defined are returned. Classnames that are not a loaded pack / lighter are dropped,
@@ -74,7 +75,10 @@ if ( _a3aTemplate isEqualType "" && { _a3aTemplate isNotEqualTo "" } ) exitWith 
         // cigs_packs_<tier>[] replaces cigs_packs[]
         if ( _tier isNotEqualTo "" ) then {
             _packs params [ "_key", "_property", "_marker" ];
-            _map merge [ [ _cfg, [ [ _key, format ["%1_%2", _property, _tier], _marker ] ] ] call _fnc_read, true ];
+            private _tierMap = [ _cfg, [ [ _key, format ["%1_%2", _property, _tier], _marker ] ] ] call _fnc_read;
+            // Police are local: without their own preset they go on to the terrain presets of the map being played
+            if ( _tier isEqualTo "police" && { !(_key in _tierMap) } ) then { _map deleteAt _key; };
+            _map merge [ _tierMap, true ];
         };
         _map
     }, [ _a3aTemplate, _tier, _fnc_read, _packs, _lighters ] ] call EFUNC(core,getCached)

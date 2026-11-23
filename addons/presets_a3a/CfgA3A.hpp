@@ -6,7 +6,8 @@
 //
 // - cigs_packs_<tier>[]   packs for one tier of the template's units: militia, military, sf, police, other.
 //                         The tier comes from the unit's Antistasi loadout. Replaces cigs_packs[] for that tier.
-// - cigs_packs[]          packs for every unit of the template without a tier preset.
+// - cigs_packs[]          packs for every unit of the template without a tier preset, except the police: they are
+//                         the local force, so without cigs_packs_police[] they get the terrain preset of the map.
 // - cigs_lighters[]       lighters for every unit of the template.
 //
 // A template without these properties leaves its units to the terrain and default presets.

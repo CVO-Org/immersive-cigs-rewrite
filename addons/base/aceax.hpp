@@ -14,7 +14,7 @@ class XtdGearModels {
         class brand {
             label = CSTRING(aceax_brand);
             centerImage = 1;    // pack front as a square on each button
-            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
+            values[] = { "alborz", "almyra", "apollo", "baja_blast", "black_devil", "camel", "casa_sport", "craven", "eckstein", "ernte_23", "f6", "gudok", "hwarang", "jaffudi", "juno", "kosmos", "lipa", "lipa_dzwonek", "lucky_strike", "marlboro", "matelot", "morley", "nil", "popularne", "prince", "prism", "ruby_queen", "savage", "shanhai", "sharig", "sosna", "sparta", "troupes", "voron", "zamok", "zargabad" };
 
             class alborz       { label = ""; image = QPATHTOEF(alborz,data\ui\aceax_logo_ca.paa); description = ECSTRING(alborz,cigarette); };
             class almyra       { label = ""; image = QPATHTOEF(almyra,data\ui\aceax_logo_ca.paa); description = ECSTRING(almyra,cigarette); };
@@ -41,6 +41,7 @@ class XtdGearModels {
             class nil          { label = ""; image = QPATHTOEF(nil,data\ui\aceax_logo_ca.paa); description = ECSTRING(nil,cigarette); };
             class popularne    { label = ""; image = QPATHTOEF(popularne,data\ui\aceax_logo_ca.paa); description = ECSTRING(popularne,cigarette); };
             class prince       { label = ""; image = QPATHTOEF(prince,data\ui\aceax_logo_ca.paa); description = ECSTRING(prince,cigarette); };
+            class prism        { label = ""; image = QPATHTOEF(prism,data\ui\aceax_logo_ca.paa); description = ECSTRING(prism,cigarette); };
             class ruby_queen   { label = ""; image = QPATHTOEF(ruby_queen,data\ui\aceax_logo_ca.paa); description = ECSTRING(ruby_queen,cigarette); };
             class savage       { label = "Savage"; description = ECSTRING(savage,cigarette); };    // no logo: its pack is S.O.G.'s, and AAE draws the button even without the CDLC
             class shanhai      { label = ""; image = QPATHTOEF(shanhai,data\ui\aceax_logo_ca.paa); description = ECSTRING(shanhai,cigarette); };

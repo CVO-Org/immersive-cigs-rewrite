@@ -83,6 +83,9 @@ private _case = {
         [format ["FAIL  %1  - didn't start %2", _name, _consume]] call _log;
     };
 
+    // the item burns on to the next stage (another class) while it's smoked, so act on and check what's in the slot now
+    _item = [_type] call _slot;
+
     switch (_action) do {
         case "swap": {
             // the engine puts the old item into the inventory and the new one into the slot
@@ -90,7 +93,6 @@ private _case = {
             [_type, _swapTo] call _equip;
         };
         case "out": {
-            // unassignItem doesn't take this NVG item out, so remove it and add it to the inventory, as with the goggles
             if (_type isEqualTo "GOGGLES") then { removeGoggles _unit } else { _unit unlinkItem _item };
             _unit addItem _item;
         };

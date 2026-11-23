@@ -56,6 +56,7 @@ The following Folders are under no license
    - \addons\ruby_queen
    - \addons\sobranie
    - \addons\sparta
+   - \addons\sportsman
    - \addons\troupes
 
 The following sound files  licensed under ADPL-SA and originate from the Original DayZMod.

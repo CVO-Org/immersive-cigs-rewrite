@@ -15,6 +15,7 @@
 * 7. Terrain presets                 - cigs_aiCigs_terrain, the same for all sides, while cigs_ai_set_aiCigs_terrainPresets_enable is on
 * 8. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
 * On levels 5-8, the unit class's cigs_packsExtra[] is added to the list.
+* Antistasi units take levels 5 and 6 from their Antistasi faction template instead, see fn_getConfigPresets.
 *
 * Arguments:
 * 0: Unit <OBJECT>

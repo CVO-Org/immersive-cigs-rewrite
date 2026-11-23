@@ -141,6 +141,35 @@ class CfgVehicles {
 - **Unloaded classnames are dropped**, as with factions.
 - For another mod's units, use a compat addon as shown above, and declare the unit class with its real parent class.
 
+### Antistasi template presets
+
+[Antistasi](https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125) spawns its AI as generic classes of the FIA factions (`a3a_unit_west`, `a3a_unit_east`, `a3a_unit_reb*`, `a3a_unit_civ`) and dresses them with loadouts. The unit class and faction presets would give all of them FIA packs. Their real faction is the Antistasi template loaded for their role (Occupants, Invaders, Rebels, Civilians), a class in `configFile >> "A3A" >> "Templates"`, and that's where their presets go:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_packs_<tier>[]` | classes | Packs for one tier of the template's units: `militia`, `military`, `sf`, `police` or `other`. Replaces `cigs_packs[]` for that tier. |
+| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset. An empty array means they get no packs. |
+| `cigs_lighters[]` | classes | Lighters for every unit of the template. Missing or empty: the normal lighter pool. |
+
+```cpp
+class A3A {
+    class Templates {
+        class MyMod_Base;
+        class MyMod_Army_Arid : MyMod_Base {
+            cigs_packs[]         = { "cigs_marlboro_cigpack", "cigs_camel_cigpack" };
+            cigs_packs_militia[] = { "cigs_almyra_cigpack" };
+        };
+    };
+};
+```
+
+- **For Antistasi units, the template replaces the unit class and faction presets.** It ranks where they do and is switched by the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` of the generic unit classes doesn't apply.
+- **A template without an entry** leaves its units to the terrain presets and then the default presets, not to the FIA presets.
+- **The tier** comes from the unit's Antistasi loadout (`unitType`, e.g. `loadouts_occ_military_Rifleman`). Civilians have no tier.
+- **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
+- **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
+- Immersive Cigs brings its template presets in the addon `presets_a3a`, active when Antistasi is loaded. Only the Antistasi Community version is supported.
+
 ### Included faction presets
 
 Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list.

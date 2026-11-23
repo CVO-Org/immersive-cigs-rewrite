@@ -38,6 +38,7 @@ The following Folders are under no license
    - \addons\eckstein
    - \addons\ernte_23
    - \addons\f6
+   - \addons\gudang_garam
    - \addons\hwarang
    - \addons\juno
    - \addons\lucky_strike

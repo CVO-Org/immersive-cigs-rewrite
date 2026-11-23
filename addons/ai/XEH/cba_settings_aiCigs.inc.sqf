@@ -37,7 +37,7 @@
     false                                    //    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>
 ] call CBA_fnc_addSetting;
 
-// Faction presets - cigs_packs[] / cigs_lighters[] in CfgFactionClasses, see fn_getConfigPresets
+// Unit class and faction presets - cigs_packs[] / cigs_lighters[] in CfgVehicles and CfgFactionClasses, see fn_getConfigPresets
 // When off, units skip that level and get the default presets
 [
     QSET(aiCigs_configPresets_enable),

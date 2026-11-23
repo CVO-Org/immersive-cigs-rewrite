@@ -4,7 +4,8 @@
 // Server only. Results go to systemChat, the RPT ("[cigs][test]") and a hint.
 //
 // Order under test, highest first:
-// cigs_aiCigs_api > module > pack selection > cigs_aiCigs_api_lesser > faction presets > default presets
+// cigs_aiCigs_api > module > pack selection > cigs_aiCigs_api_lesser > unit class presets > faction presets > terrain presets > default presets
+// The unit class level is tested with the vanilla officers (presets_vanilla\CfgVehicles.hpp): cigs_packsExtra[] = cigar box.
 
 if (!isServer) exitWith {};
 
@@ -37,7 +38,8 @@ private _check = {
 // ---------------------------------------------------------------- one unit class per faction
 private _classByFaction = createHashMap;
 {
-    if ( getNumber (_x >> "scope") isEqualTo 2 && { configName _x isKindOf "CAManBase" } ) then {
+    // skip unit classes with their own presets (the officers), so the unit stands for its faction only
+    if ( getNumber (_x >> "scope") isEqualTo 2 && { configName _x isKindOf "CAManBase" } && { !isArray (_x >> "cigs_packs") && { !isArray (_x >> "cigs_packsExtra") } } ) then {
         private _faction = getText (_x >> "faction");
         if !( _faction in _classByFaction ) then { _classByFaction set [_faction, configName _x] };
     };
@@ -49,6 +51,19 @@ private _spawn = {
     private _class = _classByFaction getOrDefault [_faction, ""];
     if ( _class isEqualTo "" ) exitWith { objNull };
     private _side = [east, west, independent, civilian] select ( getNumber (configFile >> "CfgFactionClasses" >> _faction >> "side") );
+    private _group = createGroup [_side, true];
+    private _unit = _group createUnit [_class, [-2000, -2000, 0], [], 0, "CAN_COLLIDE"];
+    _unit setVariable ["cigs_api_blockAiCigs", true];
+    _unit enableSimulationGlobal false;
+    _spawned pushBack _unit;
+    _unit
+};
+
+// a unit of one class, same as _spawn
+private _spawnClass = {
+    params ["_class"];
+    if !( isClass (configFile >> "CfgVehicles" >> _class) ) exitWith { objNull };
+    private _side = [east, west, independent, civilian] select ( getNumber (configFile >> "CfgVehicles" >> _class >> "side") );
     private _group = createGroup [_side, true];
     private _unit = _group createUnit [_class, [-2000, -2000, 0], [], 0, "CAN_COLLIDE"];
     _unit setVariable ["cigs_api_blockAiCigs", true];
@@ -157,6 +172,47 @@ cigs_aiCigs_api = createHashMapFromArray [["WEST", ["cigs_pops_poppack"]]];
 // ---------------------------------------------------------------- 10. vanilla factions define no lighters
 call _reset;
 ["no cigs_lighters[] on BLU_F", keys ([_blu] call cigs_ai_fnc_getConfigPresets), ["packs"]] call _check;
+
+
+// ---------------------------------------------------------------- 11. unit class presets: the vanilla officers
+// cigs_packsExtra[] adds the cigar box to the faction's packs. Child classes (Pacific, Woodland, parade) inherit it.
+call _reset;
+private _cigars = "cigs_cigars_cigarbox_5";
+{
+    _x params ["_class", "_faction"];
+    private _unit = [_class] call _spawnClass;
+    if ( isNull _unit ) then {
+        [format ["SKIP  officer %1 - class not loaded", _class]] call _log;
+    } else {
+        [format ["officer %1 -> %2 + cigars", _class, _faction], [_unit] call _packs, ([_faction] call _factionPacks) + [_cigars]] call _check;
+    };
+} forEach [
+    ["B_officer_F", "BLU_F"],
+    ["B_T_Officer_F", "BLU_T_F"],       // inherits from B_officer_F
+    ["O_officer_F", "OPF_F"],
+    ["I_officer_F", "IND_F"],
+    ["I_E_Officer_F", "IND_E_F"],
+    ["I_G_officer_F", "IND_G_F"],
+    ["B_G_officer_F", "BLU_G_F"]        // inherits from I_G_officer_F, NATO's FIA
+];
+
+private _officer = ["B_officer_F"] call _spawnClass;
+["officer presets: keys packs + packsExtra", keys ([_officer] call cigs_ai_fnc_getConfigPresets), ["packs", "packsExtra"]] call _check;
+
+// getCached hands out copies: merging the officer's presets must not change the cached faction presets
+["after the officer, BLU_F rifleman still faction only", [_blu] call _packs, ["BLU_F"] call _factionPacks] call _check;
+
+// presets switched off: no unit class level either, and no extra packs
+["cigs_ai_set_aiCigs_configPresets_enable", false] call _set;
+["officer, presets off -> default presets, no cigars", [_officer] call _packs, ["WEST"] call _defaultPacks] call _check;
+
+// a higher level decides: cigs_packsExtra[] is ignored
+call _reset;
+cigs_aiCigs_api_lesser = createHashMapFromArray [["WEST", ["cigs_nil_cigpack"]]];
+["officer, lesser API decides -> no cigars", [_officer] call _packs, ["cigs_nil_cigpack"]] call _check;
+call _reset;
+cigs_aiCigs_api_lesser = { nil };
+["officer, lesser code returns nil -> faction + cigars", [_officer] call _packs, (["BLU_F"] call _factionPacks) + [_cigars]] call _check;
 
 
 // ---------------------------------------------------------------- restore and clean up

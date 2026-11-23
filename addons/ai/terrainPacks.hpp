@@ -1,5 +1,5 @@
 // Terrain presets: the packs that are locally available on a terrain (cigs_aiCigs_terrain, see fn_preInit / fn_getTerrainPacks / fn_getCigItems).
-// Used for every unit whose faction has no faction preset (cigs_packs[] in CfgFactionClasses), whatever its side -
+// Used for every unit whose unit class and faction have no preset (cigs_packs[] in CfgVehicles / CfgFactionClasses), whatever its side -
 // mainly civilians, as the vanilla civilians (CIV_F) are one faction for every map.
 //
 // - The class name is the terrain's worldName.

@@ -44,7 +44,7 @@ In 3DEN, these are the checkboxes in the unit's attributes, see [Mission Makers]
 
 ## AI Cigs: packs per side
 
-To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings, `cigs_aiCigs_api_lesser`, the faction presets, the terrain presets and the default presets.
+To set the packs per side from a script, define `cigs_aiCigs_api` **on the server**, before the AI are processed (e.g. in `initServer.sqf`). It overrides the module, the pack selection CBA settings, `cigs_aiCigs_api_lesser`, the unit class and faction presets, the terrain presets and the default presets.
 
 ```sqf
 // initServer.sqf
@@ -79,7 +79,7 @@ cigs_aiCigs_api_lesser = createHashMapFromArray [
 **Code that runs per unit**, for gamemodes with their own faction system. It gets `[_unit]` and returns an array of pack classnames:
 
 - An array, even an empty one: the unit gets these packs, or none.
-- `nil`: this one unit is handed down to the next level, the [faction presets](modders.md#faction-presets), the [terrain presets](modders.md#terrain-presets) and then the default presets.
+- `nil`: this one unit is handed down to the next level, the [unit class](modders.md#unit-class-presets) and [faction presets](modders.md#faction-presets), the [terrain presets](modders.md#terrain-presets) and then the default presets.
 
 ```sqf
 // initServer.sqf

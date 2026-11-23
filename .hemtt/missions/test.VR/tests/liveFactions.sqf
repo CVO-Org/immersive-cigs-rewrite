@@ -1,4 +1,4 @@
-// AI cigs live test: one unit per faction that has a faction preset (plus a civilian) goes through the real chain:
+// AI cigs live test: one unit per faction that has a faction preset (plus a civilian and an officer) goes through the real chain:
 // EntityCreated -> queue -> delay -> items. Afterwards each unit's packs are checked against what getCigItems allows,
 // and the report says which level decided.
 // The mission's Configure AI Cigs module (level 2) would win over the faction presets, so it is cleared for the
@@ -21,6 +21,7 @@ private _level = {
         case ( !isNil "cigs_aiCigs_module" ): { "module" };
         case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_packSelection_enable", false] ): { "pack selection" };
         case ( !isNil "cigs_aiCigs_api_lesser" ): { "lesser api" };
+        case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_configPresets_enable", true] && { "packsExtra" in ([_unit] call cigs_ai_fnc_getConfigPresets) } ): { "unit class preset" };
         case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_configPresets_enable", true] && { "packs" in ([_unit] call cigs_ai_fnc_getConfigPresets) } ): { "faction preset" };
         default { "default preset" };
     };
@@ -29,7 +30,8 @@ private _level = {
 // one unit class per faction
 private _classByFaction = createHashMap;
 {
-    if ( getNumber (_x >> "scope") isEqualTo 2 && { configName _x isKindOf "CAManBase" } ) then {
+    // skip unit classes with their own presets (the officers), so the unit stands for its faction only
+    if ( getNumber (_x >> "scope") isEqualTo 2 && { configName _x isKindOf "CAManBase" } && { !isArray (_x >> "cigs_packs") && { !isArray (_x >> "cigs_packsExtra") } } ) then {
         private _faction = getText (_x >> "faction");
         if !( _faction in _classByFaction ) then { _classByFaction set [_faction, configName _x] };
     };
@@ -37,6 +39,7 @@ private _classByFaction = createHashMap;
 
 private _factions = ( "isArray (_x >> 'cigs_packs')" configClasses (configFile >> "CfgFactionClasses") ) apply { configName _x };
 _factions pushBack "CIV_F";     // no entry: default presets
+_factions pushBack "B_officer_F";   // a unit class, not a faction: unit class preset (faction packs + cigar box)
 
 // clear the module for the test
 private _module = missionNamespace getVariable "cigs_aiCigs_module";
@@ -50,9 +53,9 @@ private _dir = if ( isNull player ) then { 0 } else { getDir player };
 
 private _units = [];
 {
-    private _class = _classByFaction getOrDefault [_x, ""];
+    private _class = if ( isClass (configFile >> "CfgVehicles" >> _x) ) then { _x } else { _classByFaction getOrDefault [_x, ""] };
     if ( _class isNotEqualTo "" ) then {
-        private _side = [east, west, independent, civilian] select ( getNumber (configFile >> "CfgFactionClasses" >> _x >> "side") );
+        private _side = [east, west, independent, civilian] select ( getNumber (configFile >> "CfgVehicles" >> _class >> "side") );
         private _pos = _origin getPos [6, _dir] getPos [3 * (_forEachIndex - count _factions / 2), _dir + 90];
         private _unit = (createGroup [_side, true]) createUnit [_class, _pos, [], 0, "CAN_COLLIDE"];
         _unit setDir (_dir + 180);

@@ -14,6 +14,7 @@ Creative Commons Attribution 4.0 International Public License
    - \addons\cigars
    - \addons\gudok
    - \addons\jaffudi
+   - \addons\klubi
    - \addons\kosmos
    - \addons\lipa
    - \addons\lipa_dzwonek

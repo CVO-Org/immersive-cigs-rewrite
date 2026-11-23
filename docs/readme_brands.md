@@ -10,7 +10,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 
 - **Era first.** A preset only uses brands whose pack look fits its era. The WW2 looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) stay in the 1940s presets (Spearhead 1944). Post-war Western filler is Marlboro and Camel; Morley, NIL and Matelot are timeless. Two exceptions by choice: the Chernarus brands (Gudok, Zamok, Sosna) are used for Chernarus factions of every era, and Kosmos and Apollo Soyuz also go to modern Russian factions.
 - **Regional brand first.** A faction or terrain lists its own region's brand first, then brands of the same region and era, then international brands that fit the era.
-- **Gag brands** (Crayons, Mtn Dew Baja Blast, Black Devil Pink) only go to guerrillas, criminals and the NATO crayon joke (vanilla NATO, NATO (Desert), Expeditionary Forces). Never into terrain presets, as those reach everyone.
+- **Gag brands** (Crayons, Mtn Dew Baja Blast, Black Devil Pink, Death) only go to guerrillas, criminals and the NATO crayon joke (vanilla NATO, NATO (Desert), Expeditionary Forces). Never into terrain presets, as those reach everyone.
 - **Voron** is the brand of the author's unit. It only goes to Spetsnaz, the LDF and the Looters.
 - **Cigars** are for officers, at unit class level. Never per faction or terrain.
 - **Only real brands for real eras.** Historical settings use the real brand with its period pack look, not an invented stand-in.
@@ -27,6 +27,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | ![](img/brands/camel.png) | Camel | `cigs_camel_cigpack` | USA | 1920s onwards | International Western filler, fits every era | Many post-war Western factions and most terrains, RHS US, UN, Serbia, 3CB African factions, PLM, WEI, UN, ION, CW US |
 | ![](img/brands/casa_sport.png) | Casa Sports | `cigs_casa_sport_cigpack` | Morocco | modern | Filterless. Regional brand of North Africa | SFIA, Tura, terrain Sefrou-Ramal, 3CB African factions |
 | ![](img/brands/craven.png) | Craven "A" | `cigs_craven_cigpack` | United Kingdom | WW2 | WW2 look: 1940s presets only | French Liberation Army, US Army (SPE), terrains Normandy and Mortain |
+| ![](img/brands/death.png) | Death | `cigs_death_cigpack` | United Kingdom, The Enlightened Tobacco Company's 1990s novelty brand, a black pack with a skull and crossbones | 1990s onwards | Black paper and filter. Gag brand: no preset of its own, arsenal and ZEN brand choice only; if ever added, guerrillas and criminals only | – |
 | ![](img/brands/eckstein.png) | Eckstein No. 5 | `cigs_eckstein_cigpack` | Germany | WW2 | WW2 look: 1940s presets only | Wehrmacht, Sturmtroopers, La Milice, 40s Civilians, terrains Normandy and Mortain |
 | ![](img/brands/ernte_23.png) | Ernte 23 | `cigs_ernte_23_cigpack` | West Germany | 1970s–80s | Regional brand of West Germany | West Germany (GM), terrain Weferlingen |
 | ![](img/brands/f6.png) | f6 | `cigs_f6_cigpack` | East Germany (GDR), VEB Kombinat Tabak Dresden | Cold War | Regional brand of East Germany | East Germany, Revolutionaries (GM), terrains Weferlingen and Stožec |
@@ -49,6 +50,7 @@ The pictures are the inventory icons (`data/UI/gear_*_ca.paa` of each brand), co
 | – | Savage Wild Tiger | `cigs_savage_cigpack` | S.O.G. Prairie Fire's own cigarettes | Vietnam War | Only exists with S.O.G. Prairie Fire loaded. Its pack picture comes from the CDLC | All S.O.G. factions, terrains Vietnam |
 | ![](img/brands/shanhai.png) | Shanhai | `cigs_shanhai_cigpack` | CSAT (China) | 2035 | Regional brand of the Pacific CSAT | CSAT (Pacific), Viper, terrain Tanoa, 3CB CSAT Pacific |
 | ![](img/brands/sharig.png) | Sharig | `cigs_sharig_cigpack` | Takistan, Sharig Plateau | 1970s oil boom | Also stands in for Afghanistan and the Central Asian and Middle Eastern factions | 3CB Takistan, Afghan, Ardistan, Karzeghistan and Middle East factions |
+| ![](img/brands/sobranie.png) | Sobranie Black Russian | `cigs_sobranie_cigpack` | United Kingdom, Sobranie of London, luxury | post-war onwards | Black paper, gold foil filter. Luxury pick: no faction or terrain preset, take it from the arsenal or the ZEN brand choice | – |
 | ![](img/brands/sosna.png) | Sosna | `cigs_sosna_cigpack` | Chernarus (Green Mountain) | 1980s look, used for every era | Menthol. The Chernarus brands are used for Chernarus factions of any era | AFMC, RHS CDF, NAPA, 3CB Chernarus factions |
 | ![](img/brands/sparta.png) | Sparta | `cigs_sparta_cigpack` | Czechoslovakia, Kutná Hora | 1964 onwards | Regional brand of Czechoslovakia | CSLA, FIA (CSLA), terrain Stožec, 3CB NFA, NPD |
 | ![](img/brands/troupes.png) | Troupes | `cigs_troupes_cigpack` | France, army issue | WW2 | Filterless. WW2 look: 1940s presets only | La Milice, French Interior Forces, French Liberation Army, 40s Civilians, terrains Normandy and Mortain |

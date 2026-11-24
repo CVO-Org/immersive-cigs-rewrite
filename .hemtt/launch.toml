@@ -82,3 +82,11 @@ workshop = [
     "893346105",  # 3CB BAF Units
     "893349825",  # 3CB BAF Vehicles
 ]
+
+# Antistasi Community - for the Antistasi template presets. Start an Antistasi scenario from the menu
+# (the test mission doesn't run it); vanilla templates work without other mods. ACE comes from base.
+[antistasi]
+extends = "base"
+workshop = [
+    "2867537125", # Antistasi - The Mod
+]

@@ -21,7 +21,7 @@ For every new AI unit, the server checks in this order:
 3. **Does the unit already carry a pack** (and *Check Unit for compatible Items* is on)? Then it gets nothing new and only joins [dynamic smoking](#dynamic-ai-smoking).
 4. **Is AI Cigs enabled, and does the probability roll pass?** (CBA settings *Enable* and *Probability*, default 33%)
 5. **Does its side have any packs?** A side without packs gets nothing.
-6. After the *Delay* (default 5 s), the unit gets 1-3 random packs from its side's list, plus enough matches or a lighter.
+6. After the *Delay* (default 5 s), the unit gets 1-3 random packs from its side's list, plus enough matches or a lighter. A pack listed twice is picked twice as often.
 
 ### Which packs a side gets
 
@@ -45,6 +45,8 @@ There are four exceptions, because they work per unit, not per side:
 - Unit class and faction presets only apply to units whose class or faction has an entry. All other units go on to the terrain presets.
 - Terrain presets only apply on terrains that have an entry. Elsewhere those units get the default presets.
 - A unit class can add packs with `cigs_packsExtra[]` (e.g. cigars for officers). They are added on levels 5 to 8 only.
+
+In an Antistasi game, the Antistasi units take levels 5 and 6 from the faction template loaded for their role, per tier (militia, military, special forces, police), see [Modders](modders.md#antistasi-template-presets).
 
 ### The *Configure AI Cigs* module
 

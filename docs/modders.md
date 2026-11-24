@@ -141,9 +141,64 @@ class CfgVehicles {
 - **Unloaded classnames are dropped**, as with factions.
 - For another mod's units, use a compat addon as shown above, and declare the unit class with its real parent class.
 
+### Antistasi template presets
+
+[Antistasi](https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125) spawns its AI as generic classes of the FIA factions (`a3a_unit_west`, `a3a_unit_east`, `a3a_unit_reb*`, `a3a_unit_civ`) and dresses them with loadouts. The unit class and faction presets would give all of them FIA packs. Their real faction is the Antistasi template loaded for their role (Occupants, Invaders, Rebels, Civilians), a class in `configFile >> "A3A" >> "Templates"`, and that's where their presets go:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_packs_<tier>[]` | classes | Packs for one tier of the template's units: `militia`, `military`, `sf`, `police` or `other`. Replaces `cigs_packs[]` for that tier. |
+| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset, except the police. An empty array means they get no packs. |
+| `cigs_lighters[]` | classes | Lighters for every unit of the template. Missing or empty: the normal lighter pool. |
+
+```cpp
+class A3A {
+    class Templates {
+        class MyMod_Base;
+        class MyMod_Army_Arid : MyMod_Base {
+            cigs_packs[]         = { "cigs_marlboro_cigpack", "cigs_camel_cigpack" };
+            cigs_packs_militia[] = { "cigs_almyra_cigpack" };
+        };
+    };
+};
+```
+
+- **For Antistasi units, the template replaces the unit class and faction presets.** It ranks where they do and is switched by the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` of the generic unit classes doesn't apply.
+- **A template without an entry** leaves its units to the terrain presets and then the default presets, not to the FIA presets.
+- **The tier** comes from the unit's Antistasi loadout (`unitType`, e.g. `loadouts_occ_military_Rifleman`). Civilians have no tier.
+- **Police are local.** A template plays on many maps, and its police are the local force. Without `cigs_packs_police[]` they get the terrain preset of the map being played, not the template's `cigs_packs[]`.
+- **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
+- **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
+- Immersive Cigs brings its template presets in the addon `presets_a3a`, active when Antistasi is loaded. Only the Antistasi Community version is supported.
+
+#### Included Antistasi template presets
+
+Occupants and Invaders smoke what the same army smokes in its [faction preset](#included-faction-presets). Rebels and civilians have no entry: Antistasi plays them on any map, so they get the map's [terrain preset](#terrain-presets), like the police.
+
+A dash means that tier gets the template's packs. Belomorkanal is a planned brand (#358) and is dropped until it is in the mod.
+
+| Template | Packs | Militia (`militia`) | Special forces (`sf`) |
+| -------- | ----- | ------------------- | --------------------- |
+| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | – | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
+| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | – | as NATO Arid |
+| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | – | as NATO Arid |
+| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – | – |
+| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | – | Shanhai, Alborz, NIL (Viper) |
+| A3 CSAT Enoch | as CSAT Arid | – | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
+| A3 AAF | Almyra, Morley, NIL | – | – |
+| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – | – |
+| A3 ION | Camel, Morley, Marlboro | – | – |
+| RHS AFRF Arid, Temperate; RHS VDV Temperate, Arid | Belomorkanal, Parliament, Kosmos, Apollo Soyuz, Marlboro | Belomorkanal, Kosmos, Apollo Soyuz | Parliament, Kosmos, Marlboro |
+| RHS ChDKZ | Gudok, Belomorkanal, Kosmos | – | – |
+| RHS CDF | Zamok, Sosna, Gudok, Marlboro | Gudok, Sosna | – |
+| RHS US Army Arid, Temperate; RHS USMC Arid, Temperate | Marlboro, Camel, Newport, Morley | – | – |
+| RHS SAF | Drina, Marlboro, Camel | – | – |
+| RHS HIDF | Matelot, Marlboro, Morley | – | – |
+| RHS TLA | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
+
 ### Included faction presets
 
-Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list.
+Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list. A pack listed twice is picked twice as often, so a list can weight a brand on purpose; `cigs_packsExtra[]` keeps that weighting.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -352,7 +407,7 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Terrain | Packs |
 | ------- | ----- |
 | Chernarus, Chernarus (Summer), Chernarus (Winter), Utes (CUP) `chernarus`, `chernarus_summer`, `Chernarus_Winter`, `utes`<br>Chernarus 2020 (CUP Maps 2.0) `cup_chernarus_A3`<br>Namalsk `namalsk`, Ivanivkova `Ivanivokova`, Korsac `VTF_Korsac`, `VTF_Korsac_Winter`, Lesser Swamp `ST_Swamp`, Project Raid `RaidMap`, Vereskovo `Vereskovo` | Gudok, Zamok, Sosna, Apollo Soyuz, Marlboro, Camel |
-| Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
+| Takistan, Takistan Mountains, Desert, Shapur, Proving Grounds (CUP) `takistan`, `Mountains_ACR`, `Desert_E`, `Shapur_BAF`, `ProvingGrounds_PMC`<br>Lythium `lythium`, Kunduz River `kunduz_valley`, Kunduz `Kunduz`, Anizay `tem_anizay`, Uzbin Valley `uzbin`, North Takistan `NorthTakistan` | Jaffudi, Zargabad, Sharig, Marlboro, Camel |
 | Zargabad (CUP) `zargabad`, Zargabad 2025 (CUP Maps 2.0) `cup_Zargabad_a3` | Zargabad, Jaffudi, Sharig, Marlboro, Camel |
 | Sahrani, Southern Sahrani, United Sahrani, Porto, Rahmadi (CUP) `sara`, `saralite`, `sara_dbe1`, `porto`, `intro`<br>Sehreno `Sehreno` | Ducados, Morley, Marlboro, Camel, NIL |
 | Bystrica, Bukovina (CUP) `Woodland_ACR`, `Bootcamp_ACR`<br>Šumava `brf_sumava` | Sparta, Marlboro, Camel, Morley, NIL |
@@ -360,11 +415,13 @@ Mod terrains, also without a dependency. The modern ones leave out Kosmos and th
 | Stubbhult `stubbhult`, Archie (Winter) `archie_w`, Mehland `mehland`, Tria `jns_tria` | John Silver, Prince, Marlboro, Camel, Morley, NIL |
 | Kujari `tem_kujari` | Sportsman, Casa Sports, Marlboro, Camel, Morley, NIL |
 | Niakala `juju_kalahari` | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
+| Isla Duala `isladuala3` | Sportsman, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Green Valley `green_valley` | Casa Sports, Cleopatra, Marlboro, Camel, Morley, NIL |
 | Rosche `WL_Rosche` | Ernte 23, Marlboro, Camel, NIL, Morley |
 | Napf `Napf`, `NapfWinter` | Parisienne, NIL, Marlboro, Camel, Morley |
-| Pulau `pulau`, Prei Khmaoch Luong `rhspkl` | Gudang Garam, Marlboro, Camel, Morley, NIL |
+| Pulau `pulau`, Tembelan `Tembelan`, Prei Khmaoch Luong `rhspkl` | Gudang Garam, Marlboro, Camel, Morley, NIL |
 | Lingor `lingor3`, Dingor `dingor`, Colombia `UMB_Colombia` | Pielroja, Marlboro, Camel, Morley, NIL |
+| Regero `regero` | Pielroja, Ducados, Marlboro, Camel, Morley |
 | Mull of Kintyre `rof_mok`, Djalka `K9S_Djalka` | Lambert & Butler, Marlboro, Camel, Morley, NIL |
 | Drakovac `drakovac` | Drina, Marlboro, Camel, Morley, NIL |
 | Kaska `kaska` | Marlboro, Camel, Morley, NIL |

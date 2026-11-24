@@ -166,11 +166,17 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Lythium, Kunduz River, Uzbin Valley, North Takistan - Central Asia, Takistan brands
+    // Lythium, Kunduz River, Kunduz, Anizay, Uzbin Valley, North Takistan - Central Asia and Afghanistan, Takistan brands
     class lythium {
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class kunduz_valley {                           // Kunduz River
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Kunduz {                                  // Kunduz, a different terrain than Kunduz River
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class tem_anizay {                              // Anizay
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class uzbin {
@@ -193,6 +199,11 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
+    // Isla Duala - fictional island off Central Africa, desert and tropical. Sportsman as the sub-Saharan brand, then the Egyptian Cleopatra
+    class isladuala3 {
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
     // Rosche - northern West Germany
     class WL_Rosche {
         packs[] = { QEGVAR(ernte_23,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
@@ -206,7 +217,10 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(parisienne,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
     };
 
-    // Pulau, Prei Khmaoch Luong - Southeast Asia, Gudang Garam
+    // Pulau, Tembelan, Prei Khmaoch Luong - Southeast Asia, Gudang Garam
+    class Tembelan {                                // Tembelan Island, Indonesia
+        packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
     class pulau {
         packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
@@ -214,7 +228,10 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Lingor, Dingor, Colombia - South America, Pielroja
+    // Lingor, Dingor, Colombia, Regero - South America, Pielroja. Regero is arid with Spanish names, so Ducados after Pielroja
+    class regero {
+        packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(ducados,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+    };
     class UMB_Colombia {
         packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };

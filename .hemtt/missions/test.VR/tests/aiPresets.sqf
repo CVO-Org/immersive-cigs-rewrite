@@ -145,6 +145,7 @@ cigs_aiCigs_api_lesser = { [] };
 
 // ---------------------------------------------------------------- 6. lesser API of a wrong type is ignored (logs an error)
 call _reset;
+["Provoking an intended error: the next [CIGS] (ai) ERROR line (cigs_aiCigs_api_lesser ... got STRING) is expected"] call _log;
 cigs_aiCigs_api_lesser = "oops";
 ["lesser wrong type -> ignored, faction preset", [_blu] call _packs, ["BLU_F"] call _factionPacks] call _check;
 

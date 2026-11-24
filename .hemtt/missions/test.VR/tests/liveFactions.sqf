@@ -107,3 +107,4 @@ missionNamespace setVariable ["cigs_aiCigs_module", _module];
 private _summary = format ["AI cigs live test: %1 units, %2 failed, %3 without packs", count _units, _failed, _empty];
 [_summary] call _log;
 _summary remoteExec ["hint", 0];
+cigs_test_failed = (missionNamespace getVariable ["cigs_test_failed", 0]) + _failed;

@@ -81,4 +81,5 @@ workshop = [
     "893339590",  # 3CB BAF Weapons
     "893346105",  # 3CB BAF Units
     "893349825",  # 3CB BAF Vehicles
+    "1661066023", # RKSL Studios: Attachments - needed by 3CB BAF Weapons, else missing-addon popups block the game
 ]

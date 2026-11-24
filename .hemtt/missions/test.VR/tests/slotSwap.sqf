@@ -171,3 +171,4 @@ private _summary = format ["Slot swap tests: %1 passed, %2 failed", count _resul
 [_summary] call _log;
 if ( _failed isNotEqualTo [] ) then { ["Failed: " + (( _failed apply { _x # 0 }) joinString ", ")] call _log; };
 hint _summary;
+cigs_test_failed = (missionNamespace getVariable ["cigs_test_failed", 0]) + count _failed;

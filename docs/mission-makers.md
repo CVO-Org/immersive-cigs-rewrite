@@ -46,6 +46,8 @@ There are four exceptions, because they work per unit, not per side:
 - Terrain presets only apply on terrains that have an entry. Elsewhere those units get the default presets.
 - A unit class can add packs with `cigs_packsExtra[]` (e.g. cigars for officers). They are added on levels 5 to 8 only.
 
+In an Antistasi game, the Antistasi units take levels 5 and 6 from the faction template loaded for their role, per tier (militia, military, special forces, police), see [Modders](modders.md#antistasi-template-presets).
+
 ### The *Configure AI Cigs* module
 
 **3DEN:** *Systems (F5) → Modules → Immersive Cigs - AI → Configure AI Cigs*

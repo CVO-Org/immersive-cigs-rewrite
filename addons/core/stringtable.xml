@@ -408,6 +408,18 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Japanese>タバコの種類</Japanese>
             <Chinese>烟包类型</Chinese>
         </Key>
+        <Key ID="STR_cigs_core_set_sp_addCigpack_type_default">
+            <English>Default (what your unit's AI would carry)</English>
+            <French>Par défaut (ce que porterait l'IA de votre unité)</French>
+            <Spanish>Predeterminado (lo que llevaría la IA de tu unidad)</Spanish>
+            <Polish>Domyślnie (to, co nosiłoby SI twojej jednostki)</Polish>
+            <Portuguese>Padrão (o que a IA da sua unidade levaria)</Portuguese>
+            <Russian>По умолчанию (то, что носил бы ИИ вашего юнита)</Russian>
+            <German>Standard (was die KI deiner Einheit dabeihätte)</German>
+            <Korean>기본 (당신의 유닛 AI가 가지고 다닐 것)</Korean>
+            <Japanese>デフォルト（あなたのユニットのAIが持つもの）</Japanese>
+            <Chinese>默认（你的单位的AI会携带的）</Chinese>
+        </Key>
         <Key ID="STR_cigs_core_set_sp_addCigpack_type_desc">
             <English>Defines which type of cig pack (or other) will be added at the beginning of a singleplayer mission.</English>
             <French>Définit le type de CigPack (ou autre) qui sera ajouté au début d'une mission singleplayer.</French>
@@ -419,6 +431,18 @@ Dies ist nötig, um unsaubere Animationen zu vermeiden.</German>
             <Korean>싱글플레이어 미션 시작 시 어떤 종류의 담배 팩(또는 다른 아이템)이 추가될지 설정합니다.</Korean>
             <Japanese>シングルプレイヤーミッションの開始時に追加されるタバコの箱（またはその他のアイテム）の種類を定義します。</Japanese>
             <Chinese>定义在单人任务开始时添加哪种烟包（或其他物品）类型。</Chinese>
+        </Key>
+        <Key ID="STR_cigs_core_set_sp_addCigpack_type_random">
+            <English>Random</English>
+            <French>Aléatoire</French>
+            <Spanish>Aleatorio</Spanish>
+            <Polish>Losowo</Polish>
+            <Portuguese>Aleatório</Portuguese>
+            <Russian>Случайно</Russian>
+            <German>Zufällig</German>
+            <Korean>무작위</Korean>
+            <Japanese>ランダム</Japanese>
+            <Chinese>随机</Chinese>
         </Key>
         <Key ID="STR_cigs_core_set_sp_addItems">
             <English>Add Items to Player in SP</English>

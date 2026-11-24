@@ -1,4 +1,4 @@
-// Officer presets test: every unit class with cigs_packsExtra[] (the officers of presets_* CfgVehicles.hpp, and the
+// Officer presets test: every unit class with cigs_packsExtra[] (the officers of ai_presets_factions/* CfgVehicles.hpp, and the
 // classes that inherit from them), for whichever mods are loaded.
 //
 // 1. Config: the class is still a sound unit - a CAManBase with a faction, a side that matches its faction, a name and

@@ -1,6 +1,6 @@
 # Antistasi compat: template groups (research)
 
-Research notes for the Antistasi compat. The hook is implemented in `addons/compat_a3a` (see [Modders: Antistasi template presets](../modders.md#antistasi-template-presets)); the template groups below are the work list for the remaining families.
+Research notes for the Antistasi compat. The hook is implemented in `addons/ai_presets_compats/a3a` (see [Modders: Antistasi template presets](../modders.md#antistasi-template-presets)); the template groups below are the work list for the remaining families.
 
 Source: [official-antistasi-community/A3-Antistasi](https://github.com/official-antistasi-community/A3-Antistasi), branch `unstable`, commit `8af8cf8` (2026-10-15). Template list from `A3A/addons/core/Templates/Templates.hpp`.
 
@@ -14,11 +14,11 @@ Source: [official-antistasi-community/A3-Antistasi](https://github.com/official-
 
 ## Implementation
 
-- `addons/compat_a3a` loads only with Antistasi (`requiredAddons` `A3A_core`, `skipWhenMissingDependencies`). Its `fn_init` (preInit) sets `cigs_compat_a3a_active` when the mission is an Antistasi mission (`missionConfigFile >> "A3A"`).
-- It registers `cigs_compat_a3a_fnc_getPresets` in `cigs_ai_compats`, which `cigs_ai_fnc_getConfigPresets` asks before the unit class and faction presets (see [Modders: Compat presets](../modders.md#compat-presets)).
+- `addons/ai_presets_compats/a3a` loads only with Antistasi (`requiredAddons` `A3A_core`, `skipWhenMissingDependencies`). Its `fn_init` (preInit) sets `cigs_ai_presets_compats_a3a_active` when the mission is an Antistasi mission (`missionConfigFile >> "A3A"`).
+- It registers `cigs_ai_presets_compats_a3a_fnc_getPresets` in `cigs_ai_compats`, which `cigs_ai_fnc_getConfigPresets` asks before the unit class and faction presets (see [Modders: Compat presets](../modders.md#compat-presets)).
 - `fn_getPresets`: `unitType` (`loadouts_<role>_<tier>_<loadout>`) or the `a3a_unit_*` class gives the role, `A3A_<role>_template` the template, then `cigs_packs_<tier>[]` / `cigs_packs[]` / `cigs_lighters[]` of that template class. Cached per template and tier. No preset: an empty hashmap, so the unit gets the terrain presets, not FIA.
 - Antistasi sets the template globals in `A3A_fnc_initVarServer` (called from `fn_initServer.sqf`) before it creates its first unit.
-- Presets per family in `compat_a3a/templates_<family>.hpp`. Each class is redeclared with its real parent from `Templates.hpp`. Extender mods can put `cigs_packs[]` in their own templates.
+- Presets per family in `ai_presets_compats/a3a/templates_<family>.hpp`. Each class is redeclared with its real parent from `Templates.hpp`. Extender mods can put `cigs_packs[]` in their own templates.
 
 ## Counts
 
@@ -112,7 +112,7 @@ Also: 3CB GAF is the Grozovia Armed Forces (Serbian and Russian weapons), not th
 | `SF` | premium or international brand |
 | `other` | crew, pilots etc.: same as `military` |
 
-The military tier can reuse what the existing presets picked for the same faction: `presets_rhs_usaf`, `presets_rhs_afrf`, `presets_rhs_saf`, `presets_rhs_gref`, `presets_3cb`, `presets_3cb_baf`, `presets_gm`, `presets_sog`, `presets_spe`, `presets_ws`, `presets_ef`, `presets_csla`, `presets_vanilla`. See `docs/readme_brands.md`.
+The military tier can reuse what the existing presets picked for the same faction: `ai_presets_factions/rhs_usaf`, `ai_presets_factions/rhs_afrf`, `ai_presets_factions/rhs_saf`, `ai_presets_factions/rhs_gref`, `ai_presets_factions/3cb`, `ai_presets_factions/3cb_baf`, `ai_presets_factions/gm`, `ai_presets_factions/sog`, `ai_presets_factions/spe`, `ai_presets_factions/ws`, `ai_presets_factions/ef`, `ai_presets_factions/csla`, `ai_presets_factions/vanilla`. See `docs/readme_brands.md`.
 
 ## Rebels and civilians
 
@@ -120,7 +120,7 @@ Default: leave them to the terrain presets. Exception: era templates (IFA, SPE, 
 
 ## Gaps
 
-Checked against `docs/readme_brands.md` and `addons/ai/terrainPacks.hpp` on 2026-11-23. Brand suggestions marked *memory* are from general knowledge and not verified.
+Checked against `docs/readme_brands.md` and `addons/ai_presets_terrains/terrainPacks.hpp` on 2026-11-23. Brand suggestions marked *memory* are from general knowledge and not verified.
 
 ### Brand gaps (no fitting brand in the mod)
 
@@ -138,7 +138,7 @@ Checked against `docs/readme_brands.md` and `addons/ai/terrainPacks.hpp` on 2026
 
 - **SF tier in Western groups.** US, UK and Germany have no premium brand apart from their fillers. Sobranie would fit, but the rules keep it out of all presets. Decide whether the SF tier is an exception.
 - **WW2 Commonwealth.** Only Craven "A". Player's Navy Cut would be the classic pick (*memory*).
-- **Vietnam ANZAC.** No Australian brand; check what `presets_sog` gives ANZAC today.
+- **Vietnam ANZAC.** No Australian brand; check what `ai_presets_factions/sog` gives ANZAC today.
 - **Sahrani SLA.** Ducados is the Spanish-side brand. SLA has no own brand; Kosmos as Eastern filler?
 - **Turkey, Croatia, France** have no brand of their own beyond Matelot (France) and fillers.
 

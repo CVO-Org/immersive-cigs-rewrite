@@ -14,7 +14,7 @@ Add a snippet here whenever you write a new one for the debug console.
 [worldName, getText (configFile >> "CfgWorlds" >> worldName >> "description"), configSourceMod (configFile >> "CfgWorlds" >> worldName), [] call cigs_ai_fnc_getTerrainPacks]
 ```
 
-Returns the worldName (the class name in `addons/ai/terrainPacks.hpp`), the display name, the mod it comes from and the packs of its terrain preset. The packs are `nil` when the terrain has no entry; classnames of brands that aren't loaded are dropped.
+Returns the worldName (the class name in `addons/ai_presets_terrains/terrainPacks.hpp`), the display name, the mod it comes from and the packs of its terrain preset. The packs are `nil` when the terrain has no entry; classnames of brands that aren't loaded are dropped.
 
 ### Every loaded terrain
 

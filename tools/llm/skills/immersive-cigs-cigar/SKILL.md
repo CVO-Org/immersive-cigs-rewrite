@@ -94,5 +94,5 @@ Fix every error and warning in your addon. Go through `references/checklist.md`,
 - New user-facing text goes into `stringtable.xml`.
 - Don't change `addons/base/`, `addons/core/`, `addons/main/` or `addons/cigars/` for a new brand, except the brand's value in `addons/cigars/aceax.hpp` (ACE Arsenal Extended, see the checklist). If more seems necessary, stop and ask.
 - `hemtt check` bumps the build number in `addons/main/script_version.hpp`: don't commit it.
-- One PR per brand. Brand PRs open at the same time conflict on `values[]` in `addons/cigars/aceax.hpp`: stack them or rebase after each merge. Faction presets (`addons/presets_*`) are a PR of their own; ask the user.
+- One PR per brand. Brand PRs open at the same time conflict on `values[]` in `addons/cigars/aceax.hpp`: stack them or rebase after each merge. Faction presets (`addons/ai_presets_factions/*`) are a PR of their own; ask the user.
 - A PR to this repository follows `CONTRIBUTING.md`: title `Brand - New: Add <Brand> cigars`, label `pr/new`.

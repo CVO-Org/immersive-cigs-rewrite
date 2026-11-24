@@ -99,4 +99,4 @@ python tools/gear_icons/aceax_logos.py --only ~youraddon~ --apply
 - `hemtt check` must pass. It also bumps the build number in `addons/main/script_version.hpp`; leave that out of your commit.
 - Add your pack to [classnames.md](classnames.md) and your folder to the root `license.md`.
 - One PR per brand, titled `Brand - New: <Brand> cigarettes (<region>)`, label `pr/new`.
-- Should AI units of a faction smoke your brand? The faction presets (`addons/presets_*`, see [Modders](modders.md)) are a separate PR.
+- Should AI units of a faction smoke your brand? The faction presets (`addons/ai_presets_factions/*`, see [Modders](modders.md)) are a separate PR.

@@ -20,7 +20,6 @@ private _level = {
         case ( !isNil "cigs_aiCigs_api" ): { "api" };
         case ( !isNil "cigs_aiCigs_module" ): { "module" };
         case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_packSelection_enable", false] ): { "pack selection" };
-        case ( !isNil "cigs_aiCigs_api_lesser" ): { "lesser api" };
         case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_configPresets_enable", true] && { "packsExtra" in ([_unit] call cigs_ai_fnc_getConfigPresets) } ): { "unit class preset" };
         case ( missionNamespace getVariable ["cigs_ai_set_aiCigs_configPresets_enable", true] && { "packs" in ([_unit] call cigs_ai_fnc_getConfigPresets) } ): { "faction preset" };
         default { "default preset" };

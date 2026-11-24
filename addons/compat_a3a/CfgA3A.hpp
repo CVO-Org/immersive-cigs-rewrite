@@ -1,4 +1,4 @@
-// Antistasi template presets: the packs per Antistasi faction template, see fn_getConfigPresets.
+// Antistasi template presets: the packs per Antistasi faction template, see fn_getPresets.
 //
 // Antistasi spawns generic unit classes of the FIA factions (a3a_unit_west, a3a_unit_east, a3a_unit_reb*, a3a_unit_civ),
 // so the unit class and faction presets don't apply to its units. Their faction is the template loaded for their role

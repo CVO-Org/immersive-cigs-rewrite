@@ -32,21 +32,21 @@ The packs per side come from the first of these that exists:
 | 1 | `cigs_aiCigs_api` | a script, see [Scripting API](api.md#ai-cigs-packs-per-side) |
 | 2 | *Configure AI Cigs* module | you, in 3DEN |
 | 3 | Pack selection CBA settings, while *Use Pack Selection* is on | the server admin (or you, as mission settings), see [Server Admins](server-admins.md#immersive-cigs---ai) |
-| 4 | `cigs_aiCigs_api_lesser` | a script, usually a gamemode's own defaults, see [Scripting API](api.md#defaults-the-server-admin-can-override-cigs_aicigs_api_lesser) |
-| 5 | Unit class presets: `cigs_packs[]` of the unit's class, while *Use Unit and Faction Presets* is on | the mod and unit mods, see [Modders](modders.md#unit-class-presets) |
-| 6 | Faction presets: `cigs_packs[]` of the unit's faction, while *Use Unit and Faction Presets* is on | the mod and faction mods, see [Modders](modders.md#faction-presets) |
+| 4 | Compat presets: a function in `cigs_ai_compats`, per unit, while *Use Config Presets* is on | gamemodes and compat mods (e.g. Antistasi), or you in `description.ext`, see [Modders](modders.md#compat-presets) |
+| 5 | Unit class presets: `cigs_packs[]` of the unit's class, while *Use Config Presets* is on | the mod and unit mods, see [Modders](modders.md#unit-class-presets) |
+| 6 | Faction presets: `cigs_packs[]` of the unit's faction, while *Use Config Presets* is on | the mod and faction mods, see [Modders](modders.md#faction-presets) |
 | 7 | Terrain presets: the packs that are locally available on the current terrain, for all sides, while *Use Terrain Presets* is on | the mod and terrain mods, see [Modders](modders.md#terrain-presets) |
 | 8 | Default presets | the mod (and other mods), see below |
 
 The first one that exists is used for **all** sides. If you place the module, sides you leave empty in it get nothing. They do not fall back to the pack selection or the defaults. The same goes for the pack selection: a side with nothing ticked gets nothing.
 
 There are four exceptions, because they work per unit, not per side:
-- `cigs_aiCigs_api_lesser` as code can return `nil` for a single unit, which then goes on to the unit class and faction presets.
+- A compat preset can return `nil` for a single unit, which then goes on to the unit class and faction presets. It can also send a unit on to the terrain presets.
 - Unit class and faction presets only apply to units whose class or faction has an entry. All other units go on to the terrain presets.
 - Terrain presets only apply on terrains that have an entry. Elsewhere those units get the default presets.
 - A unit class can add packs with `cigs_packsExtra[]` (e.g. cigars for officers). They are added on levels 5 to 8 only.
 
-In an Antistasi game, the Antistasi units take levels 5 and 6 from the faction template loaded for their role, per tier (militia, military, special forces, police), see [Modders](modders.md#antistasi-template-presets).
+In an Antistasi game, the Antistasi units get level 4 from the faction template loaded for their role, per tier (militia, military, special forces, police), see [Modders](modders.md#antistasi-template-presets).
 
 ### The *Configure AI Cigs* module
 

@@ -1,6 +1,6 @@
 # Antistasi compat: template groups (research)
 
-Research only. Nothing here is implemented, committed or filed as an issue.
+Research notes for the Antistasi compat. The hook is implemented in `addons/compat_a3a` (see [Modders: Antistasi template presets](../modders.md#antistasi-template-presets)); the template groups below are the work list for the remaining families.
 
 Source: [official-antistasi-community/A3-Antistasi](https://github.com/official-antistasi-community/A3-Antistasi), branch `unstable`, commit `8af8cf8` (2026-10-15). Template list from `A3A/addons/core/Templates/Templates.hpp`.
 
@@ -12,14 +12,13 @@ Source: [official-antistasi-community/A3-Antistasi](https://github.com/official-
 - The loaded templates are in `A3A_Occ_template`, `A3A_Inv_template`, `A3A_Reb_template`, `A3A_Civ_template` (classnames, **server only**, set in `fn_initVarServer.sqf`).
 - `fn_createUnit.sqf` sets `unitType` on every unit (public): `loadouts_<occ|inv|reb|civ>_<tier>_<role>`, e.g. `loadouts_occ_military_Rifleman`. Tiers: `militia`, `military`, `SF`, `police`, `other`. `unitType` can also be a loadout array, so check the type.
 
-## Proposed hook
+## Implementation
 
-- In `fn_getConfigPresets.sqf`: when `unitType` is a string starting with `loadouts_`, read the side prefix, look up `A3A_<prefix>_template`, and read `cigs_packs[]` / `cigs_lighters[]` from that template class. This **replaces both** the class and faction lookups for Antistasi units (both give FIA). Cached per template.
-- Tier: try `cigs_packs_<tier>[]` first, then `cigs_packs[]`.
-- No template preset → empty map → terrain presets → default presets.
-- Same rank as the faction presets, switched by *Use Unit and Faction Presets*. `getCigItems` stays unchanged.
-- Data in a new `presets_a3a` addon (`requiredAddons` the A3A core patch, `skipWhenMissingDependencies = 1`), adding `cigs_packs*[]` to the template classes. Each touched class must be redeclared with its real parent from `Templates.hpp`. Extender mods can put `cigs_packs[]` in their own templates.
-- To confirm in game: the CfgPatches name of A3A core (probably `A3A_core`), that `unitType` is set before the queue processes the unit, garrison spawns.
+- `addons/compat_a3a` loads only with Antistasi (`requiredAddons` `A3A_core`, `skipWhenMissingDependencies`). Its `fn_init` (preInit) sets `cigs_compat_a3a_active` when the mission is an Antistasi mission (`missionConfigFile >> "A3A"`).
+- It registers `cigs_compat_a3a_fnc_getPresets` in `cigs_ai_compats`, which `cigs_ai_fnc_getConfigPresets` asks before the unit class and faction presets (see [Modders: Compat presets](../modders.md#compat-presets)).
+- `fn_getPresets`: `unitType` (`loadouts_<role>_<tier>_<loadout>`) or the `a3a_unit_*` class gives the role, `A3A_<role>_template` the template, then `cigs_packs_<tier>[]` / `cigs_packs[]` / `cigs_lighters[]` of that template class. Cached per template and tier. No preset: an empty hashmap, so the unit gets the terrain presets, not FIA.
+- Antistasi sets the template globals in `A3A_fnc_initVarServer` (called from `fn_initServer.sqf`) before it creates its first unit.
+- Presets per family in `compat_a3a/templates_<family>.hpp`. Each class is redeclared with its real parent from `Templates.hpp`. Extender mods can put `cigs_packs[]` in their own templates.
 
 ## Counts
 

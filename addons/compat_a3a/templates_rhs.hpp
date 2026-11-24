@@ -6,7 +6,7 @@
 // - Russia uses the tiers: militia wear the old afghanka and smoke the cheap Soviet-era brands, special forces
 //   (6Sh122 kit) the premium Parliament first. The CDF militia get the cheap domestic Chernarus brands.
 // - Belomorkanal is a planned brand (#358): dropped until it is in the mod.
-// - Police have no entry: they get the terrain preset of the map (see fn_getConfigPresets).
+// - Police have no entry: they get the terrain preset of the map (see fn_getPresets).
 // - Rebels (NAPA, SDK) and civilians have no entry either: Antistasi plays them on any map, so they get the terrain preset.
 
 class RHS_Base;

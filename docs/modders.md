@@ -195,6 +195,25 @@ A dash means that tier gets the template's packs. Belomorkanal is a planned bran
 | RHS SAF | Drina, Marlboro, Camel | – | – |
 | RHS HIDF | Matelot, Marlboro, Morley | – | – |
 | RHS TLA | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
+| 3CB CSAT BEAR, CSAT GRYPHON | Alborz, Apollo Soyuz, Kosmos | – | – |
+| 3CB CSAT VIPER | Shanhai, Alborz, Apollo Soyuz | – | – |
+| 3CB CSAT SCIMITAR | Alborz, Apollo Soyuz, Sportsman | – | – |
+| 3CB AAF, AAF Brown | Almyra, Morley, NIL | – | – |
+| 3CB MDF | Matelot, Marlboro, Morley | – | – |
+| 3CB HIDF | Matelot, Marlboro, Morley | – | – |
+| 3CB Cold War TLA, Cold War TNM | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
+| 3CB Cold War PLM | Kosmos, Marlboro, Black Devil Pink | – | – |
+| 3CB LDF | Lipa Dzwonek, Lipa, Voron, NIL | Lipa, Popularne, NIL | – |
+| 3CB GAF Temperate (Grozovia) | Zamok, Belomorkanal, Marlboro | – | – |
+| 3CB TKA East, TKA West, TKA Mix | Zargabad, Jaffudi, Sharig, Marlboro | – | – |
+| 3CB ANA | Zargabad, Sharig, Marlboro | – | – |
+| 3CB KRG | Jaffudi, Sharig, Marlboro | – | – |
+| 3CB ADA | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel | – | – |
+| 3CB Cold War US | Marlboro, Camel, Morley | – | – |
+| 3CB Marines Temperate | Marlboro, Camel, Newport, Morley | – | – |
+| 3CB Cold War USSR | Kosmos, Apollo Soyuz, Belomorkanal | Kosmos, Belomorkanal | – |
+| 3CB ION Arid, Temperate, Arctic | Camel, Morley, Marlboro, Newport | – | – |
+| 3CB BAF Arid, Arctic, Temperate, Tropical | Lambert & Butler, Marlboro, Morley | – | – |
 
 ### Included faction presets
 

@@ -76,7 +76,10 @@ Write-Host "RPT: $($rpt.FullName)`n"
 $problems = 0
 
 # Test lines
-$test = $lines | Where-Object { $_.Contains('[cigs][test]') }
+$test = @($lines | Where-Object { $_.Contains('[cigs][test]') })
+# The game may start the mission more than once (a start cut short, then a full one): only the last pass counts
+$lastPass = [Array]::FindLastIndex([string[]]$test, [Predicate[string]] { param($l) $l -match '==== \w+ \(1/\d+\) ====' })
+if ($lastPass -gt 0) { $test = $test[$lastPass..($test.Count - 1)] }
 $summaryAt = [Array]::FindLastIndex([string[]]@($test), [Predicate[string]] { param($l) $l.Contains('==== Summary ====') })
 $shown = if ($Full) { $test } else {
     for ($i = 0; $i -lt @($test).Count; $i++) {

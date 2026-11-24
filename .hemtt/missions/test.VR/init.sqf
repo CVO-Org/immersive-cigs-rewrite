@@ -4,6 +4,14 @@
 // Note: Changes server settings, which are stored in the profile.
 if (!isServer) exitWith {};
 
+// Autotest: the game may start the mission more than once in a session (hemtt launch also opens it in the editor).
+// A full pass is remembered in uiNamespace, which lives for the whole session: later starts end at once with its result.
+if (isAutotest && { !isNil { uiNamespace getVariable "cigs_test_autotestFailed" } }) exitWith {
+    private _failed = uiNamespace getVariable "cigs_test_autotestFailed";
+    diag_log text format ["[cigs][test] Mission started again under -autotest - tests already ran (%1 failed), ending", _failed];
+    endMission (["LOSER", "END1"] select (_failed isEqualTo 0));
+};
+
 ["cigs_ai_set_aiCigs_enable", true, nil, "server"] call CBA_settings_fnc_set;
 ["cigs_ai_set_aiCigs_chance", 1,    nil, "server"] call CBA_settings_fnc_set;
 ["cigs_ai_set_aiCigs_delay",  5,    nil, "server"] call CBA_settings_fnc_set;
@@ -54,6 +62,7 @@ cigs_test_fnc_runAll = {
     // LOSER. The game then quits and writes a failure to the RPT (<AutoTest result=...>).
     if (isAutotest) then {
         diag_log text format ["[cigs][test] ---- Autotest done: %1 failed ----", cigs_test_failed];
+        uiNamespace setVariable ["cigs_test_autotestFailed", cigs_test_failed];
         // uiSleep, not sleep: sleep stops while the game is paused (e.g. the window lost focus), and the game would never quit
         private _end = ["LOSER", "END1"] select (cigs_test_failed isEqualTo 0);
         endMission _end;

@@ -340,7 +340,7 @@ Crew commanders get none.
 
 #### 3CB Factions and 3CB BAF
 
-Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
+Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. `presets_3cb_baf_cw` covers the Woodland Cold War factions and officer, which come from an optional 3CB BAF PBO (`Optionals\Addons\uk3cb_baf_units_woodland_cw.pbo`), and is active only when that PBO is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -391,7 +391,7 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | Cold War USSR Early `CW_SOV_O_EARLY` | Kosmos, Belomorkanal |
 | Cold War USSR Late `CW_SOV_O_LATE` | Kosmos, Apollo Soyuz, Belomorkanal |
 | Cold War US Early, Late `CW_US_B_EARLY`, `_LATE` | Marlboro, Camel, Morley |
-| British Armed Forces (3CB BAF) `UK3CB_BAF_Faction` | Lambert & Butler, Marlboro, Morley |
+| British Armed Forces (3CB BAF), all services and camos `UK3CB_BAF_Faction_<Army/Navy/Airforce>_<MTP/Desert/Temperate/Woodland/Woodland_CW/Tropical/Arctic>` | Lambert & Butler, Marlboro, Morley |
 
 The officers have a [unit class preset](#unit-class-presets): a box of cigars on top of their faction's packs.
 

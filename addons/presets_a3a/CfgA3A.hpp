@@ -35,5 +35,6 @@ class A3A {
     class Templates {
         #include "templates_vanilla.hpp"
         #include "templates_rhs.hpp"
+        #include "templates_3cb.hpp"
     };
 };

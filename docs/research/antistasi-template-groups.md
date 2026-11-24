@@ -40,20 +40,20 @@ One brand list per group and tier, shared through a macro. Occupant or Invader d
 
 | Group | Templates |
 | --- | --- |
-| US forces | Vanilla NATO (Arid, Tropical, Temperate, Apex), WS NATO, RHS US Army / USMC (4), CUP US Army / USMC (4), Aegis US (3) |
+| US forces | Vanilla NATO (Arid, Tropical, Temperate, Apex), WS NATO, RHS US Army / USMC (4), CUP US Army / USMC (4), Aegis US (3), 3CB Marines Temperate |
 | UK | Vanilla NATO/UK (3), 3CB BAF (4), CUP BAF (2), Aegis BAF (3) |
-| Germany | CUP BW (2), BWA3 BW (2), 3CB GAF |
-| Other NATO / Europe | AMF France, TMT Turkey, CRO Croatia, CUP ACR (2), SFP SDF Sweden (4), EF MJTF (2), 3CB Marines (US or UK? check) |
+| Germany | CUP BW (2), BWA3 BW (2) |
+| Other NATO / Europe | AMF France, TMT Turkey, CRO Croatia, CUP ACR (2), SFP SDF Sweden (4), EF MJTF (2) |
 | Russia | RHS AFRF (2), RHS VDV (2), CUP AFRF (4), Aegis Russia, 3CB CSAT BEAR |
 | CSAT / Iran / China (Arma lore) | Vanilla CSAT (4), WS CSAT, Aegis Iran, Aegis China, 3CB CSAT VIPER / SCIMITAR / GRYPHON |
 | Serbia / Balkans | RHS SAF (maybe CRO) |
-| Chernarus | RHS CDF, CUP CDF (2), RHS ChDKZ, RHS NAPA, CUP NAPA, CSLA NAPA, 3CB CCM; civs 3CB Cherno, CUP CH, RHS Civ |
+| Chernarus and neighbours | 3CB GAF (Grozovia, not the German army), RHS CDF, CUP CDF (2), RHS ChDKZ, RHS NAPA, CUP NAPA, CSLA NAPA, 3CB CCM; civs 3CB Cherno, CUP CH, RHS Civ |
 | Livonia | Vanilla LDF, Aegis LDF, 3CB LDF, Vanilla LFF, 3CB LSM; civs Vanilla Livonian |
-| Altis / Mediterranean | Vanilla AAF, Aegis AAF, 3CB AAF (2), Vanilla FIA, Aegis FIA, 3CB FIA; civs Vanilla Altian, 3CB Mediterranean |
+| Altis / Mediterranean | Vanilla AAF, Aegis AAF, 3CB AAF (2), 3CB MDF (Malden), Vanilla FIA, Aegis FIA, 3CB FIA; civs Vanilla Altian, 3CB Mediterranean |
 | Tanoa / South Pacific | RHS HIDF, 3CB HIDF, RHS TLA, Vanilla SDK, Aegis SDK, RHS SDK, 3CB TFIA; civs Vanilla Tanoan, 3CB South Pacific |
 | Takistan / Middle East | CUP TKA, 3CB TKA East / West / Mix, 3CB ANA, 3CB KRG, CUP TKM, 3CB TKM; civs CUP TKC, 3CB Takistan, 3CB Middle Eastern |
 | Sahrani | CUP RACS (2), PRACS RACS (2), CUP SLA, PRACS SLA (2), PRACS SLA Guards (2) |
-| Western Sahara / Africa | WS SFIA, WS ADF, WS Tura, WS Civ, 3CB African Desert; maybe 3CB ADA, 3CB MDF |
+| Western Sahara / Africa | WS SFIA, WS ADF, WS Tura, WS Civ, 3CB ADA, 3CB African Desert |
 | ION (PMC) | Vanilla ION, WS ION, CUP ION (2), 3CB ION (3), 3CB ION rebels |
 
 ### Cold War (1970s to 1980s)
@@ -88,7 +88,20 @@ WW2 pack looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only go here,
 
 ### Lore check needed
 
-3CB ADA, 3CB MDF, 3CB KRG, 3CB PLM, 3CB TNM, 3CB Marines Temperate, CUP HIL, SEP ACAF (Altis Colonial Armed Forces), SEP IHAC (Horizon Island Colonial Army). The `lore` entries in `Templates.hpp` should settle them.
+CUP HIL, SEP ACAF (Altis Colonial Armed Forces), SEP IHAC (Horizon Island Colonial Army). The `lore` entries in `Templates.hpp` should settle them.
+
+Settled for the 3CB templates (from the `lore` strings and the loadouts, 2026-11-24):
+
+| Template | Lore and loadouts | Packs |
+| --- | --- | --- |
+| 3CB ADA | North African coalition around the Sahara, old Soviet and US gear | the 3CB ADA faction preset (Sportsman, Casa Sports, Cleopatra) |
+| 3CB MDF | Malden Defence Force, island near Gibraltar, US weapons, French jets | the 3CB MDF preset, Matelot first (Malden is French-flavoured) |
+| 3CB KRG | Royal guard of a Central Asian kingdom (the lore says "Kyrgystan", 3CB "Karzeghistan"), US surplus | the 3CB KRG preset, the royal Jaffudi first |
+| 3CB TNM | Tanoa militia with a Western backer, WW2 and early Cold War weapons | the 3CB TNM preset (Matelot and the gag brands) |
+| 3CB Marines Temperate | US Marines: `lore_USMC`, RHS FROG and G3 uniforms | the RHS US list |
+| 3CB PLM | **open.** Antistasi's lore makes it a fictional Chinese, Soviet-supplied early Cold War army on the Horizon Islands; 3CB's faction is a generic guerrilla movement | for now the 3CB PLM preset (Camel, Marlboro, Black Devil Pink). Suggestion: Kosmos instead of Camel for the Soviet supply. No Cold War Chinese brand exists (Shanhai is 2035) |
+
+Also: 3CB GAF is the Grozovia Armed Forces (Serbian and Russian weapons), not the German army, so it does not belong in the modern Germany gap.
 
 ## Tiers
 
@@ -117,7 +130,7 @@ Checked against `docs/readme_brands.md` and `addons/ai/terrainPacks.hpp` on 2026
 | WW2 Soviet (IFA SOV) | Kosmos is Cold War, Apollo Soyuz 1975 on. Nothing fits 1940s | Belomorkanal (#358, needs a papirosa model) |
 | WW2 Polish resistance (IFA AK, SEP AK, IFA Polish civs) | Popularne is a Cold War look | a 1930s/40s Polish brand, needs research |
 | 1930s China (EAW IJA, NRA, PLA, Rebels, Civs) | Shanhai is fictional CSAT 2035 | Golden Bat (Japan, 1906 on) for the IJA; a 1930s Chinese brand (BAT sold Ruby Queen in China before the war, check) |
-| Modern Germany (CUP BW, BWA3, 3CB GAF) | Ernte 23 has a 1970s–80s look | HB, West, Lord Extra |
+| Modern Germany (CUP BW, BWA3) | Ernte 23 has a 1970s–80s look | HB, West, Lord Extra |
 | Cold War UK (CWR BAF) | Lambert & Butler has the 1990s silver pack, Craven "A" is WW2 | Embassy, Rothmans, John Player Special, Benson & Hedges |
 | Turkey (TMT) | no Turkish brand | Samsun, Maltepe (Tekel) |
 | Croatia (CRO) | only Drina (Sarajevo-made, Yugoslav look), an awkward fit for the Croatian Army | Ronhill, Filter 160 (TDR Rovinj) |
@@ -146,6 +159,6 @@ The other 25 Antistasi maps already have a terrain preset.
 
 ### Other open points
 
-- The 9 templates under *Lore check needed*.
+- The templates still under *Lore check needed* (3CB PLM, CUP HIL, SEP ACAF, SEP IHAC).
 - Extender mods add templates under their own names; those fall to the terrain presets until they add `cigs_packs[]` themselves.
 - Antistasi Plus and other forks are not covered.

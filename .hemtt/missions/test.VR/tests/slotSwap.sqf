@@ -49,10 +49,13 @@ private _empty = {
     if (hmd _unit isNotEqualTo "") then { _unit unlinkItem hmd _unit };
 };
 
+// Removes the given items in every burn stage (cigs_morley_cig0 also clears cig1, cig2, ... and the _nv versions):
+// a case ends with a later stage than it started with, and a leftover would count in the next case.
 private _clear = {
     params ["_classes"];
     call _empty;
-    { private _c = _x; while { _c in items _unit } do { _unit removeItem _c } } forEach _classes;
+    private _stems = (_classes select { _x isNotEqualTo "" }) apply { _x regexReplace ["\d*(_nv)?$", ""] };
+    { if ((_x regexReplace ["\d*(_nv)?$", ""]) in _stems) then { _unit removeItem _x } } forEach items _unit;
     { deleteVehicle _x } forEach (_unit nearObjects ["WeaponHolder", 5]);
 };
 

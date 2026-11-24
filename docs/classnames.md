@@ -4,7 +4,7 @@
 
 ## Packs
 
-Pictures, origin, era and preset rules of each brand are on [Brands](readme_brands.md).
+Pictures, origin, era and preset rules of each brand are on [Brands](brands.md).
 
 | Classname | Name | Contains | Notes |
 | --------- | ---- | -------- | ----- |

@@ -15,6 +15,7 @@
 * 7. Terrain presets                 - cigs_aiCigs_terrain, the same for all sides, while cigs_ai_set_aiCigs_terrainPresets_enable is on
 * 8. Default presets                 - cigs_aiCigs_default, see defaultPacks.hpp
 * On levels 5-8, the unit class's cigs_packsExtra[] is added to the list.
+* Antistasi units take levels 5 and 6 from their Antistasi faction template instead, see fn_getConfigPresets.
 *
 * Arguments:
 * 0: Unit <OBJECT>
@@ -64,11 +65,11 @@ private _return = call {
     if ( isNil "_configPacks" ) then { _configPacks = [EGVAR(aiCigs,default)] call _fromMap; };
     if !( _configPacks isEqualType [] ) then { _configPacks = [_configPacks]; };
 
-    // cigs_packsExtra[] of the unit class is added to whichever of these levels decides
+    // cigs_packsExtra[] of the unit class is added to whichever of these levels decides.
+    // Only the extras that aren't in the list yet: a pack listed twice is drawn twice as often, so that weighting stays.
     private _extra = _presets getOrDefault [ "packsExtra", [] ];
     if ( _extra isEqualTo [] ) exitWith { _configPacks };
-    _configPacks = _configPacks + _extra;
-    _configPacks arrayIntersect _configPacks
+    _configPacks + ( (_extra arrayIntersect _extra) - _configPacks )
 };
 
 if ( isNil "_return" ) then { _return = []; };

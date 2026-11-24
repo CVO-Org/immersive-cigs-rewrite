@@ -72,7 +72,8 @@ private _spawnClass = {
     _unit
 };
 
-private _factionPacks = { params ["_faction"]; getArray (configFile >> "CfgFactionClasses" >> _faction >> "cigs_packs") };
+// loaded packs only: a preset can list planned brands (e.g. Belomorkanal), which getConfigPresets drops
+private _factionPacks = { params ["_faction"]; getArray (configFile >> "CfgFactionClasses" >> _faction >> "cigs_packs") select { getNumber (configFile >> "CfgMagazines" >> _x >> "cigs_isPack") isEqualTo 1 } };
 private _defaultPacks = { params ["_sideStr"]; cigs_aiCigs_default getOrDefault [_sideStr, []] };
 private _packs = { params ["_unit"]; [_unit] call cigs_ai_fnc_getCigItems };
 
@@ -226,3 +227,4 @@ private _summary = format ["AI cigs preset tests: %1 passed, %2 failed", count _
 [_summary] call _log;
 if ( _failed isNotEqualTo [] ) then { ["Failed: " + (( _failed apply { _x # 0 }) joinString ", ")] call _log; };
 _summary remoteExec ["hint", 0];
+cigs_test_failed = (missionNamespace getVariable ["cigs_test_failed", 0]) + count _failed;

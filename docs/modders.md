@@ -310,6 +310,15 @@ Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_r
 | Serbian Army, Air Force `rhssaf_faction_army`, `_airforce` (+ `_opfor`) | Drina, Marlboro, Camel |
 | Serbian UN contingent `rhssaf_faction_un` | Drina, Camel, Prince |
 
+The officers have a [unit class preset](#unit-class-presets): a box of cigars on top of their faction's packs. It is set on the first officer class of each line, and the variants below it inherit it:
+
+- AFRF: `rhs_msv_officer_armored`, `rhs_vdv_officer_armored`, `rhs_vdv_recon_officer_armored` (VDV of all camos and the VMF), `rhs_rva_crew_officer`
+- USAF: `rhsusf_army_ocp_officer` (+ UCP), `rhsusf_usmc_marpat_wd_officer`, `rhsusf_usmc_recon_marpat_wd_officer` (+ desert), `rhsusf_socom_swcc_officer`
+- GREF: the CDF officers `rhsgref_cdf_reg_officer`, `_para_officer`, `_ngd_officer` (+ BLUFOR and UN), the ChDKZ `rhsgref_ins_commander` and `rhsgref_ins_squadleader` (+ Green Star), the NAPA field commanders `rhsgref_nat_commander` and `rhsgref_nat_pmil_commander`
+- SAF: the army officers `rhssaf_army_m10_digital_officer`, `_m10_para_officer`, `_m93_oakleaf_summer_officer` (+ OPFOR), the UN officers `rhssaf_un_m10_digital_officer` and `_m10_digital_desert_officer`
+
+Crew commanders get none.
+
 #### 3CB Factions and 3CB BAF
 
 Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
@@ -364,6 +373,11 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | Cold War USSR Late `CW_SOV_O_LATE` | Kosmos, Apollo Soyuz, Belomorkanal |
 | Cold War US Early, Late `CW_US_B_EARLY`, `_LATE` | Marlboro, Camel, Morley |
 | British Armed Forces (3CB BAF) `UK3CB_BAF_Faction` | Lambert & Butler, Marlboro, Morley |
+
+The officers have a [unit class preset](#unit-class-presets): a box of cigars on top of their faction's packs.
+
+- **3CB Factions:** 3CB has no shared officer class, so every faction and side has its own entry, `UK3CB_<X>_<side>_OFF`, plus the AAF SF officers, the CSAT and Cold War field officers, the Cold War VDV field officers and the PLM political officers (109 classes). Police factions (`APD`, `TPD`, `ADP`, `ANP` / `ABP`, `TKP`) get none, as their officers are constables. Junior officers and crew commanders get none either.
+- **3CB BAF:** set on the Royal Marines officer of each camo (`UK3CB_BAF_Officer_<camo>_RM`, MTP: `UK3CB_BAF_Officer_MTP_RM_H`). 3CB derives the Army officers from them, so all BAF officers carry it.
 
 ## Terrain presets
 

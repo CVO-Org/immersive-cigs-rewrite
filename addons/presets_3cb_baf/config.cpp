@@ -17,8 +17,18 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
 
         // Required addons, used for setting load order.
-        // The BAF faction is defined in uk3cb_baf_units_common.
-        requiredAddons[] = { "cigs_main", "UK3CB_BAF_Units_Common" };
+        // The BAF faction is defined in uk3cb_baf_units_common, the officers in one addon per camo.
+        requiredAddons[] = {
+            "cigs_main",
+            "UK3CB_BAF_Units_Common",
+            "UK3CB_BAF_Units_Arctic",
+            "UK3CB_BAF_Units_Desert",
+            "UK3CB_BAF_Units_MTP",
+            "UK3CB_BAF_Units_Temperate",
+            "UK3CB_BAF_Units_Tropical",
+            "UK3CB_BAF_Units_Woodland",
+            "UK3CB_BAF_Units_Woodland_CW"
+        };
 
         // Skip this addon without an error when the mod isn't loaded.
         skipWhenMissingDependencies = 1;
@@ -33,3 +43,4 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"

@@ -17,8 +17,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
 
         // Required addons, used for setting load order.
-        // The USAF factions are defined in rhsusf_main.
-        requiredAddons[] = { "cigs_main", "rhsusf_main" };
+        // The USAF factions are defined in rhsusf_main, the officers in rhsusf_c_troops.
+        requiredAddons[] = { "cigs_main", "rhsusf_main", "rhsusf_c_troops" };
 
         // Skip this addon without an error when the mod isn't loaded.
         skipWhenMissingDependencies = 1;
@@ -33,3 +33,4 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"

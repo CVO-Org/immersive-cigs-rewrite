@@ -17,8 +17,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
 
         // Required addons, used for setting load order.
-        // The AFRF factions are defined in rhs_main, the Eastern Militia in rhs_cti_insurgents (both part of RHSAFRF).
-        requiredAddons[] = { "cigs_main", "rhs_main", "rhs_cti_insurgents" };
+        // The AFRF factions are defined in rhs_main, the Eastern Militia in rhs_cti_insurgents, the officers in rhs_c_troops (all part of RHSAFRF).
+        requiredAddons[] = { "cigs_main", "rhs_main", "rhs_cti_insurgents", "rhs_c_troops" };
 
         // Skip this addon without an error when the mod isn't loaded.
         skipWhenMissingDependencies = 1;
@@ -33,3 +33,4 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"

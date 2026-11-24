@@ -17,8 +17,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
 
         // Required addons, used for setting load order.
-        // The GREF factions are defined in rhsgref_main.
-        requiredAddons[] = { "cigs_main", "rhsgref_main" };
+        // The GREF factions are defined in rhsgref_main, the officers in rhsgref_c_troops.
+        requiredAddons[] = { "cigs_main", "rhsgref_main", "rhsgref_c_troops" };
 
         // Skip this addon without an error when the mod isn't loaded.
         skipWhenMissingDependencies = 1;
@@ -33,3 +33,4 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"

@@ -82,7 +82,7 @@ Brands with an open issue that faction presets already list. Their classnames ar
 
 | Pack | Name | Classname | Origin | Era | Notes and restrictions | Used in |
 | :--: | ---- | --------- | ------ | --- | ---------------------- | ------- |
-| ![](img/brands/cigars.png) | Vulcano | `cigs_cigars_cigarbox_5` | Altis | timeless | 5 per box. Officers only, at unit class level | – |
+| ![](img/brands/cigars.png) | Vulcano | `cigs_cigars_cigarbox_5` | Altis | timeless | 5 per box. Officers only, at unit class level | Officers: vanilla, RHS, 3CB Factions, 3CB BAF |
 | ![](img/brands/papa_schultz.png) | Papa Schultz | `cigs_papa_schultz_cigarbox_5` | Halo, the Sergeant's second favourite | sci-fi | 5 per box. Officers only, at unit class level | – |
 
 ## Other smokables

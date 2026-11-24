@@ -76,7 +76,7 @@ Burning fireplaces (`simulation = "fire"`, e.g. `Land_Campfire_F`) work automati
 
 ## Faction presets
 
-A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`. [Brands](readme_brands.md) lists every brand with its era and where it may be used.
+A faction can say which packs and lighters its AI carry. Add the arrays to its class in `CfgFactionClasses`. [Brands](brands.md) lists every brand with its era and where it may be used.
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
@@ -241,7 +241,7 @@ Addon `presets_sog`, active when the CDLC is loaded.
 | Faction | Packs |
 | ------- | ----- |
 | MACV `B_MACV`, US CIA `B_CIA`, US MEDT `B_MEDT` | Marlboro, Camel, Savage, Morley |
-| Australia `B_AUS`, New Zealand `B_NZ` | Camel, Savage, Morley |
+| Australia `B_AUS`, New Zealand `B_NZ` | Camel, Marlboro, Savage, Morley |
 | Republic Of Korea `B_ROK` | Hwarang, Marlboro, Savage |
 | ARVN `I_ARVN` | Ruby Queen, Marlboro, Savage |
 | Royal Lao Army `I_LAO`, FANK `I_CAM`, Vietnamese `C_VIET` | Ruby Queen, Savage, Morley |
@@ -266,7 +266,7 @@ Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of
 | ------- | ----- |
 | SFIA `IND_SFIA_lxWS` (+ `OPF_SFIA_lxWS`) | Casa Sports, Cleopatra, Black Devil, Morley |
 | Tura `IND_TURA_lxWS` (+ `BLU_TURA_lxWS`, `OPF_TURA_lxWS`) | Casa Sports, Cleopatra, Black Devil, Mtn Dew Baja Blast |
-| ION Services `BLU_ION_lxWS` | Camel, Morley, Marlboro |
+| ION Services `BLU_ION_lxWS` | Camel, Morley, Marlboro, Newport |
 | UNA `BLU_UN_lxWS` | Camel, Morley, Prince |
 | NATO (Desert) `BLU_NATO_lxWS` | Morley, Marlboro, Camel, Crayons |
 
@@ -279,9 +279,9 @@ Addon `presets_spe`, active when the CDLC is loaded.
 | Wehrmacht `SPE_WEHRMACHT`, Sturmtroopers `SPE_STURM` | Eckstein, Juno |
 | La Milice `SPE_MILICE` | Troupes, Eckstein, Juno |
 | French Interior Forces `SPE_FFI` | Troupes, Matelot, Lucky Strike |
-| French Liberation Army `SPE_FR_ARMY` | Troupes, Lucky Strike, Craven "A" |
+| French Liberation Army `SPE_FR_ARMY` | Troupes, Lucky Strike, Camel, Craven "A" |
 | 40s Civilians `SPE_CIV` | Troupes, Matelot, Eckstein |
-| US Army `SPE_US_ARMY` | Lucky Strike, Morley, Craven "A" |
+| US Army `SPE_US_ARMY` | Lucky Strike, Camel, Morley, Craven "A" |
 
 #### Expeditionary Forces
 
@@ -354,9 +354,9 @@ Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active
 | African Desert Civilian Militia `ADG`, Militia `ADM` | Sportsman, Casa Sports, Cleopatra, Black Devil Pink |
 | African Desert Extremists `ADE` | Casa Sports, Sportsman, Cleopatra, Camel |
 | PLM `PLM` | Camel, Marlboro, Black Devil Pink |
-| Western European Insurgents `WEI` | Marlboro, Camel, Black Devil Pink, NIL |
+| Western European Insurgents `WEI` | Matelot, Ducados, Lambert & Butler, Marlboro, Camel, Black Devil Pink, NIL |
 | UN Peacekeepers `UN` | Camel, Morley, Prince |
-| ION Services, all camos and sides `ION_<side>_<camo>` | Camel, Morley, Marlboro |
+| ION Services, all camos and sides `ION_<side>_<camo>` | Camel, Morley, Marlboro, Newport |
 | CSAT Europe, Middle East, Mediterranean, Navy, Winter, Urban `CSAT_<W/B/M/F/S/U>_O` | Alborz, Apollo Soyuz, Kosmos |
 | CSAT Pacific, Navy (Pacific) `CSAT_G_O`, `CSAT_N_O` | Shanhai, Alborz, Apollo Soyuz |
 | CSAT Africa `CSAT_A_O` | Alborz, Apollo Soyuz, Sportsman |

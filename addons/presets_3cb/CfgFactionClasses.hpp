@@ -3,10 +3,11 @@
 //
 // - 3CB gives every faction separate classes per side (UK3CB_<X>_O / _B / _I, civilians also _C) without inheritance,
 //   so each side class gets its own entry. All sides of a faction get the same packs.
-// - Regional brand first, then other brands of the region, then international brands. See docs/readme_brands.md.
+// - Regional brand first, then other brands of the region, then international brands. See docs/brands.md.
 // - The Chernarus brands (Gudok, Zamok, Sosna) are used for every era; Belomorkanal and Kosmos stand in for Russian influence.
 // - The Takistan brands (Jaffudi, Zargabad, Sharig) cover Takistan, Afghanistan and the Central Asian and Middle Eastern factions.
 // - The Middle Eastern and African Desert factions add the Egyptian Cleopatra, the Arab world's best-known cigarette.
+// - The Western European Insurgents get the Western European brands Matelot, Ducados and Lambert & Butler.
 // - Belomorkanal is a planned brand (issue #358): dropped until it is in the mod.
 // - Gag brands only for guerrillas and militias. Voron only for the LDF. No WW2-era looks.
 // - Cigars are kept for officers (unit class level), never per faction.
@@ -349,13 +350,13 @@ class CfgFactionClasses {
         PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_WEI_O {                // Western European Insurgents
-        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(matelot,cigpack), QEGVAR(ducados,cigpack), QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
     };
     class UK3CB_WEI_B {                // Western European Insurgents
-        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(matelot,cigpack), QEGVAR(ducados,cigpack), QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
     };
     class UK3CB_WEI_I {                // Western European Insurgents
-        PVAR(packs)[] = { QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(matelot,cigpack), QEGVAR(ducados,cigpack), QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // ------------------------------------------------------------------------ International
@@ -426,40 +427,40 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ ION Services (all four camo variants, every side)
     class UK3CB_ION_O_Urban {          // ION Services - Urban
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_B_Urban {          // ION Services - Urban
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_I_Urban {          // ION Services - Urban
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_O_Desert {         // ION Services - Desert
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_B_Desert {         // ION Services - Desert
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_I_Desert {         // ION Services - Desert
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_O_Winter {         // ION Services - Winter
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_B_Winter {         // ION Services - Winter
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_I_Winter {         // ION Services - Winter
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_O_Woodland {       // ION Services - Woodland
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_B_Woodland {       // ION Services - Woodland
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
     class UK3CB_ION_I_Woodland {       // ION Services - Woodland
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(newport,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Cold War (no WW2-era looks; Apollo Soyuz only from 1975, so only for the late Soviets)

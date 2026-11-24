@@ -15,8 +15,6 @@
 * Public: No
 */
 
-diag_log format ['[CVO](debug)(fn_aiCigs_module) _this: %1', _this];
-
 params [
 	["_logic", objNull, [objNull]],		// Argument 0 is module logic
 	["_units", [], [[]]],				// Argument 1 is a list of affected units (affected by value selected in the 'class Units' argument))

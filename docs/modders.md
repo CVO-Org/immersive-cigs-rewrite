@@ -198,7 +198,7 @@ A dash means that tier gets the template's packs. Belomorkanal is a planned bran
 
 ### Included faction presets
 
-Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list.
+Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list. A pack listed twice is picked twice as often, so a list can weight a brand on purpose; `cigs_packsExtra[]` keeps that weighting.
 
 | Faction | Packs |
 | ------- | ----- |

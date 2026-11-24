@@ -21,7 +21,7 @@ For every new AI unit, the server checks in this order:
 3. **Does the unit already carry a pack** (and *Check Unit for compatible Items* is on)? Then it gets nothing new and only joins [dynamic smoking](#dynamic-ai-smoking).
 4. **Is AI Cigs enabled, and does the probability roll pass?** (CBA settings *Enable* and *Probability*, default 33%)
 5. **Does its side have any packs?** A side without packs gets nothing.
-6. After the *Delay* (default 5 s), the unit gets 1-3 random packs from its side's list, plus enough matches or a lighter.
+6. After the *Delay* (default 5 s), the unit gets 1-3 random packs from its side's list, plus enough matches or a lighter. A pack listed twice is picked twice as often.
 
 ### Which packs a side gets
 

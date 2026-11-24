@@ -1,18 +1,24 @@
 <#
 .SYNOPSIS
-    Runs the test mission (.hemtt\missions\test.VR) unattended and reports the results from the RPT.
+    Runs the autotest mission (.hemtt\missions\autotest.VR) unattended and reports the results from the RPT.
 
 .DESCRIPTION
-    Builds and starts the game through `hemtt launch <profiles>` with Arma's -autotest parameter: the game plays the
-    test mission, which runs every test in init.sqf and ends as END1 (all passed) or LOSER (a test failed), then quits.
+    Builds and starts the game through `hemtt launch <profiles> autotest` with Arma's -autotest parameter (the
+    'autotest' launch profile switches the mission from test.VR to autotest.VR): the game plays the autotest mission,
+    which runs every test in init.sqf and ends as END1 (all passed) or LOSER (a test failed), then quits.
     Afterwards the RPT is searched for:
       - the test lines ("[cigs][test]"; only FAIL lines and summaries unless -Full),
       - "Updating base class" lines from this mod's addons: a class declared with a wrong parent (OFFICER_CIGARS),
       - script errors.
     Exit code 0 when the mission reported 0 failures and nothing above was found, else 1.
 
+    Several profiles load together in one game (hemtt launch merges them). The 'all' profile in .hemtt\launch.toml
+    holds every modset but the terrains, so one run covers them all.
+
 .EXAMPLE
+    .\tools\autotest.ps1 all
     .\tools\autotest.ps1 3cb
+    .\tools\autotest.ps1 rhs factions
     .\tools\autotest.ps1 rhs -Full
     .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'
 #>
@@ -32,7 +38,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
-$mission = Join-Path $root '.hemtt\missions\test.VR'
+$mission = Join-Path $root '.hemtt\missions\autotest.VR'
 $outDir = Join-Path $root '.hemttout\autotest'
 $cfg = Join-Path $outDir 'autotest.cfg'
 $rptDir = Join-Path $env:LOCALAPPDATA 'Arma 3'
@@ -50,7 +56,8 @@ class TestMissions {
 "@ | Set-Content -Encoding ascii $cfg
 
 $start = Get-Date
-$launchArgs = @('launch') + $Profiles
+# 'autotest' last: hemtt overlays the profiles left to right, so its mission wins
+$launchArgs = @('launch') + $Profiles + @('autotest')
 if ($Quick) { $launchArgs += '-Q' }
 $launchArgs += @('--', "-autotest=$cfg")
 Write-Host "hemtt $($launchArgs -join ' ')"

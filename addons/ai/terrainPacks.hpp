@@ -75,9 +75,9 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sparta,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(apollo,cigpack), QEGVAR(popularne,cigpack), QEGVAR(f6,cigpack) };
     };
 
-    // Western Sahara - Sefrou-Ramal, North Africa
+    // Western Sahara - Sefrou-Ramal, North Africa. Casa Sports, then the Egyptian Cleopatra
     class SefrouRamal {
-        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
+        packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(morley,cigpack) };
     };
 
     // Spearhead 1944 - occupied France
@@ -94,18 +94,21 @@ class PVAR(terrainPacks) {
     // Terrains without a brand of their own region get the international filler (Morley, Marlboro, Camel, NIL).
     // Empty test maps (VEU Expanses) get no entry, like VR.
 
+    // Post-Soviet terrains: the Chernarus brands, then the Russian papirosa Belomorkanal (planned, issue #358: dropped until
+    // it is in the mod) and Apollo Soyuz. The modern maps (2020 onwards) add Parliament, the CIS status cigarette.
+
     // CUP Terrains - Maps: Chernarus, Utes - post-Soviet Chernarus
     class chernarus {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class chernarus_summer {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class Chernarus_Winter {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class utes {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
     // CUP Terrains - Maps: Takistan, Zargabad, Takistan Mountains, Desert, Shapur, Proving Grounds - Takistan
@@ -153,9 +156,9 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sparta,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // CUP Terrains - Maps 2.0: Chernarus 2020, Zargabad 2025
+    // CUP Terrains - Maps 2.0: Chernarus 2020 (modern, so Parliament), Zargabad 2025
     class cup_chernarus_A3 {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class cup_Zargabad_a3 {
         packs[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
@@ -163,14 +166,20 @@ class PVAR(terrainPacks) {
 
     // Namalsk - island north of Chernarus
     class namalsk {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Lythium, Kunduz River, Uzbin Valley, North Takistan - Central Asia, Takistan brands
+    // Lythium, Kunduz River, Kunduz, Anizay, Uzbin Valley, North Takistan - Central Asia and Afghanistan, Takistan brands
     class lythium {
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class kunduz_valley {                           // Kunduz River
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class Kunduz {                                  // Kunduz, a different terrain than Kunduz River
+        packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+    };
+    class tem_anizay {                              // Anizay
         packs[] = { QEGVAR(jaffudi,cigpack), QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class uzbin {
@@ -193,6 +202,11 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
+    // Isla Duala - fictional island off Central Africa, desert and tropical. Sportsman as the sub-Saharan brand, then the Egyptian Cleopatra
+    class isladuala3 {
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
+
     // Rosche - northern West Germany
     class WL_Rosche {
         packs[] = { QEGVAR(ernte_23,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack), QEGVAR(morley,cigpack) };
@@ -206,7 +220,10 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(parisienne,cigpack), QEGVAR(nil,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
     };
 
-    // Pulau, Prei Khmaoch Luong - Southeast Asia, Gudang Garam
+    // Pulau, Tembelan, Prei Khmaoch Luong - Southeast Asia, Gudang Garam
+    class Tembelan {                                // Tembelan Island, Indonesia
+        packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+    };
     class pulau {
         packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
@@ -214,7 +231,10 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(gudang_garam,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Lingor, Dingor, Colombia - South America, Pielroja
+    // Lingor, Dingor, Colombia, Regero - South America, Pielroja. Regero is arid with Spanish names, so Ducados after Pielroja
+    class regero {
+        packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(ducados,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack) };
+    };
     class UMB_Colombia {
         packs[] = { QEGVAR(pielroja,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
@@ -230,38 +250,38 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(lambert_butler,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Ivanivkova, Korsac, Lesser Swamp, Project Raid, Vereskovo - Ukraine and the Black Sea coast, post-Soviet like Chernarus
+    // Ivanivkova, Korsac, Lesser Swamp, Project Raid, Vereskovo - Ukraine and the Black Sea coast, post-Soviet like Chernarus, modern
     class Ivanivokova {                             // Ivanivkova
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class VTF_Korsac {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class VTF_Korsac_Winter {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class ST_Swamp {                                // Lesser Swamp
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class RaidMap {                                 // Project Raid
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class Vereskovo {
-        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        packs[] = { QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(apollo,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
 
-    // Yulakia, Lybor, Leskovets - fictional Eastern Europe, ex-Soviet and Chernarus brands
+    // Yulakia, Lybor, Leskovets - fictional Eastern Europe, ex-Soviet and Chernarus brands. Yulakia and Lybor are modern; Leskovets (Bulgaria) gets no Parliament
     class yulakia {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class VTF_Lybor {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class VTF_Lybor_Winter {
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(parliament,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
     class pja314 {                                  // G.O.S Leskovets, Bulgaria
-        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(apollo,cigpack), QEGVAR(gudok,cigpack), QEGVAR(zamok,cigpack), QEGVAR(sosna,cigpack), QEGVAR(belomorkanal,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // Sumava - Czech Republic
@@ -291,12 +311,13 @@ class PVAR(terrainPacks) {
         packs[] = { QEGVAR(john_silver,cigpack), QEGVAR(prince,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
-    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel. Libya gets Casa Sports and the Egyptian Cleopatra, Chad Sportsman first
+    // Green Valley (Libya), Niakala (Chad) - North Africa and the Sahel. Libya gets Casa Sports and the Egyptian Cleopatra, Chad Sportsman first, then
+    // Casa Sports and Cleopatra from the Arab north
     class green_valley {
         packs[] = { QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
     class juju_kalahari {                           // Niakala
-        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
+        packs[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack), QEGVAR(morley,cigpack), QEGVAR(nil,cigpack) };
     };
 
     // G.O.S Al Rayak - Middle East, 2035. Alborz as the neighbouring Iranian brand, the Egyptian Cleopatra, then the Takistan brands

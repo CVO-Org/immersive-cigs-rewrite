@@ -22,10 +22,10 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ Allies
     class B_AUS {           // Australia
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(savage,cigpack), QEGVAR(morley,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(savage,cigpack), QEGVAR(morley,cigpack) };
     };
     class B_NZ {            // New Zealand
-        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(savage,cigpack), QEGVAR(morley,cigpack) };
+        PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(savage,cigpack), QEGVAR(morley,cigpack) };
     };
     class B_ROK {           // Republic Of Korea
         PVAR(packs)[] = { QEGVAR(hwarang,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(savage,cigpack) };

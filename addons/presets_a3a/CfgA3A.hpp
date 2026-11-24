@@ -29,7 +29,10 @@
 //
 // Mods that add their own Antistasi templates can add these properties to their template classes, no dependency needed.
 
+// One file per mod family of templates.
+
 class A3A {
     class Templates {
+        #include "templates_vanilla.hpp"
     };
 };

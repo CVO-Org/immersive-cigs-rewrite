@@ -171,6 +171,22 @@ class A3A {
 - **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
 - Immersive Cigs brings its template presets in the addon `presets_a3a`, active when Antistasi is loaded. Only the Antistasi Community version is supported.
 
+#### Included Antistasi template presets
+
+Occupants and Invaders smoke what the same army smokes in its [faction preset](#included-faction-presets). Rebels and civilians have no entry: Antistasi plays them on any map, so they get the map's [terrain preset](#terrain-presets), like the police.
+
+| Template | Packs | Special forces (`sf`) |
+| -------- | ----- | --------------------- |
+| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
+| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | as NATO Arid |
+| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | as NATO Arid |
+| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – |
+| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | Shanhai, Alborz, NIL (Viper) |
+| A3 CSAT Enoch | as CSAT Arid | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
+| A3 AAF | Almyra, Morley, NIL | – |
+| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – |
+| A3 ION | Camel, Morley, Marlboro | – |
+
 ### Included faction presets
 
 Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list.

@@ -94,7 +94,8 @@ WW2 pack looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only go here,
 
 | Tier (`unitType`) | Packs |
 | --- | --- |
-| `militia`, `police` | cheap regional brands, what a local shop sells; mostly the terrain preset of the region |
+| `police` | **decided 2026-11-24:** the terrain preset of the map being played, unless the template has `cigs_packs_police[]` (built into the hook) |
+| `militia` | cheaper brands of the army's own country; the template's `cigs_packs[]` when there is no militia list |
 | `military` | the main national brand |
 | `SF` | premium or international brand |
 | `other` | crew, pilots etc.: same as `military` |

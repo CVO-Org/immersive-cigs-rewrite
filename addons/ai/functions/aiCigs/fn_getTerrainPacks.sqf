@@ -2,7 +2,7 @@
 
 /*
 * Author: Zorn
-* Returns the terrain presets of the current terrain: packs[] in cigs_terrainPacks >> worldName (see terrainPacks.hpp).
+* Returns the terrain presets of the current terrain: packs[] in cigs_terrainPacks >> worldName (see ai_presets_terrains\terrainPacks.hpp).
 * The same packs for all sides. Classnames that are not a loaded pack are dropped, so a terrain can list packs of optional brands.
 *
 * Arguments:

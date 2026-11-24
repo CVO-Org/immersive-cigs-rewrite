@@ -63,6 +63,15 @@
 #endif
 
 #define ADDON_NAME Q(PREFIX_BEAUTIFIED - COMPONENT_BEAUTIFIED)
+// Subaddons (a config.cpp in a subfolder of an addon, see ai_presets_factions): define SUBCOMPONENT and SUBCOMPONENT_BEAUTIFIED,
+// then include the parent's script_component.hpp. CfgPatches class SUBADDON, named SUBADDON_NAME.
+#define SUBADDON_NAME Q(PREFIX_BEAUTIFIED - COMPONENT_BEAUTIFIED - SUBCOMPONENT_BEAUTIFIED)
+// Newer CBA defines SUBADDON itself; the CBA macros in include\ predate it.
+#ifdef SUBCOMPONENT
+    #ifndef SUBADDON
+        #define SUBADDON DOUBLES(ADDON,SUBCOMPONENT)
+    #endif
+#endif
 
 // Paths
 #define PATH_TO_FUNC QUOTE(\MAINPREFIX\PREFIX\addons\COMPONENT\functions)

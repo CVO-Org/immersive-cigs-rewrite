@@ -38,5 +38,5 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
 #include "defaultPacks.hpp"
-#include "terrainPacks.hpp"
+// The terrain, faction and compat presets are in ai_presets_terrains, ai_presets_factions and ai_presets_compats.
 #include "Cfg3DEN.hpp"

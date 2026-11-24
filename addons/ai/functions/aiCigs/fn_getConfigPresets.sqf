@@ -3,7 +3,7 @@
 /*
 * Author: Zorn
 * Returns the config presets of a unit, from the first of these places that has an answer:
-* - The compat presets (cigs_ai_compats, see fn_getCompats), e.g. the Antistasi templates of compat_a3a.
+* - The compat presets (cigs_ai_compats, see fn_getCompats), e.g. the Antistasi templates of ai_presets_compats/a3a.
 *   They replace both places below for the units they answer for.
 * - Its own class in CfgVehicles (through config inheritance): cigs_packs[], cigs_lighters[] and cigs_packsExtra[]
 * - Its faction in CfgFactionClasses: cigs_packs[] and cigs_lighters[]

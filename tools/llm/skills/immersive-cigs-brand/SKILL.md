@@ -110,7 +110,7 @@ Fix every error and warning in your addon. `hemtt check` also bumps the build nu
 
 ## 7. AI faction presets
 
-The AI Cigs presets give factions their brands: `addons/presets_vanilla` and one `addons/presets_<cdlc>` per CDLC (`docs/modders.md` explains the classes). Ask the user whether the new brand belongs to a faction there. If it does, that's its own PR after the brand is merged, not part of the brand PR. Don't add a preset for a faction from a mod the repository has no preset addon for (CUP, RHS and the like); say so instead.
+The AI Cigs presets give factions their brands: `addons/ai_presets_factions/vanilla` and one `addons/ai_presets_factions/<cdlc>` per CDLC (`docs/modders.md` explains the classes). Ask the user whether the new brand belongs to a faction there. If it does, that's its own PR after the brand is merged, not part of the brand PR. Don't add a preset for a faction from a mod the repository has no preset addon for (CUP, RHS and the like); say so instead.
 
 ## 8. The PR
 

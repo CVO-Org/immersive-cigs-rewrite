@@ -6,7 +6,7 @@
 // Order under test, highest first:
 // cigs_aiCigs_api > module > pack selection > compat presets (cigs_ai_compats) > unit class presets > faction presets > terrain presets > default presets
 // The compat level is tested by setting its resolved list (cigs_ai_compatFunctions) directly, with test functions.
-// The unit class level is tested with the vanilla officers (presets_vanilla\CfgVehicles.hpp): cigs_packsExtra[] = cigar box.
+// The unit class level is tested with the vanilla officers (ai_presets_factions\vanilla\CfgVehicles.hpp): cigs_packsExtra[] = cigar box.
 
 if (!isServer) exitWith {};
 

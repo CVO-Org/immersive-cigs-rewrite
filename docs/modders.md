@@ -144,7 +144,7 @@ class CfgVehicles {
 
 ### Included faction presets
 
-Immersive Cigs brings entries for the vanilla factions (addon `presets_vanilla`). Units pick 1–3 packs at random from the list. A pack listed twice is picked twice as often, so a list can weight a brand on purpose; `cigs_packsExtra[]` keeps that weighting.
+Immersive Cigs brings entries for the vanilla factions (subaddon `ai_presets_factions/vanilla`). Units pick 1–3 packs at random from the list. A pack listed twice is picked twice as often, so a list can weight a brand on purpose; `cigs_packsExtra[]` keeps that weighting.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -170,7 +170,7 @@ The vanilla officers have a [unit class preset](#unit-class-presets): `cigs_pack
 
 #### Global Mobilization
 
-Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.
+Subaddon `ai_presets_factions/gm`, active when the CDLC is loaded. Border guards and civilians (`_bgs`, `_civ`) inherit their country's entry. The other GM countries have no units and no entry.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -182,7 +182,7 @@ Addon `presets_gm`, active when the CDLC is loaded. Border guards and civilians 
 
 #### S.O.G. Prairie Fire
 
-Addon `presets_sog`, active when the CDLC is loaded.
+Subaddon `ai_presets_factions/sog`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -195,7 +195,7 @@ Addon `presets_sog`, active when the CDLC is loaded.
 
 #### CSLA Iron Curtain
 
-Addon `presets_csla`, active when the CDLC is loaded.
+Subaddon `ai_presets_factions/csla`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -206,7 +206,7 @@ Addon `presets_csla`, active when the CDLC is loaded.
 
 #### Western Sahara
 
-Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.
+Subaddon `ai_presets_factions/ws`, active when the CDLC is loaded. The SFIA and Tura classes of the other sides inherit the GUER entry.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -218,7 +218,7 @@ Addon `presets_ws`, active when the CDLC is loaded. The SFIA and Tura classes of
 
 #### Spearhead 1944
 
-Addon `presets_spe`, active when the CDLC is loaded.
+Subaddon `ai_presets_factions/spe`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -231,7 +231,7 @@ Addon `presets_spe`, active when the CDLC is loaded.
 
 #### Expeditionary Forces
 
-Addon `presets_ef`, active when the CDLC is loaded.
+Subaddon `ai_presets_factions/ef`, active when the CDLC is loaded.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -240,7 +240,7 @@ Addon `presets_ef`, active when the CDLC is loaded.
 
 #### RHS
 
-Addons `presets_rhs_afrf`, `presets_rhs_usaf`, `presets_rhs_gref` and `presets_rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal is a planned brand (issue #358): until it is in the mod, its pack is dropped and the rest of the list is used.
+Subaddons `ai_presets_factions/rhs_afrf`, `ai_presets_factions/rhs_usaf`, `ai_presets_factions/rhs_gref` and `ai_presets_factions/rhs_saf`, one per RHS mod, each active when its mod is loaded. Entries sit on the base classes; the other factions and side variants inherit them. Belomorkanal is a planned brand (issue #358): until it is in the mod, its pack is dropped and the rest of the list is used.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -267,7 +267,7 @@ Crew commanders get none.
 
 #### 3CB Factions and 3CB BAF
 
-Addons `presets_3cb` (3CB Factions) and `presets_3cb_baf` (3CB BAF), each active when its mod is loaded. `presets_3cb_baf_cw` covers the Woodland Cold War factions and officer, which come from an optional 3CB BAF PBO (`Optionals\Addons\uk3cb_baf_units_woodland_cw.pbo`), and is active only when that PBO is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
+Subaddons `ai_presets_factions/3cb` (3CB Factions) and `ai_presets_factions/3cb_baf` (3CB BAF), each active when its mod is loaded. `ai_presets_factions/3cb_baf_cw` covers the Woodland Cold War factions and officer, which come from an optional 3CB BAF PBO (`Optionals\Addons\uk3cb_baf_units_woodland_cw.pbo`), and is active only when that PBO is loaded. 3CB has no inheritance between its faction classes, so every side class (`UK3CB_<X>_O`, `_B`, `_I`, civilians also `_C`) has its own entry; all sides of a faction get the same packs unless noted. Belomorkanal and Lambert & Butler are planned brands (issues #358, #360) and are dropped until they are in the mod.
 
 | Faction | Packs |
 | ------- | ----- |
@@ -390,7 +390,7 @@ class A3A {
 - **Police are local.** A template plays on many maps, and its police are the local force. Without `cigs_packs_police[]` they get the terrain preset of the map being played, not the template's `cigs_packs[]`.
 - **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
 - **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
-- Immersive Cigs brings its template presets in the addon `compat_a3a`, which only loads with Antistasi. Only the Antistasi Community version is supported.
+- Immersive Cigs brings its template presets in the subaddon `ai_presets_compats/a3a`, which only loads with Antistasi. Only the Antistasi Community version is supported.
 
 #### Included Antistasi template presets
 
@@ -455,7 +455,7 @@ class cigs_terrainPacks {
 
 ### Included terrain presets
 
-Each terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era, then international brands that fit the era. Units pick 1–3 at random. No gag brands and no Voron, as these reach civilians and soldiers alike; only the science fiction terrains get Baja Blast and Black Devil Pink. The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only appear on the 1940s terrains.
+They are in the addon `ai_presets_terrains` (`terrainPacks.hpp`). Each terrain lists what a local shop would sell: the regional brand first, then other brands of the region and era, then international brands that fit the era. Units pick 1–3 at random. No gag brands and no Voron, as these reach civilians and soldiers alike; only the science fiction terrains get Baja Blast and Black Devil Pink. The WW2-era looks (Craven "A", Eckstein, Juno, Lucky Strike, Troupes) only appear on the 1940s terrains.
 
 Every vanilla military and guerrilla faction has its own faction preset, so these reach the civilians and mod factions without a preset. VR has no entry.
 

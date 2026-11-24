@@ -40,4 +40,4 @@ Go through every point before telling the user the brand is done. Say which ones
 
 ## Afterwards
 
-- [ ] Asked the user whether the brand goes into an AI faction preset (`addons/presets_*`), as its own PR.
+- [ ] Asked the user whether the brand goes into an AI faction preset (`addons/ai_presets_factions/*`), as its own PR.

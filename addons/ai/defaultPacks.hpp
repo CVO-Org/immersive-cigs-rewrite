@@ -1,5 +1,5 @@
 // Default packages per side, as presets.
-// Used when neither the API, the aiCigs module, the pack selection CBA settings, the config presets (compat presets, cigs_packs[] in CfgVehicles / CfgFactionClasses) nor the terrain presets (terrainPacks.hpp) define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
+// Used when neither the API, the aiCigs module, the pack selection CBA settings, the config presets (compat presets, cigs_packs[] in CfgVehicles / CfgFactionClasses) nor the terrain presets (ai_presets_terrains) define the packages (cigs_aiCigs_default, see fn_preInit / fn_getCigItems)
 // and as the default selection of a newly placed aiCigs module (see CfgVehicles).
 //
 // Resolved once by cigs_ai_fnc_getDefaultPacks:

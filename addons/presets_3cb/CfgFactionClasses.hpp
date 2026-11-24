@@ -6,6 +6,7 @@
 // - Regional brand first, then other brands of the region, then international brands. See docs/readme_brands.md.
 // - The Chernarus brands (Gudok, Zamok, Sosna) are used for every era; Belomorkanal and Kosmos stand in for Russian influence.
 // - The Takistan brands (Jaffudi, Zargabad, Sharig) cover Takistan, Afghanistan and the Central Asian and Middle Eastern factions.
+// - The Middle Eastern and African Desert factions add the Egyptian Cleopatra, the Arab world's best-known cigarette.
 // - Belomorkanal is a planned brand (issue #358): dropped until it is in the mod.
 // - Gag brands only for guerrillas and militias. Voron only for the LDF. No WW2-era looks.
 // - Cigars are kept for officers (unit class level), never per faction.
@@ -245,96 +246,96 @@ class CfgFactionClasses {
 
     // ------------------------------------------------------------------------ Middle East
     class UK3CB_MEC_O {                // Middle East Civilians
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_MEC_B {                // Middle East Civilians
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_MEC_I {                // Middle East Civilians
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_MEC_C {                // Middle East Civilians
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(jaffudi,cigpack), QEGVAR(alborz,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_MEI_O {                // Middle East Insurgents
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
     };
     class UK3CB_MEI_B {                // Middle East Insurgents
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
     };
     class UK3CB_MEI_I {                // Middle East Insurgents
-        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
+        PVAR(packs)[] = { QEGVAR(zargabad,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack) };
     };
     class UK3CB_MEE_O {                // Middle East Extremists
-        PVAR(packs)[] = { QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack), QEGVAR(zargabad,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sharig,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(alborz,cigpack), QEGVAR(zargabad,cigpack) };
     };
     class UK3CB_MEE_I {                // Middle East Extremists
-        PVAR(packs)[] = { QEGVAR(sharig,cigpack), QEGVAR(alborz,cigpack), QEGVAR(zargabad,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sharig,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(alborz,cigpack), QEGVAR(zargabad,cigpack) };
     };
 
     // ------------------------------------------------------------------------ African Desert
     class UK3CB_ADA_O {                // African Desert Army
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADA_B {                // African Desert Army
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADA_I {                // African Desert Army
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADR_O {                // African Desert Army Paramilitary
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADR_B {                // African Desert Army Paramilitary
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADR_I {                // African Desert Army Paramilitary
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADP_O {                // African Desert National Police
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADP_B {                // African Desert National Police
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADP_I {                // African Desert National Police
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADC_O {                // African Desert Civilians
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADC_B {                // African Desert Civilians
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADC_I {                // African Desert Civilians
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADC_C {                // African Desert Civilians
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack) };
     };
     class UK3CB_ADG_O {                // African Desert Civilian Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADG_B {                // African Desert Civilian Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADG_I {                // African Desert Civilian Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADM_O {                // African Desert Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADM_B {                // African Desert Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADM_I {                // African Desert Militia
-        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(black_devil,cigpack) };
+        PVAR(packs)[] = { QEGVAR(sportsman,cigpack), QEGVAR(casa_sport,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(black_devil,cigpack) };
     };
     class UK3CB_ADE_O {                // African Desert Extremists
-        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(sportsman,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(sportsman,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack) };
     };
     class UK3CB_ADE_I {                // African Desert Extremists
-        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(sportsman,cigpack), QEGVAR(camel,cigpack) };
+        PVAR(packs)[] = { QEGVAR(casa_sport,cigpack), QEGVAR(sportsman,cigpack), QEGVAR(cleopatra,cigpack), QEGVAR(camel,cigpack) };
     };
 
     // ------------------------------------------------------------------------ Other guerrillas

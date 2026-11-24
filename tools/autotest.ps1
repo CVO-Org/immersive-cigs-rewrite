@@ -62,14 +62,21 @@ try { & hemtt @launchArgs; if ($LASTEXITCODE -ne 0) { throw "hemtt launch failed
 finally { Pop-Location; $ErrorActionPreference = 'Stop' }
 
 # Wait for the game to start, then to quit. The timeout counts from the game's start.
-$arma = $null
-$startWait = Get-Date
-while (-not $arma -and (Get-Date) -lt $startWait.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
-if (-not $arma) { throw 'Arma 3 did not start.' }
-$deadline = (Get-Date).AddMinutes($TimeoutMinutes)
-Write-Host "Game running (pid $($arma.Id)), waiting for the autotest to finish (timeout $TimeoutMinutes min)"
-$timedOut = -not $arma.WaitForExit([int]([Math]::Max(0, ($deadline - (Get-Date)).TotalMilliseconds)))
-if ($timedOut) { Write-Warning 'Timeout - closing the game'; Stop-Process -Id $arma.Id -Force }
+# hemtt launch may return only after the game has quit (it waits while the game's output still comes through it):
+# then the game is gone already, and a new RPT says it did run.
+$ranAlready = { Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Select-Object -First 1 }
+$arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1
+if (-not $arma -and (& $ranAlready)) {
+    Write-Host 'The game has already quit'
+} else {
+    $startWait = Get-Date
+    while (-not $arma -and (Get-Date) -lt $startWait.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
+    if (-not $arma) { throw 'Arma 3 did not start.' }
+    $deadline = (Get-Date).AddMinutes($TimeoutMinutes)
+    Write-Host "Game running (pid $($arma.Id)), waiting for the autotest to finish (timeout $TimeoutMinutes min)"
+    $timedOut = -not $arma.WaitForExit([int]([Math]::Max(0, ($deadline - (Get-Date)).TotalMilliseconds)))
+    if ($timedOut) { Write-Warning 'Timeout - closing the game'; Stop-Process -Id $arma.Id -Force }
+}
 
 # The RPT of this run
 $rpt = Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Sort-Object LastWriteTime | Select-Object -Last 1

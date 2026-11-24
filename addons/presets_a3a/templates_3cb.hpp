@@ -53,9 +53,10 @@ class 3CBF_TLA : 3CBF_Base {
 class 3CBF_TNM : 3CBF_Base {
     PVAR(packs)[] = { QEGVAR(matelot,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(baja_blast,cigpack) };
 };
-// Cold War PLM (Occupants): People's Liberation Movement
+// Cold War PLM (Occupants): People's Liberation Movement. Antistasi's lore makes it a
+// Soviet-supplied army, so Kosmos replaces the Camel of the 3CB PLM faction preset.
 class 3CBF_PLM : 3CBF_Base {
-    PVAR(packs)[] = { QEGVAR(camel,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(black_devil,cigpack) };
+    PVAR(packs)[] = { QEGVAR(kosmos,cigpack), QEGVAR(marlboro,cigpack), QEGVAR(black_devil,cigpack) };
 };
 
 // ---------------------------------------------------------------------------- Livonia / Chernarus region

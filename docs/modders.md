@@ -202,7 +202,7 @@ A dash means that tier gets the template's packs. Belomorkanal is a planned bran
 | 3CB MDF | Matelot, Marlboro, Morley | – | – |
 | 3CB HIDF | Matelot, Marlboro, Morley | – | – |
 | 3CB Cold War TLA, Cold War TNM | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
-| 3CB Cold War PLM | Camel, Marlboro, Black Devil Pink | – | – |
+| 3CB Cold War PLM | Kosmos, Marlboro, Black Devil Pink | – | – |
 | 3CB LDF | Lipa Dzwonek, Lipa, Voron, NIL | Lipa, Popularne, NIL | – |
 | 3CB GAF Temperate (Grozovia) | Zamok, Belomorkanal, Marlboro | – | – |
 | 3CB TKA East, TKA West, TKA Mix | Zargabad, Jaffudi, Sharig, Marlboro | – | – |

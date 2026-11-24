@@ -99,7 +99,7 @@ Settled for the 3CB templates (from the `lore` strings and the loadouts, 2026-11
 | 3CB KRG | Royal guard of a Central Asian kingdom (the lore says "Kyrgystan", 3CB "Karzeghistan"), US surplus | the 3CB KRG preset, the royal Jaffudi first |
 | 3CB TNM | Tanoa militia with a Western backer, WW2 and early Cold War weapons | the 3CB TNM preset (Matelot and the gag brands) |
 | 3CB Marines Temperate | US Marines: `lore_USMC`, RHS FROG and G3 uniforms | the RHS US list |
-| 3CB PLM | **open.** Antistasi's lore makes it a fictional Chinese, Soviet-supplied early Cold War army on the Horizon Islands; 3CB's faction is a generic guerrilla movement | for now the 3CB PLM preset (Camel, Marlboro, Black Devil Pink). Suggestion: Kosmos instead of Camel for the Soviet supply. No Cold War Chinese brand exists (Shanhai is 2035) |
+| 3CB PLM | Antistasi's lore makes it a fictional Chinese, Soviet-supplied early Cold War army on the Horizon Islands; 3CB's faction is a generic guerrilla movement | Kosmos, Marlboro, Black Devil Pink: the 3CB PLM preset with Kosmos instead of Camel for the Soviet supply (owner's decision). No Cold War Chinese brand exists (Shanhai is 2035) |
 
 Also: 3CB GAF is the Grozovia Armed Forces (Serbian and Russian weapons), not the German army, so it does not belong in the modern Germany gap.
 
@@ -159,6 +159,6 @@ The other 25 Antistasi maps already have a terrain preset.
 
 ### Other open points
 
-- The templates still under *Lore check needed* (3CB PLM, CUP HIL, SEP ACAF, SEP IHAC).
+- The templates still under *Lore check needed* (CUP HIL, SEP ACAF, SEP IHAC).
 - Extender mods add templates under their own names; those fall to the terrain presets until they add `cigs_packs[]` themselves.
 - Antistasi Plus and other forks are not covered.

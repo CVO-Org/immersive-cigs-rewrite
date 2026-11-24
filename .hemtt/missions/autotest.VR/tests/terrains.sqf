@@ -1,5 +1,5 @@
 // Terrain list: logs every loaded terrain to the RPT ("[cigs][terrains]"), to find the worldName (the class name in
-// terrainPacks.hpp) of a new terrain mod. Launch with `hemtt launch terrains` to load the candidate terrains.
+// terrainPacks.hpp) of a new terrain mod. Launch with `hemtt launch terrains autotest` (or `.\tools\autotest.ps1 terrains`) to load the candidate terrains.
 // Per terrain: worldName, its display name, the mod it comes from, its addons, and whether it already has a terrain preset.
 // Runs anywhere, unscheduled is fine. From the debug console: [] call cigs_test_fnc_terrains;
 

@@ -1,0 +1,4 @@
+// No debriefing screen: under -autotest (tools\autotest.ps1) init.sqf ends the mission with endMission, and the
+// debriefing waited there for someone to press Continue before the game could quit.
+// https://community.bistudio.com/wiki/Arma_3:_Debriefing - "debriefing = 0" disables it (singleplayer only).
+debriefing = 0;

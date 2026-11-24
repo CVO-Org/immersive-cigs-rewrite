@@ -72,8 +72,8 @@ workshop = [
     "843632231", # RHSSAF
 ]
 
-# Candidate terrains for new terrain presets - to read their worldNames. The test mission logs every loaded terrain
-# to the RPT ("[cigs][terrains]", tests\terrains.sqf): .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'.
+# Candidate terrains for new terrain presets - to read their worldNames. The autotest mission logs every loaded terrain
+# to the RPT ("[cigs][terrains]", autotest.VR\tests\terrains.sqf): .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'.
 # Gabreta comes with CSLA Iron Curtain. ACE comes from base.
 [terrains]
 extends = "base"
@@ -107,6 +107,29 @@ workshop = [
 # (the test mission doesn't run it); vanilla templates work without other mods. ACE comes from base.
 [antistasi]
 extends = "base"
+workshop = [
+    "2867537125", # Antistasi - The Mod
+]
+
+# Switches the mission to autotest.VR (the tests), on top of other profiles: hemtt launch 3cb autotest.
+# Chain it last; it has no mods of its own. tools\autotest.ps1 adds it by itself.
+[autotest]
+mission = "autotest.VR"
+
+# Every modset at once, for one autotest run instead of one per profile: 3cb (with RHS), the factions CDLCs and
+# Antistasi. Not the terrains (only a list, and CUP Terrains makes the load much longer). ACE comes from base.
+# .\tools\autotest.ps1 all
+[all]
+extends = "3cb"
+dlc = [
+    "Global Mobilization",
+    "S.O.G. Prairie Fire",
+    "CSLA Iron Curtain",
+    "Western Sahara",
+    "Spearhead 1944",
+    "Reaction Forces",
+    "Expeditionary Forces",
+]
 workshop = [
     "2867537125", # Antistasi - The Mod
 ]

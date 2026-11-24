@@ -18,7 +18,7 @@ Returns the worldName (the class name in `addons/ai_presets_terrains/terrainPack
 
 ### Every loaded terrain
 
-The same as `.hemtt/missions/test.VR/tests/terrains.sqf`, which runs at the start of the test mission. Launch with `hemtt launch terrains` for the candidate terrains.
+The same as `.hemtt/missions/autotest.VR/tests/terrains.sqf`, which runs at the start of the autotest mission. Launch with `hemtt launch terrains autotest` for the candidate terrains.
 
 ```sqf
 private _worlds = ("getText (_x >> 'worldName') != ''" configClasses (configFile >> "CfgWorlds")) apply {

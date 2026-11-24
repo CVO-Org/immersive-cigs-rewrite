@@ -20,7 +20,7 @@ param(
     # hemtt launch profiles, e.g. 3cb or rhs. Default: the default profile.
     [Parameter(Position = 0, ValueFromRemainingArguments = $true)]
     [string[]] $Profiles = @('default'),
-    # Give up and close the game after this many minutes.
+    # Give up and close the game after it has run this many minutes (the build before it doesn't count).
     [int] $TimeoutMinutes = 30,
     # Print every test line, not only FAIL lines and summaries.
     [switch] $Full,
@@ -55,14 +55,18 @@ if ($Quick) { $launchArgs += '-Q' }
 $launchArgs += @('--', "-autotest=$cfg")
 Write-Host "hemtt $($launchArgs -join ' ')"
 Push-Location $root
+# 'Continue' here: the game writes to stderr through hemtt, and when this script's output is redirected (*> file),
+# Windows PowerShell turns each stderr line into an error record that 'Stop' would make fatal
+$ErrorActionPreference = 'Continue'
 try { & hemtt @launchArgs; if ($LASTEXITCODE -ne 0) { throw "hemtt launch failed ($LASTEXITCODE)" } }
-finally { Pop-Location }
+finally { Pop-Location; $ErrorActionPreference = 'Stop' }
 
-# Wait for the game to start, then to quit
-$deadline = $start.AddMinutes($TimeoutMinutes)
+# Wait for the game to start, then to quit. The timeout counts from the game's start.
 $arma = $null
-while (-not $arma -and (Get-Date) -lt $start.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
+$startWait = Get-Date
+while (-not $arma -and (Get-Date) -lt $startWait.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
 if (-not $arma) { throw 'Arma 3 did not start.' }
+$deadline = (Get-Date).AddMinutes($TimeoutMinutes)
 Write-Host "Game running (pid $($arma.Id)), waiting for the autotest to finish (timeout $TimeoutMinutes min)"
 $timedOut = -not $arma.WaitForExit([int]([Math]::Max(0, ($deadline - (Get-Date)).TotalMilliseconds)))
 if ($timedOut) { Write-Warning 'Timeout - closing the game'; Stop-Process -Id $arma.Id -Force }

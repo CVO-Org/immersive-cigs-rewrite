@@ -4,7 +4,8 @@
 // Server only. Results go to systemChat, the RPT ("[cigs][test]") and a hint.
 //
 // Order under test, highest first:
-// cigs_aiCigs_api > module > pack selection > cigs_aiCigs_api_lesser > unit class presets > faction presets > terrain presets > default presets
+// cigs_aiCigs_api > module > pack selection > compat presets (cigs_ai_compats) > unit class presets > faction presets > terrain presets > default presets
+// The compat level is tested by setting its resolved list (cigs_ai_compatFunctions) directly, with test functions.
 // The unit class level is tested with the vanilla officers (presets_vanilla\CfgVehicles.hpp): cigs_packsExtra[] = cigar box.
 
 if (!isServer) exitWith {};
@@ -79,11 +80,11 @@ private _packs = { params ["_unit"]; [_unit] call cigs_ai_fnc_getCigItems };
 
 
 // ---------------------------------------------------------------- levels: save, reset, restore
-// Script variables (api, module, lesser API) are set directly.
+// Script variables (api, module, resolved compat functions) are set directly.
 // CBA settings go through CBA_settings_fnc_set ("server" source, as in init.sqf), so their change scripts run too:
 // the pack selection's script clears its cached map (cigs_aiCigs_settings), which the tests rely on.
 private _packSelVar = "cigs_ai_set_aiCigs_packSelection_WEST_cigs_morley_cigpack";
-private _scriptVars = [ "cigs_aiCigs_api", "cigs_aiCigs_module", "cigs_aiCigs_api_lesser" ];
+private _scriptVars = [ "cigs_aiCigs_api", "cigs_aiCigs_module", "cigs_ai_compatFunctions" ];
 private _settings = [ "cigs_ai_set_aiCigs_packSelection_enable", "cigs_ai_set_aiCigs_configPresets_enable", _packSelVar ];
 
 private _savedVars = _scriptVars apply { missionNamespace getVariable _x };
@@ -94,7 +95,7 @@ private _set = { params ["_setting", "_value"]; [_setting, _value, nil, "server"
 private _reset = {
     cigs_aiCigs_api = nil;
     cigs_aiCigs_module = nil;
-    cigs_aiCigs_api_lesser = nil;
+    cigs_ai_compatFunctions = [];
     ["cigs_ai_set_aiCigs_packSelection_enable", false] call _set;
     ["cigs_ai_set_aiCigs_configPresets_enable", true] call _set;
     [_packSelVar, false] call _set;
@@ -128,31 +129,46 @@ call _reset;
 ["cigs_ai_set_aiCigs_configPresets_enable", false] call _set;
 ["faction presets off -> default presets (WEST)", [_blu] call _packs, ["WEST"] call _defaultPacks] call _check;
 
-// ---------------------------------------------------------------- 4. lesser API as hashmap - decides all sides
-call _reset;
-cigs_aiCigs_api_lesser = createHashMapFromArray [["WEST", ["cigs_nil_cigpack"]]];
-["lesser hashmap: WEST from the map", [_blu] call _packs, ["cigs_nil_cigpack"]] call _check;
-["lesser hashmap: EAST missing -> none", [_opf] call _packs, []] call _check;
+// ---------------------------------------------------------------- 4. compat presets: resolved from config
+// Without Antistasi (or another compat mod) and without a description.ext entry, nothing is active
+cigs_ai_compatFunctions = nil;
+["compat presets: none active in the test mission", [] call cigs_ai_fnc_getCompats, []] call _check;
 
-// ---------------------------------------------------------------- 5. lesser API as code - nil hands the unit down
+// ---------------------------------------------------------------- 5. compat presets: the three answers
+// A hashmap decides, nil hands the unit on to the class and faction presets, a hashmap without "packs" skips to terrain / default
+private _compatTest = {
+    params ["_unit"];
+    switch ( side group _unit ) do {
+        case west:     { createHashMapFromArray [["packs", ["cigs_voron_cigpack"]], ["lighters", ["cigs_matches"]]] };
+        case civilian: { createHashMap };
+        default        { nil };
+    };
+};
 call _reset;
-cigs_aiCigs_api_lesser = { params ["_unit"]; if ( side group _unit isEqualTo west ) then { ["cigs_voron_cigpack"] } else { nil } };
-["lesser code: array for WEST", [_blu] call _packs, ["cigs_voron_cigpack"]] call _check;
-["lesser code: nil -> faction preset (OPF_F)", [_opf] call _packs, ["OPF_F"] call _factionPacks] call _check;
+cigs_ai_compatFunctions = [_compatTest];
+["compat: hashmap for WEST", [_blu] call _packs, ["cigs_voron_cigpack"]] call _check;
+["compat: lighters from the compat", ([_blu] call cigs_ai_fnc_getConfigPresets) get "lighters", ["cigs_matches"]] call _check;
+["compat: nil -> faction preset (OPF_F)", [_opf] call _packs, ["OPF_F"] call _factionPacks] call _check;
+["compat: empty hashmap -> default presets (VR has no terrain preset)", [_civ] call _packs, ["CIV"] call _defaultPacks] call _check;
 
-call _reset;
-cigs_aiCigs_api_lesser = { [] };
-["lesser code: [] -> none", [_blu] call _packs, []] call _check;
+// the first one that doesn't return nil decides
+cigs_ai_compatFunctions = [{ nil }, { createHashMapFromArray [["packs", []]] }, _compatTest];
+["compat: first non-nil decides, empty packs -> none", [_blu] call _packs, []] call _check;
 
-// ---------------------------------------------------------------- 6. lesser API of a wrong type is ignored (logs an error)
-call _reset;
-["Provoking an intended error: the next [CIGS] (ai) ERROR line (cigs_aiCigs_api_lesser ... got STRING) is expected"] call _log;
-cigs_aiCigs_api_lesser = "oops";
-["lesser wrong type -> ignored, faction preset", [_blu] call _packs, ["BLU_F"] call _factionPacks] call _check;
+// switched with the config presets
+["cigs_ai_set_aiCigs_configPresets_enable", false] call _set;
+cigs_ai_compatFunctions = [_compatTest];
+["compat: config presets off -> default presets", [_blu] call _packs, ["WEST"] call _defaultPacks] call _check;
 
-// ---------------------------------------------------------------- 7. pack selection beats the lesser API
+// ---------------------------------------------------------------- 6. compat presets of a wrong type are ignored (logs an error)
 call _reset;
-cigs_aiCigs_api_lesser = createHashMapFromArray [["WEST", ["cigs_nil_cigpack"]], ["EAST", ["cigs_nil_cigpack"]]];
+["Provoking an intended error: the next [CIGS] (ai) ERROR line (Compat presets ... got STRING) is expected"] call _log;
+cigs_ai_compatFunctions = [{ "oops" }];
+["compat wrong type -> ignored, faction preset", [_blu] call _packs, ["BLU_F"] call _factionPacks] call _check;
+
+// ---------------------------------------------------------------- 7. pack selection beats the compat presets
+call _reset;
+cigs_ai_compatFunctions = [{ createHashMapFromArray [["packs", ["cigs_nil_cigpack"]]] }];
 ["cigs_ai_set_aiCigs_packSelection_enable", true] call _set;
 [_packSelVar, true] call _set;
 ["pack selection: WEST ticked Morley", [_blu] call _packs, ["cigs_morley_cigpack"]] call _check;
@@ -210,11 +226,11 @@ private _officer = ["B_officer_F"] call _spawnClass;
 
 // a higher level decides: cigs_packsExtra[] is ignored
 call _reset;
-cigs_aiCigs_api_lesser = createHashMapFromArray [["WEST", ["cigs_nil_cigpack"]]];
-["officer, lesser API decides -> no cigars", [_officer] call _packs, ["cigs_nil_cigpack"]] call _check;
+cigs_ai_compatFunctions = [{ createHashMapFromArray [["packs", ["cigs_nil_cigpack"]]] }];
+["officer, compat decides -> no cigars", [_officer] call _packs, ["cigs_nil_cigpack"]] call _check;
 call _reset;
-cigs_aiCigs_api_lesser = { nil };
-["officer, lesser code returns nil -> faction + cigars", [_officer] call _packs, (["BLU_F"] call _factionPacks) + [_cigars]] call _check;
+cigs_ai_compatFunctions = [{ nil }];
+["officer, compat returns nil -> faction + cigars", [_officer] call _packs, (["BLU_F"] call _factionPacks) + [_cigars]] call _check;
 
 
 // ---------------------------------------------------------------- restore and clean up

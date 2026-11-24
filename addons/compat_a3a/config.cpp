@@ -32,4 +32,6 @@ class CfgPatches {
     };
 };
 
+#include "CfgFunctions.hpp"
+#include "cigs_ai_compats.hpp"
 #include "CfgA3A.hpp"

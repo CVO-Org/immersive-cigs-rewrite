@@ -7,6 +7,7 @@ Everything in Immersive Cigs is driven by config. You can add brands, lighters o
 - [Adding a brand](#adding-a-brand)
 - [Config properties](#config-properties)
 - [Faction presets](#faction-presets)
+- [Compat presets](#compat-presets) (Antistasi)
 - [Terrain presets](#terrain-presets)
 - [Default pack presets](#default-pack-presets)
 - Scripting: see the [Scripting API](api.md)
@@ -95,7 +96,7 @@ class CfgFactionClasses {
 
 - **No dependency needed.** These are plain strings, so a faction mod can add them to its own factions without requiring Immersive Cigs.
 - **Classnames that aren't loaded are dropped.** A faction can list packs of optional brands. If none of them are loaded, the faction gets no packs.
-- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and `cigs_aiCigs_api_lesser`, and before the terrain and default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Unit and Faction Presets*. A [unit class preset](#unit-class-presets) ranks above them.
+- **Where it ranks.** Faction presets come after the scripts, the module, the pack selection and the [compat presets](#compat-presets), and before the terrain and default presets below. See [Mission Makers](mission-makers.md#which-packs-a-side-gets). Server admins can turn them off with *Use Config Presets*. A [unit class preset](#unit-class-presets) ranks above them.
 - **Related factions don't share entries.** `BLU_F` and `BLU_T_F` each need their own entry. The exception is config inheritance: a faction class that inherits from another one (e.g. Global Mobilization's `gm_fc_gc_civ: gm_fc_gc`) also inherits its `cigs_packs[]`. Give the child class its own entry if it should get something else.
 
 To add presets to **another mod's** factions, use a compat addon that loads after that mod and is skipped when it's missing:
@@ -137,83 +138,9 @@ class CfgVehicles {
 };
 ```
 
-- **Where it ranks.** Unit class presets come right before the faction presets and are switched with the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` is only added on these levels, the terrain presets and the default presets. When a script, the module, the pack selection or `cigs_aiCigs_api_lesser` decides, it is ignored.
+- **Where it ranks.** Unit class presets come right before the faction presets and are switched with the same setting, *Use Config Presets*. `cigs_packsExtra[]` is only added on these levels, the terrain presets and the default presets. When a script, the module, the pack selection or a [compat preset](#compat-presets) decides, it is ignored.
 - **Unloaded classnames are dropped**, as with factions.
 - For another mod's units, use a compat addon as shown above, and declare the unit class with its real parent class.
-
-### Antistasi template presets
-
-[Antistasi](https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125) spawns its AI as generic classes of the FIA factions (`a3a_unit_west`, `a3a_unit_east`, `a3a_unit_reb*`, `a3a_unit_civ`) and dresses them with loadouts. The unit class and faction presets would give all of them FIA packs. Their real faction is the Antistasi template loaded for their role (Occupants, Invaders, Rebels, Civilians), a class in `configFile >> "A3A" >> "Templates"`, and that's where their presets go:
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `cigs_packs_<tier>[]` | classes | Packs for one tier of the template's units: `militia`, `military`, `sf`, `police` or `other`. Replaces `cigs_packs[]` for that tier. |
-| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset, except the police. An empty array means they get no packs. |
-| `cigs_lighters[]` | classes | Lighters for every unit of the template. Missing or empty: the normal lighter pool. |
-
-```cpp
-class A3A {
-    class Templates {
-        class MyMod_Base;
-        class MyMod_Army_Arid : MyMod_Base {
-            cigs_packs[]         = { "cigs_marlboro_cigpack", "cigs_camel_cigpack" };
-            cigs_packs_militia[] = { "cigs_almyra_cigpack" };
-        };
-    };
-};
-```
-
-- **For Antistasi units, the template replaces the unit class and faction presets.** It ranks where they do and is switched by the same setting, *Use Unit and Faction Presets*. `cigs_packsExtra[]` of the generic unit classes doesn't apply.
-- **A template without an entry** leaves its units to the terrain presets and then the default presets, not to the FIA presets.
-- **The tier** comes from the unit's Antistasi loadout (`unitType`, e.g. `loadouts_occ_military_Rifleman`). Civilians have no tier.
-- **Police are local.** A template plays on many maps, and its police are the local force. Without `cigs_packs_police[]` they get the terrain preset of the map being played, not the template's `cigs_packs[]`.
-- **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
-- **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
-- Immersive Cigs brings its template presets in the addon `presets_a3a`, active when Antistasi is loaded. Only the Antistasi Community version is supported.
-
-#### Included Antistasi template presets
-
-Occupants and Invaders smoke what the same army smokes in its [faction preset](#included-faction-presets). Rebels and civilians have no entry: Antistasi plays them on any map, so they get the map's [terrain preset](#terrain-presets), like the police.
-
-A dash means that tier gets the template's packs. Belomorkanal is a planned brand (#358) and is dropped until it is in the mod.
-
-| Template | Packs | Militia (`militia`) | Special forces (`sf`) |
-| -------- | ----- | ------------------- | --------------------- |
-| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | – | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
-| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | – | as NATO Arid |
-| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | – | as NATO Arid |
-| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – | – |
-| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | – | Shanhai, Alborz, NIL (Viper) |
-| A3 CSAT Enoch | as CSAT Arid | – | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
-| A3 AAF | Almyra, Morley, NIL | – | – |
-| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – | – |
-| A3 ION | Camel, Morley, Marlboro | – | – |
-| RHS AFRF Arid, Temperate; RHS VDV Temperate, Arid | Belomorkanal, Parliament, Kosmos, Apollo Soyuz, Marlboro | Belomorkanal, Kosmos, Apollo Soyuz | Parliament, Kosmos, Marlboro |
-| RHS ChDKZ | Gudok, Belomorkanal, Kosmos | – | – |
-| RHS CDF | Zamok, Sosna, Gudok, Marlboro | Gudok, Sosna | – |
-| RHS US Army Arid, Temperate; RHS USMC Arid, Temperate | Marlboro, Camel, Newport, Morley | – | – |
-| RHS SAF | Drina, Marlboro, Camel | – | – |
-| RHS HIDF | Matelot, Marlboro, Morley | – | – |
-| RHS TLA | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
-| 3CB CSAT BEAR, CSAT GRYPHON | Alborz, Apollo Soyuz, Kosmos | – | – |
-| 3CB CSAT VIPER | Shanhai, Alborz, Apollo Soyuz | – | – |
-| 3CB CSAT SCIMITAR | Alborz, Apollo Soyuz, Sportsman | – | – |
-| 3CB AAF, AAF Brown | Almyra, Morley, NIL | – | – |
-| 3CB MDF | Matelot, Marlboro, Morley | – | – |
-| 3CB HIDF | Matelot, Marlboro, Morley | – | – |
-| 3CB Cold War TLA, Cold War TNM | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
-| 3CB Cold War PLM | Kosmos, Marlboro, Black Devil Pink | – | – |
-| 3CB LDF | Lipa Dzwonek, Lipa, Voron, NIL | Lipa, Popularne, NIL | – |
-| 3CB GAF Temperate (Grozovia) | Zamok, Belomorkanal, Marlboro | – | – |
-| 3CB TKA East, TKA West, TKA Mix | Zargabad, Jaffudi, Sharig, Marlboro | – | – |
-| 3CB ANA | Zargabad, Sharig, Marlboro | – | – |
-| 3CB KRG | Jaffudi, Sharig, Marlboro | – | – |
-| 3CB ADA | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel | – | – |
-| 3CB Cold War US | Marlboro, Camel, Morley | – | – |
-| 3CB Marines Temperate | Marlboro, Camel, Newport, Morley | – | – |
-| 3CB Cold War USSR | Kosmos, Apollo Soyuz, Belomorkanal | Kosmos, Belomorkanal | – |
-| 3CB ION Arid, Temperate, Arctic | Camel, Morley, Marlboro, Newport | – | – |
-| 3CB BAF Arid, Arctic, Temperate, Tropical | Lambert & Butler, Marlboro, Morley | – | – |
 
 ### Included faction presets
 
@@ -397,6 +324,117 @@ The officers have a [unit class preset](#unit-class-presets): a box of cigars on
 
 - **3CB Factions:** 3CB has no shared officer class, so every faction and side has its own entry, `UK3CB_<X>_<side>_OFF`, plus the AAF SF officers, the CSAT and Cold War field officers, the Cold War VDV field officers and the PLM political officers (109 classes). Police factions (`APD`, `TPD`, `ADP`, `ANP` / `ABP`, `TKP`) get none, as their officers are constables. Junior officers and crew commanders get none either.
 - **3CB BAF:** set on the Royal Marines officer of each camo (`UK3CB_BAF_Officer_<camo>_RM`, MTP: `UK3CB_BAF_Officer_MTP_RM_H`). 3CB derives the Army officers from them, so all BAF officers carry it.
+
+## Compat presets
+
+A compat can answer for a unit before the [unit class](#unit-class-presets) and [faction presets](#faction-presets) are read: for gamemodes whose units don't carry their real faction, like Antistasi. Register a function in `cigs_ai_compats`, in your mod's config or in a mission's `description.ext`:
+
+```cpp
+class cigs_ai_compats {
+    class MyMod_Gamemode {
+        priority = 0;                                   // Optional - a higher one is asked first
+        condition = "!isNil 'MyMod_gamemodeActive'";    // Optional - SQF, needs to return a BOOL
+        function = "MyMod_fnc_cigPresets";              // Name of the function
+    };
+};
+```
+
+The function runs on the server, gets `[_unit]` and returns:
+
+| Return | Effect |
+| ------ | ------ |
+| `nil` | Not its unit. The next compat is asked, then the unit class and faction presets. |
+| Hashmap with `"packs"`, `"lighters"` and / or `"packsExtra"` (arrays of classnames) | The unit's presets, in place of its unit class and faction presets. An empty `"packs"` array means no packs. |
+| Hashmap without `"packs"`, e.g. an empty one | Its unit, but no packs to give: it skips the unit class and faction presets and gets the terrain presets, then the default presets. |
+
+```sqf
+// MyMod_fnc_cigPresets
+params ["_unit"];
+switch (_unit getVariable ["MyMod_faction", ""]) do {
+    case "occupants": { createHashMapFromArray [["packs", ["cigs_eckstein_cigpack"]]] };
+    case "partisans": { createHashMap };     // local people: the terrain presets
+    default { nil };                         // not a gamemode unit: the normal presets
+};
+```
+
+- **Where it ranks.** Compat presets come after the scripts, the module and the pack selection, and before the unit class and faction presets. They are switched with them by *Use Config Presets*. See [Mission Makers](mission-makers.md#which-packs-a-side-gets).
+- **Resolved once per mission.** The entries and their conditions are read on the first unit of the mission, so a condition can check the mission but must already be true by then (e.g. set in preInit). A mission entry replaces a mod entry of the same name.
+- **Keep the function quick.** It runs for every unit that gets cigarettes, and can run more than once for the same unit. Cache config lookups (e.g. per faction) and return copies, not your cached hashmap.
+- **Drop unloaded classnames yourself** if your lists can contain optional brands: the compat's lists are used as they are.
+
+### Antistasi template presets
+
+[Antistasi](https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125) spawns its AI as generic classes of the FIA factions (`a3a_unit_west`, `a3a_unit_east`, `a3a_unit_reb*`, `a3a_unit_civ`) and dresses them with loadouts. The unit class and faction presets would give all of them FIA packs. Their real faction is the Antistasi template loaded for their role (Occupants, Invaders, Rebels, Civilians), a class in `configFile >> "A3A" >> "Templates"`, and that's where their presets go:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `cigs_packs_<tier>[]` | classes | Packs for one tier of the template's units: `militia`, `military`, `sf`, `police` or `other`. Replaces `cigs_packs[]` for that tier. |
+| `cigs_packs[]` | classes | Packs for every unit of the template without a tier preset, except the police. An empty array means they get no packs. |
+| `cigs_lighters[]` | classes | Lighters for every unit of the template. Missing or empty: the normal lighter pool. |
+
+```cpp
+class A3A {
+    class Templates {
+        class MyMod_Base;
+        class MyMod_Army_Arid : MyMod_Base {
+            cigs_packs[]         = { "cigs_marlboro_cigpack", "cigs_camel_cigpack" };
+            cigs_packs_militia[] = { "cigs_almyra_cigpack" };
+        };
+    };
+};
+```
+
+- **For Antistasi units, the template replaces the unit class and faction presets.** It is a [compat preset](#compat-presets), active in Antistasi missions only (`missionConfigFile >> "A3A"`). `cigs_packsExtra[]` of the generic unit classes doesn't apply.
+- **A template without an entry** leaves its units to the terrain presets and then the default presets, not to the FIA presets.
+- **The tier** comes from the unit's Antistasi loadout (`unitType`, e.g. `loadouts_occ_military_Rifleman`). Civilians have no tier.
+- **Police are local.** A template plays on many maps, and its police are the local force. Without `cigs_packs_police[]` they get the terrain preset of the map being played, not the template's `cigs_packs[]`.
+- **Templates inherit from each other.** A preset on a parent template reaches its children, e.g. the climate variants. Declare each template class with its real parent from Antistasi's `Templates.hpp`.
+- **Mods with their own Antistasi templates** can add these properties to them, no dependency needed.
+- Immersive Cigs brings its template presets in the addon `compat_a3a`, which only loads with Antistasi. Only the Antistasi Community version is supported.
+
+#### Included Antistasi template presets
+
+Occupants and Invaders smoke what the same army smokes in its [faction preset](#included-faction-presets). Rebels and civilians have no entry: Antistasi plays them on any map, so they get the map's [terrain preset](#terrain-presets), like the police.
+
+A dash means that tier gets the template's packs. Belomorkanal is a planned brand (#358) and is dropped until it is in the mod.
+
+| Template | Packs | Militia (`militia`) | Special forces (`sf`) |
+| -------- | ----- | ------------------- | --------------------- |
+| A3 NATO Arid, NATO Temperate | Morley, Marlboro, Newport, Camel, Crayons | – | Lambert & Butler, Marlboro, Morley, NIL (CTRG) |
+| A3 NATO Tropical, NATO Apex | Morley, Marlboro, Matelot, Crayons | – | as NATO Arid |
+| A3 NATO/UK Tropical, Temperate, Arid | Lambert & Butler, Marlboro, Morley, NIL | – | as NATO Arid |
+| A3 CSAT Arid, CSAT Temperate | Alborz, Apollo Soyuz, Kosmos | – | – |
+| A3 CSAT Apex | Shanhai, Alborz, Apollo Soyuz | – | Shanhai, Alborz, NIL (Viper) |
+| A3 CSAT Enoch | as CSAT Arid | – | Kosmos, Apollo Soyuz, Parliament, Voron (Spetsnaz) |
+| A3 AAF | Almyra, Morley, NIL | – | – |
+| A3 LDF | Lipa Dzwonek, Lipa, Voron, NIL | – | – |
+| A3 ION | Camel, Morley, Marlboro | – | – |
+| RHS AFRF Arid, Temperate; RHS VDV Temperate, Arid | Belomorkanal, Parliament, Kosmos, Apollo Soyuz, Marlboro | Belomorkanal, Kosmos, Apollo Soyuz | Parliament, Kosmos, Marlboro |
+| RHS ChDKZ | Gudok, Belomorkanal, Kosmos | – | – |
+| RHS CDF | Zamok, Sosna, Gudok, Marlboro | Gudok, Sosna | – |
+| RHS US Army Arid, Temperate; RHS USMC Arid, Temperate | Marlboro, Camel, Newport, Morley | – | – |
+| RHS SAF | Drina, Marlboro, Camel | – | – |
+| RHS HIDF | Matelot, Marlboro, Morley | – | – |
+| RHS TLA | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
+| 3CB CSAT BEAR, CSAT GRYPHON | Alborz, Apollo Soyuz, Kosmos | – | – |
+| 3CB CSAT VIPER | Shanhai, Alborz, Apollo Soyuz | – | – |
+| 3CB CSAT SCIMITAR | Alborz, Apollo Soyuz, Sportsman | – | – |
+| 3CB AAF, AAF Brown | Almyra, Morley, NIL | – | – |
+| 3CB MDF | Matelot, Marlboro, Morley | – | – |
+| 3CB HIDF | Matelot, Marlboro, Morley | – | – |
+| 3CB Cold War TLA, Cold War TNM | Matelot, Black Devil Pink, Mtn Dew Baja Blast | – | – |
+| 3CB Cold War PLM | Kosmos, Marlboro, Black Devil Pink | – | – |
+| 3CB LDF | Lipa Dzwonek, Lipa, Voron, NIL | Lipa, Popularne, NIL | – |
+| 3CB GAF Temperate (Grozovia) | Zamok, Belomorkanal, Marlboro | – | – |
+| 3CB TKA East, TKA West, TKA Mix | Zargabad, Jaffudi, Sharig, Marlboro | – | – |
+| 3CB ANA | Zargabad, Sharig, Marlboro | – | – |
+| 3CB KRG | Jaffudi, Sharig, Marlboro | – | – |
+| 3CB ADA | Sportsman, Casa Sports, Cleopatra, Marlboro, Camel | – | – |
+| 3CB Cold War US | Marlboro, Camel, Morley | – | – |
+| 3CB Marines Temperate | Marlboro, Camel, Newport, Morley | – | – |
+| 3CB Cold War USSR | Kosmos, Apollo Soyuz, Belomorkanal | Kosmos, Belomorkanal | – |
+| 3CB ION Arid, Temperate, Arctic | Camel, Morley, Marlboro, Newport | – | – |
+| 3CB BAF Arid, Arctic, Temperate, Tropical | Lambert & Butler, Marlboro, Morley | – | – |
 
 ## Terrain presets
 

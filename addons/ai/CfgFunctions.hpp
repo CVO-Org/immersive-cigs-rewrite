@@ -20,6 +20,7 @@ class CfgFunctions {
             class getCigItems {};
             class getSettingsPacks {};
             class getConfigPresets {};
+            class getCompats {};
             class getDefaultPacks {};
             class getTerrainPacks {};
         };

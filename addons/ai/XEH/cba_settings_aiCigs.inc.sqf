@@ -37,7 +37,7 @@
     false                                    //    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>
 ] call CBA_fnc_addSetting;
 
-// Unit class and faction presets - cigs_packs[] / cigs_lighters[] in CfgVehicles and CfgFactionClasses, see fn_getConfigPresets
+// Config presets - compat presets (cigs_ai_compats), then cigs_packs[] / cigs_lighters[] in CfgVehicles and CfgFactionClasses, see fn_getConfigPresets
 // When off, units skip that level and get the default presets
 [
     QSET(aiCigs_configPresets_enable),
@@ -82,7 +82,7 @@
 } forEach [west,east,independent,civilian];
 
 
-// Pack Selection - a level of its own, below the API and the module, above the default presets (see fn_getCigItems)
+// Pack Selection - a level of its own, below the API and the module, above the config presets (see fn_getCigItems)
 // While active, it defines all sides: a side without ticked packs gets none.
 // Any change clears the cached map, which fn_getSettingsPacks rebuilds on demand.
 [

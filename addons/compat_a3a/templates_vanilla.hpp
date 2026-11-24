@@ -5,7 +5,7 @@
 //   army smokes the same in Antistasi as elsewhere. Children inherit their parent's entry unless they have their own.
 // - Special forces (tier sf) take the faction preset of the units they are dressed as: CTRG for NATO, Viper for
 //   CSAT Apex, Spetsnaz for CSAT Enoch.
-// - Police have no entry: they get the terrain preset of the map (see fn_getConfigPresets).
+// - Police have no entry: they get the terrain preset of the map (see fn_getPresets).
 // - Rebels (FIA, SDK, LFF) and civilians have no entry either. Antistasi plays them on any map, so they get the
 //   terrain preset, like local people would.
 

@@ -94,7 +94,7 @@ Brands with an open issue that faction presets already list. Their classnames ar
 
 ## Pack groups
 
-Ready-made pack lists by region, faction and era, following the rules above: the regional brand first, then brands of the same region and era, then international filler. Copy one into `cigs_aiCigs_api` or `cigs_aiCigs_api_lesser` (see [Scripting API](api.md#ai-cigs-packs-per-side)), tick the same packs in the *Configure AI Cigs* module, or use it as the start of a new preset.
+Ready-made pack lists by region, faction and era, following the rules above: the regional brand first, then brands of the same region and era, then international filler. Copy one into `cigs_aiCigs_api` (see [Scripting API](api.md#ai-cigs-packs-per-side)) or a [compat preset](modders.md#compat-presets), tick the same packs in the *Configure AI Cigs* module, or use it as the start of a new preset.
 
 ```sqf
 // initServer.sqf - a mission on Takistan with US troops against the Takistani army

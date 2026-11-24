@@ -10,7 +10,7 @@
 //   Militia and get its packs; Cold War USSR militia wear the early KLMK and get the early list (no Apollo Soyuz,
 //   which is 1975 on).
 // - Belomorkanal is a planned brand (#358): dropped until it is in the mod.
-// - Police have no entry: they get the terrain preset of the map (see fn_getConfigPresets).
+// - Police have no entry: they get the terrain preset of the map (see fn_getPresets).
 // - Rebels (CCM, ION, TKM, FIA, TFIA, LSM) and civilians have no entry either: Antistasi plays them on any map,
 //   so they get the terrain preset.
 

@@ -72,6 +72,25 @@ workshop = [
     "843632231", # RHSSAF
 ]
 
+# Candidate terrains for new terrain presets - to read their worldNames. The test mission logs every loaded terrain
+# to the RPT ("[cigs][terrains]", tests\terrains.sqf): .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'.
+# Gabreta comes with CSLA Iron Curtain. ACE comes from base.
+[terrains]
+extends = "base"
+dlc = [
+    "CSLA Iron Curtain",  # Gabreta
+]
+workshop = [
+    "583496184",  # CUP Terrains - Core (needed by New Esseker and Anizay)
+    "428181330",  # Bornholm - Prince
+    "1291778160", # Hellanmaa (+ Winter) - Klubi
+    "2712204589", # New Esseker - Drina
+    "1252091296", # Tembelan Island - Gudang Garam
+    "1537973181", # Anizay - Takistan brands
+    "761349672",  # CLAfghan - Takistan brands
+    "908733096",  # Fallujah 1.2 - Cleopatra
+]
+
 # RHS + 3CB Factions + 3CB BAF - to read the 3CB faction classes for the faction presets. ACE comes from base.
 [3cb]
 extends = "rhs"

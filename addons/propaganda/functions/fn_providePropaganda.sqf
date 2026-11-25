@@ -20,6 +20,7 @@ params ["_player"];
 private _items = switch (getPlayerUID _player) do {
     case "76561197970306509": {
         [
+            "ACE_wirecutter",
             "CVO_SpraypaintWhite",
             "CVO_SpraypaintBlack",
             "CVO_SpraypaintRed",

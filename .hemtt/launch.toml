@@ -73,7 +73,7 @@ workshop = [
 ]
 
 # Candidate terrains for new terrain presets - to read their worldNames. The autotest mission logs every loaded terrain
-# to the RPT ("[cigs][terrains]", autotest.VR\tests\terrains.sqf): .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'.
+# to the RPT ("[cigs][terrains]", autotest.VR\tests\fn_terrains.sqf): .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'.
 # Gabreta comes with CSLA Iron Curtain. ACE comes from base.
 [terrains]
 extends = "base"
@@ -111,8 +111,8 @@ workshop = [
     "2867537125", # Antistasi - The Mod
 ]
 
-# Switches the mission to autotest.VR (the tests), on top of other profiles: hemtt launch 3cb autotest.
-# Chain it last; it has no mods of its own. tools\autotest.ps1 adds it by itself.
+# Unattended test run: switches the mission to autotest.VR. Chain it last, after a modset: hemtt launch 3cb autotest
+# The game starts the preview, runs the tests and quits by itself; tools\autotest.ps1 adds it and reports the result.
 [autotest]
 mission = "autotest.VR"
 

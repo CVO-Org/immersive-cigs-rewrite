@@ -1,133 +1,150 @@
 <#
 .SYNOPSIS
-    Runs the autotest mission (.hemtt\missions\autotest.VR) unattended and reports the results from the RPT.
+    Runs the autotest mission unattended and reports the result from the RPT.
 
 .DESCRIPTION
-    Builds and starts the game through `hemtt launch <profiles> autotest` with Arma's -autotest parameter (the
-    'autotest' launch profile switches the mission from test.VR to autotest.VR): the game plays the autotest mission,
-    which runs every test in init.sqf and ends as END1 (all passed) or LOSER (a test failed), then quits.
-    Afterwards the RPT is searched for:
-      - the test lines ("[cigs][test]"; only FAIL lines and summaries unless -Full),
-      - "Updating base class" lines from this mod's addons: a class declared with a wrong parent (OFFICER_CIGARS),
-      - script errors.
-    Exit code 0 when the mission reported 0 failures and nothing above was found, else 1.
+    Starts `hemtt launch <profiles> autotest`. The autotest mission (.hemtt\missions\autotest.VR) starts its preview by
+    itself, runs every suite, and the game quits by itself afterwards - no input needed.
+    This script waits for the game to quit (or closes it after -TimeoutMinutes), then reads this run's RPT:
+      - the test lines ("[ T1.02    ] ...", "[ AUTOTEST ] ..."; without -Full only the lines of tests that did not pass),
+      - script errors ("Error in expression"),
+      - "Updating base class" lines from this mod's addons (a class declared with a wrong parent).
+    Exit code 0 when the DONE line reports 0 failed tests and nothing above was found, else 1.
 
-    Several profiles load together in one game (hemtt launch merges them). The 'all' profile in .hemtt\launch.toml
-    holds every modset but the terrains, so one run covers them all.
+    Several profiles load together in one game (hemtt launch merges them, left to right). The mission profile goes
+    last, so its mission wins.
 
 .EXAMPLE
-    .\tools\autotest.ps1 all
-    .\tools\autotest.ps1 3cb
-    .\tools\autotest.ps1 rhs factions
-    .\tools\autotest.ps1 rhs -Full
-    .\tools\autotest.ps1 terrains -Grep '[cigs][terrains]'
+    .\tools\autotest.ps1
+    .\tools\autotest.ps1 default -Full
+    .\tools\autotest.ps1 rhs -Mission autotest_altis
+    .\tools\autotest.ps1 -Quick -Grep '[mymod][debug]'
+    .\tools\autotest.ps1 -Rpt last
 #>
 param(
-    # hemtt launch profiles, e.g. 3cb or rhs. Default: the default profile.
+    # hemtt launch profiles (the modset). Default: the default profile.
     [Parameter(Position = 0, ValueFromRemainingArguments = $true)]
     [string[]] $Profiles = @('default'),
-    # Give up and close the game after it has run this many minutes (the build before it doesn't count).
-    [int] $TimeoutMinutes = 30,
-    # Print every test line, not only FAIL lines and summaries.
+    # The launch profile that switches to the autotest mission, chained last.
+    [string] $Mission = 'autotest',
+    # Close the game after it has run this many minutes (the build before it doesn't count).
+    [int] $TimeoutMinutes = 15,
+    # Print every test line, not only the lines of tests that did not pass.
     [switch] $Full,
-    # Extra RPT prefix to print in full (e.g. '[cigs][terrains]').
+    # Extra RPT prefixes to print in full (e.g. '[mymod][debug]').
     [string[]] $Grep = @(),
     # Skip the build, launch the last built version (hemtt launch -Q).
-    [switch] $Quick
+    [switch] $Quick,
+    # Don't launch: read this RPT file again ('last' = the newest RPT).
+    [string] $Rpt = ''
 )
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
-$mission = Join-Path $root '.hemtt\missions\autotest.VR'
-$outDir = Join-Path $root '.hemttout\autotest'
-$cfg = Join-Path $outDir 'autotest.cfg'
 $rptDir = Join-Path $env:LOCALAPPDATA 'Arma 3'
+$prefix = (Select-String -Path (Join-Path $root '.hemtt\project.toml') -Pattern '^prefix\s*=\s*"([^"]+)"').Matches[0].Groups[1].Value
 
-if (Get-Process arma3_x64 -ErrorAction SilentlyContinue) { throw 'Arma 3 is already running - close it first.' }
-
-New-Item -ItemType Directory -Force $outDir | Out-Null
-@"
-class TestMissions {
-    class CigsTest {
-        campaign = "";
-        mission = "$mission";
-    };
-};
-"@ | Set-Content -Encoding ascii $cfg
-
-$start = Get-Date
-# 'autotest' last: hemtt overlays the profiles left to right, so its mission wins
-$launchArgs = @('launch') + $Profiles + @('autotest')
-if ($Quick) { $launchArgs += '-Q' }
-$launchArgs += @('--', "-autotest=$cfg")
-Write-Host "hemtt $($launchArgs -join ' ')"
-Push-Location $root
-# 'Continue' here: the game writes to stderr through hemtt, and when this script's output is redirected (*> file),
-# Windows PowerShell turns each stderr line into an error record that 'Stop' would make fatal
-$ErrorActionPreference = 'Continue'
-try { & hemtt @launchArgs; if ($LASTEXITCODE -ne 0) { throw "hemtt launch failed ($LASTEXITCODE)" } }
-finally { Pop-Location; $ErrorActionPreference = 'Stop' }
-
-# Wait for the game to start, then to quit. The timeout counts from the game's start.
-# hemtt launch may return only after the game has quit (it waits while the game's output still comes through it):
-# then the game is gone already, and a new RPT says it did run.
-$ranAlready = { Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Select-Object -First 1 }
-$arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1
-if (-not $arma -and (& $ranAlready)) {
-    Write-Host 'The game has already quit'
+if ($Rpt) {
+    $rptFile = if ($Rpt -eq 'last') { Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Sort-Object LastWriteTime | Select-Object -Last 1 } else { Get-Item $Rpt }
 } else {
-    $startWait = Get-Date
-    while (-not $arma -and (Get-Date) -lt $startWait.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
-    if (-not $arma) { throw 'Arma 3 did not start.' }
-    $deadline = (Get-Date).AddMinutes($TimeoutMinutes)
-    Write-Host "Game running (pid $($arma.Id)), waiting for the autotest to finish (timeout $TimeoutMinutes min)"
-    $timedOut = -not $arma.WaitForExit([int]([Math]::Max(0, ($deadline - (Get-Date)).TotalMilliseconds)))
-    if ($timedOut) { Write-Warning 'Timeout - closing the game'; Stop-Process -Id $arma.Id -Force }
+    if (Get-Process arma3_x64 -ErrorAction SilentlyContinue) { throw 'Arma 3 is already running - close it first.' }
+
+    $start = Get-Date
+    $launchArgs = @('launch') + $Profiles + @($Mission)
+    if ($Quick) { $launchArgs += '-Q' }
+    Write-Host "hemtt $($launchArgs -join ' ')"
+    Push-Location $root
+    # 'Continue' here: the game writes to stderr through hemtt, and when this script's output is redirected (*> file),
+    # Windows PowerShell turns each stderr line into an error record that 'Stop' would make fatal
+    $ErrorActionPreference = 'Continue'
+    try { & hemtt @launchArgs; if ($LASTEXITCODE -ne 0) { throw "hemtt launch failed ($LASTEXITCODE)" } }
+    finally { Pop-Location; $ErrorActionPreference = 'Stop' }
+
+    # Wait for the game to start, then to quit. The timeout counts from the game's start.
+    # hemtt launch may return before the game is up, or only after it has quit: then a new RPT says it did run.
+    $ranAlready = { Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Select-Object -First 1 }
+    $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1
+    if (-not $arma -and (& $ranAlready)) {
+        Write-Host 'The game has already quit'
+    } else {
+        $startWait = Get-Date
+        while (-not $arma -and (Get-Date) -lt $startWait.AddMinutes(3)) { Start-Sleep 2; $arma = Get-Process arma3_x64 -ErrorAction SilentlyContinue | Select-Object -First 1 }
+        if (-not $arma) { throw 'Arma 3 did not start.' }
+        Write-Host "Game running (pid $($arma.Id)), waiting for it to quit (timeout $TimeoutMinutes min)"
+        if (-not $arma.WaitForExit($TimeoutMinutes * 60 * 1000)) { Write-Warning 'Timeout - closing the game'; Stop-Process -Id $arma.Id -Force }
+    }
+
+    # The RPT of this run
+    $rptFile = Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Sort-Object LastWriteTime | Select-Object -Last 1
+    if (-not $rptFile) { throw "No RPT newer than $start in $rptDir" }
 }
 
-# The RPT of this run
-$rpt = Get-ChildItem $rptDir -Filter 'arma3_x64_*.rpt' | Where-Object LastWriteTime -gt $start | Sort-Object LastWriteTime | Select-Object -Last 1
-if (-not $rpt) { throw "No RPT newer than $start in $rptDir" }
-$lines = Get-Content $rpt.FullName
-Write-Host "RPT: $($rpt.FullName)`n"
+$lines = Get-Content $rptFile.FullName
+Write-Host "RPT: $($rptFile.FullName)`n"
 
 $problems = 0
 
-# Test lines
-$test = @($lines | Where-Object { $_.Contains('[cigs][test]') })
-# The game may start the mission more than once (a start cut short, then a full one): only the last pass counts
-$lastPass = [Array]::FindLastIndex([string[]]$test, [Predicate[string]] { param($l) $l -match '==== \w+ \(1/\d+\) ====' })
-if ($lastPass -gt 0) { $test = $test[$lastPass..($test.Count - 1)] }
-$summaryAt = [Array]::FindLastIndex([string[]]@($test), [Predicate[string]] { param($l) $l.Contains('==== Summary ====') })
-$shown = if ($Full) { $test } else {
-    for ($i = 0; $i -lt @($test).Count; $i++) {
-        $l = @($test)[$i]
-        if (($summaryAt -ge 0 -and $i -ge $summaryAt) -or $l -match 'FAIL|failed|passed|====|not allowed') { $l }
+# Walk the RPT in order: the test lines ("[ T1.02    ] ...", "[ AUTOTEST ] ..."; the RPT's timestamp cut off), and
+# the script errors - SQF logs most errors and carries on, so a test with an error may still report PASSED.
+# Each error is put on the test that was running when it was logged.
+$headPattern = '\[ (T\d+\.\d+|AUTOTEST) *\] '
+$test = [System.Collections.Generic.List[string]]::new()
+$errors = [System.Collections.Generic.List[string]]::new()
+$errorIds = @{}
+$current = $null
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    $line = $lines[$i]
+    if ($line -match $headPattern) {
+        $text = $line.Substring($line.IndexOf($Matches[0]))
+        $test.Add($text)
+        if ($text -match '^\[ (T\d+\.\d+) *\] \[ BEGIN') { $current = $Matches[1] }
+        elseif ($text -match '^\[ (T\d+\.\d+) *\] \[ END') { $current = $null }
+    } elseif ($line -match 'Error in expression') {
+        $where = if ($current) { $current } else { 'outside a test' }
+        if ($current) {
+            $errorIds[$current] = $true
+            $test.Add(('[ {0,-8} ]     ERROR script error, see "Script errors" below' -f $current))
+        }
+        $errors.Add("in ${where}:`n" + ($lines[$i..([Math]::Min($i + 6, $lines.Count - 1))] -join "`n") + "`n")
     }
 }
-$shown | ForEach-Object { $_ -replace '^.*?\[cigs\]\[test\] ', '' }
+$problems += $errors.Count
 
-foreach ($prefix in $Grep) {
-    Write-Host "`n$prefix"
-    $lines | Where-Object { $_.Contains($prefix) } | ForEach-Object { $_.Substring($_.IndexOf($prefix) + $prefix.Length).TrimStart() }
+# Passed: the END line says PASSED and no script error was logged during the test
+$endPassed = @($test | ForEach-Object { if ($_ -match '^\[ (T\d+\.\d+) *\] \[ END *\] Result: PASSED') { $Matches[1] } })
+$passedIds = @($endPassed | Where-Object { -not $errorIds.ContainsKey($_) })
+$erroredPassed = $endPassed.Count - $passedIds.Count
+
+# Without -Full: the AUTOTEST lines, and every line of a test that did not pass (or never reached its END line)
+$shown = if ($Full) { $test } else {
+    $test | Where-Object { $_ -notmatch '^\[ (T\d+\.\d+) *\] ' -or $passedIds -notcontains $Matches[1] }
+}
+$shown
+
+foreach ($p in $Grep) {
+    Write-Host "`n$p"
+    $lines | Where-Object { $_.Contains($p) } | ForEach-Object { $_.Substring($_.IndexOf($p) + $p.Length).TrimStart() }
 }
 
 # Wrong parents: the engine rebases a class declared with another parent than it had
-$rebased = $lines | Where-Object { $_ -match 'Updating base class' -and $_ -match 'cigs' }
-if ($rebased) { $problems += @($rebased).Count; Write-Host "`nUpdating base class (wrong parent in a cigs addon):"; $rebased }
+$rebased = @($lines | Where-Object { $_ -match 'Updating base class' -and $_ -match [regex]::Escape($prefix) })
+if ($rebased) { $problems += $rebased.Count; Write-Host "`nUpdating base class (wrong parent in a $prefix addon):"; $rebased }
 
-# Script errors
-$errors = for ($i = 0; $i -lt $lines.Count; $i++) { if ($lines[$i] -match 'Error in expression') { $lines[$i..([Math]::Min($i + 6, $lines.Count - 1))] -join "`n"; '' } }
-if ($errors) { $problems += @($errors | Where-Object { $_ }).Count; Write-Host "`nScript errors:"; $errors }
+# Script errors, with the lines after them
+if ($errors.Count) { Write-Host "`nScript errors:"; $errors }
 
-$done = $lines | Where-Object { $_ -match '\[cigs\]\[test\] ---- Autotest done: (\d+) failed' } | Select-Object -Last 1
-$failed = if ($done -and $done -match 'done: (\d+) failed') { [int]$Matches[1] } else { -1 }
-$autotest = ($lines | Where-Object { $_ -match '<AutoTest result' }) -join ' '
+$donePattern = '\[ DONE *\] (\d+) / (\d+) successful - failed: (\d+) - skipped: (\d+)'
+$done = $test | Where-Object { $_ -match $donePattern } | Select-Object -Last 1
 
 Write-Host ''
-if ($failed -lt 0) { Write-Host 'RESULT: the tests did not finish' -ForegroundColor Red; exit 1 }
-if ($failed -gt 0 -or $problems -gt 0 -or $autotest) {
-    Write-Host "RESULT: FAILED - $failed test failures, $problems RPT problems $autotest" -ForegroundColor Red; exit 1
+if (-not $done) { Write-Host 'Verdict: FAILED - the tests did not finish (no DONE line)' -ForegroundColor Red; exit 1 }
+$null = $done -match $donePattern
+# a test that reported PASSED but logged a script error counts as failed
+$successful = [int]$Matches[1] - $erroredPassed
+$failedTests = [int]$Matches[3] + $erroredPassed
+$summary = "$successful / $($Matches[2]) successful, $failedTests failed, $($Matches[4]) skipped, $problems RPT problems"
+if ($failedTests -gt 0 -or [int]$Matches[2] -eq 0 -or $problems -gt 0) {
+    Write-Host "Verdict: FAILED - $summary" -ForegroundColor Red; exit 1
 }
-Write-Host 'RESULT: PASSED' -ForegroundColor Green
+Write-Host "Verdict: PASSED - $summary" -ForegroundColor Green
 exit 0

@@ -1,4 +1,42 @@
-// No debriefing screen: under -autotest (tools\autotest.ps1) init.sqf ends the mission with endMission, and the
-// debriefing waited there for someone to press Continue before the game could quit.
-// https://community.bistudio.com/wiki/Arma_3:_Debriefing - "debriefing = 0" disables it (singleplayer only).
+// Autotest mission: runs every test suite (tests\) unattended and closes the game afterwards.
+// Start it with the 'autotest' launch profile, chained last:  hemtt launch default autotest
+// or let the runner start it and report the result:          .\tools\autotest.ps1 default
+// init3DEN.sqf starts the preview, init.sqf runs the suites, init3DEN.sqf quits the game once they are done.
+// The AI cigs test settings are applied in initServer.sqf (CIGS only).
+
+onLoadName = "Autotest";
+author = "Zorn";
+enableDebugConsole = 1;
+
+// no debriefing: it waits for someone to press continue
+// https://community.bistudio.com/wiki/Arma_3:_Debriefing
 debriefing = 0;
+
+class CfgFunctions {
+    // the framework - shared through the template, don't edit per mod
+    class autotest {
+        class framework {
+            file = "autotest";
+            class banner {};
+            class check {};
+            class checkEqual {};
+            class log {};
+            class runAll {};
+            class skip {};
+            class waitFor {};
+        };
+    };
+
+    // the suites - one function per suite (tests\fn_<name>.sqf), run in the order listed here
+    // add new suites at the end, so the test ids of the others stay the same
+    class autotest_suite {
+        class suites {
+            file = "tests";
+            class terrains {};      // a list of the loaded terrains, to the RPT ("[cigs][terrains]")
+            class aiPresets {};     // the level order, by asking getCigItems directly
+            class liveFactions {};  // one unit per faction through the real chain, module cleared
+            class officers {};      // every unit class with cigs_packsExtra[], config and live
+            class slotSwap {};      // the player's own facewear / NVG slot (#295), about 2 minutes
+        };
+    };
+};
